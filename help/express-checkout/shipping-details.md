@@ -4,7 +4,7 @@ description: Présentation du flux de passage en caisse dans Adobe Commerce.
 exl-id: 60faef08-7083-4175-93f2-086aa54b1614
 source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '69'
 ht-degree: 0%
 
 ---

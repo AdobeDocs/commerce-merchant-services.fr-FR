@@ -4,7 +4,7 @@ description: Définissez les options de paiement pour personnaliser les méthode
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 source-git-commit: 9aa701e006a7f107775679f156f84d3e2fdc153b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---

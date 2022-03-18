@@ -5,8 +5,8 @@ breadcrumb-title: '[!DNL Payment Services] Guide'
 index: true
 source-git-commit: e42f05a8a66c6819cd6c1c07e267854c7c44127d
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

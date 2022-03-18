@@ -4,7 +4,7 @@ description: Les tests et la validation permettent de s’assurer que [!DNL Paym
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---

@@ -6,7 +6,7 @@ seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerc
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 source-git-commit: eb8fdba65b4b64730d0ad4fa6e0c9b64bdadc7df
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---

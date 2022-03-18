@@ -4,7 +4,7 @@ description: Découvrez comment [!DNL Express Checkout] pourrait bénéficier à
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---

@@ -4,7 +4,7 @@ description: Découvrez comment gérer les facettes de recherche en direct exist
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---

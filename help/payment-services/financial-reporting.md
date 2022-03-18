@@ -6,7 +6,7 @@ feature: Payments
 level: Intermediate
 source-git-commit: eb8fdba65b4b64730d0ad4fa6e0c9b64bdadc7df
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---

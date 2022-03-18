@@ -4,7 +4,7 @@ description: Découvrez comment Live Search indexe les propriétés d’attribut
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
 source-git-commit: 8cc10feccda91fc1d9ead35f9b2b1e8ea19d4c95
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---

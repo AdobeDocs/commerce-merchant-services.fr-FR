@@ -4,7 +4,7 @@ description: Découvrez comment ajouter des attributs de produit filtrables en t
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
 source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---

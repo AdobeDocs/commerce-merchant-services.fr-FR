@@ -4,7 +4,7 @@ description: Présentation de la variable [!DNL Express Checkout] flux dans Adob
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---

@@ -4,7 +4,7 @@ description: Les facettes de recherche en direct utilisent plusieurs dimensions 
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---

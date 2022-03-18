@@ -4,8 +4,8 @@ description: L’administrateur permet de respecter une commande à l’aide de 
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

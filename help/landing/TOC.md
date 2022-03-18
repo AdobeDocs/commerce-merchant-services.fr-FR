@@ -4,7 +4,7 @@ user-guide-description: Documentation et ressources pour les services hébergés
 title: Services pour Adobe Commerce
 source-git-commit: 2f64ddf30cb9bcd5d2d05b37fbe601f9bfe8e84b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '71'
 ht-degree: 0%
 
 ---
