@@ -3,20 +3,22 @@ user-guide-title: Guide de recherche en direct
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de la recherche en direct à partir d’Adobe Commerce.
 breadcrumb-title: Guide de recherche en direct
 hide: true
-source-git-commit: b4310f95a038022e377158bca77f5fa9eaf05078
+source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '90'
+ht-degree: 2%
 
 ---
 
 # Recherche en direct dans Commerce {#live-search}
 
-- [Guide de recherche en direct](overview.md)
-- Prise en main {#getting-started}
-   - [Installer](install.md)
-   - [Notes de mise à jour](release-notes.md)
-- Live Search Storefront{#live-search-storefront}
+- [Présentation du guide](guide-overview.md)
+- [Présentation de la recherche en direct](overview.md)
+- [Notes de mise à jour](release-notes.md)
+- Recherche en direct intégrée {#onboard}
+   - [Présentation de l’intégration](onboarding-overview.md)
+   - [Installer la recherche en direct](install.md)
+- Live Search Storefront {#live-search-storefront}
    - [Présentation rapide](quick-tour.md)
    - [Fenêtre contextuelle Storefront](storefront-popover.md)
    - [Style des éléments contextuels](storefront-popover-styling.md)

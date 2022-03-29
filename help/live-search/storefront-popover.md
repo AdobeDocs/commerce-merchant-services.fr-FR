@@ -2,9 +2,9 @@
 title: Fenêtre contextuelle Storefront
 description: La fenêtre contextuelle de recherche en direct renvoie dynamiquement les produits suggérés et les miniatures.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,15 @@ Les attributs suivants peuvent toujours faire l’objet de recherches :
 * `categories`
 
 ![Fenêtre contextuelle de recherche en direct](assets/storefront-search-as-you-type.png)
+
+## Taille de page de fenêtre contextuelle
+
+La taille de page de la fenêtre contextuelle détermine le nombre de lignes de produits auto-complétés pouvant être renvoyées. Auparavant, la taille de la page était codée en dur comme six lignes. Toutefois, la variable `page_size` est désormais un paramètre qui peut être configuré à partir de la variable *Administration*. Au cours de l’installation de Live Search, la variable `page_size` change en fonction de la valeur actuelle de la variable [Recherche catalogue](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` .
+
+Par défaut, la valeur Recherche catalogue - Limite de saisie automatique est définie sur huit lignes (ou lignes). Pour modifier la taille de page de la fenêtre contextuelle, procédez comme suit :
+
+1. Sur le *Administration* barre latérale, accédez à **Magasins** > Paramètres > **Configuration**.
+1. Dans le panneau de gauche, développez **Catalogue** et choisissez **Catalogue** dans la liste des paramètres.
+1. Développez l’objet *Recherche catalogue* .
+1. Définissez la variable **Limite de saisie automatique** au nombre de lignes que vous souhaitez autoriser dans la fenêtre contextuelle.
+1. Une fois l’opération terminée, cliquez sur **Enregistrer la configuration**.

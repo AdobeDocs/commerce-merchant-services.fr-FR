@@ -2,10 +2,10 @@
 title: Notes de mise à jour de Live Search
 description: Informations les plus récentes sur la recherche en direct dans Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '653'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,19 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Live Searc
 * ![Nouveau](../assets/new.svg) - Nouvelles fonctionnalités
 * ![Correction](../assets/fix.svg) - Correctifs et améliorations
 * ![Bogue](../assets/bug.svg) - Problèmes connus
+
+## [!DNL Live Search] 2,0
+
+* Compatible avec Adobe Commerce (EE) : 2.4.x
+* Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
+* Stabilité : Stable
+
+* ![Nouveau](../assets/new.svg) - Le nombre de lignes disponibles dans la variable [storefront popover](quick-tour.md) peut être configuré à partir du *Administration*.
+* ![Nouveau](../assets/new.svg) - Bêta [PWA](https://developer.adobe.com/commerce/pwa-studio/) pour la recherche en direct.
+* ![Nouveau](../assets/new.svg) - Le processus d’installation de Live Search est mis à jour avec des modifications avancées du processus.
+* ![Correction](../assets/fix.svg) - [Recherche avancée](https://docs.magento.com/user-guide/catalog/search-advanced.html) lien supprimé du pied de page du storefront.
+* ![Bogue](../assets/bug.svg) - Les attributs de produit suivants ne sont pas pris en charge par [API GraphQL du Magento](https://devdocs.magento.com/guides/v2.4/graphql) lorsqu’elle est utilisée en rapport avec la version bêta de PWA : `description`, `name`, `short_description`
+* ![Bogue](../assets/bug.svg) - La version bêta de PWA pour Live Search ne prend pas en charge [gestion des événements](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 
@@ -47,7 +60,7 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Live Searc
 * Stabilité : Stable
 
 * ![Nouveau](../assets/new.svg) - Storefront [fenêtre contextuelle](storefront-popover.md) affiche les produits suggérés et les images miniatures des principaux résultats de recherche sous la forme de requêtes de type shoppers dans la zone de recherche.
-* ![Nouveau](../assets/new.svg) - La session d’administrateur Commerce reste ouverte pendant les longues périodes d’inactivité du clavier.
+* ![Nouveau](../assets/new.svg) - Commerce *Administration* la session reste ouverte pendant les longues périodes d’inactivité du clavier ;
 * ![Nouveau](../assets/new.svg) - [!DNL Live Search] est activé automatiquement après l’intégration
 * ![Correction](../assets/fix.svg) - Le temps d’indexation initial est inférieur à une heure
 * ![Correction](../assets/fix.svg) - Mises à jour incrémentielles des produits quasiment en temps réel (après installation et configuration)
