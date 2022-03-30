@@ -2,11 +2,10 @@
 user-guide-title: Guide de recherche en direct
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de la recherche en direct à partir d’Adobe Commerce.
 breadcrumb-title: Guide de recherche en direct
-hide: true
-source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
+source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
