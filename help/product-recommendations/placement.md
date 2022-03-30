@@ -1,9 +1,9 @@
 ---
 title: Placement et libellés
 description: Découvrez où placer des recommandations sur différentes pages de votre site et des suggestions pour les étiquettes fréquemment utilisées pour chaque type de recommandation.
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 Avec autant de types de recommandations parmi lesquels choisir, que devez-vous utiliser sur chaque page ? Si vous ne savez pas par où commencer, essayez les méthodes suivantes :
 
-|Page d’accueil|`Recommended for you`| |Page de produit|`Viewed this, viewed that`| |Panier|`Bought this, bought that`|
+| Page | Type de recommandation |
+|---|---|
+| Page d’accueil | `Recommended for you` |
+| Page de produit | `Viewed this, viewed that` |
+| Panier | `Bought this, bought that` |
 
 Vous pouvez effectuer le suivi de la variable [mesures](workspace.md) et s’ajuster si nécessaire. Rappelez-vous que l&#39;expérimentation est la clé.
 
