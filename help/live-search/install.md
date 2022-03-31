@@ -2,9 +2,9 @@
 title: Installer la recherche en direct
 description: Découvrez comment installer, mettre à jour et désinstaller Live Search à partir d’Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Dans ce scénario, les opérations de storefront sont interrompues pendant que l
 
 1. Configurez [Clés API](#configure-api-keys) et vérifier que les données de votre catalogue sont [synchronisé](#synchronize-catalog-data) avec [!DNL Live Search] services.
 
-1. Pour rendre les facettes disponibles en tant que filtres dans le storefront, ajoutez le [facettes](https://docs.magento.com/user-guide/live-search/facets-add.html) vous avez besoin, selon les [configuration requise](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Pour rendre les facettes disponibles en tant que filtres dans le storefront, ajoutez le [facettes](facets-add.md) vous avez besoin, selon les [configuration requise](facets.md).
 
    Vous devriez être en mesure d’ajouter des facettes après `cron` exécute les flux d’attributs et exporte les métadonnées d’attribut.
 
@@ -123,7 +123,7 @@ Dans ce scénario, [!DNL Elasticsearch] gère temporairement les requêtes de re
 
 1. Configurez [Clés API](#configure-api-keys) et vérifier que les données de votre catalogue sont [synchronisé](#synchronize-catalog-data) avec [!DNL Live Search] services.
 
-1. Pour rendre les facettes disponibles en tant que filtres dans le storefront, ajoutez le [facettes](https://docs.magento.com/user-guide/live-search/facets-add.html) vous avez besoin, selon les [configuration requise](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Pour rendre les facettes disponibles en tant que filtres dans le storefront, ajoutez le [facettes](facets-add.md) vous avez besoin, selon les [configuration requise](facets.md).
 
    Vous devriez être en mesure d’ajouter des facettes après `cron` exécute les flux de produit et d’attribut et exporte les métadonnées d’attribut vers [!DNL Live Search] services.
 
@@ -177,7 +177,7 @@ Pour obtenir une aide supplémentaire, reportez-vous à la section [[!DNL Live S
 
 ### Futures mises à jour des produits
 
-Après la synchronisation initiale, il peut s’écouler jusqu’à quinze minutes avant que les mises à jour incrémentielles des produits ne soient disponibles pour la recherche storefront. Pour en savoir plus, accédez à [Mises à jour de produit en flux continu](https://devdocs.magento.com/live-search/indexing.html).
+Après la synchronisation initiale, il peut s’écouler jusqu’à quinze minutes avant que les mises à jour incrémentielles des produits ne soient disponibles pour la recherche storefront. Pour en savoir plus, accédez à [Mises à jour de produit en flux continu](indexing.md).
 
 ## Tester la connexion {#test-connection}
 

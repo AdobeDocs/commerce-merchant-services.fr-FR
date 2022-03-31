@@ -2,9 +2,9 @@
 title: Notes de mise à jour de Live Search
 description: Informations les plus récentes sur la recherche en direct dans Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Live Searc
 * Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
 * Stabilité : Stable
 
-* ![Nouveau](../assets/new.svg) - [Performances](https://docs.magento.com/user-guide/live-search/performance.html) le tableau de bord des rapports fournit des informations sur les termes de recherche que les acheteurs utilisent.
+* ![Nouveau](../assets/new.svg) - [Performances](performance.md) le tableau de bord des rapports fournit des informations sur les termes de recherche que les acheteurs utilisent.
 * ![Nouveau](../assets/new.svg) - [!DNL Live Search] [SDK des événements Storefront](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) permet d’accéder à une couche de données commune avec des services de publication et d’abonnement d’événements, ainsi que des mesures.
 * ![Correction](../assets/fix.svg) - Le [Fenêtre contextuelle Storefront](https://devdocs.magento.com/live-search/storefront-popover.html) comporte une nouvelle `active` pour la classe `.search-autocomplete` conteneur contrôlant la visibilité.
 * ![Correction](../assets/fix.svg) - Sur le storefront, le [Termes de recherche](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) lien de pied de page supprimé et son cache désactivé pour [!DNL Live Search] installations.
