@@ -2,10 +2,10 @@
 title: '"[!DNL Payment Services] Notes de mise à jour"'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: eb8fdba65b4b64730d0ad4fa6e0c9b64bdadc7df
+source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '553'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,42 @@ Ces notes de mise à jour décrivent la version initiale de [!DNL Payment Servic
 ![Nouveau](../assets/new.svg) Nouvelles fonctionnalités
 ![Correction d’un problème](../assets/fix.svg) Correctifs et améliorations
 ![Problème connu](../assets/bug.svg) Problèmes connus
+
+## v1.1.0
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) est désormais compatible avec Adobe Commerce et Magento Open Source versions 2.4.0 à 2.4.4.
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-2682 --> Le [!DNL Payment Services] l’extension pour Adobe Commerce et Magento Open Source est disponible pour les commerçants canadiens. Les vendeurs peuvent afficher la configuration des paiements dans l’une des [Français](overview.md?lang=fr) ou [Anglais](overview.md?lang=en).
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] prend en charge [Dollars canadiens (CAD)](overview.md#accepted-credit-cards-and-currencies) avec Carte de crédit et Paypal. Les acheteurs peuvent avoir une expérience d’achat dans la langue de leur choix, en fonction des paramètres régionaux de la boutique dans laquelle ils font leurs achats.
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-2680 --> Les commerçants peuvent [onboard [!DNL Payment Services]](onboard.md) dans la langue de leur choix.
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-2678 --> Les vendeurs peuvent désormais afficher [rapports financiers](order-payment-status.md) en dollars canadiens (CAD).
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] est désormais compatible avec [PHP 8.1](https://www.php.net/releases/8.1/en.php).
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3035 --> Amélioration du passage en caisse d’administration pour le [!DNL Payment Services] extension .
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3017 --> Amélioration de l’alerte du mode sandbox pour afficher les alertes appropriées avec plusieurs magasins.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2742 --> [!DNL Payment Services] permet d’activer/désactiver les méthodes de paiement disponibles, telles que Venmo, au niveau de l’aperçu.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2277 --> Amélioration de la capacité du commerçant dans l’administrateur de désactiver/activer sélectivement les boutons intelligents PayPal.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2561 --> Les produits précédemment supprimés n’apparaissent pas dans le panier sur la page _Ordre de révision_ page.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] améliore les libellés des modes de paiement dans l’Admin.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2907 --> Amélioration de la collecte des données de transaction afin d’utiliser au mieux les règles de fraude et la protection contre les rebonds.
+
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-2473 --> Utilisation [clés de compositeur incorrectes](https://support.magento.com/hc/en-us/articles/4406603542541) lors de l’installation de l’extension empêche l’utilisateur de [authentifier](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) avec correct `MAGEID`.
+
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] [rapports](https://support.magento.com/hc/en-us/articles/4406114741517) pour l’état de paiement des paiements et des commandes, il se peut que la synchronisation ne se produise pas immédiatement.
+
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-2475 --> [Compte sandbox PayPal](https://support.magento.com/hc/en-us/articles/4406954952461) pour [!DNL Payment Services] ne peut pas être vérifié si le compte est créé lors de l’intégration.
+
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-2842 --> [Échec du test de la carte de crédit](https://support.magento.com/hc/en-us/articles/4406954952461) avec PayPal lors du traitement des paiements dans un environnement Sandbox.
 
 ## v1.0.0
 
