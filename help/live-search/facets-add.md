@@ -2,7 +2,7 @@
 title: Ajout de facettes
 description: Découvrez comment ajouter des attributs de produit filtrables en tant que facettes de recherche en direct.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ La facette est ajoutée au bas de la *Facettes dynamiques* et la liste *Publier 
 
 ## Étape 2 : Modification des propriétés de facette (facultatif)
 
-1. Pour modifier les propriétés de la facette, cliquez sur **Plus** (![Sélecteur supplémentaire](assets/btn-more.png) dans la colonne extrême droite.
+1. Pour modifier les propriétés de la facette, cliquez sur **Plus** (![Sélecteur supplémentaire](assets/btn-more.png)) dans la colonne extrême droite.
 1. Dans le menu, cliquez sur **Modifier**. Ensuite, ajustez les propriétés suivantes si nécessaire.
 
    * Libellé - ([Headless](facets-type.md) uniquement) Saisissez le libellé de la facette à utiliser.

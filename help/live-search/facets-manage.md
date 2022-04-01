@@ -2,7 +2,7 @@
 title: Gestion des facettes
 description: Découvrez comment gérer les facettes de recherche en direct existantes.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -56,19 +56,19 @@ Vos modifications n’apparaîtront sur le storefront qu’après leur publicati
 
 L’épingle change de couleur lorsque l’utilisateur clique dessus. Elle est utilisée pour déplacer la facette vers l’une des options suivantes : *Facettes épinglées* ou le *Facettes dynamiques* .
 
-1. Pour épingler une facette en haut de la page *Filtres* recherchez la facette dans la liste *Facettes dynamiques* et cliquez sur la épingle grise (![Sélecteur d’épingles](assets/btn-pin-gray.png).
+1. Pour épingler une facette en haut de la page *Filtres* recherchez la facette dans la liste *Facettes dynamiques* et cliquez sur la épingle grise (![Sélecteur d’épingles](assets/btn-pin-gray.png)).
 L’épingle devient bleue et la facette se déplace vers le *Facettes épinglées* .
-1. Pour dissocier une facette, recherchez-la dans la variable *Facettes épinglées* et cliquez sur l’épingle bleue (![Sélecteur d’épingles](assets/btn-pin-blue.png).
+1. Pour dissocier une facette, recherchez-la dans la variable *Facettes épinglées* et cliquez sur l’épingle bleue (![Sélecteur d’épingles](assets/btn-pin-blue.png)).
 La broche devient grise et la facette passe à la fenêtre *Facettes dynamiques* .
 
    ![Facettes Pinces et dynamiques](assets/facets-pinned-unpinned.png)
 
 ## Déplacer la facette épinglée
 
-Vous pouvez modifier l’ordre des facettes épinglées en déplaçant la rangée vers une autre position. Les facettes pincées ont une *Déplacer* Icône (![Sélecteur de déplacement](assets/btn-move.png) au début de la ligne. Contrairement aux facettes épinglées, les facettes dynamiques ne peuvent pas être déplacées.
+Vous pouvez modifier l’ordre des facettes épinglées en déplaçant la rangée vers une autre position. Les facettes pincées ont une *Déplacer* Icône (![Sélecteur de déplacement](assets/btn-move.png)) au début de la ligne. Contrairement aux facettes épinglées, les facettes dynamiques ne peuvent pas être déplacées.
 
 1. Recherchez la facette dans le *Facettes épinglées* de la liste.
-1. Utilisez la variable **Déplacer** (![Sélecteur de déplacement](assets/btn-move.png) pour faire glisser la rangée vers un nouvel emplacement dans la *Facettes épinglées* .
+1. Utilisez la variable **Déplacer** (![Sélecteur de déplacement](assets/btn-move.png)) pour faire glisser la rangée vers un nouvel emplacement dans le *Facettes épinglées* .
 Une fois les modifications publiées, les facettes réorganisées apparaissent dans le storefront. *Filtres* liste.
 
 ## Suppression de la facette

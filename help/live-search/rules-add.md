@@ -2,9 +2,9 @@
 title: Ajout de règles
 description: Découvrez comment créer des règles de recherche en direct.
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Une règle peut comporter jusqu’à 10 conditions. L’opérateur logique qui r
    * Tous : tous les opérateurs logiques de la règle sont définis sur `AND` et les résultats apparaissent dans le volet test.
 
    Le *Correspondance* détermine l’opérateur logique utilisé pour joindre plusieurs conditions. Changement de la variable *Correspondance* modifie tous les opérateurs logiques de la règle. Il n’est pas possible de combiner des `AND` et `OR` dans la même règle.
-Dans cet exemple, plutôt que de rechercher &quot;pantalon de yoga&quot;, il existe deux requêtes distinctes qui recherchent &quot;yoga&quot; ou &quot;pantalon&quot;. Cette règle est moins spécifique et sera déclenchée plus souvent dans le storefront que l’autre.
+
+   Dans cet exemple, plutôt que de rechercher &quot;pantalon de yoga&quot;, il existe deux requêtes distinctes qui recherchent &quot;yoga&quot; ou &quot;pantalon&quot;. Cette règle est moins spécifique et sera déclenchée plus souvent dans le storefront que l’autre.
 
    ![Règles - Correspondance](assets/rules-match.png)
 
@@ -74,10 +75,11 @@ Dans cet exemple, plutôt que de rechercher &quot;pantalon de yoga&quot;, il exi
 
 ## Étape 3 : Ajouter un ou plusieurs événements
 
-Les événements sont des actions qui modifient les résultats de la recherche lorsque la ou les conditions sont remplies. Une seule règle peut comporter jusqu’à vingt-cinq événements.
+Les événements sont des actions qui modifient les résultats de la recherche lorsque la ou les conditions sont remplies. Une seule règle peut comporter jusqu’à 25 événements.
 
 1. Sous *Événements*, choisissez la variable **Événement** à se produire lorsque la ou les conditions associées sont remplies.
-Par exemple, choisissez `Pin a product`. Saisissez ensuite le nom du produit à épingler. Si vous avez besoin d’aide, vous pouvez trouver le nom dans le volet de test.
+
+   Par exemple, choisissez `Pin a product`. Saisissez ensuite le nom du produit à épingler. Si vous avez besoin d’aide, vous pouvez trouver le nom dans le volet de test.
 Ensuite, saisissez le *Position* où le produit épinglé doit apparaître. Le produit est déplacé vers la nouvelle position dans le volet de test et est marqué d’une mention *Pindu* badge aperçu.
 
    ![Règles - Correspondance](assets/rule-event-pin-product.png)
@@ -108,8 +110,11 @@ Les informations saisies ici apparaissent dans le [Détails de la règle](rules-
 
 ## Étape 6 : Enregistrer et publier
 
-Une fois l’opération terminée, cliquez sur **Enregistrer et publier**.
-La règle est ajoutée à la liste dans l’espace de travail des règles. Bien que les principales règles entrent immédiatement en vigueur, l’actualisation des résultats de requête mis en cache dans le storefront peut prendre jusqu’à quinze minutes.
+1. Une fois l’opération terminée, cliquez sur **Enregistrer et publier**.
+
+   La règle est ajoutée à la liste dans l’espace de travail des règles.
+
+1. Bien que les principales règles entrent immédiatement en vigueur, vous devrez peut-être attendre jusqu’à 15 minutes que les résultats de la requête mise en cache dans le storefront soient actualisés.
 
 ## Descriptions des champs
 

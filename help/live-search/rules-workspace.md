@@ -2,9 +2,9 @@
 title: Espace de travail des règles
 description: Découvrez comment contourner l’espace de travail Règles de recherche en direct .
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Vous pouvez effectuer l’une des opérations suivantes à partir du panneau Aff
 
 | Contrôle | Description |
 |--- |--- |
-| Ajouter une règle | Ouvre la [éditeur de règles]({% lien live-search/rules-add.md %}). |
+| Ajouter une règle | Ouvre la [éditeur de règles](rules-add.md). |
 | État | Filtre la liste des règles par statut. Options : Tout, Principal, Inactif, Planifié |
 | ![Sélecteur de colonnes](assets/btn-show-hide-columns.png) | Spécifie les colonnes visibles dans la grille. Options : Dernière mise à jour, Date de début, Date de fin, État |
 | Rechercher | Recherche une règle par nom complet ou correspondance partielle. |

@@ -2,9 +2,9 @@
 title: Fenêtre contextuelle Storefront
 description: La fenêtre contextuelle de recherche en direct renvoie dynamiquement les produits suggérés et les miniatures.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ When [!DNL Live Search] is [installé](install.md), une fenêtre contextuelle s�
 
 >[!NOTE]
 >
->Le [!DNL Live Search] storefront apparaît uniquement pour les magasins qui utilisent la variable *Luma* ou un thème personnalisé basé sur *Luma*. Le *Luma* est inclus dans la variable [!DNL Commerce] données d’exemple. La fenêtre contextuelle ne prend pas en charge la variable *Vide* thème. Voir [Utilisation d’un thème modifié](#working-with-modified-theme) pour plus d’informations.
+>Le [!DNL Live Search] storefront apparaît uniquement pour les magasins qui utilisent la variable *Luma* ou un thème personnalisé basé sur *Luma*. Le *Luma* est inclus dans la variable [!DNL Commerce] données d’exemple. La fenêtre contextuelle ne prend pas en charge la variable *Vide* thème. Voir [Style des éléments contextuels](storefront-popover-styling.md) pour en savoir plus.
 
 ## Attributs pouvant faire l’objet d’une recherche
 

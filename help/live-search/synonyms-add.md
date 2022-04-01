@@ -2,9 +2,9 @@
 title: Ajouter des Synonymes
 description: Ajoutez des synonymes de recherche en direct afin d’améliorer la réponse aux requêtes de recherche.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ L’ensemble de synonymes apparaît dans la liste avec une flèche à sens uniqu
 
 ## Étape 3 : Publier les modifications
 
-Une fois le ou les synonymes terminés, cliquez sur **Publier les modifications**.
-La disponibilité de vos mises à jour dans le storefront peut prendre jusqu’à deux heures.
+1. Une fois le ou les synonymes terminés, cliquez sur **Publier les modifications**.
+1. Patientez jusqu’à deux heures pour que vos mises à jour soient disponibles dans le storefront.
 
 ![Publier les modifications](assets/synonym-publish.png)
 

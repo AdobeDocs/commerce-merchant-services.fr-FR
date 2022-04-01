@@ -2,9 +2,9 @@
 title: Installer la recherche en direct
 description: Découvrez comment installer, mettre à jour et désinstaller Live Search à partir d’Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Live Search est installé en tant qu’extension à partir d’Adobe Marketplace
 
 Cette rubrique fournit des instructions pour effectuer les opérations suivantes :
 
-* [Installer [!DNL Live Search]](#before-you-begin) (Méthodes 1 et 2)
+* Installer [!DNL Live Search] (Méthodes 1 et 2)
 * [Mettre à jour [!DNL Live Search]](#update)
 * [Désinstaller [!DNL Live Search]](#uninstall)
 
@@ -150,15 +150,15 @@ Dans ce scénario, [!DNL Elasticsearch] gère temporairement les requêtes de re
 
 ## Configuration des clés d’API {#configure-api-keys}
 
-La clé d’API Adobe Commerce et sa clé privée associée sont nécessaires pour se connecter. [!DNL Live Search] à une installation d’Adobe Commerce. La clé API est générée et conservée dans le compte de la variable [!DNL Commerce] titulaire de la licence, qui peut la partager avec le développeur ou l’instance SI. Le développeur peut ensuite créer et gérer les espaces de données SaaS pour le compte du détenteur de licence.
+La clé d’API Adobe Commerce et sa clé privée associée sont nécessaires pour se connecter. [!DNL Live Search] à une installation d’Adobe Commerce. La clé API est générée et conservée dans le compte de la variable [!DNL Commerce] titulaire de la licence, qui peut la partager avec le développeur ou l’instance SI. Le développeur peut ensuite créer et gérer les espaces de données SaaS pour le compte du détenteur de licence.  Si vous disposez déjà d’un ensemble de clés d’API, vous n’avez pas besoin de les régénérer.
 
 ### détenteur d’une licence Adobe Commerce
 
-Pour générer une clé API et une clé privée, reportez-vous à la section [Connecteur Commerce Services](https://docs.magento.com/user-guide/system/saas.html).
+Pour générer une clé API et une clé privée, reportez-vous à la section [Connecteur Commerce Services](../landing/saas.md).
 
 ### Développeur Adobe Commerce ou SI
 
-Le développeur ou SI configure l’espace de données SaaS comme décrit dans la section Commerce Services de la configuration. Dans le *Administration*, Commerce Services devient disponible dans la barre latérale Configuration lorsqu’un module SaaS est installé.
+Le développeur ou l’ID configure l’espace de données SaaS comme décrit dans la section *Services de commerce* de la configuration. Dans le *Administration*, Commerce Services devient disponible dans le *Configuration* barre latérale lorsqu’un module SaaS est installé.
 
 ## Synchronisation des données de catalogue {#synchronize-catalog-data}
 
@@ -177,7 +177,7 @@ Pour obtenir une aide supplémentaire, reportez-vous à la section [[!DNL Live S
 
 ### Futures mises à jour des produits
 
-Après la synchronisation initiale, il peut s’écouler jusqu’à quinze minutes avant que les mises à jour incrémentielles des produits ne soient disponibles pour la recherche storefront. Pour en savoir plus, accédez à [Mises à jour de produit en flux continu](indexing.md).
+Après la synchronisation initiale, il peut s’écouler jusqu’à quinze minutes avant que les mises à jour incrémentielles des produits ne soient disponibles pour la recherche storefront. Pour en savoir plus, accédez à [Indexation - Mises à jour des produits en flux continu](indexing.md).
 
 ## Tester la connexion {#test-connection}
 
