@@ -4,9 +4,9 @@ description: Connexion de votre instance à [!DNL Payment Services] en suivant q
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -59,3 +59,4 @@ Pour savoir comment créer des clés d’API ou y accéder, voir [Informations d
 * [Résolution des problèmes [!DNL Payment Services] installation](https://support.magento.com/hc/en-us/articles/4406603542541)
 * [Compte sandbox PayPal non vérifié](https://support.magento.com/hc/en-us/articles/4406954952461)
 * [Retardé [!DNL Payment Services] données de rapport](https://support.magento.com/hc/en-us/articles/4406114741517)
+* [Échec du test de la carte de crédit avec PayPal lors du traitement des paiements dans un environnement Sandbox](https://support.magento.com/hc/en-us/articles/5201041963917)

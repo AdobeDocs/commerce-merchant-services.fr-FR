@@ -2,10 +2,10 @@
 title: '"[!DNL Payment Services] Notes de mise à jour"'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '555'
+ht-degree: 1%
 
 ---
 
@@ -42,8 +42,6 @@ Ces notes de mise à jour décrivent la version initiale de [!DNL Payment Servic
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2561 --> Les produits précédemment supprimés n’apparaissent pas dans le panier sur la page _Ordre de révision_ page.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] améliore les libellés des modes de paiement dans l’Admin.
-
-![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2907 --> Amélioration de la collecte des données de transaction afin d’utiliser au mieux les règles de fraude et la protection contre les rebonds.
 
 ![Problème connu](../assets/bug.svg)<!-- Issue PAY-2473 --> Utilisation [clés de compositeur incorrectes](https://support.magento.com/hc/en-us/articles/4406603542541) lors de l’installation de l’extension empêche l’utilisateur de [authentifier](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) avec correct `MAGEID`.
 
