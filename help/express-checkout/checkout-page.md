@@ -2,7 +2,7 @@
 title: Page Passage en caisse
 description: Présentation de la page de passage en caisse dans Adobe Commerce.
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -19,7 +19,7 @@ La page de passage en caisse permet aux clients de saisir les informations requi
 
 Exemple de page de passage en caisse :
 
-![Page Passage en caisse](../assets/checkout-page.png)
+![Page Passage en caisse](assets/checkout-page.png)
 
 Pour plus d’informations sur la page de passage en caisse standard d’Adobe Commerce, reportez-vous à la section [page de passage en caisse](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) rubrique.
 

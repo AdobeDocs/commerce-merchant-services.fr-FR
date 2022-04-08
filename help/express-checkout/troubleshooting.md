@@ -2,9 +2,9 @@
 title: Résolution des problèmes liés à [!DNL Express Checkout]
 description: Dépannage des erreurs, problèmes connus que vous pouvez rencontrer lors de l’utilisation de la variable [!DNL Express Checkout] pour l’extension Adobe Commerce.
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -95,9 +95,9 @@ Adobe Commerce peut généralement être configuré pour prendre en charge jusqu
 
 Il existe un problème connu pour le [!DNL Express Checkout].
 
-Lorsque vous activez la variable `Enable terms and conditions` et [connexion avec un compte Bolt](https://help.bolt.com/shoppers/guides/checkout/log-in/), la case à cocher n’est pas affichée.
+Lorsque vous activez la variable `Enable terms and conditions` dans l’administrateur et connectez-vous avec un [!DNL Bolt] , `Enable terms and conditions` ne s’affiche pas pendant la passage en caisse. Reportez-vous à la section [connexion](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] pour plus d’informations.
 
-Voir [conditions générales](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) pour plus d’informations.
+Voir [conditions générales](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) pour plus d’informations sur la configuration de l’administrateur.
 
 ## Comportement inattendu lorsque `Display Billing Address On` est défini sur `payment page`
 
@@ -105,7 +105,7 @@ Il existe un problème connu pour le [!DNL Express Checkout].
 
 Si vous définissez la variable `Display Billing Address On` du paramètre `payment page` et [connexion avec un compte Bolt](https://help.bolt.com/shoppers/guides/checkout/log-in/) lorsque vous cochez la variable `My billing and shipping address are the same` case à cocher :
 
-![Même adresse](../assets/checked-address.png)
+![Même adresse](assets/checked-address.png)
 
 Bouton radio `use existing card`.
 
@@ -119,4 +119,4 @@ Reportez-vous à la section [traduction et localisation](https://devdocs.magento
 
 ## Obtenir de l’aide
 
-Contactez l’assistance d’Adobe Commerce pour obtenir de l’aide ou des questions supplémentaires.
+Contactez l’assistance d’Adobe Commerce pour toute assistance.

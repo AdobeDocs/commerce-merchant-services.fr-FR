@@ -2,9 +2,9 @@
 title: Test de la variable [!DNL Express Checkout] pour l’extension Adobe Commerce
 description: Le test et la validation garantissent que la variable [!DNL Express Checkout] fonctionne comme prévu.
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Test de la variable [!DNL Express Checkout] dans un environnement de test est un
 
 ### Utilisation d’un compte sandbox
 
-Lorsque vous testez et validez votre environnement de test, vous devez utiliser un faux numéro de carte de crédit et une [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} compte marchand en Bolt, de sorte que vous ne créiez pas de frais réels pour un compte de carte de crédit existant.
+Lorsque vous testez et validez votre environnement de test, vous devez utiliser un faux numéro de carte de crédit et une [sandbox](https://merchant-sandbox.bolt.com/register)compte commercial {target=&quot;_blank&quot;} dans [!DNL Bolt], afin que vous ne créiez pas de frais réels pour un compte de carte de crédit existant.
 
 ## Test en production
 
@@ -48,7 +48,7 @@ Effectuez un passage en caisse réussi à partir de votre boutique en procédant
 
 1. Positionnez-vous sur votre vitrine et placez les articles de votre choix dans votre panier.
 1. Passez à la caisse.
-1. Entrez une adresse électronique associée à un compte de contrôle lorsque vous y êtes invité.
+1. Entrez une adresse électronique associée à un [!DNL Bolt] Tenez compte de l’invitation.
 1. Saisissez le mot de passe unique (OTP) envoyé à l’adresse électronique du compte.
 1. Sélectionnez le tableau de bord de l&#39;environnement :
 

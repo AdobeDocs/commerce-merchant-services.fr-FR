@@ -2,9 +2,9 @@
 title: Flux de passage en caisse
 description: Présentation de la variable [!DNL Express Checkout] flux dans Adobe Commerce.
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Une réussite [!DNL Express Checkout] Le flux se compose des étapes suivantes :
 1. Ouvrez votre storefront et ajoutez des éléments dans votre panier.
 1. Passez à la caisse.
 
-![Passage en caisse](../assets/proceed-checkout.png)
+![Passage en caisse](assets/proceed-checkout.png)
 
-1. Lorsque vous y êtes invité, saisissez une adresse électronique associée à un compte Bolt.
-1. Saisissez le mot de passe unique (OTP) envoyé à l’adresse électronique ou au numéro de téléphone de ce compte Bolt.
-1. Une fois connecté à votre compte Bolt, les détails de passage en caisse sont automatiquement renseignés :
+1. Lorsque vous y êtes invité, saisissez une adresse électronique associée à un événement [!DNL Bolt] compte .
+1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique ou numéro de téléphone du compte.
+1. Une fois connecté avec votre [!DNL Bolt] compte, les détails du passage en caisse sont automatiquement renseignés :
 
    - Informations d’expédition
    - Mode de paiement
@@ -43,20 +43,20 @@ Le [!DNL Express Checkout] est compatible avec les options de passage en caisse 
 
 Le [!DNL Express Checkout] permet plusieurs cas d’utilisation lors d’un flux de passage en caisse :
 
-- Utilisateur invité avec un compte Bolt enregistré.
-- Utilisateur invité avec un nouveau compte Bolt.
-- Un utilisateur Adobe Commerce existant avec ou sans compte Bolt enregistré.
+- Utilisateur invité avec un enregistré [!DNL Bolt] compte .
+- Utilisateur invité avec un nouveau [!DNL Bolt] compte .
+- Un utilisateur Adobe Commerce existant avec/sans enregistrement [!DNL Bolt] compte .
 
 ## Passage en caisse des utilisateurs invités : Fonctionnement
 
-L’expérience de passage en caisse des invités est différente de l’expérience de connexion. Lorsqu’un acheteur entre une adresse électronique dans un passage en caisse, la variable [!DNL Express Checkout] le valide pour trouver un compte Bolt existant.
+L’expérience de passage en caisse des invités est différente de l’expérience de connexion. Lorsqu’un acheteur entre une adresse électronique dans un passage en caisse, la variable [!DNL Express Checkout] valide la recherche d’un [!DNL Bolt] compte .
 
-### Compte de Bolt enregistré
+### Inscrits [!DNL Bolt] account
 
-Si un compte Bolt est trouvé, les acheteurs continuent avec leurs [!DNL Express Checkout] passage en caisse transparent :
+Si une [!DNL Bolt] compte trouvé, les acheteurs continuent avec leurs [!DNL Express Checkout] passage en caisse transparent :
 
-1. Saisissez le mot de passe unique (OTP) envoyé à l’adresse électronique ou au mobile de ce compte Bolt, en fonction des préférences de l’utilisateur dans le compte Bolt.
-1. Une fois connecté avec votre compte Bolt, il remplit automatiquement les détails de passage en caisse :
+1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique du compte ou mobile, selon les préférences de l’utilisateur dans la variable [!DNL Bolt] compte .
+1. Une fois connecté avec votre [!DNL Bolt] , il remplit automatiquement les détails du passage en caisse :
 
    - Informations d’expédition
    - Mode de paiement
@@ -67,16 +67,16 @@ Si un compte Bolt est trouvé, les acheteurs continuent avec leurs [!DNL Express
 >
 > L’utilisateur invité place la commande et peut s’enregistrer dans Adobe Commerce.
 
-### Nouveau compte Bolt
+### Nouveau [!DNL Bolt] account
 
-Si aucun compte Bolt n’est trouvé, les acheteurs continuent leur passage en caisse Adobe Commerce par défaut et l’acheteur fournit tous les détails nécessaires pour passer commande :
+Si non [!DNL Bolt] est trouvé, les clients continuent de passer en caisse Adobe Commerce par défaut et shopper fournit tous les détails nécessaires pour passer commande :
 
 - Informations sur l’expédition et la facturation
 - Mode de livraison
 - Vérification du mode de paiement
-- Une case à cocher s’affiche dans Bolt pour les passages en caisse plus rapides avant de passer la commande. Ils peuvent accepter les conditions générales de création de leur compte Bolt.
+- Une case à cocher s’affiche pour s’enregistrer dans [!DNL Bolt] pour des passages en caisse plus rapides avant de passer la commande. Ils peuvent accepter les conditions générales pour créer leur [!DNL Bolt] compte .
 
-   ![Mémoriser Bolt](../assets/checked-bolt.png)
+   ![Mémoriser [!DNL Bolt]](assets/checked-bolt.png)
 
 - L’utilisateur invité place la commande et peut s’enregistrer dans Adobe Commerce.
 
@@ -84,11 +84,11 @@ Si aucun compte Bolt n’est trouvé, les acheteurs continuent leur passage en c
 
 Un utilisateur existant peut sélectionner des détails existants lorsqu’un utilisateur commande avec la variable [!DNL Express Checkout] pour une expérience de passage en caisse plus rapide.
 
-Lorsqu’un acheteur entre une adresse électronique dans un passage en caisse, la variable [!DNL Express Checkout] le valide pour trouver un compte Bolt existant.
+Lorsqu’un acheteur entre une adresse électronique dans un passage en caisse, la variable [!DNL Express Checkout] valide la recherche d’un [!DNL Bolt] compte .
 
-### Compte Bolt enregistré avec un utilisateur Adobe Commerce
+### Inscrits [!DNL Bolt] compte avec un utilisateur Adobe Commerce
 
-Si un compte Bolt est trouvé, les acheteurs continuent leur passage en caisse Adobe Commerce par défaut et l’acheteur fournit tous les détails nécessaires, puis passe la commande :
+Si une [!DNL Bolt] est trouvé, les clients continuent de payer leur passage en caisse Adobe Commerce par défaut, et l’acheteur fournit tous les détails nécessaires, puis passe commande :
 
 - Informations sur l’expédition et la facturation
 - Mode de livraison
@@ -98,19 +98,19 @@ Reportez-vous à la section [dépannage](../express-checkout/troubleshooting.md)
 
 >[!NOTE]
 >
-> Si l’utilisateur dispose d’un compte Bolt et que le courrier électronique ne s’affiche pas comme enregistré dans Adobe Commerce, il déclenche la connexion au mot de passe unique (OTP). Voir [compte Bolt enregistré](#registered-bolt-account) flux.
+> Si l’utilisateur dispose d’un [!DNL Bolt] Le compte et l’e-mail n’apparaissent pas comme enregistrés dans Adobe Commerce, ils déclenchent la connexion avec mot de passe unique (OTP). Voir [registered [!DNL Bolt] account](#registered-bolt-account) flux.
 
-### Nouveau compte Bolt
+### Nouveau [!DNL Bolt] account
 
-Si aucun compte Bolt n’est trouvé, les acheteurs continuent leur passage en caisse Adobe Commerce par défaut et l’acheteur sélectionne tous les détails nécessaires à partir des informations enregistrées pour passer la commande :
+Si non [!DNL Bolt] Le compte est trouvé, les acheteurs continuent de passer en caisse Adobe Commerce par défaut et l’acheteur sélectionne tous les détails nécessaires dans les informations enregistrées pour passer la commande :
 
 - Informations sur l’expédition et la facturation
 - Mode de livraison
 - Vérification du mode de paiement
-- Une case à cocher s’affiche dans Bolt pour les passages en caisse plus rapides avant de passer la commande. Ils peuvent accepter les conditions générales de création de leur compte Bolt.
+- Une case à cocher s’affiche pour s’enregistrer dans [!DNL Bolt] pour des passages en caisse plus rapides avant de passer la commande. Ils peuvent accepter les conditions générales pour créer leur [!DNL Bolt] compte .
 
-   ![Mémoriser Bolt](../assets/checked-bolt.png)
+   ![Mémoriser [!DNL Bolt]](assets/checked-bolt.png)
 
 ## Obtenir de l’aide
 
-Contactez l’assistance d’Adobe Commerce pour toute question ou assistance.
+Contactez l’assistance d’Adobe Commerce pour toute assistance.

@@ -1,18 +1,18 @@
 ---
-title: '"[!DNL Express Checkout] modes de paiement compatibles"'
-description: Présentation du flux de passage en caisse dans Adobe Commerce.
+title: '"[!DNL Express Checkout] informations d’expédition"'
+description: Présentation du flux des détails d’expédition dans la variable [!DNL Express Checkout] pour Adobe Commerce.
 exl-id: 60faef08-7083-4175-93f2-086aa54b1614
-source-git-commit: f52bd11e4872f4a1621382f5528e2e477b2e9e48
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '62'
 ht-degree: 0%
 
 ---
 
-# [!DNL Express Checkout] modes de paiement compatibles
+# [!DNL Express Checkout] détails de livraison
 
 >[!IMPORTANT]
 >
 > Cette fonctionnalité est réservée aux utilisateurs du Programme des Adopteurs Anticipés (EAP) et n’est pas encore accessible à tous les clients. Actuellement limitée aux clients américains. Contactez l’assistance d’Adobe Commerce pour toute question ou assistance.
 
-Vérifiez les [Bouton de l’adresse de livraison](https://help.bolt.com/shoppers/guides/checkout/update-shipping-address) pour plus d’informations sur la configuration d’une adresse de livraison avec Bolt.
+Voir [informations sur les développeurs](../express-checkout/developer.md) pour plus d’informations sur les points d’extension lors de la saisie des détails d’expédition.
