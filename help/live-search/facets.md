@@ -2,16 +2,16 @@
 title: Facettes
 description: Les facettes de recherche en direct utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche.
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Facettes
 
-La facette est une méthode de filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut comme critères de recherche. La recherche à facettes est similaire, mais considérablement &quot;plus intelligente&quot; que la norme [navigation par couches](https://docs.magento.com/user-guide/catalog/navigation-layered.html). La liste des filtres disponibles est déterminée par la variable [attributs filtrables](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) des produits renvoyés dans les résultats de recherche. Vous pouvez configurer jusqu’à 100 facettes avec [!DNL Live Search].
+La facette est une méthode de filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut comme critères de recherche. La recherche à facettes est similaire, mais considérablement &quot;plus intelligente&quot; que la norme [navigation par couches](https://docs.magento.com/user-guide/catalog/navigation-layered.html). La liste des filtres disponibles est déterminée par la variable [attributs filtrables](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) des produits renvoyés dans les résultats de recherche.
 
 ![Résultats de la recherche filtrés](assets/storefront-search-results-run.png)
 
@@ -19,11 +19,24 @@ La facette est une méthode de filtrage haute performance qui utilise plusieurs 
 
 Les exigences d’attribut de catégorie et de produit pour la facette sont similaires aux attributs filtrables utilisés pour la navigation par couches. Les propriétés storefront de chaque attribut doivent être définies sur `filterable (with results)`.
 
+* Jusqu’à 100 attributs peuvent être configurés en tant que facettes avec [!DNL Live Search].
+* [!DNL Live Search] indexe jusqu’à 300 attributs sous la forme filterable/searchable/sortable et visible dans la recherche.
+
 | Paramètre | Description |
 |--- |--- |
 | [Paramètres d’affichage des catégories](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Ancre - `Yes` |
 | [Propriétés d’attribut](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Type d’entrée de catalogue](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | Propriétés Attribute storefront | Utilisation dans la navigation par couches - `Filterable (with results)` |
+
+## Valeurs d’attribut par défaut
+
+Les attributs de produit suivants ont [propriétés storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) utilisé par [!DNL Live Search] et activé par défaut.
+
+| Propriété | Propriété Storefront | Attribut |
+|---|---|---|
+| Triable | Utilisé pour le tri dans la liste des produits | `price` |
+| Searchable | Utilisation dans la recherche | `price` <br />`sku`<br />`name` |
+| FilterableInSearch | Utilisation dans la navigation par couches - Filtrable (avec résultats) | `price`<br />`visibility`<br />`category_name` |
 
 ## Propriétés d’attribut non système par défaut
 

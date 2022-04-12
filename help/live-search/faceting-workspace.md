@@ -2,14 +2,14 @@
 title: Facturation de Workspace
 description: Découvrez comment contourner l’espace de travail des facettes de recherche en direct.
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
-# Espace de travail de facette
+# Facturation de Workspace
 
 Le [!DNL Live Search] workspace répertorie toutes les facettes actuellement disponibles et permet d’accéder aux outils dont vous avez besoin pour configurer et gérer les facettes. Les facettes épinglées apparaissent en premier dans la liste des facettes existantes, suivies de facettes dynamiques. La liste peut être filtrée pour afficher toutes les facettes ou uniquement celles qui sont épinglées ou dynamiques.
 
