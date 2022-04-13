@@ -1,9 +1,10 @@
 ---
 title: Vérification de la collecte des événements
 description: Découvrez comment vérifier que les données comportementales sont envoyées à Adobe Commerce.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,9 @@ Pour vous assurer que le fichier JS du collecteur d’événements se charge sur
 1. Rechargez la page.
 1. Vous devriez voir `ds.js` ou `ds.min.js` dans le **Nom** colonne .
 
+![JS du collecteur d’événements](assets/filter-ds.png)
+_JS du collecteur d’événements_
+
 Pour vous assurer que les événements se déclenchent sur les pages de votre site (accueil, produit, passage en caisse, etc.) :
 
 1. Veillez à désactiver tous les bloqueurs d’annonces publicitaires de votre navigateur et accepter les cookies du site.
@@ -29,6 +33,9 @@ Pour vous assurer que les événements se déclenchent sur les pages de votre si
 1. Choisissez la **Réseau** onglet et filtre pour `tp2`.
 1. Rechargez la page.
 1. Vous devriez voir des appels sous `tp2` dans le **Nom** colonne .
+
+![Déclenchement d’événements](assets/filter-tp2.png)
+_Vérification du déclenchement des événements_
 
 ## Vérification à l’aide de l’extension Chrome Snowplow
 
@@ -46,7 +53,8 @@ Installez le [Extension Snowplow Analytics Debugger pour Chrome](https://chrome.
 
 1. Vérifiez que la variable [ID d’espace de données SaaS](https://docs.magento.com/user-guide/configuration/services/saas.html) est définie correctement.
 
-Si vous rencontrez des problèmes pour vérifier que les événements sont collectés et envoyés à Adobe Commerce, [support technique](https://support.magento.com/hc/en-us).
+![Filtre Snowpload](assets/snowplow-filter.png)
+_Filtre de transfert de neige_
 
 >[!NOTE]
 >

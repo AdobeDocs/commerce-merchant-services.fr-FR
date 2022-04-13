@@ -1,9 +1,10 @@
 ---
 title: Synchronisation du catalogue
-description: '"Découvrez comment exporter des données de produit à partir du [!DNL Commerce] serveur à [!DNL Commerce Services] de façon continue afin que les services soient à jour."'
-source-git-commit: 5910874fbd386456c50c4d87098f72fef908a7ae
+description: Découvrez comment exporter des données de produit à partir du [!DNL Commerce] serveur à [!DNL Commerce Services] afin de maintenir les services à jour.
+exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerce et Magento Open Source utilisent des indexeurs pour compiler des données de catalogue dans des tables. Le processus est automatiquement déclenché par [events](https://docs.magento.com/user-guide/system/index-management-events.html) comme une modification du prix d’un produit ou du niveau de stock.
 
-Le processus de synchronisation du catalogue s’exécute toutes les heures pour permettre [!DNL Commerce Services] pour utiliser les données du catalogue. La synchronisation du catalogue exporte les données de produit à partir de [!DNL Commerce] serveur à [!DNL Commerce Services] afin de maintenir les services à jour. Par exemple : [!DNL Product Recommendations] nécessite des informations de catalogue actuelles pour renvoyer avec précision des recommandations avec les noms, les tarifs et la disponibilité corrects. Vous pouvez utiliser la variable _Synchronisation du catalogue_ tableau de bord pour observer et gérer le processus de synchronisation ou l’ [interface de ligne de commande](#resynccmdline) pour déclencher la synchronisation du catalogue et réindexer les données de produit pour les utiliser par [!DNL Commerce Services].
+Le processus de synchronisation du catalogue s’exécute toutes les heures pour permettre [!DNL Commerce] services pour utiliser les données de catalogue. La synchronisation du catalogue exporte les données de produit à partir de [!DNL Commerce] serveur à [!DNL Commerce] services de façon continue afin de maintenir les services à jour. Par exemple : [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) nécessite des informations de catalogue actuelles pour renvoyer avec précision des recommandations avec les noms, les tarifs et la disponibilité corrects. Vous pouvez utiliser la variable _Synchronisation du catalogue_ tableau de bord pour observer et gérer le processus de synchronisation ou l’ [interface de ligne de commande](#resynccmdline) pour déclencher la synchronisation du catalogue et réindexer les données de produit pour les utiliser par [!DNL Commerce] services.
 
 >[!NOTE]
 >
@@ -99,7 +100,7 @@ Si l’état de la synchronisation du catalogue est **En échec**, soumettez une
 
 ## Interface de ligne de commande {#resynccmdline}
 
-Le `saas:resync` fait partie de la commande `magento/saas-export` module. Vous pouvez installer ce module à l’aide de l’une des [!DNL Commerce Services] les produits, tels que [!DNL Product Recommendations] ou [!DNL Live Search].
+Le `saas:resync` fait partie de la commande `magento/saas-export` module. Vous pouvez installer ce module à l’aide de l’une des [!DNL Commerce Services] les produits, tels que [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) ou [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >

@@ -1,9 +1,10 @@
 ---
 title: Paramètres
 description: Découvrez comment modifier la source de votre [!DNL Product Recommendations] données et comment activer les recommandations visuelles.
-source-git-commit: 8c85d26474e371d30b76499f312553a07e329a80
+exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ Pour modifier la source de vos données de recommandations de produits, choisiss
 
 1. Dans la section source Recommendations, cliquez sur **Modifier la configuration**.
 
-1. Suivez les instructions pour configurer une nouvelle [Commerce Service].
+1. Suivez les instructions pour configurer une nouvelle [[!DNL Commerce] service](/help/landing/saas.md).
 
 ## Activation des recommandations visuelles
 
