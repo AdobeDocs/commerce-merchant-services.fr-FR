@@ -2,9 +2,9 @@
 title: Ajout de facettes
 description: Découvrez comment ajouter des attributs de produit filtrables en tant que facettes de recherche en direct.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ La facette est ajoutée au bas de la *Facettes dynamiques* et la liste *Publier 
    * Libellé - ([Headless](facets-type.md) uniquement) Saisissez le libellé de la facette à utiliser.
    * Select type - The *Sélectionner un type* utilisé pour tous [!DNL Commerce] storefronts est `single select`. Pour les implémentations sans interface utilisateur graphique, `multi-select` peut être affecté avec un opérateur logique (`or` ou `and`) pour déterminer l’ensemble des produits renvoyés.
    * Type de tri : les facettes sont triées par ordre alphabétique pour toutes les [!DNL Commerce] storefronts. Pour les implémentations sans interface utilisateur graphique, les facettes peuvent être triées soit par ordre alphabétique, soit par nombre. Options : Alphabétique, Comptage (sans tête uniquement)
-   * Max Value : saisissez le nombre maximal de valeurs de facette affichées dans le storefront. Entrées valides : 0 à 10
+   * Max Value : saisissez le nombre maximal de valeurs de facette affichées dans le storefront. Entrées valides : 0 à 30 ; Valeur par défaut : 8
 
 1. Une fois l’opération terminée, cliquez sur **Enregistrer**.
 
@@ -70,7 +70,7 @@ Si la facette n’est pas disponible au bout de deux heures, voir [Vérifier l�
 | Libellé | ([Headless](facets-type.md) uniquement) La variable [libellé de la facette](facets-type.md) qui est visible dans le storefront peut être modifié pour être cohérent avec votre marque. |
 | Sélectionner un type | Affiche la variable [méthode de sélection](facets-type.md) qui est associé à l’attribut product . Toutes les facettes de la variable [!DNL Commerce] les vitrines sont `Single select` uniquement. Les mises en oeuvre sans affichage prennent également en charge `Multi-select` avec les opérateurs logiques `OR` et `AND`. |
 | Type de tri | La méthode utilisée pour [sort](facets-type.md) facettes. Tous [!DNL Commerce] storefronts sort les facettes par ordre alphabétique uniquement. Les implémentations sans affichage peuvent également être triées par `Count`. Options :<br />Alphabétique : trie les facettes par ordre alphabétique.<br />Nombre : (sans affichage uniquement) trie les facettes en fonction du nombre de correspondances trouvées. |
-| Valeur max. | Nombre maximal de valeurs pouvant être affichées dans le storefront pour chaque facette. Les facettes qui représentent une plage de valeurs sont uniformément réparties. Valeur par défaut : 8 |
+| Valeur max. | Nombre maximal de valeurs pouvant être affichées dans le storefront pour chaque facette. Les facettes qui représentent une plage de valeurs sont uniformément réparties. Entrées valides : 0 à 30 ; Valeur par défaut : 8 |
 
 ### Contrôles
 
