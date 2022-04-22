@@ -2,7 +2,7 @@
 title: Ajout de facettes
 description: Découvrez comment ajouter des attributs de produit filtrables en tant que facettes de recherche en direct.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -54,8 +54,8 @@ La facette est ajoutée au bas de la *Facettes dynamiques* et la liste *Publier 
 
    ![Espace de travail de facette](assets/facet-edit.png)
 
-1. Pour épingler la facette en haut de la page *Filtres* , cliquez sur la punaise grise (![Sélecteur d’épingles](assets/btn-pin-gray.png).
-1. Pour modifier l’ordre de la facette épinglée, cliquez sur le bouton **Déplacer** (![Sélecteur de déplacement](assets/btn-move.png) et faites glisser la rangée vers un nouvel emplacement dans le *Facettes épinglées* .
+1. Pour épingler la facette en haut de la page *Filtres* , cliquez sur la punaise grise (![Sélecteur d’épingles](assets/btn-pin-gray.png)).
+1. Pour modifier l’ordre de la facette épinglée, cliquez sur le bouton **Déplacer** (![Sélecteur de déplacement](assets/btn-move.png)) et faites glisser la rangée vers un nouvel emplacement dans le *Facettes épinglées* .
 
 ## Étape 3 : Publier les modifications
 

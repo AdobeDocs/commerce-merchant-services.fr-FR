@@ -2,9 +2,9 @@
 title: Présentation de l’intégration
 description: Flux d’intégration de la recherche en direct, configuration système requise, limites et limites
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ Pour commencer à utiliser [!DNL Live Search] pour Adobe Commerce, exécutez le 
 
 ### Version bêta de PWA
 
+* La mise en oeuvre bêta actuelle du PWA de la recherche en direct nécessite plus de temps de traitement pour renvoyer les résultats de recherche que la recherche en direct avec le storefront Commerce natif.
 * La version bêta de PWA pour [!DNL Live Search] ne prend pas en charge [gestion des événements](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * Les attributs de produit suivants ne sont pas pris en charge par GraphQL lorsqu’ils sont utilisés en relation avec la version bêta de [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -55,3 +56,5 @@ Pour commencer à utiliser [!DNL Live Search] pour Adobe Commerce, exécutez le 
 * [Groupes de prix personnalisés](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Plusieurs emplacements d’inventaire utilisés par [MCOM](https://docs.magento.com/user-guide/mcom.html) ou d’autres extensions OMS
 * [Fonctionnalités intégrées B2B](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* Les prix des produits ne sont pas inclus [taxe sur la valeur ajoutée](https://docs.magento.com/user-guide/tax/vat.html) (TVA).
+* Les produits en rupture de stock apparaissent dans les résultats de recherche, quel que soit le [Options Stock](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configuration.

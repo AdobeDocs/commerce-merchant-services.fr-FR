@@ -2,16 +2,16 @@
 title: Présentation du guide de recherche en direct
 description: La fonction de recherche en direct d’Adobe Commerce offre une expérience de recherche rapide, super pertinente et intuitive.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # Présentation du guide de recherche en direct
 
-[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, surpertinente et intuitive, éclair. Elle est disponible pour Adobe Commerce sans frais supplémentaires. [!DNL Live Search] optimisée par [Adobe Sensei](https://www.adobe.com/sensei.html) utilise l’intelligence artificielle et des algorithmes d’apprentissage automatique pour effectuer une analyse approfondie des données agrégées sur les visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, génèrent des expériences d’achat très attrayantes, pertinentes et personnalisées. En mettant l&#39;accent sur la rapidité, la pertinence et la facilité d&#39;utilisation, [!DNL Live Search] est un outil de transformation pour les acheteurs comme pour les marchands.
+[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, surpertinente et intuitive, éclair pour Adobe Commerce, sans frais supplémentaires. [!DNL Live Search] optimisée par [Adobe Sensei](https://www.adobe.com/sensei.html) utilise l’intelligence artificielle et des algorithmes d’apprentissage automatique pour effectuer une analyse approfondie des données agrégées sur les visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, génèrent des expériences d’achat très attrayantes, pertinentes et personnalisées. En mettant l&#39;accent sur la rapidité, la pertinence et la facilité d&#39;utilisation, [!DNL Live Search] est un outil de transformation pour les acheteurs comme pour les marchands.
 
 La recherche en direct comporte trois zones pour les administrateurs :
 
