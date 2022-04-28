@@ -3,9 +3,10 @@ title: Configuration dans le tableau de bord
 description: Après l’installation, vous pouvez configurer [!DNL Payment Services] dans le tableau de bord.
 role: Admin, User
 level: Intermediate
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -97,4 +98,4 @@ Vous pouvez également configurer la variable _[!UICONTROL Button style]_options
 1. Pour enregistrer vos modifications, cliquez sur **[!UICONTROL Save]** en haut à droite de la page.
 1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]** et cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
 
-Vous pouvez configurer [!DNL PayPal Smart Buttons] la mise en forme dans l’administrateur ou dans le tableau de bord. Voir [Configuration [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) pour plus d’informations.
+Vous pouvez configurer [!DNL PayPal Smart Buttons] la mise en forme dans l’administrateur ou dans le tableau de bord. Voir [Guide de style Boutons de PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) pour plus d’informations.

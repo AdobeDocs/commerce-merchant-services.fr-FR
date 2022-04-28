@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 
 ### [!DNL PayPal Smart Buttons] Options de style
 
-| Champ | [Portée]({% link configuration/scope.md %}) | Description |
+| Champ | Portée | Description |
 |--- |--- |--- |
 | [!UICONTROL Layout] | Affichage en magasin | Définissez le style de mise en page des boutons Paypal Smart. Options : [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Color] | Affichage en magasin | Définissez la couleur des boutons Paypal Smart. Options : [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
