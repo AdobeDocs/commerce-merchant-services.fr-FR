@@ -2,9 +2,9 @@
 title: Présentation du guide de recherche en direct
 description: La fonction de recherche en direct d’Adobe Commerce offre une expérience de recherche rapide, super pertinente et intuitive.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
+source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -32,3 +32,9 @@ Si vous avez besoin d’informations ou si vous avez des questions qui ne sont p
 
 [Centre d’aide](https://support.magento.com/hc/en-us) - Voir les articles de dépannage relatifs à la recherche en direct .
 [tickets d’assistance](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) - Envoyez un ticket pour recevoir une aide supplémentaire.
+
+Avant d’envoyer un ticket d’assistance, exécutez le code suivant depuis la ligne de commande pour vérifier la version de Live Search actuellement installée :
+
+```bash
+composer show magento/module-live-search | grep version
+```

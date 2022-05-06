@@ -2,9 +2,9 @@
 title: Installer la recherche en direct
 description: Découvrez comment installer, mettre à jour et désinstaller Live Search à partir d’Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 26d841f8a47f4b9067974234c94d4441be6733ea
+source-git-commit: ec68feaebc911c097bd643aabfc61ec586a7e099
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -192,6 +192,14 @@ Dans le storefront, vérifiez les éléments suivants :
 Si tout fonctionne correctement, félicitations ! [!DNL Live Search] est installé, connecté et prêt à l’emploi.
 
 Si vous rencontrez des problèmes dans le storefront, vérifiez la variable `var/log/system.log` pour les erreurs ou échecs de communication de l’API côté services.
+
+## Vérification de la version installée
+
+Avant de mettre à jour la recherche en direct, exécutez le code suivant depuis la ligne de commande pour vérifier la version de la recherche en direct actuellement installée :
+
+```bash
+composer show magento/module-live-search | grep version
+```
 
 ## Mise à jour [!DNL Live Search] {#update}
 
