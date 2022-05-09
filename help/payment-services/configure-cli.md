@@ -4,26 +4,26 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Configuration de ligne de commande
 
-Après l’installation [!DNL Payment Services], vous pouvez facilement la configurer à partir de [au sein de l’administrateur](configure-admin.md) ou via l’interface de ligne de commande.
+Après l’installation [!DNL Payment Services], vous pouvez facilement la configurer à partir de [dans la maison](payments-home.md) ou via l’interface de ligne de commande.
 
 ## Configurer l’exportation des données
 
-[!DNL Payment Services] combine les données de commande exportées depuis Magento Open Source et Adobe Commerce avec les données de paiement agrégées des fournisseurs de paiement afin de créer des rapports utiles. Le [!DNL Payment Services] l’extension utilise des indexeurs pour collecter efficacement toutes les données nécessaires aux rapports.
+[!DNL Payment Services] combine les données de commande exportées depuis [!DNL Magento Open Source] et [!DNL Adobe Commerce] avec des données de paiement agrégées provenant des fournisseurs de paiement afin de créer des rapports utiles. Le [!DNL Payment Services] l’extension utilise des indexeurs pour collecter efficacement toutes les données nécessaires aux rapports.
 
 Pour en savoir plus sur les données utilisées dans [!DNL Payment Services] reporting, voir [Rapport d’état des paiements de commande](order-payment-status.md#data-used-in-the-report).
 
-### Configuration de cron sur Magento Open Source
+### Configuration de cron [!DNL Magento Open Source]
 
-Si vous souhaitez utiliser une `BY SCHEDULE` en mode index sur Magento Open Source, vous devez configurer cron. Voir [Configuration et exécution de cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+Si vous souhaitez utiliser une `BY SCHEDULE` mode index sur [!DNL Magento Open Source], vous devez configurer cron. Voir [Configuration et exécution de cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 ### Définition des indexeurs
 

@@ -1,19 +1,19 @@
 ---
 title: Introduction à [!DNL Payment Services]
-description: Découvrez comment installer et utiliser [!DNL Payment Services] en tant que solution de traitement des paiements clé en main, robuste et sécurisée pour vos sites web Adobe Commerce et Magento Open Source.
+description: Découvrez comment installer et utiliser [!DNL Payment Services] en tant que solution de traitement des paiements clé en main, robuste et sécurisée pour votre [!DNL Adobe Commerce] et [!DNL Magento Open Source] sites web.
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # Introduction à [!DNL Payment Services]
 
-[!DNL Payment Services] pour Adobe Commerce et Magento Open Source, votre solution de libre-service clé en main, notamment les tests d’environnement de test et une configuration simple, vous permet d’assurer un traitement des paiements robuste et sécurisé pour vos sites web Commerce.
+[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] est votre solution de libre-service clé en main, notamment des tests d’environnement de test et une configuration simple, pour fournir un traitement de paiement robuste et sécurisé à vos sites web Commerce.
 
 ![[!DNL Payment Services] vue d’administration de l’extension](assets/admin-view.png)
 
@@ -36,14 +36,13 @@ Que vous soyez une petite entreprise, un concurrent de moyenne envergure ou une 
 [!DNL Payment Services] est votre guichet unique pour le paiement en ligne (depuis l&#39;accord et les remboursements jusqu&#39;au paiement). Il fournit des outils puissants pour vous donner les informations et le contrôle nécessaires pour créer la meilleure expérience pour vos acheteurs.
 
 * [**Intégration**](onboard.md): le processus vous guide tout au long des étapes suivantes : inscription commerciale, configuration technique, droits, configuration de l’environnement de test et activation des paiements en direct.
-* [**Passage en caisse des paiements**](configure-dashboard.md): utilisez des méthodes de paiement locales et régionales pertinentes pour mieux servir vos clients.
 * [**Options de paiement**](payments-options.md): définissez les options de paiement pour personnaliser les méthodes disponibles pour vos clients de magasin (ou multi-magasin).
 * **Reporting financier de la gestion des flux de trésorerie**—Synchronize [informations de paiement](order-payment-status.md) avec des commandes pour obtenir une transparence complète du volume traité, du solde des paiements et des détails [rapport au niveau des transactions](payouts.md) pour la réconciliation financière.
 * **Tarification transparente**- La tarification est claire et rapide ; ce que vous voyez, c&#39;est ce que vous obtenez.
 
 ## Disponibilité
 
-[!DNL Payment Services] est disponible pour Adobe Commerce et Magento Open Source. Le [!DNL Payment Services] est désormais compatible avec les versions 2.4.x d’Adobe Commerce.
+[!DNL Payment Services] est disponible pour [!DNL Adobe Commerce] et [!DNL Magento Open Source]. Le [!DNL Payment Services] est désormais compatible avec [!DNL Adobe Commerce] versions 2.4.x.
 
 Voir [Stratégie de cycle de vie](https://devdocs.magento.com/release/lifecycle-policy.html){target=&quot;_blank&quot;} et la variable [[!DNL Payment Services] notes de mise à jour](release-notes.md) pour plus d’informations sur les versions et les versions.
 

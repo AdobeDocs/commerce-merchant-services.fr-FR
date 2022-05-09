@@ -2,9 +2,9 @@
 title: Sécurité et conformité
 description: Examinez les exigences en matière de sécurité et de conformité de votre site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ La sécurité est la plus grande préoccupation de la [!DNL Payment Services] et
 
 ## Sécurité commerciale
 
-Adobe Commerce et Magento Open Source prennent en charge plusieurs fonctionnalités de sécurité.
+[!DNL Adobe Commerce] et [!DNL Magento Open Source] prendre en charge plusieurs fonctionnalités de sécurité ;
 
 Voir [Sécurité](https://docs.magento.com/user-guide/stores/security.html){target=&quot;_blank&quot;} dans le guide d’utilisation principal pour passer en revue les bonnes pratiques en matière de sécurité et apprendre à gérer les sessions d’administration et les informations d’identification, mettre en oeuvre CAPTCHA et gérer les restrictions du site web.
 

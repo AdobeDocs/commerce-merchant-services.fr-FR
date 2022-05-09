@@ -2,9 +2,9 @@
 title: Configuration de l’environnement de test
 description: Utilisez un compte sandbox PayPal à utiliser [!DNL Payment Services] en mode test.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Pour réinitialiser votre compte sandbox :
 Pour finaliser l’intégration des environnements de test :
 
 1. Accédez au [Page Compte de développeur PayPal](https://developer.paypal.com/developer/accounts/).
-1. Cliquez sur **[!UICONTROL Log in to Dashboard]** et connectez-vous avec vos informations d’identification existantes au compte des développeurs PayPal ou cliquez sur **S’inscrire** pour créer un compte.
+1. Cliquez sur **[!UICONTROL Log in to Home]** et connectez-vous avec vos informations d’identification existantes au compte des développeurs PayPal ou cliquez sur **S’inscrire** pour créer un compte.
 1. Créez un compte sandbox PayPal :
    1. Accédez à _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. Cliquez sur **[!UICONTROL Create account]**.
@@ -42,7 +42,7 @@ Pour finaliser l’intégration des environnements de test :
 
    Cette option est visible si vous n’avez pas encore terminé l’intégration à l’environnement de test pour [!DNL Payment Services].
 
-   Un ID de marchand d’environnement de test est généré automatiquement et renseigné dans la variable [configuration](configure-admin.md). Ne modifiez pas ou ne modifiez pas cet identifiant.
+   Un ID de marchand d’environnement de test est généré automatiquement et renseigné dans la variable [paramètres](settings.md). Ne modifiez pas ou ne modifiez pas cet identifiant.
 
    Une fenêtre PayPal s’affiche pour vous permettre de connecter un compte PayPal afin de commencer à accepter les paiements.
 
@@ -59,7 +59,7 @@ Lorsque votre intégration à l’environnement de test PayPal est approuvée, u
 
 >[!IMPORTANT]
 >
->Si vous révoquez le consentement de [!DNL Payment Services] pour Adobe Commerce et Magento Open Source pour le traitement de vos paiements (dans les paramètres de votre compte PayPal), les commandes de votre boutique ne peuvent pas être traitées par [!DNL Payment Services].
+>Si vous révoquez le consentement de [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] pour le traitement de vos paiements (dans les paramètres de votre compte PayPal), les commandes de votre boutique ne peuvent pas être traitées par [!DNL Payment Services].
 
 ## Activer le numéro de téléphone de contact
 

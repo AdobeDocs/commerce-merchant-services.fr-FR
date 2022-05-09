@@ -2,18 +2,18 @@
 title: Options de paiement
 description: Définissez les options de paiement pour personnaliser les méthodes disponibles pour les clients de votre magasin.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
 
 # Options de paiement
 
-Avec Adobe Commerce et Magento Open Source [!DNL Payment Services], plusieurs options de paiement sont à votre disposition. Vous pouvez configurer ces options de paiement en procédant comme suit :
+Avec [!DNL Adobe Commerce] et [!DNL Magento Open Source] [!DNL Payment Services], plusieurs options de paiement sont à votre disposition. Vous pouvez configurer ces options de paiement en procédant comme suit :
 
-* [Tableau de bord](configure-dashboard.md)
+* [Accueil](payments-home.md)
 * [Configuration du magasin](configure-admin.md) (recommandé pour les options de paiement héritées ou une configuration multi-magasin)
 
 Il existe différents comportements pour chaque mode de paiement en fonction de l’endroit où vous vous trouvez dans le processus de passage en caisse :
@@ -31,13 +31,13 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 
 [!UICONTROL Credit Card Fields] proposer un passage en caisse simple et sécurisé pour les modes de paiement par carte de crédit ou carte de débit ; Lorsqu’un acheteur passe en caisse en utilisant des champs de carte de crédit, il saisit son nom, son adresse de facturation et les informations de carte de crédit ou de débit pour passer sa commande. Les informations sur les clients sont utilisées de manière sécurisée au cours de la session d’achat pour les guider de manière transparente tout au long du flux de passage en caisse.
 
-Vous pouvez configurer [!UICONTROL Credit Card Fields] dans la configuration du magasin ou dans le tableau de bord Services de paiement. Voir [Configuration [!DNL Payment Services]](configure-dashboard.md#configure-credit-card-fields) pour plus d’informations.
+Vous pouvez configurer [!UICONTROL Credit Card Fields] dans la configuration du magasin ou dans la page d’accueil des services de paiement. Voir [Configuration [!DNL Payment Services]](settings.md#configure-credit-card-fields) pour plus d’informations.
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], qui utilise PayPal pour effectuer un achat, stocke l’adresse de livraison de votre acheteur, les adresses de facturation et les détails de paiement en vue d’une utilisation ultérieure. Les acheteurs peuvent utiliser n&#39;importe quel mode de paiement précédemment stocké ou proposé par PayPal.
 
-Vous pouvez configurer [!DNL PayPal Smart Buttons] dans la configuration du magasin ou dans le tableau de bord Services de paiement.  Voir [Configuration [!DNL Payment Services]](configure-dashboard.md#configure-paypal-smart-buttons) pour plus d’informations.
+Vous pouvez configurer [!DNL PayPal Smart Buttons] dans la configuration du magasin ou dans la page d’accueil des services de paiement.  Voir [Configuration [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) pour plus d’informations.
 
 ### Bouton PayPal
 

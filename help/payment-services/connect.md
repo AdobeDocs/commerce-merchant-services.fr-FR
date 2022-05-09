@@ -2,9 +2,9 @@
 title: Connexion à votre instance
 description: Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Voir [Connecteur Commerce Services](https://docs.magento.com/user-guide/system/s
 
 ## Obtention des informations d’identification de l’API
 
-Pour utiliser un service SaaS Commerce, vous devez utiliser les clés d’API de votre instance, qui sont créées et gérées dans votre [Tableau de bord Mon compte](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}. Il est possible de créer deux paires de clés d’API différentes pour un compte Commerce (une pour les environnements de test et une pour la production (paiements en direct)), bien qu’une seule paire puisse être utilisée activement à la fois.
+Pour utiliser un service SaaS Commerce, vous devez utiliser les clés d’API de votre instance, qui sont créées et gérées dans votre [Mon tableau de bord de compte](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}. Il est possible de créer deux paires de clés d’API différentes pour un compte Commerce (une pour les environnements de test et une pour la production (paiements en direct)), bien qu’une seule paire puisse être utilisée activement à la fois.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Pour savoir comment générer une clé API pour des environnements de test ou de
 
 ### Clé API de commerce et clé privée
 
-Certaines fonctionnalités Adobe Commerce et Magento Open Source sont déployées en tant que SaaS (logiciel en tant que service), connues sous le nom de Commerce Services. Pour utiliser ces services, vous devez connecter votre instance Commerce à ces services à l’aide d’une clé API et d’une clé privée, puis spécifier l’espace de données souhaité dans la variable [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
+Certains [!DNL Adobe Commerce] et [!DNL Magento Open Source] Les fonctionnalités sont déployées en tant que SaaS (logiciel en tant que service), connue sous le nom de Commerce Services. Pour utiliser ces services, vous devez connecter votre instance Commerce à ces services à l’aide d’une clé API et d’une clé privée, puis spécifier l’espace de données souhaité dans la variable [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
 
 Lorsque vous créez un compte Commerce, identifié par un MageID, vous pouvez générer une clé API Commerce et une clé privée. Pour utiliser les services de commerce, tels que [!DNL Payment Services], [!DNL Product Recommendations]ou [!DNL Live Search], le détenteur de licence doit générer ces clés pour passer la validation des droits. Ces clés peuvent ensuite être transmises à l’intégrateur système ou à l’équipe de développement qui gère les projets et les environnements pour le compte du détenteur de licence. Si vous êtes un intégrateur de solution, vous avez également le droit d’utiliser ces services pour vos propres besoins. Dans ce cas, le signataire du contrat de partenaire commercial doit générer les clés.
 
@@ -67,8 +67,8 @@ La même clé API peut être utilisée sur plusieurs instances, mais chaque inst
 
 Lorsque vous créez un projet SaaS, Commerce génère un ou plusieurs espaces de données SaaS en fonction de votre licence Commerce :
 
-* Adobe Commerce : un espace de données de production ; deux espaces de données de test
-* Magento Open Source : un espace de données de production ; aucun espace de données de test
+* [!DNL Adobe Commerce] - un espace de données de production ; deux espaces de données de test
+* [!DNL Magento Open Source] - un espace de données de production ; aucun espace de données de test
 
 ### Configuration du projet SaaS
 

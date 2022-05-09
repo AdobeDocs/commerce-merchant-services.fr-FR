@@ -4,22 +4,22 @@ description: Pour effectuer une réconciliation financière, utilisez le rapport
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Rapport de paiements
 
-[!DNL Payment Services] pour Adobe Commerce et Magento Open Source, vous pouvez créer des rapports détaillés afin d’obtenir une vue claire des commandes et des paiements de votre boutique.
+[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous offre des rapports détaillés afin d’obtenir une vue claire des commandes et des paiements de votre boutique.
 
 ![Affichage des rapports financiers](assets/reports-view.png)
 
 Le rapport sur les paiements affiche des informations complètes sur les paiements en un coup d’oeil, ce qui vous permet d’obtenir une transparence complète du montant des paiements, du volume traité et des rapports détaillés sur le niveau des transactions pour la réconciliation financière.
 
-Il n’est pas nécessaire d’ouvrir plusieurs tableaux de bord ou vues pour effectuer des références croisées sur des commandes et des paiements ou réconcilier des comptes. [!DNL Payment Services] pour Adobe Commerce et Magento Open Source, vous pouvez effectuer toutes ces actions à partir d’un seul emplacement (rapport sur les versements) afin de pouvoir visualiser et gérer vos versements efficacement.
+Il n’est pas nécessaire d’ouvrir plusieurs vues pour effectuer des références croisées sur des commandes et des paiements ou réconcilier des comptes. [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous permet d’effectuer toutes ces actions à partir d’un seul emplacement (rapport sur les versements), de sorte que vous puissiez afficher et gérer vos versements efficacement.
 
 Voir les ID de commande et de transaction Commerce liés, le montant des transactions, le mode de paiement par transaction, etc., dans le rapport Paiements de l’administrateur.
 
@@ -45,7 +45,7 @@ If _[!UICONTROL Live]_est la source de données sélectionnée. vous pouvez affi
 
 Les sélections de sources de données fonctionnent comme suit :
 
-* Si aucun magasin n’est en mode réel, la sélection de source de données est définie par défaut sur [!UICONTROL Sandbox]_.
+* Si aucun magasin n’est en mode réel, la sélection de source de données est définie par défaut sur _[!UICONTROL Sandbox]_.
 * Si vous disposez de magasins (un ou plusieurs) en mode réel, la sélection de source de données est définie par défaut sur _[!UICONTROL Live]_.
 * Les exportations de rapports respectent toujours la sélection de la source de données.
 

@@ -4,16 +4,16 @@ description: Connexion de votre instance à [!DNL Payment Services] en suivant q
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # Onboard [!DNL Payment Services]
 
-Pour commencer à utiliser [!DNL Payment Services] pour Adobe Commerce et Magento Open Source, vous devez suivre quelques étapes d’intégration pour connecter votre instance à la fonctionnalité de paiements.
+Pour commencer à utiliser [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source], vous devez effectuer quelques étapes d’intégration pour connecter votre instance à la fonctionnalité de paiements.
 
 ## Flux d’intégration
 
@@ -23,7 +23,7 @@ Ce diagramme de flux d’intégration affiche le processus général d’intégr
 
 Une fois l’intégration terminée pour les environnements de test ou les paiements en direct, les rapports financiers sont accessibles à partir de [!DNL Payment Services] dans Admin.
 
-Si les paiements en environnement de test et en direct sont intégrés et activés, vous pouvez facilement basculer entre ces modes à partir de la variable [!DNL Payment Services] accueil.
+Si les paiements en environnement de test et en direct sont intégrés et activés, vous pouvez facilement basculer entre ces modes à partir de la variable [!DNL Payment Services] Chez soi.
 
 ## Conditions préalables
 
