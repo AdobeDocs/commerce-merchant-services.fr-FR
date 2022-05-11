@@ -2,9 +2,9 @@
 title: Connecteur Commerce Services
 description: Découvrez comment intégrer votre instance Adobe Commerce ou Magento Open Source aux services à l’aide d’une clé API et d’une clé privée.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,6 @@ La clé API et la clé privée sont générées à partir de la variable [!DNL C
 1. Sous , **Magento** onglet, sélectionnez **Portail d’API** dans la barre latérale.
 
 1. Dans la _Environnement_ menu, sélectionnez **Production** ou **Sandbox**.
-
-   >[!NOTE]
-   >
-   > Pour [!DNL _Recommendations de produit_] et [!DNL _Recherche en direct_], sélectionnez **Production**. Les clés de production permettent d’accéder aux espaces de données de production et hors production. Les clés Sandbox ne sont pas utilisées pour ces services.
 
 1. Saisissez un nom dans le champ _Clés API_ et cliquez sur **Ajouter**.
 

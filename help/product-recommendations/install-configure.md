@@ -1,16 +1,17 @@
 ---
 title: Installation et configuration
 description: Découvrez comment installer, mettre à jour et désinstaller [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
+source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # Installation et configuration
 
-Déploiement [!DNL Product Recommendations] à votre storefront et Admin requiert que vous installez le module et que vous configuriez le connecteur Commerce Services. Lorsque des mises à jour sont publiées, vous pouvez facilement mettre à jour votre installation avec la dernière version.
+Déploiement [!DNL Product Recommendations] à votre storefront et l’administrateur requiert que vous installez le module et configurez la variable [Connecteur Commerce Services](../landing/saas.md). Lorsque des mises à jour sont publiées, vous pouvez facilement mettre à jour votre installation avec la dernière version.
 
 - [Installer](#install)
 - [Configurer](#configure)
@@ -47,11 +48,11 @@ composer require magento/module-visual-product-recommendations
 
 ## Configurer [!DNL Product Recommendations] {#configure}
 
-Après avoir installé la variable `magento/product-recommendations` , vous devez configurer la variable [Connecteur Commerce Services](https://docs.magento.com/user-guide/configuration/services/saas.html) en spécifiant la clé API et en sélectionnant un espace de données SaaS.
+Après avoir installé la variable `magento/product-recommendations` , vous devez configurer la variable [Connecteur Commerce Services](https://docs.magento.com/user-guide/configuration/services/saas.html) en spécifiant les clés d’API et en sélectionnant un espace de données SaaS.
 
 Pour vous assurer que l’exportation de catalogue s’exécute correctement, vérifiez que la variable [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) les tâches et la [indexeurs](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) sont en cours d’exécution et la variable `Product Feed` l’indexeur est défini sur `Update by Schedule`.
 
-Lorsque vous réussissez à établir un lien vers Commerce Services par le biais de la clé d’API et à spécifier l’espace de données SaaS, la synchronisation du catalogue démarre et [vérifie](verify.md) que les données comportementales sont envoyées à votre storefront.
+Lorsque vous parvenez à établir un lien vers Commerce Services par le biais de clés d’API et à spécifier l’espace de données SaaS, la synchronisation du catalogue commence. Vous pouvez alors [verify](verify.md) que les données comportementales sont envoyées à votre storefront.
 
 ## Mettez à jour votre [!DNL Product Recommendations] installation {#update}
 
