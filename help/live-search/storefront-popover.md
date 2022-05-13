@@ -1,44 +1,44 @@
 ---
-title: Fenêtre contextuelle Storefront
-description: La fenêtre contextuelle de recherche en direct renvoie dynamiquement les produits suggérés et les miniatures.
+title: Storefront Popover
+description: The Live Search storefront popover dynamically returns suggested products and thumbnails.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-# Fenêtre contextuelle Storefront
+# [!DNL Storefront Popover]
 
-When [!DNL Live Search] is [installé](install.md), une fenêtre contextuelle s’affiche dans le storefront lorsque les clients saisissent dans la variable [Rechercher](https://docs.magento.com/user-guide/catalog/search-quick.html) de la boîte. Avec chaque caractère saisi, la fenêtre contextuelle est mise à jour avec les produits suggérés et les images miniatures des principaux résultats de recherche.
+[!DNL Live Search][](install.md)[!DNL popover][](https://docs.magento.com/user-guide/catalog/search-quick.html) [!DNL popover]
 
-[!DNL Live Search] renvoie les résultats d’une requête de deux caractères ou plus. Pour une correspondance partielle, le nombre maximal de caractères par mot est de 20. Le nombre de caractères d’une requête &quot;Rechercher lorsque vous tapez&quot; n’est pas configurable.
+[!DNL Live Search] For a partial match, the maximum number of characters per word is 20. The number of characters in a &quot;search as you type&quot; query is not configurable.
 
 >[!NOTE]
 >
->Le [!DNL Live Search] storefront apparaît uniquement pour les magasins qui utilisent la variable *Luma* ou un thème personnalisé basé sur *Luma*. Le *Luma* est inclus dans la variable [!DNL Commerce] données d’exemple. La fenêtre contextuelle ne prend pas en charge la variable *Vide* thème. Voir [Style des éléments contextuels](storefront-popover-styling.md) pour en savoir plus.
+>[!DNL Live Search][!DNL storefront popover]**** **[!DNL Commerce] [!DNL popover]** [ [!DNL Popover] ](storefront-popover-styling.md)
 
-## Attributs pouvant faire l’objet d’une recherche
+## Searchable attributes
 
-Pour produire des résultats très ciblés, passez en revue le jeu de [searchable](https://docs.magento.com/user-guide/stores/attributes-product.html#storefront-properties) (`searchable=true`) des attributs de produit. Pour garantir la pertinence, ne autorisez la recherche des attributs que s’ils contiennent du contenu ayant une signification claire et concise. Évitez d’utiliser des attributs contenant un texte plus long et moins précis, comme `description`, qui, bien que la recherche soit activée par défaut, peut réduire la précision des résultats de recherche. Par exemple, si une personne recherche &quot;shorts&quot; et qu’il y a des chemises avec une description qui inclut le terme &quot;manches courtes&quot;, les chemises seront incluses dans les résultats de la recherche.
+[](https://docs.magento.com/user-guide/stores/attributes-product.html#storefront-properties)`searchable=true` To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. `description` For example, if a person searches for &quot;shorts&quot; and there are shirts with a description that includes the term &quot;short sleeves&quot;, then the shirts will be included in the search results.
 
-Les attributs suivants peuvent toujours faire l’objet de recherches :
+The following attributes are always searchable:
 
 * `sku`
 * `name`
 * `categories`
 
-![Fenêtre contextuelle de recherche en direct](assets/storefront-search-as-you-type.png)
+[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
-## Taille de page de fenêtre contextuelle
+## [!DNL Popover]
 
-La taille de page de la fenêtre contextuelle détermine le nombre de lignes de produits auto-complétés pouvant être renvoyées. Auparavant, la taille de la page était codée en dur comme six lignes. Toutefois, la variable `page_size` est désormais un paramètre qui peut être configuré à partir de la variable *Administration*. Au cours de l’installation de Live Search, la variable `page_size` change en fonction de la valeur actuelle de la variable [Recherche catalogue](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` .
+[!DNL popover] Previously, the page size was hardcoded as six lines. `page_size`** `page_size`[](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search)`Autocomplete Limit`
 
-Par défaut, la valeur Recherche catalogue - Limite de saisie automatique est définie sur huit lignes (ou lignes). Pour modifier la taille de page de la fenêtre contextuelle, procédez comme suit :
+By default, the Catalog Search - Autocomplete Limit value is set to eight lines (or rows). [!DNL popover]
 
-1. Sur le *Administration* barre latérale, accédez à **Magasins** > Paramètres > **Configuration**.
-1. Dans le panneau de gauche, développez **Catalogue** et choisissez **Catalogue** dans la liste des paramètres.
-1. Développez l’objet *Recherche catalogue* .
-1. Définissez la variable **Limite de saisie automatique** au nombre de lignes que vous souhaitez autoriser dans la fenêtre contextuelle.
-1. Une fois l’opération terminée, cliquez sur **Enregistrer la configuration**.
+1. **********
+1. ********
+1. **
+1. ****[!DNL popover]
+1. ****
