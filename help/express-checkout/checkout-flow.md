@@ -2,9 +2,9 @@
 title: Flux de passage en caisse
 description: Présentation de la variable [!DNL Express Checkout] flux dans Adobe Commerce.
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -113,4 +113,4 @@ Si non [!DNL Bolt] Le compte est trouvé, les acheteurs continuent de passer en 
 
 ## Obtenir de l’aide
 
-Contactez l’assistance d’Adobe Commerce pour toute assistance.
+Contact [!DNL Adobe Commerce] équipe d’ingénieurs via votre Slack assigné [Canal Adobe de programmes bêta](http://adobe-beta-programs.slack.com/) pour toute assistance.
