@@ -1,10 +1,10 @@
 ---
-title: Facturation de Workspace
-description: Découvrez comment contourner l’espace de travail des facettes de recherche en direct.
+title: '"Facting Workspace"'
+description: '"Découvrez comment contourner le problème [!DNL Live Search] faceting workspace."'
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---

@@ -1,27 +1,27 @@
 ---
-user-guide-title: Guide de recherche en direct
-user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de la recherche en direct à partir d’Adobe Commerce.
-breadcrumb-title: Guide de recherche en direct
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+user-guide-title: '"[!DNL Live Search] Guide"'
+user-guide-description: '"Ce guide fournit des instructions détaillées sur l’utilisation de [!DNL Live Search] d’Adobe Commerce."'
+breadcrumb-title: '"[!DNL Live Search] Guide"'
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '72'
+ht-degree: 2%
 
 ---
 
-# Recherche en direct dans Commerce {#live-search}
+# [!DNL Live Search] pour Commerce {#live-search}
 
 - [Présentation du guide](guide-overview.md)
-- [Présentation de la recherche en direct](overview.md)
+- [Introduction à [!DNL Live Search]](overview.md)
 - [Notes de mise à jour](release-notes.md)
 - Recherche en direct intégrée {#onboard}
    - [Présentation de l’intégration](onboarding-overview.md)
-   - [Installer la recherche en direct](install.md)
-- Live Search Storefront {#live-search-storefront}
+   - [Installer [!DNL Live Search]](install.md)
+- [!DNL Live Search] Storefront {#live-search-storefront}
    - [Présentation rapide](quick-tour.md)
-   - [Fenêtre contextuelle Storefront](storefront-popover.md)
-   - [Style des éléments contextuels](storefront-popover-styling.md)
-- Administration de la recherche en direct{#live-search-admin}
+   - [Storefront [!DNL Popover]](storefront-popover.md)
+   - [Style [!DNL Popover] Éléments](storefront-popover-styling.md)
+- [!DNL Live Search] Administration{#live-search-admin}
    - [Workspace](workspace.md)
    - [Performances](performance.md)
    - Facettes {#facets}

@@ -1,10 +1,10 @@
 ---
-title: Notes techniques sur les facettes
-description: Notes techniques sur l’utilisation des facettes de recherche en direct.
+title: '"Facet Technical Notes"'
+description: '"Remarques techniques sur l’utilisation de [!DNL Live Search] facettes."'
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,6 @@ La facette est une méthode de filtrage haute performance qui utilise plusieurs 
 
 L’agrégation des facettes est effectuée comme suit si le storefront comporte trois facettes (catégories, couleur et prix) et que les filtres du nouvel acheteur sont appliqués aux trois éléments (couleur = bleu, prix compris entre 10,00 et 50,00 $, catégories = `promotions`).
 
-* `categories` agrégation - Agrégats `categories`, s’applique `color` et `price` filtres, mais pas le filtre `categories` filtre.
+* `categories` aggregation - Aggregates `categories`, applies `color` and `price` filters, but not the `categories` filter.
 * `color` agrégation - Agrégats `color`, s’applique `price` et `categories` filtres, mais pas le filtre `color` filtre.
-* `price` agrégation - Agrégats `price`, s’applique `color` et `categories` filtres, mais pas le filtre `price` filtre.
+* `price` aggregation - Aggregates `price`, applies `color` and `categories` filters, but not the `price` filter.

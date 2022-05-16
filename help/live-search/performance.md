@@ -1,10 +1,10 @@
 ---
-title: Performances
-description: Le tableau de bord Performances de la recherche en direct fournit des informations sur les termes de recherche que les acheteurs utilisent.
+title: '"Performance"'
+description: '"Le [!DNL Live Search] Le tableau de bord des performances fournit des informations sur les termes de recherche que les acheteurs utilisent."'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---

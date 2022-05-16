@@ -1,10 +1,10 @@
 ---
-title: Facettes
-description: Les facettes de recherche en direct utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche.
+title: '"Facettes"'
+description: '"[!DNL Live Search] les facettes utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
