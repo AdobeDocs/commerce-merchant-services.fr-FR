@@ -4,9 +4,9 @@ description: Pour effectuer une réconciliation financière, utilisez le rapport
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,16 @@ Dans la vue Versements, vous pouvez personnaliser la période des transactions d
 1. Cliquez sur le filtre du sélecteur de calendrier des dates de transaction .
 1. Sélectionnez la période applicable.
 1. Affichez les états des paiements dans la grille pour les dates spécifiées.
+
+## Afficher et masquer les colonnes
+
+Le rapport sur les paiements affiche par défaut la plupart des colonnes d’informations disponibles. Vous pouvez toutefois personnaliser les colonnes affichées dans votre rapport.
+
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Cliquez sur le bouton _Paramètres des colonnes_ Icône (![icône des paramètres de colonne](assets/column-settings.png)).
+1. Pour personnaliser les colonnes affichées dans le rapport, cochez ou décochez celles de la liste.
+
+   Le rapport Paiements affiche immédiatement les modifications que vous avez apportées au menu Paramètres de colonne. Les préférences de colonne seront enregistrées et resteront en vigueur si vous quittez la vue du rapport.
 
 ## Téléchargement de transactions
 
