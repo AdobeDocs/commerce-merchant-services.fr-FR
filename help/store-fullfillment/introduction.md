@@ -1,16 +1,17 @@
 ---
-title: Introduction à [!DNL Store Fulfillment]
+title: A propos [!DNL Store Fulfillment]
 description: Découvrez comment [!DNL Store Fulfillment by Walmart Technologies] prend en charge les services d’achat en ligne, de prise en main en magasin (BOPIS) pour les clients Adobe Commerce et Magento Open Source. Utilisez le mobile d’ assistance au magasin pour rationaliser l’exécution BOPIS et le traitement des commandes pour les associés aux magasins et les clients Commerce.
 role: User
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: e1172526b133e08d6c1c2278b91c788e9c9766c6
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# Introduction à [!DNL Store Fulfillment by Walmart Technologies]
+
+# A propos [!DNL Store Fulfillment by Walmart Technologies]
 
 La création de magasins pour Adobe Commerce par Walmart Commerce Technologies est une solution de réalisation omnicanal avancée qui s’intègre à votre [!DNL Commerce] pour offrir un achat en ligne de qualité supérieure, prenez part à l’expérience client du magasin (BOPIS).
 
