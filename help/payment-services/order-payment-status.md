@@ -4,9 +4,9 @@ description: Utilisez le rapport État des paiements de la commande pour connaî
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,18 @@ Vous pouvez également forcer manuellement l’actualisation des données du rap
 
    Les données du rapport d’état des paiements de la commande sont actualisées. *[!UICONTROL Update complete]* une confirmation s’affiche et les informations les plus récentes sont présentes dans la grille.
 
+## Afficher les conflits
+
+Vous pouvez afficher tous les litiges relatifs aux commandes de votre boutique et accéder au Centre de résolution PayPal pour agir sur ces litiges, depuis le rapport État des paiements des commandes .
+
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Accédez au **[!UICONTROL Disputes column]**.
+1. Affichez tous les conflits pour une commande spécifique, puis reportez-vous à la section [le statut du différend](#order-payment-status-information).
+1. Cliquez sur le lien ID du litige (en commençant par _PP-D-_) pour accéder au [Centre de résolution PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Prenez les mesures appropriées pour résoudre le conflit, le cas échéant.
+
+   Pour trier les conflits d’ordre par état, cliquez sur l’en-tête de colonne Conflits .
+
 ## Télécharger les statuts de paiement des commandes
 
 Vous pouvez télécharger un fichier .csv avec tous les états visibles dans la grille Affichage de l’état des paiements des commandes , que vous visualisiez les 30 jours par défaut des états ou une période personnalisée.
@@ -171,7 +183,7 @@ Les rapports d’état des paiements de commande incluent les informations suiva
 | [!UICONTROL Refund Status] | État d’un remboursement sur une commande (comme des informations provenant de retours, de MA et de notes de crédit)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* ou *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Montant total remboursé pour une commande |
 | [!UICONTROL Cur] | Type de devise du montant remboursé pour une commande. |
-| [!UICONTROL Dispute Status] | État de tout litige sur une ordonnance (information issue de litiges et de recharges)—*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]* ou *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | État de tout litige sur une ordonnance (information issue de litiges et de recharges)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* ou *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Mode de paiement utilisé dans la transaction Commerce pour une commande |
 | [!UICONTROL Website] | Site web à partir duquel la commande a été passée |
 | [!UICONTROL Store] | Magasin à partir duquel la commande a été passée |
