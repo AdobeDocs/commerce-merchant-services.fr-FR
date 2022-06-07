@@ -4,9 +4,9 @@ description: '"Découvrez comment [!DNL Store Fulfillment for Adobe Commerce by 
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ L’exécution de magasin offre également un workflow d’exécution de bout en
 
 ## Extension d’exécution de magasin
 
-L’extension Store Fulfillment s’intègre à Adobe Commerce afin que vous puissiez gérer la configuration pour les opérations Adobe Commerce et les interfaces client depuis l’administrateur.
+Prend en charge et améliore les fonctionnalités d’Adobe Commerce natives
 
 * Prend en charge la plupart des types de produits simples, configurables, regroupés, regroupés et virtuels
 
@@ -39,11 +39,11 @@ L’extension Store Fulfillment s’intègre à Adobe Commerce afin que vous pui
 
 * Intégrer aux systèmes commerciaux de point de vente (tels que les systèmes de gestion des stocks (ERP, OMS et WMS)
 
-* Totalement compatible avec le thème Luma.
+* Totalement compatible avec le thème Luma
 
-* Fournit la prise en charge de GraphQL pour les vitrines sans interface et Venia.
+* Prise en charge de GraphQL pour les vitrines sans interface et Venia
 
-* Prend en charge l’application d’aide au magasin de Walmart Commerce Technology. Cette application envoie les commandes de prise en charge directement à l’appareil pour portables de votre employé dans la bonne boutique afin que les articles puissent être sélectionnés et rapidement et avec précision et remis aux clients lorsqu’ils arrivent pour la prise en charge.
+* Prend en charge l’application d’aide au magasin de Walmart Commerce Technology. Cette application envoie des commandes de prise en main directement à l’appareil pour portables de votre employé dans la bonne boutique afin que les articles puissent être sélectionnés rapidement et avec précision, mis en scène et remis aux clients lors de leur archivage.
 
 ## Application d’aide à la boutique
 
@@ -61,7 +61,7 @@ L’application d’aide au magasin pour iOS et Android™ interagit avec la tec
 
 L’exécution de la boutique améliore Adobe Commerce en ajoutant les fonctionnalités suivantes pour offrir de meilleures expériences d’achat et des workflows d’exécution rationalisés :
 
-* **Sélecteur d’emplacement de magasin (SLS)**-Ajoute des options de sélection de magasin, la disponibilité du stock et les sélecteurs de magasin aux interfaces de produit, de panier et de passage en caisse d’Adobe Commerce.
+* **Sélecteur d’emplacement de magasin (SLS)**-Expose l’option de prise en main du magasin, la disponibilité du stock et le sélecteur de magasin sur les pages de produit et de panier en plus du passage en caisse natif.
 
 * **Disponibilité du stock**- Ajoute des options de configuration globale et de produit supplémentaires à Adobe Commerce Inventory management pour prendre en charge l’allocation de l’inventaire au niveau du magasin afin de favoriser l’exécution locale opportune.
 
