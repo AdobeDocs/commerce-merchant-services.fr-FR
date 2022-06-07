@@ -2,9 +2,9 @@
 title: '''[!DNL Store Fulfillment by Walmart Technologies] Notes de mise à jour'''
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Store Fulfillment by Walmart Technologies] versions.
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: df045a8d2089bbaf2c13015cfa05c16842bd2b3f
 workflow-type: tm+mt
-source-wordcount: '60'
+source-wordcount: '56'
 ht-degree: 8%
 
 ---
@@ -23,5 +23,4 @@ Version initiale, compatible avec les versions commerciales suivantes :
 
 * Adobe Commerce (EE) : 2.4.x
 * Adobe Commerce for Cloud (CEE) : 2.4.x
-* Magento Open Source : 2.4.x
 * Stabilité : Stable
