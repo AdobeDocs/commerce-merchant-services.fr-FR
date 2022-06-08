@@ -2,9 +2,9 @@
 title: Activer [!DNL Payment Services] pour la production
 description: Terminez le processus d’intégration en activant [!DNL Payment Services] pour la production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Voir [Configuration des services de paiement](settings.md) pour plus d’informa
 
    >[!IMPORTANT]
    >
-   >Si vous révoquez le consentement de [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] pour le traitement de vos paiements (dans les paramètres de votre compte PayPal), les commandes de votre boutique ne peuvent pas être traitées par [!DNL Payment Services].
+   >Si vous révoquez le consentement de [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] pour le traitement de vos paiements (dans les paramètres de votre compte PayPal), les commandes de votre boutique ne peuvent pas être traitées par [!DNL Payment Services]. Sur votre page d’accueil des services de paiement, une alerte concernant le consentement révoqué s’affiche.
 
 ## Demander des droits sur les paiements depuis l’Adobe
 
@@ -115,7 +115,7 @@ Voir [Configuration dans l’administrateur](configure-admin.md) pour les option
 
 >[!IMPORTANT]
 >
->Si vous révoquez le consentement de [!DNL Payment Services] pour le traitement de vos paiements (dans les paramètres de votre compte PayPal), les commandes de votre boutique ne peuvent pas être traitées par [!DNL Payment Services]. Si vous souhaitez réactiver le traitement des paiements, vous devez effectuer à nouveau l’intégration.
+>Si vous révoquez le consentement de [!DNL Payment Services] pour le traitement de vos paiements (dans les paramètres de votre compte PayPal), les commandes de votre boutique ne peuvent pas être traitées par [!DNL Payment Services]. Si vous souhaitez réactiver le traitement des paiements, vous devez effectuer à nouveau l’intégration. Sur votre page d’accueil des services de paiement, une alerte concernant le consentement révoqué s’affiche.
 
 ## Test en production
 
