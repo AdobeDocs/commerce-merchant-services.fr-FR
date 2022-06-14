@@ -1,13 +1,13 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: Ce guide fournit des informations détaillées sur l’installation et la configuration des services d’exécution de magasin pour votre boutique Adobe Commerce ou Magento Open Source.
-breadcrumb-title: Performance de magasin par le guide de Walmart Technologies
+user-guide-description: Informations détaillées sur l’installation, la configuration et l’utilisation de l’exécution de magasin pour les magasins Adobe Commerce
+breadcrumb-title: Exécution de la boutique pour Adobe Commerce
 index: false
 hidden: true
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 3%
+source-wordcount: '84'
+ht-degree: 2%
 
 ---
 
@@ -16,15 +16,27 @@ ht-degree: 3%
 
 - [Présentation du guide](guide-overview.md)
 - [Introduction à [!DNL Store Fulfillment]](introduction.md)
+- [Workflow d’assistance à la boutique](store-assist-modules.md)
+- [Conditions](solution-requirements.md)
 - [Notes de mise à jour](release-notes.md)
 - Exécution de la boutique intégrée {#onboarding}
    - [Présentation de l’intégration](onboard.md)
-   - [Installation](install.md)
-   - [Connexion et configuration du service](connect-set-up-service.md)
-   - [Tests et déploiement](test-deploy.md)
-- Configuration des fonctionnalités {#configuration}
+   - [Installation de l’extension](install.md)
+   - [Connexion à l’exécution du magasin](connect-set-up-service.md)
+   - [Test et déploiement](test-and-deploy.md)
+- [Présentation de la configuration](service-config-settings-overview.md)
+- Configuration du magasin {#store-configuration}
    - [Configuration générale](enable-general.md)
    - [Courriers électroniques de vente](sales-emails.md)
+   - [Sources de magasins marchands](merchant-store-configuration.md)
    - [Gestion des stocks de produits](product-stock.md)
-   - [Sources de stockage](store-sources.md)
+   - [Transfert source Inventory management](inventory-stock-transfer.md)
+   - [Plusieurs sites web/portée](multi-site-and-scope-config.md)
+- Configuration du système {#system-configuration}
    - [Processus en arrière-plan](background-processes.md)
+   - [Configuration de l’emplacement et du mappage du magasin](store-location-map-provider-setup.md)
+   - [Configuration de l’expérience d’archivage](check-in-experience-setup.md)
+   - [Configuration de l’utilisateur](user-setup.md)
+   - [Configuration de l’application](app-setup.md)
+
+

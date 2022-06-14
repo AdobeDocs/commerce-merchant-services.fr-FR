@@ -1,12 +1,12 @@
 ---
 title: '"Introduction à [!DNL Store Fulfillment]"'
-description: '"Découvrez comment [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] prend en charge l’achat en ligne, la prise en charge en magasin (BOPIS) pour les clients. Utilisez le mobile d’ assistance au magasin pour rationaliser l’exécution BOPIS et le traitement des commandes pour les associés au magasin et les clients Commerce."'
+description: '"Découvrez comment [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] prend en charge l’achat en ligne, la prise en charge en magasin (BOPIS) pour les clients. Utilisez le mobile d’ assistance au magasin pour rationaliser l’exécution BOPIS et le traitement des commandes pour les associés au magasin et les clients Commerce."'
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 La création de magasins pour Adobe Commerce par Walmart Commerce Technologies est une solution de réalisation omnicanal avancée qui s’intègre à votre [!DNL Commerce] pour offrir un achat en ligne de qualité supérieure, prenez part à l’expérience client du magasin (BOPIS).
 
-![Exécution de la boutique par configuration de l’administrateur de Walmart Technologies](assets/store-fulfillment-admin-home.png)
+![Configuration de l’administrateur de l’Adobe de la solution Store Fulfillat](assets/store-fulfillment-admin-home.png)
 
 L’exécution de magasin offre également un workflow d’exécution de bout en bout qui aide les commerçants à réduire les coûts tout en augmentant les taux de conversion, la valeur de commande moyenne et les taux de satisfaction client. Ce workflow fournit :
 
