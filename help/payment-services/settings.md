@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: b30c15ab808be4526424a4a3be19e3d0aedcc662
+source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ Vous pouvez activer [!DNL Payment Services] pour votre site web et activez les t
    >
    >Votre _[!UICONTROL Sandbox Merchant ID]_et_[!UICONTROL Production Merchant ID]_ sont générés automatiquement et présents dans leurs champs respectables lorsque vous avez terminé l’intégration pour l’environnement de test et/ou la production. Ne supprimez ou ne modifiez pas ces identifiants.
 
+1. Sélectionnez la vue de magasin, dans la **[!UICONTROL Scope]** menu déroulant, pour lequel vous souhaitez activer un mode de paiement.
 1. Pour modifier les paramètres par défaut des fonctions de paiement et de l’affichage du storefront, définissez les options supplémentaires nécessaires :
 
    - [Champs de carte de crédit](#credit-card-fields)
