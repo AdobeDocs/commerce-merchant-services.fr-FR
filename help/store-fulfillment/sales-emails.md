@@ -1,15 +1,16 @@
 ---
 title: Courriers électroniques de vente
-description: Configurez les paramètres pour que les modèles d’email transactionnel communiquent avec les clients et stockent les administrateurs pendant le processus de commande et d’exécution.
+description: Configurez les modèles d’email transactionnel pour communiquer avec les clients et les administrateurs de magasin pendant le processus d’exécution des commandes de nettoyage de magasin.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
 
 ---
+
 
 # Courriers électroniques de vente
 

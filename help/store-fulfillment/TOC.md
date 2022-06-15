@@ -1,10 +1,10 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: Informations détaillées sur l’installation, la configuration et l’utilisation de l’exécution de magasin pour les magasins Adobe Commerce
+user-guide-description: Informations détaillées sur l’installation, la configuration et l’utilisation de l’exécution de magasin pour les magasins Adobe Commerce.
 breadcrumb-title: Exécution de la boutique pour Adobe Commerce
 index: false
 hidden: true
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 - [Présentation du guide](guide-overview.md)
 - [Introduction à [!DNL Store Fulfillment]](introduction.md)
-- [Workflow d’assistance à la boutique](store-assist-modules.md)
+- [Workflows d’assistance de magasin](store-assist-modules.md)
 - [Conditions](solution-requirements.md)
 - [Notes de mise à jour](release-notes.md)
 - Exécution de la boutique intégrée {#onboarding}
@@ -28,7 +28,7 @@ ht-degree: 2%
 - Configuration du magasin {#store-configuration}
    - [Configuration générale](enable-general.md)
    - [Courriers électroniques de vente](sales-emails.md)
-   - [Sources de magasins marchands](merchant-store-configuration.md)
+   - [Magasin de commerce (sources)](merchant-store-configuration.md)
    - [Gestion des stocks de produits](product-stock.md)
    - [Transfert source Inventory management](inventory-stock-transfer.md)
    - [Plusieurs sites web/portée](multi-site-and-scope-config.md)
@@ -36,7 +36,7 @@ ht-degree: 2%
    - [Processus en arrière-plan](background-processes.md)
    - [Configuration de l’emplacement et du mappage du magasin](store-location-map-provider-setup.md)
    - [Configuration de l’expérience d’archivage](check-in-experience-setup.md)
-   - [Configuration de l’utilisateur](user-setup.md)
+   - [Configuration utilisateur](user-setup.md)
    - [Configuration de l’application](app-setup.md)
 
 

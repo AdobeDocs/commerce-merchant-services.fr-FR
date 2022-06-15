@@ -1,17 +1,17 @@
 ---
-title: Conditions requises du service
-description: '"Conditions requises pour la configuration et l’intégration de la variable [!DNL Store Fulfillment Manager] service"'
+title: Exigences d’exécution du magasin
+description: '"Conditions requises pour la configuration et l’intégration de la variable [!DNL Store Fulfillment solution]."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 3%
 
 ---
 
 
-# Conditions requises pour l’exécution du magasin pour Adobe Commerce
+# Exigences d’exécution de la boutique pour Adobe Commerce
 
 Pour installer et activer la solution d’exécution de magasin pour Adobe Commerce, vous devez répondre aux exigences techniques et métier suivantes.
 
@@ -36,13 +36,13 @@ La solution Store Fulfillment est compatible avec les versions logicielles suiva
 
 Pour connaître les exigences détaillées, consultez Adobe Commerce [Configuration requise](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) dans la documentation destinée aux développeurs.
 
-## Conditions requises
+## Exigences commerciales
 
 Votre entreprise doit satisfaire aux critères minimaux suivants pour mettre en oeuvre la solution d’exécution de magasin.
 
-* Uniquement les entreprises américaines
+* Entreprises basées aux États-Unis uniquement
 
-* Ventilateurs B2C, fabricants de PC vendant D2C ou distributeurs vendant D2C ou à de petites entreprises
+* Ventilateurs B2C, fabricants CPG vendant D2C ou distributeurs vendant D2C ou aux petites entreprises
 
 * Au moins un magasin ou entrepôt physique
 

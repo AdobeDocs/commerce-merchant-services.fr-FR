@@ -1,15 +1,16 @@
 ---
-title: Processus en arrière-plan
-description: '"Configuration des plannings pour [!DNL Store Fulfillment] processus d’arrière-plan utilisés pour synchroniser les données avec les services d’exécution"                   '
+title: Configuration du processus en arrière-plan
+description: '"Configuration des plannings pour [!DNL Store Fulfillment] processus d’arrière-plan utilisés pour synchroniser les données avec les services d’exécution."                   '
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
+
 
 # Configuration du processus en arrière-plan
 
@@ -19,9 +20,6 @@ Les processus en arrière-plan sont gérés à l’aide de la Adobe Commerce sta
 
 ## Gestion des tâches planifiées pour l’exécution du magasin
 
-Depuis l’administrateur, accédez à **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks)> Cron configuration options for group:store_fulfillment]**.
-
+Depuis l’administrateur, accédez à **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
 Examinez la configuration par défaut des services d’exécution de magasin. Selon le volume de traitement des commandes et la disponibilité des ressources, vous devrez peut-être ajuster ces paramètres.
-
-

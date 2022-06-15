@@ -1,16 +1,17 @@
 ---
-title: Configurations multiples de site web et de portée
+title: Configuration de plusieurs sites web et périmètre
 description: Configurez les stocks et les méthodes de diffusion pour plusieurs sites web et portées de magasin.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# Configurations multiples de site web et de portée
+
+# Configuration de plusieurs sites web et périmètre
 
 Vous pouvez définir la variable [Portée](https://docs.magento.com/user-guide/configuration/scope.html) pour quelques éléments afin d’accueillir plusieurs sites web, magasins et vues de magasin :
 

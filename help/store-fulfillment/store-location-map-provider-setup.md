@@ -1,11 +1,11 @@
 ---
 title: Emplacement du magasin et configuration du système de mappage
-description: Configurez un fournisseur de distance pour prendre en charge le mappage de l’emplacement du magasin dans l’interface utilisateur de storefront.
+description: Configurez un fournisseur de distance pour prendre en charge le mappage de l’emplacement du magasin dans l’interface utilisateur de storefront. Les solutions d’exécution de magasin nécessitent un fournisseur de distance pour activer la recherche de magasin de détail et d’autres fonctionnalités de mappage et de planification pour le workflow d’exécution de bout en bout.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,3 @@ Pour configurer le fournisseur de distance :
    - Ajoutez vos **Clé API Google**.
 
    - Définir **[!UICONTROL Computation Mode]** to `Driving` et **[!UICONTROL Value]** to `Distance`
-

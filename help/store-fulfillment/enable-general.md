@@ -1,14 +1,15 @@
 ---
 title: Configuration générale
-description: Configuration des paramètres généraux à activer [!DNL Store Fulfillment] pour votre magasin. Configurez les paramètres d’extension globaux, les paramètres système pour la journalisation, la synchronisation des données et la sécurité. Fournissez des données clés pour activer l’intégration entre Adobe Commerce et les services d’exécution de magasin.
+description: '"Configurer les paramètres généraux pour activer [!DNL Store Fulfillment] pour votre magasin. Configurez les paramètres d’extension globaux, les paramètres système pour la journalisation, la synchronisation des données et la sécurité. Fournissez des données clés pour permettre l’intégration entre Adobe Commerce et les services d’exécution de magasin."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
+
 
 # Configuration générale
 
@@ -18,27 +19,23 @@ L’intégration doit être connectée au service d’exécution de magasin. Con
 
 La configuration générale pour [!DNL Store Fulfillment] inclut les paramètres de configuration suivants :
 
-- [Activation de l’extension](#enable-the-extension)
+- [Activation de la solution](#enable-the-store-fulfillment-solution)
 - [Gérer les informations d’identification du compte pour se connecter aux services d’exécution de magasin](#account-credentials)
 - [Configuration de la journalisation](#configure-logging)
-- [Définition des options de gestion des opérations de [synchronisation des commandes]](#order-synchronization)
+- [Définition des options de gestion des opérations de synchronisation des commandes et des erreurs](#order-synchronization)
 - [Activation des options d’expédition d’exécution de magasin](#enable-store-fullment-shipping-options)
 - [Configuration des paramètres de sécurité et d’authentification pour l’application d’exécution de magasin](#store-fulfillment-app)
 - [Définition de la disponibilité des méthodes de diffusion et de la configuration des messages](#in-store-delivery-methods)
 
-
-## Activation de l’extension
+## Activation de la solution d’exécution de magasin
 
 | **Champ** | **Description** | **Portée** | **Obligatoire** |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Activez ou désactivez la solution. Lorsque cette option est activée, configurez et utilisez les fonctionnalités d’exécution de magasin et établissez la connexion entre votre boutique Adobe Commerce et les services d’exécution de magasin. Lorsque cette option est désactivée, toutes les fonctions d’exécution de magasin sont désactivées et il n’existe aucune communication entre Adobe Commerce et les services d’exécution de magasin. Les informations de commande ne peuvent pas être traitées ni reçues. | Global | Oui |
 
-
 Pour terminer cette configuration, voir **Magasins → Configuration → Services → Livraison des magasins par Walmart Commerce Technologies**.
 
 ## Ajout d’informations d’identification de compte
-
-
 
 | **Champ** | **Description** | **Portée** | **Obligatoire** |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -92,7 +89,6 @@ Configurez les options d’expédition d’exécution de magasin qui déterminen
 
 ### Bateau
 
-
 | **Champ** | **Description** | **Portée** | **Obligatoire** |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enable Ship To Store]** | Le paramètre d’expédition vers l’entrepôt tire parti de vos capacités d’expédition vers l’entrepôt existantes. Si vous utilisez Inventory management, ou si vous pouvez accepter et exécuter des commandes dans des emplacements marchands sans inventaire via des transferts d’inventaire magasin à magasin, définissez cette option sur `Yes`.</br></br>Si vous ne pouvez pas prendre en charge l’option de livraison ou si vous ne souhaitez pas l’offrir, définissez sur `No`. Lorsque cette option est désactivée, les éléments de votre catalogue dont l’inventaire n’est pas renseigné pour un magasin marchand ou les éléments situés en dessous de cet emplacement sont [!DNL Out of Stock Threshold], ne sont pas proposées avec les options de récupération en magasin.</br></br>Il s’agit d’un paramètre global qui peut être ajusté par lieu commercial. | Global | Non |
@@ -117,7 +113,6 @@ Configurez les paramètres de sécurité du compte utilisateur et du mot de pass
 | **[!UICONTROL Lockout Time (minutes)]** | Nombre de minutes pour verrouiller un compte après l’échec de connexion. | Global | Non |
 | **[!UICONTROL Force Password Change]** | Détermine si un changement de mot de passe utilisateur est requis.</br></br>`Yes`: L’utilisateur doit modifier son mot de passe après la configuration du compte.</br>`No`: Recommande à l’utilisateur de modifier le mot de passe après la configuration du compte. | Global | Non |
 | **Durée de vie du mot de passe** | Nombre de jours pendant lesquels un mot de passe reste valide avant qu’un mot de passe requis ne soit modifié. Laissez vide pour désactiver cette option. | Global | Non |
-
 
 ### Authentification à deux facteurs
 
@@ -150,7 +145,6 @@ In-store pickup, says its global setting, but scope is Website.  How do you conf
 | **Activation de la collecte côté serveur** | Activez ou désactivez l’option de sélection au niveau du curseur au cours du processus de passage en caisse pour les clients qui choisissent la sélection de magasin.</br></br>Ce paramètre global s’applique à tous les emplacements de magasins de détail. Lorsque cette option est activée, vous pouvez la désactiver de manière sélective à l’emplacement du magasin de détail. | Site Web | Non |
 
 Pour plus d’informations sur la personnalisation des méthodes de diffusion dans des emplacements de magasins de détail sélectionnés, voir **Configuration de la boutique de détail**.
-
 
 #### Configuration du titre de la méthode de diffusion
 
@@ -262,8 +256,3 @@ Pour plus d’informations sur la personnalisation des méthodes de diffusion da
 <td>Non</td>
 </tr>
 </tbody></table>
-
-
-
-
-

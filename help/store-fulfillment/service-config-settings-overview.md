@@ -1,14 +1,15 @@
 ---
-title: Présentation de la configuration de l’exécution de magasin
-description: Découvrez les catégories de paramètres de configuration de l’administrateur disponibles pour la solution d’exécution de magasin et la manière dont elles sont configurées.
+title: Présentation de la configuration pour l’exécution du magasin
+description: Découvrez les types de paramètres de configuration d’administration disponibles pour personnaliser les fonctionnalités d’exécution étendues fournies par la solution d’exécution de magasin et liez-vous aux instructions pour terminer la configuration.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
+
 
 # Présentation de la configuration pour l’exécution du magasin
 
@@ -26,10 +27,9 @@ Dans l’administrateur Adobe Commerce, les paramètres de configuration des ser
 | [Configuration de plusieurs sites web/domaines](multi-site-and-scope-config.md) | Configurez les stocks et les méthodes de diffusion pour plusieurs sites web/portées de magasin. | Non |
 | [Configuration du système de processus en arrière-plan](background-processes.md) | Configurez les plannings des processus en arrière-plan utilisés pour synchroniser les données avec les services d’exécution. | Non |
 | [Configuration de l’emplacement et du mappage du magasin](store-location-map-provider-setup.md) | Configurer la possibilité d’utiliser un fournisseur de distance pour rechercher des magasins de détail et afficher ces informations dans la carte SLS | Oui |
-| [Configuration de l’expérience d’archivage](store-location-map-provider-setup.md) | Configurez la couleur de la voiture et les options de la marque de voiture qui seront disponibles pendant le processus d’archivage. | Oui |
+| [Configuration de l’expérience d’archivage](check-in-experience-setup.md) | Configurez la couleur de la voiture et les options de la marque de voiture qui seront disponibles pendant le processus d’archivage. | Oui |
 | [Configuration de l’utilisateur](user-setup.md) | Gérez les comptes d’utilisateurs, les rôles et les autorisations des associés de magasin qui utilisent l’application d’aide au magasin. portées. | Oui |
 | [Configuration de l’application](app-setup.md) | Vérifiez les configurations disponibles pour l’application d’assistance à la boutique requises pour terminer le processus d’intégration. Ces paramètres ne peuvent pas être configurés à partir de l’administrateur Adobe Commerce. | Oui |
-
 
 ## Utilisation de la référence de configuration
 

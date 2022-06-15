@@ -3,9 +3,9 @@ title: Connexion à la solution d’exécution de magasin
 description: Créez les connexions entre Adobe Commerce et la solution d’exécution de magasin en créant et en autorisant une intégration Adobe Commerce et en ajoutant les informations d’identification du compte d’exécution de magasin à la configuration du service Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Pour intégrer Adobe Commerce aux services d’exécution de magasin, vous crée
 
 Une fois que vous avez rempli le formulaire de prise en charge, un compte d’exécution de la boutique Walmart est créé pour vous. Vous recevrez les informations d’identification suivantes lorsqu’elles seront disponibles :
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]

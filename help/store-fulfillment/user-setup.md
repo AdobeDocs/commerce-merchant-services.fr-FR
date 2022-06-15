@@ -1,16 +1,17 @@
 ---
-title: Configuration de l’utilisateur
-description: 'Configurez des sources Inventory management améliorées en tant que magasins marchands. '
+title: Configuration utilisateur
+description: 'Configurez des sources Inventory management améliorées en tant que boutiques de commerce pour prendre en charge la solution d’exécution de magasin pour Adobe Commerce. '
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-# Configuration de l’utilisateur
+
+# Configuration utilisateur
 
 Application d’aide à la boutique Les utilisateurs sont gérés dans Adobe Commerce. Toutefois, ces utilisateurs n’interagissent pas directement avec Adobe Commerce. La gestion des utilisateurs est configurée dans Adobe Commerce pour activer les connexions sécurisées entre Adobe Commerce et l’application.
 
@@ -42,7 +43,6 @@ Configuration des rôles utilisateur à partir de **[!UICONTROL System > Store F
 
 Gérez les profils utilisateur de l’application d’assistance de la boutique depuis les paramètres du système d’administration :  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
-
 | **Champ** | **Description** | **Portée** | **Obligatoire** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL is Active]** | Activez ou désactivez l’utilisateur. | Global | Oui |
@@ -54,8 +54,3 @@ Gérez les profils utilisateur de l’application d’assistance de la boutique 
 | **Paramètres régionaux de l’interface** | Si votre boutique comporte plusieurs langues, définissez Paramètres régionaux de l’interface sur la langue à utiliser pour l’interface d’administration. | Global | Non |
 | **Principal de** | Pour définir une date de début, cliquez sur l&#39;icône de calendrier. | Global | Non |
 | **Principal à** | Définissez la Date d’expiration en cliquant sur l’icône de calendrier. La définition d’une date d’expiration est utile pour configurer des affectations temporaires d’utilisateurs ou de rôles. Après la date d’expiration, l’état du compte utilisateur passe à `Inactive`, mais le compte peut toujours être mis à jour si nécessaire. | Global | Non |
-
-
-
-
-

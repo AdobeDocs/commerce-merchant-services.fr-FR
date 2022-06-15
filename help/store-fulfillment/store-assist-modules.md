@@ -1,27 +1,27 @@
 ---
-title: '"Workflows d’exécution de l’assistant de stockage"'
-description: '"Découvrez les modules Pick, Stage, Hand-Off et Commandes disponibles dans l’application d’aide à la boutique. Ces modules permettent d’exécuter de bout en bout le workflow d’exécution des magasins pour les commandes BOPIS. Store Associates utilise ces modules pour gérer et envoyer des commandes de nettoyage de magasin aux clients.'
+title: '"Workflows d’assistance en magasin"'
+description: '"Découvrez les modules Pick, Stage, Hand-Off et Commandes disponibles dans l’application d’aide à la boutique. Ces modules permettent d’exécuter de bout en bout le workflow d’exécution des magasins pour les commandes BOPIS. Store Associates utilise ces modules pour gérer et envoyer des commandes de nettoyage de magasin aux clients."'
 role: User
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
 
 
-# Workflows d’assistance de magasin
+# Workflows d’exécution de l’aide à la boutique
 
 L’application d’assistance Boutique fournit à Store Associates quatre modules pour gérer le processus d’exécution en magasin pour l’achat en ligne et la prise en charge des commandes en magasin :
 
-**[Pick](#pick-module)**: obtenez une visibilité complète de tous les articles commandés et des outils pour vous assurer que les bons articles et les bonnes quantités sont sélectionnés. Les associés de magasin peuvent sélectionner une ou plusieurs commandes simultanément pour une plus grande efficacité.
+- **[Pick](#pick-module)**: obtenez une visibilité complète de tous les articles commandés et des outils pour vous assurer que les bons articles et les bonnes quantités sont sélectionnés. Les associés de magasin peuvent sélectionner simultanément une ou plusieurs commandes pour une plus grande efficacité.
 
-**[Évaluation](#stage-module)**: entrez l’emplacement où les commandes sont passées pendant que les clients se rendent dans le magasin afin que les associés du magasin puissent les trouver facilement pour le transfert de commande.
+- **[Évaluation](#stage-module)**: entrez l’emplacement où les commandes sont passées pendant que les clients se rendent dans le magasin afin que les associés du magasin puissent les trouver facilement pour le transfert de commande.
 
-**[Main désactivée](#hand-off)**: Recevez des notifications en temps réel après l’arrivée des clients dans le magasin afin de minimiser le temps d’attente et de passer les commandes en toute transparence.
+- **[Main désactivée](#hand-off-module)**: Recevez des notifications en temps réel après l’arrivée des clients dans le magasin afin de minimiser le temps d’attente et de passer les commandes en toute transparence.
 
-**[Commandes](#orders-module)**: affichez la liste de toutes les commandes passées pour un magasin afin que chacun connaisse le nombre de commandes et l’état de chaque commande.
+- **[Commandes](#orders-module)**: affichez la liste de toutes les commandes passées pour un magasin afin que chacun connaisse le nombre de commandes et l’état de chaque commande.
 
 >[!NOTE]
 >

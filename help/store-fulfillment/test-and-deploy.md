@@ -3,7 +3,7 @@ title: Test et déploiement de l’exécution du magasin
 description: Planifiez le test pour vérifier la fonctionnalité d’exécution de magasin. Les tests couvrent l’API de synchronisation du stock, le workflow d’exécution de bout en bout pour les commandes annulées, la gestion des utilisateurs de l’application Store Fulfillment et l’expérience d’archivage client.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
@@ -55,9 +55,6 @@ Cet exemple de plan de test couvre les domaines fonctionnels suivants :
 | Adobe Commerce Frontend | Types de produits | Client, administrateur |
 | Contrat frontal</br>Formulaire d’archivage | Expérience d’archivage | Client, administrateur |
 | Application d’aide à la boutique | Commande</br>Pick</br>Évaluation</br>et Handoff | Association de magasin |
-
-
-
 
 ### Synchronisation de l’API d’inventaire
 
@@ -639,8 +636,6 @@ Cette section du plan de test couvre les scénarios de test des workflows de com
 </tbody>
 </table>
 
-
-
 ## Déployer
 
 Une fois que vous avez vérifié que la solution a été configurée et testée selon vos spécifications, vous êtes prêt à déployer de l’évaluation vers la production.
@@ -650,7 +645,6 @@ Le déploiement et les tests varient selon votre infrastructure et vos capacité
 >[!TIP]
 >
 >Pour obtenir des instructions de déploiement, des listes de contrôle et des bonnes pratiques pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Déployer votre boutique](https://devdocs.magento.com/cloud/live/stage-prod-live.html) dans la documentation destinée aux développeurs Adobe Commerce.
-
 
 
 
