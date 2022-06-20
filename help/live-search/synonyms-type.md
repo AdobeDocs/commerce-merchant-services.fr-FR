@@ -2,9 +2,9 @@
 title: '"Types de synchronisation"'
 description: '"A sens unique et à sens unique [!DNL Live Search] les synonymes étendent la définition des mots-clés."'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ Un synonyme unidirectionnel est un sous-ensemble d’un mot-clé, mais avec une 
 
 Gardez à l’esprit les bonnes pratiques suivantes pour tirer le meilleur parti des synonymes de recherche en direct.
 
-### Mappage des mots-clés
+### Évitez les &quot;mots d’arrêt&quot;
 
-Cette technique utilise des attributs de produit pouvant faire l’objet de recherches, plutôt que des synonymes, pour créer des associations basées sur des mots-clés entre les produits. Par conséquent, un produit mappé peut apparaître dans les résultats de recherche d’un autre produit. Pour en savoir plus, voir [Résultats de la recherche](https://docs.magento.com/user-guide/catalog/search-results.html).
+La recherche en direct filtre les &quot;mots d’arrêt&quot; anglais courants des synonymes, tels que :
+
+a, an et sont, en tant que, à, être, mais, par, pour, si, in, into, is, it, no, of, on, or, such, the, they, then, they, this, to, was, will with
+
+Les mots d’arrêt ne rendent pas les synonymes plus significatifs, mais augmentent la quantité de données à traiter.
 
 ### Utiliser des mots simples
 
@@ -46,3 +50,7 @@ Il n&#39;est pas nécessaire de définir les formes singulière et plurielle d&#
 ### Cohérence
 
 Soyez cohérent avec la manière dont la terminologie est utilisée dans votre catalogue. Gardez à l’esprit qu’il peut y avoir des différences régionales d’utilisation et parfois des différences au sein d’un secteur d’activité.
+
+### Mappage des mots-clés
+
+Cette technique utilise des attributs de produit pouvant faire l’objet de recherches, plutôt que des synonymes, pour créer des associations basées sur des mots-clés entre les produits. Par conséquent, un produit mappé peut apparaître dans les résultats de recherche d’un autre produit. Pour en savoir plus, voir [Résultats de la recherche](https://docs.magento.com/user-guide/catalog/search-results.html).
