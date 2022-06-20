@@ -4,9 +4,9 @@ description: '"Découvrez comment [!DNL Store Fulfillment for Adobe Commerce by 
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,8 @@ L’exécution de la boutique améliore Adobe Commerce en ajoutant les fonctionn
 * **Emails transactionnels**- Étend les fonctionnalités d’administration pour [!UICONTROL Sales Emails] pour ajouter des modèles de courrier électronique à acheter en ligne, récupérez les transactions en magasin. Les modèles prennent en charge la communication en temps réel entre les clients et les associés du magasin pendant le processus de récupération des commandes.
 
 * **Exécution flexible**-Étend [!DNL Commerce] des fonctionnalités permettant de prendre en charge des scénarios de traitement des commandes différées, de réduction de quantité et d’exécution partielle des commandes, tout en facilitant les annulations et les notes de crédit nécessaires pour prendre en charge ces scénarios.
+
+>[!TIP]
+>
+> Pour une démonstration rapide de la solution d’exécution de magasin, reportez-vous à la section [Présentation de l’exécution du magasin](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) disponible dans _Vidéos et Tutorials Adobe Commerce_.
+
