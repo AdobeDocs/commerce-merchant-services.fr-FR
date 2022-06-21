@@ -1,9 +1,10 @@
 ---
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
+source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -44,6 +45,14 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
    _Nom et emplacement de la recommandation_
 
 1. Dans le _Sélectionner le type de recommandation_ , spécifiez la variable [type de recommandation](type.md) vous souhaitez afficher la page sélectionnée. Pour certaines pages, la variable [placement](placement.md) de recommandations est limitée à certains types.
+
+   Certains types de recommandations utilisent les données comportementales de vos acheteurs pour [former des modèles d’apprentissage automatique ;](behavioral-data.md) pour créer des recommandations personnalisées. Pour vous aider à visualiser la progression de la formation de chaque type de recommandation, cette section affiche une mesure de la préparation pour chaque type. Ces indicateurs de préparation sont calculés sur la base de deux facteurs :
+
+   - Taille suffisante du jeu de résultats : Existe-t-il suffisamment de résultats renvoyés dans la plupart des scénarios pour éviter d’utiliser [recommandations de sauvegarde](behavioral-data.md#backuprecs)?
+
+   - Variété suffisante de l’ensemble de résultats : Les produits renvoyés représentent-ils une variété de produits de votre catalogue ? L’objectif de ce facteur est d’éviter qu’une minorité de produits soit le seul élément recommandé sur l’ensemble du site.
+
+   En fonction des facteurs ci-dessus, une valeur de préparation est calculée et affichée. Un type de recommandation est considéré comme prêt à être déployé lorsque sa valeur de préparation est supérieure ou égale à 75 %. Un type de recommandation est considéré comme partiellement prêt lorsque son état de préparation est d’au moins 50 %. Enfin, un type de recommandation est considéré comme non prêt à être déployé lorsque sa valeur de préparation est inférieure à 50 %.
 
 1. Dans le _Libellé d’affichage de la vitrine_ , saisissez la [label](placement.md#recommendation-labels) qui est visible par vos acheteurs, par exemple &quot;Meilleurs vendeurs&quot;.
 

@@ -1,9 +1,10 @@
 ---
 title: Workspace
 description: Découvrez comment configurer, gérer et surveiller les performances des recommandations de produits.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
+source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -101,5 +102,5 @@ Sur la page des détails de la recommandation, cliquez sur **Créer**. Pour en s
 | Recettes | Les recettes générées par la recommandation pour la période en cours. |
 | Recettes Lt | (Recettes sur la durée de vie) Les recettes sur la durée de vie générées par une recommandation. |
 | Visibilité | Pourcentage d’unités de recommandations qui s’inscrivent pour la vue. |
-| Ctr | (Pourcentage de clics enregistrés) Pourcentage du pourcentage d’impressions unitaires pour la recommandation qui enregistre un clic. |
-| vCtr | (Pourcentage de clics enregistrés consultables) Pourcentage des impressions affichables pour l’unité de recommandations qui enregistre un clic. |
+| Ctr | (Taux de clics) Pourcentage d’impressions unitaires pour la recommandation qui enregistre un clic. |
+| vCtr | (Taux de clics affichables) Pourcentage d’impressions affichables pour l’unité de recommandations qui enregistre un clic. |

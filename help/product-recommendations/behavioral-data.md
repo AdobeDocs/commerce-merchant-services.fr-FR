@@ -1,9 +1,10 @@
 ---
 title: Données comportementales
 description: Découvrez les données comportementales et quand vous pouvez commencer à les utiliser.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
+source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -34,9 +35,11 @@ Autres variables pouvant avoir un impact sur le temps nécessaire à l’entraî
 - Certains types de recommandations s’exécutent plus rapidement que d’autres.
 - Adobe Commerce recalcule les données comportementales toutes les quatre heures. Bien que vous puissiez techniquement déployer vos unités de recommandations à ce moment-là, sachez que les recommandations deviennent plus précises plus elles sont utilisées longtemps sur votre site.
 
+Pour vous aider à visualiser la progression de la formation de chaque type de recommandation, la variable [créer une recommandation](create.md) affiche les indicateurs de préparation.
+
 Bien que les données soient collectées sur les modèles de production et d’apprentissage automatique, vous pouvez mettre en oeuvre la variable [tâches restantes](implementation-workflow.md) nécessaire pour déployer des recommandations sur votre storefront. Lorsque vous avez terminé les tests et la configuration des recommandations, les modèles d’apprentissage automatique ont collecté et calculé suffisamment de données pour créer des recommandations pertinentes, ce qui vous permet de déployer les recommandations sur votre vitrine.
 
-## Recommandations de sauvegarde
+## Recommandations de sauvegarde {#backuprecs}
 
 S’il n’existe pas de données d’entrée suffisantes pour fournir tous les éléments de recommandation demandés dans une unité, Adobe Commerce fournit des recommandations de sauvegarde pour remplir les unités de recommandation. Par exemple, si vous déployez la variable `Recommended for you` type de recommandation sur votre page d’accueil, un nouvel acheteur sur votre site n’a pas généré suffisamment de données comportementales pour proposer des produits personnalisés avec précision. Dans ce cas, Adobe Commerce affiche des éléments en fonction de la variable `Most viewed` type de recommandation à cet acheteur.
 

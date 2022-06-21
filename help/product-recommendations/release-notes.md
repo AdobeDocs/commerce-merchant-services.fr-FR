@@ -1,9 +1,10 @@
 ---
 title: Notes de mise à jour
 description: Les dernières informations de mise à jour pour [!DNL Product Recommendations] d’Adobe Commerce.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
+source-git-commit: 78f469dda853a6f46394d5969f879100cf22f8bb
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
@@ -25,6 +26,11 @@ Les notes de mise à jour incluent :
 Consultez la documentation destinée aux développeurs pour [en savoir plus sur la compatibilité des produits](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x et 2.4.x
+
+## 4.0.0 de magento/product-recommendations
+
+* ![Nouveau](../assets/new.svg) - Ajout [indicateurs de préparation](create.md) pour vous aider à visualiser la progression de la formation de chaque type de recommandation.
+* ![Nouveau](../assets/new.svg) - Il s’agit d’une version majeure. Vous devez [edit](install-configure.md#update) la racine `composer.json` pour votre projet. Cette version requiert également que vous fournissiez deux clés d’API lors de l’installation et de la configuration de Product Recommendations : [une clé de production et une clé d’environnement de test ;](../landing/saas.md).
 
 ## 3.3.7 de magento/product-recommendations
 

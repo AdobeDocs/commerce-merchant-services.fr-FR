@@ -1,19 +1,19 @@
 ---
 title: Connecteur Commerce Services
-description: Découvrez comment intégrer votre instance Adobe Commerce ou Magento Open Source aux services à l’aide d’une clé API et d’une clé privée.
+description: Découvrez comment intégrer votre instance Adobe Commerce ou Magento Open Source aux services à l’aide des clés d’API de production et d’environnement de test.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
+source-git-commit: 42cb709f4699fcdd56df7ca02466ab416f01cab2
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Certaines fonctionnalités Adobe Commerce et Magento Open Source sont optimisées par [!DNL Commerce Services]  et déployé en tant que SaaS (logiciel en tant que service). Pour utiliser ces services, vous devez connecter votre [!DNL Commerce] à l’aide d’une clé API et d’une clé privée, et spécifiez l’espace de données dans la variable [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html). Vous n’avez besoin de le configurer qu’une seule fois.
+Certaines fonctionnalités Adobe Commerce et Magento Open Source sont optimisées par [!DNL Commerce Services]  et déployé en tant que SaaS (logiciel en tant que service). Pour utiliser ces services, vous devez connecter votre [!DNL Commerce] à l’aide des clés d’API de production et d’environnement de test, et spécifiez l’espace de données dans la variable [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html). Vous n’avez besoin de le configurer qu’une seule fois.
 
-## Services disponibles
+## Services disponibles {#availableservices}
 
 La liste suivante répertorie les [!DNL Commerce] fonctions auxquelles vous pouvez accéder via [!DNL Commerce Services Connector]:
 
@@ -33,9 +33,9 @@ Les sections suivantes abordent plus en détail chacun de ces éléments.
 
 ## Informations d’identification {#apikey}
 
-La clé API et la clé privée sont générées à partir de la variable [!DNL Commerce] compte du détenteur de licence, qui est identifié par une variable [!DNL Commerce] ID (MageID). Pour transmettre la validation des droits pour des services tels que [!DNL Product Recommendations] ou [!DNL Live Search], le détenteur de licence de l’organisation du commerce peut générer le jeu de clés API tant que le compte est en règle. Les clés peuvent être partagées sur la base du &quot;besoin de savoir&quot; avec l’intégrateur système ou l’équipe de développement qui gère les projets et les environnements pour le compte du détenteur de licence. En outre, les intégrateurs de solution sont également autorisés à utiliser [!DNL Commerce Services]. Si vous êtes un intégrateur de solution, le signataire de [!DNL Commerce] le contrat de partenaire doit générer les clés d’API.
+Les clés d’API de production et d’environnement de test sont générées à partir de la variable [!DNL Commerce] compte du détenteur de licence, qui est identifié par une variable [!DNL Commerce] ID (MageID). Pour transmettre la validation des droits pour des services tels que [!DNL Product Recommendations] ou [!DNL Live Search], le détenteur de licence de l’organisation du commerce peut générer le jeu de clés API tant que le compte est en règle. Les clés peuvent être partagées sur la base du &quot;besoin de savoir&quot; avec l’intégrateur système ou l’équipe de développement qui gère les projets et les environnements pour le compte du détenteur de licence. En outre, les intégrateurs de solution sont également autorisés à utiliser [!DNL Commerce Services]. Si vous êtes un intégrateur de solution, le signataire de [!DNL Commerce] le contrat de partenaire doit générer les clés d’API.
 
-### Génération d’une clé API et d’une clé privée {#genapikey}
+### Génération des clés d’API de production et d’environnement de test {#genapikey}
 
 1. Connectez-vous à [!DNL Commerce] compte à l’adresse [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
 
@@ -51,11 +51,13 @@ La clé API et la clé privée sont générées à partir de la variable [!DNL C
 
    >[!WARNING]
    >
-   > Il s’agit de la seule opportunité que vous avez pour copier ou télécharger votre clé.
+   > Il s’agit de la seule opportunité que vous avez pour copier ou télécharger vos clés.
 
 1. Cliquez sur **Télécharger** puis cliquez sur **Annuler**.
 
-   Le **Clés API** affiche désormais votre clé API. Vous avez besoin de la clé API et de la clé privée lorsque vous [sélectionner ou créer un projet SaaS ;](#createsaasenv).
+1. Répétez les étapes ci-dessus pour chaque environnement (production et environnement de test).
+
+   Le **Clés API** affiche désormais vos clés d’API. Vous avez besoin des clés de production et d’environnement de test lorsque vous [sélectionner ou créer un projet SaaS ;](#createsaasenv).
 
 ## Configuration SaaS {#saasenv}
 
@@ -71,35 +73,37 @@ Pour [!DNL Product Recommendations], l’espace de données SaaS contient des do
 
 >[!NOTE]
 >
-> Si vous ne voyez pas l’événement **[!UICONTROL Commerce Services Connector]** dans la section [!DNL Commerce] configuration, vous devez installer le [!DNL Commerce] modules pour répondre à vos besoins [!DNL Commerce] par exemple, [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
+> Si vous ne voyez pas l’événement **[!UICONTROL Commerce Services Connector]** dans la section [!DNL Commerce] configuration, vous devez installer le [!DNL Commerce] modules pour répondre à vos besoins [[!DNL Commerce] service](#availableservices).
 
 Pour sélectionner ou créer un projet SaaS, demandez la variable [!DNL Commerce] Clé API de [!DNL Commerce] détenteur de licence pour votre boutique.
 
-1. Sur le _Administration_ barre latérale, accédez à **Magasins** > _Paramètres_ > **Configuration**.
+1. Sur le _Administration_ barre latérale, accédez à **Système** > Services > **Connecteur Commerce Services**.
 
-1. Dans le panneau de gauche, développez **Services** et choisissez **Connecteur Commerce Services**.
-
-1. Dans le _Clés API_ , collez vos valeurs clés pour le **Clé API de production** et le **Clé privée de production**.
+1. Dans le _Clés d’API Sandbox_ et _Clés d’API de production_ , collez vos valeurs clés.
 
    Les clés privées doivent inclure `----BEGIN PRIVATE KEY---` au début de la clé et `----END PRIVATE KEY----` à la fin de la clé privée.
 
-1. Cliquez sur **Enregistrer la configuration**.
+1. Cliquez sur **Enregistrer**.
 
-Tous les projets SaaS associés à votre clé d’API apparaissent dans la variable **Projet SaaS** champ .
+Tous les projets SaaS associés à vos clés apparaissent dans le **Projet** dans le champ **Identifiant SaaS** .
 
-1. S’il n’existe aucun projet SaaS, cliquez sur **Créer un projet**. Ensuite, dans le **Nom du projet** , saisissez un nom pour votre projet SaaS.
+1. S’il n’existe aucun projet SaaS, cliquez sur **Créer un projet**. Ensuite, dans le **Projet** , saisissez un nom pour votre projet SaaS.
 
    Lorsque vous créez un projet SaaS, [!DNL Commerce] génère un ou plusieurs espaces de données SaaS en fonction de votre [!DNL Commerce] license :
    - Adobe Commerce : un espace de données de production ; deux espaces de données de test
    - Magento Open Source : un espace de données de production ; aucun espace de données de test
 
-1. Sélectionnez la **Espace de données SaaS** à utiliser pour la configuration actuelle de votre [!DNL Commerce] magasin.
+1. Sélectionnez la **Espace de données** à utiliser pour la configuration actuelle de votre [!DNL Commerce] magasin.
 
 >[!WARNING]
 >
 > Si vous générez de nouvelles clés dans la section Portail API de Mon compte, mettez immédiatement à jour les clés API dans la configuration Admin. Si vous générez de nouvelles clés sans les mettre à jour dans l’Admin, vos extensions SaaS ne fonctionnent plus et vous perdez des données importantes.
 
-Pour modifier les noms des projets ou des espaces de données SaaS, cliquez sur le bouton **Renommer ce projet** ou **Renommer l’espace de données** respectivement.
+Pour modifier les noms de projet ou d’espace de données SaaS, cliquez sur **Renommer**.
+
+## Organisation IMS (facultatif) {#organizationid}
+
+(Cette fonctionnalité est destinée à une intégration ultérieure à Adobe Experience Platform). Pour connecter votre instance Adobe Commerce à Adobe Experience Platform, connectez-vous à votre compte Adobe à l’aide de votre Adobe ID. Une fois connecté, l’organisation IMS associée à votre compte d’Adobe s’affiche dans cette section.
 
 ## Synchronisation des catalogues
 
