@@ -1,9 +1,9 @@
 ---
 title: Présentation du guide
 description: Le connecteur Adobe Experience Platform pour Adobe Commerce connecte votre [!DNL Commerce] vers d’autres produits Adobe Experience Cloud.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 L’extension de connecteur Experience Platform permet aux marchands Adobe Commerce d’envoyer des données à Adobe Experience Platform Edge afin que d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target, puissent utiliser cette fonctionnalité. [!DNL Commerce] data. En connectant votre [!DNL Commerce] pour d’autres produits dans Adobe Experience Cloud, vous pouvez exécuter des tâches, telles que l’analyse du comportement des utilisateurs sur votre site, effectuer des tests AB et créer des campagnes personnalisées.
 
-Les événements Storefront capturent les interactions d’acheteurs, telles que `View Page`, `View Product`, `Add to Cart`, etc. Les données capturées ne contiennent pas d’informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les identifiants de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/privacy/experience-cloud.html). Consultez la liste complète des événements storefront vers la fin de cette page.
+Les événements Storefront capturent les interactions d’acheteurs, telles que `View Page`, `View Product`, `Add to Cart`, etc. Les données capturées ne contiennent pas d’informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les identifiants de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/privacy/experience-cloud.html). Consultez la liste complète des [événements storefront](events.md).
 
 ## Prérequis pour l’utilisation du connecteur Experience Platform {#prereqs}
 
@@ -43,7 +43,7 @@ Ce guide est destiné au commerçant Adobe Commerce qui doit connecter ses donn�
 Actuellement, le connecteur Experience Platform présente les problèmes connus suivants :
 
 - Les événements de recherche ne sont pas pris en charge sur une édition Adobe Commerce Enterprise avec le module B2B installé.
-- Les données de storefront prennent quelques heures pour passer de Commerce aux différentes destinations après connexion à Adobe Experience Platform Edge.
+- Les données de storefront prennent environ une heure pour aller d’Adobe Commerce aux différentes destinations après la connexion à Adobe Experience Platform Edge.
 
 ## Assistance
 
