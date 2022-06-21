@@ -2,9 +2,9 @@
 title: '"À l’intégration de [!DNL Quick Checkout] pour l’extension Adobe Commerce"'
 description: '"Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Pour connecter votre fournisseur de services de paiement, procédez comme décri
 
 ## Activer l’extension
 
-1. Sur le _Administration_ barre latérale, accédez à **Magasins** > **Configuration** > **Passage en caisse** pour accéder à la page de configuration Admin de passage en caisse .
+1. Sur le _Administration_ barre latérale, accédez à **Magasins** > _Paramètres_ > **Configuration**.
+1. Dans le panneau de gauche, développez **Ventes** et sélectionnez **Passage en caisse**.
 
    ![Passage en caisse rapide](assets/admin-view.png)
 
