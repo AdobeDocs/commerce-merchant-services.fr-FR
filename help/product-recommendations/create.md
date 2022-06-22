@@ -2,9 +2,9 @@
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
    Vous pouvez créer jusqu’à cinq unités de recommandations principales pour chaque type de page et jusqu’à 25 unités pour le créateur de pages. Le type de page est grisé Lorsque la limite est atteinte.
 
-   ![Nom de la recommandation](assets/create-recommendation.png)
-   _Nom et emplacement de la recommandation_
+   ![Nom et page de la recommandation](assets/create-recommendation.png)
+   _Nom de la recommandation et placement de page_
 
 1. Dans le _Sélectionner le type de recommandation_ , spécifiez la variable [type de recommandation](type.md) vous souhaitez afficher la page sélectionnée. Pour certaines pages, la variable [placement](placement.md) de recommandations est limitée à certains types.
 
@@ -54,10 +54,10 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
    En fonction des facteurs ci-dessus, une valeur de préparation est calculée et affichée. Un type de recommandation est considéré comme prêt à être déployé lorsque sa valeur de préparation est supérieure ou égale à 75 %. Un type de recommandation est considéré comme partiellement prêt lorsque son état de préparation est d’au moins 50 %. Enfin, un type de recommandation est considéré comme non prêt à être déployé lorsque sa valeur de préparation est inférieure à 50 %.
 
-1. Dans le _Libellé d’affichage de la vitrine_ , saisissez la [label](placement.md#recommendation-labels) qui est visible par vos acheteurs, par exemple &quot;Meilleurs vendeurs&quot;.
-
-   ![Nom de la recommandation](assets/create-recommendation-select-type.png)
+   ![Type de recommandation](assets/create-recommendation-select-type.png)
    _Type de recommandation_
+
+1. Dans le _Libellé d’affichage de la vitrine_ , saisissez la [label](placement.md#recommendation-labels) qui est visible par vos acheteurs, par exemple &quot;Meilleurs vendeurs&quot;.
 
 1. Dans le _Choisir le nombre de produits_ , utilisez le curseur pour spécifier le nombre de produits à afficher dans l’unité de recommandation.
 
@@ -72,12 +72,12 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
    Le _Choisir la position_ affiche toutes les recommandations (le cas échéant) créées pour le type de page que vous avez sélectionné.
 
-   ![Nom de la recommandation](assets/create-recommendation-select-placement.png)
-   _Type de recommandation_
+   ![Ordre de recommandation](assets/create-recommendation-select-placement.png)
+   _Ordre de recommandation sur la page_
 
 1. (Facultatif) Dans le _Filtres_ , [appliquer des filtres ;](filters.md) pour contrôler les produits qui apparaissent dans l’unité de recommandation.
 
-   ![Nom de la recommandation](assets/create-recommendation-select-placement.png)
+   ![Filtres de recommandations](assets/create-recommendation-filter-products.png)
    _Filtres de produits de recommandation_
 
 1. Une fois l’opération terminée, cliquez sur l’une des options suivantes :
