@@ -2,18 +2,16 @@
 title: '"Installez le [!DNL Quick Checkout] pour l’extension Adobe Commerce"'
 description: '"Procédez comme suit pour installer le [!DNL Quick Checkout] dans votre projet Adobe Commerce."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Installez le [!DNL Quick Checkout]
 
-Le [!DNL Quick Checkout] pour Adobe Commerce offre une expérience de passage en caisse transparente, conçue pour convertir des clients invités uniques en détenteurs de compte fidèles.
-
-Le [!DNL Quick Checkout] extension pour Adobe Commerce et [!DNL Magento Open Source] peut être installé avec [!DNL Composer keys], qui sont liés à la variable [Identifiant du Magento (mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target=&quot;_blank&quot;} fourni dans le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale d’Adobe Commerce ou dans les cas où la fonction [!DNL Composer keys] n’ont pas été précédemment enregistrés dans le `auth.json` fichier .
+Le [!DNL Quick Checkout] L’extension pour Adobe Commerce et Magento Open Source peut être installée avec [!DNL Composer keys], qui sont liés à la variable [Identifiant du Magento (mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target=&quot;_blank&quot;} fourni dans le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale d’Adobe Commerce ou dans les cas où la fonction [!DNL Composer keys] n’ont pas été précédemment enregistrés dans le `auth.json` fichier .
 
 Voir [Obtention des clés d’authentification](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)Rubrique {target=&quot;_blank&quot;} pour plus d’informations sur l’obtention [!DNL Composer keys].
 
