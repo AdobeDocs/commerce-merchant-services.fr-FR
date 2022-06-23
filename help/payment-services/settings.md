@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d
 1. Pour modifier le nom du mode de paiement affiché lors de l’extraction, modifiez la valeur de la variable **[!UICONTROL Checkout title]** champ .
 1. À [définir l’action de paiement ;](production.md#set-payment-services-as-payment-method), bascule **[!UICONTROL Payment action]** to `Authorize` ou `Authorize and Capture`.
 1. Pour activer le mode de débogage, activez la fonction **[!UICONTROL Debug Mode]** sélecteur.
+
+   Lorsque vous activez le mode de débogage, des informations de débogage supplémentaires sur le paiement par carte de crédit sont écrites dans la variable `var/log/payment.log` fichier . Ces informations peuvent vous donner plus d’informations sur un paiement spécifique pour faciliter la résolution des problèmes.
+
 1. Cliquez sur **[!UICONTROL Save]**.
 
    Si vous essayez de quitter cette vue sans enregistrer vos modifications, un modal s’affiche pour vous inviter à ignorer les modifications, à continuer les modifications ou à les enregistrer.
@@ -88,6 +91,9 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 
 1. Pour modifier la variable [Payer les messages plus tard](payments-options.md#pay-later-button), faites basculer le **[!UICONTROL Display Pay Later message]** .
 1. Pour activer le mode de débogage, activez la fonction **[!UICONTROL Debug Mode]** sélecteur.
+
+   Lorsque vous activez le mode de débogage, des informations de débogage supplémentaires sur le paiement PayPal sont écrites dans la variable `var/log/payment.log` fichier . Ces informations peuvent vous donner plus d’informations sur un paiement spécifique pour faciliter la résolution des problèmes.
+
 1. Cliquez sur **[!UICONTROL Save]**.
 
    Si vous essayez de quitter cette vue sans enregistrer vos modifications, un modal s’affiche pour vous inviter à ignorer les modifications, à continuer les modifications ou à les enregistrer.
