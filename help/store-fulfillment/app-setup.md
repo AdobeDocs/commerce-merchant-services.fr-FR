@@ -4,9 +4,9 @@ description: Configurez les [!DNL Store Assist] pour gérer les processus d’ex
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ L’application d’aide à la boutique nécessite deux types de configuration :
 
    - Personnalisez toutes les instructions de l’application (sélection, évaluation, remise).
 
-   - **Sélectionner des notifications**-Indiquez si une notification push doit être envoyée pour démarrer le processus de sélection après qu’un client a passé une commande.
+   - **Sélectionner des notifications**: indiquez si vous souhaitez envoyer une notification push pour démarrer le processus de sélection après qu’un client a passé une commande.
 
-   - **Archivage des notifications**-Indiquez si une notification push doit être envoyée pendant le processus d’archivage pour les récupérations de commande : après l’enregistrement, le temps d’attente du client dépasse une période spécifiée. Vous pouvez également désactiver la notification.
+   - **Archivage des notifications**: indiquez s’il faut envoyer une notification push pendant le processus d’archivage pour les récupérations de commande. Après l’enregistrement, le temps d’attente du client dépasse une période spécifiée. Vous pouvez également désactiver la notification.
 
    - **Traitement de la main**: activez les processus facultatifs lorsque l’associé du magasin envoie une commande au client ; par exemple, il requiert une signature du client ou invite l’associé à vérifier l’ID de client.
 
-   - **Activer le rejet d’élément lors de la remise**- Autoriser les clients à retourner ou annuler des articles de commande lors de la remise de commande.
+   - **Activer le rejet d’élément lors de la remise**: permet aux clients de renvoyer ou d’annuler des articles de commande lors de la remise de commande.
    Collaborez avec l’équipe des services clients de Walmart Commerce Technologies pour terminer la configuration frontale de l’application d’assistance au magasin.
 
 ## Téléchargement et installation des applications
@@ -67,7 +67,7 @@ Une fois la configuration de l’application d’aide à la boutique terminée, 
 
 - Store Associates nécessite les informations suivantes pour se connecter :
 
-   - Nom de la société associé à votre compte d’assistance en magasin
+   - **[!UICONTROL Company name]** associé au compte d’assistance de magasin
 
-   - Informations d’identification du compte d’assistance de la boutique : nom d’utilisateur et mot de passe de leur compte.
+   - **Informations d’identification du compte d’assistance de la boutique**—nom d’utilisateur et mot de passe pour leur compte.
    Un administrateur Adobe Commerce peut créer un compte d’utilisateur et définir des autorisations pour les comptes d’utilisateurs de l’application d’assistance en magasin pour les emplacements de magasin. [Collecte en magasin](merchant-store-configuration.md#pickup-location-configuration) activée dans les paramètres des boutiques d’administration.

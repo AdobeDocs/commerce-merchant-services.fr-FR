@@ -1,15 +1,15 @@
 ---
 title: Configuration générale
-description: '"Configurer les paramètres généraux pour activer [!DNL Store Fulfillment] pour votre magasin. Configurez les paramètres d’extension globaux, les paramètres système pour la journalisation, la synchronisation des données et la sécurité. Fournissez des données clés pour permettre l’intégration entre Adobe Commerce et les services d’exécution de magasin."'
+description: Configuration des paramètres généraux à activer [!DNL Store Fulfillment] pour votre magasin. Configurez les paramètres d’extension globaux, les paramètres système pour la journalisation, la synchronisation des données et la sécurité. Fournissez des données clés pour activer l’intégration entre Adobe Commerce et les services d’exécution de magasin.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 0%
 
 ---
-
 
 # Configuration générale
 
@@ -33,7 +33,7 @@ La configuration générale pour [!DNL Store Fulfillment] inclut les paramètres
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Activez ou désactivez la solution. Lorsque cette option est activée, configurez et utilisez les fonctionnalités d’exécution de magasin et établissez la connexion entre votre boutique Adobe Commerce et les services d’exécution de magasin. Lorsque cette option est désactivée, toutes les fonctions d’exécution de magasin sont désactivées et il n’existe aucune communication entre Adobe Commerce et les services d’exécution de magasin. Les informations de commande ne peuvent pas être traitées ni reçues. | Global | Oui |
 
-Pour terminer cette configuration, voir **Magasins → Configuration → Services → Livraison des magasins par Walmart Commerce Technologies**.
+Pour terminer cette configuration, voir **Magasins > Configuration > Services > Livraison des magasins par Walmart Commerce Technologies**.
 
 ## Ajout d’informations d’identification de compte
 
@@ -69,7 +69,7 @@ Vous pouvez afficher des détails sur les opérations de synchronisation des com
 
 | **Champ** | **Description** | **Portée** | **Obligatoire** |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Réessayer l’erreur critique** | Indique les tentatives de reprise d’une opération de synchronisation d’enregistrement après une erreur critique.</br></br>Des erreurs critiques se produisent chaque fois que l’intégration ne parvient pas à obtenir une réponse positive de la part du service d’exécution. Cela peut se produire lorsque le service est en panne ou lorsqu’une erreur se produit dans les données de commande envoyées.</br></br>Lorsque le seuil de reprise est atteint, l’élément reste dans la file d’attente mais n’est pas traité à nouveau. Afficher tous les éléments contenant des erreurs de **[!UICONTROL System → Tools → Store Fulfillment Queue]** Gestion dans l’administrateur. Pour résoudre les problèmes liés aux éléments qui échouent constamment, contactez votre gestionnaire de compte. | Global | Non |
+| **Réessayer l’erreur critique** | Indique les tentatives de reprise d’une opération de synchronisation d’enregistrement après une erreur critique.</br></br>Des erreurs critiques se produisent chaque fois que l’intégration ne parvient pas à obtenir une réponse positive de la part du service d’exécution. Cela peut se produire lorsque le service est en panne ou lorsqu’une erreur se produit dans les données de commande envoyées.</br></br>Lorsque le seuil de reprise est atteint, l’élément reste dans la file d’attente mais n’est pas traité à nouveau. Afficher tous les éléments contenant des erreurs de **[!UICONTROL System > Tools > Store Fulfillment Queue]** Gestion dans l’administrateur. Pour résoudre les problèmes liés aux éléments qui échouent constamment, contactez votre gestionnaire de compte. | Global | Non |
 | **Activer le message de notification d’erreur** | Activez les notifications d’erreur pour recevoir un courrier électronique lorsque la variable [!UICONTROL Retry Critical Error Threshold] est atteinte pour une commande. La notification inclut tous les détails disponibles sur l’erreur. | Global | Non |
 | **Envoyer un courrier électronique de notification d’erreur à** | Liste délimitée par des virgules d’adresses email des destinataires pour les notifications d’erreur. | Global | Non |
 | **Modèle de courrier électronique d’exception de synchronisation des commandes** | Indique le modèle d’email utilisé pour avertir les destinataires des erreurs de synchronisation de commande. Un modèle par défaut est fourni. Il ne prend pas en charge la personnalisation. | Affichage en magasin | Non |

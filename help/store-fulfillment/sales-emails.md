@@ -4,9 +4,9 @@ description: Configurez les modèles d’email transactionnel pour communiquer a
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Courriers électroniques de vente
 
-L’exécution de magasin offre un ensemble étendu de modèles d’email transactionnel pour prendre en charge les workflows de commande et d’exécution. Ils offrent une communication et des messages cohérents et automatisés sur tous les canaux : avertissez les clients et les administrateurs de magasins des changements d’état de la commande, des instructions pour les commandes en magasin, etc.
+L’exécution de magasin offre un ensemble étendu de modèles d’email transactionnel pour prendre en charge les workflows de commande et d’exécution. Ils offrent une communication et des messages cohérents et automatisés sur tous les canaux : ils avertissent les clients et les administrateurs de magasins des changements d’état de la commande, des instructions pour les commandes de prise en main en magasin, etc.
 
 Les modèles de courrier électronique d’exécution de magasin sont configurés avec la messagerie et les paramètres par défaut. Les administrateurs du commerce dans Adobe Commerce peuvent gérer et modifier les configurations, et sélectionner les modèles d’email pour communiquer avec les clients dans différents scénarios. Les administrateurs peuvent également configurer et personnaliser des modèles.
 

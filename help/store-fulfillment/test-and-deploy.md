@@ -3,13 +3,13 @@ title: Test et déploiement de l’exécution du magasin
 description: Planifiez le test pour vérifier la fonctionnalité d’exécution de magasin. Les tests couvrent l’API de synchronisation du stock, le workflow d’exécution de bout en bout pour les commandes annulées, la gestion des utilisateurs de l’application Store Fulfillment et l’expérience d’archivage client.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # Test et déploiement de l’exécution de la boutique pour Adobe Commerce
 
@@ -136,7 +136,6 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 </td>
 <td>
 <ul>
-<td>
 <li>Historique des commandes mis à jour avec <code>We refunded $X online. Transaction ID: transactionID</code> et <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>L’état de la commande est <code>Closed</code>. (Nous avons défini la vérification des paiements maintenant.)</li>
 <li>Note de crédit créée dans Adobe Commerce. (Attendez que cron fonctionne.)</li>
@@ -449,7 +448,7 @@ Cette section du plan de test couvre l’ expérience d’archivage des commande
 
 - Autre contact de sélection : vérifiez le processus d’ajout d’une [!UICONTROL Alternate Pickup Contact] et en sélectionnant un [!UICONTROL Preferred Contact] dans les commandes de nettoyage de la boutique.
 
-- Archivage du formulaire : vérifiez le processus d’envoi d’une demande d’archivage pour les commandes de récupération du magasin.
+- Formulaire d’archivage : vérifiez le processus d’envoi d’une demande d’archivage pour les commandes de nettoyage de la boutique.
 
 **Domaines fonctionnels :** Achat de panier, formulaire d’archivage pour les commandes de prise en main du magasin</br>
 **Rôle :** Administrateur, client, associé de magasin</br>
@@ -566,7 +565,7 @@ Cette section du plan de test couvre les scénarios de test des workflows de com
 </tr>
 <tr>
 <td>
-<strong>Chemin simple où la sélection se déroule, sélection du curseur</strong></td>
+<strong>Sélection de commande unique : chemin d’accès heureux, sélection de bord</strong></td>
 <td>Sélectionnez des éléments uniques et multiquantité. Pas de clics et de ramassage côté serveur (avec transfert).
 </td>
 <td>
@@ -645,22 +644,3 @@ Le déploiement et les tests varient selon votre infrastructure et vos capacité
 >[!TIP]
 >
 >Pour obtenir des instructions de déploiement, des listes de contrôle et des bonnes pratiques pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Déployer votre boutique](https://devdocs.magento.com/cloud/live/stage-prod-live.html) dans la documentation destinée aux développeurs Adobe Commerce.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

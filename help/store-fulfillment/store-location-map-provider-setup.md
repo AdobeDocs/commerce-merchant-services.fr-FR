@@ -3,13 +3,13 @@ title: Emplacement du magasin et configuration du système de mappage
 description: Configurez un fournisseur de distance pour prendre en charge le mappage de l’emplacement du magasin dans l’interface utilisateur de storefront. Les solutions d’exécution de magasin nécessitent un fournisseur de distance pour activer la recherche de magasin de détail et d’autres fonctionnalités de mappage et de planification pour le workflow d’exécution de bout en bout.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de l’emplacement et du mappage du magasin
 
@@ -21,13 +21,13 @@ Pendant le processus de configuration, vous fournissez une clé d’API Google p
 
 Pour configurer le fournisseur de distance :
 
-1. Dans la [!UICONTROL Stores > General] dans Admin, ajoutez l’intégration Google Maps pour le type de contenu Map .
+1. Dans la **[!UICONTROL Stores > General]** dans Admin, ajoutez l’intégration Google Maps pour le type de contenu Map .
 
    - Accédez à **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
    - Ajoutez votre clé API Google à **[!UICONTROL Google Maps API Key]** champ .
 
-1. Dans la [!UICONTROL Stores > Inventory] dans Admin, sélectionnez le fournisseur de distance pour l’exécution du magasin.
+1. Dans la **[!UICONTROL Stores > Inventory]** dans Admin, sélectionnez le fournisseur de distance pour l’exécution du magasin.
 
    - Accédez à **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 

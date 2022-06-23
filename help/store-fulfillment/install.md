@@ -4,9 +4,9 @@ description: '"Installez le [!DNL Store Fulfillment solution] pour un storefront
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,15 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## Configuration requise
 
-- **Accès à l’exécution du magasin par l’archive logicielle Walmart Commerce Technologies (fichier .zip)**-Pendant le processus d’intégration et d’activation, contactez votre gestionnaire de compte pour accéder au fichier d’installation de l’extension d’exécution de magasin.
+- **Accès à l’exécution du magasin par l’archive logicielle Walmart Commerce Technologies (fichier .zip)**: pendant le processus d’intégration et d’activation, travaillez avec votre gestionnaire de compte pour accéder au fichier d’installation de l’extension Store Fulfillment.
 
-- **Informations du compte Adobe Commerce**- Installation de la variable [!DNL Store Fulfillment] la solution requiert une [Compte Commerce](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Vous avez besoin d’un identifiant de compte et d’informations d’identification avec un accès Propriétaire ou Administrateur à la variable [!DNL Adobe Commerce] projet.
+- **Informations du compte Adobe Commerce**- Installation de la variable [!DNL Store Fulfillment] la solution requiert une [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Vous avez besoin d’un identifiant de compte et d’informations d’identification avec un accès Propriétaire ou Administrateur à la variable [!DNL Adobe Commerce] projet.
 
 - Pour [!DNL Adobe Commerce] sur les projets d’infrastructure cloud, les programmes d’installation doivent disposer d’un accès administrateur au projet Cloud. Voir [Gestion de l’accès des utilisateurs](https://devdocs.magento.com/cloud/project/user-admin.html).
 
 - **Expérience à l’aide du compositeur et de la variable[!DNL Commerce CLI]**—Voir [Installation de l’interface de ligne de commande générale](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} pour plus d’informations sur l’utilisation de ces outils pour installer et gérer les extensions sur la page [!DNL Adobe Commerce] plateforme.
 
-- **Expérience d’installation d’extensions tierces sur Adobe Commerce**- À titre de référence, consultez la documentation d’Adobe Commerce.
+- **Expérience d’installation d’extensions tierces sur Adobe Commerce**—À titre de référence, consultez la documentation d’Adobe Commerce.
 
    - [Installer une extension pour une instance Adobe Commerce sur une instance d’infrastructure cloud](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
@@ -94,7 +94,8 @@ Utilisez le compositeur pour configurer le répertoire source de l’installatio
 
 Effectuez l’installation à l’aide du `bin/magento setup:upgrade` pour mettre à jour le schéma et les données de la base de données avec les modifications afin de prendre en charge la solution d’exécution de magasin.
 
->Remarque :
+>[!NOTE]
+>
 >Pour Adobe Commerce sur les projets d’infrastructure cloud, il n’est pas nécessaire d’enregistrer l’extension. Au lieu de cela, validez les modifications de code de l’étape précédente et poussez-les vers votre branche d’environnement. Les commandes permettant de mettre à jour le schéma et les données de la base de données sont exécutées automatiquement lors du processus de création et de déploiement du cloud.
 
 ### Étape 5 : Finalisation de l’installation
@@ -183,7 +184,7 @@ Sur le serveur Adobe Commerce, vérifiez que les modules de l’extension Store 
 
 ### Étapes supplémentaires
 
-Si nécessaire, utilisez la méthode `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` Commande d’interface de ligne de commande pour déployer des fichiers d’affichage statique dans votre environnement de production.
+Si nécessaire, utilisez la méthode [setup:static-content:deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)Commande d’interface de ligne de commande {target=&quot;_blank&quot;} pour déployer les fichiers d’affichage statique dans votre environnement de production.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
