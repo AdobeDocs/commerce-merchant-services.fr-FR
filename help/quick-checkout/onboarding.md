@@ -2,7 +2,7 @@
 title: '"À l’intégration de [!DNL Quick Checkout] pour l’extension Adobe Commerce"'
 description: '"Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
+source-git-commit: ac55bf6354c8f5569ad83dc0ac2671b34c98d303
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Voir [[!DNL Bolt] détails de l’environnement](https://help.bolt.com/developer
 
 ## Configurer les fournisseurs de paiement
 
-Pour connecter votre fournisseur de services de paiement, procédez comme décrit dans la section [configuration du processeur](https://help.bolt.com/integrations/adobe-express-checkout/set-up/)Développeur {target=&quot;_blank&quot;} [!DNL Bolt] page.
+Pour connecter votre fournisseur de services de paiement, procédez comme décrit dans la section [configuration du processeur](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/)Développeur {target=&quot;_blank&quot;} [!DNL Bolt] page.
 
 ## Activer l’extension
 
