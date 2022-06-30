@@ -2,9 +2,9 @@
 title: '"Flux de passage en caisse"'
 description: '"Présentation de la variable [!DNL Quick Checkout] flux dans Adobe Commerce."'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -39,73 +39,8 @@ Le [!DNL Quick Checkout] est compatible avec les options de passage en caisse st
 
 Le [!DNL Quick Checkout] permet plusieurs cas d’utilisation lors d’un flux de passage en caisse :
 
-- Utilisateur invité avec un enregistré [!DNL Bolt] compte .
-- Utilisateur invité avec un nouveau [!DNL Bolt] compte .
-- Un utilisateur Adobe Commerce existant avec/sans enregistrement [!DNL Bolt] compte .
-
-## Passage en caisse des utilisateurs invités : Fonctionnement
-
-L’expérience de passage en caisse des invités est différente de l’expérience de connexion. Lorsqu’un acheteur entre une adresse électronique dans un passage en caisse, la variable [!DNL Quick Checkout] valide la recherche d’un [!DNL Bolt] compte .
-
-### Inscrits [!DNL Bolt] account
-
-Si une [!DNL Bolt] compte trouvé, les acheteurs continuent avec leurs [!DNL Quick Checkout] passage en caisse transparent :
-
-1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique du compte ou mobile, selon les préférences de l’utilisateur dans la variable [!DNL Bolt] compte .
-1. Une fois connecté avec votre [!DNL Bolt] , il remplit automatiquement les détails du passage en caisse :
-
-   - Informations d’expédition
-   - Mode de paiement
-
-1. Ordre.
-
->[!TIP]
->
-> L’utilisateur invité place la commande et peut s’enregistrer dans Adobe Commerce.
-
-### Nouveau [!DNL Bolt] account
-
-Si non [!DNL Bolt] est trouvé, les clients continuent de passer en caisse Adobe Commerce par défaut et shopper fournit tous les détails nécessaires pour passer commande :
-
-- Informations sur l’expédition et la facturation
-- Mode de livraison
-- Vérification du mode de paiement
-- Une case à cocher s’affiche pour s’enregistrer dans [!DNL Bolt] pour des passages en caisse plus rapides avant de passer la commande. Ils peuvent accepter les conditions générales pour créer leur [!DNL Bolt] compte .
-
-   ![Mémoriser [!DNL Bolt]](assets/checked-bolt.png)
-
-- L’utilisateur invité place la commande et peut s’enregistrer dans Adobe Commerce.
-
-## Un utilisateur Adobe Commerce existant : Fonctionnement
-
-Un utilisateur existant peut sélectionner des détails existants lorsqu’un utilisateur commande avec la variable [!DNL Quick Checkout] pour une expérience de passage en caisse plus rapide.
-
-Lorsqu’un acheteur entre une adresse électronique dans un passage en caisse, la variable [!DNL Quick Checkout] valide la recherche d’un [!DNL Bolt] compte .
-
-### Inscrits [!DNL Bolt] compte avec un utilisateur Adobe Commerce
-
-Si une [!DNL Bolt] est trouvé, les clients continuent de payer leur passage en caisse Adobe Commerce par défaut, et l’acheteur fournit tous les détails nécessaires, puis passe commande :
-
-- Informations sur l’expédition et la facturation
-- Mode de livraison
-- Vérification du mode de paiement
-
-Si vous rencontrez des problèmes lorsque vous passez une commande en tant qu’utilisateur Adobe Commerce existant, reportez-vous à la section [Dépannage des problèmes de paiement rapide](https://support.magento.com/hc/en-us/articles/6909450342541) Article du Centre d’aide Adobe Commerce.
-
->[!NOTE]
->
-> Si l’utilisateur dispose d’un [!DNL Bolt] Le compte et l’e-mail n’apparaissent pas comme enregistrés dans Adobe Commerce, ils déclenchent la connexion avec mot de passe unique (OTP). Voir [registered [!DNL Bolt] account](#registered-bolt-account) flux.
-
-### Nouveau [!DNL Bolt] account
-
-Si non [!DNL Bolt] Le compte est trouvé, les acheteurs continuent de passer en caisse Adobe Commerce par défaut et l’acheteur sélectionne tous les détails nécessaires dans les informations enregistrées pour passer la commande :
-
-- Informations sur l’expédition et la facturation
-- Mode de livraison
-- Vérification du mode de paiement
-- Une case à cocher s’affiche pour s’enregistrer dans [!DNL Bolt] pour des passages en caisse plus rapides avant de passer la commande. Ils peuvent accepter les conditions générales pour créer leur [!DNL Bolt] compte .
-
-   ![Mémoriser [!DNL Bolt]](assets/checked-bolt.png)
+- [Utilisateur invité](../quick-checkout/checkout-adobe-commerce.md) avec un enregistrement ou un nouveau [!DNL Bolt] compte .
+- Une [Utilisateur Adobe Commerce](../quick-checkout/checkout-adobe-commerce.md) avec/sans enregistrement [!DNL Bolt] compte .
 
 ## Obtenir de l’aide
 
