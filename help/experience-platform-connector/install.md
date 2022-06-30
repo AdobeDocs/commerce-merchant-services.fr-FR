@@ -2,7 +2,7 @@
 title: Installation et configuration de Adobe Experience Platform Connector depuis Adobe Commerce
 description: Découvrez comment installer, configurer, mettre à jour et désinstaller Adobe Experience Platform Connector à partir d’Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: b503c369f12696a2a791af77055a7b53000b827f
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -23,10 +23,10 @@ Avant d’installer l’extension, [revoir les conditions préalables](overview.
 
    Ce métappackage contient les modules et extensions suivants :
 
-   * `module-platform-connector-admin` - Met à jour l’interface utilisateur d’administration afin que vous puissiez configurer l’identifiant de flux de données
+   * `module-platform-connector-admin` - Met à jour l’interface utilisateur d’administration afin que vous puissiez configurer l’identifiant de la banque de données
    * `module-platform-connector` - Définit la variable `ImsOrgId` et `datastreamId` dans le SDK Adobe Commerce Storefront Event
    * `data-services` - Fournit un contexte d’attribut pour les événements storefront. Par exemple, lorsqu’un événement de passage en caisse se produit, des informations sur le nombre d’articles figurant dans le panier et les données d’attribut de produit pour ces articles sont incluses.
-   * `commerce-services` - Connecte votre instance Adobe Commerce à [Adobe Commerce SaaS](../landing/saas.md) à l’aide de l’environnement de test et des clés d’API de production, ainsi qu’à Adobe Experience Platform à l’aide de l’identifiant de l’organisation IMS.
+   * `commerce-services` - Connecte votre instance Adobe Commerce à [Adobe Commerce SaaS](../landing/saas.md) utilisation des clés d’API de test et de production et de Adobe Experience Platform à l’aide de l’identifiant de l’organisation IMS
 
 1. (Facultatif) Pour inclure [!DNL Live Search] , qui comprend les événements de recherche, installez la variable [[!DNL Live Search]](../live-search/install.md) extension .
 
