@@ -1,14 +1,15 @@
 ---
 title: Événements
 description: Découvrez quels événements capturent des données et consultez la définition de schéma complète.
-source-git-commit: 566abe09b8c1b0837a833b2f8fcfe1e81bb6963d
+exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
-# Événements de balise du projet
+# Événements de connecteur Experience Platform
 
 La liste suivante répertorie les [!DNL Commerce] Événements disponibles lors de l’installation de l’extension Experience Platform Connector. Les données collectées par ces événements sont envoyées à Adobe Experience Platform Edge. Vous pouvez également créer des [événements personnalisés](custom-events.md) pour collecter des données supplémentaires qui ne sont pas prêtes à l’emploi.
 

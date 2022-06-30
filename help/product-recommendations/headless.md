@@ -1,9 +1,10 @@
 ---
 title: Headless
 description: Découvrez comment intégrer [!DNL Product Recommendations] dans une vitrine sans tête.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
 
 1. [Installer](install-configure.md) la valeur [!DNL Product Recommendations] module .
 
-1. Installez et utilisez la méthode [SDK des événements Storefront](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) pour déclencher la variable [événements comportementaux](https://devdocs.magento.com/recommendations/events.html).
+1. Installez et utilisez la méthode [SDK d’événement Adobe Commerce Storefront](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) pour déclencher la variable [événements comportementaux](https://devdocs.magento.com/recommendations/events.html).
 
    Le nombre minimum d’événements requis à renvoyer [!DNL Product Recommendations] résultats :
 
@@ -43,7 +44,7 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
    | `rec-click` | recommendation-unit |
    | `rec-add-to-cart-click` | unité-recommandation (si un bouton d’ajout au panier est présent dans le modèle de recommandations) |
 
-1. Lorsque les événements sont déclenchés, utilisez la variable [Collecteur d’événements Storefront](https://devdocs.magento.com/shared-services/storefront-event-collector.html) pour gérer les événements et les envoyer à Adobe Sensei.
+1. Lorsque les événements sont déclenchés, utilisez la variable [Collecteur d’événements Adobe Commerce Storefront](https://devdocs.magento.com/shared-services/storefront-event-collector.html) pour gérer les événements et les envoyer à Adobe Sensei.
 
 1. Une fois les données comportementales collectées, vous pouvez [create](create.md) [!DNL Product Recommendations] dans Admin.
 
