@@ -1,9 +1,10 @@
 ---
 title: Présentation du guide
 description: Le connecteur Adobe Experience Platform pour Adobe Commerce connecte votre [!DNL Commerce] vers d’autres produits Adobe Experience Cloud.
-source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
+exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,10 +24,13 @@ Pour utiliser le connecteur Experience Platform, vous devez d&#39;abord :
 Lorsque l’accès est accordé :
 
 1. [Se connecter](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) à votre compte d’Adobe.
-1. Regardez votre [organization](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). L’ID d’organisation est l’ID associé à votre société Experience Cloud configurée. Cet identifiant est une chaîne alphanumérique de 24 caractères, suivie de @AdobeOrg (obligatoire).
-1. Accédez à l’espace de travail du flux de données et [création d’un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en).
+1. Regardez votre [organization](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). L’ID d’organisation est l’ID associé à votre société Experience Cloud configurée. Cet identifiant est une chaîne alphanumérique de 24 caractères, suivie de (et doit inclure) `@AdobeOrg`.
+1. Créez ou mettez à jour votre [Schéma XDM](update-xdm.md) avec des groupes de champs spécifiques à Commerce.
+1. [Création d’un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) et sélectionnez le schéma XDM contenant le schéma spécifique au commerce. **Groupes de champs**.
 
-L’ID d’organisation et le flux de données sont utilisés lorsque vous connectez votre instance Adobe Commerce à Adobe Experience Platform.
+>[!NOTE]
+>
+> L’ID d’organisation et le flux de données sont utilisés pour connecter votre instance Adobe Commerce à Adobe Experience Platform.
 
 ## Étapes suivantes
 

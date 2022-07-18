@@ -1,9 +1,10 @@
 ---
-title: Notes de mise à jour de la balise de projet
-description: Informations les plus récentes sur la version de la balise de projet d’Adobe Commerce.
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+title: Notes de mise à jour
+description: Informations les plus récentes sur le connecteur Adobe Experience Platform depuis Adobe Commerce.
+exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
+source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +19,8 @@ Ces notes de mise à jour décrivent les dernières versions du connecteur Exper
 
 ## Connecteur Experience Platform 1.1.0
 
-* Compatible avec Adobe Commerce (EE) : 2.4.x
-* Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
+* Compatible avec Adobe Commerce (EE) : 2.4.4
+* Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.4
 * Stabilité : Stable
 
 ## Documentation
