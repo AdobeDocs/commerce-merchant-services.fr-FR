@@ -2,9 +2,9 @@
 title: '"Flux de passage en caisse"'
 description: '"Présentation de la variable [!DNL Quick Checkout] flux dans Adobe Commerce."'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,9 @@ Une réussite [!DNL Quick Checkout] Le flux se compose des étapes suivantes :
 
 1. Lorsque vous y êtes invité, saisissez une adresse électronique associée à un événement [!DNL Bolt] compte .
 1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique ou numéro de téléphone du compte.
+
+![Fenêtre contextuelle OTP](assets/pop-up.png)
+
 1. Une fois connecté avec votre [!DNL Bolt] compte, les détails du passage en caisse sont automatiquement renseignés :
 
    - Informations d’expédition
@@ -39,8 +42,8 @@ Le [!DNL Quick Checkout] est compatible avec les options de passage en caisse st
 
 Le [!DNL Quick Checkout] permet plusieurs cas d’utilisation lors d’un flux de passage en caisse :
 
-- [Utilisateur invité](../quick-checkout/checkout-adobe-commerce.md) avec un enregistrement ou un nouveau [!DNL Bolt] compte .
-- Une [Utilisateur Adobe Commerce](../quick-checkout/checkout-adobe-commerce.md) avec/sans enregistrement [!DNL Bolt] compte .
+- [Utilisateur invité](../quick-checkout/checkout-bolt.md) avec un enregistrement ou un nouveau [!DNL Bolt] compte .
+- Une [Utilisateur Adobe Commerce](../quick-checkout/checkout-adobe-commerce.md) avec ou sans enregistrement [!DNL Bolt] compte .
 
 ## Obtenir de l’aide
 

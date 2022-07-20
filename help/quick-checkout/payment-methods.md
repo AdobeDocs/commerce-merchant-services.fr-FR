@@ -2,14 +2,21 @@
 title: '"Modes de paiement"'
 description: '"Présentation des modes de paiement compatibles avec la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce."'
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # [!DNL Quick Checkout] modes de paiement compatibles
+
+Une fois que le marchand configure [!DNL Quick Checkout]:
+
+- Comptes de commerce et de production dans [!DNL Bolt]
+- Clé API et [!DNL Publishable key] généré dans [!DNL Bolt]
+
+Le commerçant peut activer [!DNL Bolt] comme mode de paiement, même si l’acheteur n’est pas connecté à la variable [!DNL Bolt] compte .
 
 Voir [[!DNL Bolt] Méthodes de paiement](https://help.bolt.com/shoppers/guides/checkout/update-payment-method) pour plus d’informations sur la mise à jour d’un mode de paiement avec [!DNL Bolt].
 

@@ -3,10 +3,10 @@ user-guide-title: '"[!DNL Quick Checkout] pour Adobe Commerce"'
 user-guide-description: '"Découvrez comment [!DNL Quick Checkout] Votre instance Adobe Commerce pourrait être utile, ainsi que la manière d’embarquer et de configurer l’extension."'
 breadcrumb-title: Guide des services marchands
 hide: true
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,4 +29,5 @@ ht-degree: 3%
       - [Bloquer le passage en caisse de l’utilisateur](checkout-bolt.md)
       - [Passage en caisse des utilisateurs Adobe Commerce](checkout-adobe-commerce.md)
    - [Modes de paiement](payment-methods.md)
+- [Durée de la session utilisateur](user-session-lifetime.md)
 - [Création d’une commande dans Admin](create-order-admin.md)
