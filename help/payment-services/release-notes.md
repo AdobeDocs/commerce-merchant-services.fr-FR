@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Notes de mise à jour"'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
+source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ Voir [Disponibilité](https://devdocs.magento.com/release/availability.html) dan
 ## v1.2.0
 
 _29 juin 2022_
+
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay est incompatible avec le navigateur Safari v15.5 sur mobile et bureau. Lorsque vous utilisez Safari version 15.5, vous ne pouvez pas terminer l’extraction avec Apple Pay.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3264 --> Auparavant, lorsqu’un utilisateur connecté sélectionnait une autre adresse de facturation/de livraison que l’adresse par défaut de son compte, l’extraction échouait. Correction de ce problème. Désormais, l’adresse de facturation/d’expédition sélectionnée est envoyée (au lieu de l’adresse enregistrée par défaut) et le passage en caisse est terminé avec succès.
 

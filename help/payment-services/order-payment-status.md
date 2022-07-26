@@ -4,9 +4,9 @@ description: Utilisez le rapport État des paiements de la commande pour connaî
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
+source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,14 @@ If _[!UICONTROL Live]_est la source de données sélectionnée. Vous pouvez affi
 
 Les sélections de sources de données fonctionnent comme suit :
 
-* Si vous ne disposez d’aucun magasin qui utilise [!DNL Payment Services] en mode réel, la sélection de source de données est définie par défaut sur [!UICONTROL Sandbox]_.
+* Si vous ne disposez d’aucun magasin qui utilise [!DNL Payment Services] en mode réel, la sélection de source de données est définie par défaut sur _[!UICONTROL Sandbox]_.
 * Si des magasins (un ou plusieurs magasins) utilisent [!DNL Payment Services] en mode réel, la sélection de source de données est définie par défaut sur _[!UICONTROL Live]_.
 * Les exportations de rapports respectent toujours la sélection de la source de données.
 
 Pour sélectionner la source de données [!UICONTROL Order Payment Status] rapport :
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Cliquez sur **[!UICONTROL Data source]** et sélectionnez _[!UICONTROL Live]_ou [!UICONTROL Sandbox]_.
+1. Cliquez sur **[!UICONTROL Data source]** et sélectionnez _[!UICONTROL Live]_ou_[!UICONTROL Sandbox]_.
 
    Les résultats du rapport se régénèrent en fonction de la source de données sélectionnée.
 
@@ -105,11 +105,23 @@ Le rapport État du paiement de la commande affiche toutes les colonnes d’info
 
 ## Affichage des états
 
+La vue du rapport État des paiements de la commande affiche des informations complètes sur l’état des transactions et l’état des paiements pour chaque commande de services de paiement.
+
+### État des transactions
+
 Par défaut, les états des paiements de la commande sur 30 jours sont affichés dans la grille.
 
 Faites défiler l’écran vers la gauche et la droite pour afficher [informations d’état de paiement de commande](#column-descriptions), y compris la date de commande, la date autorisée, les factures, l’expédition, l’état de paiement, etc.
 
 Le nombre de lignes renvoyé dans une recherche, ou indiqué dans les 30 jours par défaut de l’état du paiement de la commande, s’affiche au-dessus de la grille d’affichage de l’état du paiement de la commande avec le filtre du sélecteur de calendrier des dates de commande .
+
+### Statut de la paie
+
+La colonne État des paiements indique l’état actuel de tout paiement. A `Capture failed` paiement affiche un état d’alerte rouge et un `Voided` paiement affiche l’état d’alerte grise.
+
+### Statut du remboursement
+
+La colonne Etat du remboursement indique l&#39;état actuel d&#39;un remboursement. A `Capture failed` paiement affiche un état d’alerte rouge et un `Voided` paiement affiche l’état d’alerte grise.
 
 ## Mise à jour des données de rapport
 
