@@ -2,9 +2,9 @@
 title: '"Facettes"'
 description: '"[!DNL Live Search] les facettes utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Les exigences d’attribut de catégorie et de produit pour la facette sont simi
 |--- |--- |
 | [Paramètres d’affichage des catégories](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Ancre - `Yes` |
 | [Propriétés d’attribut](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Type d’entrée de catalogue](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| Propriétés Attribute storefront | Utilisation dans la navigation par couches - `Filterable (with results)` |
+| Propriétés Attribute storefront | Utilisation dans la navigation par couches des résultats de recherche - `Yes` |
 
 ## Valeurs d’attribut par défaut
 
