@@ -2,9 +2,9 @@
 title: '"À l’intégration de [!DNL Quick Checkout] pour l’extension Adobe Commerce"'
 description: '"Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
+source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Pour utiliser la variable [!DNL Quick Checkout] vous avez besoin de [!DNL Bolt] 
 - [!DNL Publishable key]: Clé utilisée par votre front-end pour interagir avec [!DNL Bolt] API.
 - [!DNL Signing secret]: Utilisé pour la vérification des signatures sur les demandes reçues d’ [!DNL Bolt].
 
-![Passage en caisse rapide](assets/account-credentials.png)
+   ![Passage en caisse rapide](assets/account-credentials.png)
 
 Voir [[!DNL Bolt] détails de l’environnement](https://help.bolt.com/developers/references/environment-details/#about-keys)Page {target=&quot;_blank&quot;} pour en savoir plus sur les clés et la signature du secret à partir de [!DNL Bolt] pour le [!DNL Quick Checkout] extension .
 
@@ -73,6 +73,13 @@ Pour connecter votre fournisseur de services de paiement, procédez comme décri
 1. Sur le _Administration_ barre latérale, accédez à **Magasins** > _Paramètres_ > **Configuration**.
 1. Dans le panneau de gauche, développez **Ventes** et sélectionnez **Passage en caisse**.
 1. Dans le [!DNL Quick Checkout] vue, définir **Activer** to `Yes`.
+
+![Passage en caisse rapide](assets/quick-checkout-view-no-enable.png)
+
+>[!CAUTION]
+>
+> Les champs de paiement rapide ne sont visibles que lorsque **Activer** est défini sur `Yes`.
+
 1. Sélectionnez la méthode (sandbox ou production) à utiliser.
 
    - Environnement de test à des fins de test et de développement
@@ -80,7 +87,7 @@ Pour connecter votre fournisseur de services de paiement, procédez comme décri
 
 1. Validation des informations d’identification après avoir fourni votre API unique et [!DNL Publishable keys].
 
-![Passage en caisse rapide](assets/extension-view.png)
+![Passage en caisse rapide](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
