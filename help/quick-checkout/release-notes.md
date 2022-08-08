@@ -1,10 +1,11 @@
 ---
-title: '"[!DNL Quick Checkout] Notes de mise à jour"'
+title: '''[!DNL Quick Checkout] Notes de mise à jour'''
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Quick Checkout] versions.
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
+source-git-commit: 6162141e1ddf4428126178bd172e8d9bd250c485
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 2%
+source-wordcount: '263'
+ht-degree: 1%
 
 ---
 
@@ -30,10 +31,14 @@ Voir [Disponibilité](https://devdocs.magento.com/release/availability.html) dan
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-1 --> Le [!DNL Quick Checkout] pour Adobe Commerce reconnaît automatiquement chaque acheteur dans son réseau pour [achats en un clic](checkout-flow.md) directement sur votre site.
 
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-1 --> Le [!DNL Quick Checkout] pour Adobe Commerce, un acheteur peut être simultanément [Connecté aux réseaux Adobe Commerce et Bolt](checkout-flow.md/#quick-checkout-use-cases) afin de fournir un meilleur `one-click checkout` expérience.
+
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-218 --> [!DNL Quick Checkout] pour Adobe Commerce prend en charge une [compte sandbox](testing.md#testing-in-sandbox) qui permet aux commerçants d’évaluer l’extension en mode test.
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-780 --> Vos acheteurs peuvent les extraire via le [[!DNL Quick Checkout]](checkout-page.md) ou via une extension [création manuelle de commande](create-order-admin.md).
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-666 --> Les vendeurs peuvent configurer la variable [!DNL Quick Checkout] avec des actions de paiement de base, telles que [`Authorize and Capture` ou `Authorize` ](onboarding.md#complete-admin-configuration)ou le passage d’un environnement de test à un autre.
+
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-288 --> Personnalisé [durée de la session utilisateur](user-session-lifetime.md) pour [!DNL Quick Checkout] pour Adobe Commerce.
 
 ![Problème connu](../assets/bug.svg)<!-- Issue BOLT-342 --> Utilisation [clés de compositeur incorrectes](https://support.magento.com/hc/en-us/articles/6909450342541) lors de l’installation de la fonction [!DNL Quick Checkout] empêche l’utilisateur de [authentification](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) avec la valeur correcte `MAGEID`.
