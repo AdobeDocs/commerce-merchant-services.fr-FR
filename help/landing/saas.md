@@ -2,9 +2,9 @@
 title: Connecteur Commerce Services
 description: Découvrez comment intégrer votre instance Adobe Commerce ou Magento Open Source aux services à l’aide des clés d’API de production et d’environnement de test.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: e7b12a80d6c4ec18ec784fd674363a728ee73a67
+source-git-commit: 1e85c4daf0967bf6cec538fca55e2a206d15f732
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ La liste suivante répertorie les [!DNL Commerce] fonctions auxquelles vous pouv
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce et Magento Open Source |
 | [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce et Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [Connecteur Experience Platform](/help/experience-platform-connector/overview.md) | Adobe Commerce |
 
 ## Architecture
