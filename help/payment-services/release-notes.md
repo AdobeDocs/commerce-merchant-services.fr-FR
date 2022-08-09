@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] Notes de mise à jour"'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 2c3211d5a6574f84fa499608f5ef0cb8c6ffcfed
+source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -45,7 +45,7 @@ _29 juin 2022_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Lorsque les informations d’identification de Commerce Services ne sont pas valides, la variable [!DNL Payment Services] La page d’accueil s’affiche désormais dans l’Admin. Une erreur d’identification s’affiche pour vous signaler que vos informations d’identification ne sont pas valides.
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] est actuellement incompatible avec la fonction [`commerce-data-export` v101.20 et versions ultérieures](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0), qui le rend incompatible avec la propriété [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] est actuellement incompatible avec `commerce-data-export` v101.20 et versions ultérieures, ce qui le rend incompatible avec la [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ### Mises à jour du service hébergé
 
@@ -67,7 +67,7 @@ _31 mars 2022_
 
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2127 --> Disponibilité générale -[!DNL Payment Services] est maintenant [compatible avec [!DNL Adobe Commerce] et [!DNL Magento Open Source] versions 2.4.0 à 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
-![Nouveau](../assets/new.svg)<!-- Issue PAY-2682 --> Le [!DNL Payment Services] extension pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] est maintenant disponible pour les commerçants canadiens. Les vendeurs peuvent afficher la configuration des paiements dans l’une des [Français](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.md#accepted-credit-cards-and-currencies) ou [Anglais](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.md#accepted-credit-cards-and-currencies).
+![Nouveau](../assets/new.svg)<!-- Issue PAY-2682 --> Le [!DNL Payment Services] extension pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] est maintenant disponible pour les commerçants canadiens. Les vendeurs peuvent afficher la configuration des paiements dans l’une des [Français](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) ou [Anglais](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
 
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] prend en charge [Dollars canadiens (CAD)](overview.md#accepted-credit-cards-and-currencies) pour les cartes de crédit et les transactions PayPal.
 
