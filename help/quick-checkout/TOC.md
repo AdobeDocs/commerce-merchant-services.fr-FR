@@ -2,11 +2,10 @@
 user-guide-title: '"[!DNL Quick Checkout] pour Adobe Commerce"'
 user-guide-description: '"Découvrez comment [!DNL Quick Checkout] Votre instance Adobe Commerce pourrait être utile, ainsi que la manière d’embarquer et de configurer l’extension."'
 breadcrumb-title: Guide des services marchands
-hide: true
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '66'
+ht-degree: 3%
 
 ---
 
