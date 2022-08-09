@@ -2,9 +2,9 @@
 title: '"Facettes"'
 description: '"[!DNL Live Search] les facettes utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
+source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,12 @@ La facette est une méthode de filtrage haute performance qui utilise plusieurs 
 
 Les exigences d’attribut de catégorie et de produit pour la facette sont similaires aux attributs filtrables utilisés pour la navigation par couches. Les propriétés storefront de chaque attribut doivent être définies sur `filterable (with results)`.
 
-* Jusqu’à 100 attributs peuvent être configurés en tant que facettes avec [!DNL Live Search].
-* [!DNL Live Search] indexe jusqu’à 300 attributs sous la forme filterable/searchable/sortable et visible dans la recherche.
+La recherche en direct prend en charge jusqu’à :
+
+* 100 attributs configurés en tant que facettes
+* 50 attributs triables
+* 200 attributs filtrables
+* 200 attributs pouvant faire l’objet d’une recherche
 
 | Paramètre | Description |
 |--- |--- |

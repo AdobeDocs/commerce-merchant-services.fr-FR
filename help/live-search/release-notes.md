@@ -2,10 +2,10 @@
 title: '"[!DNL Live Search] Notes de mise à jour"'
 description: '"Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '858'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,29 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Live Searc
 * ![Nouveau](../assets/new.svg) - Nouvelles fonctionnalités
 * ![Correction](../assets/fix.svg) - Correctifs et améliorations
 * ![Bogue](../assets/bug.svg) - Problèmes connus
+
+## [!DNL Live Search] 2.0.3
+
+* Compatible avec Adobe Commerce (EE) : 2.4.x
+* Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
+* Stabilité : Stable
+
+* ![Nouveau](../assets/new.svg) - La recherche en direct prend désormais en charge les fonctionnalités B2B en respectant les autorisations de catégorie, les catalogues partagés et la tarification spécifique aux groupes de clients.
+
+Les commerçants doivent mettre à niveau l’extension Live Search >= 2.0.3 pour accéder à ces fonctionnalités.
+
+Nous conseillons aux utilisateurs de mettre à niveau et de tester avant de passer en production. Envisagez de mettre à niveau l’environnement de production pendant les heures creuses après avoir vérifié les résultats de l’environnement de test.
+
+>[!NOTE]
+>
+>La prise en charge B2B sera ajoutée par étapes à partir du 9 août sur les services principaux, avec une migration prévue pour la fin du mois d’août. Si l’extension Live Search n’est pas mise à niveau, votre vitrine continuera à fonctionner normalement, mais sans fonctionnalités B2B.
+
+### Limites connues/bogues :
+
+* ![Bogue](../assets/bug.svg) - Les suggestions sont issues de produits qui ne peuvent pas être affichés pour le groupe de clients.
+* ![Bogue](../assets/bug.svg) - Les produits ne s’affichent pas s’ils ne sont pas ajoutés au &quot;catalogue partagé par défaut&quot;.
+* La version B2B avec la recherche en direct pour le PWA Studio ne sera pas disponible tant que PWA Studio n’y aura pas ajouté la prise en charge.
+* Les remplacements de produits et le flux d’attributs de produit peuvent présenter des problèmes de synchronisation nécessitant l’exécution des administrateurs. `bin/magento indexer:reset` et `bin/magento indexer:reindex` pour effectuer une synchronisation correcte.
 
 ## [!DNL Live Search] 2,0
 
