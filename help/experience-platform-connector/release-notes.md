@@ -2,14 +2,14 @@
 title: Notes de mise à jour
 description: Informations les plus récentes sur le connecteur Adobe Experience Platform depuis Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
+source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Notes de mise à jour du connecteur Experience Platform
+# Notes de mise à jour
 
 Ces notes de mise à jour décrivent les dernières versions du connecteur Experience Platform et incluent :
 
@@ -17,11 +17,9 @@ Ces notes de mise à jour décrivent les dernières versions du connecteur Exper
 * ![Correction](../assets/fix.svg) - Correctifs et améliorations
 * ![Bogue](../assets/bug.svg) - Problèmes connus
 
-## Connecteur Experience Platform 1.1.0
+## Connecteur Experience Platform 1.0.0
 
-* Compatible avec Adobe Commerce (EE) : 2.4.4
-* Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.4
-* Stabilité : Stable
+* ![Nouveau](../assets/new.svg) - Version de disponibilité générale
 
 ## Documentation
 

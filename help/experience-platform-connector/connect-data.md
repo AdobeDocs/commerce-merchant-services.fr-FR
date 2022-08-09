@@ -1,9 +1,10 @@
 ---
 title: Connexion des données commerciales à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ L’identifiant de flux de données active le transfert d’événement de Adobe
 | Organisation IMS (globale) | Identifiant appartenant à l’organisation ayant acheté le produit Adobe DX. Cet identifiant associe votre instance Adobe Commerce à Adobe Experience Platform. |
 | Identifiant de la banque de données (Storeview) | Identifiant qui permet aux données de passer de Adobe Experience Platform à d’autres produits DX d’Adobe. Cet identifiant peut être associé à un storeView spécifique dans votre instance Adobe Commerce spécifique. |
 
-Une fois l’extension du connecteur Experience Platform installée, le lien entre Adobe Commerce et Adobe Experience Platform créé et l’identifiant de la banque de données spécifié, [!DNL Commerce] Les données commencent à affluer vers Adobe Experience Platform Edge et vers d’autres produits Adobe DX.
+Une fois l’extension du connecteur Experience Platform installée, le lien entre Adobe Commerce et Adobe Experience Platform créé et l’identifiant de la banque de données spécifié, les données de commerce commencent à s’enchaîner vers Adobe Experience Platform Edge et d’autres produits Adobe DX.
 
 ## Données commerciales en périphérie
 

@@ -2,16 +2,16 @@
 title: Créer des événements personnalisés
 description: Découvrez comment créer des événements personnalisés pour connecter vos données Adobe Commerce à d’autres produits Adobe DX.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Créer des événements personnalisés
 
-Vous pouvez étendre la variable [plateforme eventing](events.md) en créant vos propres événements storefront afin de collecter des données propres à votre secteur d’activité. Lorsque vous créez et configurez un événement personnalisé, il est envoyé au [Collecteur d’événements Adobe Commerce](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+Vous pouvez étendre la variable [plateforme eventing](events.md) en créant vos propres événements storefront afin de collecter des données propres à votre secteur d’activité. Lorsque vous créez et configurez un événement personnalisé, il est envoyé au [Collecteur d’événements Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## Gestion des événements personnalisés
 
@@ -21,7 +21,7 @@ Pour tout `custom` , le collecteur ajoute un événement `personId` (`ecid`) à 
 
 Exemple :
 
-Événement personnalisé publié via le SDK MSE :
+Événement personnalisé publié via le SDK Adobe Commerce Events :
 
 ```javascript
 mse.publish.custom({
@@ -53,7 +53,7 @@ Pour tout événement avec un paramètre `customContext`, le collecteur remplace
 
 Exemples :
 
-Consultation produit avec remplacements publiés via le SDK MSE :
+Consultation produit avec remplacements publiés via le SDK Adobe Commerce Events :
 
 ```javascript
 mse.publish.productPageView({
@@ -78,7 +78,7 @@ Dans Experience Platform Edge :
 }
 ```
 
-L’affichage du produit avec Adobe Commerce remplace celui publié via le SDK MSE :
+L’affichage du produit avec Adobe Commerce remplace celui publié par le SDK Adobe Commerce Events :
 
 ```javascript
 mse.publish.productPageView({

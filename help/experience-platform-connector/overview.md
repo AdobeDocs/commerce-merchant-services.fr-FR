@@ -1,17 +1,17 @@
 ---
 title: Présentation du guide
-description: Le connecteur Adobe Experience Platform pour Adobe Commerce connecte votre [!DNL Commerce] vers d’autres produits Adobe Experience Cloud.
+description: Le connecteur Adobe Experience Platform pour Adobe Commerce connecte votre instance Commerce à d’autres produits Adobe Experience Cloud.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Présentation du connecteur Experience Platform
 
-L’extension de connecteur Experience Platform permet aux marchands Adobe Commerce d’envoyer des données à Adobe Experience Platform Edge afin que d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target, puissent utiliser cette fonctionnalité. [!DNL Commerce] data. En connectant votre [!DNL Commerce] pour d’autres produits dans Adobe Experience Cloud, vous pouvez exécuter des tâches, telles que l’analyse du comportement des utilisateurs sur votre site, effectuer des tests AB et créer des campagnes personnalisées.
+L’extension de connecteur Experience Platform permet aux marchands Adobe Commerce d’envoyer des données à Adobe Experience Platform Edge afin que d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target, puissent utiliser ces données Commerce. En connectant vos données Commerce à d’autres produits dans Adobe Experience Cloud, vous pouvez effectuer des tâches, telles que analyser le comportement des utilisateurs sur votre site, effectuer des tests AB et créer des campagnes personnalisées.
 
 Les événements Storefront capturent les interactions d’acheteurs, telles que `View Page`, `View Product`, `Add to Cart`, etc. Les données capturées ne contiennent pas d’informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les identifiants de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/privacy/experience-cloud.html). Consultez la liste complète des [événements storefront](events.md).
 
@@ -36,7 +36,7 @@ Lorsque l’accès est accordé :
 
 - Installez le [Extension du connecteur Experience Platform](install.md).
 
-   L’extension Experience Platform Connector est installée à partir de la ligne de commande du serveur et se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, le connecteur Experience Platform s’affiche sur la **Système** sous **Services** dans le [!DNL Commerce] _Administration_.
+   L’extension Experience Platform Connector est installée à partir de la ligne de commande du serveur et se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, le connecteur Experience Platform s’affiche sur la **Système** sous **Services** dans Commerce _Administration_.
 - [Chargement de profils d’acheteur](profile.md) à Adobe Experience Platform afin que les données de storefront puissent être attribuées à des acheteurs spécifiques afin d’améliorer leur expérience d’achat.
 
 ## Audience
@@ -54,8 +54,8 @@ Actuellement, le connecteur Experience Platform présente les problèmes connus 
 - Les événements de recherche ne sont pas pris en charge sur une édition Adobe Commerce Enterprise avec le module B2B installé.
 - Les données de storefront prennent environ une heure pour aller d’Adobe Commerce aux différentes destinations après la connexion à Adobe Experience Platform Edge.
 
-## Assistance
+Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
 
-Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, publiez-les sur le canal de Slack suivant :
-
-- `#beacon-ama`
+- [Centre d’aide](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
+- [tickets d’assistance](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} : envoyez un ticket pour recevoir une aide supplémentaire.
+- Sur le Slack : `#beacon-ama`
