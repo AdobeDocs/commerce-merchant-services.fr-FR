@@ -4,16 +4,16 @@ description: Configurez les [!DNL Store Assist] pour gérer les processus d’ex
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
 # Configuration de l’application
 
-Store Assist est une application de plateforme FaaS (fulfillment as a service) optimisée par Walmart Commerce Technologies. L’application fournit des fonctionnalités d’exécution en magasin à gérer. [!DNL buy online], [!DNL pick up in store] Commandes (BOPIS).  Grâce à l’assistant de magasin, les associés peuvent identifier les articles commandés par les clients, sélectionner les articles appropriés plus rapidement et configurer les commandes exécutées pour la remise en magasin ou à la prise en main aux clients.
+Store Assist est une application de plateforme FaaS (fulfillment as a service) optimisée par Walmart Commerce Technologies. L’application fournit des fonctionnalités d’exécution en magasin à gérer. [!DNL buy online, pick up in store] Commandes (BOPIS). Grâce à l’assistant de magasin, les associés peuvent identifier les articles commandés par les clients, sélectionner les articles appropriés plus rapidement et configurer les commandes exécutées pour la remise en magasin ou à la prise en main aux clients.
 
 L’application d’aide au magasin reçoit toutes les informations sur la commande et les clients, depuis les détails de la commande jusqu’aux heures de prise en charge, et met les données à la disposition des associés du magasin en ligne, via les appareils mobiles. L’application comprend : [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], et [!UICONTROL Orders] modules pour aider Store Associates à exécuter des activités d’exécution comme celles-ci :
 
@@ -30,13 +30,13 @@ L’application d’aide au magasin reçoit toutes les informations sur la comma
 
 L’application d’aide à la boutique nécessite deux types de configuration :
 
-- Paramètres de configuration de l’administrateur Adobe Commerce pour [gérer les comptes utilisateur, les rôles utilisateur et les autorisations de ressources à partir des paramètres du système d’administration Adobe Commerce.](user-setup.md).
+- Paramètres du système d’administration Adobe Commerce pour [gestion des comptes utilisateur, des rôles utilisateur, des autorisations de ressources](user-setup.md), et [la marque de voiture et les sélections de modèles disponibles pour les clients lors du processus d’archivage ;](check-in-experience-setup.md).
 
 - Paramètres de configuration de front-end pour personnaliser l’interface de l’application d’assistance à la boutique et d’autres paramètres, notamment :
 
    - **Marque l’application d’assistance Boutique**: personnalisez l’interface utilisateur de l’application avec le logo et les couleurs de votre société.
 
-   - **Mise à jour des instructions par défaut**: personnalisez les instructions des interfaces d’aide à la boutique pour les modules de sélection, d’évaluation, de passation de commandes et de commande afin de respecter les politiques et procédures de votre société, et guidez les associés à la boutique à travers chaque étape du processus d’exécution.
+   - **Mise à jour des instructions par défaut**: personnalisez les instructions des modules d’aide à la boutique, sélection, évaluation, passation de commandes et commande pour guider Store Associates tout au long de chaque étape du processus d’exécution pour votre entreprise.
 
    - **Localisation**: sélectionnez la langue disponible pour l’application. Sélectionnez le format de date et d’heure, puis les unités de mesure par défaut et la devise par défaut.
 
@@ -59,7 +59,7 @@ L’application d’aide à la boutique nécessite deux types de configuration :
 
 ## Téléchargement et installation des applications
 
-Une fois la configuration de l’application d’aide à la boutique terminée, les associés au magasin peuvent télécharger, installer et se connecter à l’application d’aide à la boutique à partir de leurs appareils mobiles.
+Une fois l’application d’aide à la boutique configurée et configurée, Store Associates peut la télécharger, l’installer et se connecter à l’application d’aide à la boutique à partir de ses appareils mobiles.
 
 - Vérifiez que le périphérique mobile répond à la variable [configuration matérielle et logicielle requise](solution-requirements.md#store-assist-app-requirements) pour la solution d’exécution de magasin.
 
@@ -70,4 +70,4 @@ Une fois la configuration de l’application d’aide à la boutique terminée, 
    - **[!UICONTROL Company name]** associé au compte d’assistance de magasin
 
    - **Informations d’identification du compte d’assistance de la boutique**—nom d’utilisateur et mot de passe pour leur compte.
-   Un administrateur Adobe Commerce peut créer un compte d’utilisateur et définir des autorisations pour les comptes d’utilisateurs de l’application d’assistance en magasin pour les emplacements de magasin. [Collecte en magasin](merchant-store-configuration.md#pickup-location-configuration) activée dans les paramètres des boutiques d’administration.
+   Un administrateur Adobe Commerce peut créer un compte d’utilisateur et définir des autorisations pour le [!DNL Store Assist app] comptes d’utilisateurs pour les emplacements de magasin qui ont [Collecte en magasin](merchant-store-configuration.md#pickup-location-configuration) activée dans les paramètres des boutiques d’administration.

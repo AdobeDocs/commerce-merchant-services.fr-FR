@@ -4,9 +4,9 @@ description: '"Découvrez comment [!DNL Store Fulfillment for Adobe Commerce by 
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ L’exécution de magasin offre également un workflow d’exécution de bout en
 
 * **Flexibilité omnicanal**- Transformer les magasins et les entrepôts en points de prise en charge et centres d’exécution.
 
-* **Options de sélection des clients pratiques**- Les clients peuvent facilement voir la disponibilité du produit et sélectionner un magasin pour sélectionner des articles (en magasin ou en bordure) tout en sélectionnant des achats en ligne.
+* **Options de sélection des clients pratiques**-Lors de la sélection des achats en ligne, les clients peuvent facilement voir la disponibilité du produit et sélectionner un magasin pour le nettoyage en magasin ou en cours.
 
 * **Efficacité des performances**: l’application mobile d’aide au magasin permet aux associés de magasin d’augmenter la vitesse et la précision d’exécution de la commande.
 
@@ -31,27 +31,27 @@ L’exécution de magasin offre également un workflow d’exécution de bout en
 
 ## Extension d’exécution de magasin
 
-Prend en charge et améliore les fonctionnalités d’Adobe Commerce natives
+La solution d’exécution de magasin prend en charge et améliore les fonctionnalités natives d’Adobe Commerce.
 
 * Prend en charge la plupart des types de produits simples, configurables, regroupés, regroupés et virtuels
 
 * S’intègre à [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
 
-* Intégrer aux systèmes commerciaux de point de vente (tels que les systèmes de gestion des stocks (ERP, OMS et WMS)
+* S’intègre aux systèmes de gestion des stocks des commerçants tels que les systèmes ERP, OMS et WMS.
 
 * Totalement compatible avec le thème Luma
 
 * Prise en charge de GraphQL pour les vitrines sans interface et Venia
 
-* Prend en charge l’application d’aide au magasin de Walmart Commerce Technology. Cette application envoie des commandes de prise en main directement à l’appareil pour portables de votre employé dans la bonne boutique afin que les articles puissent être sélectionnés rapidement et avec précision, mis en scène et remis aux clients lors de leur archivage.
+* Prend en charge l’application d’aide au magasin de Walmart Commerce Technologies. Cette application fournit des informations sur la commande de prise en charge directement à l’appareil de poche de votre employé dans l’emplacement de magasin sélectionné. Grâce à ces informations, ils peuvent sélectionner, préparer et remettre rapidement et précisément des articles aux clients lorsqu’ils arrivent au magasin.
 
 ## Application d’aide à la boutique
 
-L’application d’aide au magasin pour iOS et Android™ interagit avec la technologie Walmart Commerce pour offrir des fonctionnalités d’exécution omnicanal à vos magasins de détail.
+L’application d’assistance de la boutique pour les appareils iOS et Android™ interagit avec [!DNL Walmart Commerce Technologies] pour offrir des fonctionnalités d’exécution omnicanal à vos magasins de détail.
 
-* Envoyez directement des commandes de nettoyage en magasin et côté client aux périphériques mobiles des associés du magasin.
+* Envoyez directement des commandes de saut en magasin et de lot aux périphériques mobiles des associés de magasin.
 
-* Veillez à ce que les commandes de magasin soient rapidement et précisément choisies, évaluées et transmises aux clients lorsqu’ils s’enregistrent pour la récupération de commande.
+* Veillez à ce que les commandes du magasin soient rapidement et précisément choisies, mises en scène et transmises aux clients lorsqu’ils arrivent au magasin pour la récupération de la commande.
 
 * Gestion de l’accès des utilisateurs associés au magasin, y compris les stratégies de sécurité, l’authentification à deux facteurs, etc.
 
@@ -59,19 +59,19 @@ L’application d’aide au magasin pour iOS et Android™ interagit avec la tec
 
 ## Amélioration de l’expérience utilisateur
 
-L’exécution de la boutique améliore Adobe Commerce en ajoutant les fonctionnalités suivantes pour offrir de meilleures expériences d’achat et des workflows d’exécution rationalisés :
+L’exécution de magasin améliore Adobe Commerce en ajoutant des fonctionnalités pour offrir de meilleures expériences d’achat et des workflows d’exécution simplifiés.
 
-* **Sélecteur d’emplacement de magasin (SLS)**-Expose l’option de prise en main du magasin, la disponibilité du stock et le sélecteur de magasin sur les pages de produit et de panier en plus du passage en caisse natif.
+* **Sélecteur d’emplacement de magasin (SLS)**-Ajoute des options de sélection de magasin, la disponibilité du stock et les sélecteurs de magasin aux pages de produit et de panier en plus du passage en caisse natif.
 
-* **Disponibilité du stock**- Ajoute des options de configuration globale et de produit supplémentaires à Adobe Commerce Inventory management pour prendre en charge l’allocation de l’inventaire au niveau du magasin afin de favoriser l’exécution locale opportune.
+* **Disponibilité du stock**- Ajoute des options de configuration globales et de produit supplémentaires à Adobe Commerce Inventory management. Ces options prennent en charge l’allocation de l’inventaire au niveau du magasin afin d’accélérer l’exécution locale.
 
-* **Améliorations apportées au panier et au passage en caisse**- Communiquez les heures de prise en charge, les emplacements et les coûts les plus rapides aux clients au cours de leur session d’achat en ligne.
+* **Améliorations apportées au panier et au passage en caisse**- Communique les temps, emplacements et coûts de récupération les plus rapides disponibles aux clients au cours de leur session d’achat en ligne.
 
 * **Flux de processus d’archivage**-Ajoute des interfaces pour améliorer le processus d’enregistrement des clients et les interactions avec les associés du magasin lorsqu’ils arrivent pour une récupération en magasin ou côté serveur.
 
 * **Mon historique de compte**- Étend le [!DNL Commerce] historique du compte pour afficher les étapes de l&#39;historique des commandes.
 
-* **Emails transactionnels**- Étend les fonctionnalités d’administration pour [!UICONTROL Sales Emails] pour ajouter des modèles de courrier électronique à acheter en ligne, récupérez les transactions en magasin. Les modèles prennent en charge la communication en temps réel entre les clients et les associés du magasin pendant le processus de récupération des commandes.
+* **Emails transactionnels**- Étend les fonctionnalités d’administration pour [!UICONTROL Sales Emails] pour ajouter des modèles de courrier électronique à acheter en ligne, récupérez dans les transactions du magasin. Les modèles prennent en charge la communication en temps réel entre les clients et les associés du magasin pendant le processus de récupération des commandes.
 
 * **Exécution flexible**-Étend [!DNL Commerce] des fonctionnalités permettant de prendre en charge des scénarios de traitement des commandes différées, de réduction de quantité et d’exécution partielle des commandes, tout en facilitant les annulations et les notes de crédit nécessaires pour prendre en charge ces scénarios.
 
