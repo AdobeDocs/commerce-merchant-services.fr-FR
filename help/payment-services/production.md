@@ -2,16 +2,20 @@
 title: Activer [!DNL Payment Services] pour la production
 description: Terminez le processus d’intégration en activant [!DNL Payment Services] pour la production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Activer [!DNL Payment Services] pour la production
 
-Une fois que l’extension des services de paiement est [installé](install.md), votre instance est [configuré et connecté](connect.md)et que vous avez [Configuration de l’environnement de test](sandbox.md) et testés, vous pouvez procéder à la mise en production du service et terminer l’ [processus d’intégration](onboard.md).
+Vous pouvez mettre le service en production et terminer la [processus d’intégration](onboard.md), selon les étapes de cette rubrique, après avoir :
+
+* [Installer](install.md) l’extension des services de paiement ;
+* [Configuration et connexion](connect.md) votre instance
+* [Configuration](sandbox.md) et [test](test-validate.md) votre environnement de test
 
 ## Définir [!DNL Payment Services] comme mode de paiement
 
