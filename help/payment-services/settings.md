@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
+source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,8 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
       >
       > Pour utiliser Apple Pay [Posséder un compte développeur Apple](test-validate.md#test-in-sandbox-environment) (avec une fausse carte de crédit et des informations de facturation) pour le tester. Lorsque vous êtes prêt à utiliser Apple Pay dans un environnement de test *ou* mode de production, après avoir effectué toute [test et validation](test-validate.md), contactez votre représentant commercial pour l’activer pour vos boutiques actives.
 
+      Lorsque vous activez/désactivez la visibilité des boutons de paiement ou le message PayPal Pay Later, un aperçu visuel de cette configuration s’affiche au bas de la page Paramètres .
+
 1. Pour activer le mode de débogage, activez la fonction **[!UICONTROL Debug Mode]** sélecteur.
 1. Cliquez sur **[!UICONTROL Save]**.
 
@@ -145,6 +147,9 @@ Vous pouvez également configurer la variable _[!UICONTROL Button style]_options
 1. Pour modifier la variable **[!UICONTROL Shape]**, sélectionnez `Pill` ou `Rect`.
 1. Pour activer le sélecteur de hauteur de bouton, faites basculer le bouton **[!UICONTROL Responsive button height]** sélecteur.
 1. Pour modifier la variable **[!UICONTROL Label]**, sélectionnez l’option de libellé de votre choix.
+
+   Lorsque vous modifiez les options de configuration pour la disposition, la couleur, la forme, la hauteur et le libellé, un aperçu visuel de cette configuration s’affiche au bas de la page Paramètres .
+
 1. Cliquez sur **[!UICONTROL Save]**.
 
    Si vous essayez de quitter cette vue sans enregistrer vos modifications, un modal s’affiche pour vous inviter à ignorer les modifications, à continuer les modifications ou à les enregistrer.
