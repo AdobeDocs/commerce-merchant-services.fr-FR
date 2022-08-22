@@ -1,14 +1,15 @@
 ---
-title: Présentation
-description: '"[!DNL Product Recommendations] sont un puissant outil marketing que vous pouvez utiliser pour augmenter les conversions, augmenter les recettes et stimuler l’engagement des acheteurs."'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+title: Introduction à [!DNL Product Recommendations]
+description: '''[!DNL Product Recommendations] sont un puissant outil marketing que vous pouvez utiliser pour augmenter les conversions, augmenter les recettes et stimuler l’engagement des acheteurs."'
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# Présentation
+# Introduction à [!DNL Product Recommendations]
 
 Les recommandations de produits sont un puissant outil marketing que vous pouvez utiliser pour augmenter les conversions, augmenter les recettes et stimuler l’engagement des acheteurs. Les recommandations de produits Adobe Commerce sont optimisées par [Adobe Sensei](https://www.adobe.com/sensei.html), qui utilise l’intelligence artificielle et des algorithmes d’apprentissage automatique pour effectuer une analyse approfondie des données agrégées sur les visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, offrent une expérience hautement attrayante, pertinente et personnalisée.
 
@@ -31,3 +32,9 @@ Les recommandations de produits vous permettent d’effectuer les opérations su
 - Choisissez parmi neuf types de recommandations intelligentes distincts, en fonction des domaines suivants : d’achat, basées sur des éléments, basées sur la popularité, les tendances et les similarités ;
 - Utiliser les données comportementales pour personnaliser les recommandations dans tout le parcours de storefront de l’acheteur
 - Mesurez les mesures clés pertinentes pour chaque recommandation afin de vous aider à comprendre l’impact de vos recommandations.
+
+## [!DNL Product Recommendations] demo
+
+Regardez cette vidéo pour en savoir plus sur [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
