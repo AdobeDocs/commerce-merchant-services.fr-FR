@@ -2,9 +2,9 @@
 title: Présentation du guide
 description: Le connecteur Adobe Experience Platform pour Adobe Commerce connecte votre instance Commerce à d’autres produits Adobe Experience Cloud.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
+source-git-commit: 2fb44e73a76ad4e1433b2abd88be1304e7e10596
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 L’extension de connecteur Experience Platform permet aux marchands Adobe Commerce d’envoyer des données à Adobe Experience Platform Edge afin que d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target, puissent utiliser ces données Commerce. En connectant vos données Commerce à d’autres produits dans Adobe Experience Cloud, vous pouvez effectuer des tâches, telles que analyser le comportement des utilisateurs sur votre site, effectuer des tests AB et créer des campagnes personnalisées.
 
 Les événements Storefront capturent les interactions d’acheteurs, telles que `View Page`, `View Product`, `Add to Cart`, etc. Les données capturées ne contiennent pas d’informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les identifiants de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/privacy/experience-cloud.html). Consultez la liste complète des [événements storefront](events.md).
+
+Le connecteur Experience Platform apparaît dans l’Admin Commerce sous **Système** > Services > **Connecteur Experience Platform**.
+
+![Vue d’administration de l’extension du connecteur Experience Platform](assets/epc-adminui.png)
 
 ## Prérequis pour l’utilisation du connecteur Experience Platform {#prereqs}
 
