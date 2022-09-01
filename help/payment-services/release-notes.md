@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Notes de mise à jour"'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
+source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,32 @@ Pour les modifications et correctifs de fonctionnalités publiés en dehors de l
 Voir [Versions à venir](https://devdocs.magento.com/release/) pour en savoir plus sur les calendriers de publication et l’assistance.
 
 Voir [Disponibilité](https://devdocs.magento.com/release/availability.html) dans la documentation destinée aux développeurs pour en savoir plus sur la compatibilité des produits.
+
+## Mises à jour du service hébergé
+
+Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités qui se sont produits et qui ont été publiés en dehors des versions régulières des fonctionnalités pour le service hébergé.
+
++++Mises à jour du service hébergé
+
+_31 août 2022_
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3629 --> Lorsqu’un nouveau commerçant accède pour la première fois à la page d’accueil des services de paiement, la page se charge désormais immédiatement pour afficher le contenu au lieu de devoir actualiser la page.
+
+_9 août 2021_
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-3420 --> Le paiement Apple est désormais disponible sous la forme d’un bouton PayPal Smart. Ceci [option de paiement](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) permet aux clients d’utiliser la fonctionnalité d’identifiant tactile de leur appareil iOS ou macOS pour sélectionner Apple Pay. Apple Pay traite le paiement à l’aide des informations d’identification de paiement de carte de crédit et de débit stockées sur l’appareil.
+
+_28 juin 2021_
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-1720 --> Les litiges relatifs aux commandes de magasins sont désormais disponibles dans [le rapport État du paiement de la commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Vous pouvez agir en cas de conflit en accédant directement au centre de résolution PayPal à partir de [!DNL Payment Services].
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-2854 --> Améliorations de l’expérience utilisateur à partir de [!DNL Payment Services] Accueil permet de modifier une configuration au niveau de l’héritage actuel et améliore l’affichage de l’en-tête et de la navigation.
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-2854 --> Vous pouvez désormais voir des avertissements lorsque vous passez du mode sandbox au mode de production et lorsque vous tentez de quitter une vue avec des mises à jour qui n’ont pas été enregistrées.
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
+
++++
 
 ## v1.3.0
 
@@ -46,20 +72,6 @@ _29 juin 2022_
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Lorsque les informations d’identification de Commerce Services ne sont pas valides, la variable [!DNL Payment Services] La page d’accueil s’affiche désormais dans l’Admin. Une erreur d’identification s’affiche pour vous signaler que vos informations d’identification ne sont pas valides.
 
 ![Problème connu](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] est actuellement incompatible avec `commerce-data-export` v101.20 et versions ultérieures, ce qui le rend incompatible avec la [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
-
-### Mises à jour du service hébergé
-
-Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités qui se sont produits et qui ont été publiés en dehors des versions régulières des fonctionnalités, entre la version actuelle de la version 1.2.0 et la version précédente de la version 1.1.0 pour le service hébergé.
-
-![Nouveau](../assets/new.svg)<!-- Issue PAY-3420 --> Le paiement Apple est désormais disponible sous la forme d’un bouton PayPal Smart. Ceci [option de paiement](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) permet aux clients d’utiliser l’identifiant tactile sur leurs appareils pour utiliser la méthode payante d’Apple, qui utilise les informations d’identification de paiement de carte de crédit et de débit stockées sur leurs appareils iOS ou macOS.
-
-![Nouveau](../assets/new.svg)<!-- Issue PAY-1720 --> Les litiges relatifs aux commandes de magasins sont désormais disponibles dans [le rapport État du paiement de la commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Vous pouvez accéder directement au Centre de résolution PayPal à partir de [!DNL Payment Services] prendre des mesures en cas de conflit.
-
-![Nouveau](../assets/new.svg)<!-- Issue PAY-2854 --> Améliorations de l’expérience utilisateur à partir de [!DNL Payment Services] Home (Accueil) permet de modifier une configuration au niveau de l’héritage actuel et améliore l’affichage de l’en-tête et de la navigation.
-
-![Nouveau](../assets/new.svg)<!-- Issue PAY-2854 --> Vous pouvez désormais voir des avertissements lorsque vous passez du mode sandbox au mode de production et lorsque vous tentez de quitter une vue avec des mises à jour qui n’ont pas été enregistrées.
-
-![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
 
 ## v1.1.0
 
