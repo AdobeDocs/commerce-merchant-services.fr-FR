@@ -1,10 +1,10 @@
 ---
-title: '"À l’intégration de [!DNL Quick Checkout] pour l’extension Adobe Commerce"'
-description: '"Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."'
+title: "À l’intégration de [!DNL Quick Checkout] pour l’extension Adobe Commerce"
+description: "Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # [!DNL Quick Checkout] intégration
 
 Pour commencer à utiliser la méthode [!DNL Quick Checkout] pour l’extension Adobe Commerce, vous devez suivre quelques étapes d’intégration afin de connecter votre instance à notre fonctionnalité de passage en caisse.
+
+![Passage en caisse rapide](assets/overview-admin-panel.png)
 
 1. [Obtenir l’extension](#get-extension).
 1. [Création d’un compte commercial de production ou d’environnement de test avec [!DNL Bolt]](#create-account-with-bolt). Fournissez toutes les informations requises pour vérifier votre identité.
@@ -21,6 +23,16 @@ Pour commencer à utiliser la méthode [!DNL Quick Checkout] pour l’extension 
 1. [Définition des paramètres du service](#complete-admin-configuration) pour configurer la variable [!DNL Quick Checkout] extension .
 1. [Cliquez sur Enregistrer la configuration .](#enable-live-quick-checkout) pour activer l’extension.
 1. Basculer l’étendue vers **Site web principal** et [Cliquez sur Configurer l’URL de rappel .](#check-shopper-valid-account) bouton .
+
+Si Gainsight est activé, il déclenche la variable **Visitez le site** dans votre [!DNL Quick Checkout] Panneau d’administration à propos [!DNL Quick Checkout] pour Adobe Commerce :
+
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Avancé :
+
+   ![Passage en caisse rapide](assets/gainsight-admin.png)
+
+Si Gainsight n’est pas activé, passez aux étapes d’intégration.
+
+Voir [[!DNL Quick Checkout] Panneau d’administration](../quick-checkout/admin-panel.md) pour plus d’informations.
 
 >[!NOTE]
 >
