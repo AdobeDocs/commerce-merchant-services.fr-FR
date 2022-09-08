@@ -4,26 +4,31 @@ description: Configurez les sélections de marque de voiture et de modèle dispo
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
 # Configuration de l’expérience d’archivage
 
-Le workflow de sélecteur de magasin pour la solution d’exécution de la boutique comprend un formulaire de commande que les clients remplissent pendant l’expérience d’achat. Ce formulaire inclut la couleur de la voiture et des champs de sélection qui permettent aux clients de fournir des détails sur la description de la voiture afin que les associés du magasin puissent facilement trouver le client lors de la livraison de leur commande de nettoyage du trottoir.
+Lorsque les clients arrivent pour une récupération au bord du trottoir, ils utilisent le formulaire Commande de prise en charge pour s’enregistrer et fournir des informations sur leur emplacement, leur marque de voiture et leur modèle de voiture. Ces informations sont envoyées à Store Associates par le biais de l’application d’aide à la boutique afin qu’il puisse rapidement envoyer des commandes de nettoyage à l’aide de la boutique.
 
 ![[!DNL Check-In Experience Car Make] et [!DNL Model] paramètres de la sélection côté serveur](assets/checkin-system-settings-car-options.png)
 
+>[!NOTE]
+>
+>Vous configurez l’interface de formulaire de bon de commande à partir de la page [Menu Configuration du magasin](merchant-store-configuration.md#configure-check-in-experience-interface-options). Vous pouvez par exemple spécifier les champs de saisie à afficher et indiquer s’ils sont obligatoires ou facultatifs.
+
+
 ## Configuration des sélections de marques et de couleurs de voiture
 
-Vous pouvez afficher et modifier la couleur de la voiture et rendre les sélections disponibles dans l’ordre de sélection dans les paramètres des systèmes d’administration dans Adobe Commerce :
+Les utilisateurs administrateurs peuvent gérer les sélections de modèles et de mise en page de la voiture disponibles sur le formulaire de sélection dans les paramètres du système Adobe Commerce :
 
 - **[!UICONTROL System]> Archiver > Effectuer une opération**
 - **[!UICONTROL System]> Archiver > Couleurs de la voiture**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)
 
-La configuration par défaut inclut des options pour les marques et les couleurs de voitures courantes sur le marché américain. [!DNL Commerce] Les utilisateurs administrateurs peuvent gérer la configuration pour ajouter ou modifier les options disponibles.
+La configuration par défaut comprend une liste exhaustive de marques et de couleurs de voitures courantes pour le marché américain. [!DNL Commerce] Les utilisateurs administrateurs peuvent gérer la configuration pour ajouter ou modifier les options disponibles.
