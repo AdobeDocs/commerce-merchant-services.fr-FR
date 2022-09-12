@@ -3,9 +3,9 @@ title: Données disponibles
 description: Utilisez les données de reporting financier pour réconcilier les rapports avec les systèmes autres que Commerce.
 role: User
 level: Intermediate
-source-git-commit: 1186b4e52f1d613332a7862c58f482c2591e29a8
+source-git-commit: ed471f363546f1d337e85568dc5079cae4507840
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -18,31 +18,64 @@ Vous disposez de certaines données de commande et de paiement afin de pouvoir c
 
 Vous pouvez réconcilier le reporting financier d’Adobe Commerce avec votre système ERP (Enterprise Resource Planning) autre qu’Adobe à l’aide de l’identifiant d’incrément associé à une commande spécifique.
 
-Lorsque les services de paiement envoient la commande Commerce à PayPal, l’ID d’incrément est inclus en tant que `custom_id`. Le `custom_id` est visible dans les détails de l’activité commerciale pour un paiement et dans le webhook PayPal.
+Lorsque les services de paiement envoient la commande Commerce à PayPal, l’ID d’incrément est inclus en tant que `custom_id` _et_ dans le `invoice_id` (qui contient également une chaîne aléatoire après l’événement `increment_id`).
 
-`custom_id` au bas du détail de l’activité commerciale pour un paiement :
+Les identifiants sont facilement accessibles dans les détails de l’activité commerciale pour un paiement et dans le webhook PayPal.
 
-![`custom_id` dans le détail de l’activité commerciale](assets/merchant-activity.png)
+Le `invoice_id` et `custom_id` s’affichent près du bas du détail de l’activité commerciale pour un paiement :
 
-`custom_id` dans les détails du webhook de PayPal :
+![`custom_id` dans le détail de l’activité commerciale](assets/merchant-activity-ids.png)
+
+`custom_id` et `invoice_id` dans les détails du webhook de PayPal :
 
 ```json
    ...
-   },
-   "seller_protection": {
-   "status": "NOT_ELIGIBLE"
-   },
-   "create_time": "2022-08-28T21:06:53Z",
-   "custom_id": "000000829",
-   "supplementary_data": {
-   "related_ids":
-
-   { "authorization_id": "6WW957787A749904A", "order_id": "3SV13726F9525791J" }
-   },
+   {
+    "id": "4E855005GK253170H",
+    "intent": "AUTHORIZE",
+    "status": "COMPLETED",
+    "payment_source": {
+        ...
+    },
+    "purchase_units": [
+        {
+            ...
+            "custom_id": "000001322",
+            "invoice_id": "000001322-c01bd7c3-920f-4542-a900-738082177e92",
+            ...
+            "payments": {
+                "authorizations": [
+                    {
+                       ...
+                        "invoice_id": "000001322-c01bd7c3-920f-4542-a900-738082177e92",
+                        "custom_id": "000001322",
+                        ...
+                    }
+                ],
+                "captures": [
+                    {
+                        ...
+                        "invoice_id": "000001322-c01bd7c3-920f-4542-a900-738082177e92",
+                        "custom_id": "000001322",
+                        ...
+                    }
+                ]
+            }
+        }
+    ],
+    "payer": {
+        ...
+    },
+    "create_time": "2022-09-12T14:59:01Z",
+    "update_time": "2022-09-12T14:59:45Z",
+    "links": [
+        ...
+    ]
+}
    ...
 ```
 
 Pour plus d’informations, consultez la documentation sur les API REST de PayPal :
 
-* [`purchase_unit` dans lequel `custom_id` réside](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Réduire)
+* [`purchase_unit`, dans laquelle `custom_id` et `invoice_id` résider](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Réduire)
 * [Afficher les détails de commande](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
