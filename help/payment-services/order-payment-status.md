@@ -4,9 +4,9 @@ description: Utilisez le rapport État des paiements de la commande pour connaî
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
+source-git-commit: ac1d0a4e64f358da44796edb0138b3656a907440
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous offre des rapports détaillés afin d’obtenir une vue claire des commandes et des paiements de votre boutique.
 
-![Affichage des rapports financiers](assets/reports-view.png)
+![Affichage des rapports financiers](assets/reports-view-new.png)
 
 Le rapport État des paiements de la commande vous permet de déterminer facilement où se trouve une commande spécifique dans le flux de processus de paiement de la commande. Ce rapport vous permet d’afficher rapidement l’état du paiement de vos commandes et d’identifier les problèmes potentiels.
 
