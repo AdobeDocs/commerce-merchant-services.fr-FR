@@ -4,9 +4,9 @@ description: Configurez les [!DNL Store Assist] pour gérer les processus d’ex
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ L’application d’aide à la boutique nécessite deux types de configuration :
 
    - **Annulation de la boutique**: indiquez si les commandes peuvent être annulées à partir du magasin et quels rôles disposent de droits d’annulation.
 
-   - **Fenêtre de nettoyage des commandes**: indiquez le délai au-delà duquel une commande sélectionnée reste en cours d’évaluation avant d’être redémarrée (trois jours, par exemple).
+   - **Fenêtre de nettoyage des commandes**: indiquez la durée au-delà de laquelle la variable [Délai d’avance estimé pour la collecte](enable-general.md#delivery-method-title-configuration) qu’une commande sélectionnée reste en cours d’évaluation avant d’être réinitialisée (trois jours, par exemple). La valeur par défaut est de 7 jours. Si cette configuration est activée, la commande est automatiquement annulée à l’expiration de cette période. Les articles sont réactivés et le marchand reçoit un email d’annulation.
 
    - Personnalisez toutes les instructions de l’application (sélection, évaluation, remise).
 
