@@ -1,11 +1,11 @@
 ---
-title: '''[!DNL Catalog Service] Notes de mise à jour'''
+title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 72913e0c0b7364e38d37fe1a8279c40a4e849c02
+source-git-commit: 6609060a4ef09f72d579d97383ac487b105c81d6
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 2%
+source-wordcount: '283'
+ht-degree: 1%
 
 ---
 
@@ -19,18 +19,39 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Catalog Se
 * ![Correction](../assets/fix.svg) - Correctifs et améliorations
 * ![Bogue](../assets/bug.svg) - Problèmes connus
 
+## Version 0.3 - Bêta+
+
+Date de publication : 2022-09-12 Compatible avec Adobe Commerce (EE) : 2.4.x Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x Stabilité : Beta
+
+![Nouveau](../assets/new.svg) - Prise en charge des images pour les variantes : les images de produit sont renvoyées en fonction des options sélectionnées.
+![Nouveau](../assets/new.svg) - Rôles pour la prise en charge des prix : autoriser uniquement les membres de groupes de clients spécifiques à voir le prix des produits ;
+![Correction](../assets/fix.svg) - Amélioration de la stabilité et des performances du service
+![Nouveau](../assets/new.svg) - Des mises à jour sont reçues lorsque des produits sont supprimés du catalogue.
+
+### Limites connues
+
+Ces fonctionnalités ne sont pas encore prises en charge :
+
+* Prix de niveau
+* Lot et produits regroupés
+* Aucune mise à jour n’est reçue lorsque des variantes sont supprimées du catalogue.
+* La visibilité B2B remplace : les produits peuvent faire l’objet de recherches ou être ajoutés au panier pour des groupes de clients spécifiques ;
+
+
 ## Version bêta
 
-* ![Nouveau](../assets/new.svg) - Le `products` et `refineProduct` les requêtes renvoient les données suivantes :
-   * Attributs de produit prédéfinis (système).
-   * Attributs de produit dynamiques et filtrez-les par rôle (page d’affichage de produit/page de liste de produits).
-   * Options du produit.
-   * Images de produit et filtrez-les par rôle (PDP/PLP).
-   * Un prix spécifique pour les produits simples et des plages de prix pour les produits configurables.
-   * Prix des groupes clients et plages de prix. Ils renvoient un prix par défaut de secours aux acheteurs sans groupe de clients.
-   * Types de produits qui utilisent la tarification spécifique aux clients B2B.
+Date de publication : 2022-08-09 Compatible avec Adobe Commerce (EE) : 2.4.x Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x Stabilité : Beta
 
-## Limites connues
+* ![Nouveau](../assets/new.svg) - Le `products` et `refineProduct` les requêtes renvoient les données suivantes :
+* Attributs de produit prédéfinis (système).
+* Attributs de produit dynamiques et filtrez-les par rôle (page d’affichage de produit/page de liste de produits).
+* Options du produit.
+* Images de produit et filtrez-les par rôle (PDP/PLP).
+* Un prix spécifique pour les produits simples et des plages de prix pour les produits configurables.
+* Prix des groupes clients et plages de prix. Ils renvoient un prix par défaut de secours aux acheteurs sans groupe de clients.
+* Types de produits qui utilisent la tarification spécifique aux clients B2B.
+
+### Limites connues
 
 * Les produits groupés et groupés ne sont pas pris en charge.
 * Le prix de niveau n’est pas pris en charge.
