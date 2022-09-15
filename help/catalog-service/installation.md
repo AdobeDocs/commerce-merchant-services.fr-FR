@@ -1,19 +1,19 @@
 ---
-title: '"Intégration et installation"'
-description: '"Découvrez comment installer [!DNL Catalog Service]"'
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: Intégration et installation
+description: Découvrez comment installer [!DNL Catalog Service]
+exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
+source-git-commit: 595d7644374b066b7608748cf09df1c41bf0eaee
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
-
 
 # Intégration et installation
 
 Les partenaires et les clients peuvent commencer à utiliser la variable [!DNL Catalog Service] pour la version bêta d’Adobe Commerce publiée le 9 août 2022. Pour participer, vous devez lire et accepter notre [Termes du programme Adobe Commerce bêta](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
 
-Une fois que vous avez signé l&#39;accord, contactez notre équipe au sujet de la [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) canal du Slack public. Nous vous fournirons toutes les informations et les étapes suivantes nécessaires pour travailler avec le [!DNL Catalog Service] Version bêta.
+Une fois que vous avez signé l&#39;accord, contactez notre équipe sur la [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) canal du Slack public. Nous vous fournirons toutes les informations et les étapes suivantes nécessaires pour travailler avec le [!DNL Catalog Service] Version bêta.
 
 ## Conditions préalables
 
@@ -46,19 +46,19 @@ Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instan
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
-   }
+    "magento/composer-root-update-plugin": "^2.0.2",
+    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
+    "magento/saas-export": "^101.4.0",
+    "magento/commerce-data-export": "^101.3.1",
+    "magento/commerce-data-export-ee": "^101.3.1",
+    "magento/services-id": "^3.0.1",
+    "magento/services-connector": "1.2.1"
+    }
    ```
 
    <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
-1. Mettez à jour les dépendances et installez l’extension :
+1. Testez localement la nouvelle configuration et mettez à jour les dépendances :
 
    ```bash
    composer update
@@ -66,7 +66,7 @@ Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instan
 
    La commande met à jour toutes les dépendances.
 
-1. Validez et envoyez vos modifications.
+1. Validez et envoyez vos modifications pour `composer.json` et `composer.lock`.
 
 ### Sur site
 
@@ -110,4 +110,8 @@ Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instan
 
 Après l’installation [!DNL Catalog Service], vous devez configurer la variable [Connecteur Commerce Services](../landing/saas.md) en spécifiant les clés d’API et en sélectionnant un espace de données SaaS.
 
-Pour vous assurer que l’exportation de catalogue s’exécute correctement, vérifiez que la variable [tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) et le [indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sont en cours d’exécution et l’indexeur de flux de produit est défini sur Mettre à jour par planification.
+Pour vous assurer que l’exportation du catalogue s’exécute correctement :
+
+- Confirmez que [tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) sont en cours d’exécution.
+- Vérifiez les [indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sont en cours d’exécution.
+- Assurez-vous que la variable `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, et `Product Variant Feed` les indexeurs sont définis sur `Update by Schedule`.
