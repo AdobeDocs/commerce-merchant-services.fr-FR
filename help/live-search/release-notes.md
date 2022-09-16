@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 07d8a80cc8afe34cd0363a7705465b5565f5c196
+source-git-commit: 974c77fb427f85058bb2c59d8e3818cb7c148e04
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Nous conseillons aux utilisateurs de mettre à niveau et de tester avant de pass
 * ![Bogue](../assets/bug.svg) - Les produits ne s’affichent pas s’ils ne sont pas ajoutés au &quot;catalogue partagé par défaut&quot;.
 * La version B2B avec la recherche en direct pour le PWA Studio ne sera pas disponible tant que PWA Studio n’y aura pas ajouté la prise en charge.
 * Les remplacements de produits et le flux d’attributs de produit peuvent présenter des problèmes de synchronisation nécessitant l’exécution des administrateurs. `bin/magento indexer:reset` et `bin/magento indexer:reindex` pour effectuer une synchronisation correcte.
-* Si vous activez ou désactivez les fonctionnalités Autorisations du catalogue/Catalogue partagé/B2B, la variable `productOverrides` les indexeurs ne sont pas mis à jour et sont incorrectement marqués comme &quot;valides&quot;. Utilisation `bin/magento saas:resync --feed=productOverrides` pour résoudre le problème.
+* Si vous activez ou désactivez les fonctionnalités Autorisations du catalogue/Catalogue partagé/B2B, la variable `catalog_data_exporter_product_overrides` l’indexeur n’est pas mis à jour et est incorrectement marqué comme `valid`. Utilisation `bin/magento saas:resync --feed=productOverrides` pour résoudre le problème.
 
 ## [!DNL Live Search] 2,0
 
