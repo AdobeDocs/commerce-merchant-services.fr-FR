@@ -1,10 +1,10 @@
 ---
-title: '"Composants de règle"'
-description: '"En savoir plus sur [!DNL Live Search] composants de règle et opérateurs."'
+title: "Composants de règle"
+description: "En savoir plus sur [!DNL Live Search] composants de règle et opérateurs."
 exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Une règle décrit les conditions requises pour déclencher des événements qui
 
 ## Conditions
 
-Une règle simple peut comporter une seule condition et un seul événement, tandis qu’une règle complexe peut comporter jusqu’à dix conditions qui déclenchent jusqu’à vingt-cinq événements.
+Une règle simple peut comporter une seule condition et un seul événement, tandis qu’une règle complexe peut comporter jusqu’à dix conditions qui déclenchent jusqu’à 25 événements.
 Les règles peuvent comporter :
 
-* Jusqu’à 10 conditions
+* Jusqu’à dix conditions
 * Jusqu’à 25 événements
 
 Le texte de la requête peut contenir :

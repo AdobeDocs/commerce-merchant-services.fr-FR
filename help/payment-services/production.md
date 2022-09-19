@@ -2,9 +2,9 @@
 title: Activer [!DNL Payment Services] pour la production
 description: Terminez le processus d’intégration en activant [!DNL Payment Services] pour la production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Après vous [Configuration de Commerce Services](connect.md#configure-commerce-s
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Cliquez sur **[!UICONTROL Enable Payment Services]**.
 
-   Cette option est visible si vous n’avez pas encore configuré . [!DNL Payment Services] comme mode de paiement pour un ou plusieurs sites web de vos Magento.
+   Cette option est visible si vous n’avez pas encore configuré . [!DNL Payment Services] comme mode de paiement pour un ou plusieurs de vos sites web.
 
    Vous êtes dirigé vers la zone des paramètres dans la vue Accueil avec les options appropriées développées (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), où vous pouvez activer la fonction [!DNL Payment Services] d’ [mode de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
 

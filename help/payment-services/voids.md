@@ -2,9 +2,9 @@
 title: Voix
 description: Les votes permettent de libérer les fonds dans un compte de carte de crédit ou de débit qui sont bloqués ou conservés par une autorisation pour le montant d’un achat.
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Avec [!DNL Payment Services], vous pouvez utiliser la fonctionnalité Commerce e
 >
 >Vous ne pouvez annuler une transaction que si le paiement n’est pas encore capturé.
 
-Si votre boutique est [configuré](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} pour autoriser uniquement (et non pour capturer) des fonds au point de vente, un achat effectué sur votre boutique donne une commande avec un `Processing` statut dans l’administrateur du Magento.
+Si votre boutique est [configuré](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} pour autoriser uniquement (et non pour capturer) des fonds au point de vente, un achat effectué sur votre boutique donne une commande avec un `Processing` dans l’administrateur Commerce.
 
 Vous pouvez également [annuler une commande ;](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order){target=&quot;_blank&quot;} qui n’est pas facturé. Toutes les autorisations non capturées sont également annulées dans le cadre de ce processus d’annulation.
 

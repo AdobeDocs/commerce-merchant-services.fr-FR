@@ -1,17 +1,23 @@
 ---
-title: '"[!DNL Live Search] Indexation"'
-description: '"Découvrez comment [!DNL Live Search] indexe les propriétés d’attribut de produit."'
+title: "[!DNL Live Search] Indexation"
+description: "Découvrez comment [!DNL Live Search] indexe les propriétés d’attribut de produit."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 2835209ad881db388894c5b1da213312436d3550
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 # Indexation
 
-Les propriétés d’attribut de produit (métadonnées) déterminent la manière dont un attribut peut être utilisé dans le catalogue, son apparence et son comportement dans le magasin, ainsi que les données incluses dans les opérations de transfert de données. La portée des métadonnées d’attribut est la suivante : `website/store/store view`.
+Les propriétés d’attribut de produit (métadonnées) déterminent :
+
+* Utilisation d’un attribut dans le catalogue
+* Son apparence et son comportement dans le magasin
+* Données incluses dans les opérations de transfert de données
+
+La portée des métadonnées d’attribut est la suivante : `website/store/store view`.
 
 Le [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit qui possède la variable [storefront, propriété](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` défini sur `Yes` dans l’administrateur Adobe Commerce. Lorsqu’elle est activée, `Search Weight` et `Visible in Advanced Search` peut être défini pour l’attribut .
 
@@ -61,7 +67,7 @@ Workflow de mise à jour en flux continu :
 
 1. Les produits mis à jour sont synchronisés de l’instance Adobe Commerce vers le service de catalogue.
 1. Le service d’indexation recherche en permanence les mises à jour de produit à partir du service de catalogue. Les produits mis à jour sont indexés au fur et à mesure qu’ils arrivent dans le service de catalogue.
-1. Cela peut prendre jusqu’à quinze minutes pour qu’une mise à jour de produit soit disponible dans [!DNL Live Search].
+1. La disponibilité d’une mise à jour de produit dans peut prendre jusqu’à 15 minutes. [!DNL Live Search].
 
 ## Recherche de client
 

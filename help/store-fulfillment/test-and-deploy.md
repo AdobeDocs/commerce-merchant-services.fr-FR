@@ -4,9 +4,9 @@ description: Planifiez le test pour vérifier la fonctionnalité d’exécution 
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Cette section du plan de test couvre la synchronisation des stocks et des stocks
 <tr>
 <td><strong>Nouvelle commande push, synchronisation d’API, commande client</strong></td>
 <td>Le client envoie une commande de prise en main de magasin.</td>
-<td><ul><li>Dans la vue Admin Order, une <strong>Utilisateur administrateur Adobe Commerce</strong> constate que l’état de synchronisation des commandes a été mis à jour vers <code>Sent</code></li><li>Le journal des détails de la commande comprend le message <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>Dans la vue Admin Order, une <strong>Utilisateur administrateur Adobe Commerce</strong> constate que l’état de synchronisation des commandes a été mis à jour vers <code>Sent</code></li><li>Le journal des détails de la commande comprend le message <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Nouvelle commande push, synchronisation API : l’administrateur envoie la commande</strong></td>
 <td>Une Adobe Commerce <strong>Administration</strong> envoie une commande de récupération.</td>
-<td><ul><li>Dans la vue Admin Order, l’état de synchronisation des commandes est mis à jour vers <code>Sent</code>.</li><li>Le journal des détails de la commande comprend le message <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>Dans la vue Admin Order, l’état de synchronisation des commandes est mis à jour vers <code>Sent</code>.</li><li>Le journal des détails de la commande comprend le message <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Nouvelle commande push, file d’attente des exceptions<strong></td>
@@ -161,7 +161,7 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 <li>Réception de l'email de remboursement de la commande : <code>$x amount was refunded</code></li>
 <li>L’état de la commande est <code>Processing</code>.</li>
 <li>Note de crédit créée dans Adobe Commerce (attendez que cron fonctionne).</li>
-<li>Si certains éléments n’ont pas été sélectionnés, vérifiez que la variable [!UICONTROL Ready for Pickup] l'email avec la section nilpick or return s'affiche. <code>DISPLAY COMMENT HISTORY</code> affiche <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>Si certains éléments n’ont pas été sélectionnés, vérifiez que la variable [!UICONTROL Ready for Pickup] l'email avec la section nil pick or return s'affiche. <code>DISPLAY COMMENT HISTORY</code> affiche <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> indicateur <code>true</code>.</li>
 </ul>
 </td>
@@ -566,25 +566,25 @@ Cette section du plan de test couvre les scénarios de test des workflows de com
 <tr>
 <td>
 <strong>Sélection de commande unique : chemin d’accès heureux, sélection de bord</strong></td>
-<td>Sélectionnez des éléments uniques et multiquantité. Pas de clics et de ramassage côté serveur (avec transfert).
+<td>Sélectionnez des éléments uniques et multiquantité. Aucun saut nil et ramassage au bord du trottoir (avec mise en scène).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Sélection multi-commande : chemin heureux, saut de bordure</strong></td>
-<td>Éléments uniques et multiquantité. Pas de clics et de ramassage côté serveur (avec évaluation)</td>
+<td>Éléments uniques et multiquantité. Aucun saut nil et nettoyage à côté du curseur (avec transfert)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Sélection de commande unique : sélection de chemin d’accès heureux en magasin</strong></td>
-<td>Éléments uniques et multiquantité. Pas de clics et pas de prise en charge instantanée (avec évaluation)</td>
+<td>Éléments uniques et multiquantité. Aucun nil sélectionne et instantanée (avec évaluation)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Sélection multi-commande : chemin heureux, saut en magasin</strong></td>
-<td>Sélectionnez des éléments uniques et multiquantité. Pas de clics et de ramassage côté serveur (avec transfert).</td>
+<td>Sélectionnez des éléments uniques et multiquantité. Aucun saut nil et ramassage au bord du trottoir (avec mise en scène).</td>
 <td></td>
 </tr>
 <tr>

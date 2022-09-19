@@ -1,17 +1,17 @@
 ---
-title: '"[!DNL Quick Checkout] pour les informations sur les développeurs Adobe Commerce"'
-description: '"[!DNL Quick Checkout] informations sur les développeurs."'
+title: "[!DNL Quick Checkout] pour les informations sur les développeurs Adobe Commerce"
+description: "[!DNL Quick Checkout] informations sur les développeurs."
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
 # [!DNL Quick Checkout] informations sur les développeurs
 
-Cette rubrique contient des informations destinées aux développeurs qui travaillent en étroite collaboration avec Adobe Commerce et le code du Magento Open Source et qui souhaitent en savoir plus sur les [!DNL Quick Checkout] extension .
+Cette rubrique contient des informations destinées aux développeurs qui travaillent en étroite collaboration avec Adobe Commerce et [!DNL Magento Open Source] et souhaitez en savoir plus sur les [!DNL Quick Checkout] extension .
 
 ## Points d’extension
 

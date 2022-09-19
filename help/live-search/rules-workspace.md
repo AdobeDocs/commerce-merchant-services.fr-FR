@@ -1,10 +1,10 @@
 ---
-title: '"Espace de travail des règles"'
-description: '"Découvrez comment contourner le problème [!DNL Live Search] espace de travail des règles."'
+title: "Espace de travail des règles"
+description: "Découvrez comment contourner le problème [!DNL Live Search] espace de travail des règles."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 12fc4e0ee4399a50ad3d2ced2664e41aced7198d
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Vous pouvez effectuer l’une des opérations suivantes à partir du panneau Aff
 | Champ | Description |
 |--- |--- |
 | État | État actuel de la règle. |
-| Conditions | Requête de recherche qui décrit la ou les conditions associées à la règle. |
+| Conditions | Requête de recherche qui décrit les conditions associées à la règle. |
 | Date de début | Date d’entrée en vigueur de la règle, le cas échéant. |
 | Date de fin | Date d’expiration de la règle, le cas échéant. |
 | Description | Brève description de la règle. |

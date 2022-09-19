@@ -4,9 +4,9 @@ description: Configurez les modèles d’email transactionnel pour communiquer a
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </tr>
 <tr>
 <td><strong>Envoyer la commande prête pour la méthode Copie d’email de récupération</strong></td>
-<td>La méthode de l’email "copie carbone" envoie à utiliser.</td>
+<td>La méthode de copie d’email (copie carbone) à utiliser.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -136,7 +136,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </tr>
 <tr>
 <td><strong>Méthode Envoyer une copie d’email sélectionnée</strong></td>
-<td>Méthode d’envoi de "copie carbone" d’email.</td>
+<td>La méthode de copie d’email (copie carbone) à utiliser.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -185,7 +185,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </tr>
 <tr>
 <td><strong>Méthode Envoyer la copie retardée de la commande</strong></td>
-<td>Méthode d’envoi de "copie carbone" d’email.</td>
+<td>La méthode de copie d’email (copie carbone) à utiliser.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -236,7 +236,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </tr>
 <tr>
 <td><strong>Méthode Envoyer la copie annulée de la commande</strong></td>
-<td>Méthode d’envoi de "copie carbone" d’email.</td>
+<td>La méthode de copie d’email (copie carbone) à utiliser.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -292,7 +292,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </tr>
 <tr>
 <td><strong>Méthode Envoyer la commande partiellement annulée</strong></td>
-<td>Méthode d’envoi de "copie carbone" d’email.</td>
+<td>La méthode de copie d’email (copie carbone) à utiliser.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>

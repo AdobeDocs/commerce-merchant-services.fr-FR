@@ -1,10 +1,10 @@
 ---
-title: '"Installer [!DNL Live Search]"'
-description: '"Découvrez comment installer, mettre à jour et désinstaller [!DNL Live Search] d’Adobe Commerce."'
+title: "Installer [!DNL Live Search]"
+description: "Découvrez comment installer, mettre à jour et désinstaller [!DNL Live Search] d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Pour obtenir une aide supplémentaire, reportez-vous à la section [[!DNL Live S
 
 ### Futures mises à jour des produits
 
-Après la synchronisation initiale, il peut s’écouler jusqu’à quinze minutes avant que les mises à jour incrémentielles des produits ne soient disponibles pour la recherche storefront. Pour en savoir plus, accédez à [Indexation - Mises à jour des produits en flux continu](indexing.md).
+Après la synchronisation initiale, il peut s’écouler jusqu’à 15 minutes avant que les mises à jour incrémentielles des produits ne soient disponibles pour la recherche storefront. Pour en savoir plus, accédez à [Indexation - Mises à jour des produits en flux continu](indexing.md).
 
 ## Tester la connexion {#test-connection}
 

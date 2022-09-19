@@ -1,10 +1,10 @@
 ---
-title: '"Gestion des facettes"'
-description: '"Découvrez comment gérer les [!DNL Live Search] facettes."'
+title: "Gestion des facettes"
+description: "Découvrez comment gérer les [!DNL Live Search] facettes."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,4 @@ La facette est supprimée du storefront une fois les modifications publiées.
 ## Publier les modifications
 
 1. Pour mettre à jour le storefront avec vos modifications, cliquez sur **Publier les modifications**.
-1. Patientez environ quinze minutes pour que les mises à jour s’affichent dans votre magasin.
+1. Patientez environ 15 minutes pendant que les mises à jour s’affichent dans votre boutique.

@@ -1,7 +1,7 @@
 ---
-source-git-commit: f03ca23f659d08d48715a4bd9d4d32a53c4a3a95
+source-git-commit: bd428fcbd592de91054710a50bfea8d10905f734
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Notre engagement
 
-Afin de favoriser un environnement ouvert et accueillant, nous, contributeurs et responsables, nous nous engageons à faire de la participation à notre projet et à notre communauté une expérience sans harcèlement pour tous, quels que soient l&#39;âge, la taille du corps, le handicap, l&#39;appartenance ethnique, l&#39;identité et l&#39;expression de genre, le niveau d&#39;expérience, la nationalité, l&#39;apparence personnelle, la race, la religion, l&#39;identité et l&#39;orientation sexuelles.
+Afin de favoriser un environnement ouvert et accueillant, les contributeurs et les responsables s&#39;engagent à faire de la participation à notre projet et à notre communauté une expérience sans harcèlement pour tous, quels que soient l&#39;âge, la taille du corps, le handicap, l&#39;appartenance ethnique, l&#39;identité et l&#39;expression de genre, le niveau d&#39;expérience, la nationalité, l&#39;apparence personnelle, la race, la religion, l&#39;identité et l&#39;orientation sexuelles.
 
 ## Nos normes
 
@@ -41,11 +41,11 @@ Ce code de conduite s’applique à la fois aux espaces du projet et aux espaces
 
 ## Application
 
-Les cas de comportements abusifs, de harcèlement ou autres comportements inacceptables peuvent être signalés en contactant l’équipe du projet à l’adresse Grp-opensourceoffice@adobe.com. Toutes les plaintes seront examinées et analysées, et donneront lieu à une réponse jugée nécessaire et adaptée aux circonstances. L’équipe du projet est tenue de respecter la confidentialité à l’égard de la personne qui signale un incident.
+Les cas de comportements abusifs, de harcèlement ou autres comportements inacceptables peuvent être signalés en contactant l’équipe du projet à l’adresse Grp-opensourceoffice@adobe.com. Toutes les plaintes sont examinées et analysées, ce qui donne lieu à une réponse jugée nécessaire et adaptée aux circonstances. L’équipe du projet est tenue de respecter la confidentialité concernant la personne qui signale un incident.
 Des informations supplémentaires sur les stratégies d’application spécifiques peuvent être publiées séparément.
 
 Les responsables du projet qui ne respectent pas ou n’appliquent pas de bonne foi le Code de conduite peuvent faire face à des répercussions temporaires ou permanentes, telles que définies par d’autres membres de la direction du projet.
 
 ## Attribution
 
-Ce code de conduite est adapté à partir de la variable [Convention du contributeur](https://contributor-covenant.org), version 1.4, disponible à l’adresse [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Ce code de conduite est adapté à partir de la variable [Convention du contributeur](https://www.contributor-covenant.org/), version 1.4, disponible à l’adresse [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).
