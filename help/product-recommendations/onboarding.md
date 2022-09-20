@@ -1,9 +1,10 @@
 ---
 title: Intégration
 description: Découvrez les exigences et les plateformes prises en charge dans [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,6 +33,10 @@ Le processus d’intégration pour [!DNL Product Recommendations] requiert l’a
 ### Prise en charge du créateur de pages
 
 [!DNL Product Recommendations] peut être ajouté à une page sous la forme d’un type de contenu Page Builder . Pour ajouter la prise en charge de Page Builder à Recommendations de produit, reportez-vous à la section [Installation et configuration](install-configure.md).
+
+>[!NOTE]
+>
+>[!DNL Page Builder] les unités de recommandation ne peuvent être créées que pour la vue de magasin par défaut.
 
 ### Prise en charge B2B {#b2bsupport}
 
