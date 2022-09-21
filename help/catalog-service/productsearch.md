@@ -1,9 +1,9 @@
 ---
 title: requête productSearch
 description: '"Guide de référence pour la requête GraphQL "productSearch" pour le service de catalogue Adobe Commerce."'
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # requête productSearch
 
-Service de catalogue pour Adobe Commerce `productSearch` La requête peut utiliser LiveSearch pour renvoyer des détails sur les SKU spécifiés en tant qu’entrée. Bien que cette requête soit identique au [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), LiveSearch renvoie une `productView` . Voir [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) rubrique pour obtenir des informations de référence.
+Service de catalogue pour Adobe Commerce `productSearch` La requête peut utiliser la fonction de recherche en direct pour renvoyer des détails sur les SKU spécifiés en tant qu’entrée. Bien que cette requête soit identique au [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), la recherche en direct renvoie une `productView` . Voir [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) rubrique pour obtenir des informations de référence.
 
 ## Syntaxe
 
@@ -32,7 +32,7 @@ Vous devez spécifier les en-têtes HTTP suivants pour exécuter cette requête.
 | En-tête | Description |
 |--- | ---|
 | `Magento-Customer-Group` | Pour les clients storefront, cette valeur sera disponible au niveau du storefront dans la variable `dataservices_customer_group` du cookie. |
-| `Magento-Environment-Id` | Cette valeur s’affiche à l’adresse **Système** > **Connecteur Commerce Services** > **Identifiant SaaS** > **Identifiant d’espace de données** ou peut être obtenu en exécutant la fonction `bin/magento config:show services_connector/services_id/environment_id` . |
+| `Magento-Environment-Id` | Cette valeur peut être obtenue en exécutant la variable `bin/magento config:show services_connector/services_id/environment_id` . Voir le champ &quot;Espace de données&quot; dans [Services de commerce](https://docs.magento.com/user-guide/configuration/services/saas.html) |
 | `Magento-Store-Code` | Code affecté au magasin associé à la principale vue de magasin. Par exemple, `main_website_store`. |
 | `Magento-Store-View-Code` | Code affecté à la principale vue de magasin. Par exemple, `default`. |
 | `Magento-Website-Code` | Code affecté au site web associé à la principale vue de magasin. Par exemple, `base`. |
