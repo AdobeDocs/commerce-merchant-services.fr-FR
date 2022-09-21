@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 6609060a4ef09f72d579d97383ac487b105c81d6
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 1%
@@ -36,7 +36,6 @@ Ces fonctionnalités ne sont pas encore prises en charge :
 * Lot et produits regroupés
 * Aucune mise à jour n’est reçue lorsque des variantes sont supprimées du catalogue.
 * La visibilité B2B remplace : les produits peuvent faire l’objet de recherches ou être ajoutés au panier pour des groupes de clients spécifiques ;
-
 
 ## Version bêta
 

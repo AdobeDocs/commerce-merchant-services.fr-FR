@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service]"'
-description: '"[!DNL Catalog Service] pour Adobe Commerce, vous pouvez récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes Adobe Commerce GraphQL natives."'
-source-git-commit: eb2242ac99cfaef4ed75936a1b5cc800cc451c83
+title: '[!DNL Catalog Service]'
+description: '''[!DNL Catalog Service] pour Adobe Commerce, vous pouvez récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes Adobe Commerce GraphQL natives."'
+exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] pour Adobe Commerce
 
@@ -48,5 +48,3 @@ Vous pouvez éventuellement implémenter [Maillage d’API pour Adobe Developer 
 ## Implémentation
 
 Le processus d’installation nécessite la configuration de la fonction [Connecteur Commerce Services](../landing/saas.md). Une fois cette opération effectuée, l’étape suivante consiste pour un intégrateur de systèmes à mettre à jour le code storefront afin d’incorporer la variable [!DNL Catalog Service] requêtes. Tous [!DNL Catalog Service] les requêtes sont acheminées vers la passerelle GraphQL. L’URL est fournie pendant le processus d’intégration.
-
-[Périphériques Adobe Commerce](https://devdocs.magento.com/catalog-service/index.html) décrit les différences entre le noyau et [!DNL Catalog Service] requêtes. Des informations de référence pour chaque requête sont également incluses.
