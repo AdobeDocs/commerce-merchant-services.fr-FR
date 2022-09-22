@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] pour Adobe Commerce, vous pouvez récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes Adobe Commerce GraphQL natives."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: dfe3d9b8738ea68257831c445f1f0b2c8c8b6859
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Comme le service contourne la communication directe avec l’application, il peu
 
 >[!NOTE]
 >
->La passerelle est destinée à une intégration ultérieure avec [!DNL Live Search] et [!DNL Product Recommendations]. Dans cette version, vous pouvez accéder à [!DNL Catalog Service] et les requêtes de recherche en direct du même point de terminaison, si vous disposez d’une clé de licence valide pour les deux produits. Toutefois, les requêtes des deux produits ne partagent actuellement aucune donnée de réponse.
+>La passerelle est destinée à une intégration future avec Product Recommendations. Dans cette version, vous pouvez accéder à [!DNL Catalog Service] et [!DNL Live Search] des requêtes fédérées du même point de terminaison si vous disposez d’une clé de licence valide pour les deux produits.
 
 Les systèmes GraphQL de base et de service ne communiquent pas directement entre eux. Vous accédez à chaque système à partir d’une URL différente et les appels nécessitent des informations d’en-tête différentes. Les deux systèmes GraphQL sont conçus pour être utilisés ensemble. Le [!DNL Catalog Service] Le système GraphQL augmente le système de base pour accélérer l’expérience du storefront de produits.
 
