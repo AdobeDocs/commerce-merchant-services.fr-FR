@@ -1,7 +1,7 @@
 ---
 title: requête productSearch
 description: '"Guide de référence pour la requête GraphQL "productSearch" pour le service de catalogue Adobe Commerce."'
-source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # requête productSearch
 
-Service de catalogue pour Adobe Commerce `productSearch` La requête peut utiliser la fonction de recherche en direct pour renvoyer des détails sur les SKU spécifiés en tant qu’entrée. Bien que cette requête soit identique au [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), la recherche en direct renvoie une `productView` . Voir [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) rubrique pour obtenir des informations de référence.
+Service de catalogue pour Adobe Commerce `productSearch` La requête peut utiliser la fonction de recherche en direct pour renvoyer des détails sur les SKU spécifiés en tant qu’entrée. Bien que cette requête soit identique au [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html), la recherche en direct renvoie une `productView` . Voir [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html) rubrique pour obtenir des informations de référence.
 
 ## Syntaxe
 

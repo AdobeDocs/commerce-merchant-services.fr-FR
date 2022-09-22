@@ -1,7 +1,7 @@
 ---
 title: requête products
 description: '"Guide de référence pour la requête GraphQL "products" pour Adobe Commerce Catalog Service."'
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # requête products
 
-Service de catalogue pour Adobe Commerce `products` La requête renvoie des détails sur les SKU spécifiés en tant qu’entrée. Bien que cette requête porte le même nom que le champ [`products` query](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) qui est fourni avec Adobe Commerce principal et Magento Open Source, il existe des différences.
+Service de catalogue pour Adobe Commerce `products` La requête renvoie des détails sur les SKU spécifiés en tant qu’entrée. Bien que cette requête porte le même nom que le champ [`products` query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) qui est fourni avec Adobe Commerce principal et Magento Open Source, il existe des différences.
 
 La requête du service de catalogue requiert une ou plusieurs valeurs de SKU en entrée. La requête est principalement conçue pour récupérer des informations afin de générer les types de contenu suivants :
 
