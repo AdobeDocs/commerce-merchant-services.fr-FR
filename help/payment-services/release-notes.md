@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4e6bf72033495683491b0c59a544d1474f6c1486
+source-git-commit: 5d791896f647391993f668a018b3eb9194c4cf3f
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,18 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
 
 +++
+
+## v1.4.0
+
+_30 septembre 2022_
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-784 --> Les services de paiement incluent désormais la possibilité de configurer un compte marchand pour [utiliser plusieurs comptes commerciaux PayPal ;](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). Cela permet au commerçant d’exploiter vos magasins dans plusieurs pays à l’aide de différentes devises ou d’utiliser Adobe Commerce pour une partie de votre entreprise.
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-3231 --> Les commerçants peuvent [ajouter une [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) sur des sites web ou une configuration de vues de boutique individuelles qui s’affichent sur les relevés bancaires des transactions des clients pour délimiter les marques, les magasins ou les lignes de produits.
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-3707 --> [Activation ou désactivation des champs de carte de crédit et des boutons intelligents PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) pour l’extraction dans les paramètres des services de paiement.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3546 --> Lorsqu’un client clique **[!UICONTROL Edit cart]**, la page redirige vers la page du panier et affiche les éléments mis à jour au lieu d’afficher un panier vide.
 
 ## v1.3.1
 
