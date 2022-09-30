@@ -4,9 +4,9 @@ description: Pour effectuer une réconciliation financière, utilisez le rapport
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 27d280fb9f49715a455ff55279416f7df4ada56d
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -154,9 +154,9 @@ Les rapports de paiement comprennent les informations suivantes.
 | [!UICONTROL Code] | Code de transaction qui indique soit Crédit (*CR*) ou Débit (*DR*) |
 | [!UICONTROL Reference ID] | Identifiant de transaction d’origine pour lequel cet événement est lié |
 | [!UICONTROL Invoice] | Identifiant de facture (une par commande) de la transaction |
-| [!UICONTROL Commerce order] | ID de commande de commerce <br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html), cliquez sur l’identifiant. |
-| [!UICONTROL Commerce trans] | Commerce transaction ID |
-| [!UICONTROL Pay method] | Type de carte de crédit —*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*: et fournisseur de carte associé (par exemple, *Visa* ou *MasterCard*) |
+| [!UICONTROL Commerce order] | ID de commande de commerce <br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, cliquez sur l’ID. |
+| [!UICONTROL Commerce trans] | Commerce transaction ID <br> <br>Pour afficher les [informations sur les transactions](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, cliquez sur l’ID. |
+| [!UICONTROL Pay method] | Type de carte de crédit —*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*: et fournisseur de carte associé (par exemple, *Visa* ou *MasterCard*) |
 | [!UICONTROL Trans amt] | Montant de la transaction |
 | [!UICONTROL Cur] | Unité de devise pour le montant des transactions |
 | [!UICONTROL Pending] | Montant à débourser |
