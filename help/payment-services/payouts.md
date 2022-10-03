@@ -4,7 +4,7 @@ description: Pour effectuer une réconciliation financière, utilisez le rapport
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous offre des rapports détaillés afin d’obtenir une vue claire des commandes et des paiements de votre boutique.
 
-![Affichage des rapports financiers](assets/reports-view-new.png)
+![Affichage des rapports financiers](assets/report-view.png)
 
 Il existe deux vues de rapport sur les versements disponibles pour vous permettre d’afficher des informations détaillées sur tous vos versements :
 
@@ -34,7 +34,7 @@ La vue de visualisation des données de paiement est disponible dans la page d�
 
 Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** pour afficher le graphique de visualisation des données des crédits par rapport aux débits et les moyennes mobiles au fil du temps.
 
-![Visualisation des données de paiement dans l’Admin](assets/payouts-data.png)
+![Visualisation des données de paiement dans l’Admin](assets/payouts-report.png)
 
 Cliquez sur **[!UICONTROL View Report]** pour accéder au tableau détaillé [Vue du rapport Payements](#payouts-report-view).
 
