@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Notes de mise à jour'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Quick Checkout] versions.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '644'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,24 @@ Ces notes de mise à jour décrivent la version initiale de [!DNL Quick Checkout
 Voir [Versions à venir](https://devdocs.magento.com/release/) pour en savoir plus sur les calendriers de publication et l’assistance.
 
 Voir [Disponibilité](https://devdocs.magento.com/release/availability.html) dans la documentation destinée aux développeurs pour en savoir plus sur la compatibilité des produits.
+
+## Mises à jour du panneau d’administration
+
+Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités qui se sont produits et qui ont été publiés en dehors des versions standard des fonctionnalités pour le panneau d’administration.
+
++++Mises à jour du panneau d’administration
+
+_5 octobre 2022_
+
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Le panneau d’administration intègre un [présentation guidée par Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-377 --> Le **Rapports** dans le [!DNL Quick Checkout] Le panneau d’administration contient la composition des diagrammes et des informations de création de rapports qui seront bientôt disponibles.
+
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-377 --> Le **Rapports** dans le [!DNL Quick Checkout] Le panneau d’administration affiche la période de filtrage des diagrammes et des informations de création de rapports qui seront bientôt disponibles.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) affiche désormais la version de l’application de réaction dans le pied de page.
+
++++
 
 ## v1.2.0
 

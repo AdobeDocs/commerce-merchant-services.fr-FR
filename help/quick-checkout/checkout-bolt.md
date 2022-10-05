@@ -1,10 +1,10 @@
 ---
-title: "Flux de passage en caisse dans Adobe Commerce"
+title: "Flux d’extraction d’un utilisateur Bolt dans Adobe Commerce"
 description: Présentation de la variable [!DNL Quick Checkout] flux d’un utilisateur Bolt dans Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
