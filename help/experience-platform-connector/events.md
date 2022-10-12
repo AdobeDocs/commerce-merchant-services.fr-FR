@@ -1,10 +1,10 @@
 ---
 title: Événements
-description: Découvrez les données que chaque événement capture et affichez la définition de schéma complète.
+description: Découvrez les données que chaque événement capture.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 589d22f488572411b6632ac37d7bc5b752f72e2d
+source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1977'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 Vous trouverez ci-dessous la liste des événements Commerce disponibles lorsque vous installez l’extension Experience Platform Connector. Les données collectées par ces événements sont envoyées à Adobe Experience Platform Edge. Vous pouvez également créer des [événements personnalisés](custom-events.md) pour collecter des données supplémentaires qui ne sont pas prêtes à l’emploi.
 
-Outre les données collectées par les événements suivants, vous obtenez également [données additionnelles](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fourni par le SDK Web de Adobe Experience Platform.
+Outre les données collectées par les événements suivants, vous obtenez également [autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fourni par le SDK Web de Adobe Experience Platform.
 
 >[!NOTE]
 >
->Tous les événements incluent la variable `personID` qui est un identifiant unique de la personne.
+>Tous les événements storefront incluent la variable `personID` qui est un identifiant unique de la personne.
 
 ## addToCart
 
-Déclenché lorsqu’un produit est ajouté au panier ou lorsque la quantité d’un produit dans le panier est incrémentée. [Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+Déclenché lorsqu’un produit est ajouté au panier ou lorsque la quantité d’un produit dans le panier est incrémentée.
+
+### Nom de l’événement XDM
+
+`commerce.productListAdds`
 
 ### Type
 
@@ -34,10 +38,71 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | Champ | Description |
 |---|---|
 | `productListAdds` | Indique si un produit a été ajouté à un panier. Une valeur de `1` indique qu’un produit a été ajouté. |
+| `productListItems` | Tableau de produits ajoutés au panier |
 | `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
 | `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Total de cette commande une fois toutes les remises et taxes appliquées |
-| `quantity` | Nombre d’unités du produit dont le client a indiqué qu’il avait besoin |
+| `priceTotal` | Prix total de l’article de ligne de produit |
+| `quantity` | Nombre d’unités de produits ajoutées au panier |
+| `discountAmount` | Indique le montant de remise appliqué |
+| `currencyCode` | Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) devise du produit |
+| `productImageUrl` | URL de l’image principale du produit |
+| `selectedOptions` | Champ utilisé pour un produit configurable. `attribute` identifie un attribut du produit configurable, tel que `size` ou `color` et `value` identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `cartID` | Identifiant unique qui identifie le panier du client |
+
+## openCart
+
+Déclenché lors de la création d’un panier, c’est-à-dire lorsqu’un produit est ajouté à un panier vide.
+
+### Nom de l’événement XDM
+
+`commerce.productListOpens`
+
+### Type
+
+Storefront
+
+### Données collectées
+
+Le tableau suivant décrit les données collectées pour cet événement.
+
+| Champ | Description |
+|---|---|
+| `productListOpens` | Indique si un panier a été créé. Une valeur de `1` indique qu’un panier a été créé. |
+| `productListItems` | Tableau de produits ajoutés au panier |
+| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `name` | Nom d’affichage ou nom lisible du produit. |
+| `priceTotal` | Prix total de l’article de ligne de produit |
+| `quantity` | Nombre d’unités de produits ajoutées au panier |
+| `discountAmount` | Indique le montant de remise appliqué |
+| `currencyCode` | Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) devise du produit |
+| `productImageUrl` | URL de l’image principale du produit |
+| `selectedOptions` | Champ utilisé pour un produit configurable. `attribute` identifie un attribut du produit configurable, tel que `size` ou `color` et `value` identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `cartID` | Identifiant unique qui identifie le panier du client |
+
+## removeFromCart
+
+Déclenché chaque fois qu’un produit est supprimé ou que la quantité d’un produit dans le panier est décrémentée.
+
+### Nom de l’événement XDM
+
+`commerce.productListRemovals`
+
+### Type
+
+Storefront
+
+### Données collectées
+
+Le tableau suivant décrit les données collectées pour cet événement.
+
+| Champ | Description |
+|---|---|
+| `productListRemovals` | Indique si un produit a été supprimé du panier. Une valeur de `1` indique qu’un produit a été supprimé du panier. |
+| `productListItems` | Tableau de produits supprimés du panier |
+| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `name` | Nom d’affichage ou nom lisible du produit. |
+| `priceTotal` | Prix total de l’article de ligne de produit |
+| `quantity` | Nombre d’unités de produits supprimées du panier |
 | `discountAmount` | Indique le montant de remise appliqué |
 | `currencyCode` | Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) devise du produit |
 | `productImageUrl` | URL de l’image principale du produit |
@@ -46,7 +111,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## shoppingCartView
 
-Déclenché lors du chargement d’une page de panier. [Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+Déclenché lors du chargement d’une page de panier.
+
+### Nom de l’événement XDM
+
+`commerce.productListViews`
 
 ### Type
 
@@ -59,11 +128,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | Champ | Description |
 |---|---|
 | `productListViews` | Indique si une liste de produits a été affichée |
-| `productListItems` | Tableau de produits ajoutés à un panier |
+| `productListItems` | Tableau de produits dans le panier |
 | `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
 | `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Total de cette commande une fois toutes les remises et taxes appliquées |
-| `quantity` | Nombre d’unités du produit dont le client a indiqué qu’il avait besoin |
+| `priceTotal` | Prix total de l’article de ligne de produit |
+| `quantity` | Nombre d’unités de produits dans le panier |
 | `discountAmount` | Indique le montant de remise appliqué |
 | `currencyCode` | Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) devise du produit |
 | `productImageUrl` | URL de l’image principale du produit |
@@ -72,7 +141,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## pageView
 
-Déclenché lors du chargement d’une page. [Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+Déclenché lors du chargement d’une page.
+
+### Nom de l’événement XDM
+
+`web.webpagedetails.pageViews`
 
 ### Type
 
@@ -88,7 +161,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## productPageView
 
-Déclenché lors du chargement d’une page de produits. [Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+Déclenché lors du chargement d’une page de produits.
+
+### Nom de l’événement XDM
+
+`commerce.productViews`
 
 ### Type
 
@@ -101,10 +178,10 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | Champ | Description |
 |---|---|
 | `productViews` | Indique si le produit a été consulté |
-| `productListItems` | Tableau de produits ajoutés à un panier |
+| `productListItems` | Tableau de produits dans le panier |
 | `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
 | `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Total de cette commande une fois toutes les remises et taxes appliquées |
+| `priceTotal` | Prix total de l’article de ligne de produit |
 | `discountAmount` | Indique le montant de remise appliqué |
 | `currencyCode` | Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) devise du produit |
 | `productImageUrl` | URL de l’image principale du produit |
@@ -112,7 +189,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## startCheckout
 
-Déclenché lorsque l’acheteur clique sur un bouton de passage en caisse. [Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+Déclenché lorsque l’acheteur clique sur un bouton de passage en caisse.
+
+### Nom de l’événement XDM
+
+`commerce.checkouts`
 
 ### Type
 
@@ -125,11 +206,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | Champ | Description |
 |---|---|
 | `checkouts` | Indique si une action s’est produite pendant le processus de passage en caisse |
-| `productListItems` | Tableau de produits ajoutés à un panier |
+| `productListItems` | Tableau de produits dans le panier |
 | `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
 | `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Total de cette commande une fois toutes les remises et taxes appliquées |
-| `quantity` | Nombre d’unités du produit dont le client a indiqué qu’il avait besoin |
+| `priceTotal` | Prix total de l’article de ligne de produit |
+| `quantity` | Nombre d’unités de produits dans le panier |
 | `discountAmount` | Indique le montant de remise appliqué |
 | `currencyCode` | Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) devise du produit |
 | `productImageUrl` | URL de l’image principale du produit |
@@ -138,7 +219,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## completeCheckout
 
-Déclenché lorsque l’acheteur commande. [Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+Déclenché lorsque l’acheteur commande.
+
+### Nom de l’événement XDM
+
+`commerce.order`
 
 ### Type
 
@@ -163,11 +248,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `shippingMethod` | Le mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
 | `shippingAmount` | Le coût total de livraison des articles du panier. |
 | `promotionID` | Identifiant unique de la promotion, le cas échéant |
-| `productListItems` | Tableau de produits ajoutés à un panier |
+| `productListItems` | Tableau de produits dans le panier |
 | `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
 | `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Total de cette commande une fois toutes les remises et taxes appliquées |
-| `quantity` | Nombre d’unités du produit dont le client a indiqué qu’il avait besoin |
+| `priceTotal` | Prix total de l’article de ligne de produit |
+| `quantity` | Nombre d’unités de produits dans le panier |
 | `discountAmount` | Indique le montant de remise appliqué |
 | `currencyCode` | Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé pour les totaux de commande. |
 | `productImageUrl` | URL de l’image principale du produit |
@@ -175,11 +260,15 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## signIn
 
-Déclenché lorsqu’un acheteur tente de se connecter. [Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+Déclenché lorsqu’un acheteur tente de se connecter.
 
 >[!NOTE]
 >
 > Cet événement est déclenché lorsque l’action spécifique est tentée. Cela n’indique pas que l’action a réussi.
+
+### Nom de l’événement XDM
+
+`userAccount.login`
 
 ### Type
 
@@ -201,11 +290,15 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## signOut
 
-Déclenché lorsqu’un acheteur tente de se déconnecter. [Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+Déclenché lorsqu’un acheteur tente de se déconnecter.
 
 >[!NOTE]
 >
 > Cet événement est déclenché lorsque l’action spécifique est tentée. Cela n’indique pas que l’action a réussi.
+
+### Nom de l’événement XDM
+
+`userAccount.logout`
 
 ### Type
 
@@ -223,11 +316,15 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## createAccount
 
-Déclenché lorsqu’un acheteur tente de créer un compte. [Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+Déclenché lorsqu’un acheteur tente de créer un compte.
 
 >[!NOTE]
 >
 > Cet événement est déclenché lorsque l’action spécifique est tentée. Cela n’indique pas que l’action a réussi.
+
+### Nom de l’événement XDM
+
+`userAccount.createProfile`
 
 ### Type
 
@@ -250,11 +347,15 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## editAccount
 
-Déclenché lorsqu’un acheteur tente de modifier un compte. [Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+Déclenché lorsqu’un acheteur tente de modifier un compte.
 
 >[!NOTE]
 >
 > Cet événement est déclenché lorsque l’action spécifique est tentée. Cela n’indique pas que l’action a réussi.
+
+### Nom de l’événement XDM
+
+`userAccount.updateProfile`
 
 ### Type
 
@@ -293,11 +394,13 @@ Déclenché par les événements suivants sur les pages de résultats de recherc
 - Accéder à la page précédente
 - Accéder à une autre page
 
-[Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >Les événements de recherche ne sont pas pris en charge sur une édition Adobe Commerce Enterprise avec le module B2B installé.
+
+### Nom de l’événement XDM
+
+`searchRequest`
 
 ### Type
 
@@ -323,11 +426,13 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 Déclenché lorsque la recherche en direct renvoie les résultats de la fenêtre contextuelle &quot;Rechercher lorsque vous tapez&quot; ou de la page des résultats de la recherche.
 
-[Schéma complet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
-
 >[!NOTE]
 >
 >Les événements de recherche ne sont pas pris en charge sur une édition Adobe Commerce Enterprise avec le module B2B installé.
+
+### Nom de l’événement XDM
+
+`searchResponse`
 
 ### Type
 
@@ -342,4 +447,4 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `searchResponse` | Indique si une réponse de recherche a été reçue |
 | `suggestions` | Tableau de chaînes qui incluent les noms des produits et des catégories existant dans le catalogue et similaires à la requête de recherche |
 | `numberOfResults` | Le nombre de produits renvoyés |
-| `productListItems` | Tableau de produits ajoutés à un panier. Inclut la variable `SKU`(Unité de gestion des stocks) et `name` du produit (nom d’affichage ou nom lisible.) |
+| `productListItems` | Un tableau de produits dans le panier. Inclut la variable `SKU`(Unité de gestion des stocks) et `name` du produit (nom d’affichage ou nom lisible.) |
