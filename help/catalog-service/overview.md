@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] pour Adobe Commerce, vous pouvez récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes Adobe Commerce GraphQL natives."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: dfe3d9b8738ea68257831c445f1f0b2c8c8b6859
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -10,8 +10,6 @@ ht-degree: 0%
 ---
 
 # [!DNL Catalog Service] pour Adobe Commerce
-
-{{catalog-service-beta}}
 
 Le [!DNL Catalog Service] pour l’extension Adobe Commerce, fournit des données de catalogue de modèles d’affichage enrichies (lecture seule) pour effectuer rapidement et intégralement le rendu des expériences de storefront liées aux produits, notamment :
 

@@ -2,22 +2,40 @@
 title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] Notes de mise à jour
-
-{{catalog-service-beta}}
 
 Ces notes de mise à jour décrivent les dernières versions de [!DNL Catalog Service] et incluent :
 
 * ![Nouveau](../assets/new.svg) - Nouvelles fonctionnalités
 * ![Correction](../assets/fix.svg) - Correctifs et améliorations
 * ![Bogue](../assets/bug.svg) - Problèmes connus
+
+## Version V1.0
+
+Date de publication : 2022-10-04 Compatible avec Adobe Commerce (EE) : 2.4.x Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x Stabilité : Disponibilité générale
+
+![Nouveau](../assets/new.svg) - prennent désormais en charge les produits regroupés et regroupés.
+![Nouveau](../assets/new.svg) - Ajout de remplacements de visibilité B2B. Les produits peuvent désormais faire l’objet de recherches et peuvent être ajoutés au panier pour des groupes de clients spécifiques.
+![Correction](../assets/fix.svg) - Le service est désormais plus stable et offre de meilleures performances.
+
+### Limites connues
+
+Ces fonctionnalités ne sont pas encore prises en charge :
+
+* Prix de niveau
+* Les mises à jour ne sont pas reçues lorsque des variantes sont supprimées du catalogue.
+* La taille maximale de la charge utile des attributs dynamiques est &lt;9 Mo
+* Prix fixe pour les produits groupés
+* Prix total des produits groupés
+* Prise en charge des types de produits de cartes-cadeaux, virtuelles et téléchargeables
+* Prix publicitaire minimal (MAP)
 
 ## Version 0.3 - Bêta+
 
