@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
+source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,9 @@ ht-degree: 0%
 
 Vous pouvez personnaliser [!DNL Payment Services] à vos besoins avec des paramètres utiles dans la [!DNL Payment Services] Chez soi.
 
-Pour configurer [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Ces options de configuration s’appliquent uniquement à l’environnement défini dans la variable _[!UICONTROL Payment mode]_champ dans_[!UICONTROL Settings]_ > _[!UICONTROL General]_.
+Pour configurer [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Ces options de configuration s’appliquent uniquement à l’environnement défini dans la variable _[!UICONTROL Payment mode]_du champ[_ Général _options de configuration](#general-configuration-options).
 
->[!IMPORTANT]
->
-> Pour une configuration multi-magasin ou héritée, reportez-vous à la section [Configuration dans l’administrateur](configure-admin.md) rubrique.
+Pour une configuration multi-magasin ou héritée, voir [Configuration dans l’administrateur](configure-admin.md).
 
 ## Configuration des paramètres généraux
 
@@ -106,7 +104,7 @@ Voir [Options de paiement](payments-options.md#credit-card-fields) pour plus d�
 
    Si vous essayez de quitter cette vue sans enregistrer vos modifications, un modal s’affiche pour vous inviter à ignorer les modifications, à continuer les modifications ou à les enregistrer.
 
-1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]** et cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
+1. [Vider le cache](#flush-the-cache).
 
 #### Options de configuration
 
@@ -141,13 +139,13 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
       > Pour utiliser Apple Pay [Posséder un compte développeur Apple](test-validate.md#test-in-sandbox-environment) (avec une fausse carte de crédit et des informations de facturation) pour le tester. Lorsque vous êtes prêt à utiliser Apple Pay dans un environnement de test *ou* mode de production, après avoir effectué toute [test et validation](test-validate.md), contactez votre représentant commercial pour l’activer pour vos boutiques actives.
 
       Lorsque vous activez/désactivez la visibilité des boutons de paiement ou le message PayPal Pay Later, un aperçu visuel de cette configuration s’affiche au bas de la page Paramètres .
-
+git
 1. Pour activer le mode de débogage, activez la fonction **[!UICONTROL Debug Mode]** sélecteur.
 1. Cliquez sur **[!UICONTROL Save]**.
 
    Si vous essayez de quitter cette vue sans enregistrer vos modifications, un modal s’affiche pour vous inviter à ignorer les modifications, à continuer les modifications ou à les enregistrer.
 
-1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]** et cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
+1. [Vider le cache](#flush-the-cache).
 
 #### Options de configuration
 
@@ -187,7 +185,7 @@ Vous pouvez également configurer la variable _[!UICONTROL Button style]_options
 
    Si vous essayez de quitter cette vue sans enregistrer vos modifications, un modal s’affiche pour vous inviter à ignorer les modifications, à continuer les modifications ou à les enregistrer.
 
-1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]** et cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
+1. [Vider le cache](#flush-the-cache).
 
 Vous pouvez configurer [!DNL PayPal Smart Buttons] style [dans la configuration héritée de l’administrateur.](configure-admin.md#configure-paypal-smart-buttons) ou ici dans [!DNL Payment Services Home]. Voir [Guide de style Boutons de PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) pour plus d’informations sur les options.
 
@@ -203,6 +201,17 @@ Vous pouvez configurer [!DNL PayPal Smart Buttons] style [dans la configuration 
 | [!UICONTROL Height] | Affichage en magasin | Définissez la hauteur des boutons de paiement. Valeur par défaut : none |
 | [!UICONTROL Label] | Affichage en magasin | Définissez le libellé qui apparaît dans les boutons de paiement. Options : [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
+## Vider le cache
+
+Si vous modifiez la configuration dans _Paramètres_, par exemple en activant les boutons Payer, Venmo ou Payer plus tard d’Apple, videz manuellement le cache afin que votre boutique affiche les dernières configurations.
+
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. Cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
+
+Si un type de cache dans la table Gestion du cache comporte une `INVALIDATED` , votre boutique peut ne pas afficher la configuration la plus récente pour cet élément. Videz le cache pour mettre à jour votre magasin afin d’afficher la configuration la plus récente.
+
+Pour vous assurer que votre boutique affiche la configuration correcte, vérifiez régulièrement [vider le cache](https://docs.magento.com/user-guide/system/cache-management.html).
+
 ## Utilisation de plusieurs comptes PayPal
 
 Dans les services de paiement, vous pouvez utiliser plusieurs comptes PayPal dans **one** compte commercial au niveau du site web. Par exemple, si vous exploitez votre ou vos boutiques dans plusieurs pays (qui utilisent différents [devises](https://docs.magento.com/user-guide/stores/currency.html)) ou utiliser Adobe Commerce pour certaines parties de votre entreprise, mais pas *all*, vous pouvez configurer votre compte marchand pour utiliser plusieurs comptes PayPal.
@@ -210,3 +219,4 @@ Dans les services de paiement, vous pouvez utiliser plusieurs comptes PayPal dan
 Voir [Site, magasin et portée de l’affichage](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) pour plus d’informations sur la hiérarchie des sites web, des magasins et des vues de magasin.
 
 Votre représentant commercial peut créer [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) pour votre compte marchand et à bord du site supplémentaire avec PayPal afin que tous les boutons PayPal que vous configurez pour apparaître s’affichent sur votre site. Contactez votre représentant commercial pour obtenir de l’aide sur l’utilisation de plusieurs comptes PayPal pour vos sites web.
+

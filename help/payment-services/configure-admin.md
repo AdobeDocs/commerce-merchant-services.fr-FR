@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,6 @@ ht-degree: 0%
 Vous pouvez personnaliser [!DNL Payment Services] à vos besoins avec des options de configuration utiles dans l’Admin.
 
 Lorsque vous configurez [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] dans l’Admin, ces configurations s’appliquent uniquement à l’environnement défini dans la variable _[!UICONTROL Method]_champ de_[!UICONTROL General Configuration]_. Les modifications que vous apportez dans les champs de configuration ne sont pas liées au changement de _[!UICONTROL Method]_selection : si vous changez de méthode, vos sélections ne sont pas réinitialisées.
-
-Voir [[!UICONTROL General Configuration] section](#general-configuration) pour plus d’informations.
 
 ## Configuration générale
 
@@ -38,6 +36,7 @@ Vous pouvez activer [!DNL Payment Services] pour votre magasin et activez le tes
    >Votre _[!UICONTROL Sandbox Merchant ID]_et_[!UICONTROL Production Merchant ID]_ sont générés automatiquement et présents dans leurs champs respectables lorsque vous avez terminé l’intégration à l’environnement de test et/ou à la production. Ne supprimez ou ne modifiez pas ces identifiants.
 
 1. Cliquez sur **[!UICONTROL Save Config]** pour enregistrer vos modifications.
+1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, puis cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
 
 ### Options de configuration
 
@@ -64,6 +63,7 @@ Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d
 1. À [définir l’action de paiement ;](production.md#set-payment-services-as-payment-method), sélectionnez **[!UICONTROL Authorize]** ou **Autoriser et capturer**.
 1. Pour **Mode de débogage**, choisissez `Yes` pour activer le mode de débogage (ou `No` pour la désactiver).
 1. Cliquez sur **[!UICONTROL Save Config]** pour enregistrer vos modifications.
+1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, puis cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
 
 #### Options de configuration
 
@@ -92,6 +92,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 1. Pour désactiver la fonction [Payer les messages plus tard](payments-options.md#pay-later-button) (si vous le souhaitez), sélectionnez `No` pour **[!UICONTROL Display Pay Later Message]**.
 1. Pour activer le mode de débogage, sélectionnez `Yes` pour le **[!UICONTROL Debug Mode]** (`No` la désactive).
 1. Pour enregistrer vos modifications, cliquez sur **[!UICONTROL Save Config]** .
+1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, puis cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
 
 ### Options de configuration
 
@@ -119,3 +120,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 | [!UICONTROL Height] | Affichage en magasin | Définissez la hauteur des boutons intelligents PayPal. Valeur par défaut : none |
 | [!UICONTROL Label] | Affichage en magasin | Définissez le libellé qui apparaît dans les boutons intelligents PayPal. Options : [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 | [!UICONTROL Tagline] | Affichage en magasin | Active le tag. Options : [!UICONTROL Yes] / [!UICONTROL No] |
+
+## Vider le cache
+
+Si vous modifiez la configuration, [vider manuellement le cache ;](/help/payment-services/settings.md#flush-the-cache) afin que votre boutique affiche les derniers paramètres de configuration.
