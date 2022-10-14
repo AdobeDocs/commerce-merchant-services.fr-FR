@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,12 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
 
 +++
+
+## v1.4.1
+
+_14 octobre 2022_
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-3766 --> Lorsque le mode de paiement d’un client est refusé, le message d’erreur visible est plus explicite. Il conseille au client de saisir à nouveau les informations de paiement et de réessayer, d’essayer un autre mode de paiement ou de contacter sa banque au sujet du refus de la transaction.
 
 ## v1.4.0
 
