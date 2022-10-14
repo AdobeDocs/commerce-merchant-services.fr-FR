@@ -3,10 +3,10 @@ user-guide-title: "[!DNL Catalog Service] Guide"
 user-guide-description: "Ce guide fournit des instructions détaillées sur l’utilisation de [!DNL Catalog Service] pour Adobe Commerce."
 breadcrumb-title: "[!DNL Catalog Service] Guide"
 hide: true
-source-git-commit: 2e408e8f2de33000760394be03f2df1a8509dc8f
+source-git-commit: 7539d940906bce28dbf5ef2c08dc2b113b600c58
 workflow-type: tm+mt
-source-wordcount: '32'
-ht-degree: 6%
+source-wordcount: '44'
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 6%
 - [Introduction à [!DNL Catalog Service]](overview.md)
 - [Intégration et installation](installation.md)
 - Requêtes GraphQL {#graphql}
-   - [requête products](products.md)
-   - [requête productSearch](productsearch.md)
-   - [requête refineProduct](refine-product.md)
+   - [requête products](https://devdocs.magento.com/catalog-service/products.html)
+   - [requête productSearch](https://devdocs.magento.com/catalog-service/productsearch.html)
+   - [requête refineProduct](https://devdocs.magento.com/catalog-service/refine-product.html)
 - [Notes de mise à jour](release-notes.md)
