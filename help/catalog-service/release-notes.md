@@ -2,10 +2,10 @@
 title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 1%
 
 ---
 
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 Ces notes de mise à jour décrivent les dernières versions de [!DNL Catalog Service] et incluent :
 
-* ![Nouveau](../assets/new.svg) - Nouvelles fonctionnalités
-* ![Correction](../assets/fix.svg) - Correctifs et améliorations
-* ![Bogue](../assets/bug.svg) - Problèmes connus
+* ![Nouveau](../assets/new.svg) Nouvelles fonctionnalités
+* ![Correction](../assets/fix.svg) Correctifs et améliorations
+* ![Bogue](../assets/bug.svg) Problèmes connus
 
 ## Version V1.0
 
 Date de publication : 2022-10-04 Compatible avec Adobe Commerce (EE) : 2.4.x Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x Stabilité : Disponibilité générale
 
-![Nouveau](../assets/new.svg) - prennent désormais en charge les produits regroupés et regroupés.
-![Nouveau](../assets/new.svg) - Ajout de remplacements de visibilité B2B. Les produits peuvent désormais faire l’objet de recherches et peuvent être ajoutés au panier pour des groupes de clients spécifiques.
-![Correction](../assets/fix.svg) - Le service est désormais plus stable et offre de meilleures performances.
+![Nouveau](../assets/new.svg) Prise en charge des produits regroupés et regroupés.
+![Nouveau](../assets/new.svg) Ajout de remplacements de visibilité B2B. Les produits peuvent désormais faire l’objet de recherches et peuvent être ajoutés au panier pour des groupes de clients spécifiques.
+![Correction](../assets/fix.svg) Le service est désormais plus stable et offre de meilleures performances.
 
 ### Limites connues
 
@@ -41,10 +41,10 @@ Ces fonctionnalités ne sont pas encore prises en charge :
 
 Date de publication : 2022-09-12 Compatible avec Adobe Commerce (EE) : 2.4.x Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x Stabilité : Beta
 
-![Nouveau](../assets/new.svg) - Prise en charge des images pour les variantes : les images de produit sont renvoyées en fonction des options sélectionnées.
-![Nouveau](../assets/new.svg) - Rôles pour la prise en charge des prix : autoriser uniquement les membres de groupes de clients spécifiques à voir le prix des produits ;
-![Correction](../assets/fix.svg) - Amélioration de la stabilité et des performances du service
-![Nouveau](../assets/new.svg) - Des mises à jour sont reçues lorsque des produits sont supprimés du catalogue.
+![Nouveau](../assets/new.svg) Prise en charge des images pour les variantes : les images de produit sont renvoyées en fonction des options sélectionnées.
+![Nouveau](../assets/new.svg) Les rôles pour les prix prennent en charge : autoriser uniquement les membres de groupes de clients spécifiques à voir le prix des produits ;
+![Correction](../assets/fix.svg) Amélioration de la stabilité et des performances du service
+![Nouveau](../assets/new.svg) Des mises à jour sont reçues lorsque des produits sont supprimés du catalogue.
 
 ### Limites connues
 
@@ -59,7 +59,8 @@ Ces fonctionnalités ne sont pas encore prises en charge :
 
 Date de publication : 2022-08-09 Compatible avec Adobe Commerce (EE) : 2.4.x Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x Stabilité : Beta
 
-* ![Nouveau](../assets/new.svg) - Le `products` et `refineProduct` les requêtes renvoient les données suivantes :
+![Nouveau](../assets/new.svg) Le `products` et `refineProduct` les requêtes renvoient les données suivantes :
+
 * Attributs de produit prédéfinis (système).
 * Attributs de produit dynamiques et filtrez-les par rôle (page d’affichage de produit/page de liste de produits).
 * Options du produit.
