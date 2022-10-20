@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] pour Adobe Commerce, vous pouvez récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes Adobe Commerce GraphQL natives."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,30 @@ Comme le service contourne la communication directe avec l’application, il peu
 Les systèmes GraphQL de base et de service ne communiquent pas directement entre eux. Vous accédez à chaque système à partir d’une URL différente et les appels nécessitent des informations d’en-tête différentes. Les deux systèmes GraphQL sont conçus pour être utilisés ensemble. Le [!DNL Catalog Service] Le système GraphQL augmente le système de base pour accélérer l’expérience du storefront de produits.
 
 Vous pouvez éventuellement implémenter [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) pour intégrer les deux systèmes GraphQL Adobe Commerce à des API privées et tierces, ainsi qu’à d’autres interfaces logicielles à l’aide d’Adobe Developer. L’impression peut être configurée pour s’assurer que les appels acheminés vers chaque point de terminaison contiennent les informations d’autorisation correctes dans les en-têtes.
+
+## Détails architecturaux
+
+Les sections suivantes décrivent certaines des différences entre les deux systèmes GraphQL.
+
+### Gestion des schémas
+
+Comme le service de catalogue fonctionne comme un service, les intégrateurs n’ont pas à se soucier de la version sous-jacente de Commerce. La syntaxe des requêtes est la même pour toutes les versions. En outre, le schéma est cohérent pour tous les commerçants. Cette cohérence facilite l’établissement de bonnes pratiques et accroît considérablement la réutilisation des widgets storefront.
+
+### Simplification des types de produits
+
+Le schéma réduit la diversité des types de produits à deux cas d’utilisation :
+
+* Les produits simples sont ceux qui sont définis avec un seul prix et une seule quantité. Le service de catalogue mappe les types de produits de carte-cadeau, simples, virtuels, téléchargeables à `simpleProductViews`.
+
+* Les produits complexes sont constitués de plusieurs produits simples. Les composants produits simples peuvent avoir des prix différents. Un produit complexe peut également être défini de sorte que l’acheteur puisse spécifier la quantité de produits simples de composant. Le service de catalogue mappe les types de produits configurables, regroupés et regroupés sur `complexProductViews`.
+
+Les options de produits complexes sont unifiées et distinguées par leur comportement, et non par leur type. Chaque valeur d’option représente un produit simple. Cette valeur d’option a accès aux attributs de produit simples, y compris le prix. Lorsque l’acheteur sélectionne toutes les options d’un produit complexe, la combinaison des options sélectionnées pointe vers un produit simple spécifique. Le produit simple reste ambigu jusqu’à ce que l’acheteur sélectionne une valeur pour toutes les options disponibles.
+
+### Prix
+
+Les produits simples représentent l’unité de vente de base qui a un prix. Le service de catalogue calcule le prix normal avant remises ainsi que le prix final après remises. Les calculs de tarifs peuvent inclure des taxes fixes sur les produits. Elles excluent les promotions personnalisées.
+
+Un produit complexe n’a pas de prix fixe. Au lieu de cela, le service de catalogue renvoie les prix de l&#39;utilisation simple liée. Par exemple, un commerçant peut initialement attribuer les mêmes prix à toutes les variantes d’un produit configurable. Si certaines tailles ou couleurs sont impopulaires, le marchand peut réduire les prix de ces variantes. Ainsi, le prix du produit complexe (configurable) affiche au début une gamme de prix, reflétant le prix des variantes standard et impopulaires. Une fois que l’acheteur a sélectionné une valeur pour toutes les options disponibles, le storefront affiche un seul prix.
 
 ## Implémentation
 
