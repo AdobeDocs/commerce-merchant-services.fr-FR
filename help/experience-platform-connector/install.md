@@ -2,9 +2,9 @@
 title: Installation et configuration de Adobe Experience Platform Connector depuis Adobe Commerce
 description: Découvrez comment installer, configurer, mettre à jour et désinstaller Adobe Experience Platform Connector à partir d’Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Le connecteur Experience Platform est installé en tant qu’extension à partir
    Ce métappackage contient les modules et extensions suivants :
 
    * `module-platform-connector-admin` - Met à jour l’interface utilisateur d’administration afin que vous puissiez sélectionner l’identifiant de flux de données pour une instance Adobe Commerce spécifique.
-   * `module-platform-connector` - Définit la variable `ImsOrgId` et `datastreamId` dans le SDK Adobe Commerce Storefront Event
+   * `module-platform-connector` - Définit la variable `Organization ID` et `datastreamId` dans le SDK des événements Storefront
    * `data-services` - Fournit un contexte d’attribut pour les événements storefront. Par exemple, lorsqu’un événement de passage en caisse se produit, des informations sur le nombre d’articles figurant dans le panier et les données d’attribut de produit pour ces articles sont incluses.
    * `services-id` - Connecte votre instance Adobe Commerce à [Adobe Commerce SaaS](../landing/saas.md) à l’aide des clés d’API de test et de production et de Adobe Experience Platform pour récupérer l’ID d’organisation IMS ;
 

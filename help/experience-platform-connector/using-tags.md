@@ -2,9 +2,9 @@
 title: Collecte de données commerciales à l’aide de balises Adobe Experience Platform
 description: Découvrez comment collecter des données Commerce à l’aide de balises Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Pour chacun des événements suivants, mappez les événements Adobe Commerce à
 - [`searchRequestSent`](#searchrequestsent)
 - [`searchResponseReceived`](#searchresponsereceived)
 - [`addToCart`](#addtocart)
+- [`openCart`](#opencart)
 - [`viewCart`](#viewcart)
 - [`removeFromCart`](#removefromcart)
 - [`initiateCheckout`](#initiatecheckout)
@@ -783,6 +784,39 @@ Créez les éléments de données suivants :
 - **Type d’action**: `Send event`
 - **Type**: `commerce.productListAdds`
 - **Données XDM**: `%add to cart%`
+
+### openCart {#opencart}
+
+Déclenché lors de la création d’un panier, ce qui se produit lorsqu’un produit est ajouté à un panier vide.
+
+#### Éléments de données
+
+Créez l’élément de données suivant :
+
+1. Ouvrir le panier :
+
+   - **Nom**: `open cart`
+   - **Extension**: `Adobe Experience Platform Web SDK`
+   - **Type d’élément de données**: `XDM object`
+   - **Groupe de champs**: `commerce` > `productListOpens` > `value`
+   - **value**: **Valeur** = `1`
+   - **Groupe de champs**: `commerce` > `cart` > `cartID`
+   - **Identifiant du panier**: **Valeur** = `%cart id%`
+   - **Groupe de champs**: `productListItems`. Pour `productListItems`, plusieurs éléments peuvent être précalculés. Sélectionner **productListItems** > **Fournir un tableau entier**.
+
+#### Règles 
+
+- **Nom**: `open cart`
+- **Extension**: `Adobe Client Data Layer`
+- **Type d’événement**: `Data Pushed`
+- **Evénement spécifique**: `open-cart`
+
+##### Actions
+
+- **Extension**: `Adobe Experience Platform Web SDK`
+- **Type d’action**: `Send event`
+- **Type**: `commerce.productListOpens`
+- **Données XDM**: `%open cart%`
 
 ### viewCart {#viewcart}
 

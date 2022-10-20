@@ -2,9 +2,9 @@
 title: Événements
 description: Découvrez les données que chaque événement capture.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 0%
 
 ---
@@ -447,4 +447,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `searchResponse` | Indique si une réponse de recherche a été reçue |
 | `suggestions` | Tableau de chaînes qui incluent les noms des produits et des catégories existant dans le catalogue et similaires à la requête de recherche |
 | `numberOfResults` | Le nombre de produits renvoyés |
-| `productListItems` | Un tableau de produits dans le panier. Inclut la variable `SKU`(Unité de gestion des stocks) et `name` du produit (nom d’affichage ou nom lisible.) |
+| `productListItems` | Un tableau de produits dans le panier. |
+| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `name` | Nom d’affichage ou nom lisible du produit. |
+| `productImageUrl` | URL de l’image principale du produit |
