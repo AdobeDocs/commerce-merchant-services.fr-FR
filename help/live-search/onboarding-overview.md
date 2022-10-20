@@ -1,10 +1,10 @@
 ---
-title: '"Présentation de l’intégration"'
-description: '"[!DNL Live Search] flux d’intégration, exigences du système, limites et limites"'
+title: "Présentation de l’intégration"
+description: "[!DNL Live Search] flux d’intégration, exigences du système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,20 @@ Pour commencer à utiliser [!DNL Live Search] pour Adobe Commerce, exécutez le 
 * répertorie uniquement les produits de la base de données Adobe Commerce ;
 * N’indexe pas les pages CMS
 
-### Synonymes
-
-* [!DNL Live Search] peut gérer jusqu’à 200 synonymes par `Data Space ID`.
-
 ### Requête
 
 * [!DNL Live Search] n’a pas accès à la taxonomie complète de l’arborescence des catégories, ce qui rend certains scénarios de recherche de navigation par couches hors de sa portée.
 * [!DNL Live Search] utilise un point d’entrée GraphQL unique pour les requêtes afin de prendre en charge des fonctionnalités telles que les facettes intelligentes et la recherche par saisie. Bien que similaire au [API GraphQL du Magento](https://devdocs.magento.com/guides/v2.4/graphql), il existe quelques différences et certains champs peuvent ne pas être entièrement compatibles à l’heure actuelle.
+
+### Règles
+
+* Le nombre maximal de règles par identifiant d’espace de données est de 50.
+* Le nombre maximal de conditions par règle est 10.
+* Le nombre maximal d’événements par règle est de 25.
+
+### Synonymes
+
+* [!DNL Live Search] peut gérer jusqu’à 200 synonymes par `Data Space ID`.
 
 ### Version bêta de PWA
 
