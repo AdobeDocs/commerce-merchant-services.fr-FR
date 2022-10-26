@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] pour Adobe Commerce, vous pouvez récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes Adobe Commerce GraphQL natives."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
+source-git-commit: 7ab545b8e3d9a795be7ff43246e102b366ad94bd
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Le diagramme suivant montre les deux systèmes GraphQL :
 
 Dans le système GraphQL principal, le PWA envoie une demande à l’application Commerce, qui reçoit chaque demande, la traite, peut-être en envoyant une demande via plusieurs sous-systèmes, puis renvoie une réponse au storefront. Ce aller-retour peut ralentir le chargement des pages, ce qui peut entraîner des taux de conversion plus faibles.
 
-[!DNL Catalog Service] envoie des requêtes à une passerelle GraphQL distincte. Le service accède à une base de données distincte qui contient les détails du produit et les informations connexes, telles que les attributs de produit, les variantes, les prix et les catégories. Le service maintient la synchronisation de la base de données avec Adobe Commerce par le biais de l’indexation.
+[!DNL Catalog Service] est un service de passerelle GraphQL fédérée. Le service accède à une base de données distincte qui contient les détails du produit et les informations connexes, telles que les attributs de produit, les variantes, les prix et les catégories. Le service maintient la synchronisation de la base de données avec Adobe Commerce par le biais de l’indexation.
 Comme le service contourne la communication directe avec l’application, il peut réduire la latence du cycle de demande et de réponse.
 
 >[!NOTE]
 >
->La passerelle est destinée à une intégration future avec Product Recommendations. Dans cette version, vous pouvez accéder à [!DNL Catalog Service] et [!DNL Live Search] des requêtes fédérées du même point de terminaison si vous disposez d’une clé de licence valide pour les deux produits.
+>La passerelle est destinée à une intégration future avec Product Recommendations. Dans cette version, vous pouvez accéder au [!DNL Catalog Service Federated GraphQL] et le [!DNL Live Search] des requêtes fédérées du même point de terminaison si vous disposez d’une clé de licence valide pour les deux produits.
 
 Les systèmes GraphQL de base et de service ne communiquent pas directement entre eux. Vous accédez à chaque système à partir d’une URL différente et les appels nécessitent des informations d’en-tête différentes. Les deux systèmes GraphQL sont conçus pour être utilisés ensemble. Le [!DNL Catalog Service] Le système GraphQL augmente le système de base pour accélérer l’expérience du storefront de produits.
 
