@@ -2,7 +2,7 @@
 user-guide-title: "[!DNL Product Recommendations] Guide"
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de [!DNL Product Recommendations] d’Adobe Commerce.
 breadcrumb-title: "[!DNL Product Recommendations] Guide"
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+source-git-commit: 1dbb0dcf588c71f916755d1b06b41d3244201b7e
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 3%
@@ -33,5 +33,5 @@ ht-degree: 3%
 - [!DNL Product Recommendations] Développeur {#developer}
    - [Présentation](development-overview.md)
    - [Collecter des données](events.md)
-   - [Modifier](customize.md)
+   - [Personnaliser](customize.md)
    - [Gérer les restrictions de cookie](setting-cookie.md)
