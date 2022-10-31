@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '1114'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,22 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Live Searc
 * ![Nouveau](../assets/new.svg) - Nouvelles fonctionnalités
 * ![Correction](../assets/fix.svg) - Correctifs et améliorations
 * ![Bogue](../assets/bug.svg) - Problèmes connus
+
+## [!DNL Live Search] 2.0.4
+
+* Compatible avec Adobe Commerce (EE) : 2.4.x
+* Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
+* Stabilité : Stable
+
+* ![Nouveau](../assets/new.svg) - La recherche en direct prend désormais en charge le filtrage par le paramètre &quot;Produits d’affichage en rupture de stock&quot; dans l’administrateur. Si &quot;Produits en rupture de stock&quot; est défini sur false, `inStock = true` est ajouté au filtre.
+* ![Correction](../assets/fix.svg) - Pour améliorer les performances, le bloc &quot;Suggestions&quot; a été supprimé de la fenêtre contextuelle Recherche en direct . Les données sont toujours transmises par GraphQL, au cas où vous souhaitez remplacer la fonction.
+* ![Correction](../assets/fix.svg) - `categories` et `categoryPath` ont remplacé `categoryIds` pour le filtrage par catégorie. En savoir plus dans la section [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) rubrique.
+* ![Correction](../assets/fix.svg) - Auparavant, un utilisateur lié à une société B2B recevait un code de groupe client incorrect lors de recherches. La fonction de recherche en direct renvoie désormais la valeur correcte.
+* ![Correction](../assets/fix.svg) - Auparavant, la recherche en direct renvoyait une erreur lors de la recherche d’un terme qui n’existe pas. Ce bogue est maintenant corrigé.
+
+Les commerçants doivent mettre à niveau l’extension Live Search >= 2.0.4 pour accéder à ces fonctionnalités.
+
+Nous conseillons aux utilisateurs de mettre à niveau et de tester avant de passer en production. Envisagez de mettre à niveau l’environnement de production pendant les heures creuses après avoir vérifié les résultats de l’environnement de test.
 
 ## [!DNL Live Search] 2.0.3
 
