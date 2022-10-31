@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] pour Adobe Commerce, vous pouvez récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes Adobe Commerce GraphQL natives."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 7ab545b8e3d9a795be7ff43246e102b366ad94bd
+source-git-commit: 55036065c686553bc530bb7a4fe46fcec1bd9ee8
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ Le [!DNL Catalog Service] pour l’extension Adobe Commerce, fournit des donnée
 Le [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) pour demander et recevoir des données de produit. GraphQL est un langage de requête utilisé par un client frontal pour communiquer avec l’interface de programmation d’application (API) définie sur un serveur principal tel qu’Adobe Commerce. GraphQL est une méthode de communication courante, car elle est légère et permet à un intégrateur système de spécifier le contenu et l’ordre de chaque réponse.
 
 Adobe Commerce possède deux systèmes GraphQL. Le système GraphQL de base fournit un large éventail de requêtes (opérations de lecture) et de mutations (opérations d’écriture) qui permettent à un acheteur d’interagir avec de nombreux types de pages, notamment un produit, un compte client, un panier, un passage en caisse, etc. Toutefois, les requêtes qui renvoient des informations sur les produits ne sont pas optimisées pour la vitesse. Le système GraphQL des services peut uniquement exécuter des requêtes sur les produits et les informations associées. Ces requêtes sont plus performantes que les requêtes principales similaires.
+
+Vous exécutez ces requêtes en les envoyant à la passerelle à l’adresse https://catalog-service.adobe.io/graphql.
 
 ## Architecture
 
