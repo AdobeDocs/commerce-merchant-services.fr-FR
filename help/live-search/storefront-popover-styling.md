@@ -1,10 +1,10 @@
 ---
-title: '"Style [!DNL Popover] Elements"'
-description: '"Notes techniques sur la personnalisation de la variable [!DNL Live Search storefront popover]"'
+title: "Style [!DNL Popover] Elements"
+description: "Notes techniques sur la personnalisation de la variable [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,10 @@ Pour plus d’informations sur le style des éléments storefront, reportez-vous
 
 ## Sélecteurs de classe
 
-Les sélecteurs de classe suivants peuvent être utilisés pour mettre en forme les éléments de conteneur, de suggestion et de produit dans la variable [!DNL popover].
+Les sélecteurs de classe suivants peuvent être utilisés pour mettre en forme le conteneur et les éléments de produit dans la variable [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
-* `.livesearch.suggestions-container`
-* `.livesearch.suggestions-header`
-* `.livesearch.suggestion`
 * `.livesearch.products-container`
 * `.livesearch.product-result`
 * `.livesearch.product-name`
@@ -50,37 +47,30 @@ Les sélecteurs de classe suivants peuvent être utilisés pour mettre en forme 
 
 ### Sélecteurs de classe de conteneur
 
-`.livesearch.popover-container`
+#### .livesearch.popover-container
 
 ![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
-`.livesearch.view-all-footer`
+#### .livesearch.view-all-footer
 
 ![Afficher tout le pied de page](assets/livesearch-view-all-footer.png)
 
-### Sélecteurs de classe de suggestions
-
-`.livesearch.suggestions-container`
-![Conteneur de suggestions](assets/livesearch-suggestions-container.png)
-
-`.livesearch.suggestions-header`
-![En-tête des suggestions](assets/livesearch-suggestions-header.png)
-
-`.livesearch.suggestion`
-![Suggestion](assets/livesearch-suggestion.png)
-
 ### Sélecteurs de classe de produits
 
-`.livesearch.products-container`
+#### .livesearch.products-container
+
 ![Conteneur de produits](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`
+#### .livesearch.product-result
+
 ![Résultat du produit](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`
+#### .livesearch.product-name
+
 ![Nom du produit](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`
+#### .livesearch.product-price
+
 ![Prix du produit](assets/livesearch-product-price.png)
 
 ## Utilisation d’un thème modifié {#working-with-modified-theme}

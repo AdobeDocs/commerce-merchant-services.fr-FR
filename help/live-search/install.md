@@ -2,9 +2,9 @@
 title: "Installer [!DNL Live Search]"
 description: "Découvrez comment installer, mettre à jour et désinstaller [!DNL Live Search] d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -251,7 +251,7 @@ Pour désinstaller [!DNL Live Search], voir [Désinstallation des modules](https
 |--- |--- |
 | `module-live-search` | Permet aux commerçants de configurer leurs paramètres de recherche pour la facette, les synonymes, les règles de requête, etc., et permet d’accéder à un terrain de lecture GraphQL en lecture seule pour tester les requêtes à partir de la variable *Administration*. |
 | `module-live-search-adapter` | Permet d’acheminer les requêtes de recherche du storefront vers le [!DNL Live Search] et effectue le rendu des résultats dans le storefront. <br />- Navigation dans les catégories - achemine les demandes depuis le storefront [navigation supérieure](https://docs.magento.com/user-guide/catalog/navigation-top.html) au service de recherche.<br />- Recherche globale - achemine les requêtes de la [recherche rapide](https://docs.magento.com/user-guide/catalog/search-quick.html) dans le coin supérieur droit du storefront vers la propriété [!DNL Live Search] service. |
-| `module-live-search-storefront-popover` | Une fenêtre contextuelle &quot;Rechercher lorsque vous tapez&quot; remplace la recherche rapide standard et renvoie des suggestions de produits dynamiques et des miniatures des principaux résultats de recherche. |
+| `module-live-search-storefront-popover` | Une fenêtre contextuelle &quot;Rechercher lorsque vous tapez&quot; remplace la recherche rapide standard et renvoie les données et les miniatures des principaux résultats de la recherche. |
 
 ## [!DNL Live Search] dependencies {#dependencies}
 
