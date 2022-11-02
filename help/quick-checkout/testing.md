@@ -1,10 +1,10 @@
 ---
-title: '"Test de la [!DNL Quick Checkout] pour l’extension Adobe Commerce"'
-description: '"Le test et la validation garantissent que la variable [!DNL Quick Checkout] fonctionne comme prévu."'
+title: "Test de la [!DNL Quick Checkout] pour l’extension Adobe Commerce"
+description: "Le test et la validation garantissent que la variable [!DNL Quick Checkout] fonctionne comme prévu."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,15 +44,15 @@ Vous devez également vérifier que les informations qui apparaissent sur les re
 Effectuez un passage en caisse réussi à partir de votre magasin :
 
 1. Positionnez-vous sur votre vitrine et placez les articles de votre choix dans votre panier.
-2. Passez à la caisse.
-3. Entrez une adresse électronique associée à un [!DNL Bolt] compte lorsque vous y êtes invité.
-4. Saisissez le mot de passe unique (OTP) envoyé à l’adresse électronique du compte.
-5. Sélectionnez le tableau de bord de l&#39;environnement :
+1. Passez à la caisse.
+1. Entrez une adresse électronique associée à un [!DNL Bolt] compte lorsque vous y êtes invité.
+1. Saisissez le mot de passe unique (OTP) envoyé à l’adresse électronique du compte.
+1. Sélectionnez le tableau de bord de l&#39;environnement :
 
    - Sandbox
    - Production
 
-6. Placez la commande.
+1. Placez la commande.
 
 Une fois une commande passée, vous pouvez afficher les détails de vos commandes dans vos _Grille des commandes_ view :
 

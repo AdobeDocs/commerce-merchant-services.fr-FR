@@ -2,10 +2,10 @@
 user-guide-title: "[!DNL Quick Checkout] pour Adobe Commerce"
 user-guide-description: "Découvrez comment [!DNL Quick Checkout] Votre instance Adobe Commerce pourrait être utile, ainsi que la manière d’embarquer et de configurer l’extension."
 breadcrumb-title: Guide des services marchands
-source-git-commit: 9f531ce359680e442fe62fe49169ecbb03e56bbc
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,12 @@ ht-degree: 2%
    - [Conditions préalables](prerequisites.md)
    - [Installer](install.md)
    - [Intégration](onboarding.md)
+   - [Paramètres](settings-quick-checkout.md)
    - [!DNL Quick Checkout] Panneau d’administration {#quick-checkout-admin-panel}
       - [Configuration du panneau d’administration](admin-panel.md)
       - [Configuration utilisateur](user-roles-setup.md)
+   - [!DNL Quick Checkout] reporting {#quick-checkout-reporting}
+      - [Rapports](reports.md)
 - Test et validation {#test-validate}
    - [Tests](testing.md)
    - [Informations sur les développeurs](developer.md)
