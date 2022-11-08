@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: bbc97eff4cd0c5b544df34061a1e156e72b91d18
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -62,14 +62,14 @@ Adobe fournit un ensemble de services de commerce, d’intégration et de donné
    </tr>
 <tr>
     <td valign="top" width="200px">
-       <img alt="Canal de vente Amazon" src="assets/amazon-channel.png" width="170px"></td>
+       <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Canal de vente Amazon</strong></a> <br><em>(Disponible pour Magento Open Source)</em>
     <div>Intégrez-vous à la plus grande destination mondiale d’achats en ligne pour activer les ventes Amazon, automatiser et synchroniser les données, gérer les listes Amazon, etc. à l’aide d’un seul tableau de bord.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
-       <img alt="[!DNL Channel manager]" src="assets/channel-manager.png" width="170px"></td>
+       <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Gestionnaire de canaux</strong></a> <br><em>(Disponible pour Magento Open Source)</em>
     <div>Augmentez les ventes, atteignez de nouveaux clients, rationalisez les opérations et gagnez du temps grâce à l’intégration à Walmart Marketplace. Permettre au personnel de gérer de manière transparente les ventes, les stocks et les prix de Walmart Marketplace, le tout dans Commerce.</div>
   </td>
