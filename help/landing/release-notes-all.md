@@ -3,7 +3,8 @@ title: Notes de mise à jour de Commerce Services
 description: Collection de notes de mise à jour pour tous les services Commerce
 seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
-source-git-commit: eaa18b8864464b3545b4df42f189cac89497ce03
+exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
+source-git-commit: b2b0caa50d5ea326ff11af5d8b1e05746c7f7d44
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 2%
@@ -22,7 +23,7 @@ Utilisez le tableau suivant pour trouver les notes de mise à jour et les inform
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Sales Channel Amazon</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Service de catalogue</a></li>
-            <li><a href="https://experienceleague.corp.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Gestionnaire de canaux</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Gestionnaire de canaux</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Recherche en direct</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Services de paiement</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Recommendations de produit</a></li>
