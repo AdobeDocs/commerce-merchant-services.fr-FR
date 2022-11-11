@@ -2,9 +2,9 @@
 title: Présentation du guide
 description: Découvrez comment intégrer des données Adobe Commerce à Adobe Experience Platform à l’aide du connecteur Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: a316b92f75cb227d0c58af07482f9d37568af7ca
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -50,5 +50,5 @@ Voir [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-serv
 
 Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
 
-- [Centre d’aide](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
-- [tickets d’assistance](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} : envoyez un ticket pour recevoir une aide supplémentaire.
+- [Centre d’aide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target=&quot;_blank&quot;}
+- [tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target=&quot;_blank&quot;} : envoyez un ticket pour recevoir une aide supplémentaire.
