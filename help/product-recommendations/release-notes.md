@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Les dernières informations de mise à jour pour [!DNL Product Recommendations] d’Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 Les notes de mise à jour contiennent des mises à jour des [!DNL Product Recommendations] modules :
 
-* En mars 2021, [!DNL Product Recommendations] sont désormais prises en charge dans [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) storefronts.
 * [!DNL Product Recommendations] metapackage : `magento/product-recommendations`
 * Prise en charge du créateur de pages dans [!DNL Product Recommendations] module (facultatif) : `magento/module-page-builder-product-recommendations`
 * Prise en charge du type de recommandation similarité visuelle pour [!DNL Product Recommendations] module (facultatif) : `magento/module-visual-product-recommendations`
@@ -26,6 +25,10 @@ Les notes de mise à jour incluent :
 Consultez la documentation destinée aux développeurs pour [en savoir plus sur la compatibilité des produits](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x et 2.4.x
+
+### 4.0.1 de magento/product-recommendations
+
+* ![Correction](../assets/fix.svg) - Auparavant, le Recommendations de produit affichait une erreur lorsque la devise d’affichage était remplacée par une devise autre que celle par défaut. Le changement de devise fonctionne désormais correctement.
 
 ### 4.0.0 de magento/product-recommendations
 
