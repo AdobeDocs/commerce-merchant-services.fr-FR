@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Notes de mise à jour'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Quick Checkout] versions.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -115,4 +115,4 @@ _9 août 2022_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-375 --> Améliorations de l’expérience utilisateur dans [[!DNL Quick Checkout] Panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) vous permet d’enregistrer votre configuration lorsque tous les paramètres requis sont fournis.
 
-![Problème connu](../assets/bug.svg)<!-- Issue BOLT-342 --> Courant [dépannage](https://support.magento.com/hc/en-us/articles/6909450342541) problèmes lors de l’installation de [!DNL Quick Checkout].
+![Problème connu](../assets/bug.svg)<!-- Issue BOLT-342 --> Courant [dépannage](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) problèmes lors de l’installation de [!DNL Quick Checkout].
