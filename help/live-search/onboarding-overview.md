@@ -2,9 +2,9 @@
 title: "Présentation de l’intégration"
 description: "[!DNL Live Search] flux d’intégration, exigences du système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
+source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Pour commencer à utiliser [!DNL Live Search] pour Adobe Commerce, exécutez le 
 
 ### Indexation
 
-* Index jusqu’à 300 attributs de produit par vue de magasin
+* Index jusqu’à 300 attributs de produit par vue de magasin.
 * répertorie uniquement les produits de la base de données Adobe Commerce ;
-* N’indexe pas les pages CMS
+* Les pages CMS ne sont pas indexées.
 
 ### Requête
 
@@ -45,13 +45,13 @@ Pour commencer à utiliser [!DNL Live Search] pour Adobe Commerce, exécutez le 
 
 ### Règles
 
-* Le nombre maximal de règles par identifiant d’espace de données est de 50.
+* Le nombre maximal de règles par vue de magasin est de 50.
 * Le nombre maximal de conditions par règle est 10.
 * Le nombre maximal d’événements par règle est de 25.
 
 ### Synonymes
 
-* [!DNL Live Search] peut gérer jusqu’à 200 synonymes par `Data Space ID`.
+* [!DNL Live Search] peut gérer jusqu’à 200 synonymes par vue de magasin.
 
 ### Version bêta de PWA
 
