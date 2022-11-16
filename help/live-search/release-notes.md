@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 87b60e28e45466bf4271953c6704a53e6d43d73a
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Live Searc
 * ![Correction](../assets/fix.svg) - Correctifs et améliorations
 * ![Bogue](../assets/bug.svg) - Problèmes connus
 
-## [!DNL Live Search] 2.0.5
+## [!DNL Live Search] 2.0.5 {#205}
 
 * Compatible avec Adobe Commerce (EE) : 2.4.x
 * Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
@@ -29,7 +29,7 @@ Les commerçants doivent mettre à niveau l’extension Live Search >= 2.0.5 pou
 
 Il est recommandé de mettre à niveau et de tester avant de passer en production. Envisagez de mettre à niveau l’environnement de production pendant les heures creuses après avoir vérifié les résultats de l’environnement de test.
 
-## [!DNL Live Search] 2.0.4
+## [!DNL Live Search] 2.0.4 {#204}
 
 * Compatible avec Adobe Commerce (EE) : 2.4.x
 * Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
@@ -43,7 +43,9 @@ Il est recommandé de mettre à niveau et de tester avant de passer en productio
 
 Les commerçants doivent mettre à niveau l’extension Live Search >= 2.0.4 pour accéder à ces fonctionnalités.
 
-## [!DNL Live Search] 2.0.3
+Nous conseillons aux utilisateurs de mettre à niveau et de tester avant de passer en production. Envisagez de mettre à niveau l’environnement de production pendant les heures creuses après avoir vérifié les résultats de l’environnement de test.
+
+## [!DNL Live Search] 2.0.3 {#203}
 
 * Compatible avec Adobe Commerce (EE) : 2.4.x
 * Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
@@ -69,7 +71,7 @@ Nous conseillons aux utilisateurs de mettre à niveau et de tester avant de pass
 * Les remplacements de produits et le flux d’attributs de produit peuvent présenter des problèmes de synchronisation nécessitant l’exécution des administrateurs. `bin/magento indexer:reset` et `bin/magento indexer:reindex` pour effectuer une synchronisation correcte.
 * Si vous activez ou désactivez les fonctionnalités Autorisations du catalogue/Catalogue partagé/B2B, la variable `catalog_data_exporter_product_overrides` l’indexeur n’est pas mis à jour et est incorrectement marqué comme `valid`. Utilisation `bin/magento saas:resync --feed=productOverrides` pour résoudre le problème.
 
-## [!DNL Live Search] 2,0
+## [!DNL Live Search] 2,0 {#20}
 
 * Compatible avec Adobe Commerce (EE) : 2.4.x
 * Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
@@ -86,7 +88,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 * ![Bogue](../assets/bug.svg) - Les attributs de produit suivants ne sont pas pris en charge par [API GraphQL du Magento](https://devdocs.magento.com/guides/v2.4/graphql) lorsqu’elle est utilisée en rapport avec la version bêta de PWA : `description`, `name`, `short_description`
 * ![Bogue](../assets/bug.svg) - La version bêta de PWA pour [!DNL Live Search] ne prend pas en charge [gestion des événements](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
-## [!DNL Live Search] 1.3.1
+## [!DNL Live Search] 1.3.1 {#131}
 
 * Compatible avec Adobe Commerce (EE) : 2.4.x
 * Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
@@ -96,7 +98,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 * ![Correction](../assets/fix.svg) - Correction d’un problème en raison duquel une erreur se produisait lorsqu’aucune [symbole de devise](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) est disponible.
 * ![Correction](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) affiche désormais la variable [Prix spécial](https://docs.magento.com/user-guide/catalog/product-price-special.html) (prix final minimum) le cas échéant.
 
-## [!DNL Live Search] 1.3.0
+## [!DNL Live Search] 1.3.0 {#130}
 
 * Compatible avec Adobe Commerce (EE) : 2.4.x
 * Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
@@ -109,7 +111,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 * ![Bogue](../assets/bug.svg) - Le correctif pour l’adaptateur de recherche gère les produits en double.
 * ![Bogue](../assets/bug.svg) - [!DNL Live Search] prend en charge [source unique](https://docs.magento.com/user-guide/catalog/inventory-sources.html) emplacements d’inventaire (physiques) avec plusieurs emplacements (virtuels) [stocks](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Pour l’instant, plusieurs sources d’inventaire ne sont pas prises en charge.
 
-## [!DNL Live Search] 1.2.0
+## [!DNL Live Search] 1.2.0 {#120}
 
 * Compatible avec Adobe Commerce (EE) : 2.4.x
 * Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
@@ -124,7 +126,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 * ![Correction](../assets/fix.svg) - [!DNL Live Search] ne renvoie plus d’erreur si les critères de recherche contiennent une valeur d’ordre de tri vide
 * ![Correction](../assets/fix.svg) - Le filtrage de plage ne rompt plus si les codes d’attribut contiennent des chaînes &quot;to&quot; ou &quot;from&quot;
 
-## [!DNL Live Search] 1.1.0
+## [!DNL Live Search] 1.1.0 {#110}
 
 * Compatible avec Adobe Commerce (EE) : 2.4.x
 * Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x
