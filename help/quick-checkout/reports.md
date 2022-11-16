@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] reporting"
-description: "[!DNL Quick Checkout] offre des informations de création de rapports complètes."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '[!DNL Quick Checkout] rapport'
+description: '''[!DNL Quick Checkout] offre des informations de création de rapports complètes."'
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # Rapports
 
@@ -28,9 +28,9 @@ Les graphiques de la section Aperçu contiennent des informations détaillées s
 | Graphique | Description |
 |---|---|
 | [!UICONTROL Checkout abandonment] | Pourcentage de visiteurs qui quittent le processus de passage en caisse sans effectuer d’achat. |
-| [!UICONTROL Checkout abandonment breakdown] | Abandon de passage en caisse divisé par type de visiteur. Options : [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | Abandon de passage en caisse divisé par type de visiteur. L’info-bulle affiche une différence en pourcentage entre Bolt et Guest. Options : [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | Durée moyenne requise par un visiteur pour terminer le processus de passage en caisse. |
-| [!UICONTROL Average checkout time breakdown] | Durée moyenne de passage en caisse divisée par type de visiteur. Options : [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | Durée moyenne de passage en caisse divisée par type de visiteur. L’info-bulle affiche une différence en pourcentage entre Bolt et Guest. Options : [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | Commandes passées divisées par type de visiteur. Options : [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## Rapports sur les tendances
@@ -55,4 +55,3 @@ Vous pouvez filtrer les résultats affichés par date ou les paramètres prédé
 |---|---|
 | [!UICONTROL Preset] | Liste déroulante qui affiche des paramètres prédéfinis par défaut pouvant être utilisés pour afficher des plages de données spécifiques. Par défaut : 30 derniers jours |
 | [!UICONTROL Date range] | Une liste déroulante permettant de sélectionner une plage de données spécifique selon les dates sélectionnées. |
-
