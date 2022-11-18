@@ -2,9 +2,9 @@
 title: Intégration et installation
 description: Découvrez comment installer [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c740e75c9fe12b062683fa957d0c6623d8180e4f
+source-git-commit: ea4b386d7e378b30641e623cb190923dc50563d8
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,6 @@ Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instan
    bin/magento cache:clean
    ```
 
-
 ## Service de catalogue et maillage d’API
 
 Le [Mesh de l’API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
@@ -103,7 +102,16 @@ Pour terminer la configuration, vous devez [Module d’interface de ligne de com
 Une fois que le maillage est configuré sur l’Adobe IO, exécutez la commande suivante pour connecter le nouveau maillage.
 
 ```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph"
+aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
+```
+
+where `variables.json` est un fichier distinct qui stocke les valeurs couramment utilisées pour les E/S d’Adobe.
+Par exemple, la clé API peut être enregistrée dans le fichier :
+
+```json
+{
+    "CATALOG_SERVICE_API_KEY":"your_api_key"
+}
 ```
 
 Après l’exécution de cette commande, le service de catalogue doit s’exécuter par le biais du maillage API.

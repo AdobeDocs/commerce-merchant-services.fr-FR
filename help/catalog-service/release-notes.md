@@ -2,10 +2,10 @@
 title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
+source-git-commit: d84996bc76a44b39aeaee7f8b0ed4973fbe5de37
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 1%
+source-wordcount: '465'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,21 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Catalog Se
 * ![Nouveau](../assets/new.svg) Nouvelles fonctionnalités
 * ![Correction](../assets/fix.svg) Correctifs et améliorations
 * ![Bogue](../assets/bug.svg) Problèmes connus
+
+## Version V1.1
+
+Date de publication : 2022-11-18 Compatible avec Adobe Commerce (EE) : 2.4.x Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x Stabilité : Disponibilité générale
+
+![Nouveau](../assets/new.svg) Le service de catalogue prend désormais en charge les Adobes [Mesh de l’API](https://developer.adobe.com/graphql-mesh-gateway/).
+![Correction](../assets/fix.svg) Nous avons amélioré l’évolutivité des API et les performances globales.
+
+### Limites connues
+
+Ces fonctionnalités ne sont pas encore prises en charge :
+
+* Prix de niveau
+* Aucune mise à jour n’est reçue lorsque des variantes sont supprimées du catalogue.
+* La taille maximale de la charge utile des attributs dynamiques est de 9 Mo
 
 ## Version V1.0
 
