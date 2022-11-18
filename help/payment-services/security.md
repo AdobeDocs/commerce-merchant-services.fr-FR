@@ -2,9 +2,9 @@
 title: Sécurité et conformité
 description: Examinez les exigences en matière de sécurité et de conformité de votre site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Les vendeurs peuvent effectuer une [questionnaire d’auto-évaluation (SAQ)](ht
 ### Champs de carte de crédit
 
 Avec les champs de carte de crédit, aucune donnée réglementée par PCI n’est transmise à vos services. Vous n’avez pas à stocker ni à gérer ces données, ce qui réduit considérablement les problèmes de conformité PCI.
+
+### Valorisation des cartes
+
+Lorsqu’un acheteur [les valeurs (ou &quot;enregistre&quot;) leurs informations de carte de crédit](vaulting.md) pour les achats futurs dans vos magasins, des informations minimales sur les cartes de crédit sont partagées avec l’acheteur (quatre derniers chiffres, date d’expiration de la carte et marque de carte). Les informations de carte de crédit sont stockées avec le fournisseur de paiement. Lorsqu’une carte arrive à expiration ou qu’il n’a plus besoin des informations enregistrées, il peut supprimer ce jeton afin que les informations ne soient plus stockées par le fournisseur de paiement.
 
 ### Boutons intelligents PayPal
 

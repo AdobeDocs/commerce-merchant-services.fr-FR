@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d
 1. Dans le _[!UICONTROL Payment Services]_, développez la section_[!UICONTROL Credit Card Fields]_ .
 1. Pour **[!UICONTROL Title]**, saisissez du texte (si nécessaire) pour modifier le nom du mode de paiement, comme indiqué lors du passage en caisse.
 1. À [définir l’action de paiement ;](production.md#set-payment-services-as-payment-method), sélectionnez **[!UICONTROL Authorize]** ou **Autoriser et capturer**.
+1. Pour **[!UICONTROL Show on checkout page]**, choisissez `Yes` pour activer ou désactiver les champs de carte de crédit sur la page de passage en caisse.
+1. Pour **[!UICONTROL Vault Enabled]**, choisissez `Yes` pour activer la mise en valeur par carte de crédit pour le passage en caisse.
 1. Pour **Mode de débogage**, choisissez `Yes` pour activer le mode de débogage (ou `No` pour la désactiver).
 1. Cliquez sur **[!UICONTROL Save Config]** pour enregistrer vos modifications.
 1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, puis cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.

@@ -2,9 +2,9 @@
 title: Options de paiement
 description: Définissez les options de paiement pour personnaliser les méthodes disponibles pour les clients de votre magasin.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] proposer un passage en caisse simple et sécurisé pour les modes de paiement par carte de crédit ou carte de débit ; Lorsqu’un acheteur passe en caisse en utilisant des champs de carte de crédit, il saisit son nom, son adresse de facturation et les informations de carte de crédit ou de débit pour passer sa commande. Les informations sur les clients sont utilisées de manière sécurisée au cours de la session d’achat pour les guider de manière transparente tout au long du flux de passage en caisse.
+
+Activer [coffre-fort à carte de crédit](#vaulting) pour que vos magasins permettent aux clients de sauvegarder (enregistrer) leurs informations de carte de crédit pour un passage en caisse rapide plus tard.
 
 Vous pouvez configurer [!UICONTROL Credit Card Fields] dans la configuration du magasin ou dans la page d’accueil des services de paiement. Voir [Paramètres](settings.md#credit-card-fields) pour plus d’informations.
 
@@ -104,6 +106,12 @@ Lorsqu’un client extrait directement de la page du produit, à l’aide de Pay
 Si le client annule la commande, l’article de la page du produit en cours est ajouté au panier du client, en y joignant tous les autres articles présents dans le panier. Cette fonction permet au client d’acheter rapidement l’article qu’il consulte actuellement, tout en conservant tous les autres articles qu’il a ajoutés à son panier antérieurement lors de la navigation dans les produits.
 
 Lorsqu’un client entre dans le flux de passage en caisse à partir de la page du produit, la page de passage en caisse est simplifiée ; la vue affiche uniquement les données et les options liées à la commande.
+
+## Valorisation des cartes de crédit
+
+Les acheteurs peuvent sauvegarder (ou &quot;enregistrer&quot;) leurs informations de carte de crédit pour les achats futurs au niveau du site web (tout magasin dans le même compte du commerçant).
+
+Voir [Valorisation des cartes de crédit](vaulting.md) pour plus d’informations.
 
 ## Sécurité
 

@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,19 @@ _28 juin 2021_
 
 +++
 
+## v1.5.0
+
+_18 novembre 2022_
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-3880 --> Un acheteur peut maintenant [Vault (enregistrer) leurs informations de carte de crédit lors du passage en caisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) à utiliser dans un achat ultérieur pour le même magasin ou un autre dans le même compte marchand.
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-3950 --> Les vendeurs peuvent désormais activer la variable [Fonctionnalité Commerce d’achat instantané](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) pour leurs magasins afin que les clients puissent (utiliser [informations de carte de crédit en coffre-fort](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) pour accélérer le passage en caisse.
+
 ## v1.4.1
 
 _14 octobre 2022_
 
-![Nouveau](../assets/new.svg)<!-- Issue PAY-3766 --> Lorsque le mode de paiement d’un client est refusé, le message d’erreur visible est plus explicite. Il conseille au client de saisir à nouveau les informations de paiement et de réessayer, d’essayer un autre mode de paiement ou de contacter sa banque au sujet du refus de la transaction.
+![Correction](../assets/fix.svg)<!-- Issue PAY-3766 --> Lorsque le mode de paiement d’un client est refusé, le message d’erreur visible est plus explicite. Il conseille au client de saisir à nouveau les informations de paiement et de réessayer, d’essayer un autre mode de paiement ou de contacter sa banque au sujet du refus de la transaction.
 
 ## v1.4.0
 
