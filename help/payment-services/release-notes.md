@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,14 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
 
 +++
+
+## v1.5.1
+
+_23 novembre 2022_
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-3923 --> Les services de paiement incluent désormais le numéro de version dans l’en-tête de l’agent utilisateur pour que les demandes puissent effectuer le suivi, filtrer ou abandonner les points de terminaison inutilisés.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3968 --> Les services de paiement affichent désormais correctement les données de commande lorsqu’une commande est passée à partir de la page de produit à l’aide de boutons intelligents.
 
 ## v1.5.0
 
