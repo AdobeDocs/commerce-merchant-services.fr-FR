@@ -2,7 +2,7 @@
 title: Intégration et installation
 description: Découvrez comment installer [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: ea4b386d7e378b30641e623cb190923dc50563d8
+source-git-commit: 4604aacc19d7740c63b39134bd9f4c146479ac8f
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -41,11 +41,22 @@ Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instan
 1. Ouvrez le `<Commerce_root>/composer.json` dans un éditeur de texte et mettez à jour la variable `require` , comme suit :
 
    ```json
-   "require":{
-   "magento/composer-root-update-plugin":"^2.0.2",
-   "magento/magento-cloud-metapackage":">=2.4.5 <2.4.6",
-   "magento/catalog-service": "^1.0.0"
-      }
+   "require": {
+      "magento/module-saas-catalog": "^101.4.0",
+      "magento/module-saas-product-override": "^101.4.0",
+      "magento/module-saas-product-variant": "^101.4.0",
+      "magento/module-bundle-product-data-exporter": "^101.3.1",
+      "magento/module-catalog-data-exporter": "^101.3.1",
+      "magento/module-catalog-inventory-data-exporter": "^101.3.1",
+      "magento/module-catalog-url-rewrite-data-exporter": "^101.3.1",
+      "magento/module-configurable-product-data-exporter": "^101.3.1",
+      "magento/module-data-exporter": "^101.3.1",
+      "magento/module-parent-product-data-exporter": "^101.3.1",
+      "magento/module-product-override-data-exporter": "^101.3.1",
+      "magento/data-services": "^7.0.11",
+      "magento/services-id": "^3.0.1",
+      "magento/services-connector": "1.2.1"
+    }
    ```
 
 1. Testez localement la nouvelle configuration et mettez à jour les dépendances :
@@ -66,8 +77,20 @@ Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instan
 
    ```json
    "require": {
-   "magento/composer-root-update-plugin":"^2.0.2",
-   "magento/catalog-service": "^1.0.0"
+    "magento/module-saas-catalog": "^101.4.0",
+    "magento/module-saas-product-override": "^101.4.0",
+    "magento/module-saas-product-variant": "^101.4.0",
+    "magento/module-bundle-product-data-exporter": "^101.3.1",
+    "magento/module-catalog-data-exporter": "^101.3.1",
+    "magento/module-catalog-inventory-data-exporter": "^101.3.1",
+    "magento/module-catalog-url-rewrite-data-exporter": "^101.3.1",
+    "magento/module-configurable-product-data-exporter": "^101.3.1",
+    "magento/module-data-exporter": "^101.3.1",
+    "magento/module-parent-product-data-exporter": "^101.3.1",
+    "magento/module-product-override-data-exporter": "^101.3.1",
+    "magento/data-services": "^7.0.11",
+    "magento/services-id": "^3.0.1",
+    "magento/services-connector": "1.2.1"
    }
    ```
 
