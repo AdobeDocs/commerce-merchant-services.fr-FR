@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] rapport'
 description: '''[!DNL Quick Checkout] offre des informations de création de rapports complètes."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
+source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> Vous devez activer [**Tracking de passage en caisse**](../quick-checkout/settings-quick-checkout.md) dans le panneau d’administration, de sorte qu’Adobe Commerce soit autorisé à partager les informations de passage en caisse avec Bolt. Par défaut, cette option de configuration est définie sur **Oui**. Si cette option est désactivée (définie sur **Non**), la création de rapports sera affectée.
+> Pour permettre à Adobe Commerce de partager les informations de passage en caisse avec Bolt, la variable [**Tracking de passage en caisse**](../quick-checkout/settings-quick-checkout.md)  doit être activé dans Admin. Par défaut, cette option de configuration est définie sur **Oui**. Si cette option est définie sur **Non**, les rapports seront affectés. Bolt actualise les informations de rapport une fois par jour à 03h00 (heure normale de l’Est).
 
 ## Rapports de présentation
 
