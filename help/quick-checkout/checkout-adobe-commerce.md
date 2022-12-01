@@ -2,9 +2,9 @@
 title: "Flux de passage en caisse pour un utilisateur Adobe Commerce"
 description: "Présentation de la variable [!DNL Quick Checkout] flux pour un utilisateur Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Si une [!DNL Bolt] compte trouvé lors du passage en caisse, les clients peuvent
 >
 > La fenêtre contextuelle bulle OTP s’affiche uniquement lorsque l’acheteur se trouve sur la page de passage en caisse. L’acheteur peut se désabonner de se connecter à Bolt en fermant cette fenêtre contextuelle.
 
-Si l’acheteur est connecté à Adobe Commerce avant l’extraction, la variable [!DNL Bolt] La fenêtre contextuelle OTP n’apparaîtra pas lors du passage en caisse.
+Si l’acheteur est connecté à Adobe Commerce avant l’extraction, la variable [!DNL Bolt] La fenêtre contextuelle OTP ne s’affiche pas lors du passage en caisse, mais un message s’affiche suggérant à l’acheteur de se connecter pour accéder à son portefeuille de contrôle.
 
 Si vous rencontrez des problèmes lorsque vous passez une commande en tant qu’utilisateur Adobe Commerce existant, reportez-vous à la section [Dépannage des problèmes de paiement rapide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Article du Centre d’aide Adobe Commerce.
 

@@ -2,7 +2,7 @@
 title: "À l’intégration de [!DNL Quick Checkout] pour l’extension Adobe Commerce"
 description: "Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -132,11 +132,23 @@ Pour vérifier si l’acheteur a une [!DNL Bolt] compte :
 1. Basculez la portée sur **Site web principal**.
 1. Cliquez sur le bouton **Configuration de l’URL de rappel** bouton . Cette option active [!DNL Bolt] pour déterminer si l’acheteur dispose d’un compte. Si tel est le cas, la fenêtre contextuelle OTP s’affiche.
 
->[!CAUTION]
->
-> Basculer le périmètre vers le **Site web principal** s’assure que l’URL appropriée est définie. Chaque site web peut comporter plusieurs domaines.
+   >[!CAUTION]
+   >
+   > Basculer le périmètre vers le **Site web principal** s’assure que l’URL appropriée est définie. Chaque site web peut comporter plusieurs domaines.
 
 Voir [Site, magasin et portée de l’affichage](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)rubrique {target=&quot;_blank&quot;} pour plus d’informations sur les portées dans Adobe Commerce.
+
+## Configuration des paramètres du service
+
+![Passage en caisse rapide](assets/service-settings.png)
+
+1. Définir **Activation du suivi du passage en caisse** to `Yes`.
+
+   >[!CAUTION]
+   >
+   > La désactivation de cette option aura une incidence sur la création de rapports, car Adobe Commerce n’est pas autorisé à partager les informations de suivi de passage en caisse avec Bolt.
+
+1. Sélectionnez la **Étape suivante après la connexion** pour modifier le flux de navigation une fois le client connecté. Par défaut, il est défini sur la valeur **Paiements** page.
 
 ## Obtenir de l’aide
 
