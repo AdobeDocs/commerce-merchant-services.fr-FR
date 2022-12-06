@@ -2,9 +2,9 @@
 title: Intégration et installation
 description: Découvrez comment installer [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 4604aacc19d7740c63b39134bd9f4c146479ac8f
+source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -114,15 +114,25 @@ Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instan
    bin/magento cache:clean
    ```
 
+## Configuration de l’exportation de catalogue
+
+Après l’installation [!DNL Catalog Service], vous devez configurer la variable [Connecteur Commerce Services](../landing/saas.md) en spécifiant les clés d’API et en sélectionnant un espace de données SaaS.
+
+Pour vous assurer que l’exportation du catalogue s’exécute correctement :
+
+- Confirmez que [tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) sont en cours d’exécution.
+- Vérifiez les [indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sont en cours d’exécution.
+- Assurez-vous que la variable `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, et `Product Variant Feed` les indexeurs sont définis sur `Update by Schedule`.
+
 ## Service de catalogue et maillage d’API
 
-Le [Mesh de l’API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
+Le [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
 
 La première étape de l’utilisation du maillage API avec le service de catalogue consiste à connecter le maillage API à votre instance. Voir les instructions détaillées dans [Création d’un maillage](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 Pour terminer la configuration, vous devez [Module d’interface de ligne de commande d’Adobe IO](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installé.
 
-Une fois que le maillage est configuré sur l’Adobe IO, exécutez la commande suivante pour connecter le nouveau maillage.
+Une fois que le maillage est configuré sur l’Adobe IO, exécutez la commande suivante qui ajoute une `CommerceCatalogServiceGraph` source à votre impression.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
@@ -137,17 +147,7 @@ Par exemple, la clé API peut être enregistrée dans le fichier :
 }
 ```
 
-Après l’exécution de cette commande, le service de catalogue doit s’exécuter par le biais du maillage API.
-
-## Configuration de l’exportation de catalogue
-
-Après l’installation [!DNL Catalog Service], vous devez configurer la variable [Connecteur Commerce Services](../landing/saas.md) en spécifiant les clés d’API et en sélectionnant un espace de données SaaS.
-
-Pour vous assurer que l’exportation du catalogue s’exécute correctement :
-
-- Confirmez que [tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) sont en cours d’exécution.
-- Vérifiez les [indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sont en cours d’exécution.
-- Assurez-vous que la variable `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, et `Product Variant Feed` les indexeurs sont définis sur `Update by Schedule`.
+Après l’exécution de cette commande, le service de catalogue doit s’exécuter par le biais du maillage API. Vous pouvez exécuter la variable `aio api-mesh:get` pour afficher la configuration de votre impression mise à jour.
 
 ## [!DNL Catalog Service] demo
 
