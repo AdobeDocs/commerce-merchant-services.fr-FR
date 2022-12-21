@@ -1,10 +1,10 @@
 ---
 title: '''[!DNL Catalog Service] Présentation du guide'
-description: '''[!DNL Catalog Service for Adobe Commerce] fournit un moyen de récupérer le contenu des pages d’affichage de produit et des pages de liste de produits plus rapidement que les requêtes Adobe Commerce GraphQL natives."'
+description: '''[!DNL Catalog Service for Adobe Commerce] fournit un moyen de récupérer le contenu des pages d’affichage de produit et des pages de liste de produits plus rapidement que les requêtes GraphQL natives d’Adobe Commerce."'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,12 @@ Ce guide est destiné aux administrateurs d’Adobe [!DNL Commerce]. Il contient
 | [Guide de l’utilisateur d’Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
 | [Guide du développeur d’Adobe Commerce 2.4](https://devdocs.magento.com/) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source |
 
-## Obtenir de l’aide
+## Assistance
 
-Le processus d’intégration est conçu pour vous guider tout au long des étapes nécessaires à la configuration et à l’activation de la variable [!DNL Catalog Service] . Contactez l’équipe d’ingénieurs Adobe Commerce dans la [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) canal du Slack public pour obtenir de l’aide.
+Le [processus d’intégration](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) est conçu pour vous guider tout au long des étapes requises pour configurer et activer la variable [!DNL Catalog Service] .
+
+Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
+
+* [Centre d’aide](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy) - Voir les articles sur la résolution des problèmes liés au service de catalogue .
+* [tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - Envoyez un ticket pour recevoir une aide supplémentaire.
+* Rejoignez l’équipe d’ingénierie d’Adobe Commerce et les utilisateurs des services de storefront SaaS dans la section [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) canal de Slack public à jour.
