@@ -2,10 +2,10 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
+source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 0%
+source-wordcount: '1373'
+ht-degree: 1%
 
 ---
 
@@ -52,6 +52,14 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
 
 +++
+
+## v1.5.2
+
+_22 décembre 2022_
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3992 --> Amélioration de la facturation dans les services de paiement en cas de refus d’un mode de paiement.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3999 --> Les services de paiement affichent désormais correctement les boutons intelligents PayPal avec [Déclenchement du passage en caisse](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} modèle personnalisé pour la page de passage en caisse.
 
 ## v1.5.1
 
