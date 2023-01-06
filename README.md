@@ -1,7 +1,7 @@
 ---
-source-git-commit: f03ca23f659d08d48715a4bd9d4d32a53c4a3a95
+source-git-commit: 19ba315a72f90be7c2177a783067c6a09d5bf767
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '426'
 ht-degree: 6%
 
 ---
@@ -15,13 +15,13 @@ Ce projet respecte le [Code de conduite d’Adobe Open Source](code-of-conduct.m
 
 ## À propos de vos contributions pour Adobe du contenu
 
-Voir [Guide du contributeur de documents d’Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Voir [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Votre contribution dépend de qui vous êtes et du type de modifications que vous souhaitez apporter :
 
 ### Modifications mineures
 
-Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur le bouton **Modifier** lien dans l’article qui accède à la source GitHub de l’article. Ensuite, utilisez simplement l’interface utilisateur GitHub pour effectuer vos mises à jour. Voir le [Guide du contributeur pour Adobe Docs](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) pour plus d’informations.
+Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur le bouton **Modifier** lien dans l’article qui accède à la source GitHub de l’article. Ensuite, utilisez simplement l’interface utilisateur GitHub pour effectuer vos mises à jour. Voir le [Guide du contributeur pour Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) pour plus d’informations.
 
 Les corrections mineures ou les clarifications que vous envoyez pour la documentation et les exemples de code dans ce référentiel sont couvertes par les conditions d’utilisation Adobe.
 
@@ -43,7 +43,7 @@ Si vous êtes rédacteur technique, chef de programme ou développeur de l’éq
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur GitHub pour effectuer des modifications de base ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Voir [Guide du contributeur de documents d’Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) pour plus d’informations.
+Voir [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) pour plus d’informations.
 
 ## Utilisation de Markdown pour formater votre rubrique
 
