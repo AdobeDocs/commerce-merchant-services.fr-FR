@@ -2,9 +2,9 @@
 title: Configuration de l’environnement de test
 description: Utilisez un compte sandbox PayPal à utiliser [!DNL Payment Services] en mode test.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Un compte sandbox PayPal vous permet d’utiliser des [!DNL Payment Services] en
 Pour finaliser l’intégration des environnements de test :
 
 1. Accédez au [Page Compte de développeur PayPal](https://developer.paypal.com/developer/accounts/).
-1. Cliquez sur **[!UICONTROL Log in to Home]** et connectez-vous à l’aide de votre compte de test d’environnement de test Business Developer généré par le portail PayPal existant, ou cliquez sur **S’inscrire** pour créer un compte.
+1. Cliquez sur **[!UICONTROL Log in to Dashboard]** et connectez-vous à l’aide de votre compte de test d’environnement de test Business Developer généré par le portail PayPal existant, ou cliquez sur **S’inscrire** pour créer un compte.
 1. Créez un compte sandbox PayPal :
-   1. Accédez à _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
+   1. Accédez à _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. Cliquez sur **[!UICONTROL Create account]**.
 
       Si vous avez créé un compte sandbox PayPal pendant le processus d’intégration de l’environnement de test PayPal, vous devez [réinitialisation de votre environnement de test d’intégration](#reset-your-sandbox-account) car ou vous ne pouvez pas vérifier votre email.

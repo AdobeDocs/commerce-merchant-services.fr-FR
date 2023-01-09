@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
+source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ _22 décembre 2022_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3992 --> Amélioration de la facturation dans les services de paiement en cas de refus d’un mode de paiement.
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3999 --> Les services de paiement affichent désormais correctement les boutons intelligents PayPal avec [Déclenchement du passage en caisse](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} modèle personnalisé pour la page de passage en caisse.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3999 --> Les services de paiement affichent désormais correctement les boutons intelligents PayPal pour les marchands qui utilisent [Déclenchement du passage en caisse](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} modèle personnalisé pour la page de passage en caisse. Auparavant, le minicart affichait par intermittence les boutons.
 
 ## v1.5.1
 
