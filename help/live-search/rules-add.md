@@ -2,9 +2,9 @@
 title: "Ajouter des règles"
 description: "Découvrez comment créer [!DNL Live Search] règles."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Ensuite, saisissez le *Position* où le produit épinglé doit apparaître. Le p
 
 Les informations saisies ici apparaissent dans le [Détails de la règle](rules-workspace.md) du panneau.
 
-1. Sous *Détails*, saisissez une **Nom** pour la règle.
+1. Sous *Détails*, saisissez une **Nom** pour la règle. Tous les noms de règle doivent être uniques.
 1. Entrez un résumé **Description** de la règle.
 1. Saisissez le **Date de début** et **Date de fin** pour que la règle soit principale ou sélectionnez les dates du calendrier.
 
@@ -154,7 +154,7 @@ Les informations saisies ici apparaissent dans le [Détails de la règle](rules-
 
 | Champ | Description |
 |--- |--- |
-| Nom | Nom de la règle. |
+| Nom | Nom de la règle. Les noms des règles doivent être uniques. |
 | Date de début | Date de début de la règle, le cas échéant. |
 | Date de fin | Date de fin de la règle, le cas échéant. |
 | Description | Brève description de la règle. |
