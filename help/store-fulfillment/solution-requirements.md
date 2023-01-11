@@ -4,9 +4,9 @@ description: Conditions requises pour la configuration et l’intégration de la
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -22,19 +22,19 @@ Le [!DNL Store Fulfillment] La solution est disponible pour les clients Adobe Co
 - Adobe Commerce sur l’infrastructure cloud (ECE)
 - Adobe Commerce On-Premise (EE)
 
-La solution Store Fulfillment est compatible avec les versions logicielles suivantes.
+La solution Store Fulfillment est compatible avec les versions logicielles répertoriées dans la section *Compatibilité logicielle* table.
 
 **Compatibilité logicielle**
 
 | **Logiciels** | **Version minimale** | **Version maximale** |
 |----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
+| Adobe Commerce | 2.4.0 | 2.4.5 |
 | Compositeur | 1.x | 2.x |
 | MariaDB | 10.2 | 10.4 |
-| MySQL | 5,7 | 8,0 |
-| PHP | 7,4 | 8.1 |
+| MySQL | 5.7 | 8.0 |
+| PHP | 7.4 | 8.1 |
 
-Pour connaître les exigences détaillées, consultez Adobe Commerce [Configuration requise](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) dans la documentation destinée aux développeurs.
+Pour connaître les exigences détaillées, consultez Adobe Commerce [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le *Guide d’installation d’Adobe Commerce*.
 
 ## Exigences de l’application d’assistance à la boutique
 
@@ -52,7 +52,7 @@ Le processus de bout en bout de gestion des commandes de saut de magasin est gé
 
 ## Exigences commerciales
 
-Votre entreprise doit satisfaire aux critères minimaux suivants pour mettre en oeuvre la solution d’exécution de magasin.
+Votre entreprise doit satisfaire aux critères minimaux suivants pour mettre en oeuvre la solution d’exécution de magasin :
 
 - Entreprises basées aux États-Unis uniquement
 
