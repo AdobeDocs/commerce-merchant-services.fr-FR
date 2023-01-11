@@ -2,9 +2,9 @@
 title: Headless
 description: Découvrez comment intégrer [!DNL Product Recommendations] dans une vitrine sans tête.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vous pouvez intégrer des [!DNL Product Recommendations] dans une vitrine sans interface utilisant soit [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) ou une technologie front-end personnalisée, telle que React ou Vue JS.
 
-[!DNL Product Recommendations] require [données comportementales et catalogues](https://devdocs.magento.com/recommendations/product-recs.html#typesofdata) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une mise en oeuvre sans interface utilisateur, mais des modifications sont nécessaires pour la collecte de données comportementales.
+[!DNL Product Recommendations] require [données comportementales et catalogues](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une mise en oeuvre sans interface utilisateur, mais des modifications sont nécessaires pour la collecte de données comportementales.
 
 Pour intégrer [!DNL Product Recommendations] dans une vitrine sans interface, vous devez :
 
@@ -25,7 +25,7 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
 
 1. [Installer](install-configure.md) la valeur [!DNL Product Recommendations] module .
 
-1. Installez et utilisez la méthode [SDK d’événement Adobe Commerce Storefront](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) pour déclencher la variable [événements comportementaux](https://devdocs.magento.com/recommendations/events.html).
+1. Installez et utilisez la méthode [SDK d’événement Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) pour déclencher la variable [événements comportementaux](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
    Le nombre minimum d’événements requis à renvoyer [!DNL Product Recommendations] résultats :
 
@@ -44,8 +44,8 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
    | `rec-click` | recommendation-unit |
    | `rec-add-to-cart-click` | unité-recommandation (si un bouton d’ajout au panier est présent dans le modèle de recommandations) |
 
-1. Lorsque les événements sont déclenchés, utilisez la variable [Collecteur d’événements Adobe Commerce Storefront](https://devdocs.magento.com/shared-services/storefront-event-collector.html) pour gérer les événements et les envoyer à Adobe Sensei.
+1. Lorsque les événements sont déclenchés, utilisez la variable [Collecteur d’événements Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) pour gérer les événements et les envoyer à Adobe Sensei.
 
 1. Une fois les données comportementales collectées, vous pouvez [create](create.md) [!DNL Product Recommendations] dans Admin.
 
-1. Utilisez la variable [SDK Recommendations](https://devdocs.magento.com/recommendations/recs-api.html) pour récupérer les unités de recommandations sur le storefront. Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.
+1. Utilisez la variable [SDK Recommendations](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandations sur le storefront. Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.

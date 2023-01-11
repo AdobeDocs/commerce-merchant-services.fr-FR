@@ -2,7 +2,7 @@
 title: Intégration et installation
 description: Découvrez comment installer [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Vous pouvez installer le [!DNL Catalog Service] extension pour Adobe Commerce su
 
 Le [!DNL Catalog Service] est installé avec les clés du compositeur, liées au compte Commerce ; [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) fourni dans le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale de [!DNL Adobe Commerce], ou dans les cas où les clés du compositeur n’ont pas été précédemment enregistrées dans la variable `auth.json` fichier .
 
-Voir [Obtention des clés d’authentification](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) pour plus d’informations sur l’obtention des clés du compositeur.
+Voir [Obtention des clés d’authentification](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) pour plus d’informations sur l’obtention des clés du compositeur.
 
 ### Adobe Commerce sur l’infrastructure cloud
 

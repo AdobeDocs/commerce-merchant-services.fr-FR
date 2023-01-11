@@ -1,9 +1,10 @@
 ---
 title: Placement et libellés
 description: Découvrez où placer des recommandations sur différentes pages de votre site et des suggestions pour les étiquettes fréquemment utilisées pour chaque type de recommandation.
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+exl-id: e1025138-49dc-4833-92bb-27e8e415d724
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ Le tableau suivant répertorie les pages de storefront où vous pouvez placer de
 | Détails du produit | Au bas du contenu principal (par défaut) | Le plus consulté<br>Le plus acheté<br>Les plus ajoutés au panier<br>A consulté ceci, consulté cela<br>Consulté ceci, acheté cela<br>Acheté ceci, acheté cela<br>Plus comme suit<br>Tendance<br>similarité visuelle |
 | Panier | Au bas du contenu principal (par défaut) | Le plus consulté<br>Le plus acheté<br>Les plus ajoutés au panier<br>A consulté ceci, consulté cela<br>Consulté ceci, acheté cela<br>Acheté ceci, acheté cela<br>Plus comme suit<br>Tendance |
 | Confirmation | Au bas du contenu principal (par défaut) | Le plus consulté<br>Le plus acheté<br>Les plus ajoutés au panier<br>A consulté ceci, consulté cela<br>Consulté ceci, acheté cela<br>Acheté ceci, acheté cela<br>Plus comme suit<br>Tendance |
-| Page Builder | [Glisser-déposer](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html#add-an-existing-recommendation-unit) pour positionner le type de contenu | Le plus consulté<br>Le plus acheté<br>Les plus ajoutés au panier<br>Recommandé pour vous<br>Tendance |
+| Page Builder | [Glisser-déposer](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) pour positionner le type de contenu | Le plus consulté<br>Le plus acheté<br>Les plus ajoutés au panier<br>Recommandé pour vous<br>Tendance |

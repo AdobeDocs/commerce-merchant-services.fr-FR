@@ -2,9 +2,9 @@
 title: Workspace
 description: L’espace de travail Recherche en direct est utilisé pour configurer, gérer et surveiller les performances de recherche.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ L’espace de travail vous permet de configurer, de gérer et de surveiller les 
 
 ## Définir la portée
 
-Initialement, la variable [scope](https://docs.magento.com/user-guide/configuration/scope.html) de tous [!DNL Live Search] est défini sur `Default Store View`. Si votre [!DNL Commerce] l’installation comprend plusieurs vues de magasin, définies **Portée** au [vue de magasin](https://docs.magento.com/user-guide/stores/websites-stores-views.html) où s’appliquent vos paramètres de facette.
+Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) de tous [!DNL Live Search] est défini sur `Default Store View`. Si votre [!DNL Commerce] l’installation comprend plusieurs vues de magasin, définies **Portée** au [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) où s’appliquent vos paramètres de facette.
 
 ## Options de menu
 

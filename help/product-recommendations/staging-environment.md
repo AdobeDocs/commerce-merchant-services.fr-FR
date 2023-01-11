@@ -1,9 +1,10 @@
 ---
 title: Test dans l’environnement d’évaluation
 description: Découvrez comment utiliser [!DNL Product Recommendations] de votre environnement de production dans votre environnement d’évaluation à des fins de test.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Pour récupérer les recommandations de votre environnement de production, vous 
 
 1. Déployez la variable `magento/product-recommendations` dans un environnement hors production où les données du catalogue sont similaires à votre catalogue de production.
 
-1. Utilisez l’un des identifiants d’espace de données hors production pour [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html) dans Admin.
+1. Utilisez l’un des identifiants d’espace de données hors production pour [configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) dans Admin.
 
 1. Générez vous-même les données en cliquant autour de votre vitrine pour imiter le comportement des acheteurs réels (ou créez un script d’automatisation). Grâce à vos tests, vous générez des événements comportementaux sur votre environnement hors production. Ces événements sont utilisés pour produire les affinités produit qui alimentent les recommandations. Pour les tests, [!DNL Commerce] suggère que vous interagissiez avec les types de recommandations suivants :
 

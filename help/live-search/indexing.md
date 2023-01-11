@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexation"
 description: "Découvrez comment [!DNL Live Search] indexe les propriétés d’attribut de produit."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Les propriétés d’attribut de produit (métadonnées) déterminent :
 
 La portée des métadonnées d’attribut est la suivante : `website/store/store view`.
 
-Le [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit qui possède la variable [storefront, propriété](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` défini sur `Yes` dans l’administrateur Adobe Commerce. Lorsqu’elle est activée, `Search Weight` et `Visible in Advanced Search` peut être défini pour l’attribut .
+Le [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit qui possède la variable [storefront, propriété](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` défini sur `Yes` dans l’administrateur Adobe Commerce. Lorsqu’elle est activée, `Search Weight` et `Visible in Advanced Search` peut être défini pour l’attribut .
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Workflow de mise à jour en flux continu :
 
 ## Recherche de client
 
-Le [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit triable en définissant la variable [storefront, propriété](https://docs.magento.com/user-guide/catalog/product-attributes.html), *Utilisé pour le tri dans les listes de produits* to `Yes`. En fonction du thème, ce paramètre entraîne l’inclusion de l’attribut comme option dans la variable [Tri par](https://docs.magento.com/user-guide/catalog/navigation.html) contrôle de pagination sur les pages du catalogue. Jusqu’à 300 attributs de produit peuvent être indexés par [!DNL Live Search], avec [propriétés storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) qui peuvent faire l’objet de recherches et être filtrées.
+Le [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit triable en définissant la variable [storefront, propriété](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Utilisé pour le tri dans les listes de produits* to `Yes`. En fonction du thème, ce paramètre entraîne l’inclusion de l’attribut comme option dans la variable [Tri par](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) contrôle de pagination sur les pages du catalogue. Jusqu’à 300 attributs de produit peuvent être indexés par [!DNL Live Search], avec [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) qui peuvent faire l’objet de recherches et être filtrées.
 Les métadonnées d’index sont stockées dans le pipeline d’indexation et sont accessibles par le service de recherche.
 
 ![[!DNL Live Search] diagramme de l’API des métadonnées d’index](assets/index-metadata-api.svg)

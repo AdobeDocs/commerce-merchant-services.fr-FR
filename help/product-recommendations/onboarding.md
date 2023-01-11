@@ -2,9 +2,9 @@
 title: Intégration
 description: Découvrez les exigences et les plateformes prises en charge dans [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,4 @@ Le processus d’intégration pour [!DNL Product Recommendations] requiert l’a
 
 ### Prise en charge B2B {#b2bsupport}
 
-Les vitrines B2B nécessitent souvent une logique complexe qui détermine la visibilité et la tarification des produits pour chaque acheteur ou groupe de clients. [!DNL Product Recommendations] now [support](release-notes.md) cette fonctionnalité en respectant [permissions de catégorie](https://docs.magento.com/user-guide/catalog/category-permissions.html), [catalogues partagés](https://docs.magento.com/user-guide/catalog/catalog-shared.html), et [tarification spécifique au groupe de clients](https://docs.magento.com/user-guide/catalog/pricing-advanced.html). Par exemple, si vous avez masqué certaines catégories de votre segment de client au détail, un acheteur de ce segment n’affichera pas les recommandations pour les produits de ces catégories. En outre, lorsque vous définissez un catalogue partagé pour des groupes de clients et des entreprises spécifiques, ces acheteurs ne voient des recommandations que pour les produits auxquels ils ont accès. Tous les produits recommandés reflètent un prix spécifique au groupe de clients correct en fonction du groupe de clients de chaque acheteur.
+Les vitrines B2B nécessitent souvent une logique complexe qui détermine la visibilité et la tarification des produits pour chaque acheteur ou groupe de clients. [!DNL Product Recommendations] now [support](release-notes.md) cette fonctionnalité en respectant [permissions de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catalogues partagés](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), et [tarification spécifique au groupe de clients](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Par exemple, si vous avez masqué certaines catégories de votre segment de client au détail, un acheteur de ce segment n’affichera pas les recommandations pour les produits de ces catégories. En outre, lorsque vous définissez un catalogue partagé pour des groupes de clients et des entreprises spécifiques, ces acheteurs ne voient des recommandations que pour les produits auxquels ils ont accès. Tous les produits recommandés reflètent un prix spécifique au groupe de clients correct en fonction du groupe de clients de chaque acheteur.

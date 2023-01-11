@@ -2,9 +2,9 @@
 title: Workspace
 description: Découvrez comment configurer, gérer et surveiller les performances des recommandations de produits.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ _Espace de travail Recommendations_
 
 ## Définir la portée
 
-Initialement, la variable [scope](https://docs.magento.com/user-guide/stores/websites-stores-views.html) de tous les paramètres de recommandation définis sur `Default Store View`. Si votre installation Commerce comprend plusieurs vues de magasin, définissez **Portée** au [vue de magasin](https://docs.magento.com/user-guide/configuration/scope.html) où s’appliquent vos recommandations.
+Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de tous les paramètres de recommandation définis sur `Default Store View`. Si votre installation Commerce comprend plusieurs vues de magasin, définissez **Portée** au [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où s’appliquent vos recommandations.
 
 ## Définition de la période des mesures
 

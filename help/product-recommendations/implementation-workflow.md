@@ -1,9 +1,10 @@
 ---
 title: Workflow de mise en oeuvre
 description: Découvrez les étapes à suivre pour implémenter avec succès [!DNL Product Recommendations] sur votre vitrine.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 766e1191-0330-4515-9331-e45318539dc9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Lorsque vous installez le `magento/product-recommendations module`, Adobe Sensei
 
    Déploiement [!DNL Product Recommendations] requiert deux éléments principaux [sources de données](type.md): catalogue et comportement. La production étant le seul environnement dans lequel les actions de vos acheteurs sont capturées et analysées, il est dans votre intérêt de commencer dès que possible la collecte de données en production. [En savoir plus](behavioral-data.md) la manière dont Adobe Sensei entraîne des modèles d’apprentissage automatique qui génèrent des recommandations de meilleure qualité. En outre, lorsque vous commencez à collecter des données comportementales sur la production, vous pouvez [récupérer les recommandations](verify.md) sur la base de ces données de production lors de l’exploitation dans des environnements hors production. Vous pouvez ensuite tester et tester différentes recommandations calculées à partir de données réelles d’acheteurs collectées en production.
 
-   Pour déployer la collecte de données en production, vous devez [installation et configuration](install-configure.md) la valeur [!DNL Product Recommendations] en fournissant un module [Clé API](https://docs.magento.com/user-guide/system/saas.html#apikey).
+   Pour déployer la collecte de données en production, vous devez [installation et configuration](install-configure.md) la valeur [!DNL Product Recommendations] en fournissant un module [Clé API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -42,7 +43,7 @@ Lorsque vous installez le `magento/product-recommendations module`, Adobe Sensei
    >
    > En personnalisant le modèle, vous pouvez spécifier votre feuille de style, remplacer l’emplacement d’affichage d’une unité de recommandation sur une page, etc.
 
-   Voir [Personnaliser](https://devdocs.magento.com/recommendations/customize.html) dans la documentation destinée aux développeurs pour savoir comment effectuer cette étape.
+   Voir [Personnaliser](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) dans la documentation destinée aux développeurs pour savoir comment effectuer cette étape.
 
 1. **Test de recommandations sur votre environnement hors production**
 

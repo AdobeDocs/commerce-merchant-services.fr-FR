@@ -2,9 +2,9 @@
 title: "Présentation de l’intégration"
 description: "[!DNL Live Search] flux d’intégration, exigences du système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Pour commencer à utiliser [!DNL Live Search] pour Adobe Commerce, exécutez le 
 ### Requête
 
 * [!DNL Live Search] n’a pas accès à la taxonomie complète de l’arborescence des catégories, ce qui rend certains scénarios de recherche de navigation par couches hors de sa portée.
-* [!DNL Live Search] utilise un point d’entrée GraphQL unique pour les requêtes afin de prendre en charge des fonctionnalités telles que les facettes intelligentes et la recherche par saisie. Bien que similaire au [API GraphQL du Magento](https://developer.adobe.com/commerce/webapi/graphql/), il existe quelques différences et certains champs peuvent ne pas être entièrement compatibles à l’heure actuelle.
+* [!DNL Live Search] utilise un point de terminaison GraphQL unique pour les requêtes afin de prendre en charge des fonctionnalités telles que les facettes intelligentes et la recherche par saisie. Bien que similaire au [API Magento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/), il existe quelques différences et certains champs peuvent ne pas être entièrement compatibles à l’heure actuelle.
 
 ### Règles
 
@@ -56,12 +56,12 @@ Pour commencer à utiliser [!DNL Live Search] pour Adobe Commerce, exécutez le 
 ### Version bêta de PWA
 
 * La mise en oeuvre bêta actuelle du PWA de la recherche en direct nécessite plus de temps de traitement pour renvoyer les résultats de recherche que la recherche en direct avec le storefront Commerce natif.
-* La version bêta de PWA pour [!DNL Live Search] ne prend pas en charge [gestion des événements](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
-* Les attributs de produit suivants ne sont pas pris en charge par GraphQL lorsqu’ils sont utilisés en relation avec la version bêta de [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
+* La version bêta de PWA pour [!DNL Live Search] ne prend pas en charge [gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* Les attributs de produit suivants ne sont pas pris en charge par GraphQL lorsqu’ils sont utilisés par rapport à la version bêta de [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### Non pris en charge pour le moment
 
-* Le [Recherche avancée](https://docs.magento.com/user-guide/catalog/search-advanced.html) module est désactivé lorsque [!DNL Live Search] est installé et le lien Recherche avancée dans le pied de page du storefront est supprimé.
-* [Groupes de prix personnalisés](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* Plusieurs emplacements d’inventaire utilisés par [MCOM](https://docs.magento.com/user-guide/mcom.html) ou d’autres extensions OMS
-* Les prix des produits ne sont pas inclus [taxe sur la valeur ajoutée](https://docs.magento.com/user-guide/tax/vat.html) (TVA).
+* Le [Recherche avancée](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module est désactivé lorsque [!DNL Live Search] est installé et le lien Recherche avancée dans le pied de page du storefront est supprimé.
+* [Groupes de prix personnalisés](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-group.html)
+* Plusieurs emplacements d’inventaire utilisés par [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) ou d’autres extensions OMS
+* Les prix des produits ne sont pas inclus [taxe sur la valeur ajoutée](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (TVA).

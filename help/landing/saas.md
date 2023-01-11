@@ -2,16 +2,16 @@
 title: Connecteur Commerce Services
 description: Découvrez comment intégrer votre instance Adobe Commerce ou Magento Open Source aux services à l’aide des clés d’API de production et d’environnement de test.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 1e85c4daf0967bf6cec538fca55e2a206d15f732
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Certaines fonctionnalités Adobe Commerce et Magento Open Source sont optimisées par [!DNL Commerce Services]  et déployé en tant que SaaS (logiciel en tant que service). Pour utiliser ces services, vous devez connecter votre [!DNL Commerce] à l’aide des clés d’API de production et d’environnement de test, et spécifiez l’espace de données dans la variable [configuration](https://docs.magento.com/user-guide/configuration/services/saas.html). Vous n’avez besoin de le configurer qu’une seule fois.
+Certaines fonctionnalités Adobe Commerce et Magento Open Source sont optimisées par [!DNL Commerce Services]  et déployé en tant que SaaS (logiciel en tant que service). Pour utiliser ces services, vous devez connecter votre [!DNL Commerce] à l’aide des clés d’API de production et d’environnement de test, et spécifiez l’espace de données dans la variable [configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Vous n’avez besoin de le configurer qu’une seule fois.
 
 ## Services disponibles {#availableservices}
 

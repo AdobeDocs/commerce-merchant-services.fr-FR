@@ -1,10 +1,10 @@
 ---
-title: '"Types de synchronisation"'
-description: '"A sens unique et à sens unique [!DNL Live Search] les synonymes étendent la définition des mots-clés."'
+title: "Types de synchronisation"
+description: "A sens unique et à sens unique [!DNL Live Search] les synonymes étendent la définition des mots-clés."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ Soyez cohérent avec la manière dont la terminologie est utilisée dans votre c
 
 ### Mappage des mots-clés
 
-Cette technique utilise des attributs de produit pouvant faire l’objet de recherches, plutôt que des synonymes, pour créer des associations basées sur des mots-clés entre les produits. Par conséquent, un produit mappé peut apparaître dans les résultats de recherche d’un autre produit. Pour en savoir plus, voir [Résultats de la recherche](https://docs.magento.com/user-guide/catalog/search-results.html).
+Cette technique utilise des attributs de produit pouvant faire l’objet de recherches, plutôt que des synonymes, pour créer des associations basées sur des mots-clés entre les produits. Par conséquent, un produit mappé peut apparaître dans les résultats de recherche d’un autre produit. Pour en savoir plus, voir [Résultats de la recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).

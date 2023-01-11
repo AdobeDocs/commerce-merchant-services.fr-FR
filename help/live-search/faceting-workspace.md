@@ -1,10 +1,10 @@
 ---
-title: '"Facting Workspace"'
-description: '"Découvrez comment contourner le problème [!DNL Live Search] faceting workspace."'
+title: "Facting Workspace"
+description: "Découvrez comment contourner le problème [!DNL Live Search] faceting workspace."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Le [!DNL Live Search] workspace répertorie toutes les facettes actuellement dis
 
 ## Définir la portée
 
-Si votre installation Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** au [vue de magasin](https://docs.magento.com/user-guide/configuration/scope.html) où s’appliquent vos paramètres de facette.
+Si votre installation Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** au [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où s’appliquent vos paramètres de facette.
 
 ## Filtrer la liste
 

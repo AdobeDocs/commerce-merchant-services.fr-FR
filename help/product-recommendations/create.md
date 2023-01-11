@@ -2,9 +2,9 @@
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
 1. Sur le _Administration_ barre latérale, accédez à **Marketing** > _Promotions_ > **Recommendations de produit** pour afficher la variable _Recommendations de produit_ workspace.
 
-1. Spécifiez la variable [Affichage en magasin](https://docs.magento.com/user-guide/configuration/scope.html) où afficher les recommandations.
+1. Spécifiez la variable [Affichage en magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où afficher les recommandations.
 
    >[!NOTE]
    >
-   > Les unités de recommandations du Créateur de pages peuvent uniquement être créées pour la vue de magasin par défaut. Pour en savoir plus sur la création de recommandations de produits avec le générateur de pages, voir [Ajouter du contenu - Recommendations de produit](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > Les unités de recommandations du Créateur de pages peuvent uniquement être créées pour la vue de magasin par défaut. Pour en savoir plus sur la création de recommandations de produits avec le générateur de pages, voir [Ajouter du contenu - Recommendations de produit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Cliquez sur **Créer une recommandation**.
 
@@ -37,7 +37,7 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
    - Détails du produit
    - Panier
    - Confirmation
-   - [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Vous pouvez créer jusqu’à cinq unités de recommandations principales pour chaque type de page et jusqu’à 25 unités pour le créateur de pages. Le type de page est grisé Lorsque la limite est atteinte.
 

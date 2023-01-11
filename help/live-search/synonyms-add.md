@@ -1,10 +1,10 @@
 ---
-title: '"Add Synonyms"'
-description: '"Ajouter [!DNL Live Search] synonymes pour améliorer la réponse aux requêtes de recherche."'
+title: "Add Synonyms"
+description: "Ajouter [!DNL Live Search] synonymes pour améliorer la réponse aux requêtes de recherche."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Augmentez l’engagement des clients en ajoutant votre propre liste organisée d
 ## Étape 1 : Ajouter un synonyme
 
 1. Dans Admin, accédez à **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Pour plusieurs magasins, définissez **Portée** au [vue de magasin](https://docs.magento.com/user-guide/configuration/scope.html) où les paramètres de synonyme s’appliquent.
+1. Pour plusieurs magasins, définissez **Portée** au [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où les paramètres de synonyme s’appliquent.
 1. Cliquez sur le bouton **Synonymes** .
 1. Cliquez sur le bouton **Ajouter des synonymes** bouton .
 

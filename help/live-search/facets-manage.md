@@ -2,9 +2,9 @@
 title: "Gestion des facettes"
 description: "Découvrez comment gérer les [!DNL Live Search] facettes."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Voir [Paramètres](settings.md) pour configurer des intervalles et des groupemen
 
 1. Pour modifier le libellé de la facette, effectuez l’une des opérations suivantes :
 
-   * Pour un [!DNL Commerce] storefront, modifiez la variable [label](https://docs.magento.com/user-guide/stores/attributes-product.html).
+   * Pour un [!DNL Commerce] storefront, modifiez la variable [label](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Pour une mise en oeuvre sans interface utilisateur graphique, cliquez sur la valeur de la première colonne et modifiez le texte selon vos besoins.
 
    ![Modifier le libellé](assets/facet-edit-label.png)

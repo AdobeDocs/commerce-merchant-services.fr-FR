@@ -1,10 +1,10 @@
 ---
-title: '"Types de facettes"'
-description: '"[!DNL Live Search] les facettes sont dynamiques et apparaissent dans la liste Filtres lorsque cela est pertinent."'
+title: "Types de facettes"
+description: "[!DNL Live Search] les facettes sont dynamiques et apparaissent dans la liste Filtres lorsque cela est pertinent."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Au moment de la requête, [!DNL Live Search] génère les résultats de recherch
 
 Facettes rendues pour la variable [!DNL Commerce] storefront est traité par l’adaptateur de recherche, qui achemine les requêtes et effectue le rendu des résultats dans le storefront. Tous [!DNL Commerce] les facettes storefront sont triées par ordre alphabétique avec des options à sélection unique, quel que soit le type d’entrée affecté à l’attribut correspondant. Les facettes disponibles dans le storefront sont rendues en fonction du thème actuel et reflètent toutes les personnalisations apportées à la présentation de la navigation par couches.
 
-En revanche, [headless](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/webapi-vision.html) Les implémentations sont traitées par l’API et prennent en charge des options supplémentaires. Les facettes sans affichage peuvent être triées par ordre alphabétique ou par nombre et peuvent comporter des options à sélection simple ou multiple.
+En revanche, [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) Les implémentations sont traitées par l’API et prennent en charge des options supplémentaires. Les facettes sans affichage peuvent être triées par ordre alphabétique ou par nombre et peuvent comporter des options à sélection simple ou multiple.
 
 ### Sélectionner un type
 
@@ -42,7 +42,7 @@ Pour les implémentations sans interface utilisateur graphique, les facettes peu
 
 ### Étiquettes de facettes
 
-Pour [!DNL Commerce] storefronts, l’étiquette de la facette est déterminée par [*Propriétés d’attribut*](https://docs.magento.com/user-guide/stores/attribute-product-create.html). Pour les magasins avec plusieurs vues, des libellés supplémentaires peuvent être définis sous *Gestion des étiquettes*. Pour les implémentations sans interface utilisateur, les libellés sont modifiés à partir de la fonction [espace de travail facetting](faceting-workspace.md).
+Pour [!DNL Commerce] storefronts, l’étiquette de la facette est déterminée par [*Propriétés d’attribut*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Pour les magasins avec plusieurs vues, des libellés supplémentaires peuvent être définis sous *Gestion des étiquettes*. Pour les implémentations sans interface utilisateur, les libellés sont modifiés à partir de la fonction [espace de travail facetting](faceting-workspace.md).
 
 ### Type de tri
 

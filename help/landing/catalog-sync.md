@@ -2,16 +2,16 @@
 title: Synchronisation du catalogue
 description: Découvrez comment exporter des données de produit à partir du [!DNL Commerce] serveur à [!DNL Commerce Services] afin de maintenir les services à jour.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Synchronisation du catalogue
 
-Adobe Commerce et Magento Open Source utilisent des indexeurs pour compiler des données de catalogue dans des tables. Le processus est automatiquement déclenché par [events](https://docs.magento.com/user-guide/system/index-management-events.html) comme une modification du prix d’un produit ou du niveau de stock.
+Adobe Commerce et Magento Open Source utilisent des indexeurs pour compiler des données de catalogue dans des tables. Le processus est automatiquement déclenché par [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) comme une modification du prix d’un produit ou du niveau de stock.
 
 Le processus de synchronisation du catalogue s’exécute toutes les heures pour permettre [!DNL Commerce] services pour utiliser les données de catalogue. La synchronisation du catalogue exporte les données de produit à partir de [!DNL Commerce] serveur à [!DNL Commerce] services de façon continue afin de maintenir les services à jour. Par exemple : [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) nécessite des informations de catalogue actuelles pour renvoyer avec précision des recommandations avec les noms, les tarifs et la disponibilité corrects. Vous pouvez utiliser la variable _Synchronisation du catalogue_ tableau de bord pour observer et gérer le processus de synchronisation ou l’ [interface de ligne de commande](#resynccmdline) pour déclencher la synchronisation du catalogue et réindexer les données de produit pour les utiliser par [!DNL Commerce] services.
 

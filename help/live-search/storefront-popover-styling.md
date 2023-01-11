@@ -2,9 +2,9 @@
 title: "Style [!DNL Popover] Elements"
 description: "Notes techniques sur la personnalisation de la variable [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Le composant parent du `.livesearch.popover-container` is `.search-autocomplete`
 .search-autocomplete          /* not visible */
 ```
 
-Pour plus d’informations sur le style des éléments storefront, reportez-vous à la section [Feuilles de style en cascade (CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) dans le [Guide du développeur de Frontend](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+Pour plus d’informations sur le style des éléments storefront, reportez-vous à la section [Feuilles de style en cascade (CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) dans le [Guide du développeur de Frontend](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## Sélecteurs de classe
 
@@ -75,7 +75,7 @@ Les sélecteurs de classe suivants peuvent être utilisés pour mettre en forme 
 
 ## Utilisation d’un thème modifié {#working-with-modified-theme}
 
-Le [!DNL storefront popover] peut être utilisé avec une [thème](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) qui hérite des fichiers requis de *Luma*. Le `top.search` dans le `header-wrapper` de `Magento_Search` ne doit pas être modifié.
+Le [!DNL storefront popover] peut être utilisé avec une [thème](https://developer.adobe.com/commerce/frontend-core/guide/themes/) qui hérite des fichiers requis de *Luma*. Le `top.search` dans le `header-wrapper` de `Magento_Search` ne doit pas être modifié.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -89,7 +89,7 @@ Le [!DNL storefront popover] peut être utilisé avec une [thème](https://devdo
 
 ## Désactivation de la variable [!DNL popover]
 
-Pour désactiver la fonction [!DNL popover] et restaurer la norme [Recherche rapide](https://docs.magento.com/user-guide/catalog/search-quick.html) , saisissez la commande suivante :
+Pour désactiver la fonction [!DNL popover] et restaurer la norme [Recherche rapide](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) , saisissez la commande suivante :
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

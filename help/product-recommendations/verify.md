@@ -2,9 +2,9 @@
 title: Vérification de la collecte des événements
 description: Découvrez comment vérifier que les données comportementales sont envoyées à Adobe Commerce.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Installez le [Extension Snowplow Analytics Debugger pour Chrome](https://chrome.
 
 1. Faites défiler l’écran vers le bas jusqu’à ce que vous voyiez **Données contextuelles _n_**. Recherchez l’instance storefront dans le **Schéma**.
 
-1. Vérifiez que la variable [ID d’espace de données SaaS](https://docs.magento.com/user-guide/configuration/services/saas.html) est définie correctement.
+1. Vérifiez que la variable [ID d’espace de données SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) est définie correctement.
 
 ![Filtre Snowpload](assets/snowplow-filter.png)
 _Filtre de transfert de neige_
@@ -62,8 +62,8 @@ _Filtre de transfert de neige_
 
 ## Vérification du déclenchement correct des événements
 
-Pour vérifier que les événements utilisés pour les mesures se déclenchent correctement, recherchez la variable `impression-render`, `view`, et `rec-click` dans le débogueur Snowplow Analytics. Voir [liste complète des événements](https://devdocs.magento.com/recommendations/events.html).
+Pour vérifier que les événements utilisés pour les mesures se déclenchent correctement, recherchez la variable `impression-render`, `view`, et `rec-click` dans le débogueur Snowplow Analytics. Voir [liste complète des événements](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> If [Mode de restriction des cookies](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) est activée, Adobe Commerce ne collecte les données comportementales que si l’acheteur a donné son consentement. Si le mode Restriction des cookies est désactivé, les données comportementales sont collectées par défaut.
+> If [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) est activée, Adobe Commerce ne collecte les données comportementales que si l’acheteur a donné son consentement. Si le mode Restriction des cookies est désactivé, les données comportementales sont collectées par défaut.
