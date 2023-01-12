@@ -4,30 +4,32 @@ description: Configuration des paramètres généraux à activer [!DNL Store Ful
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2543'
 ht-degree: 0%
 
 ---
 
 # Configuration du service et des ventes en magasin
 
-Configurer[!DNL Store Fulfillment] pour activer l’extension, spécifiez les paramètres d’extension, configurez les paramètres de sécurité pour les utilisateurs de l’application d’assistance de la boutique et définissez les options des méthodes de diffusion.
+Configurer [!DNL Store Fulfillment] de la [!DNL Commerce] L’administrateur doit activer l’extension, spécifier les paramètres d’extension, configurer les paramètres de sécurité pour les utilisateurs de l’application d’assistance de la boutique et définir les options des méthodes de diffusion.
 
 >[!IMPORTANT]
 >
 >La configuration du service d’exécution de magasin s’applique uniquement après la connexion de votre instance Adobe Commerce et de l’événement [!DNL Store Fulfillment] application. Voir [Connexion à l’exécution du magasin](connect-set-up-service.md).
 
-Configurez les paramètres des services d’exécution de magasin dans le menu Configuration de la boutique d’administration dans Adobe Commerce.
+## Gestion des paramètres des services d’exécution de magasin
 
-Accédez aux paramètres pour activer l’extension, configurez les paramètres globaux et spécifiez les options de sécurité pour les connexions utilisateur et les comptes de l’application d’assistance de la boutique en sélectionnant **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+Gestion des paramètres des services d’exécution de magasin à partir de la [!DNL Commerce Admin Store Configuration] .
 
-![Configuration des services de la boutique d’administration pour l’exécution du magasin](assets/store-services-admin-sf-config.png)
+- Activez l’extension, configurez les paramètres globaux et spécifiez les options de sécurité pour les connexions utilisateur et les comptes de l’application d’assistance de la boutique en sélectionnant **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-Accédez aux paramètres de configuration des méthodes de diffusion en sélectionnant **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+   ![Configuration des services de la boutique d’administration pour l’exécution du magasin](assets/store-services-admin-sf-config.png)
 
-![Configuration des ventes de la boutique d’administration pour l’exécution du magasin](assets/store-sales-admin-sf-deliver-config.png)
+- Configurez les méthodes de diffusion en sélectionnant **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+
+   ![Configuration des ventes de la boutique d’administration pour l’exécution du magasin](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Paramètres de base
 
@@ -55,7 +57,7 @@ Accédez aux paramètres de configuration des méthodes de diffusion en sélecti
 </tr>
 <tr>
 <td><strong>[!UICONTROL Displayed error message]</strong></td>
-<td>Message qui s’affiche lorsqu’un client sélectionne une sélection en magasin, mais que la méthode de remise n’est pas disponible. Si nécessaire, vous pouvez personnaliser le texte par défaut.
+<td>Message qui s’affiche lorsqu’un client sélectionne un élément récupéré en magasin pour un élément qui n’est pas disponible pour le nettoyage en magasin. Si nécessaire, vous pouvez personnaliser le texte par défaut.
 </td>
 <td>Affichage en magasin</td>
 <td>Non</td>
@@ -83,7 +85,7 @@ Activez la variable [!DNL Store Fulfillment] pour ajouter les fonctionnalités d
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Activez ou désactivez la solution. Lorsque cette option est activée, configurez et utilisez les fonctionnalités d’exécution de magasin et établissez la connexion entre votre boutique Adobe Commerce et les services d’exécution de magasin. Lorsque cette option est désactivée, toutes les fonctions d’exécution de magasin sont désactivées et il n’existe aucune communication entre Adobe Commerce et les services d’exécution de magasin. Les informations de commande ne peuvent pas être traitées ni reçues.</td>
+<td>Activez ou désactivez la solution. Lorsque cette option est activée, configurez et utilisez les fonctionnalités d’exécution de magasin et établissez la connexion entre votre boutique Adobe Commerce et [!DNL Store Fulfillment] services. Lorsque cette option est désactivée, toutes les fonctions d’exécution de magasin sont désactivées. Il n’existe aucune communication entre Adobe Commerce et les services d’exécution de magasin. Les informations de commande ne peuvent pas être traitées ni reçues.</td>
 <td>Global</td>
 <td>Oui</td>
 </tr>
@@ -98,52 +100,58 @@ Activez la variable [!DNL Store Fulfillment] pour ajouter les fonctionnalités d
 <td><strong>Description</strong></td>
 <td><strong>Portée</strong></td>
 <td><strong>Obligatoire</strong></td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>Sélectionnez <i>Sandbox</i> ou <i>Production</i><br></br> Sandbox communique avec les services d’exécution dans un test.La production communique avec un environnement en ligne. Utilisation <strong>only</strong> en production.<br></br>Un ensemble d’informations d’identification vous est attribué pour chaque environnement et vous permet de gérer les deux ensembles dans la même installation. <br></br>Enregistrez les informations d’identification avant de valider la connexion.</td>
+<td>Sélectionnez <i>[!UICONTROL Sandbox]</i> ou <i>[!UICONTROL Production]</i><br></br>Sélection [!UICONTROL Sandbox] permet la communication avec les services d’exécution dans un environnement de test.<br></br>Sélection [!UICONTROL Production] permet la communication avec les services d’exécution dans un environnement en ligne.<br></br>Un ensemble d’informations d’identification vous est attribué pour chaque environnement et vous pouvez gérer les deux ensembles dans la même installation. <br></br>Enregistrez les informations d’identification avant de valider la connexion.</td>
 <td>Global</td>
 <td>Oui</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>URL du point d’entrée de l’API d’exécution de la boutique Walmart. Il doit s’agir de l’URL complète qui vous a été fournie au cours de votre processus d’intégration. Les clients d’exécution de magasin reçoivent à la fois un sandbox et une URL de production. Veillez à copier/coller l’URL complète, y compris la barre oblique "/" à la fin.</td>
+<td>URL du point d’entrée de l’API d’exécution de la boutique Walmart. Il doit s’agir de l’URL complète fournie lors du processus d’intégration. Les clients d’exécution de magasin reçoivent à la fois un sandbox et une URL de production. Lors de l’ajout de valeurs, veillez à copier et coller l’URL complète, y compris la barre oblique à la fin "/".</td>
 <td>Global</td>
 <td>Oui</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
-<td>URL du point de terminaison de l’authentification de l’exécution de la boutique Walmart. La valeur doit correspondre à l’URL complète qui vous a été fournie au cours de votre processus d’intégration. Vous recevez à la fois une URL Sandbox et une URL de production. Veillez à copier/coller l’URL complète, y compris la barre oblique "/" à la fin.</td>
+<td>URL du point de terminaison de l’authentification de l’exécution de la boutique Walmart. La valeur doit correspondre à l’URL complète fournie pendant le processus d’intégration. Vous recevez à la fois une URL Sandbox et une URL de production. Lors de l’ajout de valeurs, veillez à copier et coller l’URL complète, y compris la barre oblique à la fin "/".</td>
 <td>Global</td>
 <td>Oui</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Merchant Id]</strong></td>
-<td>Votre identifiant de commerçant (client) unique fourni lors de votre processus d’intégration. Votre identifiant est utilisé pour acheminer vos commandes et vous assurer que vos magasins marchands les reçoivent.</td>
+<td>Votre identifiant commercial (client) unique fourni pendant le processus d’intégration. Cet identifiant est utilisé pour acheminer les commandes afin de vous assurer que vos magasins marchands les reçoivent.</td>
 <td>Global</td>
 <td>Oui</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Id]</strong></td>
-<td>Votre identifiant d’intégration unique. Il vous est fourni pendant votre processus d’intégration. Ça ne change pas. Il est utilisé pour authentifier toutes les communications avec les services d’exécution.</td>
+<td>Identifiant d’intégration unique fourni pendant le processus d’intégration. Cet identifiant est utilisé pour authentifier toutes les communications entre Adobe Commerce et les services d’exécution de magasin.</td>
 <td>Global</td>
 <td>Oui</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Secret]</strong></td>
-<td>Votre clé d’intégration unique. Il vous est fourni pendant votre processus d’intégration. Il est utilisé pour authentifier toutes les communications avec les services d’exécution.</td>
+<td>Clé d’intégration unique fournie lors du processus d’intégration. Cette clé est utilisée pour authentifier toutes les communications entre Adobe Commerce et le service d’exécution de magasin.</td>
 <td>Global</td>
 <td>Oui</td>
-    </tr>
+</tr>
 </table>
 
-Après avoir configuré les informations d’identification du compte, sélectionnez <strong>[!UICONTROL Validate Credentials]</strong> pour vérifier et établir une connexion au service web d’exécution pour la première fois.
+Après avoir configuré la variable [!UICONTROL Account Credentials], sélectionnez <strong>[!UICONTROL Validate Credentials]</strong> pour vérifier et établir une connexion au service d’exécution du magasin pour la première fois.
 
 ## Configuration de la journalisation
 
-Lorsque la journalisation est activée, votre fichier journal peut rapidement se développer. Pour éviter les problèmes de temps de réponse dans les environnements de production, veillez à activer la journalisation et activez uniquement pendant une courte période lorsque cela est nécessaire.
+Les journaux des services d’exécution de magasin sont disponibles dans le fichier journal. `var/log/walmart-bopis.log`.
 
-Demandez à l’administrateur système de configurer vos environnements pour autoriser la gestion des exceptions afin que les exceptions liées à l’API puissent être capturées via le pare-feu ou le cache. Vous pouvez également demander à votre administrateur système de configurer la rotation du journal sur ce fichier afin de réduire la taille.
+Demandez à l’administrateur système de configurer vos environnements pour autoriser la gestion des exceptions afin que les exceptions liées à l’API puissent être capturées via le pare-feu ou le cache.
+
+Comme le fichier journal de l’application peut croître rapidement, n’activez la journalisation de l’application que pendant une courte période, si nécessaire, par exemple lors de la résolution des problèmes d’exécution du magasin pour une [!DNL Commerce] commande. Cette configuration empêche les problèmes de temps de réponse dans les environnements de production causés par des fichiers journaux volumineux.
+
+>[!TIP]
+>
+>Pour les installations sur site d’Adobe Commerce, demandez à votre administrateur système de configurer la rotation des journaux pour la variable `var/log/walmart-bopis.log` pour réduire la taille. Pour les installations Adobe Commerce sur site, voir [Rotation des logs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) dans le _Guide d’installation d’Adobe Commerce_. Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Affichage et gestion des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -157,7 +165,7 @@ Demandez à l’administrateur système de configurer vos environnements pour au
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>Le mode de débogage est utilisé pour augmenter l’activité consignée dans l’intégration. Lorsque cette option est désactivée, aucune information de débogage n’est consignée. Lorsque cette option est activée, toutes les informations de débogage sont consignées. Toutes les données consignées se trouvent dans le fichier : `var/log/walmart-bopis.log`</td>
+<td>Le mode de débogage est utilisé pour augmenter l’activité consignée dans l’intégration. Lorsque cette option est désactivée, aucune information de débogage n’est consignée. Lorsque cette option est activée, toutes les informations de débogage sont consignées. <br></br>Toutes les données consignées se trouvent dans le fichier : <pre>var/log/walmart-bopis.log</pre>
 <td>Global</td>
 <td>Non</td>
 </tr>
@@ -322,7 +330,7 @@ Configurez les paramètres de sécurité du compte utilisateur et du mot de pass
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td>Détermine si un changement de mot de passe utilisateur est requis.<br></br>`Oui` : L’utilisateur doit modifier son mot de passe après la configuration du compte.`Non` : Recommande à l’utilisateur de modifier le mot de passe après la configuration du compte.</td>
+<td><em>[!UICONTROL Yes]</em>: L’utilisateur doit modifier son mot de passe après la configuration du compte.<br></br><em>[!UICONTROL No]</em>: Recommande à l’utilisateur de modifier le mot de passe après la configuration du compte.</td>
 <td>Global</td>
 <td>Non</td>
 </tr>
@@ -370,18 +378,17 @@ Configurez les paramètres de sécurité du compte utilisateur et du mot de pass
 
 ## Méthodes de diffusion
 
-L’exécution du magasin fonctionne en étendant le Adobe Commerce natif. [!DNL In-Store Delivery] fonctionnalités.
-Une fois l’extension installée, d’autres options de configuration d’administrateur sont disponibles pour les méthodes de remise en magasin. Configurez ces options supplémentaires dans l’onglet Admin en sélectionnant <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
-
-Dans les paramètres d’exécution de la boutique, vous pouvez configurer les méthodes de remise suivantes pour les commandes de nettoyage en magasin.
+L’exécution du magasin fonctionne en étendant le Adobe Commerce natif. [!DNL In-Store Delivery] fonctionnalités. Après avoir installé l’extension, vous pouvez configurer les méthodes de remise en magasin à l’aide des paramètres étendus suivants qui sont ajoutés à l’administrateur.
 
 - **Reprise en magasin**: options d’offre pour la diffusion en magasin pendant le processus de passage en caisse Il s’agit du scénario de livraison le plus courant pour les commandes BOPIS.
 
-- **Ramassage urbain**- Offre des options permettant aux clients de se garer sur un emplacement de magasin et de recevoir leur commande par un associé du magasin.
+- **[!UICONTROL Curbside pick up]**- Offre des options permettant aux clients de se garer sur un emplacement de magasin et de recevoir leur commande par un associé du magasin.
+
+Configurez ces paramètres à partir de l’option Admin en sélectionnant <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 >[!NOTE]
 >
->Pour plus d’informations sur la configuration des options de remise en magasin, voir [Diffusion en magasin](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) dans le Guide de l’utilisateur d’Adobe Commerce.
+>Pour plus d’informations sur la configuration des options de remise en magasin, voir [Diffusion en magasin](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) dans le _Guide de l’utilisateur d’Adobe Commerce_.
 
 
 ### Configuration des méthodes de diffusion
@@ -426,7 +433,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 </thead>
 <tbody><tr>
 <td><strong>Titre de la diffusion d’accueil</strong></td>
-<td>Spécifie le titre à afficher pour l’option Livraison à domicile dans les zones Produit, Panier et Passage en caisse. La diffusion à domicile fait référence aux fonctionnalités d’expédition standard d’Adobe Commerce, depuis un entrepôt, par un opérateur ou directement vers l’adresse d’expédition fournie par le client.</br></br>Ce libellé n’a aucune incidence sur l’opérateur de livraison sélectionné ni sur les étiquettes de méthode de livraison disponibles.</td>
+<td>Spécifie le titre à afficher pour l’option Livraison à domicile dans les zones Produit, Panier et Passage en caisse. La diffusion à domicile fait référence aux fonctionnalités d’expédition standard d’Adobe Commerce, depuis un entrepôt, par un opérateur ou directement vers l’adresse d’expédition fournie par le client. </br></br>Ce libellé n’a aucune incidence sur les libellés des méthodes d’expédition pour le transporteur sélectionné.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -438,7 +445,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 </tr>
 <tr>
 <td><strong>Titre du ticket de magasin</strong></td>
-<td>Ce libellé s’affiche lorsqu’un client dispose d’options de remise et qu’un sélecteur en magasin est disponible.</br></br>Vous pouvez personnaliser ce libellé qui s’affiche dans les zones produit, panier et passage en caisse.</td>
+<td>Ce libellé s’affiche lorsqu’un client dispose d’options de remise et qu’un sélecteur en magasin est disponible. </br></br>Vous pouvez personnaliser ce libellé qui s’affiche dans les zones produit, panier et passage en caisse.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -462,25 +469,25 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 </tr>
 <tr>
 <td><strong>Instructions de récupération en magasin</strong></td>
-<td>Lorsqu’une commande est prête à être récupérée dans vos magasins de détail, le client est averti par e-mail. Si le client a sélectionné [!DNL In-Store Pickup] pendant le passage en caisse, vous pouvez personnaliser les instructions de sélection ici.</br></br>Il s’agit d’un paramètre global qui s’applique à tous les emplacements de magasins de détail. Vous pouvez également personnaliser les instructions au niveau de l’emplacement du magasin de détail.</td>
+<td>Lorsqu’une commande est prête à être récupérée dans vos magasins de détail, le client est averti par e-mail. Si le client a sélectionné [!DNL In-Store Pickup] pendant le passage en caisse, vous pouvez personnaliser les instructions de sélection ici. </br></br>Il s’agit d’un paramètre global qui s’applique à tous les emplacements de magasins de détail. Vous pouvez également personnaliser les instructions au niveau de l’emplacement du magasin de détail.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
 <tr>
 <td><strong>Instructions de récupération des banlieues</strong></td>
-<td>Spécifie les instructions de sélection de commande personnalisées à inclure dans les notifications par e-mail des clients pour les commandes de sélection de commandes.</br></br>Il s’agit d’un paramètre global qui s’applique à tous les emplacements de magasins de détail. Vous pouvez également personnaliser les instructions au niveau de l’emplacement du magasin de détail.</td>
+<td>Spécifie les instructions de récupération de commande personnalisées à inclure dans les notifications par e-mail des clients pour les commandes de nettoyage. </br></br>Il s’agit d’un paramètre global qui s’applique à tous les emplacements de magasins de détail. Vous pouvez également personnaliser les instructions au niveau de l’emplacement du magasin de détail.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
 <tr>
 <td><strong>Délai d’avance estimé pour la collecte</strong></td>
-<td>Nombre de minutes nécessaires avant la réception, l’exécution et la préparation d’une commande. Ces informations s’affichent pour le client lors de la sélection de l’emplacement d’un magasin de détail pour l’option de remise Sélecteur de magasin .</br></br>Il s’agit d’un paramètre global qui s’applique à tous les emplacements de magasins de détail. Vous pouvez également personnaliser le délai d’avance au niveau de l’emplacement du magasin de détail.</td>
+<td>Nombre de minutes nécessaires avant la réception, l’exécution et la préparation d’une commande. Ces informations s’affichent pour le client lors de la sélection de l’emplacement d’un magasin de détail pour l’option de remise Sélecteur de magasin . Il s’agit d’un paramètre global qui s’applique à tous les emplacements de magasins de détail. Vous pouvez également personnaliser le délai d’avance au niveau de l’emplacement du magasin de détail.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
 <tr>
 <td><strong>Étiquette du temps de récupération estimé</strong></td>
-<td>Affiche la durée estimée jusqu’à ce qu’une commande soit disponible pour la récupération des clients. Ces informations s’affichent pour les clients lorsqu’ils sélectionnent un emplacement de magasin de détail pour l’option de remise Sélecteur de magasin .</br></br>Lors de la personnalisation de ce libellé, vous pouvez utiliser le code <code>%1</code> pour insérer vos <strong>Délai d’avance estimé pour la collecte</strong>.Par exemple :</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Il s’agit d’un paramètre global qui s’applique à tous les emplacements de magasins de détail. Vous pouvez également personnaliser le délai d’avance au niveau de l’emplacement du magasin de détail.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>Affiche la durée estimée jusqu’à ce qu’une commande soit disponible pour la récupération des clients. Ces informations s’affichent pour les clients lorsqu’ils sélectionnent un emplacement de magasin pour le [!DNL In-Store Pickup] option de diffusion. </br></br>Lors de la personnalisation de ce libellé, vous pouvez utiliser le code <code>%1</code> pour insérer vos <strong>Délai d’avance estimé pour la collecte</strong>. Par exemple :</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Il s’agit d’un paramètre global qui s’applique à tous les emplacements de magasins de détail. Vous pouvez également personnaliser le délai d’avance au niveau de l’emplacement du magasin de détail.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 <tr>
@@ -505,8 +512,8 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>n-Stock</strong></td>
-<td>Lorsqu’un client utilise le localisateur de la boutique de détail, la disponibilité du stock pour un nombre d’articles actuels supplémentaires s’affiche pour chaque emplacement.</br></br>Vous pouvez personnaliser le libellé de statut "en stock" ici.</td>
+<td><strong>En stock</strong></td>
+<td>Lorsqu’un client utilise le localisateur de la boutique de détail, la disponibilité du stock des articles en cours s’affiche pour chaque emplacement. </br></br>Vous pouvez personnaliser la variable <em>[!UICONTROL in-stock]</em> libellé d’état ici.</br></br></td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -518,7 +525,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 </tr>
 <tr>
 <td><strong>Partiellement en stock</strong></td>
-<td>Lorsqu’un client utilise le localisateur de la boutique de détail, la disponibilité du stock de tous les articles en cours s’affiche pour chaque emplacement.</br></br>Vous pouvez personnaliser le libellé d’état "partiellement en stock" ici.</td>
+<td>Lorsqu’un client utilise le localisateur de la boutique de détail, la disponibilité du stock de tous les articles en cours s’affiche pour chaque emplacement. </br></br>Vous pouvez personnaliser la variable <em>[!UICONTROL partially in-stock]</em> libellé d’état ici.</br></br></td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
