@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
+source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,34 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Catalog Se
 * ![Nouveau](../assets/new.svg) Nouvelles fonctionnalités
 * ![Correction](../assets/fix.svg) Correctifs et améliorations
 * ![Bogue](../assets/bug.svg) Problèmes connus
+
+## Version V1.3
+
+Date de publication : 2023-1-17 Compatible avec Adobe Commerce (EE) : 2.4.x Compatible avec Adobe Commerce for Cloud (CEE) : 2.4.x Stabilité : Disponibilité générale
+
+![Nouveau](../assets/new.svg) Simplification et amélioration de l’expérience d’intégration.
+![Nouveau](../assets/new.svg) De nouveaux points de terminaison d’environnement de test client sont disponibles pour les tests de pré-production.
+![Nouveau](../assets/new.svg) Ajout de la prise en charge des produits virtuels.
+![Correction](../assets/fix.svg) Améliorations de l’évolutivité et des performances des API.
+
+### Limites connues
+
+Ces fonctionnalités ne sont pas encore prises en charge :
+
+* Produits groupés avec prix fixe
+* Aucune mise à jour n’est reçue lorsque les variantes sont supprimées du catalogue.
+* La taille maximale de la charge utile des attributs dynamiques est de 9 Mo.
+* Prix du produit de groupe. Peuvent être calculées avec des prix de produit simples.
+* Dans un tableau d’images, seule la première image contient des rôles.
+* Échantillons de couleurs
+* Chargement de la page Détails du produit via l’URL du produit.
+
+Les restrictions suivantes peuvent être résolues à l’aide de l’API GraphQL :
+
+* Prix publicitaire minimal
+* Prix de niveau
+* Produits téléchargeables et cartes-cadeaux
+* Catégories (`categories` et `categoryList`)
 
 ## Version V1.1
 
