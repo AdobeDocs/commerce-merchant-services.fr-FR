@@ -2,9 +2,9 @@
 title: Synchronisation du catalogue
 description: Découvrez comment exporter des données de produit à partir du [!DNL Commerce] serveur à [!DNL Commerce Services] afin de maintenir les services à jour.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ Le processus de synchronisation du catalogue s’exécute toutes les heures pour
 > Pour utiliser la variable _Synchronisation du catalogue_ d’un tableau de bord ou d’une interface de ligne de commande, vous devez disposer d’un [Clé API et espace de données SaaS configuré](saas.md).
 
 ## Accès au tableau de bord de synchronisation du catalogue
+
+>[!NOTE]
+>
+> Le _Synchronisation du catalogue_ Le tableau de bord n’est disponible que lorsque le service Recommendations de produit est installé.
 
 Pour accéder au tableau de bord de synchronisation du catalogue, sélectionnez **Système** > _Transfert de données_ > **Synchronisation du catalogue**.
 
