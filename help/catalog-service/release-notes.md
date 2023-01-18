@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
+source-git-commit: d377aac8fd42d8c9b1fc0ab6673a6965f50cf452
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Ces fonctionnalités ne sont pas encore prises en charge :
 * Échantillons de couleurs
 * Chargement de la page Détails du produit via l’URL du produit.
 
-Les restrictions suivantes peuvent être résolues à l’aide de l’API GraphQL :
+Les restrictions suivantes peuvent être résolues à l’aide de l’API Core GraphQL :
 
 * Prix publicitaire minimal
 * Prix de niveau
