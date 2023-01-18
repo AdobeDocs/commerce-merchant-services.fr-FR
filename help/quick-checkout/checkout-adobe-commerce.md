@@ -2,9 +2,9 @@
 title: "Flux de passage en caisse pour un utilisateur Adobe Commerce"
 description: "Présentation de la variable [!DNL Quick Checkout] flux pour un utilisateur Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ Si une [!DNL Bolt] compte trouvé lors du passage en caisse, les clients peuvent
 Si l’acheteur est connecté à Adobe Commerce avant l’extraction, la variable [!DNL Bolt] La fenêtre contextuelle OTP ne s’affiche pas lors du passage en caisse, mais un message s’affiche suggérant à l’acheteur de se connecter pour accéder à son portefeuille de contrôle.
 
 Si vous rencontrez des problèmes lorsque vous passez une commande en tant qu’utilisateur Adobe Commerce existant, reportez-vous à la section [Dépannage des problèmes de paiement rapide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Article du Centre d’aide Adobe Commerce.
+
+### Connexion automatique
+
+Il est possible de configurer une connexion automatique pour [!DNL Quick Checkout] utilisateurs. Vous pouvez activer une configuration pour vous connecter automatiquement à un utilisateur lors de l’extraction.
+
+1. Sur le _Administration_ barre latérale, accédez à **Magasins** > **Configuration** > **Passage en caisse** pour accéder à la page de configuration générale de l’administrateur de passage en caisse .
+1. Dans le _Paramètres du service_ section pour [!DNL Quick Checkout], fournissez tous les détails requis pour configurer la connexion automatique.
+
+Voir [[!DNL Quick Checkout] configuration des paramètres de service](../quick-checkout/onboarding.md#configure-service-settings) pour plus d’informations.
+
+>[!NOTE]
+>
+> Première connexion lorsque **connexion automatique** est activé nécessite le consentement de l’utilisateur pour l’autoriser en acceptant une fenêtre contextuelle.
 
 ## Nouveau [!DNL Bolt] account
 

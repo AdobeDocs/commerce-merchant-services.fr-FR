@@ -1,22 +1,19 @@
 ---
-title: "[!DNL Quick Checkout] pour le panneau d’administration Adobe Commerce"
-description: "Découvrez comment [!DNL Quick Checkout] Le panneau d’administration peut vous aider à intégrer, configurer et visualiser l’extension."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '''[!DNL Quick Checkout] pour le panneau d’administration Adobe Commerce'
+description: Découvrez comment [!DNL Quick Checkout] Le panneau d’administration peut vous aider à intégrer, configurer et visualiser l’extension.
+exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # Introduction à [!DNL Quick Checkout] Panneau d’administration
 
 [!DNL Quick Checkout] pour Adobe Commerce et Magento Open Source, une vue du panneau d’administration contient toutes les informations nécessaires pour configurer et utiliser l’extension.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
-
-   ![Menu Passage en caisse rapide](assets/sales-quickcheckout.png)
-
 1. Dans cette vue, vous pouvez accéder au _Panneau d’administration_ aperçu, _Ressources_ about [!DNL Quick Checkout], get _Aide et assistance_ ou configurer l’extension via _Paramètres_.
 
    ![Menu Passage en caisse rapide](assets/admin-panel-view.png)
@@ -36,7 +33,7 @@ Reportez-vous à la section [Intégration](../quick-checkout/onboarding.md) rubr
 
 | Champ | Description |
 |---|---|
-| [!UICONTROL Troubleshooting guide] | Le centre d’aide Adobe Commerce contient [!DNL Quick Checkout] articles de dépannage. |
+| [!UICONTROL Troubleshooting guide] | Le centre d’aide d’Adobe Commerce contient [!DNL Quick Checkout] articles de dépannage. |
 | [!UICONTROL Feedback] | Fournissez des commentaires à l’équipe. |
 
 ## Ressources
