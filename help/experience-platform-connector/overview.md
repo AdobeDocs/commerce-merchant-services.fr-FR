@@ -2,9 +2,9 @@
 title: Présentation du guide
 description: Découvrez comment intégrer des données Adobe Commerce à Adobe Experience Platform à l’aide du connecteur Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: a316b92f75cb227d0c58af07482f9d37568af7ca
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -30,15 +30,16 @@ Pour utiliser le connecteur Experience Platform, vous devez disposer des éléme
 ## Étapes d’intégration
 
 1. [Installer](install.md) l’extension du connecteur Experience Platform.
-1. [Se connecter](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) à votre compte d’Adobe et [view](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255) ID d’organisation. L’ID d’organisation est l’ID associé à votre société Experience Cloud configurée. Cet identifiant est une chaîne alphanumérique de 24 caractères, suivie de (et doit inclure) `@AdobeOrg`.
+1. [Se connecter](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) à votre compte d’Adobe et [view](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) ID d’organisation. L’ID d’organisation est l’ID associé à votre société Experience Cloud configurée. Cet identifiant est une chaîne alphanumérique de 24 caractères, suivie de (et doit inclure) `@AdobeOrg`.
 1. [Connexion](connect-data.md) votre instance Adobe Commerce vers Adobe Experience Platform.
 1. [Créer ou mettre à jour](update-xdm.md) votre schéma XDM avec des groupes de champs spécifiques à Commerce.
-1. [Création d’un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) et sélectionnez le schéma XDM contenant les groupes de champs spécifiques à Commerce.
+1. [Création d’un jeu de données](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) en fonction du schéma que vous avez créé ou mis à jour.
+1. [Création d’un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) et sélectionnez le schéma XDM contenant les groupes de champs spécifiques à Commerce.
 1. (Facultatif) [Chargement de profils d’acheteur](profile.md) à Adobe Experience Platform afin que les données de storefront puissent être attribuées à des acheteurs spécifiques afin d’améliorer leur expérience d’achat.
 
 ## Audience
 
-Ce guide est conçu pour le marchand Adobe Commerce qui souhaite connecter ses données Adobe Commerce storefront à d’autres produits Adobe DX.
+Ce guide est destiné au commerçant Adobe Commerce qui souhaite connecter ses données Adobe Commerce à d’autres produits Adobe DX.
 
 ### Prise en charge des PWA Studio
 
@@ -50,5 +51,5 @@ Voir [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-serv
 
 Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
 
-- [Centre d’aide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target=&quot;_blank&quot;}
-- [tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target=&quot;_blank&quot;} : envoyez un ticket pour recevoir une aide supplémentaire.
+- [Centre d’aide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}: soumettez un ticket pour recevoir une aide supplémentaire.

@@ -1,9 +1,10 @@
 ---
 title: Chargement de profils d’acheteur dans Adobe Experience Platform
 description: Découvrez comment charger des profils d’acheteurs vers Adobe Experience Platform.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: fd0ee7fa-5274-4640-ba00-bcb2ec78f314
+source-git-commit: 9bf28159fdac3a7237956a536f6a522b4e2918fe
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Dans cette rubrique, vous allez apprendre à charger vos profils client Adobe Co
 
 1. Déterminez où vous stockez les données client. Pour certains commerçants, ces données sont stockées dans Adobe Commerce et peuvent être [exporté](https://docs.magento.com/user-guide/system/data-export.html) sous la forme d’un fichier CSV. Pour d’autres, il peut s’agir d’un système de gestion de la relation client distinct.
 
-1. Une fois que vous avez déterminé où stocker vos données client, recherchez les [connecteur source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) selon l’emplacement de stockage des données client. Si vous ne voyez pas de connecteur source approprié, utilisez la méthode [téléchargement de fichier local](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) connectez et importez vos profils de nouvel acheteur à partir d’un fichier CSV.
+1. Une fois que vous avez déterminé où stocker vos données client, recherchez les [connecteur source](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) selon l’emplacement de stockage des données client. Si vous ne voyez pas de connecteur source approprié, utilisez la méthode [téléchargement de fichier local](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) connectez et importez vos profils de nouvel acheteur à partir d’un fichier CSV.
 
    >[!NOTE]
    >

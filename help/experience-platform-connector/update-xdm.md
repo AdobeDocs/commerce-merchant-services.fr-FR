@@ -2,9 +2,9 @@
 title: Ajout de groupes de champs au schéma XDM
 description: Découvrez comment ajouter des groupes de champs spécifiques à Adobe Commerce à un schéma XDM.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ L’un des [Etapes d’intégration](overview.md#onboarding-steps) pour utiliser
    - Détails du contact personnel
    - Détails du commerce
    - Adobe Analytics Experience Event Commerce (si vous souhaitez envoyer des données à Adobe Analytics)
-   - Identifiant de personne
+   - Mappage d’identités
 
    >[!NOTE]
    >
@@ -32,4 +32,10 @@ L’un des [Etapes d’intégration](overview.md#onboarding-steps) pour utiliser
 
    Votre schéma XDM contient désormais des groupes de champs spécifiques à Commerce afin que les données collectées à partir du storefront Commerce [events](events.md) est représenté dans XDM.
 
-1. [Création d’un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) et sélectionnez le schéma XDM contenant les groupes de champs spécifiques à Commerce.
+1. [Création d’un jeu de données](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) en fonction du schéma que vous avez créé ou mis à jour.
+
+   Un jeu de données est une structure de stockage et de gestion pour une collecte de données, généralement sous la forme d’un tableau, qui contient un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données qu’ils stockent.
+
+1. [Création d’un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) et sélectionnez le schéma XDM contenant les groupes de champs spécifiques à Commerce et le jeu de données correspondant.
+
+   La chaîne de données transfère les données collectées au jeu de données. Les données sont représentées dans le jeu de données en fonction du schéma sélectionné.
