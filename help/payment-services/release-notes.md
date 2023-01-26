@@ -2,7 +2,7 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
+source-git-commit: 275390c001e5b57ea7545af58643c97c26b98f25
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 1%
@@ -59,7 +59,7 @@ _28 juin 2021_
 
 ## v1.5.3
 
-_25 janvier 2022_
+_25 janvier 2023_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-4102 --> Publication d’un correctif pour un problème connu incompatible avec l’arrière. Cette version verrouille la version de l’extension d’ID de service sur la dernière version stable, ce qui permet à de nouvelles installations de services de paiement de configurer Commerce Services.
 
