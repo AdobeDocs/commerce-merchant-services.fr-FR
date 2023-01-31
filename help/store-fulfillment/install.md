@@ -1,12 +1,12 @@
 ---
 title: Installation
-description: '"Installez le [!DNL Store Fulfillment solution] pour un storefront Adobe Commerce utilisant Composer pour PHP."'
+description: "Installez le [!DNL Store Fulfillment solution] pour un storefront Adobe Commerce utilisant Composer pour PHP."
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Accès à l’exécution du magasin par l’archive logicielle Walmart Commerce Technologies (fichier .zip)**: pendant le processus d’intégration et d’activation, travaillez avec votre gestionnaire de compte pour accéder au fichier d’installation de l’extension Store Fulfillment.
 
-- **Informations du compte Adobe Commerce**- Installation de la variable [!DNL Store Fulfillment] la solution requiert une [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Vous avez besoin d’un identifiant de compte et d’informations d’identification avec un accès Propriétaire ou Administrateur à la variable [!DNL Adobe Commerce] projet.
+- **Informations du compte Adobe Commerce**- Installation de la variable [!DNL Store Fulfillment] la solution requiert une [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. Vous avez besoin d’un identifiant de compte et d’informations d’identification avec un accès Propriétaire ou Administrateur à la variable [!DNL Adobe Commerce] projet.
 
 - Pour [!DNL Adobe Commerce] sur les projets d’infrastructure cloud, les programmes d’installation doivent disposer d’un accès administrateur au projet Cloud. Voir [Gestion de l’accès des utilisateurs](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-- **Expérience à l’aide du compositeur et de la variable[!DNL Commerce CLI]**—Voir [Installation de l’interface de ligne de commande générale](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} pour plus d’informations sur l’utilisation de ces outils pour installer et gérer les extensions sur la page [!DNL Adobe Commerce] plateforme.
+- **Expérience à l’aide du compositeur et de la variable[!DNL Commerce CLI]**—Voir [Installation de l’interface de ligne de commande générale](https://devdocs.magento.com/extensions/install/){target="_blank"} pour plus d’informations sur l’utilisation de ces outils pour installer et gérer des extensions sur le [!DNL Adobe Commerce] plateforme.
 
 - **Expérience d’installation d’extensions tierces sur Adobe Commerce**—À titre de référence, consultez la documentation d’Adobe Commerce.
 
@@ -184,7 +184,7 @@ Sur le serveur Adobe Commerce, vérifiez que les modules de l’extension Store 
 
 ### Étapes supplémentaires
 
-Si nécessaire, utilisez la méthode [setup:static-content:deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)Commande d’interface de ligne de commande {target=&quot;_blank&quot;} pour déployer les fichiers d’affichage statique dans votre environnement de production.
+Si nécessaire, utilisez la méthode [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} Commande d’interface de ligne de commande pour déployer des fichiers d’affichage statique dans votre environnement de production.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -194,4 +194,4 @@ Le `-f` est requise si vous utilisez un thème vide.
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Bonnes pratiques de déploiement de contenu statique dans Adobe Commerce](https://support.magento.com/hc/en-us/articles/360031624091) dans le centre d’aide d’Adobe Commerce.
+>Pour plus d’informations, voir [Bonnes pratiques de déploiement de contenu statique dans Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) dans le centre d’aide d’Adobe Commerce.

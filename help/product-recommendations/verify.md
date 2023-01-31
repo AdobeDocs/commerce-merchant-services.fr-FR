@@ -2,16 +2,16 @@
 title: Vérification de la collecte des événements
 description: Découvrez comment vérifier que les données comportementales sont envoyées à Adobe Commerce.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Vérification de la collecte des événements
 
-Après vous [installation et configuration](install-configure.md) la valeur `magento/product-recommendations` , vous pouvez vérifier que les données comportementales sont envoyées à Adobe Commerce. Vous pouvez utiliser les outils de développement disponibles dans Chrome ou installer l’extension Snowplow Chrome. Si vous avez besoin d’aide supplémentaire, reportez-vous à la section [Résolution des problèmes [!DNL Product Recommendations] module](https://support.magento.com/hc/en-us/articles/360042224851) dans la base de connaissances d’assistance.
+Après vous [installation et configuration](install-configure.md) la valeur `magento/product-recommendations` , vous pouvez vérifier que les données comportementales sont envoyées à Adobe Commerce. Vous pouvez utiliser les outils de développement disponibles dans Chrome ou installer l’extension Snowplow Chrome. Si vous avez besoin d’aide supplémentaire, reportez-vous à la section [Résolution des problèmes [!DNL Product Recommendations] module](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) dans la base de connaissances d’assistance.
 
 ## Vérification à l’aide des outils de développement dans Chrome
 

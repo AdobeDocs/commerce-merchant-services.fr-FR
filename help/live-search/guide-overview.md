@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Live Search] Guide Overview"'
-description: '"[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, super pertinente et intuitive."'
+title: "[!DNL Live Search] Guide Overview"
+description: "[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, super pertinente et intuitive."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ La recherche en direct comporte trois zones pour les administrateurs :
 
 Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
 
-[Centre d’aide](https://support.magento.com/hc/en-us) - Voir les articles de dépannage relatifs à la recherche en direct .
-[tickets d’assistance](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) - Envoyez un ticket pour recevoir une aide supplémentaire.
+[Centre d’aide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Voir les articles de dépannage relatifs à la recherche en direct .
+[tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Envoyez un ticket pour recevoir une aide supplémentaire.
 
 Avant d’envoyer un ticket d’assistance, exécutez le code suivant depuis la ligne de commande pour vérifier la version de Live Search actuellement installée :
 

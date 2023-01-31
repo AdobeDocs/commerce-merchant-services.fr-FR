@@ -4,10 +4,10 @@ description: Collection de notes de mise à jour pour tous les services Commerce
 seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
-source-git-commit: b2b0caa50d5ea326ff11af5d8b1e05746c7f7d44
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 2%
+source-wordcount: '187'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Utilisez le tableau suivant pour trouver les notes de mise à jour et les inform
 <table>
   <tbody>
     <tr>
-      <td><strong>Services pour Adobe Commerce</strong>
+      <td><strong>Services pour Adobe Commerce</strong>
         <p>Découvrez les dernières améliorations apportées aux services Commerce innovants disponibles sous la forme d’Adobe Commerce et d’extensions Magento Open Source.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Sales Channel Amazon</a></li>
@@ -27,14 +27,14 @@ Utilisez le tableau suivant pour trouver les notes de mise à jour et les inform
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Recherche en direct</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Services de paiement</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Recommendations de produit</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html?lang=en">Passage en caisse rapide</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Exécution de la boutique</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html">Passage en caisse rapide</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">Exécution de la boutique</a></li>
           </ul>
         </td>
       <td><strong>Services de données et d’intégration</strong>
         <p>Découvrez les dernières améliorations apportées aux services de données et d’intégration qui permettent à Commerce Services de se connecter à d’autres services et à la sphère d’Adobe des extensions et des produits plus étendue.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html?lang=en">Connecteur Experience Platform</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Connecteur Experience Platform</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">Connecteur Services</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">Synchronisation du catalogue</a></li>
           </ul>

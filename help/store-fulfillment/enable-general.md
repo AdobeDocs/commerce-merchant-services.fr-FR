@@ -4,9 +4,9 @@ description: Configuration des paramètres généraux à activer [!DNL Store Ful
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Comme le fichier journal de l’application peut croître rapidement, n’active
 
 >[!TIP]
 >
->Pour les installations sur site d’Adobe Commerce, demandez à votre administrateur système de configurer la rotation des journaux pour la variable `var/log/walmart-bopis.log` pour réduire la taille. Pour les installations Adobe Commerce sur site, voir [Rotation des logs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) dans le _Guide d’installation d’Adobe Commerce_. Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Affichage et gestion des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Pour les installations sur site d’Adobe Commerce, demandez à votre administrateur système de configurer la rotation des journaux pour la variable `var/log/walmart-bopis.log` pour réduire la taille. Pour les installations Adobe Commerce sur site, voir [Rotation des logs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) dans le _Guide d’installation d’Adobe Commerce_. Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Affichage et gestion des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
