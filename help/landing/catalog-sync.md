@@ -2,9 +2,9 @@
 title: Synchronisation du catalogue
 description: Découvrez comment exporter des données de produit à partir du [!DNL Commerce] serveur à [!DNL Commerce Services] afin de maintenir les services à jour.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Le `saas:resync` fait partie de la commande `magento/saas-export` module. Vous p
 
 >[!NOTE]
 >
-> Lorsque vous déclenchez une nouvelle synchronisation des données à partir de la ligne de commande, la mise à jour des données peut prendre jusqu’à une heure.
+> Lors de la première exécution d’une synchronisation des données, il est important d’exécuter la variable `productattributes` flux en premier, suivi de `productoverrides`, avant d’exécuter la fonction `products` flux.
 
 Options de commande :
 
@@ -130,6 +130,8 @@ Le nom du flux peut être l’un des suivants :
 - `variants`— Variations de produit d’un produit configurable, telles que la couleur et la taille
 - `productattributes`— Attributs de produit tels que `activity`, `gender`, `tops`, `bottoms`, etc.
 - `productoverrides`: règles de tarification et de visibilité du catalogue spécifiques au client, telles que celles basées sur les autorisations de catégorie
+
+Lorsque vous déclenchez une nouvelle synchronisation des données à partir de la ligne de commande, la mise à jour des données peut prendre jusqu’à une heure.
 
 ### Exemples
 
