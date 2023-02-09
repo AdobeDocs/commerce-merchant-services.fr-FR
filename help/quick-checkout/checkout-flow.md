@@ -2,9 +2,9 @@
 title: "Flux de passage en caisse dans Adobe Commerce"
 description: "Présentation de la variable [!DNL Quick Checkout] flux dans Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ Une réussite [!DNL Quick Checkout] Le flux se compose des étapes suivantes :
 1. Passez à la caisse.
 
 ![Passage en caisse](assets/proceed-checkout.png)
+
+>[!NOTE]
+>
+> Vous pouvez activer la connexion automatique pour votre commerçant. Voir [Rubrique Activer la connexion automatique de la balise](https://help.bolt.com/products/embedded/direct-api/auto-login/) pour plus d’informations.
 
 1. Lorsque vous y êtes invité, saisissez une adresse électronique associée à un événement [!DNL Bolt] compte .
 1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique ou numéro de téléphone du compte.

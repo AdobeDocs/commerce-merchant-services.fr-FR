@@ -2,9 +2,9 @@
 title: "À l’intégration de [!DNL Quick Checkout] pour l’extension Adobe Commerce"
 description: "Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,10 @@ Voir [Site, magasin et portée de l’affichage](https://experienceleague.adobe.
 
 1. Sélectionnez la **Étape suivante après la connexion** pour modifier le flux de navigation une fois le client connecté. Par défaut, il est défini sur la valeur **Paiements** page.
 1. Définissez si [!DNL Quick Checkout] autorise le **connexion automatique** pendant le passage en caisse. Par défaut, il est activé pour se connecter automatiquement au [!DNL Bolt] réseau.
+
+   >[!NOTE]
+   >
+   > Voir [Documentation Activer la connexion automatique de Bolt](https://help.bolt.com/products/embedded/direct-api/auto-login/) pour plus d’informations.
 
 ## Obtenir de l’aide
 

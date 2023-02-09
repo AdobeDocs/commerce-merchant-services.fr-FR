@@ -2,9 +2,9 @@
 title: "Flux d’extraction d’un utilisateur Bolt dans Adobe Commerce"
 description: Présentation de la variable [!DNL Quick Checkout] flux d’un utilisateur Bolt dans Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Utilisateurs invités
 
 L’expérience de passage en caisse de l’invité est différente de l’expérience utilisateur de l’Adobe. Lorsqu’un acheteur entre une adresse électronique dans un passage en caisse, la variable [!DNL Quick Checkout] valide et trouve un [!DNL Bolt] compte .
+
+>[!WARNING]
+>
+> Le [!DNL In-Store Pickup] (ISPU) n’est pas pris en charge lorsque la fonction [!DNL Quick Checkout] est activée.
 
 ## Inscrits [!DNL Bolt] account
 

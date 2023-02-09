@@ -2,9 +2,9 @@
 title: "Flux de passage en caisse pour un utilisateur Adobe Commerce"
 description: "Présentation de la variable [!DNL Quick Checkout] flux pour un utilisateur Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ Si l’acheteur est connecté à Adobe Commerce avant l’extraction, la variabl
 
 Si vous rencontrez des problèmes lorsque vous passez une commande en tant qu’utilisateur Adobe Commerce existant, reportez-vous à la section [Dépannage des problèmes de paiement rapide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Article du Centre d’aide Adobe Commerce.
 
-### Connexion automatique
+## Connexion automatique
+
+Le composant Connexion automatique détecte lorsqu’un acheteur dispose d’une session de vidage principale et connecte automatiquement l’acheteur. Cela permet d’ignorer les étapes de détection de compte et de code de passe unique (OTP), car l’acheteur les a terminées au cours d’une session précédente.
 
 Il est possible de configurer une connexion automatique pour [!DNL Quick Checkout] utilisateurs. Vous pouvez activer une configuration pour vous connecter automatiquement à un utilisateur lors de l’extraction.
 
