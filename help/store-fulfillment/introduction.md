@@ -1,12 +1,12 @@
 ---
-title: '"Introduction à [!DNL Store Fulfillment]"'
-description: '"Découvrez comment [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] prend en charge l’achat en ligne, la prise en charge en magasin (BOPIS) pour les clients. Utilisez le mobile d’ assistance au magasin pour rationaliser l’exécution BOPIS et le traitement des commandes pour les associés au magasin et les clients Commerce."'
+title: "Introduction à [!DNL Store Fulfillment]"
+description: "Découvrez comment [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] prend en charge l’achat en ligne, la prise en charge en magasin (BOPIS) pour les clients. Utilisez le mobile d’ assistance au magasin pour rationaliser l’exécution BOPIS et le traitement des commandes pour les associés au magasin et les clients Commerce."
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ La solution d’exécution de magasin prend en charge et améliore les fonctionn
 
 * Totalement compatible avec le thème Luma
 
-* Prise en charge de GraphQL pour les vitrines sans interface et Venia
+* Compatibilité partielle avec les vitrines sans PWA et sans interface
 
 * Prend en charge l’application d’aide au magasin de Walmart Commerce Technologies. Cette application fournit des informations sur la commande de prise en charge directement à l’appareil de poche de votre employé dans l’emplacement de magasin sélectionné. Grâce à ces informations, ils peuvent sélectionner, préparer et remettre rapidement et précisément des articles aux clients lorsqu’ils arrivent au magasin.
 
