@@ -2,9 +2,9 @@
 title: Configuration de l’environnement de test
 description: Utilisez un compte sandbox PayPal à utiliser [!DNL Payment Services] en mode test.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,8 @@ Pour finaliser l’intégration des environnements de test :
 
    Une fenêtre PayPal s’affiche pour vous permettre de connecter un compte PayPal afin de commencer à accepter les paiements.
 
-1. Saisissez l’adresse électronique de votre compte professionnel PayPal (et non votre compte sandbox PayPal), votre pays ou votre région, puis cliquez sur **[!UICONTROL Next]**.
+1. Saisissez l’adresse électronique et le mot de passe du compte sandbox PayPal que vous avez généré à l’étape 3 (et non les informations de votre compte professionnel PayPal), ainsi que votre pays ou votre région.
+1. Cliquez sur **[!UICONTROL Next]**.
 
    ![PayPal - Connecter le compte PayPal pour les paiements](assets/paypal-connectacct.png)
 

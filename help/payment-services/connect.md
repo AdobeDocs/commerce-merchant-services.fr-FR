@@ -2,7 +2,7 @@
 title: Connexion à votre instance
 description: Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -51,4 +51,4 @@ Maintenant que vous avez obtenu vos informations d’identification, vous pouvez
 
    Vous êtes dirigé vers la zone de configuration de l’administrateur, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, pour configurer votre connecteur Commerce Services.
 
-1. Pour configurer vos services de commerce, procédez comme décrit dans la section [Configuration SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. Pour configurer vos services de commerce, procédez comme décrit dans la section [Configuration SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).

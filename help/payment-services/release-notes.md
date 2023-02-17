@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: a9970d8ac1400a63ef60b289150556b70e71ef22
+source-git-commit: e701fe8284ccb021c20ee7233b66d888b2803a23
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,14 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
 
 +++
+
+## v1.6.0
+
+_17 février 2023_
+
+![Nouveau](../assets/fix.svg)<!-- Issue PAY-3540 --> Ajout [Fonction de conformité PCI 3DS pour les commerçants qui effectuent des transactions dans l’Union européenne (UE) et en Grande-Bretagne](security.md#3ds). Cette couche supplémentaire de sécurité, qui exige que les acheteurs s’authentifient auprès de l’émetteur de leur carte de crédit, contribue à prévenir la fraude en ligne et est requise dans le cadre des réglementations de conformité de l’Union européenne (UE).
+
+![Nouveau](../assets/fix.svg)<!-- Issue PAY-3609 --> Ajout de la capacité à [Activation de la valeur de carte dans Admin](vaulting.md##use-vaulting-in-the-admin). Cela permet aux commerçants de créer une commande pour les clients de l’administrateur à l’aide de leurs méthodes de paiement votées.
 
 ## v1.5.4
 
