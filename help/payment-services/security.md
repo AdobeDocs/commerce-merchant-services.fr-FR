@@ -2,9 +2,9 @@
 title: Sécurité et conformité
 description: Examinez les exigences en matière de sécurité et de conformité de votre site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -17,23 +17,37 @@ La sécurité est la plus grande préoccupation de la [!DNL Payment Services] et
 
 [!DNL Adobe Commerce] et [!DNL Magento Open Source] prendre en charge plusieurs fonctionnalités de sécurité ;
 
-Voir [Sécurité](https://docs.magento.com/user-guide/stores/security.html){target=&quot;_blank&quot;} dans le guide d’utilisation principal pour passer en revue les bonnes pratiques en matière de sécurité et apprendre à gérer les sessions d’administration et les informations d’identification, mettre en oeuvre CAPTCHA et gérer les restrictions du site web.
+Voir [Sécurité](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} dans le guide d’utilisation principal pour passer en revue les bonnes pratiques en matière de sécurité et apprendre à gérer les sessions d’administration et les informations d’identification, mettre en oeuvre CAPTCHA et gérer les restrictions du site web.
 
 ## Conformité PCI
 
 Le secteur des cartes de paiement (PCI) a établi un ensemble d’exigences pour les entreprises qui acceptent le paiement par carte de crédit sur Internet. En plus de maintenir un environnement sécurisé, les marchands qui traitent les informations de carte de crédit client doivent respecter certaines instructions standard.
 
-Voir [Instructions de conformité PCI](https://docs.magento.com/user-guide/stores/compliance-pci.html){target=&quot;_blank&quot;} pour plus d’informations.
+Voir [Instructions de conformité PCI](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} pour plus d’informations.
 
-Les vendeurs peuvent effectuer une [questionnaire d’auto-évaluation (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target=&quot;_blank&quot;}, qui est un outil d’auto-validation permettant d’évaluer la sécurité des données du détenteur de carte.
+Les vendeurs peuvent effectuer une [questionnaire d’auto-évaluation (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, qui est un outil d’auto-validation permettant d’évaluer la sécurité des données des titulaires de carte.
 
 ### Champs de carte de crédit
 
 Avec les champs de carte de crédit, aucune donnée réglementée par PCI n’est transmise à vos services. Vous n’avez pas à stocker ni à gérer ces données, ce qui réduit considérablement les problèmes de conformité PCI.
 
+### 3DS
+
+PCI 3-D Secure (3DS) permet une authentification de l’acheteur avec son émetteur de carte de crédit lors d’achats en ligne de cartes de crédit. Cette couche supplémentaire de sécurité permet de prévenir la fraude en ligne et est requise dans le cadre des réglementations de conformité de l’Union européenne (UE).
+
+[!UICONTROL Payment Services] fournit une fonctionnalité 3DS permettant aux commerçants de se conformer aux réglementations de l’UE et de protéger les clients et les marchands contre les activités frauduleuses dans leurs magasins.
+
+Si vous êtes un commerçant de l’UE ou de Grande-Bretagne où la conformité 3DS est requise, vous devez activer manuellement la 3DS (c’est-à-dire : `Off` par défaut) dans [Paramètres](settings.md#credit-card-fields).
+
+Les commandes passées pour l’acheteur par le vendeur ou le personnel du magasin ne sont pas configurées avec des mesures de conformité 3DS.
+
+Voir [3DS dans les paramètres](settings.md#3ds) pour plus d’informations.
+
 ### Valorisation des cartes
 
 Lorsqu’un acheteur [les valeurs (ou &quot;enregistre&quot;) leurs informations de carte de crédit](vaulting.md) pour les achats futurs dans vos magasins, des informations minimales sur les cartes de crédit sont partagées avec l’acheteur (quatre derniers chiffres, date d’expiration de la carte et marque de carte). Les informations de carte de crédit sont stockées avec le fournisseur de paiement. Lorsqu’une carte arrive à expiration ou qu’il n’a plus besoin des informations enregistrées, il peut supprimer ce jeton afin que les informations ne soient plus stockées par le fournisseur de paiement.
+
+Voir [Valorisation des cartes de crédit](vaulting.md) pour plus d’informations.
 
 ### Boutons intelligents PayPal
 

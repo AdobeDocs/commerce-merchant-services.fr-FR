@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Vous pouvez ajouter une [!UICONTROL Soft Descriptor] à votre(s) site(s) web ou 
 
 ## Configuration des options de paiement
 
-Maintenant que vous avez activé les services de paiement pour votre site web, vous pouvez modifier les paramètres par défaut des fonctions de paiement et de l’affichage du storefront.
+Maintenant que vous avez activé [!UICONTROL Payment Services] pour votre site web, vous pouvez modifier les paramètres par défaut des fonctions de paiement et de l’affichage storefront.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -109,6 +109,7 @@ Voir [Options de paiement](payments-options.md#credit-card-fields) pour plus d�
 1. Sélectionnez la vue de magasin, dans la **[!UICONTROL Scope]** menu déroulant, pour lequel vous souhaitez activer un mode de paiement.
 1. Pour modifier le nom du mode de paiement affiché lors de l’extraction, modifiez la valeur de la variable **[!UICONTROL Checkout title]** champ .
 1. À [définir l’action de paiement ;](production.md#set-payment-services-as-payment-method), bascule **[!UICONTROL Payment action]** to `Authorize` ou `Authorize and Capture`.
+1. Pour activer [Authentification sécurisée 3DS](security.md#3ds) (`Off` par défaut) activez la fonction **[!UICONTROL 3DS Secure authentication]** sélecteur à `Always` ou `When required`.
 1. Pour activer ou désactiver les champs de carte de crédit sur la page de passage en caisse, faites basculer le **[!UICONTROL Show on checkout page]** sélecteur.
 1. Pour activer ou désactiver [coffre-fort à carte](#card-vaulting), faites basculer le **[!UICONTROL Vault enabled]** sélecteur.
 1. Pour activer ou désactiver le mode de débogage, activez la fonction **[!UICONTROL Debug Mode]** sélecteur.
@@ -123,9 +124,10 @@ Voir [Options de paiement](payments-options.md#credit-card-fields) pour plus d�
 | Champ | Portée | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue de magasin | Ajoutez le texte à afficher comme titre de cette option de paiement dans la vue Mode de paiement lors de l’extraction. Options : [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | site web | Le [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site web | Le [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3DS Secure authentication] | site web | Activer ou désactiver [Authentification sécurisée 3DS](security.md#3ds). Options : [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | site web | Activez ou désactivez les champs de carte de crédit à afficher sur la page de paiement. Options : [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | site web | Permet d’activer ou de désactiver la valeur de carte de crédit. Options : [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | site web | Activer ou désactiver [coffre-fort à carte de crédit](#card-vaulting). Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | site web | Activez ou désactivez le mode de débogage. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Boutons de paiement
@@ -165,7 +167,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 | Champ | Portée | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue de magasin | Ajoutez le texte à afficher comme titre pour cette option de paiement dans la vue Mode de paiement lors de l’extraction. Options : champ de texte |
-| [!UICONTROL Payment Action] | site web | Le [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site web | Le [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on checkout page] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] sur la page de passage en caisse. Options : [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] sur la page des détails du produit. Options : [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] dans l’aperçu du mini-panier. Options : [!UICONTROL Yes] / [!UICONTROL No] |
@@ -231,12 +233,21 @@ Vous pouvez activer une fonctionnalité qui permet à vos clients de sauvegarder
 
 Activation ou désactivation de la valeur de carte dans le [Paramètres des champs de carte de crédit](#credit-card-fields).
 
-Voir [Valorisation des cartes de crédit](vaulting.md) pour plus d’informations sur la création de valeurs par défaut.
+Voir [Valorisation des cartes de crédit](vaulting.md) pour plus d’informations.
+
+## 3DS
+
+3DS protège les clients et les commerçants contre les activités frauduleuses dans leurs magasins et permet la conformité aux normes de l’Union européenne (UE).
+
+Activez ou désactivez 3DS dans la variable [Paramètres des champs de carte de crédit](#credit-card-fields).
+
+Voir [3DS en sécurité](security.md#3ds) pour plus d’informations.
 
 ## Utilisation de plusieurs comptes PayPal
 
-Dans les services de paiement, vous pouvez utiliser plusieurs comptes PayPal dans **one** compte commercial au niveau du site web. Par exemple, si vous exploitez votre ou vos boutiques dans plusieurs pays (qui utilisent différents [devises](https://docs.magento.com/user-guide/stores/currency.html)) ou utiliser Adobe Commerce pour certaines parties de votre entreprise, mais pas _all_, vous pouvez configurer votre compte marchand pour utiliser plusieurs comptes PayPal.
+Dans [!UICONTROL Payment Services], vous pouvez utiliser plusieurs comptes PayPal dans **one** compte commercial au niveau du site web. Par exemple, si vous exploitez votre ou vos boutiques dans plusieurs pays (qui utilisent différents [devises](https://docs.magento.com/user-guide/stores/currency.html)) ou utiliser Adobe Commerce pour certaines parties de votre entreprise, mais pas _all_, vous pouvez configurer votre compte marchand pour utiliser plusieurs comptes PayPal.
 
 Voir [Site, magasin et portée de l’affichage](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) pour plus d’informations sur la hiérarchie des sites web, des magasins et des vues de magasin.
 
 Votre représentant commercial peut créer [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) pour votre compte marchand et à bord du site supplémentaire avec PayPal afin que tous les boutons PayPal que vous configurez pour apparaître s’affichent sur votre site. Contactez votre représentant commercial pour obtenir de l’aide sur l’utilisation de plusieurs comptes PayPal pour vos sites web.
+
