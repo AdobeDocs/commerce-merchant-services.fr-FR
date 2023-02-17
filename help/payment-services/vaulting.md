@@ -1,9 +1,10 @@
 ---
 title: Valorisation des cartes de crédit
 description: Les acheteurs peuvent sauvegarder (enregistrer) les détails de leur carte de crédit pour les achats futurs.
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,22 @@ Ils peuvent également facilement supprimer leurs cartes de crédit voûtées de
 
 ## Activation de la mise en valeur
 
-Vous pouvez activer la valeur de carte de crédit pour vos magasins dans les services de paiement. [Paramètres](settings.md#card-vaulting).
+Vous pouvez activer la mise en valeur des cartes de crédit pour les clients. _et_ commerçants dans l’administrateur pour vos magasins dans [!DNL Payment Services] [Paramètres](settings.md#card-vaulting).
+
+## Utilisation de la mise en garde dans l’administrateur
+
+Si un client dispose d’une carte de crédit précédemment votée, un marchand peut créer une commande ultérieure pour ce client dans l’administrateur à l’aide de ses méthodes de paiement par défaut.
+
+Vous ne pouvez utiliser des cartes en mémoire que si le client dispose à la fois d’un compte existant et d’un jeton valide stockés dans le système à partir d’un paiement précédemment effectué.
+
+Pour créer une commande dans l’Admin pour un client à l’aide de sa carte de crédit voûtée :
+
+1. [Créer une commande et ajouter des produits](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. Dans _[!UICONTROL Payment & Shipping Information]_, sélectionnez **[!UICONTROL Stored Cards]**comme mode de paiement.
+1. Sélectionnez le mode de paiement par carte de crédit voûtée de votre choix.
+1. Après avoir effectué toute autre étape nécessaire pour la commande, [envoyer](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+
+   ![Utilisation de la carte de crédit votée dans Admin pour le client](assets/admin-vaultedcard.png)
 
 ## Sécurité
 

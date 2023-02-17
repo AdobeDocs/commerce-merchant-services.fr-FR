@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,7 @@ Voir [Options de paiement](payments-options.md#credit-card-fields) pour plus d�
 1. Pour activer [Authentification sécurisée 3DS](security.md#3ds) (`Off` par défaut) activez la fonction **[!UICONTROL 3DS Secure authentication]** sélecteur à `Always` ou `When required`.
 1. Pour activer ou désactiver les champs de carte de crédit sur la page de passage en caisse, faites basculer le **[!UICONTROL Show on checkout page]** sélecteur.
 1. Pour activer ou désactiver [coffre-fort à carte](#card-vaulting), faites basculer le **[!UICONTROL Vault enabled]** sélecteur.
+1. Pour activer ou désactiver [méthodes de paiement en chambre d’arrêt dans l’administrateur](#card-vaulting) (pour que les commerçants exécutent les commandes pour les clients de l’administrateur à l’aide de leur méthode de paiement par défaut), activez la variable **[!UICONTROL Show vaulted methods in Admin]** sélecteur.
 1. Pour activer ou désactiver le mode de débogage, activez la fonction **[!UICONTROL Debug Mode]** sélecteur.
 1. Cliquez sur **[!UICONTROL Save]**.
 
@@ -127,7 +128,8 @@ Voir [Options de paiement](payments-options.md#credit-card-fields) pour plus d�
 | [!UICONTROL Payment Action] | site web | Le [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | site web | Activer ou désactiver [Authentification sécurisée 3DS](security.md#3ds). Options : [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | site web | Activez ou désactivez les champs de carte de crédit à afficher sur la page de paiement. Options : [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | site web | Activer ou désactiver [coffre-fort à carte de crédit](#card-vaulting). Options : [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | vue de magasin | Activer ou désactiver [coffre-fort à carte de crédit](vaulting.md). Options : [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | vue de magasin | Permet d’activer ou de désactiver la possibilité pour le marchand d’exécuter des commandes pour les clients dans l’administrateur. [utilisation d’un mode de paiement par défaut](vaulting.md). Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | site web | Activez ou désactivez le mode de débogage. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Boutons de paiement
@@ -230,6 +232,8 @@ Pour vous assurer que votre boutique affiche la configuration correcte, vérifie
 ## Valorisation des cartes
 
 Vous pouvez activer une fonctionnalité qui permet à vos clients de sauvegarder (ou &quot;enregistrer&quot;) leurs informations de carte de crédit dans leur compte pour les utiliser pour de futurs achats.
+
+Vous pouvez également utiliser la mise en valeur de carte dans l’administrateur pour terminer les commandes suivantes pour les clients existants.
 
 Activation ou désactivation de la valeur de carte dans le [Paramètres des champs de carte de crédit](#credit-card-fields).
 
