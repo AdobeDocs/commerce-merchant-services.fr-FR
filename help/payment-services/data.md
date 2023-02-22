@@ -3,7 +3,8 @@ title: Données disponibles
 description: Utilisez les données de reporting financier pour réconcilier les rapports avec les systèmes autres que Commerce.
 role: User
 level: Intermediate
-source-git-commit: ed471f363546f1d337e85568dc5079cae4507840
+exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%

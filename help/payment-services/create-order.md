@@ -1,19 +1,19 @@
 ---
-title: Créer une commande avec [!DNL Payment Services]
+title: Création d’une commande avec [!DNL Payment Services]
 description: L’administrateur permet de respecter une commande à l’aide de la fonction [!DNL Payment Services] directement de l’administrateur par un commerçant pour ses clients qui ont besoin d’aide.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 1%
+source-wordcount: '158'
+ht-degree: 0%
 
 ---
 
-# Créer une commande avec [!DNL Payment Services]
+# Création d’une commande avec [!DNL Payment Services]
 
 Vous pouvez personnaliser les services de paiement selon vos besoins à l’aide de la fonction [[!DNL Payment Services] paramètres](settings.md).
 
-[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous permet de réaliser une commande directement à partir de l’administrateur par un commerçant pour les clients qui ont besoin d’aide. Le **[!UICONTROL Create New Order]** form comprend toutes les informations requises pour terminer le processus de passage en caisse normal, y compris les champs hébergés contenant des informations de carte de crédit. Voir [Créer une commande](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} pour obtenir des informations détaillées sur les étapes requises.
+[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous permet de réaliser une commande directement à partir de l’administrateur par un commerçant pour les clients qui ont besoin d’aide. Le **[!UICONTROL Create New Order]** form comprend toutes les informations requises pour terminer le processus de passage en caisse normal, y compris les champs hébergés contenant des informations de carte de crédit. Voir [Créer une commande](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"} pour obtenir des informations détaillées sur les étapes requises.
 
 ## Champs de carte de crédit hébergés
 
@@ -21,6 +21,6 @@ Vous pouvez personnaliser les services de paiement selon vos besoins à l’aide
 
 1. Sur le _Administration_ barre latérale, développer **[!UICONTROL Sales]** et choisissez **[!UICONTROL Orders]**.
 1. Cliquez sur **[!UICONTROL Create New Order]**.
-1. Renseignez les sections selon les besoins de la commande (détails décrits à la section [Créer une commande](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;}).
+1. Renseignez les sections selon les besoins de la commande (détails décrits à la section [Créer une commande](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"}).
 1. Dans le _[!UICONTROL Payment Method]_, vous devriez pouvoir utiliser votre [!DNL Payment Services] comme mode de paiement.
 1. Cliquez sur **[!UICONTROL Submit Order]**.

@@ -1,15 +1,15 @@
 ---
-title: Tester et valider
+title: Test et validation
 description: Les tests et la validation permettent de s’assurer que [!DNL Payment Services] fonctionnent comme prévu et offrent les meilleures options de paiement à vos clients.
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 41d93ffc2f9d518d9d4cf4abf2d53484821c13f2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
-# Tester et valider
+# Test et validation
 
 Avant l’affichage [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] pour vos clients, il est préférable de tester dans votre environnement de test. _et_ en production. Les tests et la validation permettent de s’assurer que [!DNL Payment Services] fonctionnent comme prévu et offrent les meilleures options de paiement pour votre boutique et vos clients.
 
@@ -18,7 +18,7 @@ Avant l’affichage [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL 
 Tests [!DNL Payment Services] dans un environnement de test est une étape de validation importante, même s’il s’agit d’un environnement de simulation connecté uniquement à l’environnement de test PayPal, et non aux banques et commerçants réels.
 
 1. Effectuez un passage en caisse réussi à partir de votre boutique, en utilisant [Champs de carte de crédit](payments-options.md#credit-card-fields) ou l’un des [Boutons intelligents PayPal](payments-options.md#paypal-smart-buttons). Voir [Test des informations d’identification](#testing-credentials) pour plus d’informations sur l’utilisation de fausses cartes de crédit à des fins de test.
-1. Capture (lorsque votre action de paiement est [défini sur `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [remboursement](refunds.md)ou [void](voids.md) commande qui vient d’être terminée. Vous pouvez également simplement [créer une facture](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
+1. Capture (lorsque votre action de paiement est [défini sur `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [remboursement](refunds.md)ou [void](voids.md) commande qui vient d’être terminée. Vous pouvez également simplement [créer une facture](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
 1. Dans les 24 à 48 heures, consultez la transaction et d’autres informations dans la variable [Rapport de paiements](payouts.md).
 1. Voir les détails de la commande dans la [Rapport d’état des paiements de commande](order-payment-status.md).
 

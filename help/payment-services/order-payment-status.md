@@ -1,17 +1,17 @@
 ---
-title: Rapport d’état des paiements de commande
+title: Rapport État des paiements de commande
 description: Utilisez le rapport État des paiements de la commande pour connaître l’état des paiements de vos commandes et identifier les problèmes potentiels.
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Rapport d’état des paiements de commande
+# Rapport État des paiements de commande
 
 [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous offre des rapports détaillés afin d’obtenir une vue claire des commandes et des paiements de votre boutique.
 
@@ -33,11 +33,11 @@ Vous pouvez télécharger les transactions d’état des paiements de commande a
 
 Le [!DNL Payment Services] Le module utilise les données de commande et les combine à des données de paiement agrégées provenant d’autres sources (y compris PayPal) afin de fournir des rapports pertinents et très utiles.
 
-Les données de commande sont exportées et conservées dans le service de paiement. Lorsque vous [modifier ou ajouter des statuts de commande ;](https://docs.magento.com/user-guide/sales/order-status-custom.html){target=&quot;_blank&quot;} ou [modification d’une vue de magasin](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target=&quot;_blank&quot;}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target=&quot;_blank&quot;}, ou nom du site web, ces données sont combinées avec des données de paiement et le rapport d’état du paiement de la commande est renseigné avec les informations combinées.
+Les données de commande sont exportées et conservées dans le service de paiement. Lorsque vous [modifier ou ajouter des statuts de commande ;](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, ou nom du site web, ces données sont combinées avec les données de paiement et le rapport État du paiement de la commande est renseigné avec les informations combinées.
 
 Ce processus comprend deux étapes :
 
-1. Les données de l’index sont modifiées : `ON SAVE` (chaque fois que les informations de commande ou de magasin sont modifiées) ou `BY SCHEDULE` (selon un planning cron préconfiguré), selon la manière dont il est configuré dans [Gestion des index](https://docs.magento.com/user-guide/system/index-management.html){target=&quot;_blank&quot;} dans l’administrateur.
+1. Les données de l’index sont modifiées : `ON SAVE` (chaque fois que les informations de commande ou de magasin sont modifiées) ou `BY SCHEDULE` (selon un planning cron préconfiguré), selon la manière dont il est configuré dans [Gestion des index](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} dans Admin.
 
    Par défaut, l’indexation des données se produit. `ON SAVE`, ce qui signifie que chaque fois qu’un élément change dans l’ordre, l’état de la commande, l’affichage du magasin, le magasin ou le site web, le processus de réindexation se produit immédiatement.
 
@@ -53,7 +53,7 @@ Les seules données exportées et regroupées à des fins de création de rappor
 
 Même si, par défaut, la réindexation se produit dans `ON SAVE` , il est recommandé d’indexer dans `BY SCHEDULE` mode . Le `BY SCHEDULE` s’exécute selon un planning cron d’une minute. Toute donnée modifiée apparaît dans votre rapport d’état de commande dans les deux minutes suivant tout changement de données. Cette réindexation planifiée vous aide à réduire toute contrainte sur votre boutique, en particulier si vous avez un grand volume de commandes entrantes, car cela se produit sur un planning (et non au moment où chaque commande est passée).
 
-Vous pouvez modifier le mode d’index :`ON SAVE` ou `BY SCHEDULE`—[dans Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;}.
+Vous pouvez modifier le mode d’index :`ON SAVE` ou `BY SCHEDULE`—[dans Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 Pour savoir comment configurer l’exportation des données, voir [Configuration de ligne de commande](configure-cli.md#configure-data-export).
 
@@ -181,10 +181,10 @@ Les rapports d’état des paiements de commande incluent les informations suiva
 
 | Colonne | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de commande de commerce<br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, cliquez sur l’ID. |
+| [!UICONTROL Order ID] | ID de commande de commerce<br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, cliquez sur l’identifiant. |
 | [!UICONTROL Order Date] | Date et heure de la commande |
 | [!UICONTROL Authorized Date] | Date et heure de l’autorisation de paiement |
-| [!UICONTROL Order Status] | Commerce actuel [état de commande](https://docs.magento.com/user-guide/sales/order-status.html){target=&quot;_blank&quot;} |
+| [!UICONTROL Order Status] | Commerce actuel [état de commande](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
 | [!UICONTROL Invoiced] | Statut de la facture —*[!UICONTROL No]*, *[!UICONTROL Partial]* ou *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Etat de livraison de la commande —*[!UICONTROL No]*, *[!UICONTROL Partial]* ou *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Montant total général de la commande |

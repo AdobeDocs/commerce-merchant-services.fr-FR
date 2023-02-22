@@ -2,9 +2,9 @@
 title: Valorisation des cartes de crédit
 description: Les acheteurs peuvent sauvegarder (enregistrer) les détails de leur carte de crédit pour les achats futurs.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
-source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
