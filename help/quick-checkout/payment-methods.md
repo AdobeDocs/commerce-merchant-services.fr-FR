@@ -1,15 +1,15 @@
 ---
-title: '"Modes de paiement"'
-description: '"Présentation des modes de paiement compatibles avec la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce."'
+title: "Modes de paiement"
+description: "Présentation des modes de paiement compatibles avec la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce."
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '88'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] modes de paiement compatibles
+# [!DNL Quick Checkout] Méthodes de paiement compatibles
 
 Une fois que le marchand configure [!DNL Quick Checkout]:
 

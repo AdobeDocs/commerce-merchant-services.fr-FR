@@ -1,10 +1,10 @@
 ---
-title: '"Page de passage en caisse"'
-description: '"Aperçu de la page de passage en caisse dans Adobe Commerce."'
+title: "Page de passage en caisse"
+description: "Aperçu de la page de passage en caisse dans Adobe Commerce."
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
