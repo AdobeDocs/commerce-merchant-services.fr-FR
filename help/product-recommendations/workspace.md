@@ -1,15 +1,15 @@
 ---
-title: Workspace
+title: '[!DNL Product Recommendations] Workspace'
 description: Découvrez comment configurer, gérer et surveiller les performances des recommandations de produits.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Workspace
+# [!DNL Product Recommendations] Workspace
 
 Le [!DNL Product Recommendations] workspace affiche une liste de recommandations configurées précédemment avec des mesures qui vous aident à suivre le succès de chaque recommandation. La liste peut être configurée pour calculer les mesures du dernier jour, semaine ou mois. Vous pouvez utiliser les mesures pour créer des informations exploitables en fonction de la fréquence de consultation ou de clic d’une unité de recommandations, ou pour analyser les performances de vos recommandations.
 

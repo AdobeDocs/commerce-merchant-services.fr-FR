@@ -1,30 +1,30 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] pour Adobe Commerce, permet d’intégrer plusieurs sources de données par le biais d’un point de terminaison GraphQL commun."'
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: bdceeeeb1ed58c4ffbc87bee24c1eb3754b1cde9
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-Le [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
+Le [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces à des produits Adobe à l’aide de Adobe I/O Runtime.
 
 ![Diagramme d’architecture du catalogue](assets/catalog-service-architecture-mesh.png)
 
 La première étape de l’utilisation du maillage API avec le service de catalogue consiste à connecter le maillage API à votre instance. Voir les instructions détaillées dans [Création d’un maillage](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Pour terminer la configuration, vous devez [Module d’interface de ligne de commande d’Adobe IO](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installé.
+Pour terminer la configuration, installez le [Package de ligne de commande Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Une fois que le maillage est configuré sur l’Adobe IO, exécutez la commande suivante qui ajoute une `CommerceCatalogServiceGraph` source à votre impression.
+Une fois que le maillage est configuré sur Adobe I/O Runtime, exécutez la commande suivante qui ajoute une `CommerceCatalogServiceGraph` source à votre impression.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-where `variables.json` est un fichier distinct qui stocke les valeurs couramment utilisées pour les E/S d’Adobe.
+Où `variables.json` est un fichier distinct qui stocke les valeurs courantes de Adobe I/O Runtime.
 Par exemple, la clé API peut être enregistrée dans le fichier :
 
 ```json
@@ -40,7 +40,7 @@ Après l’exécution de cette commande, le service de catalogue doit s’exécu
 Le maillage API permet aux utilisateurs d’utiliser des sources de données externes pour améliorer votre instance Adobe Commerce. Il peut également être utilisé pour configurer les données Commerce existantes afin d’activer une nouvelle fonctionnalité.
 
 Dans cet exemple, le maillage API est utilisé pour activer les prix de niveau dans Adobe Commerce.
-Remplacez la variable `name `, `endpoint` et `x-api-key` valeurs.
+Remplacez la variable `name `, `endpoint`, et `x-api-key` valeurs.
 
 ```json
 {
