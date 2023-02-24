@@ -1,18 +1,18 @@
 ---
-title: Courriers électroniques de vente
+title: Modèles de courrier électronique de vente
 description: Configurez les modèles d’email transactionnel pour communiquer avec les clients et les administrateurs de magasin pendant le processus d’exécution des commandes de nettoyage de magasin.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 
-# Courriers électroniques de vente
+# Modèles de courrier électronique de vente
 
 L’exécution de magasin offre un ensemble étendu de modèles d’email transactionnel pour prendre en charge les workflows de commande et d’exécution. Ils offrent une communication et des messages cohérents et automatisés sur tous les canaux : ils avertissent les clients et les administrateurs de magasins des changements d’état de la commande, des instructions pour les commandes de prise en main en magasin, etc.
 

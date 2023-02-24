@@ -4,16 +4,16 @@ description: Conditions requises pour la configuration et l’intégration de la
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 2%
 
 ---
 
-# Exigences d’exécution de la boutique pour Adobe Commerce
+# Conditions requises pour l’exécution du magasin pour Adobe Commerce
 
-Pour installer et activer la solution d’exécution de magasin pour Adobe Commerce, vous devez répondre aux exigences techniques et métier suivantes.
+Les sections suivantes décrivent les exigences techniques et métier de l’installation et de l’activation de la solution d’exécution de magasin pour Adobe Commerce.
 
 ## Exigences en matière de version de plateforme et de logiciel
 
@@ -56,7 +56,7 @@ Votre entreprise doit satisfaire aux critères minimaux suivants pour mettre en 
 
 - Entreprises basées aux États-Unis uniquement
 
-- Ventilateurs B2C, fabricants CPG vendant D2C ou distributeurs vendant D2C ou aux petites entreprises
+- Entreprises avec des consommateurs (B2C) Détaillants, Consommateurs de marchandises emballées (CPG) Fabricants qui vendent directement aux consommateurs (D2C) ou distributeurs qui vendent directement aux consommateurs ou aux petites entreprises
 
 - Au moins un magasin ou entrepôt physique
 

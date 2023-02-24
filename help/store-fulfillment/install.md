@@ -4,9 +4,9 @@ description: "Installez le [!DNL Store Fulfillment solution] pour un storefront 
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Extrayez le fichier d’archive contenant le lot d’intégration pour installer
 
 1. Extrayez le fichier d’archive dans le nouveau répertoire.
 
-1. Vérifiez que les fichiers extraits sont bien en examinant la liste des fichiers.
+1. Vérifiez que les fichiers ont bien été extraits en consultant la liste des fichiers.
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -194,4 +194,5 @@ Le `-f` est requise si vous utilisez un thème vide.
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Bonnes pratiques de déploiement de contenu statique dans Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) dans le centre d’aide d’Adobe Commerce.
+>Pour plus d’informations, voir [Bonnes pratiques de déploiement de contenu statique dans Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) Article du Centre d’aide Adobe Commerce.
+

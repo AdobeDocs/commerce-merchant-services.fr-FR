@@ -1,10 +1,10 @@
 ---
-title: Transfert source Inventory management
-description: '"Configurer des stocks pour le [!DNL Store Fulfillment solution] avec Adobe Commerce Inventory management. Configurez un nouveau stock et transférez le stock par défaut afin de pouvoir l’affecter aux sources configurées pour activer les fonctionnalités de nettoyage de magasin requises par la solution d’exécution de magasin."'
+title: Transfert de source Inventory management
+description: "Configurer des stocks pour le [!DNL Store Fulfillment solution] avec Adobe Commerce Inventory management. Configurez un nouveau stock et transférez le stock par défaut afin de pouvoir l’affecter aux sources configurées pour activer les fonctionnalités de nettoyage de magasin requises par la solution d’exécution de magasin."
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Transfert source Inventory management
+# Transfert de source Inventory management
 
 Le [!DNL Store Fulfillment] La solution utilise Adobe Commerce Inventory management natif. Par défaut, la variable [!DNL Commerce] La configuration affecte l’ensemble de l’inventaire web au stock par défaut, auquel aucune source supplémentaire ne peut être affectée. Un site web ne pouvant se voir attribuer qu’un seul stock, un commerçant doit configurer un nouveau stock et éventuellement transférer son stock source par défaut à une source affectée à la portée appropriée. Ensuite, la source peut être affectée au nouveau stock.
 

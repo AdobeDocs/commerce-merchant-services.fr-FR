@@ -4,7 +4,7 @@ description: '''[!DNL Live Search] flux d’intégration, exigences du système,
 role: User, Admin
 level: Intermediate
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Prise en main d’ [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerc
 
 - **Compte d’exécution de la boutique**-Au cours du processus d’activation, un gestionnaire de compte crée votre compte d’exécution Boutique et vous fournit les informations et les informations d’identification du compte. Ces informations d’identification sont requises pour activer la connexion entre Adobe Commerce et la solution d’exécution de magasin.
 
-- **Application d’assistance pour la boutique**: fournit des associés de magasin à un workflow d’exécution de magasin de bout en bout pour gérer les commandes BOPIS des appareils mobiles. Store Associates peut télécharger et installer Walmart [!DNL Store Assist] pour les appareils iOS et Android™. Le processus d’intégration des applications est géré par le Centre client de Walmart Commerce Technologies en tant que processus distinct. Cependant, [certains paramètres de configuration de l’application](user-setup.md) sont terminées à partir de l’administrateur Adobe Commerce.
+- **Application d’assistance pour la boutique**: fournit des associés de magasin à un workflow d’exécution de magasin de bout en bout pour gérer les commandes BOPIS des appareils mobiles. Store Associates peut télécharger et installer Walmart&#39;s [!DNL Store Assist] pour les appareils iOS et Android™. Le processus d’intégration des applications est géré par le Centre client de Walmart Commerce Technologies en tant que processus distinct. Cependant, [certains paramètres de configuration de l’application](user-setup.md) sont terminées à partir de l’administrateur Adobe Commerce.
 
    | Application d’aide à la boutique - Vue de prise en main | Application d’assistance de la boutique - Mode Modules |
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -49,6 +49,6 @@ Prise en main d’ [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerc
 
 1. [Création d’utilisateurs et de rôles pour l’application d’aide à la boutique](user-setup.md).
 
-1. [Téléchargez le fichier de Walmart [!DNL Store Assist] sur l’appareil de votre choix. L’application est disponible sur l’application Apple (iOS) et sur Google Play (Android™).](app-setup.md) magasins.
+1. [Télécharger Walmart&#39;s [!DNL Store Assist] sur l’appareil de votre choix. L’application est disponible sur l’application Apple (iOS) et sur Google Play (Android™).](app-setup.md) magasins.
 
 Une fois que vous avez installé, configuré, intégré et que vous avez accès à la variable [!DNL Store Assist] application, vous pouvez [commencer à créer des commandes et des tests ;](test-and-deploy.md).

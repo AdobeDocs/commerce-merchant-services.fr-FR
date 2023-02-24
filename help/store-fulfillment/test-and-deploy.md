@@ -4,9 +4,9 @@ description: Planifiez le test pour vérifier la fonctionnalité d’exécution 
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2660'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Cet exemple de plan de test couvre les domaines fonctionnels suivants :
 | Contrat frontal</br>Formulaire d’archivage | Expérience d’archivage | Client, administrateur |
 | Application d’aide à la boutique | Commande</br>Pick</br>Évaluation</br>et Handoff | Association de magasin |
 
-### Synchronisation de l’API d’inventaire
+### Synchronisation des API d’inventaire
 
 Cette section du plan de test couvre la synchronisation des stocks et des stocks afin de vérifier que les mises à jour des sources et des stocks de récupération sont synchronisées correctement entre Adobe Commerce et la solution d’exécution de magasin.
 
@@ -81,7 +81,7 @@ Cette section du plan de test couvre la synchronisation des stocks et des stocks
 <tr>
 <td><strong>Mettre à jour la source du stock de prise en charge existante</strong></td>
 <td>Enregistrez les mises à jour dans une source de stock existante.</td>
-<td>L’opération de synchronisation en temps réel envoie les détails au GIF Walmart dans les 5 minutes.</td>
+<td>L’opération de synchronisation en temps réel envoie les détails au GIF Walmart dans un délai de 5 minutes.</td>
 </tr>
 <tr>
 <td><strong>Source du stock de ramassage</br><code>Is Synced</code> status</br><code>Is Synced</code></strong></td>
@@ -277,7 +277,7 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 <ol>
 <li>Placez la commande.</li>
 <li>Attendez que la commande soit synchronisée.</li>
-<li>Vérifiez que la facture a été créée (le cas échéant autoriser et capturer) et que le courrier électronique de facture a été reçu.</li>
+<li>Si l'option d'autorisation et de capture est paramétrée, vérifiez que la facture a été créée et que le client a bien reçu l'email de la facture.</li>
 <li>Sélectionnez tous les produits avec Postman.</li>
 <li>Archivez-vous.</li>
 <li>Fais un passe-temps.</li>
@@ -566,39 +566,39 @@ Cette section du plan de test couvre les scénarios de test des workflows de com
 <tr>
 <td>
 <strong>Sélection de commande unique : chemin d’accès heureux, sélection de bord</strong></td>
-<td>Sélectionnez des éléments uniques et multiquantité. Aucun saut nil et ramassage au bord du trottoir (avec mise en scène).
+<td>Sélectionnez des éléments uniques et multiquantité. Aucun saut nil et saut de bord (avec transfert).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Sélection multi-commande : chemin heureux, saut de bordure</strong></td>
-<td>Éléments uniques et multiquantité. Aucun saut nil et nettoyage à côté du curseur (avec transfert)</td>
+<td>Éléments uniques et multiquantité. Aucun saut nil et saut côté client (avec transfert intermédiaire)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Sélection de commande unique : sélection de chemin d’accès heureux en magasin</strong></td>
-<td>Éléments uniques et multiquantité. Aucun nil sélectionne et instantanée (avec évaluation)</td>
+<td>Éléments uniques et multiquantité. Aucun saut nil et saut en magasin (avec évaluation)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Sélection multi-commande : chemin heureux, saut en magasin</strong></td>
-<td>Sélectionnez des éléments uniques et multiquantité. Aucun saut nil et ramassage au bord du trottoir (avec mise en scène).</td>
+<td>Sélectionnez des éléments uniques et multiquantité. Aucun saut nil et saut de bord (avec transfert).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Sélection de commande unique : chemin d’accès différent, sélection en magasin</strong></td>
-<td>Sélectionnez des éléments uniques et multi-quantité avec les fonctions de sélection partielle et de sélection automatique, puis effectuez une reprise instantanée (avec évaluation).</td>
+<td>Sélectionnez des éléments uniques et multi-quantité avec sélection partielle, sélection simple et en magasin et sélection en magasin (avec évaluation).</td>
 </td>
 <td></td>
 </tr>
 <td><strong>Sélection multi-commande : pas de saut de chemin heureux</strong></td>
-<td>Sélectionnez des éléments uniques et multi-quantité avec les fonctions de sélection partielle et de sélection automatique, puis effectuez une reprise instantanée (avec évaluation).</td>
+<td>Sélectionnez des éléments uniques et multi-quantité avec sélection partielle, sélection simple et en magasin et sélection en magasin (avec évaluation).</td>
 <td></td>
 </tr>
 <td><strong>Sélection d’une seule commande : chemin non heureux, sélection côté serveur</strong></td>
-<td>Sélectionnez des éléments uniques et multiquantité avec sélection partielle, sélection par clic et recadrage (avec évaluation).</strong></td>
+<td>Sélectionnez des éléments uniques et multi-quantité avec sélection partielle, sélection par clic et sélection au niveau du curseur (avec évaluation).</strong></td>
 </td>
 <td></td>
 </tr>

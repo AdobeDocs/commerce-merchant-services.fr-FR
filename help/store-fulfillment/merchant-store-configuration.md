@@ -1,9 +1,10 @@
 ---
-title: Configuration de la boutique marchande
-description: 'Configurez des sources Inventory management améliorées en tant que magasins marchands. '
+title: Configuration des magasins marchands
+description: Configurez des sources Inventory management améliorées en tant que magasins marchands.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
@@ -141,10 +142,3 @@ Gérer la configuration des magasins marchands depuis l’administrateur : **[!U
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | Indiquez si les identifiants de marque de véhicule sont requis pour les clients lors de l’archivage.</br></br>Si cette option est activée, le client est invité à indiquer la marque de son véhicule à son arrivée. Si cette option est désactivée, le client peut ignorer cette entrée. | Global | Non |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | Indiquez si vous souhaitez prendre en charge la collecte d’informations supplémentaires auprès du client lors de l’archivage. | Global | Non |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | Indiquez si des informations supplémentaires sont requises pour les clients lors de l’archivage. </br></br>Si cette option est activée, le client est invité à saisir des informations supplémentaires à son arrivée. Si cette option est désactivée, le client peut ignorer cette entrée. | Global | Non |
-
-
-
-
-
-
-

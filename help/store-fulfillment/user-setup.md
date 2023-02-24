@@ -1,17 +1,17 @@
 ---
-title: Configuration utilisateur
-description: 'Configurez des sources Inventory management améliorées en tant que boutiques de commerce pour prendre en charge la solution d’exécution de magasin pour Adobe Commerce. '
+title: Configuration de l’utilisateur
+description: Configurez des sources Inventory management améliorées en tant que boutiques de commerce pour prendre en charge la solution d’exécution de magasin pour Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: eb735bef-c339-4d0b-b3e7-10328915725b
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-
-# Configuration utilisateur
+# Configuration de l’utilisateur
 
 Application d’aide à la boutique Les utilisateurs sont gérés dans Adobe Commerce. Toutefois, ces utilisateurs n’interagissent pas directement avec Adobe Commerce. La gestion des utilisateurs est configurée dans Adobe Commerce pour activer les connexions sécurisées entre Adobe Commerce et l’application.
 

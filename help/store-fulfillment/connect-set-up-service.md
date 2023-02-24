@@ -3,16 +3,17 @@ title: Connexion à la solution d’exécution de magasin
 description: Créez les connexions entre Adobe Commerce et la solution d’exécution de magasin en créant et en autorisant une intégration Adobe Commerce et en ajoutant les informations d’identification du compte d’exécution de magasin à la configuration du service Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 # Connexion à la solution d’exécution de magasin
 
-Installez la connexion entre Adobe Commerce et les services d’exécution de magasin en configurant les informations d’authentification et les données de connexion requises à partir de l’administrateur.
+Connectez les services d’exécution de magasin à Adobe Commerce en ajoutant les informations d’authentification et les données de connexion requises à l’administrateur Adobe Commerce.
 
 - **[Configurer [!DNL Commerce integration settings]](#create-the-commerce-integration)**-Créez une intégration Adobe Commerce pour les services d’exécution de magasin et générez les jetons d’accès pour authentifier les requêtes entrantes des serveurs d’exécution de magasin.
 
@@ -47,7 +48,7 @@ Pour intégrer Adobe Commerce aux services d’exécution de magasin, vous crée
 
 ## Configuration des informations d’identification du compte d’exécution de magasin
 
-Une fois que vous avez rempli le formulaire de prise en charge, un compte d’exécution de la boutique Walmart est créé pour vous. Vous recevrez les informations d’identification suivantes lorsqu’elles seront disponibles :
+Une fois que vous avez rempli le formulaire de prise en charge, un compte d’exécution de la boutique Walmart est créé pour vous. Vous recevez les informations d’identification suivantes lorsqu’elles sont disponibles :
 
 - [!DNL Merchant ID]
 - [!DNL Consumer ID]
@@ -59,7 +60,7 @@ Ces informations d’identification sont requises pour configurer et utiliser l�
 
 >[!NOTE]
 >
->La création du compte peut prendre un certain temps. Pendant que vous attendez les informations d’identification, [passer en revue et configurer d’autres paramètres pour la solution d’exécution de magasin](service-config-settings-overview.md).
+>La création du compte peut prendre un certain temps. Pendant que vous attendez les informations d’identification, [révision et configuration d’autres paramètres pour la solution d’exécution de magasin](service-config-settings-overview.md).
 
 ### Ajout d’informations d’identification pour se connecter à l’exécution du magasin
 
@@ -76,11 +77,3 @@ Ces informations d’identification sont requises pour configurer et utiliser l�
 >[!NOTE]
 >
 >Si les informations d’identification ne sont pas valides, vérifiez que vous avez saisi les valeurs correctes pour chaque environnement et revalidez. Contactez votre gestionnaire de compte si vous rencontrez toujours des problèmes de connexion.
-
-
-
-
-
-
-
-

@@ -4,9 +4,9 @@ description: Découvrez les modules Pick, Stage, Hand-Off et Commandes disponibl
 role: User
 level: Intermediate
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---

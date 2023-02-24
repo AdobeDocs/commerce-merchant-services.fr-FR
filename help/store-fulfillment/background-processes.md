@@ -1,10 +1,10 @@
 ---
 title: Configuration du processus en arrière-plan
-description: '"Configuration des plannings pour [!DNL Store Fulfillment] processus d’arrière-plan utilisés pour synchroniser les données avec les services d’exécution."                   '
+description: "Configuration des plannings pour [!DNL Store Fulfillment] processus d’arrière-plan utilisés pour synchroniser les données avec les services d’exécution."
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%

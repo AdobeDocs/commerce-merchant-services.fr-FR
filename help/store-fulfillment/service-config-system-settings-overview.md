@@ -1,9 +1,9 @@
 ---
-title: Configuration du système - Aperçu
+title: Présentation de la configuration du système
 description: Découvrez les catégories de paramètres de configuration de l’administrateur disponibles pour la solution d’exécution de magasin et la manière dont elles sont configurées.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -38,3 +38,4 @@ Dans la référence de configuration de chaque type, les détails de configurati
 - **Obligatoire** indique si une valeur doit être définie sur le champ.
 
 À titre de référence technique, vous pouvez également trouver le chemin de configuration interne de chaque champ.
+

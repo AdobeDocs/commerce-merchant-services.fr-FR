@@ -1,12 +1,12 @@
 ---
-user-guide-title: '"[!DNL Store FulFillment Guide]"'
+user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Informations détaillées sur l’installation, la configuration et l’utilisation de l’exécution de magasin pour les magasins Adobe Commerce.
 breadcrumb-title: Exécution de la boutique pour Adobe Commerce
 index: true
-source-git-commit: 27ed666954f445eb99e0bf370d1155924bfb8ad3
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 2%
+source-wordcount: '84'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 2%
 - [Présentation de la configuration](service-config-settings-overview.md)
 - Configuration du magasin {#store-configuration}
    - [Configuration générale](enable-general.md)
-   - [Courriers électroniques de vente](sales-emails.md)
-   - [Magasin de commerce (sources)](merchant-store-configuration.md)
+   - [Modèles d’email de vente](sales-emails.md)
+   - [Magasin marchand (sources)](merchant-store-configuration.md)
    - [Gestion des stocks de produits](product-stock.md)
    - [Transfert source Inventory management](inventory-stock-transfer.md)
    - [Plusieurs sites web/portée](multi-site-and-scope-config.md)
@@ -37,5 +37,4 @@ ht-degree: 2%
    - [Configuration de l’expérience d’archivage](check-in-experience-setup.md)
    - [Configuration utilisateur](user-setup.md)
    - [Configuration de l’application](app-setup.md)
-
 

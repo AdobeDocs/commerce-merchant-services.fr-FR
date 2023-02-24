@@ -4,9 +4,9 @@ description: Configurez les [!DNL Store Assist] pour gérer les processus d’ex
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ L’application d’aide à la boutique nécessite deux types de configuration :
 
    - **Annulation de la boutique**: indiquez si les commandes peuvent être annulées à partir du magasin et quels rôles disposent de droits d’annulation.
 
-   - **Fenêtre de nettoyage des commandes**: indiquez la durée au-delà de laquelle la variable [Délai d’avance estimé pour la collecte](enable-general.md#delivery-method-title-configuration) qu’une commande sélectionnée reste en cours d’évaluation avant d’être réinitialisée (trois jours, par exemple). La valeur par défaut est de 7 jours. Si cette configuration est activée, la commande est automatiquement annulée à l’expiration de cette période. Les articles sont réactivés et le marchand reçoit un email d’annulation.
+   - **Fenêtre de nettoyage des commandes**: indiquez la durée au-delà de laquelle la variable [Délai d’avance estimé pour la collecte](enable-general.md#delivery-method-title-configuration) qu’une commande sélectionnée reste en cours d’évaluation avant d’être réinitialisée (trois jours, par exemple). La valeur par défaut est de sept jours. Si cette configuration est activée, la commande est automatiquement annulée à l’expiration de cette période. Les articles sont réactivés et le marchand reçoit un email d’annulation.
 
    - Personnalisez toutes les instructions de l’application (sélection, évaluation, remise).
 
@@ -63,11 +63,11 @@ Une fois l’application d’aide à la boutique configurée et configurée, Sto
 
 - Vérifiez que le périphérique mobile répond à la variable [configuration matérielle et logicielle requise](solution-requirements.md#store-assist-app-requirements) pour la solution d’exécution de magasin.
 
-- Téléchargez l’application d’aide à la boutique à partir du [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} ou la variable [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+- Téléchargez l’application d’aide à la boutique à partir du [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
 - Store Associates nécessite les informations suivantes pour se connecter :
 
    - **[!UICONTROL Company name]** associé au compte d’assistance de magasin
 
    - **Informations d’identification du compte d’assistance de la boutique**—nom d’utilisateur et mot de passe pour leur compte.
-   Un administrateur Adobe Commerce peut créer un compte d’utilisateur et définir des autorisations pour le [!DNL Store Assist app] comptes d’utilisateurs pour les emplacements de magasin qui ont [Collecte en magasin](merchant-store-configuration.md#pickup-location-configuration) activée dans les paramètres des boutiques d’administration.
+   Un administrateur Adobe Commerce peut créer et gérer des [!DNL Store Assist app] comptes d’utilisateurs de tous les emplacements de magasin qui ont [Collecte en magasin](merchant-store-configuration.md#pickup-location-configuration) activée dans les paramètres des boutiques d’administration.
