@@ -1,14 +1,15 @@
 ---
-title: Collecte de données
+title: Collecter des données
 description: Découvrez comment les événements collectent des données pour les recommandations de produits.
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+exl-id: b827d88c-327f-4986-8239-8f1921d8383c
+source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
-# Collecte de données
+# Collecter des données
 
 Lorsque vous installez et configurez des fonctionnalités Adobe Commerce basées sur SaaS telles que [Recommendations de produit](install-configure.md) ou [Recherche en direct](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html), les modules déploient la collecte de données comportementales sur votre storefront. Ce mécanisme collecte des données comportementales anonymes auprès de vos acheteurs et alimente les recommandations de produits. Par exemple, la variable `view` est utilisé pour calculer la variable `Viewed this, viewed that` le type de recommandation et la variable `place-order` est utilisé pour calculer la variable `Bought this, bought that` type de recommandation.
 
