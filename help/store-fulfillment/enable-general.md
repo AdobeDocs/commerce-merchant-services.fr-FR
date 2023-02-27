@@ -4,9 +4,9 @@ description: Configuration des paramètres généraux à activer [!DNL Store Ful
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ Configurez les paramètres de sécurité du compte utilisateur et du mot de pass
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>Nombre de jours pendant lesquels un mot de passe reste valide avant qu’un mot de passe requis ne soit modifié. Laissez vide pour désactiver cette option.</td>
-<td>Global</td>
-<td>Non</td>
-</tr>
-</tbody>
-</table>
-
-### Authentification à deux facteurs
-
-<table>
-<thead>
-<tr>
-<td><strong>Champ</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
-<td><strong>Obligatoire</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>Activez ou désactivez l’authentification à deux facteurs pour les associés de magasin. Lorsqu’elle est activée, l’associé du magasin est invité à fournir un mot de passe unique généré par un fournisseur d’authentification.</td>
-<td>Global</td>
-<td>Non</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>Définit la stratégie d’application pour l’authentification à deux facteurs.<br></br><strong>[!UICONTROL Optional]</strong>: L’associé du magasin peut contourner l’authentification à deux facteurs si aucun fournisseur n’est défini.<br></br><strong>[!UICONTROL Mandatory]</strong>: L’associé de magasin est requis pour effectuer une authentification à deux facteurs.</td>
-<td>Global</td>
-<td>Non</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>Sélectionnez un ou plusieurs services du fournisseur d’authentification pour proposer des associés au magasin. Pour configurer l’authentification et l’authentification à deux facteurs, les associés de magasin doivent installer l’application d’authentification à partir de l’un des fournisseurs disponibles installés sur leurs appareils mobiles.</td>
 <td>Global</td>
 <td>Non</td>
 </tr>

@@ -4,9 +4,9 @@ description: Créez les connexions entre Adobe Commerce et la solution d’exéc
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Connectez les services d’exécution de magasin à Adobe Commerce en ajoutant les informations d’authentification et les données de connexion requises à l’administrateur Adobe Commerce.
 
-- **[Configurer [!DNL Commerce integration settings]](#create-the-commerce-integration)**-Créez une intégration Adobe Commerce pour les services d’exécution de magasin et générez les jetons d’accès pour authentifier les requêtes entrantes des serveurs d’exécution de magasin.
+- **[Configurer [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**-Créez une intégration Adobe Commerce pour les services d’exécution de magasin et générez les jetons d’accès pour authentifier les requêtes entrantes des serveurs d’exécution de magasin.
 
 - **[Configuration des informations d’identification du compte pour les services d’exécution de magasin](#configure-store-fulfillment-account-credentials)**- Ajoutez vos informations d’identification pour connecter Adobe Commerce à votre compte d’exécution de magasin.
 
@@ -25,7 +25,7 @@ Connectez les services d’exécution de magasin à Adobe Commerce en ajoutant l
 
 ## Création d’une intégration Adobe Commerce
 
-Pour intégrer Adobe Commerce aux services d’exécution de magasin, vous créez une intégration Commerce et générez des jetons d’accès qui peuvent être utilisés pour authentifier les requêtes provenant des serveurs d’exécution de magasin.
+Pour intégrer Adobe Commerce aux services d’exécution de magasin, vous créez une intégration Commerce et générez des jetons d’accès qui peuvent être utilisés pour authentifier les requêtes provenant des serveurs d’exécution de magasin. Vous devez également mettre à jour Adobe Commerce [!UICONTROL Consumer Settings] options de prévention `The consumer isn't authorized to access %resources.` erreurs de réponse sur les requêtes d’Adobe Commerce vers [!DNL Store Fulfillment] services.
 
 1. Depuis l’administrateur, créez l’intégration pour l’exécution du magasin.
 
@@ -41,10 +41,16 @@ Pour intégrer Adobe Commerce aux services d’exécution de magasin, vous crée
 
 1. Contactez votre gestionnaire de compte pour terminer la configuration du côté Exécution de magasin et autoriser l’intégration.
 
+1. Activation d’Adobe Commerce [!UICONTROL Consumer Settings] option à [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
->[!NOTE]
+   - Depuis l’administrateur, accédez à **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+
+   - Définissez la variable [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] option à **[!UICONTROL Yes]**.
+
+>[!IMPORTANT]
 >
->Pour obtenir des instructions détaillées, voir [Intégrations](https://docs.magento.com/user-guide/system/integrations.html) dans le _Guide de l’utilisateur d’Adobe Commerce_.
+> Le jeton d’intégration est spécifique à l’environnement. Si vous restaurez la base de données d’un environnement avec les données source d’un autre environnement (par exemple, la restauration des données de production d’un environnement d’évaluation), excluez la variable `oauth_token` table de l’exportation de la base de données, de sorte que les détails du jeton d’intégration ne soient pas remplacés lors de l’opération de restauration.
+
 
 ## Configuration des informations d’identification du compte d’exécution de magasin
 

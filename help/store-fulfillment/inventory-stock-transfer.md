@@ -4,9 +4,9 @@ description: "Configurer des stocks pour le [!DNL Store Fulfillment solution] av
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Transfert de source Inventory management
 
 Le [!DNL Store Fulfillment] La solution utilise Adobe Commerce Inventory management natif. Par défaut, la variable [!DNL Commerce] La configuration affecte l’ensemble de l’inventaire web au stock par défaut, auquel aucune source supplémentaire ne peut être affectée. Un site web ne pouvant se voir attribuer qu’un seul stock, un commerçant doit configurer un nouveau stock et éventuellement transférer son stock source par défaut à une source affectée à la portée appropriée. Ensuite, la source peut être affectée au nouveau stock.
+
+>[!IMPORTANT]
+>
+>Les vendeurs doivent conserver la source par défaut pour tous les produits inclus dans les types de produits de groupe et de regroupement. Ces produits ont besoin d’une quantité de stock qui respecte le seuil de quantité minimal pour dans les articles en stock et qui inclut un état de stock de [!UICONTROL In Stock].
 
 Ces modifications de configuration vous permettent d’accomplir trois tâches :
 
