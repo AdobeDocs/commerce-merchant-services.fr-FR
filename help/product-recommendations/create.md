@@ -2,9 +2,9 @@
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
    >[!NOTE]
    >
-   > Les unités de recommandations du Créateur de pages peuvent uniquement être créées pour la vue de magasin par défaut. Pour en savoir plus sur la création de recommandations de produits avec le générateur de pages, voir [Ajouter du contenu - Recommendations de produit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Les unités de recommandation du Créateur de pages doivent être créées dans la vue de magasin par défaut, mais peuvent ensuite être utilisées n’importe où. Pour en savoir plus sur la création de recommandations de produits avec le générateur de pages, voir [Ajouter du contenu - Recommendations de produit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Cliquez sur **Créer une recommandation**.
 

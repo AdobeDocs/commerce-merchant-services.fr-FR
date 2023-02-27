@@ -2,9 +2,9 @@
 title: Intégration
 description: Découvrez les exigences et les plateformes prises en charge dans [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -27,16 +27,14 @@ Le processus d’intégration pour [!DNL Product Recommendations] requiert l’a
 
 ### Plateformes prises en charge
 
-- Adobe Commerce on prem (EE) : 2.4.x
+- Adobe Commerce on premise (EE) : 2.4.x
 - Adobe Commerce on Cloud (CEE) : 2.4.x
 
 ### Prise en charge du créateur de pages
 
 [!DNL Product Recommendations] peut être ajouté à une page sous la forme d’un type de contenu Page Builder . Pour ajouter la prise en charge de Page Builder à Recommendations de produit, reportez-vous à la section [Installation et configuration](install-configure.md).
 
->[!NOTE]
->
->[!DNL Page Builder] les unités de recommandation ne peuvent être créées que pour la vue de magasin par défaut.
+Voir [[!DNL Page Builder] Intégration](page-builder.md) pour obtenir des instructions sur l’ajout de [!DNL Product Recommendations] into [!DNL Page Builder] contenu.
 
 ### Prise en charge B2B {#b2bsupport}
 
