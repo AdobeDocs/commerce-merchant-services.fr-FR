@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Notes de mise à jour'
+title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Notes de mise à jour de'
 description: "Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Store Fulfillment by Walmart Commerce Technologies] versions."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,10 @@ Ces notes de mise à jour décrivent la version initiale de [!DNL Store Fulfillm
 ![Nouveau](../assets/new.svg) Nouvelles fonctionnalités
 ![Correction d’un problème](../assets/fix.svg) Correctifs et améliorations
 ![Problème connu](../assets/bug.svg) Problèmes connus
+
+## v1.3.0
+
+<!-- Add release notes when version 1.3.0 is released -->
 
 ## v1.2.0
 
@@ -50,4 +54,4 @@ Version initiale, compatible avec les versions commerciales suivantes :
 
 ## Application d’assistance pour la boutique
 
-Pour plus d’informations sur les nouvelles versions de l’application d’aide à la boutique, voir les informations de l’application dans la section [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} ou [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+Pour plus d’informations sur les nouvelles versions de l’application d’aide à la boutique, voir les informations de l’application dans la section [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.

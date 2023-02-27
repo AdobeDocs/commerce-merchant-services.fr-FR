@@ -4,7 +4,7 @@ description: Configuration des paramètres généraux à activer [!DNL Store Ful
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Activez la variable [!DNL Store Fulfillment] pour ajouter les fonctionnalités d
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>Activez ou désactivez la solution. Lorsque cette option est activée, configurez et utilisez les fonctionnalités d’exécution de magasin et établissez la connexion entre votre boutique Adobe Commerce et [!DNL Store Fulfillment] services. Lorsque cette option est désactivée, toutes les fonctions d’exécution de magasin sont désactivées. Il n’existe aucune communication entre Adobe Commerce et les services d’exécution de magasin. Les informations de commande ne peuvent pas être traitées ni reçues.</td>
-<td>Global</td>
+<td>Site Web</td>
 <td>Oui</td>
 </tr>
 </tbody>
