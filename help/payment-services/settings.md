@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
+source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 
       >[!NOTE]
       >
-      > Pour utiliser Apple Pay [Posséder un compte développeur Apple](test-validate.md#test-in-sandbox-environment) (avec une fausse carte de crédit et des informations de facturation) pour le tester. Lorsque vous êtes prêt à utiliser Apple Pay dans un environnement de test _ou_ mode de production, après avoir effectué toute [test et validation](test-validate.md), contactez votre représentant commercial pour l’activer pour vos boutiques actives.
+      > Pour utiliser Apple Pay [posséder un compte de test d’environnement de test Apple](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (avec une fausse carte de crédit et des informations de facturation) pour le tester. Lorsque vous êtes prêt à utiliser Apple Pay dans un environnement de test _ou_ mode de production, après avoir effectué toute [test et validation](test-validate.md#test-in-sandbox-environment), contactez votre représentant commercial pour l’activer pour vos boutiques actives.
 
       Lorsque vous activez/désactivez la visibilité des boutons de paiement ou le message PayPal Pay Later, un aperçu visuel de cette configuration s’affiche au bas de la page Paramètres .
 
