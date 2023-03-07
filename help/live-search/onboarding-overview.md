@@ -2,9 +2,9 @@
 title: "Présentation de l’intégration"
 description: "[!DNL Live Search] flux d’intégration, exigences du système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ Pour commencer à utiliser [!DNL Live Search] pour Adobe Commerce, exécutez le 
 
 ## Conditions {#requirements}
 
-* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.x
-* PHP 7.3 / 7.4 / 8.1
+* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.4+
+* PHP 8.1, 8.2
 * [!DNL Composer]
 
 ### Plateformes prises en charge
 
-* Adobe Commerce on prem (EE) : 2.4.x
-* Adobe Commerce on Cloud (CEE) : 2.4.x
+* Adobe Commerce on prem (EE) : 2.4.4+
+* Adobe Commerce on Cloud (CEE) : 2.4.4+
 
 ## Limites et seuils
 
