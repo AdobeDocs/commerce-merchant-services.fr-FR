@@ -2,9 +2,9 @@
 title: Options de paiement
 description: Définissez les options de paiement pour personnaliser les méthodes disponibles pour les clients de votre magasin.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 31665f90909ce2364579fc7f9c97087e2376c0a6
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Le [!DNL Apple Pay] est visible à partir de la page produit, du mini-panier, du
 
 >[!NOTE]
 >
-> Pour utiliser Apple Pay, contactez votre représentant commercial ou votre gestionnaire de compte pour l’activer pour vos boutiques actives.
+> Pour utiliser Apple Pay, contactez votre représentant commercial ou votre équipe de compte d’Adobe afin de l’activer pour vos magasins actifs.
 
 ### [!DNL Pay Later] button
 
