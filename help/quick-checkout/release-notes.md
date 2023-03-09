@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Notes de mise à jour de'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Quick Checkout] versions.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: a10b09a5bc2b46f531a7bad298a2976e2d25ec63
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -69,17 +69,23 @@ _5 octobre 2022_
 
 _24 février 2023_
 
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-592 --> Améliorations de l’expérience utilisateur lors du placement d’une commande dans la variable [Panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) comme mode de paiement. Cette fonctionnalité permet aux clients de passer une commande avec Braintree comme mode de paiement lors de l’extraction. [!DNL Quick Checkout] est activée.
 
 ## v1.7.0
 
 _22 février 2023_
 
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue AC-8002 --> Améliorations de l’expérience utilisateur lors du placement d’une commande à l’aide d’une [Multidiffusion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) . Cette fonctionnalité permet d’afficher les méthodes de paiement lors de l’extraction. [!DNL Quick Checkout] est activée.
 
 ## v1.6.0
 
 _9 février 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-567 --> Améliorations de l’expérience utilisateur lors de la [placement d’une commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) en utilisant la variable [Diffusion en magasin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) avec la méthode [!DNL Quick Checkout] désactivé.
 
@@ -88,6 +94,8 @@ _9 février 2023_
 ## v1.5.0
 
 _18 janvier 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-522 --> Une nouvelle configuration peut être activée/désactivée pour détecter si [acheteurs](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) peut être automatiquement connecté à Bolt.
 
@@ -103,6 +111,8 @@ _18 janvier 2023_
 
 _30 novembre 2022_
 
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-513 --> Désormais, lorsqu’un client Adobe Commerce est connecté au magasin pendant le processus de passage en caisse et dispose d’un compte Bolt, une option de connexion au compte Bolt du nouvel acheteur s’affiche.
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-512 --> Une nouvelle configuration détecte automatiquement si les clients connectés peuvent également être connectés à Bolt.
@@ -113,6 +123,8 @@ _30 novembre 2022_
 
 _2 novembre 2022_
 
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-293 --> Maintenant, [!DNL Quick Checkout] inclut la possibilité d’activer une [suivi de passage en caisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) qui permet à Adobe Commerce de partager des informations de rapport avec Bolt.
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-461 --> Vous pouvez maintenant voir un message d’avertissement dans votre [!DNL Quick Checkout] Panneau d’administration si [suivi de passage en caisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) est désactivée.
@@ -120,6 +132,8 @@ _2 novembre 2022_
 ## v1.2.0
 
 _8 septembre 2022_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-341 --> Disponibilité générale -[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) est désormais compatible avec les versions 2.4.5 d’Adobe Commerce.
 
@@ -143,6 +157,8 @@ _8 septembre 2022_
 
 _12 août 2022_
 
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-375 --> Améliorations de l’expérience utilisateur dans [[!DNL Quick Checkout] Panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) maintenant inclure uniquement les paramètres visibles et validés lorsque l’extension est activée.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-349 --> Améliorations de la compatibilité pour les adresses de livraison existantes avec le portefeuille Bolt.
@@ -150,6 +166,8 @@ _12 août 2022_
 ## v1.0.0
 
 _9 août 2022_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-341 --> Disponibilité générale -[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) est désormais compatible avec les versions 2.4.1 à 2.4.4 d’Adobe Commerce.
 
