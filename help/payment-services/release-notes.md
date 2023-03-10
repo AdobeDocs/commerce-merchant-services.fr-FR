@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
+source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,26 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
 
 +++
+
+## v2.0.0
+
+_10 mars 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-4152 --> Ajout de la prise en charge de PHP 8.2 et Adobe Commerce 2.4.6. Non compatible avec PHP 7.x.
+
+## v1.6.1
+
+_10 mars 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Correction](../assets/fix.svg)<!-- Issue PAY-4226 --> Correction d’un problème qui empêchait les nouveaux marchands de services de paiement d’utiliser le passage en caisse dans l’administrateur. Auparavant, les services de paiement utilisaient l’ID client Commerce, qui n’existe pas pour les nouveaux clients.
+
+![Correction](../assets/fix.svg)<!-- Issue PAY-4205 --> Correction d’un problème en raison duquel l’état de l’adresse de livraison spécifiée était remplacé par l’état dans les paramètres de taxe par défaut lors du passage en caisse à l’aide de la variable [Option PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Désormais, les clients peuvent faire expédier leurs commandes à un autre état que celui configuré par défaut dans les paramètres fiscaux du marchand.
+
+![Correction](../assets/fix.svg)<!-- Issue PAY-4202 --> Correction d’un problème qui empêchait les clients d’utiliser la mise en valeur de carte pour effectuer un achat ou supprimer un mode de paiement par défaut pour un magasin. [en utilisant la variable `Authorize and Capture` action de paiement](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). Auparavant, une erreur &quot;Provider Vault ID not found&quot; s’affichait lorsque le client tentait d’utiliser ou de modifier ses cartes de crédit en mémoire tampon.
 
 ## v1.6.0
 
