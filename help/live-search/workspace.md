@@ -1,15 +1,15 @@
 ---
-title: Workspace
-description: L’espace de travail Recherche en direct est utilisé pour configurer, gérer et surveiller les performances de recherche.
+title: '[!DNL Live Search] Workspace'
+description: Le [!DNL Live Search] workspace est utilisé pour configurer, gérer et surveiller les performances de recherche.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 166665c3ee27ed7e07e00df0e3eab060f3686869
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# Workspace
+# [!DNL Live Search] Workspace
 
 L’espace de travail vous permet de configurer, de gérer et de surveiller les performances de [!DNL Live Search]. Le menu situé en haut permet d’accéder aux outils de chaque domaine fonctionnel.  Les fonctionnalités disponibles reflètent la sélection de menu actuelle.
 
@@ -28,5 +28,4 @@ Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commer
 | [Synonymes](synonyms.md) | Étendez la portée de la recherche pour inclure les mots que les acheteurs peuvent utiliser pour trouver des produits différents de ceux de votre catalogue. |
 | [Règles](rules.md) | Formez l’expérience de recherche à l’aide de règles logiques qui déclenchent des actions planifiées. Amplifiez, enseignez, épinglez ou masquez des produits afin d’étalonner les résultats de recherche en fonction de vos objectifs commerciaux. |
 | [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Les développeurs connectés à l’administrateur de votre boutique peuvent composer et tester des requêtes avec des données de catalogue réelles. Pour en savoir plus, accédez à [Présentation de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) dans le [!DNL Live Search] documentation destinée aux développeurs. |
-| [Commentaires](feedback.md) | Envoyez vos commentaires directement à la [!DNL Live Search] l&#39;équipe. |
 | [Paramètres](settings.md) | Déterminez comment les valeurs des facettes de prix sont regroupées par fourchette de prix dans le storefront. |

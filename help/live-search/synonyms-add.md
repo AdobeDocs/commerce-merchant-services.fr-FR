@@ -2,16 +2,16 @@
 title: "Add Synonyms"
 description: "Ajouter [!DNL Live Search] synonymes pour améliorer la réponse aux requêtes de recherche."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # Ajouter des Synonymes
 
-Augmentez l’engagement des clients en ajoutant votre propre liste organisée de synonymes de recherche en direct. [!DNL Live Search] peut gérer jusqu’à 200 synonymes par `Data Space ID`.
+Augmentez l’engagement des clients en ajoutant votre propre liste organisée de [!DNL Live Search] synonymes. [!DNL Live Search] peut gérer jusqu’à 200 synonymes par `Data Space ID`.
 
 ![[!DNL Live Search] synonyms](assets/synonym-workspace.png)
 
@@ -50,7 +50,7 @@ L’ensemble de synonymes apparaît dans la liste avec une flèche bidirectionne
 
    ![Ajout d’un synonyme unidirectionnel](assets/synonym-add-one-way.png)
 
-1. Saisissez le **Mot-clé** et **Extension** terme(s). Séparez plusieurs termes par une virgule.
+1. Saisissez le **Mot-clé** et **Extension** termes. Séparez plusieurs termes par une virgule.
 
    ![Exemple de synonyme unidirectionnel](assets/synonym-add-one-way-example.png)
 
@@ -63,10 +63,8 @@ L’ensemble de synonymes apparaît dans la liste avec une flèche à sens uniqu
 
 ## Étape 3 : Publier les modifications
 
-1. Une fois le ou les synonymes terminés, cliquez sur **Publier les modifications**.
+1. Une fois vos synonymes terminés, cliquez sur **Publier les modifications**.
 1. Patientez jusqu’à deux heures pour que vos mises à jour soient disponibles dans le storefront.
-
-![Publier les modifications](assets/synonym-publish.png)
 
 ## Descriptions des champs
 

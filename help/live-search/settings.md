@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Live Search] Paramètres"'
-description: '"Configuration des plages de facettes de prix et des intervalles pour [!DNL Live Search] facettes."'
+title: "[!DNL Live Search] Paramètres"
+description: "Configuration des plages de facettes de prix et des intervalles pour [!DNL Live Search] facettes."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Vous pouvez indiquer le nombre de groupes de prix et la manière dont les valeur
 
 ## Configuration des groupements de facettes de prix
 
-1. Dans Admin, accédez à **Marketing** > *SEO &amp; Search* > **Recherche en direct**.
+1. Dans Admin, accédez à **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]**.
 1. Sur le **Paramètres** sous *Facturation des prix*, procédez comme suit :
    * Saisissez le **Nombre de sélections**, ou des groupements de prix à mettre à disposition. Il est possible de définir jusqu’à 50 groupements de prix.
    * Saisissez le **Valeur d&#39;intervalle**, ou plage de prix pour chaque groupe. La valeur maximale est 10 000.

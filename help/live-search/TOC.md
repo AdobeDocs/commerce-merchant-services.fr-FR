@@ -2,10 +2,10 @@
 user-guide-title: "[!DNL Live Search] Guide"
 user-guide-description: "Ce guide fournit des instructions détaillées sur l’utilisation de [!DNL Live Search] d’Adobe Commerce."
 breadcrumb-title: "[!DNL Live Search] Guide"
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 2%
+source-wordcount: '96'
+ht-degree: 0%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 2%
    - [Présentation de l’intégration](onboarding-overview.md)
    - [Installer [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
+   - [Widget de page de liste de produits](plp-styling.md)
    - [Présentation rapide](quick-tour.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Style [!DNL Popover] Éléments](storefront-popover-styling.md)
@@ -41,6 +42,9 @@ ht-degree: 2%
       - [Espace de travail des règles](rules-workspace.md)
       - [Ajout de règles](rules-add.md)
       - [Gestion des règles](rules-manage.md)
+   - [Paramètres de configuration de Commerce](configuration.md)
    - [Paramètres](settings.md)
    - [Indexation](indexing.md)
-- [Commentaires](feedback.md)
+- Requêtes GraphQL {#graphql}
+   - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
+   - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Le [!DNL Live Search storefront popover] renvoie dynamiquement les produits suggérés et les miniatures."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 92889130fd7482e0b99fb08746e6fd2830b0345e
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 When [!DNL Live Search] is [installé](install.md), un [!DNL popover] apparaît dans le storefront lorsque les clients saisissent dans la variable [Rechercher](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) de la boîte. Avec chaque caractère saisi, la variable [!DNL popover] est mis à jour avec des suggestions de produits et des images miniatures des principaux résultats de recherche.
 
 [!DNL Live Search] renvoie les résultats d’une requête de deux caractères ou plus. Pour une correspondance partielle, le nombre maximal de caractères par mot est de 20. Le nombre de caractères d’une requête &quot;Rechercher lorsque vous tapez&quot; n’est pas configurable.
-
->[!NOTE]
->
->Le [!DNL Live Search] [!DNL storefront popover] est disponible uniquement pour les magasins qui utilisent la variable *Luma* ou un thème personnalisé basé sur *Luma*. Le *Luma* est inclus dans la variable [!DNL Commerce] données d’exemple. Le [!DNL popover] ne prend pas en charge la variable *Vide* thème. Voir [Style [!DNL Popover] Éléments](storefront-popover-styling.md) pour en savoir plus.
 
 ## Attributs pouvant faire l’objet d’une recherche
 
@@ -42,3 +38,9 @@ Par défaut, la valeur Recherche catalogue - Limite de saisie automatique est d�
 1. Développez l’objet *Recherche catalogue* .
 1. Définissez la variable **Limite de saisie automatique** au nombre de lignes que vous souhaitez autoriser dans la variable [!DNL popover].
 1. Une fois l’opération terminée, cliquez sur **Enregistrer la configuration**.
+
+## Limites
+
+* Le [!DNL Live Search] [!DNL storefront popover] est disponible uniquement pour les magasins qui utilisent la variable *Luma* ou un thème personnalisé basé sur *Luma*.
+* Le [!DNL popover] ne prend pas en charge la variable *Vide* thème. Voir [Style [!DNL Popover] Éléments](storefront-popover-styling.md) pour en savoir plus.
+* Le [!DNL popover] n’est pas pris en charge dans le formulaire de commande rapide.

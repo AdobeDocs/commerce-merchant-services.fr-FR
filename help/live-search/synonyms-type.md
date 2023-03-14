@@ -2,9 +2,9 @@
 title: "Types de synchronisation"
 description: "A sens unique et à sens unique [!DNL Live Search] les synonymes étendent la définition des mots-clés."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Un synonyme unidirectionnel est un sous-ensemble d’un mot-clé, mais avec une 
 
 ## Bonnes pratiques
 
-Gardez à l’esprit les bonnes pratiques suivantes pour tirer le meilleur parti des synonymes de recherche en direct.
+Gardez à l’esprit les bonnes pratiques suivantes pour tirer le meilleur parti de [!DNL Live Search] synonymes.
 
 ### Évitez les &quot;mots d’arrêt&quot;
 
-La recherche en direct filtre les &quot;mots d’arrêt&quot; anglais courants des synonymes, tels que :
+[!DNL Live Search] filtre les mots &quot;stop&quot; anglais courants des synonymes, tels que :
 
 a, an et sont, en tant que, à, être, mais, par, pour, si, in, into, is, it, no, of, on, or, such, the, they, then, they, this, to, was, will with
 
@@ -41,7 +41,7 @@ Les mots d’arrêt ne rendent pas les synonymes plus significatifs, mais augmen
 
 ### Utiliser des mots simples
 
-Si un terme de synonyme contient plusieurs mots, l’espace entre les mots les fait traiter comme des synonymes distincts. Par exemple, si vous définissez &quot;pièce temporelle&quot; comme synonyme de &quot;montre&quot;, les mots &quot;heure&quot; et &quot;pièce&quot; sont traités comme des synonymes distincts.
+Si un terme de synonyme contient plusieurs mots, l’espace entre les mots les traite comme des synonymes distincts. Par exemple, si vous définissez &quot;pièce temporelle&quot; comme synonyme de &quot;montre&quot;, les mots &quot;heure&quot; et &quot;pièce&quot; sont traités comme des synonymes distincts.
 
 ### Utilisation du singulier et du pluriel
 

@@ -1,10 +1,10 @@
 ---
-title: '"Ajouter des facettes"'
-description: '"Découvrez comment ajouter des attributs de produit filtrables en tant que [!DNL Live Search] facettes."'
+title: "Ajouter des facettes"
+description: "Découvrez comment ajouter des attributs de produit filtrables en tant que [!DNL Live Search] facettes."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -19,16 +19,13 @@ Tout attribut de produit filtrable peut être utilisé comme facette. Le *Ajout 
 
 1. Dans Admin, accédez à **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Sur le *Facturation* , cliquez sur **Ajout de facettes**.
-1. Dans le *Ajout de facettes* liste, chaque attribut disponible possède une propriété distincte *Ajouter* bouton . Effectuez l’une des opérations suivantes :
-
-   ![Facette ajoutée](assets/facets-list-add.png)
+1. Dans le *Ajout de facettes* liste, chaque attribut disponible possède une propriété distincte ![Bouton Ajouter](assets/btn-add.png). Procédez de l’une des manières suivantes :
 
    * Dans le *Attributs de facette* , sélectionnez l’attribut de produit à utiliser comme facette, puis cliquez sur **Ajouter**.
    * Pour rechercher un attribut de produit spécifique, saisissez les premiers caractères du nom de l’attribut dans la variable *Rechercher* de la boîte. Cliquez ensuite sur **Ajouter**.
 
       Pour configurer les intervalles et les groupements de facettes de prix, reportez-vous à la section [Paramètres](settings.md). Pour en savoir plus, accédez à [Types de facettes](facets-type.md).
 La facette est ajoutée au bas de la *Facettes dynamiques* et la liste *Publier les modifications* devient disponible.
-   ![Facette ajoutée](assets/facet-added.png)
 
 1. Si la facette que vous souhaitez ajouter est introuvable, accédez à **Magasins** > Attributs > **Produit** et vérifiez que l’attribut a la valeur [propriétés requises](facets.md) à utiliser comme facette. Si nécessaire, mettez à jour les propriétés storefront suivantes de l’attribut :
 
@@ -46,7 +43,6 @@ La facette est ajoutée au bas de la *Facettes dynamiques* et la liste *Publier 
 1. Dans le menu, cliquez sur **Modifier**. Ensuite, ajustez les propriétés suivantes si nécessaire.
 
    * Libellé - ([Headless](facets-type.md) uniquement) Saisissez le libellé de la facette à utiliser.
-   * Select type - The *Sélectionner un type* utilisé pour tous [!DNL Commerce] storefronts est `single select`. Pour les implémentations sans interface utilisateur graphique, `multi-select` peut être affecté avec un opérateur logique (`or` ou `and`) pour déterminer l’ensemble des produits renvoyés.
    * Type de tri : les facettes sont triées par ordre alphabétique pour toutes les [!DNL Commerce] storefronts. Pour les implémentations sans interface utilisateur graphique, les facettes peuvent être triées soit par ordre alphabétique, soit par nombre. Options : Alphabétique, Comptage (sans tête uniquement)
    * Max Value : saisissez le nombre maximal de valeurs de facette affichées dans le storefront. Entrées valides : 0 à 30 ; Valeur par défaut : 8
 
@@ -68,7 +64,6 @@ Si la facette n’est pas disponible au bout de deux heures, voir [Vérifier l�
 | Champ | Description |
 |--- |--- |
 | Libellé | ([Headless](facets-type.md) uniquement) La variable [libellé de la facette](facets-type.md) qui est visible dans le storefront peut être modifié pour être cohérent avec votre marque. |
-| Sélectionner un type | Affiche la variable [méthode de sélection](facets-type.md) qui est associé à l’attribut product . Toutes les facettes de la variable [!DNL Commerce] les vitrines sont `Single select` uniquement. Les mises en oeuvre sans affichage prennent également en charge `Multi-select` avec les opérateurs logiques `OR` et `AND`. |
 | Type de tri | La méthode utilisée pour [sort](facets-type.md) facettes. Tous [!DNL Commerce] storefronts sort les facettes par ordre alphabétique uniquement. Les implémentations sans affichage peuvent également être triées par `Count`. Options :<br />Alphabétique : trie les facettes par ordre alphabétique.<br />Nombre : (sans affichage uniquement) trie les facettes en fonction du nombre de correspondances trouvées. |
 | Valeur max. | Nombre maximal de valeurs pouvant être affichées dans le storefront pour chaque facette. Les facettes qui représentent une plage de valeurs sont uniformément réparties. Entrées valides : 0 à 30 ; Valeur par défaut : 8 |
 

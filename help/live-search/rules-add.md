@@ -2,9 +2,9 @@
 title: "Ajouter des règles"
 description: "Découvrez comment créer [!DNL Live Search] règles."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -13,20 +13,22 @@ ht-degree: 0%
 
 Pour créer une règle, la première étape consiste à utiliser l’éditeur de règles pour définir les conditions dans le texte de requête de l’acheteur qui déclenchent les événements associés. Renseignez ensuite les détails de la règle, testez les résultats et publiez la règle.
 
-## Étape 1 : Ajouter une règle
+## Ajouter une règle
 
-1. Dans Admin, accédez à **Marketing** > SEO &amp; Search > **Recherche en direct**.
+1. Dans Admin, accédez à **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Définissez la variable **Portée** pour identifier la variable [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) lorsque la règle s’applique.
 1. Cliquez sur le bouton **Règles** .
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 
-   ![Espace de travail des règles](assets/rules-workspace-add-rule.png)
-
-## Étape 2 : Description des conditions
+## Conditions
 
 Les conditions sont les conditions requises pour déclencher un événement. Une règle peut comporter jusqu’à dix conditions et 25 événements.
 
 ![Règle - Créer votre règle](assets/rules-add-workspace.png)
+
+>[!NOTE]
+>
+>Actuellement, il n’est pas possible de cibler des règles sur un groupe de clients spécifique.
 
 ### Condition unique
 
@@ -43,9 +45,6 @@ Les conditions sont les conditions requises pour déclencher un événement. Une
 
 1. Pour tester d’autres requêtes, modifiez le texte de la requête dans la variable *Tester votre règle* zone de recherche et appuyez sur **Retour**.
 Au départ, le volet de test effectue le rendu de la requête à partir de la zone de recherche Conditions. Mais maintenant, la requête est rendue à partir de la boîte de requête de test. Le volet de test effectue le rendu d’une seule requête à la fois.
-
-   ![Règle - Test de mise à jour](assets/rule-update-test.png)
-
 1. Si vous souhaitez le résultat, mettez à jour le texte dans la variable *Conditions* zone de recherche. Cliquez ensuite n’importe où sur la page pour mettre à jour les résultats dans le volet de test.
 1. Pour créer une règle simple avec une condition, accédez à l’étape 3 : [Ajout d’événements](#events).
 
@@ -57,8 +56,6 @@ Une règle peut comporter jusqu&#39;à dix conditions. L’opérateur logique qu
    ![Règles : la requête de recherche contient](assets/rules-search-query-contains-and.png)
 
 1. Sélectionnez la seconde condition et saisissez le texte de la requête.
-
-   ![Conditions de règle](assets/rules-add-condition.png)
 
 1. Pour modifier la logique de la règle, modifiez la variable **Correspondance** pour déterminer dans quelle mesure les critères de recherche de l’acheteur doivent correspondre à la condition de requête. Définir **Correspondance** à l’une des options suivantes :
 
@@ -73,25 +70,48 @@ Une règle peut comporter jusqu&#39;à dix conditions. L’opérateur logique qu
 
 1. Pour ajouter une autre condition, cliquez sur **Ajouter une condition** et répétez le processus.
 
-## Étape 3 : Ajout d’événements
+## Type de classement
 
-Les événements sont des actions qui modifient les résultats de la recherche lorsque les conditions sont remplies. Une seule règle peut comporter jusqu’à 25 événements.
+Le classement combine les comportements des utilisateurs et les statistiques du site pour déterminer le classement des produits.
+Les propriétaires de magasins peuvent configurer les types de stratégies de classement suivants :
 
-1. Sous *Événements*, choisissez la variable **Événement** à se produire lorsque les conditions associées sont remplies.
+![Règles - Correspondance](assets/rules-ranking-type.png)
 
-   Par exemple, choisissez `Pin a product`. Saisissez ensuite le nom du produit à épingler. Si vous avez besoin d’aide, vous pouvez trouver le nom dans le volet de test.
-Ensuite, saisissez le *Position* où le produit épinglé doit apparaître. Le produit est déplacé vers la nouvelle position dans le volet de test et est marqué d’une mention *Pindu* badge aperçu.
+* La plus achetée : Cela classe les produits par total d’achats par SKU au cours des 7 jours précédents.
+* Le plus ajouté au panier : Classement par ordre d’importance des activités &quot;Ajouter au panier&quot; totales au cours des 7 jours précédents.
+* Les plus consultés : Classe le nombre total de vues par SKU au cours des 7 jours précédents.
+* Recommandé pour vous : permet d’utiliser la variable `viewed-viewed` point de données : les acheteurs qui ont consulté ce SKU ont également consulté ces autres SKU.
+* Tendance : Recherche les événements de page vue des dernières 72 heures pour les événements d’arrière-plan et 24 heures pour les événements de premier plan
+* Aucun : Les produits sont classés selon la pertinence.
+
+1. Sélectionnez le type de stratégie de la règle. La fenêtre Tester votre règle affiche les résultats attendus.
+
+## Ajout d’événements
+
+Les événements sont des actions qui modifient les résultats de la recherche lorsque des conditions définies sont remplies. Une seule règle peut comporter jusqu’à 25 événements.
+
+* Amplifier : déplace un produit plus haut dans les résultats de recherche.
+* Bury : déplace un SKU plus bas dans les résultats de recherche.
+* Epingler un produit : le produit s’affiche dans la &quot;position&quot; sélectionnée sur la page.
+* Masquer un produit : exclut un SKU des résultats de recherche.
+
+La méthode la plus simple pour épingler un produit consiste à le faire glisser et à le déposer.
+
+1. Cliquez sur un produit et faites-le glisser dans le volet Test . Faites-la glisser et déposez-la à l’emplacement souhaité. Les champs Produit et Position sont automatiquement renseignés dans le volet Événements .
 
    ![Règles - Correspondance](assets/rule-event-pin-product.png)
 
+Vous pouvez également cliquer sur l’icône en forme d’épingle pour épingler un produit à son emplacement actuel. Utilisez le menu contextuel des points de suspension pour &quot;Epingler au haut&quot; ou &quot;Epingler au bas&quot;.
+
+Ou les événements peuvent être définis manuellement :
+
+1. Sous *Événements*, choisissez la variable **Événement** à se produire lorsque les conditions associées sont remplies.
+
+   Par exemple, choisissez `Hide a product`. Saisissez ensuite le nom du produit que vous souhaitez masquer. Les produits sont proposés au fur et à mesure que vous tapez.
+
 1. Pour plusieurs événements, choisissez les autres événements à déclencher lorsque les conditions sont remplies.
 
-   * Amplifier - Sélectionnez Amplifier. Ensuite, saisissez le nom du produit ou le SKU que vous souhaitez déplacer plus haut dans les résultats de recherche. Dans le volet de test, chaque produit dopé comporte une *Booaded* badge aperçu.
-   * Bury : déplace un SKU plus bas dans les résultats de recherche. Chaque SKU est marqué par une *Enterré* badge d’aperçu dans le volet test.
-   * Épingler un produit : saisissez le nom du produit ou le SKU. Sélectionnez ensuite la Position dans les résultats de recherche où le produit doit apparaître. Le produit est marqué d’une *Pindu* badge d’aperçu dans le volet test.
-   * Masquer un produit : exclut un SKU des résultats de recherche.
-
-## Étape 4 : Compléter les détails
+## Informations supplémentaires
 
 Les informations saisies ici apparaissent dans le [Détails de la règle](rules-workspace.md) du panneau.
 
@@ -103,13 +123,10 @@ Les informations saisies ici apparaissent dans le [Détails de la règle](rules-
 
    ![Règle - Terminé](assets/rule-add-details.png)
 
-## Étape 5 : Tester la règle
+## Finaliser la règle
 
 1. Examinez les résultats de la règle dans le volet de test.
 1. Si la règle comporte plusieurs requêtes, testez chacune d’elles susceptibles d’être affectées par la règle.
-
-## Étape 6 : Enregistrer et publier
-
 1. Une fois l’opération terminée, cliquez sur **Enregistrer et publier**.
 
    La règle est ajoutée à la liste dans l’espace de travail des règles.

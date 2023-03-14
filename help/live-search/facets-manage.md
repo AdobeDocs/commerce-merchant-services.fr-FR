@@ -2,9 +2,9 @@
 title: "Gestion des facettes"
 description: "Découvrez comment gérer les [!DNL Live Search] facettes."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,10 @@ La broche devient grise et la facette passe à la fenêtre *Facettes dynamiques*
    ![Facettes Pinces et dynamiques](assets/facets-pinned-unpinned.png)
 
 ## Déplacer la facette épinglée
+
+>[!NOTE]
+>
+>L’ordre des facettes épinglées n’est pris en charge que dans les implémentations sans interface utilisateur graphique. Si des facettes classées sont nécessaires, utilisez la variable [!DNL Live Search] widget PLP.
 
 Vous pouvez modifier l’ordre des facettes épinglées en déplaçant la rangée vers une autre position. Les facettes pincées ont une *Déplacer* Icône (![Sélecteur de déplacement](assets/btn-move.png)) au début de la ligne. Contrairement aux facettes épinglées, les facettes dynamiques ne peuvent pas être déplacées.
 

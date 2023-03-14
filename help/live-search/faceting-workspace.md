@@ -2,9 +2,9 @@
 title: "Facting Workspace"
 description: "Découvrez comment contourner le problème [!DNL Live Search] faceting workspace."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ Si votre installation Adobe Commerce comprend plusieurs vues de magasin, défini
    * Pindu
    * Dynamique
 
-   ![Espace de travail de facette](assets/facets-filter-by.png)
-
 ## Ajout d’une facette
 
 1. Cliquez sur **Ajout de facettes**.
@@ -40,7 +38,6 @@ Si votre installation Adobe Commerce comprend plusieurs vues de magasin, défini
 | Colonne | Description |
 |--- |--- |
 | (première colonne) | Répertorie les facettes codées et dynamiques par le [label](facets-type.md) qui est visible par l’acheteur. |
-| Sélectionner un type | Le [méthode de sélection](facets-type.md) qui est affecté à l’attribut de produit correspondant. Le `single select` type est utilisé pour tous les [!DNL Commerce] storefronts. Pour les implémentations sans interface utilisateur graphique, `multi-select` peut être affecté avec un opérateur logique (`or` ou `and`) pour déterminer l’ensemble des produits renvoyés. |
 | Type de tri | Le [ordre de tri](facets-type.md) de valeurs de facette. Les facettes sont triées par ordre alphabétique pour toutes les [!DNL Commerce] storefronts. Pour [headless] implémentations, les facettes peuvent être triées soit par ordre alphabétique, soit par nombre. Options : Alphabétique, Comptage (sans tête uniquement) |
 | Valeur maximale | Nombre de valeurs de facette disponibles dans le storefront sous forme de filtres, avec un maximum de 10. |
 

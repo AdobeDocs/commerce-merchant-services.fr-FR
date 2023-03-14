@@ -1,10 +1,10 @@
 ---
-title: '"Performance"'
-description: '"Le [!DNL Live Search] Le tableau de bord des performances fournit des informations sur les termes de recherche que les acheteurs utilisent."'
+title: "Performance"
+description: "Le [!DNL Live Search] Le tableau de bord des performances fournit des informations sur les termes de recherche que les acheteurs utilisent."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,10 @@ Le [!DNL Live Search] Le tableau de bord des performances fournit des informatio
    * Pour indiquer une seule date, double-cliquez sur la date du calendrier.
    * Pour définir une plage de dates, cliquez sur la première et la dernière date du calendrier.
 
-   ![Période des rapports de performances](assets/performance-calendar.png)
+>[!NOTE]
+>
+>Le tableau de bord des performances est mis à jour toutes les 12 heures.
 
-1. Cliquez sur l’onglet du rapport à afficher.
-
-   ![Résultats populaires des performances](assets/performance-popular-results.png)
 
 ## Descriptions des champs
 

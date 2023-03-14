@@ -2,9 +2,9 @@
 title: "Espace de travail des règles"
 description: "Découvrez comment contourner le problème [!DNL Live Search] espace de travail des règles."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -30,20 +30,14 @@ Si votre installation Adobe Commerce comprend plusieurs vues de magasin, défini
 1. Dans le coin supérieur droit, cliquez sur **Afficher/masquer** ![Sélecteur de colonnes](assets/btn-show-hide-columns.png) colonnes.
 Les colonnes visibles sont cochées en bleu dans le menu d’options. Le nom de la règle est la seule colonne qui ne peut pas être masquée.
 
-   ![Espace de travail des règles](assets/rules-workspace-show-hide-columns.png)
-
 1. Dans le menu, effectuez l’une des opérations suivantes :
 
    * Pour afficher une colonne masquée, cliquez sur le nom d’une colonne sans coche.
    * Pour masquer une colonne visible, cliquez sur le nom d’une colonne avec une coche.
 
-   ![Espace de travail des règles](assets/rules-workspace-all-columns.png)
-
 ## Filtrage des règles par statut
 
 1. Si votre boutique comporte de nombreuses règles, vous pouvez les filtrer par statut afin de les raccourcir. Par défaut, la liste Règles affiche toutes les règles.
-
-   ![Règles : filtrer par statut](assets/rules-workspace-filter-status.png)
 
 1. Pour répertorier uniquement les règles avec un paramètre d’état spécifique, définissez **État** à l’une des options suivantes :
 
@@ -51,8 +45,6 @@ Les colonnes visibles sont cochées en bleu dans le menu d’options. Le nom de 
    * Principal
    * Inactif
    * Planifié
-
-   ![Règles : filtrer par statut](assets/rules-workspace-filter-status-active.png)
 
 ## Règles de recherche par nom
 

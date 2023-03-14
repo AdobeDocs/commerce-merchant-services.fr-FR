@@ -2,9 +2,9 @@
 title: "Facettes"
 description: "[!DNL Live Search] les facettes utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ La facette est une méthode de filtrage haute performance qui utilise plusieurs 
 
 Les exigences d’attribut de catégorie et de produit pour la facette sont similaires aux attributs filtrables utilisés pour la navigation par couches. Les propriétés storefront de chaque attribut doivent être définies sur `filterable (with results)`.
 
-La recherche en direct prend en charge jusqu’à :
+[!DNL Live Search] prend en charge jusqu’à :
 
 * 100 attributs configurés en tant que facettes
 * 50 attributs triables
@@ -29,7 +29,7 @@ La recherche en direct prend en charge jusqu’à :
 | Paramètre | Description |
 |--- |--- |
 | [Paramètres d’affichage des catégories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ancre - `Yes` |
-| [Propriétés d’attribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Type d’entrée de catalogue](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| [Propriétés d’attribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Type d’entrée de catalogue](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (widget uniquement), `Text swatch` (widget uniquement) |
 | Propriétés Attribute storefront | Utilisation dans la navigation par couches des résultats de recherche - `Yes` |
 
 ## Valeurs d’attribut par défaut
