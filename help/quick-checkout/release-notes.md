@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Notes de mise à jour de'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Quick Checkout] versions.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: a10b09a5bc2b46f531a7bad298a2976e2d25ec63
+source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1364'
 ht-degree: 0%
 
 ---
@@ -70,6 +70,8 @@ _5 octobre 2022_
 _24 février 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-520 --> Disponibilité générale -[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) est désormais préinstallé dans Adobe Commerce Cloud versions 2.4.6 et ultérieures.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-592 --> Améliorations de l’expérience utilisateur lors du placement d’une commande dans la variable [Panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) comme mode de paiement. Cette fonctionnalité permet aux clients de passer une commande avec Braintree comme mode de paiement lors de l’extraction. [!DNL Quick Checkout] est activée.
 
