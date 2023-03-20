@@ -2,7 +2,7 @@
 title: Headless
 description: Découvrez comment intégrer [!DNL Product Recommendations] dans une vitrine sans tête.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
    | `impression-render` | recommendation-unit |
    | `view` | recommendation-unit |
    | `rec-click` | recommendation-unit |
-   | `rec-add-to-cart-click` | unité-recommandation (si un bouton d’ajout au panier est présent dans le modèle de recommandations) |
+   | `rec-add-to-cart-click` | unité-recommandation (si un bouton &quot;Ajouter au panier&quot; est présent dans le modèle de recommandations) |
 
 1. Lorsque les événements sont déclenchés, utilisez la variable [Collecteur d’événements Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) pour gérer les événements et les envoyer à Adobe Sensei.
 

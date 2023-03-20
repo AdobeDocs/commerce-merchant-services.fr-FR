@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] Notes de mise à jour de'
 description: Les dernières informations de mise à jour pour [!DNL Product Recommendations] d’Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1068'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,21 @@ Consultez la documentation destinée aux développeurs pour [en savoir plus sur 
 
 ## Version majeure actuelle
 
+### 5.0.0 de magento/product-recommendations
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg) Mise à jour de Product Recommendations pour la prise en charge d’Adobe Commerce 2.4.6.
+![Nouveau](../assets/new.svg) Il s’agit d’une version majeure. [Modifier](install-configure.md#update) la racine `composer.json` pour votre projet.
+
+#### Limites connues
+
+* Le `websiteCode` est renvoyée de manière incorrecte si elle contient un trait de soulignement (_).
+
+### Versions précédentes
+
++++4.0.1 et versions antérieures
+
 ### 4.0.1 de magento/product-recommendations
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
@@ -42,10 +57,6 @@ Consultez la documentation destinée aux développeurs pour [en savoir plus sur 
 #### Limites connues
 
 * Le `websiteCode` est renvoyée de manière incorrecte si elle contient un trait de soulignement (_).
-
-### Versions précédentes
-
-+++3.3.7 et versions antérieures
 
 ### 3.3.7 de magento/product-recommendations
 
