@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Notes de mise à jour de'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Catalog Se
 
 ## Version majeure actuelle
 
-### Version V1.5
+### Version V1.6
 
-_6 mars 2023_
+_28 mars 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg) Ajout [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) Fonctionnalité de GraphQL.
-![Correction](../assets/fix.svg) Amélioration des performances et de l’évolutivité des API.
+![Nouveau](../assets/new.svg) Ajout d’échantillons aux [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) requête.
+![Nouveau](../assets/new.svg) Ajout de la possibilité d’obtenir `entityId` using [Mesh de l’API](mesh.md).
 
 #### Limites connues
 
@@ -37,14 +37,21 @@ Ces fonctionnalités ne sont pas encore prises en charge :
 * La taille maximale de la charge utile des attributs dynamiques est de 9 Mo.
 * Prix du produit de groupe. Peuvent être calculées avec des prix de produit simples.
 * Dans un tableau d’images, seule la première image contient des rôles.
-* Échantillons de couleurs
-* Chargement de la page Détails du produit via l’URL du produit.
 
-Les restrictions suivantes peuvent être résolues à l’aide de l’API Core GraphQL :
+Les limites suivantes peuvent être résolues à l’aide du maillage de l’API et de l’API Core GraphQL :
 
 * Prix publicitaire minimal
-* Prix de niveau
+* [Prix de niveau](mesh.md)
 * Produits téléchargeables et cartes-cadeaux
+
+### Version V1.5
+
+_6 mars 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg) Ajout [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) Fonctionnalité de GraphQL.
+![Correction](../assets/fix.svg) Amélioration des performances et de l’évolutivité des API.
 
 ### Version V1.4
 
@@ -73,7 +80,7 @@ _18 novembre 2022_
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) Le service de catalogue prend désormais en charge les Adobes [Mesh de l’API](https://developer.adobe.com/graphql-mesh-gateway/).
-![Correction](../assets/fix.svg) Nous avons amélioré l’évolutivité des API et les performances globales.
+![Correction](../assets/fix.svg) Amélioration de l’évolutivité des API et des performances globales.
 
 ### Version V1.0
 
