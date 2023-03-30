@@ -2,9 +2,9 @@
 title: Connexion des données commerciales à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,9 @@ Pour connecter votre instance Adobe Commerce à Adobe Experience Platform, vous 
 
 ## Collecte de données
 
->[!NOTE]
->
->Pour les commerçants déjà inscrits à notre programme bêta de back-office, une case à cocher s’affiche pour activer les événements back-office. Si vous souhaitez participer au programme bêta back-office, contactez [drios@adobe.com](mailto:drios@adobe.com).
+Dans le **Collecte de données** , vous spécifiez les types de données à collecter et à envoyer à l’Experience Platform edge. Par défaut, les événements storefront sont automatiquement envoyés tant que le SDK Web AEP et l’ID d’organisation sont valides. Consultez la rubrique Événements pour en savoir plus sur [storefront](events.md#storefront-events) et [back office](events.md#back-office-events) événements .
 
-Dans le **Collecte de données** , vous spécifiez les types de données à collecter et à envoyer à l’Experience Platform edge. Par défaut, les événements storefront sont automatiquement envoyés tant que le SDK Web AEP et l’ID d’organisation sont valides. Consultez la rubrique Événements pour en savoir plus sur [storefront](events.md#storefront-events) et [back office](events.md#beta-order-status-events) événements .
-
-![Configuration du connecteur Experience Platform bêta](assets/epc-config-beta.png)
+![Configuration du connecteur Experience Platform](assets/epc-config-dc.png)
 
 >[!NOTE]
 >
@@ -64,7 +60,7 @@ Dans le **Collecte de données** , vous spécifiez les types de données à coll
 | Le SDK Web AEP est-il déjà déployé sur votre site ? | Cochez cette case si vous avez déployé votre propre SDK Web AEP sur votre site. |
 | Nom du SDK Web AEP (global) | Si un SDK Web Experience Platform est déjà déployé sur votre site, indiquez le nom de ce SDK dans ce champ. Cela permet au collecteur d’événements Storefront et au SDK d’événements Storefront d’utiliser votre SDK web Experience Platform plutôt que la version déployée par le connecteur Experience Platform. Si aucun SDK Web Experience Platform n’est déployé sur votre site, laissez ce champ vide et le connecteur Experience Platform en déploie un pour vous. |
 | Événements Storefront | Est coché par défaut tant que l’ID d’organisation et l’ID de flux de données sont valides. Les événements Storefront collectent des données comportementales anonymes de vos clients lorsqu’ils parcourent votre site. |
-| Événements back-office (bêta) | Si cette case est cochée, la payload d’événement contient des informations d’état de commande anonymes, telles que si une commande a été passée, annulée, remboursée ou expédiée. |
+| Événements de back-office | Si cette case est cochée, la payload d’événement contient des informations d’état de commande anonymes, telles que si une commande a été passée, annulée, remboursée ou expédiée. |
 | Identifiant de flux de données (site web) | Identifiant qui permet aux données de passer de Adobe Experience Platform à d’autres produits DX d’Adobe. Cet identifiant doit être associé à un site web spécifique au sein de votre instance Adobe Commerce spécifique. Si vous spécifiez votre propre SDK Web Experience Platform, ne spécifiez pas d’identifiant de flux de données dans ce champ. Le connecteur Experience Platform utilise l’identifiant de flux de données associé à ce SDK et ignore tout identifiant de flux de données spécifié dans ce champ (le cas échéant). |
 
 Une fois l’extension du connecteur Experience Platform installée, le lien entre Adobe Commerce et Adobe Experience Platform créé et l’identifiant de la banque de données spécifié, les données de commerce commencent à s’enchaîner vers Adobe Experience Platform Edge et d’autres produits Adobe DX.
@@ -73,7 +69,7 @@ Une fois l’extension du connecteur Experience Platform installée, le lien ent
 >
 > Le temps nécessaire au flux des données de la périphérie vers d’autres produits DX d’Adobe peut varier.
 
-## Données commerciales en périphérie
+## Vérifier que les données sont envoyées à l’Experience Platform
 
 Lorsque des données de commerce sont envoyées à Adobe Experience Platform Edge, vous pouvez créer des rapports du type suivant :
 

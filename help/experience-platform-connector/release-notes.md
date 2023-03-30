@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Informations les plus récentes sur le connecteur Adobe Experience Platform depuis Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
+source-git-commit: 735fd14fad22826b04320644e120d296de19a211
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Pour les modifications et correctifs de fonctionnalités liés aux extensions ut
 
 Voir [Versions à venir](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) pour en savoir plus sur les calendriers de publication et l’assistance.
 
-Voir [Disponibilité](https://experienceleague.adobe.com/docs/commerce-operations/release/availability.html) pour en savoir plus sur la compatibilité des produits.
+Consultez la documentation destinée aux développeurs pour [en savoir plus sur la compatibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Mises à jour du service prises en charge
 
@@ -29,12 +29,24 @@ Ces notes de mise à jour décrivent les modifications et correctifs de fonction
 
 Mises à jour du service +++prises en charge
 
+_30 mars 2023_
+
+* ![Nouveau](../assets/new.svg) - Ajout d’une nouvelle extension appelée `data-services-b2b` inclut [événements de liste de demandes](events.md#b2b-events) pour les marchands B2B
+* ![Nouveau](../assets/new.svg) - Ajout de la fonction `uniqueIdentifier` champ à [search](events.md#search-events) événements . Ce nouveau champ permet aux marchands de croiser les requêtes de recherche correspondant aux réponses de recherche.
+
 _12 octobre 2022_
 
 * ![Nouveau](../assets/new.svg) - Ajout de deux [événements storefront](events.md): `openCart` et `removeFromCart` au SDK et au collecteur d’Adobe Commerce Storefront Events
 * ![Nouveau](../assets/new.svg) - Ajout de la prise en charge d’un [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.2.0
+
+_30 mars 2023_
+
+* ![Nouveau](../assets/new.svg) - Regroupé le `commerce-data-export` et `saas-export` dépendances avec la variable `experience-platform-connector` extension . Auparavant, vous deviez installer ces dépendances séparément. Ces dépendances, ainsi que la configuration du commerce, permettent le traitement côté serveur de [événements back office](events.md#back-office-events).
+* ![Nouveau](../assets/new.svg) - Ajout d’un nouvel événement back-office appelé [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -46,7 +58,7 @@ _28 février 2023_
 
 _17 janvier 2023_
 
-* ![Nouveau](../assets/new.svg) - Mise à jour de la [Administrateur des connecteurs Experience Platform](connect-data.md) vous pouvez donc spécifier votre propre SDK Web AEP (allié). Ajout également d’une option permettant aux commerçants inscrits à notre programme bêta de back-office d’envoyer [données d’événement back office](connect-data.md#data-collection) au bord. Ces événements contiennent [informations sur l’état de la commande](events.md#beta-order-status-events) sur une commande, par exemple si une commande a été passée, annulée, remboursée ou expédiée. Si vous souhaitez participer au programme bêta back-office, contactez [drios@adobe.com](mailto:drios@adobe.com).
+* ![Nouveau](../assets/new.svg) - Mise à jour de la [Administrateur des connecteurs Experience Platform](connect-data.md) vous pouvez donc spécifier votre propre SDK Web AEP (allié). Ajout également d’une option permettant aux commerçants inscrits à notre programme bêta de back-office d’envoyer [données d’événement back office](connect-data.md#data-collection) au bord. Ces événements contiennent [informations sur l’état de la commande](events.md#beta-order-status-events) sur une commande, par exemple si une commande a été passée, annulée, remboursée ou expédiée.
 * ![Correction](../assets/fix.svg) Remplacé par l’utilisation de `identityMap` au lieu de `personID` lors de la définition de l’identité Principale pour toutes les données transmises à la périphérie.
 
 ## 2.0.1
