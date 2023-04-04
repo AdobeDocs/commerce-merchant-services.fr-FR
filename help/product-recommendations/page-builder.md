@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Page Builder] Intégration'
 description: '''Découvrez comment utiliser [!DNL Product Recommendations] unités dans le Créateur de pages."'
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 59ec1a212fbc9ef48658b29cace083e3fb645185
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # [!DNL Page Builder] Intégration
 
 Le Recommendations de produit peut être intégré à n’importe quel contenu du Créateur de pages que vous déployez sur votre site.
+
+>[!NOTE]
+>
+> Vous pouvez avoir jusqu’à 25 unités de recommandations sur une page de créateur de pages native. Les pages du créateur de pages non natives peuvent comporter jusqu’à 5 unités de recommandations. Voir [Créer une recommandation](create.md) pour plus d’informations.
 
 ## Utilisation de Recommendations de produit avec du contenu de Page Builder
 
