@@ -2,9 +2,9 @@
 title: Événements
 description: Découvrez les données que chaque événement capture.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | Champ | Description |
 |---|---|
 | `searchRequest` | Indique si une requête de recherche a été envoyée |
-| `uniqueIdentifier` | L’identifiant unique de cette requête de recherche spécifique |
+| `id` | L’identifiant unique de cette requête de recherche spécifique |
 | `filter` | Indique si des filtres ont été appliqués pour limiter les résultats de recherche. |
 | `attribute` (filter) | La facette d’un élément utilisée pour déterminer s’il doit être inclus dans les résultats de recherche |
 | `value` | Valeurs d’attribut utilisées pour déterminer les éléments inclus dans les résultats de recherche |
@@ -365,7 +365,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | Champ | Description |
 |---|---|
 | `searchResponse` | Indique si une réponse de recherche a été reçue |
-| `uniqueIdentifier` | L’identifiant unique de cette réponse de recherche spécifique |
+| `id` | L’identifiant unique de cette réponse de recherche spécifique |
 | `suggestions` | Tableau de chaînes qui incluent les noms des produits et des catégories existant dans le catalogue et similaires à la requête de recherche |
 | `numberOfResults` | Le nombre de produits renvoyés |
 | `productListItems` | Un tableau de produits dans le panier. |
@@ -391,8 +391,10 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `requisitionListOpens` | Une valeur de `1` indique qu’une liste de demandes a été ouverte. |
-| `requisitionList` | Inclut une variable `ID` , `name`, et `description` pour la liste des demandes |
+| `requisitionList` | Propriétés de la liste de demandes créée par le client |
+| `ID` | Identifiant unique de la liste des demandes |
+| `name` | Nom de la liste des demandes spécifiée par le client |
+| `description` | Description de la liste des demandes spécifiée par le client |
 
 ### addToRequestList
 
@@ -410,8 +412,10 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `requisitionListAdds` | Une valeur de `1` indique qu’un produit a été ajouté à la liste des demandes d’acquisition. |
-| `requisitionList` | Inclut une variable `ID`,  `name`, et `description` pour la liste des demandes |
+| `requisitionList` | Propriétés de la liste de demandes créée par le client |
+| `ID` | Identifiant unique de la liste des demandes |
+| `name` | Nom de la liste des demandes spécifiée par le client |
+| `description` | Description de la liste des demandes spécifiée par le client |
 | `productListItems` | Tableau de produits qui ont été ajoutés à la liste des demandes d’acquisition |
 | `name` | Nom d’affichage ou nom lisible du produit. |
 | `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
@@ -419,6 +423,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `priceTotal` | Prix total de l’article de ligne de produit |
 | `discountAmount` | Indique le montant de remise appliqué |
 | `currencyCode` | Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé pour cet élément de paiement |
+| `selectedOptions` | Champ utilisé pour un produit configurable. `attribute` identifie un attribut du produit configurable, tel que `size` ou `color` et `value` identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
 ### removeFromRequestList
 
@@ -432,8 +437,10 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `requisitionListRemovals` | Une valeur de `1` indique qu’un produit a été supprimé de la liste des demandes d’acquisition. |
-| `requisitionList` | Inclut une variable `ID`, et a `description` pour la liste des demandes |
+| `requisitionList` | Propriétés de la liste de demandes créée par le client |
+| `ID` | Identifiant unique de la liste des demandes |
+| `name` | Nom de la liste des demandes spécifiée par le client |
+| `description` | Description de la liste des demandes spécifiée par le client |
 | `productListItems` | Tableau de produits qui ont été ajoutés à la liste des demandes d’acquisition |
 | `name` | Nom d’affichage ou nom lisible du produit. |
 | `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
