@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Notes de mise à jour de'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
+source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,20 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Catalog Se
 
 ## Version majeure actuelle
 
-### Version V1.6
+### Version V1.7
 
-_28 mars 2023_
+_12 avril 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg) Ajout d’échantillons aux [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) requête.
-![Nouveau](../assets/new.svg) Ajout de la possibilité d’obtenir `entityId` using [Mesh de l’API](mesh.md).
+![Nouveau](../assets/new.svg) Le service de catalogue nettoie désormais les variantes de produits supprimées.
+![Correction](../assets/fix.svg) Évolutivité de l’infrastructure et améliorations des performances.
 
 #### Limites connues
 
 Ces fonctionnalités ne sont pas encore prises en charge :
 
 * Produits groupés avec prix fixe
-* Aucune mise à jour n’est reçue lorsque les variantes sont supprimées du catalogue.
 * La taille maximale de la charge utile des attributs dynamiques est de 9 Mo.
 * Prix du produit de groupe. Peuvent être calculées avec des prix de produit simples.
 * Dans un tableau d’images, seule la première image contient des rôles.
@@ -43,6 +42,15 @@ Les limites suivantes peuvent être résolues à l’aide du maillage de l’API
 * Prix publicitaire minimal
 * [Prix de niveau](mesh.md)
 * Produits téléchargeables et cartes-cadeaux
+
+### Version V1.6
+
+_28 mars 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg) Ajout d’échantillons aux [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) requête.
+![Nouveau](../assets/new.svg) Ajout de la possibilité d’obtenir `entityId` using [Mesh de l’API](mesh.md).
 
 ### Version V1.5
 
