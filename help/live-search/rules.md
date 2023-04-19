@@ -2,9 +2,9 @@
 title: "Règles"
 description: "[!DNL Live Search] les règles combinent logique et actions pour façonner l’expérience d’achat."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -71,4 +71,4 @@ Les requêtes effectuées dans l’administrateur fonctionnent légèrement diff
 ## Règles de catégorie et affectations de produits de catégorie
 
 [!DNL Live Search] vous permet de filtrer par catégories.
-Cependant, dans Adobe Commerce, vous pouvez créer une catégorie virtuelle avec [Affectations de produits de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Ce type de catégorie est créé au moment de l’exécution et n’existe pas dans la base de données des catégories. Par conséquent, L[!DNL Live Search] ne peuvent pas lire ni utiliser ce type de catégorie.
+Cependant, dans Adobe Commerce, vous pouvez créer une catégorie virtuelle avec [Affectations de produits de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Ce type de catégorie est créé au moment de l’exécution et n’existe pas dans la base de données des catégories. Par conséquent, [!DNL Live Search] ne peuvent pas lire ni utiliser ce type de catégorie.
