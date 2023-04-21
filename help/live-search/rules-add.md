@@ -2,9 +2,9 @@
 title: "Ajouter des règles"
 description: "Découvrez comment créer [!DNL Live Search] règles."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
+source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -102,6 +102,10 @@ La méthode la plus simple pour épingler un produit consiste à le faire glisse
    ![Règles - Correspondance](assets/rule-event-pin-product.png)
 
 Vous pouvez également cliquer sur l’icône en forme d’épingle pour épingler un produit à son emplacement actuel. Utilisez le menu contextuel des points de suspension pour &quot;Epingler au haut&quot; ou &quot;Epingler au bas&quot;.
+
+>[!NOTE]
+>
+>Vous ne pouvez épingler que les produits renvoyés dans la requête.
 
 Ou les événements peuvent être définis manuellement :
 
