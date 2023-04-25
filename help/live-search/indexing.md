@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexation"
 description: "Découvrez comment [!DNL Live Search] indexe les propriétés d’attribut de produit."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,11 @@ La portée des métadonnées d’attribut est la suivante : `website/store/store
 
 Le [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit qui possède la variable [storefront, propriété](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` défini sur `Yes` dans l’administrateur Adobe Commerce. Lorsqu’elle est activée, `Search Weight` et `Visible in Advanced Search` peut être défini pour l’attribut .
 
+[!DNL Live Search] n’indexe pas les produits supprimés ou ceux définis sur `Not Visible Individually`.
+
 >[!NOTE]
 >
->[!DNL Live Search] n’indexe pas les produits supprimés ou ceux définis sur `Not Visible Individually`.
+> Clients commerciaux avec [!DNL Live Search] peuvent tirer parti des modifications de prix plus rapides et du temps de synchronisation sur leurs sites web avec la variable [Indexeur de prix SaaS](../price-index/index.md).
 
 ## Indexation du pipeline
 

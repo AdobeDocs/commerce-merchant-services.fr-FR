@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Notes de mise à jour de'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
+source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ Ces notes de mise à jour décrivent les dernières versions de [!DNL Catalog Se
 ![Bogue](../assets/bug.svg) Problèmes connus
 
 ## Version majeure actuelle
+
+_25 avril 2023_
+
+![Nouveau](../assets/new.svg) Les clients du service de catalogue peuvent désormais profiter de la nouvelle [Indexeur de prix SaaS](../price-index/index.md).
 
 ### Version V1.7
 

@@ -2,9 +2,9 @@
 title: Synchronisation du catalogue
 description: Découvrez comment exporter des données de produit à partir du [!DNL Commerce] serveur à [!DNL Commerce Services] afin de maintenir les services à jour.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Si vous devez initier une nouvelle synchronisation de votre catalogue avant que 
 1. Dans le _Resynchronisation des données_ , cliquez sur [!UICONTROL Resync].
 
    [!DNL Commerce] synchronise votre catalogue lors de la prochaine fenêtre de synchronisation planifiée. Selon la taille de votre catalogue, cette opération peut prendre un certain temps.
+
 
 ## Produits de catalogue synchronisés
 
@@ -132,6 +133,14 @@ Le nom du flux peut être l’un des suivants :
 - `productoverrides`: règles de tarification et de visibilité du catalogue spécifiques au client, telles que celles basées sur les autorisations de catégorie
 
 Lorsque vous déclenchez une nouvelle synchronisation des données à partir de la ligne de commande, la mise à jour des données peut prendre jusqu’à une heure.
+
+Si vous utilisez [Indexation des prix SaaS](../price-index/index.md) et devez effectuer une nouvelle synchronisation, exécutez la commande suivante :
+
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
+```
 
 ### Exemples
 

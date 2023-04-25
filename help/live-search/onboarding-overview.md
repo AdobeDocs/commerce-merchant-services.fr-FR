@@ -2,9 +2,9 @@
 title: "Présentation de l’intégration"
 description: "[!DNL Live Search] flux d’intégration, exigences système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
+source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,10 @@ Pour restreindre les groupes de clients à l’aide des autorisations du catalog
 ### Synonymes
 
 * [!DNL Live Search] peut gérer jusqu’à 200 synonymes par vue de magasin.
+
+## Indexateur de prix
+
+Les clients Live Search peuvent utiliser la nouvelle [Indexeur de prix SaaS](../price-index/index.md), qui accélère les mises à jour des changements de prix et le temps de synchronisation.
 
 ### Prise en charge des PWA
 
