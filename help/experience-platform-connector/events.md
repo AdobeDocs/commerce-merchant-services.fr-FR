@@ -2,9 +2,9 @@
 title: Événements
 description: Découvrez les données que chaque événement capture.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `eventType` | Type d’événement Principal pour cet enregistrement de série temporelle, tel que : `userAccount.login` |
 | `person` | Acteur, contact ou propriétaire individuel |
 | `accountID` | Capture l’ID du compte d’utilisateur |
-| `personalEmailID` | Indique l’identifiant unique de l’adresse électronique personnelle. |
+| `accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant |
+| `personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
+| `personalEmail` | Capture les coordonnées - un email et les informations associées |
 | `address` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
 | `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et les autres préférences de compte. |
 | `login` | Indique si un visiteur a tenté de se connecter. |
@@ -260,7 +261,6 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `eventType` | Type d’événement Principal pour cet enregistrement de série temporelle, tel que : `userAccount.logout` |
 | `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et les autres préférences de compte. |
 | `logout` | Indique si un visiteur a tenté de se déconnecter. |
 
@@ -280,11 +280,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `eventType` | Type d’événement Principal pour cet enregistrement de série temporelle, tel que : `account.createProfile` |
 | `person` | Acteur, contact ou propriétaire individuel |
 | `accountID` | Capture l’ID du compte d’utilisateur |
 | `accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant |
-| `personalEmailID` | Indique l’identifiant unique de l’adresse électronique personnelle. |
+| `personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
+| `personalEmail` | Capture les coordonnées - un email et les informations associées |
 | `address` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
 | `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et les autres préférences de compte. |
 | `createProfile` | Indique si un utilisateur a créé un profil de compte |
@@ -305,12 +305,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `eventType` | Type d’événement Principal pour cet enregistrement de série temporelle, tel que : `account.updateProfile` |
 | `person` | Acteur, contact ou propriétaire individuel |
 | `accountID` | Capture l’ID du compte d’utilisateur |
 | `accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant |
-| `personalEmailID` | Indique l’identifiant unique de l’adresse électronique personnelle. |
-| `personalEmail` | Indique l’adresse électronique personnelle |
+| `personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
+| `personalEmail` | Capture les coordonnées - un email et les informations associées |
 | `address` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
 | `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et les autres préférences de compte. |
 | `updateProfile` | Indique si un utilisateur a mis à jour son profil de compte |
