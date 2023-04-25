@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
+source-git-commit: 63f6b5f33e3a8457420703d292d1eb341949af04
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,13 @@ ht-degree: 0%
 # Guides des services Adobe Commerce
 
 Adobe fournit un ensemble de services de commerce, d’intégration et de données pour aider les marchands à prendre en charge les composants clés de leur entreprise.
+
+>[!BEGINSHADEBOX &quot;Informations sur la version&quot;]
+
+Voir [nouveautés de notre documentation](whats-new.md) ou [notes de mise à jour](release-notes-all.md) pour chaque service Commerce.
+>[!ENDSHADEBOX]
+
+## Services de commerce
 
 <table>
 <tr>
@@ -76,6 +83,34 @@ Adobe fournit un ensemble de services de commerce, d’intégration et de donné
    </tr>
 </table>
 
-## Connexion aux services
+## Services de données
 
-Le [Connecteur Commerce Services](saas.md) fournit l’intégration de votre instance Adobe Commerce ou Magento Open Source à l’aide d’une clé API et d’une clé privée. Pour les services de données (Adobe Commerce uniquement), vous pouvez également spécifier l’espace de données dans la configuration.
+<table>
+<tr>
+  <td valign="top" width="200">
+      <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
+    <div>Tirez parti de la connexion entre Adobe Commerce et Adobe Experience Platform Edge pour utiliser les données Commerce d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target.</div>
+  </td>
+   </tr>
+<tr>
+   <td valign="top" width="200">
+       <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
+   <td valign="top">
+   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
+    <div>Commerce Services Connector fournit l’intégration de votre instance Adobe Commerce ou Magento Open Source à l’aide d’une clé API et d’une clé privée. Pour les services de données (Adobe Commerce uniquement), vous pouvez également spécifier l’espace de données dans la configuration.</div>
+  </td>
+   </tr>
+</table>
+
+## Services d’intégration
+
+<table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
+    <div>La synchronisation du catalogue exporte les données de produit du serveur Commerce vers les services Commerce sur pour maintenir les services à jour. Les indexeurs, déclenchés par des événements tels qu’une modification du prix d’un produit ou au niveau de l’inventaire, compilent des données de catalogue. Vous pouvez observer et gérer ce processus via le tableau de bord *Synchronisation du catalogue* ou l’interface de ligne de commande.</div>
+  </td>
+</tr>
+</table>

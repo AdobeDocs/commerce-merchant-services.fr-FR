@@ -4,9 +4,9 @@ description: Collection de notes de mise à jour pour tous les services Commerce
 seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: ba0a3c10ffb90ca2d6e77367d4292600c37b2489
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ Utilisez le tableau suivant pour trouver les notes de mise à jour et les inform
 <table>
   <tbody>
     <tr>
-      <td><strong>Services pour Adobe Commerce</strong>
-        <p>Découvrez les dernières améliorations apportées aux services Commerce innovants disponibles sous la forme d’Adobe Commerce et d’extensions Magento Open Source.</p>
+      <td><strong>Services de commerce</strong>
+        <p>Découvrez les dernières améliorations apportées aux services Commerce innovants disponibles sous forme d’extensions.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Sales Channel Amazon</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Service de catalogue</a></li>
@@ -31,11 +31,16 @@ Utilisez le tableau suivant pour trouver les notes de mise à jour et les inform
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">Exécution de la boutique</a></li>
           </ul>
         </td>
-      <td><strong>Services de données et d’intégration</strong>
-        <p>Découvrez les dernières améliorations apportées aux services de données et d’intégration qui permettent à Commerce Services de se connecter à d’autres services et à la sphère d’Adobe des extensions et des produits plus étendue.</p>
+      <td><strong>Services d’intégration</strong>
+        <p>Découvrez les dernières améliorations apportées aux services d’intégration qui permettent à nos services de commerce de se connecter à d’autres services, extensions d’Adobe et produits.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Connecteur Experience Platform</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">Connecteur Services</a></li>
+          </ul>
+      </td>
+      <td><strong>Services de données</strong>
+        <p>Découvrez les dernières améliorations apportées au service de données qui permet à nos services de commerce de gérer les données de produit.</p>
+          <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">Synchronisation du catalogue</a></li>
           </ul>
       </td>
