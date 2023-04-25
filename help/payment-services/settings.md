@@ -4,7 +4,7 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
+source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 0%
@@ -254,4 +254,3 @@ Dans [!UICONTROL Payment Services], vous pouvez utiliser plusieurs comptes PayPa
 Voir [Site, magasin et portée de l’affichage](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) pour plus d’informations sur la hiérarchie des sites web, des magasins et des vues de magasin.
 
 Votre représentant commercial peut créer [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) pour votre compte marchand et à bord du site supplémentaire avec PayPal afin que tous les boutons PayPal que vous configurez pour apparaître s’affichent sur votre site. Contactez votre représentant commercial pour obtenir de l’aide sur l’utilisation de plusieurs comptes PayPal pour vos sites web.
-

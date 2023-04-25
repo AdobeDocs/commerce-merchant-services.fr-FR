@@ -2,9 +2,9 @@
 title: Sécurité et conformité
 description: Examinez les exigences en matière de sécurité et de conformité de votre site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: bfce1cb702d634647022a92669d704dd82fe41e6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ PCI 3-D Secure (3DS) permet une authentification de l’acheteur avec son émett
 [!UICONTROL Payment Services] fournit une fonctionnalité 3DS permettant aux commerçants de se conformer aux réglementations de l’UE et de protéger les clients et les marchands contre les activités frauduleuses dans leurs magasins.
 
 Si vous êtes un commerçant de l’UE ou de Grande-Bretagne où la conformité 3DS est requise, vous devez activer manuellement la 3DS (c’est-à-dire : `Off` par défaut) dans [Paramètres](settings.md#credit-card-fields).
+
+>[!NOTE]
+>
+>L’exigence 3DS s’applique aux transactions où l’entreprise et la banque du détenteur de carte se trouvent dans la zone [Espace économique européen](https://www.efta.int/eea) (EEE) et Grande-Bretagne. Les commerçants des États-Unis n’ont pas besoin de 3DS, mais peuvent l’activer pour leurs transactions si vous le souhaitez.
 
 Les commandes passées pour l’acheteur par le vendeur ou le personnel du magasin ne sont pas configurées avec des mesures de conformité 3DS.
 

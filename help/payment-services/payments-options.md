@@ -2,9 +2,9 @@
 title: Options de paiement
 description: Définissez les options de paiement pour personnaliser les méthodes disponibles pour les clients de votre magasin.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 31665f90909ce2364579fc7f9c97087e2376c0a6
+source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 Activer [coffre-fort à carte de crédit](#vaulting) pour que vos magasins permettent aux clients de sauvegarder (enregistrer) leurs informations de carte de crédit pour un passage en caisse rapide plus tard.
 
 Vous pouvez configurer [!UICONTROL Credit Card Fields] dans la configuration du magasin ou dans la page d’accueil des services de paiement. Voir [Paramètres](settings.md#credit-card-fields) pour plus d’informations.
+
+Vous pouvez également modifier la disposition, la largeur, la hauteur et le style externe des champs de la carte de crédit. Voir [Documentation PayPal](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) pour plus d’informations.
 
 ## [!DNL PayPal Smart Buttons]
 
