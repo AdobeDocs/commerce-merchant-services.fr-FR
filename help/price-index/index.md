@@ -4,16 +4,16 @@ description: Utilisation de l’indexation des prix SaaS pour améliorer les per
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
+source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
 # Indexation des prix SaaS
 
-L’indexation des prix SaaS accélère le temps nécessaire pour que les changements de prix soient répercutés sur le site web d’un client après leur envoi. Ce module optionnel permet aux commerçants disposant de catalogues volumineux et complexes, ou de plusieurs sites web ou groupes de clients, de traiter les changements de prix plus rapidement et en continu.
+L’indexation des prix SaaS accélère le temps nécessaire pour que les changements de prix soient répercutés sur le site web d’un client SaaS après leur envoi. Ce module optionnel permet aux commerçants disposant de catalogues volumineux et complexes, ou de plusieurs sites web ou groupes de clients, de traiter les changements de prix plus rapidement et en continu.
 
 Le plus grand goulot d’étranglement du pipeline : les processus lourds informatiques tels que l’indexation et le calcul des prix ont été déplacés du coeur de PHP vers l’infrastructure cloud de l’Adobe. Cela permet aux commerçants d’augmenter rapidement les ressources pour augmenter les délais d’indexation des prix et de refléter ces modifications sur les sites web à une vitesse beaucoup plus rapide.
 
@@ -47,8 +47,8 @@ L’indexation des prix SaaS utilise un ensemble de modules pour fournir des fon
 Ces modules ajoutent les nouveaux flux à l’administrateur. Ces flux transfèrent les données requises pour le calcul des prix à l’indexeur SaaS et ignorent l’indexeur de prix de base PHP.
 
 ```
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
+magento/module-saas-price
+magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
