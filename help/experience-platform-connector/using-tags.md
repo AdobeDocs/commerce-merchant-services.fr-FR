@@ -2,9 +2,9 @@
 title: Collecte de données commerciales à l’aide de balises Adobe Experience Platform
 description: Découvrez comment collecter des données Commerce à l’aide de balises Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
+source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -1319,14 +1319,16 @@ Créez les éléments de données suivants :
 - **Type**: `commerce.order`
 - **Données XDM**: `%place order%`
 
-## Définition d’une identité
+## Définition de l’identité dans les événements du storefront
 
-Les profils du connecteur Experience Platform sont unis et générés en fonction des `identityMap` et le `personalEmail` champs d’identité dans les événements d’expérience XDM. 
+Les événements Storefront contiennent des informations de profil basées sur la variable `personalEmail` (pour les événements de compte) et `identityMap` (pour tous les autres événements storefront). Le connecteur Experience Platform se joint et génère des profils en fonction de ces deux champs. Toutefois, chaque champ comprend différentes étapes à suivre pour créer des profils :
 
-Si une configuration précédente repose sur différents champs, vous pouvez continuer à les utiliser. Pour définir les champs d’identité de profil du connecteur Experience Platform, vous devez définir les champs suivants :
+>[!NOTE]
+>
+>Si une configuration précédente repose sur différents champs, vous pouvez continuer à les utiliser.
 
-- `personalEmail` - Événements de compte uniquement - Suivez les étapes décrites ci-dessus pour [événements de compte](#createaccount)
-- `identityMap` - Tous les autres événements. Voir l’exemple suivant.
+- `personalEmail` : s’applique uniquement aux événements de compte. Suivez les étapes, règles et actions décrites [above](#createaccount)
+- `identityMap` - S’applique à tous les autres événements storefront. Voir l’exemple suivant.
 
 ### Exemple
 
@@ -1337,7 +1339,7 @@ Les étapes suivantes indiquent comment configurer une `pageView` avec `identity
    ![Configuration d’un élément de données avec du code personnalisé](assets/set-custom-code-ecid.png)
    _Configuration d’un élément de données avec du code personnalisé_
 
-1. Ajoutez du code personnalisé ECID :
+1. Sélectionner [!UICONTROL Open Editor] et ajoutez le code personnalisé suivant :
 
    ```javascript
    return alloy("getIdentity").then((result) => {
@@ -1346,6 +1348,12 @@ Les étapes suivantes indiquent comment configurer une `pageView` avec `identity
            {
                id: ecid,
                primary: true
+           }
+           ],
+           email: [
+           {
+               id: email,
+               primary: false
            }
            ]
        };
@@ -1362,6 +1370,43 @@ Les étapes suivantes indiquent comment configurer une `pageView` avec `identity
 
    ![Récupération d’ECID](assets/rule-retrieve-ecid.png)
    _Récupération d’ECID_
+
+## Définition de l’identité dans les événements administratifs
+
+Contrairement aux événements storefront qui utilisent ECID pour identifier et lier les informations de profil, les données d’événement de back-office sont basées sur SaaS et, par conséquent, aucun ECID n’est disponible. Pour les événements back-office, vous devez utiliser le courrier électronique pour identifier de manière unique les clients qui font des achats. Dans cette section, vous apprendrez à lier les données d’événement de bureau à un ECID à l’aide d’un courrier électronique.
+
+1. Créez un élément de mappage d’identité.
+
+   ![Carte d’identité du bureau](assets/custom-code-backoffice.png)
+   _Création d’une carte d’identité back-office_
+
+1. Sélectionner [!UICONTROL Open Editor] et ajoutez le code personnalisé suivant :
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. Ajoutez ce nouvel élément à chaque `identityMap` champ .
+
+   ![Mise à jour de chaque identityMap](assets/add-element-back-office.png)
+   _Mise à jour de chaque identityMap_
 
 ## Définition du consentement
 
