@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Notes de mise à jour de'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Quick Checkout] versions.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ Voir [Disponibilité](https://devdocs.magento.com/release/availability.html) dan
 Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités qui se sont produits et qui ont été publiés en dehors des versions standard des fonctionnalités pour le panneau d’administration.
 
 +++Mises à jour du panneau d’administration
+
+_25 avril 2023_
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-452 --> Le [!DNL Quick Checkout] **Visite** s’affiche maintenant sous forme de curseur cliquable lorsque vous pointez dessus.
+
+_19 avril 2023_
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-596 --> Le [!DNL Quick Checkout] La page Rapports affiche désormais correctement le graphique Nouveaux comptes lors de l’analyse des dates au format ISO 8601.
 
 _14 décembre 2022_
 

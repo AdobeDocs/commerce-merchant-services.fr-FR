@@ -2,9 +2,9 @@
 title: Configurez la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce
 description: Découvrez les options de configuration pour le [!DNL Quick Checkout] et comment intégrer et configurer l’extension.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Pour accéder à ces paramètres de configuration :
 1. Sur le _Administration_ barre latérale, accédez à **Magasins** > _Paramètres_ > **Configuration**.
 1. Dans le panneau de gauche, développez **Ventes** et sélectionnez **Passage en caisse**.
 
-   ![Passage en caisse rapide](assets/configuration-view.png)
+   ![Passage en caisse rapide](assets/config-new-logo-view.png)
 
 Reportez-vous à la section [Intégration](../quick-checkout/onboarding.md) rubrique pour plus d’informations sur la configuration de la variable [!DNL Quick Checkout] pour Adobe Commerce.
 
@@ -31,7 +31,7 @@ Reportez-vous à la section [Intégration](../quick-checkout/onboarding.md) rubr
 | [!UICONTROL Enable] | site web | Activer ou désactiver [!DNL Quick Checkout] pour votre site web. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Method] | site web | Définissez la méthode ou l’environnement correspondant à votre [!DNL Quick Checkout]. Options : [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Identifiants de compte
 
@@ -43,7 +43,7 @@ Reportez-vous à la section [Intégration](../quick-checkout/onboarding.md) rubr
 | [!UICONTROL Publishable key] | site web | Clé utilisée par votre front-end pour interagir avec [!DNL Bolt] API. |
 | [!UICONTROL Signing secret] | site web | Utilisé pour la vérification des signatures sur les demandes reçues d’ [!DNL Bolt]. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Paramètres du service
 
@@ -59,4 +59,4 @@ Reportez-vous à la section [Intégration](../quick-checkout/onboarding.md) rubr
 | [!UICONTROL Automatic Login Enabled] | site web | Définissez si [!DNL Quick Checkout] permet la connexion automatique lors de l’extraction. Activé par défaut. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Automatic Login Network] | site web | Sélectionnez le réseau sur lequel le client se connecte automatiquement. Activation de la loupe par défaut. Options : [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

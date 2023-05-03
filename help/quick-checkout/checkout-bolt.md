@@ -2,9 +2,9 @@
 title: "Flux d’extraction d’un utilisateur Bolt dans Adobe Commerce"
 description: Présentation de la variable [!DNL Quick Checkout] flux d’un utilisateur Bolt dans Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Si une [!DNL Bolt] compte trouvé, les acheteurs continuent avec leurs [!DNL Qui
 
 1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique ou mobile du compte, en fonction des [préférences de l’utilisateur dans la variable [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Fenêtre contextuelle OTP](assets/pop-up.png)
+![Fenêtre contextuelle OTP](assets/new-logo-otp-email.png)
 
 1. Une fois connecté avec votre [!DNL Bolt] , les détails sont automatiquement ajoutés :
 
@@ -44,7 +44,4 @@ Si non [!DNL Bolt] est trouvé, les clients continuent de passer en caisse Adobe
 - Mode de livraison
 - Vérification du mode de paiement
 - Une case à cocher s’affiche pour s’enregistrer dans [!DNL Bolt] pour des passages en caisse plus rapides avant de passer la commande. L’acheteur peut accepter les conditions générales pour créer sa [!DNL Bolt] compte .
-
-   ![Mémoriser [!DNL Bolt]](assets/checkbox-remember-bolt.png)
-
 - L’utilisateur invité place la commande et peut éventuellement s’enregistrer dans Adobe Commerce.
