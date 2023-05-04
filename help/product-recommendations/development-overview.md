@@ -2,9 +2,9 @@
 title: Développement de l’administrateur Recommendations du produit
 description: Présentation de l’architecture et des fonctionnalités de développement de Recommendations de produit.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Product Recommendations est un puissant outil marketing que vous pouvez utiliser
 
 >[!NOTE]
 >
->Si votre vitrine est implémentée à l’aide de PWA Studio, reportez-vous à la section [Documentation du PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si vous utilisez une technologie front-end personnalisée telle que React ou Vue JS, reportez-vous au guide d’utilisation pour découvrir comment intégrer Product Recommendations dans une [headless](headless.md) environnement.
+>Si votre vitrine est implémentée à l’aide de PWA Studio, reportez-vous à la section [Documentation du PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si vous utilisez une technologie front-end personnalisée telle que React ou Vue JS, reportez-vous au guide d’utilisation pour découvrir comment intégrer Product Recommendations dans une [headless](headless.md) environnement. Les instances sans affichage doivent implémenter des événements pour alimenter l’espace de travail de recommandation de produit.
 
 ## Présentation de l’architecture
 

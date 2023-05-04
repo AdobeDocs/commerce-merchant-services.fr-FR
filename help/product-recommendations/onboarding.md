@@ -2,7 +2,7 @@
 title: Intégration
 description: Découvrez les exigences et les plateformes prises en charge dans [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 1bc15171e4e7402d808af3631b8b6d000d4fd3f2
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Le processus d’intégration pour [!DNL Product Recommendations] requiert l’a
 
 Voir [[!DNL Page Builder] Intégration](page-builder.md) pour obtenir des instructions sur l’ajout de [!DNL Product Recommendations] into [!DNL Page Builder] contenu.
 
-## Indexation des prix SaaS
+### Indexation des prix SaaS
 
 Les clients de recommandations de produits peuvent utiliser [Indexation des prix SaaS](../price-index/index.md), qui accélère les mises à jour des modifications de prix et le temps de synchronisation.
 

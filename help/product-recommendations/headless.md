@@ -2,9 +2,9 @@
 title: Headless
 description: Découvrez comment intégrer [!DNL Product Recommendations] dans une vitrine sans tête.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 0%
 
 Vous pouvez intégrer des [!DNL Product Recommendations] dans une vitrine sans interface utilisant soit [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) ou une technologie front-end personnalisée, telle que React ou Vue JS.
 
+Les intégrateurs personnalisés et sans interface doivent se référer à ces instructions Luma et PWA comme implémentation suggérée. Il existe de nombreuses façons d’implémenter Recommendations de produit dans des solutions sans interface utilisateur graphique. Cette documentation ne couvre pas tous les scénarios. Les intégrateurs doivent couvrir les événements, la conception et les tests pour leurs mises en oeuvre.
+
 [!DNL Product Recommendations] require [données comportementales et catalogues](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une mise en oeuvre sans interface utilisateur, mais des modifications sont nécessaires pour la collecte de données comportementales.
+
+>[!NOTE]
+>
+>Les instances sans affichage doivent implémenter des événements pour alimenter le tableau de bord Recommendations du produit.
 
 Pour intégrer [!DNL Product Recommendations] dans une vitrine sans interface, vous devez :
 
