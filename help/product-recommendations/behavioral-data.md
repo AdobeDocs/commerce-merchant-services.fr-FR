@@ -2,9 +2,9 @@
 title: Données comportementales
 description: Découvrez les données comportementales et quand vous pouvez commencer à les utiliser.
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
-source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
+source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,14 @@ Autres variables pouvant avoir un impact sur le temps nécessaire à l’entraî
 
 - Un volume de trafic plus élevé contribue à accélérer l’apprentissage
 - Certains types de recommandations s’exécutent plus rapidement que d’autres.
-- Adobe Commerce recalcule les données comportementales toutes les quatre heures. Bien que vous puissiez techniquement déployer vos unités de recommandations à ce moment-là, sachez que les recommandations deviennent plus précises plus elles sont utilisées longtemps sur votre site.
+- Adobe Commerce recalcule les données comportementales toutes les quatre heures. Recommendations devient plus précis plus longtemps il est utilisé sur votre site.
 
 Pour vous aider à visualiser la progression de la formation de chaque type de recommandation, la variable [créer une recommandation](create.md) affiche les indicateurs de préparation.
 
 Bien que les données soient collectées sur les modèles de production et d’apprentissage automatique, vous pouvez mettre en oeuvre la variable [tâches restantes](implementation-workflow.md) nécessaire pour déployer des recommandations sur votre storefront. Lorsque vous avez terminé les tests et la configuration des recommandations, les modèles d’apprentissage automatique ont collecté et calculé suffisamment de données pour créer des recommandations pertinentes, ce qui vous permet de déployer les recommandations sur votre vitrine.
+
+S’il y a un trafic insuffisant (vues, produits achetés, tendance) pour la majorité des SKU, il se peut qu’il n’y ait pas assez de données pour terminer le processus d’apprentissage. Cela peut donner l’impression que l’indicateur de préparation dans l’administrateur était bloqué.
+Les indicateurs de préparation sont destinés à fournir aux commerçants un autre point de données pour choisir le type de recommandations qui convient le mieux à leur magasin. Les chiffres sont un guide et peuvent ne jamais atteindre 100 %.
 
 ## Recommandations de sauvegarde {#backuprecs}
 
