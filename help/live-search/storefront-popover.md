@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Le [!DNL Live Search storefront popover] renvoie dynamiquement les produits suggérés et les miniatures."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 92889130fd7482e0b99fb08746e6fd2830b0345e
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,4 @@ Par défaut, la valeur Recherche catalogue - Limite de saisie automatique est d�
 * Le [!DNL Live Search] [!DNL storefront popover] est disponible uniquement pour les magasins qui utilisent la variable *Luma* ou un thème personnalisé basé sur *Luma*.
 * Le [!DNL popover] ne prend pas en charge la variable *Vide* thème. Voir [Style [!DNL Popover] Éléments](storefront-popover-styling.md) pour en savoir plus.
 * Le [!DNL popover] n’est pas pris en charge dans le formulaire de commande rapide.
+* Les vendeurs peuvent personnaliser et étendre des widgets ou des éléments de storefront (par exemple : intégration d’échantillons de couleurs dans les résultats de la recherche en direct) à l’aide de la méthode [Service de catalogue](../catalog-service/overview.md) API Storefront, mais qui n’est pas disponible pour l’équipe d’assistance d’Adobe.

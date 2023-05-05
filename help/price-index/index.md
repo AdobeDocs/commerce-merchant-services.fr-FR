@@ -4,9 +4,9 @@ description: Utilisation de l’indexation des prix SaaS pour améliorer les per
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Les clients utilisant Luma et Adobe Commerce Core GraphQL peuvent installer un module qui fournit la compatibilité Luma et désactive l’indexeur de prix de base PHP :
+Les clients qui utilisent Luma et Adobe Commerce Core GraphQL peuvent installer un module qui offre une compatibilité Luma et Core GraphQL et désactive l’indexeur de prix de base PHP :
 
 ```
 adobe-commerce/catalog-adapter
@@ -67,17 +67,7 @@ L’indexeur de prix de base PHP peut être réactivé si nécessaire par une ex
 Selon des facteurs tels que les types de produits, la complexité des prix et la taille du catalogue, l’indexation des prix SaaS peut être la bonne solution pour votre boutique. Lisez les restrictions suivantes et déterminez s’il s’agit d’une bonne solution pour votre site.
 
 Actuellement, l’indexation des prix SaaS prend en charge les types de produits simples, groupés, virtuels, configurables et dynamiques de lot.
-La prise en charge des types de produits téléchargeables, Gift Cards et Bundle Fixed est bientôt disponible.
-
-L’indexation des prix SaaS prend en charge les prix de base :
-
-* Prix régulier min./max.
-* Prix final min./max.
-* Prix spéciaux
-* Prix du groupe client
-* Prix des règles du catalogue
-
-Une fois que vous avez accepté d’utiliser le nouveau flux de tarification, vous pouvez contacter [Assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) pour vous aider à l’annuler.
+La prise en charge des types de produits téléchargeables, Gift Cards et Bundle Fixe sera bientôt disponible.s
 
 Les nouveaux flux doivent être synchronisés manuellement avec la variable `resync` [Commande CLI](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Dans le cas contraire, les données sont actualisées dans le processus de synchronisation standard. Obtenez plus d’informations sur la variable [Synchronisation du catalogue](../landing/catalog-sync.md) processus.
 

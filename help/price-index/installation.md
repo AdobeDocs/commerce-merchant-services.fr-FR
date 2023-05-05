@@ -3,9 +3,10 @@ title: Installation de l’indexation des prix SaaS
 description: Installation de l’indexation des prix SaaS
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-source-git-commit: 077be6d893b800b9571a869237501e58accc01e8
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,9 @@ Après la mise à niveau, trois nouveaux flux sont disponibles :
 Exécutez les indexeurs ci-dessus manuellement, si nécessaire. Dans le cas contraire, les données sont actualisées dans le processus de synchronisation standard. En savoir plus sur les [Synchronisation du catalogue](../landing/catalog-sync.md) service.
 
 Les utilisateurs de Luma et Adobe Commerce Core GraphQL peuvent installer la variable `catalog-adapter` qui fournit la compatibilité Luma et Core GraphQl et désactive l’indexeur de prix de base PHP.
-Pour utiliser la variable `catalog-adapter` module, [!DNL Live Search] doit d’abord être installé. Suivez la [Installer [!DNL Live Search]](../live-search/install.md) avant de poursuivre.
+Pour utiliser la variable `catalog-adapter` module, [!DNL Live Search] et [!DNL Catalog Service] doit d’abord être installé et configuré. Suivez la [Installer [!DNL Live Search]](../live-search/install.md) et [Installation du service de catalogue](../catalog-service/installation.md) avant de poursuivre.
+
+Pour configurer la recherche en direct et l’adaptateur de catalogue, procédez comme suit : [Connecteur Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instructions.
 
 ```bash
 composer require adobe-commerce/catalog-adapter
