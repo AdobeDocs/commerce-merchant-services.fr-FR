@@ -2,9 +2,9 @@
 title: Intégration
 description: Découvrez les exigences et les plateformes prises en charge dans [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,7 @@ Les clients de recommandations de produits peuvent utiliser [Indexation des prix
 ### Prise en charge B2B {#b2bsupport}
 
 Les vitrines B2B nécessitent souvent une logique complexe qui détermine la visibilité et la tarification des produits pour chaque acheteur ou groupe de clients. [!DNL Product Recommendations] now [support](release-notes.md) cette fonctionnalité en respectant [permissions de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catalogues partagés](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), et [tarification spécifique au groupe de clients](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Par exemple, si vous avez masqué certaines catégories de votre segment de client au détail, un acheteur de ce segment n’affichera pas les recommandations pour les produits de ces catégories. En outre, lorsque vous définissez un catalogue partagé pour des groupes de clients et des entreprises spécifiques, ces acheteurs ne voient des recommandations que pour les produits auxquels ils ont accès. Tous les produits recommandés reflètent un prix spécifique au groupe de clients correct en fonction du groupe de clients de chaque acheteur.
+
+>[!NOTE]
+>
+>Les vendeurs peuvent personnaliser et étendre des widgets ou des éléments de storefront à l’aide de la variable [Service de catalogue](../catalog-service/overview.md) API Storefront, mais toute personnalisation n’est pas adaptée à l’équipe d’assistance d’Adobe.
