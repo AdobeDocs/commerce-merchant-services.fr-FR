@@ -2,9 +2,9 @@
 title: Connexion des données commerciales à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
+source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Lorsque vous installez le connecteur Experience Platform, deux nouvelles pages d
 - Connecteur Commerce Services
 - Connecteur Experience Platform
 
-Pour connecter votre instance Adobe Commerce à la plateforme Adobe Experience, vous devez configurer les deux connecteurs, en commençant par le connecteur Commerce Services puis en finissant avec le connecteur Experience Platform.
+Pour connecter votre instance Adobe Commerce à Adobe Experience Platform, vous devez configurer les deux connecteurs, en commençant par le connecteur Commerce Services puis en finissant avec le connecteur Experience Platform.
 
 ## Mise à jour du connecteur Commerce Services
 
@@ -56,7 +56,11 @@ Dans cette section, vous connectez votre instance Adobe Commerce à Adobe Experi
 
 ## Collecte de données
 
-Dans le **Collecte de données** , sélectionnez les données storefront et/ou back-office à envoyer à l’Experience Platform edge. Pour vous assurer que votre instance Adobe Commerce peut commencer la collecte de données, reportez-vous à la section [conditions préalables](overview.md#prerequisites).
+Dans cette section, vous indiquez le type de données à envoyer à l’Experience Platform Edge. Il existe deux types de données : côté client et côté serveur.
+
+Les données côté client sont capturées sur le storefront. Cela inclut les interactions avec les acheteurs, telles que `View Page`, `View Product`, `Add to Cart`, et [liste des demandes](events.md#b2b-events) informations (pour les commerçants B2B). Les données côté serveur, ou les données de back-office, sont capturées dans les serveurs de commerce. Cela inclut des informations sur l’état d’une commande, par exemple si une commande a été passée, annulée, remboursée, expédiée ou terminée.
+
+Dans le **Collecte de données** , sélectionnez le type de données à envoyer à Experience Platform edge. Pour vous assurer que votre instance Adobe Commerce peut commencer la collecte de données, reportez-vous à la section [conditions préalables](overview.md#prerequisites).
 
 Consultez la rubrique Événements pour en savoir plus sur [storefront](events.md#storefront-events) et [back office](events.md#back-office-events) événements .
 
@@ -110,11 +114,32 @@ Consultez la rubrique Événements pour en savoir plus sur [storefront](events.m
 | Événements de back-office | Si cette case est cochée, la payload d’événement contient des informations d’état de commande anonymes, telles qu’une commande passée, annulée, remboursée ou expédiée. |
 | Identifiant de flux de données (site web) | Identifiant qui permet aux données de passer de Adobe Experience Platform à d’autres produits DX d’Adobe. Cet identifiant doit être associé à un site web spécifique au sein de votre instance Adobe Commerce spécifique. Si vous spécifiez votre propre SDK Web Experience Platform, ne spécifiez pas d’identifiant de flux de données dans ce champ. Le connecteur Experience Platform utilise l’identifiant de flux de données associé à ce SDK et ignore tout identifiant de flux de données spécifié dans ce champ (le cas échéant). |
 
-## Vérifier que les données sont envoyées à l’Experience Platform
+>[!NOTE]
+>
+>Une fois l’intégration effectuée, les données du storefront commencent à s’écouler vers le bord Experience Platform. Les données du back-office prennent environ 5 minutes pour s’afficher au bord. Les mises à jour suivantes sont visibles à la périphérie en fonction de la planification cron.
 
-Une fois l’intégration effectuée, les données du storefront commencent à s’écouler vers le bord Experience Platform. Les données du back-office prennent environ 5 minutes après l’intégration pour que les données s’affichent à la périphérie. Les mises à jour suivantes sont visibles à la périphérie en fonction de la planification cron.
+## Confirmation que les données d’événement sont collectées
 
-Lorsque des données Commerce sont envoyées à l’Experience Platform Edge, vous pouvez créer des rapports comme suit :
+Pour confirmer que les données sont collectées à partir de votre boutique Commerce, utilisez la variable [Débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) pour examiner votre site Commerce. Une fois que vous avez confirmé que les données sont collectées, vous pouvez vérifier que les données d’événement storefront et back-office s’affichent à la périphérie en exécutant une requête qui renvoie des données issues de la variable [jeu de données que vous avez créé](overview.md#prerequisites).
 
-![Données commerciales dans Adobe Experience Platform](assets/aem-data-1.png)
-_Données commerciales dans Adobe Experience Platform_
+1. Sélectionner **Requêtes** dans le volet de navigation de gauche de Experience Platform, cliquez sur [!UICONTROL Create Query].
+
+   ![Éditeur de requêtes](assets/query-editor.png)
+
+1. À l’ouverture de Query Editor, saisissez une requête qui sélectionne les données du jeu de données.
+
+   ![Créer une requête](assets/create-query.png)
+
+   Par exemple, votre requête peut se présenter comme suit :
+
+   ```sql
+   SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+   ```
+
+1. Une fois la requête exécutée, les résultats s’affichent dans la variable **Résultats** en regard de l’onglet **Console** . Cette vue affiche la sortie tabulaire de votre requête.
+
+   ![Éditeur de requêtes](assets/query-results.png)
+
+Dans cet exemple, vous voyez les données d’événement de la variable [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), etc. Cette vue vous permet de vérifier que vos données Commerce sont arrivées à la périphérie.
+
+Si les résultats ne correspondent pas à vos attentes, ouvrez votre jeu de données et recherchez les importations de lots ayant échoué. En savoir plus sur [dépannage des imports par lots](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
