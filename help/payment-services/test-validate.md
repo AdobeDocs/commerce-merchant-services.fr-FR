@@ -2,9 +2,9 @@
 title: Test et validation
 description: Les tests et la validation permettent de s’assurer que [!DNL Payment Services] fonctionnent comme prévu et offrent les meilleures options de paiement à vos clients.
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
+source-git-commit: 0324c2d8e34fee0872d5f52ed3a246094b482aa2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,10 @@ Lors du test et de la validation de votre environnement de test, vous devez util
 
 Utilisez le générateur de carte de crédit de PayPal pour [générer des informations de carte de crédit aléatoire ;](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) pour les tests.
 
-Pour tester le paiement Apple en mode sandbox, vous devez disposer d’un [Compte de test d’environnement de test Apple](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), accompagnés de fausses informations de carte de crédit et de facturation.
+Pour tester le paiement Apple en mode sandbox :
+
+* Créez un [Compte de test d’environnement de test Apple](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), accompagnés de fausses informations de carte de crédit et de facturation.
+* [Enregistrement des domaines des environnements de test](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
 >
@@ -47,6 +50,4 @@ Effectuez vos tests de production avec des cartes de crédit réelles et des com
 
 Vous devez également vérifier que les informations qui apparaissent sur les relevés bancaires pour les méthodes de paiement que vous utilisez dans les tests de production sont correctes et attendues (y compris la description de votre entreprise).
 
->[!NOTE]
->
->Pour terminer les tests de production pour Apple Pay, vous devez contacter les ventes afin d’activer Apple Pay pour votre environnement de production.
+Pour tester le paiement Apple en mode de production, vous devez [enregistrer vos domaines de production ;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
