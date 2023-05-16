@@ -2,7 +2,7 @@
 title: "Facettes"
 description: "[!DNL Live Search] les facettes utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: e1a512d2c9738f05bb8dcb929dccc7ad81cf7e3e
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Les exigences d’attribut de catégorie et de produit pour la facette sont simi
 
 [!DNL Live Search] prend en charge jusqu’à :
 
-* 100 attributs configurés en tant que facettes
+* 200 attributs configurés en tant que facettes
 * 50 attributs triables
 * 200 attributs filtrables
 * 200 attributs pouvant faire l’objet d’une recherche
