@@ -2,9 +2,9 @@
 title: Connecteur Commerce Services
 description: Découvrez comment intégrer votre instance Adobe Commerce ou Magento Open Source aux services à l’aide des clés d’API de production et d’environnement de test.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 506b00e72d65fbafa071476608bb658cb59404b4
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -111,4 +111,4 @@ Pour connecter votre instance Adobe Commerce à Adobe Experience Platform, conne
 
 ## Synchronisation des catalogues
 
-Lorsque la variable [!DNL Commerce] l’instance se connecte correctement à [!DNL Commerce Services], le processus de synchronisation de catalogue exporte les données de produit de votre [!DNL Commerce] serveur à [!DNL Commerce Services]. [En savoir plus](catalog-sync.md) à propos du processus de synchronisation de catalogue.
+Lorsque la variable [!DNL Commerce] l’instance se connecte correctement à [!DNL Commerce Services], le processus de synchronisation de catalogue exporte les données de produit de votre [!DNL Commerce] serveur à [!DNL Commerce Services]. Actuellement, seul le Recommendations de produit utilise le service de synchronisation de catalogue. [En savoir plus](catalog-sync.md) à propos du processus de synchronisation de catalogue.
