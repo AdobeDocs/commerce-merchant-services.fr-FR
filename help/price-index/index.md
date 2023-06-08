@@ -4,9 +4,9 @@ description: Utilisation de l’indexation des prix SaaS pour améliorer les per
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ L’indexeur de prix de base PHP peut être réactivé si nécessaire par une ex
 
 Selon des facteurs tels que les types de produits, la complexité des prix et la taille du catalogue, l’indexation des prix SaaS peut être la bonne solution pour votre boutique. Lisez les restrictions suivantes et déterminez s’il s’agit d’une bonne solution pour votre site.
 
-Actuellement, l’indexation des prix SaaS prend en charge les types de produits simples, groupés, virtuels, configurables et dynamiques de lot.
-La prise en charge des types de produits téléchargeables, Gift Cards et Bundle Fixe sera bientôt disponible.s
+Actuellement, l’indexation des prix SaaS prend en charge les éléments simples, groupés, virtuels, configurables et [Bundle Dynamic](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) types de produits.
+La prise en charge des types de produits téléchargeables, Gift Cards et Bundle Fixed est bientôt disponible.
 
 Les nouveaux flux doivent être synchronisés manuellement avec la variable `resync` [Commande CLI](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Dans le cas contraire, les données sont actualisées dans le processus de synchronisation standard. Obtenez plus d’informations sur la variable [Synchronisation du catalogue](../landing/catalog-sync.md) processus.
 
