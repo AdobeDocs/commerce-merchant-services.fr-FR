@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
+source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ Voir [Disponibilité](https://devdocs.magento.com/release/availability.html) dan
 Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités qui se sont produits et qui ont été publiés en dehors des versions régulières des fonctionnalités pour le service hébergé.
 
 +++Mises à jour du service hébergé
+
+_9 juin 2023_
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-4288 --> Maintenant, les marchands peuvent [configure _only_ Boutons de paiement PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—and _not_ utilisez l’option de paiement par carte de crédit PayPal pour proposer diverses options de paiement sans demander l’approbation de la carte de crédit PayPal.
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-4050 --> Ajout d’une [visualisation des données](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), qui s’affiche sur la page d’accueil du service de paiement, pour le rapport d’état des paiements des commandes .
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-4486--> Auparavant, le bouton PayPal PayLater n’apparaissait pas dans le passage en caisse des commerçants britanniques. Ce problème est résolu.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-4485--> Les vues de visualisation des données de rapport s’affichent désormais sur la page d’accueil des services de paiement lorsque les services de paiement sont désactivés.
 
 _25 janvier 2023_
 
@@ -56,6 +66,22 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
 
 +++
+
+## v2.1.0
+
+_9 juin 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg)<!-- Issue xxx --> Ajout de la prise en charge d’Adobe Commerce 2.4.7-beta1.
+
+![Nouveau](../assets/new.svg)<!-- Issue xxx --> Ajout [Disponibilité dans les pays suivants et les devises associées](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australie, France, Royaume-Uni.
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-4296 --> Ajout [ressources étendues pour les rôles d’administrateur](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) afin de s’assurer que les utilisateurs administrateurs peuvent créer et gérer des commandes pour les clients et qu’ils peuvent voir Services de paiement dans le menu Ventes .
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-4236 --> Ajout [annulation automatique pour les commandes qui entraînent des erreurs lors de l’extraction](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![Nouveau](../assets/new.svg)<!-- Issue PAY-4183 --> Fonctionnalité créée pour [afficher le bouton d’option de paiement de carte de crédit/débit ;](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) sur la page de passage en caisse.
 
 ## v2.0.0
 

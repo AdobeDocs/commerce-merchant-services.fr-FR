@@ -4,9 +4,9 @@ description: Pour effectuer une réconciliation financière, utilisez le rapport
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # Rapport de paiements
 
 [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous offre des rapports détaillés afin d’obtenir une vue claire des commandes et des paiements de votre boutique.
-
-![Affichage des rapports financiers](assets/reports-justpayouts.png)
 
 Il existe deux vues de rapport sur les versements disponibles pour vous permettre d’afficher des informations détaillées sur tous vos versements :
 
@@ -34,7 +32,7 @@ La vue de visualisation des données de paiement est disponible dans la page d�
 
 Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** pour afficher le graphique de visualisation des données des crédits par rapport aux débits et les moyennes mobiles au fil du temps.
 
-![Visualisation des données de paiement dans l’Admin](assets/payouts-report.png)
+![Visualisation des données de paiement dans l’Admin](assets/payouts-report.png){zoomable=yes}
 
 Cliquez sur **[!UICONTROL View Report]** pour accéder au tableau détaillé [Vue du rapport Payements](#payouts-report-view).
 
@@ -70,13 +68,13 @@ La vue Rapport de paiements est disponible dans la vue Versements des Services d
 
 Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** pour afficher le tableau détaillé de la vue Rapport de versements .
 
-![Transactions de paiement dans l&#39;administrateur](assets/payouts-report-new.png)
+![Transactions de paiement dans l&#39;administrateur](assets/payouts-report-new.png){zoomable=yes}
 
 Vous pouvez configurer cette vue, selon les sections de cette rubrique, pour présenter au mieux les données que vous souhaitez afficher.
 
 Voir les ID de commande et de transaction Commerce liés, le montant des transactions, le mode de paiement par transaction, etc., dans le rapport Paiements de l’administrateur.
 
-Vous pouvez télécharger les transactions de paiement au format .csv pour les utiliser dans les logiciels de gestion des commandes ou de comptabilité existants.
+Vous pouvez [téléchargement des transactions de paiement](#download-transactions) dans un format de fichier .csv à utiliser dans les logiciels de gestion des commandes ou de comptabilité existants.
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ Vous pouvez télécharger les transactions de paiement au format .csv pour les u
 
 Dans la vue Rapport de versements, vous pouvez sélectionner la source de données..._[!UICONTROL Live]_ou_[!UICONTROL Sandbox]_: pour lequel vous souhaitez afficher les résultats du rapport.
 
-![Sélection des sources de données](assets/datasource.png)
+![Sélection des sources de données](assets/datasource.png){width=400px}
 
-If _[!UICONTROL Live]_est la source de données sélectionnée. vous pouvez afficher les informations de rapport pour vos boutiques en direct. If [!UICONTROL Sandbox]_ correspond à la source de données sélectionnée, vous pouvez afficher les informations de rapport pour votre environnement Sandbox.
+If _[!UICONTROL Live]_est la source de données sélectionnée. vous pouvez afficher les informations du rapport pour les magasins en mode de production. If_[!UICONTROL Sandbox]_ est la source de données sélectionnée. vous pouvez afficher les magasins d’informations de rapport en mode sandbox.
 
 Les sélections de sources de données fonctionnent comme suit :
 
@@ -154,27 +152,27 @@ Les rapports de paiement comprennent les informations suivantes.
 | [!UICONTROL Code] | Code de transaction qui indique soit Crédit (*CR*) ou Débit (*DR*) |
 | [!UICONTROL Reference ID] | Identifiant de transaction d’origine pour lequel cet événement est lié |
 | [!UICONTROL Invoice] | Identifiant de facture (une par commande) de la transaction |
-| [!UICONTROL Commerce order] | ID de commande de commerce <br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, cliquez sur l’identifiant. |
-| [!UICONTROL Commerce trans] | Commerce transaction ID <br> <br>Pour afficher les [informations sur les transactions](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, cliquez sur l’identifiant. |
-| [!UICONTROL Pay method] | Type de carte de crédit —*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*: et fournisseur de carte associé (par exemple, *Visa* ou *MasterCard*) |
-| [!UICONTROL Trans amt] | Montant de la transaction |
-| [!UICONTROL Cur] | Unité de devise pour le montant des transactions |
-| [!UICONTROL Pending] | Montant à débourser |
-| [!UICONTROL Cur] | Unité de devise pour le montant en attente |
-| [!UICONTROL Seller amt] | Montant des fonds transférés à ou à un client <br> <br>Les fonds sortants du compte du vendeur affichent un préfixe tiret (-). |
-| [!UICONTROL Cur] | Unité de devise du montant du vendeur |
-| [!UICONTROL Partner fee] | Frais de partenaire associés à la transaction <br> <br>Les fonds qui sortent du compte de frais du partenaire affichent un préfixe tiret (-). |
-| [!UICONTROL Cur] | Unité de devise pour les frais de partenaire |
-| [!UICONTROL Prov fees] | Frais associés à la transaction <br> <br>Les fonds qui sortent du compte de frais du fournisseur affichent un préfixe tiret (-). |
-| [!UICONTROL Cur] | Unité de devise pour les frais du fournisseur |
-| [!UICONTROL Fee %] | Pourcentage du montant de la transaction imputé en frais |
-| [!UICONTROL Fixed fee] | Montant fixe des frais du fournisseur |
-| [!UICONTROL Chbk fee] | Redevance associée à la transaction <br> <br>Un préfixe tiret (-) indique que les frais de recharge ont été annulés. |
-| [!UICONTROL Cur] | Unité de devise pour les frais de reliquat |
-| [!UICONTROL Hold amt] | Montant mis en attente ou libéré du blocage <br> <br>Un préfixe tiret (-) indique que les fonds en attente sont débloqués. |
-| [!UICONTROL Cur] | Unité de devise pour le montant de la retenue |
-| [!UICONTROL Recoup amt] | Montant récupéré du compte de retour <br> <br>Les fonds sortants du compte de récupération affichent un préfixe de tiret (-). |
-| [!UICONTROL Cur] | Unité de devise pour le montant de retour |
+| [!UICONTROL Commerce order] | ID de commande de commerce <br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html), cliquez sur l’identifiant. |
+| [!UICONTROL Commerce trans] | Commerce transaction ID |
+| [!UICONTROL Pay method] | Type de carte de crédit —*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*: et fournisseur de carte associé (par exemple, *Visa* ou *MasterCard*) |
+| [!UICONTROL TRANS AMT] | Montant de la transaction |
+| [!UICONTROL CUR] | Unité de devise pour le montant des transactions |
+| [!UICONTROL PENDING] | Montant à débourser |
+| [!UICONTROL CUR] | Unité de devise pour le montant en attente |
+| [!UICONTROL SELLER AMT] | Montant des fonds transférés à ou à un client <br> <br>Les fonds sortants du compte du vendeur affichent un préfixe tiret (-). |
+| [!UICONTROL CUR] | Unité de devise du montant du vendeur |
+| [!UICONTROL PARTNER FEE] | Frais de partenaire associés à la transaction <br> <br>Les fonds qui sortent du compte de frais du partenaire affichent un préfixe tiret (-). |
+| [!UICONTROL CUR] | Unité de devise pour les frais de partenaire |
+| [!UICONTROL PROV FEES] | Frais associés à la transaction <br> <br>Les fonds qui sortent du compte de frais du fournisseur affichent un préfixe tiret (-). |
+| [!UICONTROL CUR] | Unité de devise pour les frais du fournisseur |
+| [!UICONTROL FEE %] | Pourcentage du montant de la transaction imputé en frais |
+| [!UICONTROL FIXED FEE] | Montant fixe des frais du fournisseur |
+| [!UICONTROL CHBK FEE] | Redevance associée à la transaction <br> <br>Un préfixe tiret (-) indique que les frais de recharge ont été annulés. |
+| [!UICONTROL CUR] | Unité de devise pour les frais de reliquat |
+| [!UICONTROL HOLD AMT] | Montant mis en attente ou libéré du blocage <br> <br>Un préfixe tiret (-) indique que les fonds en attente sont débloqués. |
+| [!UICONTROL CUR] | Unité de devise pour le montant de la retenue |
+| [!UICONTROL RECOUP AMT] | Montant récupéré du compte de retour <br> <br>Les fonds sortants du compte de récupération affichent un préfixe de tiret (-). |
+| [!UICONTROL CUR] | Unité de devise pour le montant de retour |
 
 ### Types de transaction
 

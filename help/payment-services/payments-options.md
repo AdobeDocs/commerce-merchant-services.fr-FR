@@ -2,9 +2,9 @@
 title: Options de paiement
 description: Définissez les options de paiement pour personnaliser les méthodes disponibles pour les clients de votre magasin.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
+source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Vous pouvez également modifier la disposition, la largeur, la hauteur et le sty
 
 [!DNL PayPal Smart Buttons], qui utilise PayPal pour effectuer un achat, stocke l’adresse de livraison de votre acheteur, les adresses de facturation et les détails de paiement en vue d’une utilisation ultérieure. Les acheteurs peuvent utiliser n&#39;importe quel mode de paiement précédemment stocké ou proposé par PayPal.
 
-![[!DNL PayPal Smart Buttons] options](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
 
 Vous pouvez configurer [!UICONTROL PayPal Smart Buttons] dans la configuration du magasin ou dans la page d’accueil des services de paiement.  Voir [Paramètres](settings.md#payment-buttons) pour plus d’informations.
 
@@ -67,6 +67,14 @@ Le [!DNL Apple Pay] est visible à partir de la page produit, du mini-panier, du
 >
 > Pour utiliser [!DNL Apple Pay] pour vos magasins, effectuez les opérations suivantes : [auto-inscription avec [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Enregistrement de votre domaine de production_ uniquement) et [le configurer pour vos magasins dans [!DNL Payment Services]](settings.md#payment-buttons).
 
+### Bouton Débit PayPal ou Carte de crédit
+
+Les clients peuvent régler leur paiement à l’aide du bouton Payer le débit ou la carte de crédit .
+
+Le bouton Débit PayPal ou Carte de crédit est visible à partir de la page de passage en caisse.
+
+Cette option peut être utilisée pour présenter une option de paiement par carte de crédit ou par débit PayPal à vos acheteurs lorsque vous n’avez pas de fournisseur de carte de crédit alternatif.
+
 ### [!DNL Pay Later] button
 
 Offrez à vos clients des paiements à court terme sans intérêts et d’autres options de financement afin qu’ils puissent acheter maintenant et payer ultérieurement avec le [!DNL Pay Later] bouton .
@@ -76,9 +84,9 @@ Le [!DNL Pay Later] est visible à partir de la page produit, du mini-panier, du
 * **Lorsqu’un client sélectionne un produit entre 30 et 600 $**, messagerie sous PayPal et [!DNL Pay Later] Les boutons donnent au client plus d’informations sur la variable [!DNL Pay in 4] option de paiement. Les clients peuvent cliquer sur **En savoir plus** pour en savoir plus sur le[!DNL Pay in 4]Option &quot; _ou_ cliquez sur le texte &quot;Ou voir 6 mois de financement spécial&quot; dans la fenêtre contextuelle pour en savoir plus et demander l’option Crédit PayPal .
 * **Lorsqu’un client sélectionne un ou plusieurs produits dépassant 98,99 $**, messagerie sous PayPal et [!DNL Pay Later] Les boutons donnent aux clients plus d’informations sur l’option de paiement du crédit PayPal. Les clients peuvent cliquer sur **En savoir plus** pour en savoir plus sur l’option Crédit PayPal et faire une demande pour cette option, _ou_ cliquez sur le texte &quot;Ou voir Payer en 4&quot; dans la fenêtre contextuelle pour en savoir plus sur la variable [!DNL Pay in 4] .
 
-   >[!NOTE]
-   >
-   >Les montants listés ci-dessus peuvent être modifiés.
+  >[!NOTE]
+  >
+  >Les montants listés ci-dessus peuvent être modifiés.
 
 Voir [Paramètres](settings.md#payment-buttons) pour savoir comment désactiver/activer le [!DNL Pay Later] messages.
 
@@ -93,6 +101,29 @@ Le [!DNL Pay Now] est visible dans la fenêtre contextuelle PayPal lorsqu’un c
 
 Si le montant final de la commande n’est pas encore connu (par exemple, lorsque vous ne disposez pas encore des informations sur l’adresse de livraison) et que le client est en train d’extraire de la page produit, du mini-panier ou du panier, une _Continuer_ est disponible à la place. Lorsqu’un client clique _Continuer_, une fois qu’ils ont confirmé leur mode de paiement, ils sont dirigés vers une page de vérification de commande afin de rassembler les détails nécessaires avant de terminer le passage en caisse.
 
+## Utiliser uniquement les boutons de paiement PayPal
+
+Pour passer rapidement votre magasin en mode de production, vous pouvez configurer les _only_ Boutons de paiement PayPal (Venmo, PayPal, etc.): au lieu d’utiliser également l’option de paiement par carte de crédit PayPal .
+
+Vous pouvez ainsi :
+
+* Fournissez diverses options de paiement à vos clients sans demander l’approbation de carte de crédit via PayPal.
+* Utilisez votre fournisseur de carte de crédit existant pour les paiements par carte de crédit, tout en utilisant également les autres options de paiement de PayPal.
+* Utilisez les boutons de paiement de PayPal dans une région où PayPal ne prend pas en charge les cartes de crédit comme option de paiement.
+
+À **capture des paiements avec _only_ Boutons de paiement PayPal (_not_ l’option de paiement par carte de crédit PayPal)**:
+
+1. Assurez-vous que votre boutique est [en mode de production](settings.md#enable-payment-services).
+1. [Configuration des boutons de paiement PayPal de votre choix](settings.md#payment-buttons) dans Paramètres.
+1. Tourner _Off_ la valeur **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** dans le _[!UICONTROL Payment buttons]_.
+
+À **effectuer des paiements de capture avec votre fournisseur de carte de crédit existant ; _et_ Boutons de paiement PayPal**:
+
+1. Assurez-vous que votre boutique est [en mode de production](settings.md#enable-payment-services).
+1. [Configuration des boutons de paiement PayPal de votre choix](settings.md#payment-buttons).
+1. Tourner _Off_ la valeur **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** dans le _[!UICONTROL Payment buttons]_.
+1. Tourner _Off_ la valeur **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** dans le _[!UICONTROL Credit card fields]_et utilisez vos [compte fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
 ## recalcul de la commande
 
 Lorsqu’un client entre dans le flux de passage en caisse à partir du mini-panier, du panier ou de la page du produit, il est dirigé vers une page de vérification de la commande où il peut voir l’adresse de livraison sélectionnée dans une fenêtre contextuelle PayPal. Une fois que le client a sélectionné le mode de livraison, le montant de la commande est correctement recalculé et le client peut voir les frais de livraison et les taxes.
@@ -100,14 +131,6 @@ Lorsqu’un client entre dans le flux de passage en caisse à partir du mini-pan
 Lorsqu’un client entre dans le flux de passage en caisse à partir de la page de passage en caisse, le système connaît déjà l’adresse de livraison et le montant calculé final, et les totaux sont correctement représentés.
 
 Les jours fériés, les frais de livraison et les taxes de vente peuvent varier considérablement d&#39;un lieu à l&#39;autre. Après [!DNL Payment Services] reçoit l&#39;adresse et le prix de livraison, il recalcule rapidement tous les coûts applicables et les affiche correctement lors des dernières étapes de la commande.
-
-## Passage en caisse à partir de la page du produit
-
-Lorsqu’un client extrait directement de la page du produit, à l’aide de PayPal ou [!DNL Pay Later] , seul l’article représenté dans la page produit active est acheté. Les articles qui figurent déjà dans le panier du client ne sont pas ajoutés au flux de passage en caisse et ne sont pas achetés.
-
-Si le client annule la commande, l’article de la page du produit en cours est ajouté au panier du client, en y joignant tous les autres articles présents dans le panier. Cette fonction permet au client d’acheter rapidement l’article qu’il consulte actuellement, tout en conservant tous les autres articles qu’il a ajoutés à son panier antérieurement lors de la navigation dans les produits.
-
-Lorsqu’un client entre dans le flux de passage en caisse à partir de la page du produit, la page de passage en caisse est simplifiée ; la vue affiche uniquement les données et les options liées à la commande.
 
 ## Valorisation des cartes de crédit
 

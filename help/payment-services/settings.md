@@ -4,9 +4,9 @@ description: Après l’installation, vous pouvez configurer [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: f14b4a1abe9c0f85dc9f070467f94819c1fe89e6
+source-git-commit: c28b86f3a0ff0aae06a4ee8a60b2b9f304295ff8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2036'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 1. Pour modifier le nom du mode de paiement, comme indiqué lors de l’extraction, modifiez la valeur de la variable **[!UICONTROL Checkout Title]** champ .
 1. À [définir l’action de paiement ;](production.md#set-payment-services-as-payment-method), bascule **[!UICONTROL Payment action]** to `Authorize` ou `Authorize and Capture`.
 1. Utilisation des sélecteurs de basculement pour activer ou désactiver [!DNL PayPal smart button] fonctionnalités d’affichage :
+
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
    - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
@@ -150,12 +151,13 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
    - **[!UICONTROL Show PayPal Pay Later message]**
    - **[!UICONTROL Show Venmo button]**
    - **[!UICONTROL Show Apple Pay button]**
+   - **[!UICONTROL Show PayPal Credit and Debit Card button]**
 
-      >[!NOTE]
-      >
-      > Pour utiliser Apple Pay [posséder un compte de test d’environnement de test Apple](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (avec une fausse carte de crédit et des informations de facturation) pour le tester. Lorsque vous êtes prêt à utiliser Apple Pay dans un environnement de test _ou_ mode de production, après avoir effectué toute [test et validation](test-validate.md#test-in-sandbox-environment), complete [auto-inscription avec [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Enregistrement de votre domaine de production_ uniquement) et [le configurer pour vos magasins dans [!DNL Payment Services]](settings.md#payment-buttons).
+     >[!NOTE]
+     >
+     > Pour utiliser Apple Pay [posséder un compte de test d’environnement de test Apple](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (avec une fausse carte de crédit et des informations de facturation) pour le tester. Lorsque vous êtes prêt à utiliser Apple Pay dans un environnement de test _ou_ mode de production, après avoir effectué toute [test et validation](test-validate.md#test-in-sandbox-environment), complete [auto-inscription avec [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Enregistrement de votre domaine de production_ uniquement) et [le configurer pour vos magasins dans [!DNL Payment Services]](settings.md#payment-buttons).
 
-      Lorsque vous activez/désactivez la visibilité des boutons de paiement ou le message PayPal Pay Later, un aperçu visuel de cette configuration s’affiche au bas de la page Paramètres .
+     Lorsque vous activez/désactivez la visibilité des boutons de paiement ou le message PayPal Pay Later, un aperçu visuel de cette configuration s’affiche au bas de la page Paramètres .
 
 1. Pour activer le mode de débogage, activez la fonction **[!UICONTROL Debug Mode]** sélecteur.
 1. Cliquez sur **[!UICONTROL Save]**.
@@ -178,6 +180,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 | [!UICONTROL Show PayPal Pay Later Message] | site web | Activez ou désactivez la messagerie Payer plus tard dans le panier, la page du produit, le mini-panier et pendant le flux de passage en caisse. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Venmo button] | vue de magasin | Activez ou désactivez l’option de paiement Venmo lorsque les boutons de paiement s’affichent. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Apple Pay button] | vue de magasin | Activez ou désactivez l’option Paiement Apple dans laquelle les boutons de paiement s’affichent. Options : [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | vue de magasin | Activez ou désactivez l’option de paiement par carte de crédit et de débit où des boutons de paiement s’affichent. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | site web | Activez ou désactivez le mode de débogage. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Style de bouton
@@ -198,6 +201,8 @@ Vous pouvez également configurer la variable _[!UICONTROL Button style]_options
 
    Lorsque vous modifiez les options de configuration pour la disposition, la couleur, la forme, la hauteur et le libellé, un aperçu visuel de cette configuration s’affiche au bas de la page Paramètres .
 
+   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+
 1. Cliquez sur **[!UICONTROL Save]**.
 
    Si vous essayez de quitter cette vue sans enregistrer vos modifications, un modal s’affiche pour vous inviter à ignorer les modifications, à continuer les modifications ou à les enregistrer.
@@ -217,6 +222,19 @@ Vous pouvez configurer [!DNL PayPal Smart Buttons] style [dans la configuration 
 | [!UICONTROL Responsive Button Height] | Affichage en magasin | Définit si les boutons de paiement utilisent une hauteur par défaut. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Height] | Affichage en magasin | Définissez la hauteur des boutons de paiement. Valeur par défaut : none |
 | [!UICONTROL Label] | Affichage en magasin | Définissez le libellé qui apparaît dans les boutons de paiement. Options : [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+
+## Configuration des rôles
+
+Pour vous assurer que les utilisateurs administrateurs peuvent créer et gérer des commandes dans l’administrateur Commerce, activez [!DNL Payment Services]ressources spécifiques aux rôles utilisateur.
+
+Voir [Rôles utilisateur](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) pour apprendre à gérer les rôles.
+
+Lorsque vous attribuez des ressources au rôle, vous devez sélectionner :
+
+- **Payer avec[!DNL Payment Services]**: cette ressource garantit que lorsque vous créez une commande dans l’administrateur, [!DNL Payment Services] les cartes de crédit sont disponibles en tant que mode de paiement. Si vous sélectionnez la variable **Actions** ressource parente, cette ressource sera également sélectionnée.
+- **[!DNL Payment Services]**: cette ressource inclut la variable **Tableau de bord** et **Proxy de services SaaS** ressources, qui doit également être sélectionnée. Ils s’assurent que [!DNL Payment Services] apparaît dans la variable _Ventes_ .
+
+  ![Ressources des services de paiement](assets/roles-payments.png)
 
 ## Vider le cache
 
