@@ -2,9 +2,9 @@
 title: Événements
 description: Découvrez les données que chaque événement capture.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
+source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Outre les données collectées par les événements suivants, vous obtenez égal
 
 ## Événements Storefront
 
-Les événements storefront collectent des données comportementales anonymes de vos acheteurs lorsqu’ils parcourent votre site. Les données collectées par ces événements peuvent être utilisées pour créer des promotions et des campagnes ciblées sur un ensemble spécifique d’acheteurs.
+Les événements storefront collectent des données comportementales anonymes de vos acheteurs lorsqu’ils parcourent votre site. Vous pouvez utiliser les données collectées par ces événements pour créer des promotions et des campagnes ciblées sur un ensemble spécifique d’acheteurs. Les données d’événement Storefront incluent uniquement des produits simples et configurables.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Informations les plus récentes sur le connecteur Adobe Experience Platform depuis Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,11 @@ Consultez la documentation destinée aux développeurs pour [en savoir plus sur 
 Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités liés aux extensions utilisées par le connecteur Experience Platform.
 
 Mises à jour du service +++prises en charge
+
+_10 juin 2023_
+
+* ![Correction](../assets/fix.svg) - Correction d’un problème lors de la `orderId` ne transmettait pas le contexte en raison de préfixes dans l’identifiant de commande Commerce.
+* ![Correction](../assets/fix.svg) - Mise à jour des configurations des stratégies de sécurité du contenu.
 
 _30 mars 2023_
 
