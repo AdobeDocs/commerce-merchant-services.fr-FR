@@ -2,9 +2,9 @@
 title: "Ajouter des règles"
 description: "Découvrez comment créer [!DNL Live Search] règles."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
+source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ Les propriétaires de magasins peuvent configurer les types de stratégies de cl
 * Aucun : Les produits sont classés selon la pertinence.
 
 1. Sélectionnez le type de stratégie de la règle. La fenêtre Tester votre règle affiche les résultats attendus.
+
+>[!NOTE]
+>
+>Les apostrophes et guillemets dans les requêtes peuvent entraîner des problèmes mineurs de classement et de pertinence dans certaines langues.
 
 ## Ajout d’événements
 

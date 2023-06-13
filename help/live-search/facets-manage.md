@@ -2,9 +2,9 @@
 title: "Gestion des facettes"
 description: "Découvrez comment gérer les [!DNL Live Search] facettes."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,10 @@ L’épingle devient bleue et la facette se déplace vers le *Facettes épinglé
 La broche devient grise et la facette passe à la fenêtre *Facettes dynamiques* .
 
    ![Facettes Pinces et dynamiques](assets/facets-pinned-unpinned.png)
+
+>[!NOTE]
+>
+>L’ordre des facettes épinglé peut être incohérent s’il existe deux libellés portant le même nom.
 
 ## Déplacer la facette épinglée
 
