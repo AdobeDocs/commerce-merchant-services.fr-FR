@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Ces notes de mise à jour décrivent les modifications et correctifs de fonction
 
 _9 juin 2023_
 
-![Nouveau](../assets/new.svg)<!-- Issue PAY-4288 --> Maintenant, les marchands peuvent [configure _only_ Boutons de paiement PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—and _not_ utilisez l’option de paiement par carte de crédit PayPal pour proposer diverses options de paiement sans demander l’approbation de la carte de crédit PayPal.
+![Nouveau](../assets/new.svg)<!-- Issue PAY-4288 --> Maintenant, les marchands peuvent [configure _only_ Boutons de paiement PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—and _not_ utilisez l’option de paiement par carte de crédit PayPal . Cela permet aux commerçants de proposer diverses options de paiement, notamment des boutons de paiement Venmo et PayPal, et d’utiliser un fournisseur de carte de crédit existant au lieu de l’option de paiement par carte de crédit PayPal.
 
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-4050 --> Ajout d’une [visualisation des données](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), qui s’affiche sur la page d’accueil du service de paiement, pour le rapport d’état des paiements des commandes .
 

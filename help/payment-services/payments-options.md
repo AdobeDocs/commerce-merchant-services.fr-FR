@@ -2,9 +2,9 @@
 title: Options de paiement
 description: Définissez les options de paiement pour personnaliser les méthodes disponibles pour les clients de votre magasin.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Pour passer rapidement votre magasin en mode de production, vous pouvez configur
 
 Vous pouvez ainsi :
 
-* Fournissez diverses options de paiement à vos clients sans demander l’approbation de carte de crédit via PayPal.
+* Fournissez diverses options de paiement à vos clients, notamment des boutons de paiement Venmo et PayPal, avec la possibilité de désactiver les champs de carte hébergée PayPal et d’utiliser un fournisseur de carte de crédit existant.
 * Utilisez votre fournisseur de carte de crédit existant pour les paiements par carte de crédit, tout en utilisant également les autres options de paiement de PayPal.
 * Utilisez les boutons de paiement de PayPal dans une région où PayPal ne prend pas en charge les cartes de crédit comme option de paiement.
 
