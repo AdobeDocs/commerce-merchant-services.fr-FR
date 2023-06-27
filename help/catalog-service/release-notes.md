@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Notes de mise à jour de'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: f5a7e5ca4d1978e7ee8683c0ff0be8ba554cc9b2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,13 @@ Les mises à jour sont les suivantes :
 
 ## Version majeure actuelle
 
-_25 avril 2023_
+### Version 1.10
 
-![Nouveau](../assets/new.svg) Les clients du service de catalogue peuvent désormais profiter de la nouvelle [Indexeur de prix SaaS](../price-index/index.md).
-
-### Version V1.7
-
-_12 avril 2023_
+_27 juin 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg) Le service de catalogue nettoie désormais les variantes de produits supprimées.
-![Correction](../assets/fix.svg) Évolutivité de l’infrastructure et améliorations des performances.
+![Nouveau](../assets/new.svg) Le service de catalogue peut désormais afficher les produits associés dans le widget Page Détails du produit .
 
 #### Limites connues
 
@@ -48,6 +43,15 @@ Les limites suivantes peuvent être résolues à l’aide du maillage de l’API
 * Prix publicitaire minimal
 * [Prix de niveau](mesh.md)
 * Produits téléchargeables et cartes-cadeaux
+
+### Version V1.7
+
+_12 avril 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg) Le service de catalogue nettoie désormais les variantes de produits supprimées.
+![Correction](../assets/fix.svg) Évolutivité de l’infrastructure et améliorations des performances.
 
 ### Version V1.6
 
