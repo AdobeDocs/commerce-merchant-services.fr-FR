@@ -2,9 +2,9 @@
 title: Notes de mise à jour
 description: Informations les plus récentes sur le connecteur Adobe Experience Platform depuis Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
+source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -36,23 +36,35 @@ _10 juin 2023_
 
 _30 mars 2023_
 
-* ![Nouveau](../assets/new.svg) - Ajout d’une nouvelle extension appelée `data-services-b2b` inclut [événements de liste de demandes](events.md#b2b-events) pour les marchands B2B
+* ![Nouveau](../assets/new.svg) - Ajout d’une nouvelle extension appelée `data-services-b2b` inclut [événements de liste de demandes](events.md#b2b-events) pour les commerçants B2B.
 * ![Nouveau](../assets/new.svg) - Ajout de la fonction `uniqueIdentifier` champ à [search](events.md#search-events) événements . Ce nouveau champ permet aux marchands de croiser les requêtes de recherche correspondant aux réponses de recherche.
 
 _12 octobre 2022_
 
-* ![Nouveau](../assets/new.svg) - Ajout de deux [événements storefront](events.md): `openCart` et `removeFromCart` au SDK et au collecteur d’Adobe Commerce Storefront Events
-* ![Nouveau](../assets/new.svg) - Ajout de la prise en charge d’un [AEM storefront](overview.md#aem-support)
+* ![Nouveau](../assets/new.svg) - Ajout de deux [événements storefront](events.md): `openCart` et `removeFromCart` vers le SDK et le collecteur des événements Storefront d’Adobe Commerce.
+* ![Nouveau](../assets/new.svg) - Ajout de la prise en charge d’un [AEM storefront](overview.md#aem-support).
 
 +++
 
-## 3.0.0-beta1
+## 2.3.0
+
+_27 juin 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+* ![Nouveau](../assets/new.svg) - Ajout de la capacité à [désactiver l’envoi des événements storefront](connect-data.md#data-collection) à l’Experience Platform.
+* ![Correction](../assets/fix.svg) - Mise à jour des configurations des stratégies de sécurité du contenu.
+* ![Correction](../assets/fix.svg) - Correction de la prise en charge des événements back-office sur la version Commerce 2.4.7.
+* ![Nouveau](../assets/new.svg) - Ajout d’un message de notification sur l’invalidation du cache lors de l’enregistrement des modifications dans le formulaire Connecteur Experience Platform.
+
+
+## 3.0.0-beta1 (interne uniquement)
 
 _13 juin 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-* ![Nouveau](../assets/new.svg) - (Version bêta) Ajout de la capacité à [envoyer l’ordre historique](connect-data.md#beta-send-historical-order-data) données et état de l’Experience Platform.
+* ![Nouveau](../assets/new.svg) - (Version bêta) Ajout de la capacité à [envoyer l’ordre historique](connect-data.md#beta-send-historical-order-data) données et état de l’Experience Platform. Cette fonctionnalité est disponible uniquement pour les utilisateurs bêta. Vous pouvez rejoindre la version bêta en envoyant un courrier électronique à l’adresse suivante : [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 ## 2.2.0
 
@@ -69,7 +81,7 @@ _28 février 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-* ![Nouveau](../assets/new.svg) - Ajout de la prise en charge de PHP 8.2 pour tous les modules de connecteur Experience Platform
+* ![Nouveau](../assets/new.svg) - Ajout de la prise en charge de PHP 8.2 pour toutes les extensions de connecteur Experience Platform.
 
 ## 2.1.0
 
@@ -94,8 +106,8 @@ _12 octobre 2022_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-* ![Nouveau](../assets/new.svg) - Ajout de la possibilité de spécifier votre propre SDK Web AEP lorsque [connexion](connect-data.md) votre instance Adobe Commerce à l’Experience Platform
-* ![Correction](../assets/fix.svg) - Mise à jour de l’exigence de portée de la banque de données afin que les identifiants de la banque de données soient définis sur le site web plutôt que sur la vue d’ensemble
+* ![Nouveau](../assets/new.svg) - Ajout de la possibilité de spécifier votre propre SDK Web AEP lorsque [connexion](connect-data.md) votre instance Adobe Commerce à l’Experience Platform.
+* ![Correction](../assets/fix.svg) - Mise à jour de l’exigence de portée de la banque de données afin que les identifiants de la banque de données puissent être définis sur le site web plutôt que sur l’aperçu.
 
 ## 1.0.0
 
@@ -103,4 +115,4 @@ _9 août 2022_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-* ![Nouveau](../assets/new.svg) - Version de disponibilité générale
+* ![Nouveau](../assets/new.svg) - Disponibilité générale

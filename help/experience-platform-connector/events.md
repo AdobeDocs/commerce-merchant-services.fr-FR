@@ -2,7 +2,7 @@
 title: Événements
 description: Découvrez les données que chaque événement capture.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 0%
@@ -328,7 +328,7 @@ Utilisez la variable `uniqueIdentifier` champ situé dans les deux `searchReques
 
 >[!NOTE]
 >
->Les événements de recherche ne sont pas pris en charge sur une édition Adobe Commerce Enterprise avec le module B2B installé.
+>Les événements de recherche ne sont pas pris en charge sur une édition Adobe Commerce Enterprise avec l’extension B2B installée.
 
 #### Données collectées à partir de searchRequestSent
 
@@ -355,7 +355,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 >[!NOTE]
 >
->Les événements de recherche ne sont pas pris en charge sur une édition Adobe Commerce Enterprise avec le module B2B installé.
+>Les événements de recherche ne sont pas pris en charge sur une édition Adobe Commerce Enterprise avec l’extension B2B installée.
 
 #### Données collectées à partir de searchResponseReceived
 

@@ -2,7 +2,7 @@
 title: Connexion des données commerciales à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 8c2f275354eb4deba151ccdd83302e4b2cc5d4c9
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
@@ -162,7 +162,7 @@ Pour activer la collecte de données d’ordre historique pour la version bêta,
 
 ### Configuration de la version bêta de l’ordre historique
 
-Pour vous assurer que l’historique des commandes de vos clients peut être envoyé à l’Experience Platform, vous devez spécifier les informations d’identification qui relient votre instance Commerce à l’Experience Platform. Si vous avez déjà installé et activé la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) vous avez déjà spécifié les informations d’identification nécessaires et vous pouvez ignorer cette étape. Si vous n’avez pas encore installé et activé le module d’Audience Activation, procédez comme suit :
+Pour vous assurer que l’historique des commandes de vos clients peut être envoyé à l’Experience Platform, vous devez spécifier les informations d’identification qui relient votre instance Commerce à l’Experience Platform. Si vous avez déjà installé et activé la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , vous avez déjà spécifié les informations d’identification nécessaires et vous pouvez ignorer cette étape. Si vous n’avez pas encore installé et activé l’extension d’Audience Activation, procédez comme suit :
 
 >[!NOTE]
 >
