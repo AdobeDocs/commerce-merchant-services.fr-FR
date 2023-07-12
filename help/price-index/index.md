@@ -4,7 +4,7 @@ description: Utilisation de l’indexation des prix SaaS pour améliorer les per
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
@@ -83,16 +83,16 @@ Les nouveaux flux doivent être synchronisés manuellement avec la variable `res
 
 ### Luma sans dépendances d’extension
 
-* Un commerçant Luma ou version ultérieure Commerce Core GraphQL qui a installé le service requis (recherche en direct, Recommendations de produit, service de catalogue)
+* Un commerçant Luma ou Adobe Commerce Core GraphQL qui a installé le service requis (Live Search, Recommendations produit, Catalog Service)
 * Aucune extension tierce reposant sur l’indexeur de prix de base PHP
 * Vendre des produits dynamiques simples, configurables, groupés, virtuels et regroupés
 
 1. Activez les nouveaux flux.
 1. Installez l’adaptateur de catalogue.
 
-### Luma et versions ultérieures Commerce Core GraphQl avec dépendances de l’indexeur de prix de base PHP
+### Luma et Adobe Commerce Core GraphQl avec dépendances de l’indexeur de prix principal PHP
 
-* Un commerçant Luma ou version ultérieure Commerce Core GraphQL qui dispose d’un service pris en charge installé (recherche en direct, Recommendations de produits, service de catalogue)
+* Un commerçant Luma ou Adobe Commerce Core GraphQL qui dispose d’un service pris en charge installé (Live Search, Recommendations produit, Catalog Service)
 * Avec une extension tierce reposant sur l’indexeur de prix de base PHP
 * Vendre des produits dynamiques simples, configurables, groupés, virtuels et regroupés
 

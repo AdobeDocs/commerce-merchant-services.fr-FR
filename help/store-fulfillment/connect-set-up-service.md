@@ -4,9 +4,9 @@ description: Créez les connexions entre Adobe Commerce et la solution d’exéc
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,10 @@ Pour intégrer Adobe Commerce aux services d’exécution de magasin, vous crée
    - Entrez votre adresse électronique
    - Entrez votre mot de passe du compte administrateur.
 
-1. Configurer [!UICONTROL API Resource Access permissions] pour l’intégration, sélectionnez `[!UICONTROL All]`
+1. Configurez les autorisations d’accès aux ressources de l’API pour l’intégration avec ce qui suit :
+
+   - Ventes > Mise à jour des commandes BOPIS
+   - Système > Autorisations de l’application d’exécution de la boutique
 
 1. Générez les jetons d’accès pour l’authentification en enregistrant et en activant l’intégration.
 
