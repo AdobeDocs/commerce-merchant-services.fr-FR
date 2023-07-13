@@ -2,7 +2,8 @@
 title: "[!DNL Live Search] Guide Overview"
 description: "[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, super pertinente et intuitive."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+recommendations: noCatalog
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
