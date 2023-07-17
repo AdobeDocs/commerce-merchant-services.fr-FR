@@ -1,12 +1,12 @@
 ---
 title: Rapports financiers
-description: '"[!DNL Payment Services] offre des rapports complets afin que vous puissiez avoir une vue précise des commandes et des paiements de votre boutique."'
+description: "[!DNL Payment Services] offre des rapports complets afin que vous puissiez avoir une vue précise des commandes et des paiements de votre boutique."
 role: User
-feature: Payments
+feature: Payments, Checkout
 level: Intermediate
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f90e508e6cbb8d7a119587dabd86e709c08d508
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 ![Affichage des rapports financiers](assets/reports-view.png)
 
-Les rapports de gestion des flux de trésorerie (paiements et état des paiements des commandes) synchronisent les détails des paiements avec les informations de commande afin de vous offrir une transparence complète du volume traité, du solde des paiements et des rapports détaillés au niveau des transactions pour la réconciliation financière.
+Les rapports de gestion des flux de trésorerie (paiements, transactions et statut de paiement des commandes) synchronisent les informations de paiement avec les informations de commande afin de vous offrir une transparence complète du volume traité, du solde des paiements et des rapports détaillés au niveau des transactions pour la réconciliation financière.

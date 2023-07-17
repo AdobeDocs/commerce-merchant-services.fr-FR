@@ -2,9 +2,10 @@
 title: Test et validation
 description: Les tests et la validation permettent de s’assurer que [!DNL Payment Services] fonctionnent comme prévu et offrent les meilleures options de paiement à vos clients.
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 0324c2d8e34fee0872d5f52ed3a246094b482aa2
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---

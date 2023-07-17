@@ -2,7 +2,9 @@
 title: Installer [!DNL Payment Services]
 description: Installez l’extension Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
+role: Admin
+feature: Payments, Checkout, Install, Upgrade
+source-git-commit: 30eae4c7d81ab6c2a7f04f4ff22c25e86934380a
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -144,7 +146,7 @@ Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocat
 
 Vous pouvez également spécifier la limite de mémoire à l’aide de cette commande : `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 
-Par exemple :
+Par exemple :
 
 ```bash
 php -d memory_limit=-1 vendor/bin/composer require magento/payment-services

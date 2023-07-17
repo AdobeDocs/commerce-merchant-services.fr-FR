@@ -2,7 +2,8 @@
 title: Connexion à votre instance
 description: Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+feature: Payments, Checkout, Configuration, Saas
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
