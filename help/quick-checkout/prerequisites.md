@@ -2,7 +2,8 @@
 title: "[!DNL Quick Checkout] conditions préalables"
 description: "Vérifiez que votre système respecte les exigences nécessaires pour utiliser la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce."
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 1%

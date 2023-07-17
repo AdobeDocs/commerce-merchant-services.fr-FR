@@ -1,8 +1,9 @@
 ---
-title: '"[!DNL Quick Checkout] pour Adobe Commerce"'
-description: '"Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."'
+title: "[!DNL Quick Checkout] pour Adobe Commerce"
+description: "Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."
 exl-id: 6f205568-18af-4f2f-827c-b46f04e0a10a
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%

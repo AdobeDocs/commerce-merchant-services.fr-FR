@@ -2,7 +2,8 @@
 title: "Modes de paiement"
 description: "Présentation des modes de paiement compatibles avec la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce."
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
-source-git-commit: e4384317e3700dc7315b26be103d41a14beff6b7
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%

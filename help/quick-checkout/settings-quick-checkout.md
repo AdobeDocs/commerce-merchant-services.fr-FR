@@ -2,7 +2,8 @@
 title: Configurez la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce
 description: Découvrez les options de configuration pour le [!DNL Quick Checkout] et comment intégrer et configurer l’extension.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%

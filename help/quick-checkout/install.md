@@ -2,18 +2,19 @@
 title: "Installer [!DNL Quick Checkout] pour l’extension Adobe Commerce"
 description: "Suivez ces étapes pour installer [!DNL Quick Checkout] dans votre projet Adobe Commerce."
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+feature: Checkout, Services, Install
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # Installer [!DNL Quick Checkout]
 
-Le [!DNL Quick Checkout] extension pour Adobe Commerce et [!DNL Magento Open Source] peut être installé avec [!DNL Composer keys], qui sont liés au compte Commerce [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target=&quot;_blank&quot;} fourni dans le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale d’Adobe Commerce ou dans les cas où la fonction [!DNL Composer keys] n’ont pas été précédemment enregistrés dans le `auth.json` fichier .
+Le [!DNL Quick Checkout] extension pour Adobe Commerce et [!DNL Magento Open Source] peut être installé avec [!DNL Composer keys], qui sont liés au compte Commerce [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} fourni dans le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale d’Adobe Commerce ou dans les cas où la fonction [!DNL Composer keys] n’ont pas été précédemment enregistrés dans le `auth.json` fichier .
 
-Voir [Obtention des clés d’authentification](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)Rubrique {target=&quot;_blank&quot;} pour plus d’informations sur l’obtention [!DNL Composer keys].
+Voir [Obtention des clés d’authentification](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} rubrique pour plus d’informations sur l’obtention de [!DNL Composer keys].
 
 Il existe deux manières d’installer cette extension : pour [Adobe Commerce sur l’infrastructure cloud](#magento-commerce-cloud) ou [sur site](#on-premises) installations. Pour utiliser ces méthodes, vous devez utiliser l’interface de ligne de commande.
 
