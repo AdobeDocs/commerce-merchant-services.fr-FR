@@ -2,7 +2,7 @@
 title: "[!DNL Live Search] Indexation"
 description: "Découvrez comment [!DNL Live Search] indexe les propriétés d’attribut de produit."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Workflow de mise à jour en flux continu :
 
 ## Recherche de client
 
-Le [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit triable en définissant la variable [storefront, propriété](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Utilisé pour le tri dans les listes de produits* to `Yes`. En fonction du thème, ce paramètre entraîne l’inclusion de l’attribut comme option dans la variable [Tri par](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) contrôle de pagination sur les pages du catalogue. Jusqu’à 300 attributs de produit peuvent être indexés par [!DNL Live Search], avec [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) qui peuvent faire l’objet de recherches et être filtrées.
+Le [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit triable en définissant la variable [storefront, propriété](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Utilisé pour le tri dans les listes de produits* to `Yes`. En fonction du thème, ce paramètre entraîne l’inclusion de l’attribut comme option dans la variable [Tri par](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) contrôle de pagination sur les pages du catalogue. Jusqu’à 200 attributs de produit peuvent être indexés par [!DNL Live Search], avec [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) qui peuvent faire l’objet de recherches et être filtrées.
 Les métadonnées d’index sont stockées dans le pipeline d’indexation et sont accessibles par le service de recherche.
 
 ![[!DNL Live Search] diagramme de l’API des métadonnées d’index](assets/index-metadata-api.svg)

@@ -3,9 +3,9 @@ title: "Installer [!DNL Live Search]"
 description: "Découvrez comment installer, mettre à jour et désinstaller [!DNL Live Search] d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -192,6 +192,8 @@ Dans le storefront, vérifiez les éléments suivants :
 Si tout fonctionne correctement, félicitations ! [!DNL Live Search] est installé, connecté et prêt à l’emploi.
 
 Si vous rencontrez des problèmes dans le storefront, vérifiez la variable `var/log/system.log` pour les erreurs ou échecs de communication de l’API côté services.
+
+Pour autoriser la recherche en direct par le biais d’un pare-feu, ajoutez `commerce.adobe.io` à la liste autorisée.
 
 ## Vérification de la version installée
 

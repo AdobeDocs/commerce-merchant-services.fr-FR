@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] Notes de mise à jour de'
 description: Les dernières informations de mise à jour pour [!DNL Product Recommendations] d’Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Les notes de mise à jour incluent :
 Consultez la documentation destinée aux développeurs pour [en savoir plus sur la compatibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Version majeure actuelle
+
+_18 juillet 2023_
+
+![Nouveau](../assets/new.svg) Recommendations produit dispose désormais d’un GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) requête.
 
 _25 avril 2023_
 

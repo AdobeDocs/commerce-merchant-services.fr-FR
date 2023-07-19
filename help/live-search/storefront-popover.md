@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Le [!DNL Live Search storefront popover] renvoie dynamiquement les produits suggérés et les miniatures."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,20 @@ Par défaut, la valeur Recherche catalogue - Limite de saisie automatique est d�
 1. Définissez la variable **Limite de saisie automatique** au nombre de lignes que vous souhaitez autoriser dans la variable [!DNL popover].
 1. Une fois l’opération terminée, cliquez sur **Enregistrer la configuration**.
 
+## Service de catalogue
+
+Le [Service de catalogue pour Adobe Commerce](../catalog-service/overview.md) L’extension fournit des données de catalogue de modèles d’affichage enrichies pour générer rapidement et intégralement des expériences storefront liées aux produits. Le service de catalogue peut être utilisé conjointement avec Live Search pour fournir des fonctionnalités qui ne sont actuellement pas prises en charge par l’extension native :
+
+* Échantillons de couleurs
+* Attributs étendus
+* D’autres informations sur les produits peuvent être introduites
+
+Les marchands peuvent personnaliser et étendre des widgets ou des éléments de storefront à l’aide du service de catalogue, mais cela n’a pas de portée pour l’équipe d’assistance d’Adobe.
+
 ## Limites
 
-* Le [!DNL Live Search] [!DNL storefront popover] est disponible uniquement pour les magasins qui utilisent la variable *Luma* ou un thème personnalisé basé sur *Luma*.
+* Le [!DNL Live Search] [!DNL storefront popover] est disponible uniquement pour les magasins qui utilisent la variable *Luma* ou un thème personnalisé basé sur *Luma*. Le chemin de navigation de la page des résultats de recherche ne comporte pas *Lume* style.
 * Le [!DNL popover] ne prend pas en charge la variable *Vide* thème. Voir [Style [!DNL Popover] Éléments](storefront-popover-styling.md) pour en savoir plus.
 * Le [!DNL popover] n’est pas pris en charge dans le formulaire de commande rapide.
-* Les vendeurs peuvent personnaliser et étendre des widgets ou des éléments de storefront (par exemple : intégration d’échantillons de couleurs dans les résultats de la recherche en direct) à l’aide de la méthode [Service de catalogue](../catalog-service/overview.md) API Storefront, mais qui n’est pas disponible pour l’équipe d’assistance d’Adobe.
+* Les listes blanches et les comparaisons de produits ne sont pas prises en charge.
+* Seule la devise de base est prise en charge.
