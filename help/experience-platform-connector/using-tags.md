@@ -2,7 +2,9 @@
 title: Collecte de données commerciales à l’aide de balises Adobe Experience Platform
 description: Découvrez comment collecter des données Commerce à l’aide de balises Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '2650'
 ht-degree: 0%
@@ -24,9 +26,9 @@ Pour collecter des données d’événement Commerce :
 
 - Installez le [SDK Adobe Commerce Events](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). Pour consulter les storefronts PHP, voir [install](install.md) rubrique. Pour consulter les storefronts des PWA Studio, voir [Guide du PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
-   >[!NOTE]
-   >
-   > Do **not** [configure](connect-data.md) l’ID d’organisation et l’ID de flux de données.
+  >[!NOTE]
+  >
+  > Do **not** [configure](connect-data.md) l’ID d’organisation et l’ID de flux de données.
 
 ## Mappage des données du storefront Commerce à Adobe Experience Platform
 
@@ -843,13 +845,13 @@ Créez les éléments de données suivants :
    - **Extension**: `Adobe Client Data Layer`
    - **Type d’élément de données**: `Data Layer Computed State`
    - **[Facultatif] path**: `productContext.mainImageUrl`
+
    1. Panier :
+
    - **Nom**: `cart`
    - **Extension**: `Adobe Client Data Layer`
    - **Type d’élément de données**: `Data Layer Computed State`
    - **[Facultatif] path**: `shoppingCartContext`
-
-
 
 1. ID de panier :
 

@@ -2,7 +2,8 @@
 title: Présentation du guide
 description: Découvrez comment intégrer des données Adobe Commerce à Adobe Experience Platform à l’aide du connecteur Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 0d5bbe7d4e2070173930df66c4f159d65c7383ea
+recommendations: noCatalog
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%

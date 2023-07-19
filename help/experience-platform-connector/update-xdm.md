@@ -2,7 +2,9 @@
 title: Ajout de groupes de champs au schéma XDM
 description: Découvrez comment ajouter des groupes de champs spécifiques à Adobe Commerce à un schéma XDM.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: 90356cc593653cf4583da86bc29d69112fc948ba
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
