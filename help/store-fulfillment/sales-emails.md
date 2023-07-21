@@ -1,10 +1,11 @@
 ---
 title: Modèles de courrier électronique de vente
 description: Configurez les modèles d’email transactionnel pour communiquer avec les clients et les administrateurs de magasin pendant le processus d’exécution des commandes de nettoyage de magasin.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 <tbody><tr>
 <td><strong>Commande possède un expéditeur de produits Expédier</strong></td>
 <td>Courrier électronique envoyé au personnel marchand spécifié sous la forme d’un rapport agrégé de toutes les commandes ouvertes qui ne peuvent pas être sélectionnées dans un magasin marchand tant que leur inventaire n’est pas disponible. </br></br> Les vendeurs peuvent utiliser ce rapport pour lancer et gérer les transferts d’inventaire ou le réapprovisionnement de magasin à magasin. </br></br>Cette notification s’applique uniquement lorsque la variable [!DNL Ship-to-Store] sont activées.
-</br></br>Ce libellé n’a aucune incidence sur l’opérateur de livraison sélectionné ni sur les étiquettes de méthode de livraison disponibles.</br></br></td>
+</br></br>Ce libellé n’a aucune incidence sur l’opérateur de livraison sélectionné ni sur les étiquettes de méthode de livraison disponibles.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>

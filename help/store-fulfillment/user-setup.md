@@ -1,10 +1,11 @@
 ---
 title: Configuration de l’utilisateur
 description: Configurez des sources Inventory management améliorées en tant que boutiques de commerce pour prendre en charge la solution d’exécution de magasin pour Adobe Commerce.
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, User Account, Tools and External Services
 exl-id: eb735bef-c339-4d0b-b3e7-10328915725b
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

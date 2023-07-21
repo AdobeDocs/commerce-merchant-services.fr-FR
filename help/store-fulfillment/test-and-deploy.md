@@ -3,8 +3,9 @@ title: Test et déploiement de l’exécution du magasin
 description: Planifiez le test pour vérifier la fonctionnalité d’exécution de magasin. Les tests couvrent l’API de synchronisation du stock, le workflow d’exécution de bout en bout pour les commandes annulées, la gestion des utilisateurs de l’application Store Fulfillment et l’expérience d’archivage client.
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ Cette section du plan de test couvre la synchronisation des stocks et des stocks
 <td>L’opération de synchronisation en temps réel envoie les détails au GIF Walmart dans un délai de 5 minutes.</td>
 </tr>
 <tr>
-<td><strong>Source du stock de ramassage</br><code>Is Synced</code> status</br><code>Is Synced</code></strong></td>
+<td><strong>Source du stock de ramassage</br><code>Is Synced</code> status</strong></td>
 <td>Enregistrez les mises à jour dans une source de stock existante.</td>
 <td>Après une opération réussie, la variable <code>Is Synced</code> de la colonne Gérer la source des mises à jour de la page <code>No</code> to <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 </ul>
 </td>
 </tr>
-<td><strong>Prêt pour la récupération</br></br>Annulation complète</br>(tous les produits sont définis comme sélectionnés avec 0 quantité)</br></strong></td>
+<td><strong>Prêt pour la récupération</br></br>Annulation complète</br>(tous les produits sont définis comme sélectionnés avec 0 quantité)</strong></td>
 <td>
 <ol>
 <li>Placez la commande.</li>
@@ -250,7 +251,7 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 </tr>
 <tr>
 <td><strong>Distribué (pendant la diffusion)</br></br>Annulation partielle</br>(Certains produits sont délivrés ; certains sont rejetés.)</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>Placez la commande.</li>
@@ -469,7 +470,7 @@ Cette section du plan de test couvre l’ expérience d’archivage des commande
 </tr>
 <tr>
 <td><strong>Autre contact de collecte</br>
-Archivage</br><strong>
+Archivage<strong>
 </td>
 <td>
 Un client envoie une commande avec l’option Sélecteur en magasin .</td>

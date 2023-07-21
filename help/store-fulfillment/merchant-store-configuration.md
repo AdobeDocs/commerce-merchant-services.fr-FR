@@ -1,12 +1,13 @@
 ---
 title: Configuration des magasins marchands
 description: Configurez des sources Inventory management améliorées en tant que magasins marchands.
-role: User, Admin
-level: Intermediate
+role: Admin
+level: Experienced
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -94,7 +95,13 @@ Gérer la configuration des magasins marchands depuis l’administrateur : **[!U
 <td>Non</td>
 </tr>
 <tr>
-<td><strong>[!UICONTROL Enable Ship From Store]</strong><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td><td></td><td></td><td></td></tr></tbody></table>
+<td><strong>[!UICONTROL Enable Ship From Store]</strong><code></br><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td>
+<td>Configurez les fonctionnalités d’expédition à partir du magasin au niveau de la source. Pour plus d’informations, voir l’option [Configuration générale] (enable-general.md), [!UICONTROL Enable Ship From Store].</td>
+<td>Global</td>
+<td>Non</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -106,7 +113,7 @@ Gérer la configuration des magasins marchands depuis l’administrateur : **[!U
 | **[!UICONTROL Enable Ship to Store]**</br>`Extension Attribute: [!DNL allow_ship_to_store]` | Configurez les fonctionnalités de livraison à stockage au niveau de la source. Pour plus d’informations, voir [Configuration générale](enable-general.md) option, **[!UICONTROL Enable Ship To Store]**. | Global | Non |
 | **[!UICONTROL Enable Ship From Store]**</br>`Extension Attribute: [!DNL use_as_shipping_source]` | Configurez les fonctionnalités d’expédition à partir du magasin au niveau de la source. Pour plus d’informations, voir [Configuration générale](enable-general.md) option, [!UICONTROL Enable Ship From Store] | Global | Non |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Configuration de l’emplacement de collecte
 

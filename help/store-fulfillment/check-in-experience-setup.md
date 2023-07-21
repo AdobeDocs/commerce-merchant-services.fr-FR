@@ -1,10 +1,10 @@
 ---
 title: Configuration de l’expérience d’archivage
 description: Configurez les sélections de marque de voiture et de modèle disponibles pour les clients de récupération rapide lorsqu’ils remplissent le formulaire de commande de prise en charge.
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

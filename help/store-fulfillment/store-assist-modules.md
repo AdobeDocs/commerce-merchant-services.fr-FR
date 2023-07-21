@@ -1,10 +1,11 @@
 ---
 title: Workflows d’exécution de l’aide à la boutique
 description: Découvrez les modules Pick, Stage, Hand-Off et Commandes disponibles dans l’application d’aide à la boutique. Ces modules permettent d’exécuter de bout en bout le workflow d’exécution des magasins pour les commandes BOPIS. Store Associates utilise ces modules pour gérer et envoyer des commandes de nettoyage de magasin aux clients.
-role: User
+role: Leader, Admin, User
 level: Intermediate
+feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -19,7 +20,7 @@ L’application d’assistance Boutique fournit à Store Associates quatre modul
 
 - **[Évaluation](#stage-module)**: entrez l’emplacement où les commandes sont passées pendant que les clients se rendent au magasin afin que les associés de magasin puissent facilement les trouver pour la remise de commande.
 
-- **[Main désactivée](#hand-off-module)**: Recevez des notifications en temps réel après l’arrivée des clients dans le magasin afin de minimiser le temps d’attente et de passer les commandes en toute transparence.
+- **[Main désactivée](#hand-off-module)**: obtenez des notifications en temps réel une fois les clients arrivés au magasin afin de minimiser leur temps d’attente et de passer facilement des commandes.
 
 - **[Commandes](#orders-module)**: affichez la liste de toutes les commandes passées pour un magasin afin que chacun connaisse le nombre de commandes et l’état de chaque commande.
 

@@ -1,10 +1,11 @@
 ---
 title: Transfert de source Inventory management
 description: "Configurer des stocks pour le [!DNL Store Fulfillment solution] avec Adobe Commerce Inventory management. Configurez un nouveau stock et transférez le stock par défaut afin de pouvoir l’affecter aux sources configurées pour activer les fonctionnalités de nettoyage de magasin requises par la solution d’exécution de magasin."
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Ces modifications de configuration vous permettent d’accomplir trois tâches :
 
 1. [Affectation en masse de sources](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) pour ajouter les nouvelles sources pour tous vos produits.
 
-1. [Mises à jour en bloc complètes des attributs de produit](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) pour ajouter la variable `Allow Store Pickup` et `Allow Home Delivery` Attributs aux produits existants. Lorsque la solution est installée, les attributs ont la valeur optimale *default* valeurs. Toutefois, ces attributs ne sont pas appliqués aux produits existants tant que vous n’avez pas terminé le processus de mises à jour en bloc.
+1. [Mises à jour en bloc complètes des attributs de produit](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) pour ajouter la variable `Allow Store Pickup` et `Allow Home Delivery` Attributs aux produits existants. Lorsque la solution est installée, les attributs ont la valeur optimale *default* valeurs. Cependant, ces attributs ne sont pas appliqués aux produits existants tant que vous n’avez pas terminé le processus de mise à jour des conteneurs en masse.
 
 L’inventaire est déduit de la source sélectionnée (emplacement du magasin de détail ou entrepôt de commerce électronique). Les sources utilisées comme entrepôts de commerce électronique doivent être affectées au même stock que l’emplacement de prise en charge du magasin et classées par priorité avant les emplacements de vente au détail. Pour plus d’informations, voir [Hiérarchisation des sources pour un stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

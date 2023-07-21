@@ -1,12 +1,13 @@
 ---
 title: Configuration de l’application
 description: Configurez les [!DNL Store Assist] pour gérer les processus d’exécution de magasin de bout en bout et les processus d’achat en ligne, sélectionnez dans les commandes de magasin.
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ L’application d’aide au magasin reçoit toutes les informations sur la comma
 
 >[!NOTE]
 >
->Voir [Workflows d’exécution de l’assistant de magasin](store-assist-modules.md) pour en savoir plus sur l’application d’aide à la boutique.
+>Pour en savoir plus sur l’application d’aide à la boutique, consultez la rubrique [Workflows d’exécution de l’assistant de magasin](store-assist-modules.md) rubrique.
 
 ## Configuration de l’application d’aide à la boutique
 
@@ -44,7 +45,7 @@ L’application d’aide à la boutique nécessite deux types de configuration :
 
    - **Annulation de la boutique**: indiquez si les commandes peuvent être annulées à partir du magasin et quels rôles disposent de droits d’annulation.
 
-   - **Fenêtre de nettoyage des commandes**: indiquez la durée au-delà de laquelle la variable [Délai d’avance estimé pour la collecte](enable-general.md#delivery-method-title-configuration) qu’une commande sélectionnée reste en cours d’évaluation avant d’être réinitialisée (trois jours, par exemple). La valeur par défaut est de sept jours. Si cette configuration est activée, la commande est automatiquement annulée à l’expiration de cette période. Les articles sont réactivés et le marchand reçoit un email d’annulation.
+   - **Fenêtre de nettoyage des commandes**: indiquez la durée au-delà de laquelle la variable [Délai d’avance estimé pour la collecte](enable-general.md#delivery-method-title-configuration) qu’une commande sélectionnée reste en cours d’évaluation avant d’être réinitialisée (trois jours, par exemple). La valeur par défaut est de sept jours. Si cette configuration est activée, la commande est automatiquement annulée à l’expiration de ce délai. Les articles sont réactivés et le marchand reçoit un email d’annulation.
 
    - Personnalisez toutes les instructions de l’application (sélection, évaluation, remise).
 
@@ -55,7 +56,8 @@ L’application d’aide à la boutique nécessite deux types de configuration :
    - **Traitement de la main**: activez les processus facultatifs lorsque l’associé du magasin envoie une commande au client ; par exemple, il requiert une signature du client ou invite l’associé à vérifier l’ID de client.
 
    - **Activer le rejet d’élément lors de la remise**: permet aux clients de renvoyer ou d’annuler des articles de commande lors de la remise de commande.
-   Collaborez avec l’équipe des services clients de Walmart Commerce Technologies pour terminer la configuration frontale de l’application d’assistance au magasin.
+
+  Collaborez avec l’équipe des services clients de Walmart Commerce Technologies pour terminer la configuration frontale de l’application d’assistance au magasin.
 
 ## Téléchargement et installation des applications
 
@@ -70,4 +72,5 @@ Une fois l’application d’aide à la boutique configurée et configurée, Sto
    - **[!UICONTROL Company name]** associé au compte d’assistance de magasin
 
    - **Informations d’identification du compte d’assistance de la boutique**—nom d’utilisateur et mot de passe pour leur compte.
-   Un administrateur Adobe Commerce peut créer et gérer des [!DNL Store Assist app] comptes d’utilisateurs de tous les emplacements de magasin qui ont [Collecte en magasin](merchant-store-configuration.md#pickup-location-configuration) activée dans les paramètres des boutiques d’administration.
+
+  Un administrateur Adobe Commerce peut créer et gérer des [!DNL Store Assist app] comptes d’utilisateurs de tous les emplacements de magasin qui ont [Collecte en magasin](merchant-store-configuration.md#pickup-location-configuration) activée dans les paramètres des boutiques d’administration.

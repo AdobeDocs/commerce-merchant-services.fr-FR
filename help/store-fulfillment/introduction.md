@@ -1,10 +1,10 @@
 ---
 title: "Introduction à [!DNL Store Fulfillment]"
 description: "Découvrez comment [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] prend en charge l’achat en ligne, la prise en charge en magasin (BOPIS) pour les clients. Utilisez le mobile d’ assistance au magasin pour rationaliser l’exécution BOPIS et le traitement des commandes pour les associés au magasin et les clients Commerce."
-role: User
+role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -47,7 +47,7 @@ La solution d’exécution de magasin prend en charge et améliore les fonctionn
 
 ## Application d’aide à la boutique
 
-L’application d’assistance de la boutique pour les appareils iOS et Android™ interagit avec [!DNL Walmart Commerce Technologies] pour offrir des fonctionnalités d’exécution omnicanal à vos magasins de détail.
+L’application d’assistance de la boutique pour les appareils iOS et Android interagit avec [!DNL Walmart Commerce Technologies] pour offrir des fonctionnalités d’exécution omnicanal à vos magasins de détail.
 
 * Envoyez directement des commandes de saut en magasin et de lot aux périphériques mobiles des associés de magasin.
 

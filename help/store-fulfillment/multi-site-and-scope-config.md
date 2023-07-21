@@ -1,10 +1,11 @@
 ---
 title: Configuration de plusieurs sites web et de portée
 description: Configurez les stocks et les méthodes de diffusion pour plusieurs sites web et portées de magasin.
-role: User, Admin
-level: Intermediate
+role: Admin
+level: Experienced
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
