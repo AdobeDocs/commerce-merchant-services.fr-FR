@@ -2,9 +2,9 @@
 title: Paramètres
 description: Découvrez comment modifier la source de votre [!DNL Product Recommendations] données et comment activer les recommandations visuelles.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 48e350167611a2737d79bf5decccd7f6f24c714c
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 Lorsque vous [configuration d’un espace de données SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) pour Recommendations, l’espace de données SaaS collecte des données de catalogue et des données comportementales de storefront. [Adobe Sensei](https://www.adobe.com/sensei.html) analyse les données et calcule les associations de produits utilisées pour servir Product Recommendations.
 
 Les environnements hors production pour le test ou l’évaluation n’ont généralement pas la quantité ou la qualité des données comportementales de storefront pour fournir des recommandations de produits réalistes. Le comportement réel des acheteurs à l’échelle ne peut être capturé que dans un environnement de production. Pour résoudre ce problème, Adobe Commerce vous permet d’utiliser les recommandations de produits de votre environnement de production avec d’autres espaces de données SaaS hors production. L’utilisation de données de vitrine réelles dans un environnement hors production vous permet de prévisualiser les recommandations que vos acheteurs voient et d’expérimenter avec différents types de recommandations et emplacements. Les acheteurs peuvent prévisualiser les Recommendations d’un autre espace de données SaaS, mais pas cliquer dessus.
+
+>[!NOTE]
+>
+>Lors de l’utilisation de Recommendations de produit par le biais de REST, la variable `alternateEnvironmentId` peut être utilisé pour spécifier d’autres aspects des données. Lorsque vous utilisez le Recommendations de produit via GraphQL, ce paramètre n’est pas disponible.
 
 ## Choisissez la source des recommandations
 
