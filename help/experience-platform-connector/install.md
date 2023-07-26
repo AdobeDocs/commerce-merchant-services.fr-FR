@@ -4,7 +4,7 @@ description: Découvrez comment installer, configurer, mettre à jour et désins
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Avant d’installer l’extension, [revoir les conditions préalables](overview.
 
 ## Installation de l’extension
 
-L’extension Experience Platform Connector est disponible à partir de la [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). Lorsque vous installez cette extension à partir de la ligne de commande du serveur, elle se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, **Connecteur Experience Platform** et **Connecteur Commerce Services** apparaissent sur le **Système** sous **Services** dans Commerce _Administration_.
+L’extension Experience Platform Connector est disponible à partir de la [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Lorsque vous installez cette extension à partir de la ligne de commande du serveur, elle se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, **Connecteur Experience Platform** et **Connecteur Commerce Services** apparaissent sur le **Système** sous **Services** dans Commerce _Administration_.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ L’extension Experience Platform Connector est disponible à partir de la [Adob
    composer require magento/experience-platform-connector
    ```
 
-   Ce métappackage contient les modules et extensions suivants :
+   Ce métapaquage contient les modules et extensions suivants :
 
    * `module-experience-connector-admin` - Met à jour l’interface utilisateur d’administration afin que vous puissiez sélectionner l’identifiant de flux de données pour une instance Adobe Commerce spécifique.
    * `module-experience-connector` - Définit la variable `Organization ID` et `datastreamId` dans le SDK des événements Storefront
@@ -91,4 +91,4 @@ Pour effectuer une mise à jour vers une version majeure, telle que de 1.0.0 à 
 
 ## Désinstallation du connecteur Experience Platform {#uninstall}
 
-Pour désinstaller le connecteur Experience Platform, reportez-vous à la section [désinstallation des modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+Pour désinstaller le connecteur Experience Platform, voir [désinstallation des modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

@@ -1,9 +1,9 @@
 ---
-title: '''[!DNL Quick Checkout] Notes de mise à jour de'
+title: '''[!DNL Quick Checkout] Notes de mise à jour d’'
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Quick Checkout] versions.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -34,15 +34,15 @@ Ces notes de mise à jour décrivent les modifications et correctifs de fonction
 
 _25 avril 2023_
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-452 --> Le [!DNL Quick Checkout] **Visite** s’affiche maintenant sous forme de curseur cliquable lorsque vous pointez dessus.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-452 --> La variable [!DNL Quick Checkout] **Visite** s’affiche maintenant sous forme de curseur cliquable lorsque vous pointez dessus.
 
 _19 avril 2023_
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-596 --> Le [!DNL Quick Checkout] La page Rapports affiche désormais correctement le graphique Nouveaux comptes lors de l’analyse des dates au format ISO 8601.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-596 --> La variable [!DNL Quick Checkout] La page Rapports affiche désormais correctement le graphique Nouveaux comptes lors de l’analyse des dates au format ISO 8601.
 
 _14 décembre 2022_
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-524 --> Le [!DNL Quick Checkout] Le panneau d’administration affiche désormais le total correct des commandes et les informations de création de rapports mises à jour.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-524 --> La variable [!DNL Quick Checkout] Le panneau d’administration affiche désormais le total correct des commandes et les informations de création de rapports mises à jour.
 
 _30 novembre 2022_
 
@@ -56,23 +56,23 @@ _2 novembre 2022_
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-293 --> Maintenant, le [reporting](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) dans le [!DNL Quick Checkout] Le panneau d’administration affiche des graphiques et des informations de rapport sur les statistiques d’expérience de passage en caisse de votre magasin.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-422 --> Le [_Présentation_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) La section de la rubrique Rapports affiche des informations détaillées sur les performances de passage en caisse de votre magasin, notamment le temps moyen de passage en caisse, les nouveaux comptes créés lors du passage en caisse et l’abandon du passage en caisse.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-422 --> La variable [_Présentation_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) La section de la rubrique Rapports affiche des informations détaillées sur les performances de passage en caisse de votre magasin, notamment le temps moyen de passage en caisse, les nouveaux comptes créés lors du passage en caisse et l’abandon du passage en caisse.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-423 --> Le [_Tendances_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) La section de l’onglet Rapports affiche les tendances de votre expérience de passage en caisse filtrées par type de compte et les nouveaux comptes créés lors du passage en caisse.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-423 --> La variable [_Trends_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) La section de l’onglet Rapports affiche les tendances de votre expérience de passage en caisse filtrées par type de compte et les nouveaux comptes créés lors du passage en caisse.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-439 --> Le **Rapports** affichage des onglets [paramètres prédéfinis de filtre par défaut](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) qui peut être utilisé pour afficher des plages de données spécifiques.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-439 --> La variable **Rapports** affichage des onglets [paramètres prédéfinis de filtre par défaut](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) qui peut être utilisé pour afficher des périodes spécifiques.
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-433 --> Vous pouvez désormais voir une _Aucune donnée disponible_ pour un graphique lorsqu’une requête ne renvoie aucune donnée.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-473 --> Améliorations de l’expérience utilisateur de [!DNL Quick Checkout] Le panneau d’administration permet d’activer une [suivi de passage en caisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) qui permet à Adobe Commerce de partager des informations de rapport avec Bolt.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-473 --> Améliorations de l’expérience utilisateur de la fonction [!DNL Quick Checkout] Le panneau d’administration permet d’activer une [suivi de passage en caisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) qui permet à Adobe Commerce de partager des informations de rapport avec Bolt.
 
 _5 octobre 2022_
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-379 --> Maintenant, lorsqu’un nouveau commerçant accède à la variable [!DNL Quick Checkout] Pour la première fois, un panneau d’administration [présentation guidée par Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) apparaît.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-379 --> Maintenant, lorsqu’un nouveau commerçant accède à la variable [!DNL Quick Checkout] pour la première fois qu’un [présentation guidée par Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) apparaît.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-377 --> Le **Rapports** dans le [!DNL Quick Checkout] Le panneau d’administration affiche des graphiques et des analyses des rapports.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-377 --> La variable **Rapports** dans le [!DNL Quick Checkout] Le panneau d’administration affiche des graphiques et des analyses de création de rapports.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-377 --> Le **Rapports** dans le [!DNL Quick Checkout] Le panneau d’administration affiche la période et les paramètres prédéfinis de filtre pour les graphiques et les analyses de rapports.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-377 --> La variable **Rapports** dans le [!DNL Quick Checkout] Le panneau d’administration affiche la période et les paramètres prédéfinis de filtre pour les graphiques et les analyses de rapports.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-369 --> Maintenant, le [[!DNL Quick Checkout] Panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) affiche la version de l’application dans le pied de page.
 
@@ -84,9 +84,9 @@ _24 février 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-520 --> Disponibilité générale -[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) est désormais préinstallé dans Adobe Commerce Cloud versions 2.4.6 et ultérieures.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-520 --> Disponibilité générale -[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) est désormais préinstallé dans Adobe Commerce Cloud versions 2.4.6 et ultérieures.
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-592 --> Améliorations de l’expérience utilisateur lors du placement d’une commande dans la variable [Panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) comme mode de paiement. Cette fonctionnalité permet aux clients de passer une commande avec Braintree comme mode de paiement lors de l’extraction. [!DNL Quick Checkout] est activée.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-592 --> Améliorations de l’expérience utilisateur lors du placement d’une commande dans [Panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) comme mode de paiement. Cette fonctionnalité permet aux clients de passer une commande avec Braintree comme mode de paiement lors de l’extraction. [!DNL Quick Checkout] est activée.
 
 ## v1.7.0
 
@@ -102,7 +102,7 @@ _9 février 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-567 --> Améliorations de l’expérience utilisateur lors de la [placement d’une commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) en utilisant la variable [Diffusion en magasin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) avec la méthode [!DNL Quick Checkout] désactivé.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-567 --> Améliorations de l’expérience utilisateur lors de [placement d’une commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) en utilisant la variable [Diffusion en magasin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) avec la méthode [!DNL Quick Checkout] désactivé.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-569 --> Améliorations de la fonctionnalité de déconnexion qui permet aux acheteurs de [déconnexion du réseau Bolt](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
 
@@ -116,7 +116,7 @@ _18 janvier 2023_
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-523 --> Une nouvelle configuration peut être activée/désactivée, ce qui permet aux commerçants de spécifier si les acheteurs peuvent être automatiquement connectés aux deux réseaux, ou simplement au réseau Bolt.
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-542 --> Améliorations de l’expérience utilisateur lors de la [enregistrement d’une carte ou d’une adresse sur un compte Bolt](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) lorsqu’un acheteur fournit un courrier électronique.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-542 --> Améliorations de l’expérience utilisateur lors de [enregistrement d’une carte ou d’une adresse sur un compte Bolt](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) lorsqu’un acheteur fournit un courrier électronique.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-550 --> Améliorations de l’expérience utilisateur dans [connexion automatique](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) lorsqu’un utilisateur Bolt fournit un courrier électronique.
 
@@ -150,7 +150,7 @@ _8 septembre 2022_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-341 --> Disponibilité générale -[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) est désormais compatible avec les versions 2.4.5 d’Adobe Commerce.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-341 --> Disponibilité générale -[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) est désormais compatible avec les versions 2.4.5 d’Adobe Commerce.
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] pour Adobe Commerce et Magento Open Source , fournit une [Vue du panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) avec toutes les informations nécessaires pour configurer et utiliser l’extension.
 
@@ -166,7 +166,7 @@ _8 septembre 2022_
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [Vue du panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) inclut une **Aide et assistance** .
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-369 --> Le [[!DNL Quick Checkout] Panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) affiche désormais la version de l’extension dans le pied de page.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue BOLT-369 --> La variable [[!DNL Quick Checkout] Panneau d’administration](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) affiche désormais la version de l’extension dans le pied de page.
 
 ## v1.1.0
 
@@ -184,19 +184,19 @@ _9 août 2022_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-341 --> Disponibilité générale -[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) est désormais compatible avec les versions 2.4.1 à 2.4.4 d’Adobe Commerce.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-341 --> Disponibilité générale -[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) est désormais compatible avec les versions 2.4.1 à 2.4.4 d’Adobe Commerce.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-340 --> Le [!DNL Quick Checkout] pour Adobe Commerce peut être installé pour Adobe Commerce [sur l’infrastructure cloud](install.md#adobe-commerce-on-cloud-infrastructure) ou [sur site](install.md#on-premises) instances. Ces méthodes nécessitent l&#39;utilisation d&#39;une interface de ligne de commande.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-340 --> La variable [!DNL Quick Checkout] pour Adobe Commerce peut être installé pour Adobe Commerce [sur l’infrastructure cloud](install.md#adobe-commerce-on-cloud-infrastructure) ou [sur site](install.md#on-premises) instances. Ces méthodes nécessitent l&#39;utilisation d&#39;une interface de ligne de commande.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-1 --> Le [!DNL Quick Checkout] pour Adobe Commerce apporte une vitrine optimisée qui permet d’obtenir une [expérience de passage en caisse en un clic](overview.md) sans champ de remplissage requis pour les consommateurs.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-1 --> La variable [!DNL Quick Checkout] pour Adobe Commerce apporte une vitrine optimisée qui permet d’obtenir une [expérience de passage en caisse en un clic](overview.md) sans champ de remplissage requis pour les consommateurs.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-1 --> Le [!DNL Quick Checkout] pour Adobe Commerce reconnaît automatiquement chaque acheteur dans son réseau pour [achats en un clic](checkout-flow.md) directement sur votre site.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-1 --> La variable [!DNL Quick Checkout] pour Adobe Commerce reconnaît automatiquement chaque acheteur dans son réseau pour [achats en un clic](checkout-flow.md) directement sur votre site.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-1 --> Le [!DNL Quick Checkout] pour Adobe Commerce, un acheteur peut être simultanément [Connecté aux réseaux Adobe Commerce et Bolt](checkout-flow.md/#quick-checkout-use-cases) afin de fournir un meilleur `one-click checkout` expérience.
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-1 --> La variable [!DNL Quick Checkout] pour Adobe Commerce, un acheteur peut être simultanément [Connecté aux réseaux Adobe Commerce et Bolt](checkout-flow.md/#quick-checkout-use-cases) afin de fournir un meilleur `one-click checkout` expérience.
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-218 --> [!DNL Quick Checkout] pour Adobe Commerce prend en charge une [compte sandbox](testing.md#testing-in-sandbox) qui permet aux commerçants d’évaluer l’extension en mode test.
 
-![Nouveau](../assets/new.svg)<!-- Issue BOLT-780 --> Vos acheteurs peuvent les extraire via le [[!DNL Quick Checkout]](checkout-page.md) ou via une extension [création manuelle de commande](create-order-admin.md).
+![Nouveau](../assets/new.svg)<!-- Issue BOLT-780 --> Vos acheteurs peuvent les extraire via le [[!DNL Quick Checkout]](checkout-page.md) ou au moyen d’une extension [création manuelle de commande](create-order-admin.md).
 
 ![Nouveau](../assets/new.svg)<!-- Issue BOLT-666 --> Les vendeurs peuvent configurer la variable [!DNL Quick Checkout] avec des actions de paiement de base, telles que [`Authorize and Capture` ou `Authorize`](onboarding.md#complete-admin-configuration)ou le passage d’un environnement de test à un autre.
 

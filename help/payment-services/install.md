@@ -4,7 +4,7 @@ description: Installez l’extension Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 30eae4c7d81ab6c2a7f04f4ff22c25e86934380a
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Installer [!DNL Payment Services]
 
-Téléchargement et installation du [!DNL Payment Services] extension pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] est une étape prérequise pour l’utilisation de [!DNL Payment Services].
+Téléchargement et installation du [!DNL Payment Services] extension pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] est une étape prérequise pour utiliser [!DNL Payment Services].
 
 ![[!DNL Payment Services] vue d’administration de l’extension](assets/admin-view.png)
 
 ## Télécharger l’extension
 
-Vous devez d’abord télécharger l’extension à partir de [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) avant de l’installer.
+Vous devez d’abord télécharger l’extension depuis [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) avant de l’installer.
 
-1. Accédez au [Extension des services de paiement dans le Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
+1. Accédez au [Extension des services de paiement dans le Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. Pour choisir l’édition et la version, basculez **[!UICONTROL Edition]** et **[!UICONTROL Your store version]** à vos sélections préférées.
 1. Cliquez sur **[!UICONTROL Add to Cart]**.
 1. Terminer le passage en caisse et cliquer sur **[!UICONTROL Place Order]**.
@@ -55,7 +55,7 @@ Cette méthode est utilisée pour installer le [!DNL Payment Services] pour une 
 
    Utilisez la variable `composer update` pour mettre à jour toutes les dépendances racine.
 
-1. Validez et envoyez vos modifications.
+1. Validez et poussez vos modifications.
 
 ### Sur site et autres configurations
 
@@ -102,7 +102,7 @@ Lorsqu’une nouvelle version de [!DNL Payment Services] est publiée, vous pouv
 
    Utilisez la variable `composer update` pour mettre à jour toutes les dépendances racine.
 
-1. Validez et envoyez vos modifications.
+1. Validez et poussez vos modifications.
 
 ## Dépannage
 
