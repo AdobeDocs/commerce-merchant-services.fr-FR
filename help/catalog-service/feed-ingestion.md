@@ -1,7 +1,7 @@
 ---
 title: Service d’ingestion de flux
 description: En savoir plus sur le service d’ingestion de flux pour Adobe Commerce
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ Le service d’ingestion de flux est conçu pour :
 * Clients disposant de catalogues volumineux et complexes
 * Clients n’utilisant pas l’administrateur Adobe Commerce pour gérer les données de catalogue, mais utilisant un système ERP ou tiers pour gérer les données de catalogue
 
-Si vous souhaitez rejoindre le programme bêta, contactez l’équipe à l’adresse XXXXX@adobe.com.
+Si vous souhaitez rejoindre le programme bêta, contactez l’équipe à l’adresse sagonzal@adobe.com.
