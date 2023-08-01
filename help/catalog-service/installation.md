@@ -2,9 +2,9 @@
 title: Intégration et installation
 description: Découvrez comment installer [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ Le service de catalogue propose deux environnements d’intégration :
 
 - Environnement de test (https://catalog-service-sandbox.adobe.io/graphql) : utilisé pour le test et la validation avant la mise en ligne.
 - Production (https://catalog-service.adobe.io/graphql)- utilisée pour le trafic en direct pour les marchands et les sites web de commerce
+
+Le test de chargement ne doit être effectué que dans l’environnement Sandbox. Il est recommandé d’effectuer une [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) être ouvert lors du test de chargement afin que l’équipe Services puisse anticiper le trafic de serveur supplémentaire.
 
 ## Installation et configuration
 
@@ -135,12 +137,12 @@ L’API Catalog Service est accessible à l’aide de commandes POST via HTTPS.
 
 Pour obtenir la clé api, accédez à la zone Commerce Service Connector dans l’administrateur et copiez la clé API publique.
 
-Lisez le [Documentation GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) pour comprendre comment interroger et envoyer les en-têtes nécessaires à la génération de requêtes d’API.
+Lisez la section [Documentation GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) pour comprendre comment interroger et envoyer les en-têtes nécessaires à la génération de requêtes d’API.
 
 Pour autoriser le service de catalogue via un pare-feu, ajoutez `commerce.adobe.io` à la liste autorisée.
 
 ## Service de catalogue et maillage d’API
 
-Le [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
+La variable [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
 
 Voir  [Service de catalogue et maillage d’API](mesh.md) pour plus d’informations sur l’installation et la configuration.
