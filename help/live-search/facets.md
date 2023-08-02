@@ -2,9 +2,9 @@
 title: "Facettes"
 description: "[!DNL Live Search] les facettes utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,9 @@ La facette est une méthode de filtrage haute performance qui utilise plusieurs 
 
 ![Résultats de la recherche filtrés](assets/storefront-search-results-run.png)
 
-## Facturation des exigences
+Toute facette définie peut être utilisée comme paramètre d’URL et les résultats seront filtrés en fonction des valeurs du paramètre : `http://yourstore.com?brand=acme&color=red`.
+
+## Configuration requise
 
 Les exigences d’attribut de catégorie et de produit pour la facette sont similaires aux attributs filtrables utilisés pour la navigation par couches. Les propriétés storefront de chaque attribut doivent être définies sur `filterable (with results)`.
 
@@ -24,7 +26,7 @@ Les exigences d’attribut de catégorie et de produit pour la facette sont simi
 * 100 attributs configurés en tant que facettes
 * 50 attributs triables
 * 200 attributs filtrables
-* 200 attributs pouvant faire l’objet d’une recherche
+* 200 attributs pouvant faire l’objet de recherches
 
 | Paramètre | Description |
 |--- |--- |
@@ -34,19 +36,19 @@ Les exigences d’attribut de catégorie et de produit pour la facette sont simi
 
 ## Valeurs d’attribut par défaut
 
-Les attributs de produit suivants ont [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) utilisé par [!DNL Live Search] et activé par défaut.
+Les attributs de produit suivants ont [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) qui sont utilisés par [!DNL Live Search] et activé par défaut.
 
 | Propriété | Propriété Storefront | Attribut |
 |---|---|---|
 | Triable | Utilisé pour le tri dans la liste des produits | `price` |
-| Searchable | Utilisation dans la recherche | `price` <br />`sku`<br />`name` |
+| Recherche | Utilisation dans la recherche | `price` <br />`sku`<br />`name` |
 | FilterableInSearch | Utilisation dans la navigation par couches - Filtrable (avec résultats) | `price`<br />`visibility`<br />`category_name` |
 
 ## Propriétés d’attribut non système par défaut
 
-Le tableau suivant présente les propriétés de recherche et de filtrage par défaut des attributs non-système, y compris ceux spécifiques aux exemples de données Luma. La définition de la variable *Utilisation dans la recherche* Attribuer la propriété à `Yes` rend l’attribut consultable dans les deux [!DNL Live Search] et Adobe Commerce natif.
+Le tableau suivant présente les propriétés de recherche et de filtrage par défaut des attributs non-système, y compris ceux spécifiques aux exemples de données Luma. La définition de la variable *Utilisation dans la recherche* Attribuer à `Yes` rend l’attribut consultable dans les deux [!DNL Live Search] et Adobe Commerce natif.
 
-| Code d’attribut | Searchable | Utilisation dans la navigation par calques |
+| Code d’attribut | Recherche | Utilisation dans la navigation par calques |
 |--- |--- |--- |
 | activité | Oui | Filtrable (avec résultats) |
 | attributes_brand | Oui | Non |
@@ -67,7 +69,7 @@ Le tableau suivant présente les propriétés de recherche et de filtrage par d�
 
 Le tableau suivant présente les propriétés de recherche et de filtrage par défaut des attributs système.
 
-| Code d’attribut | Searchable | Utilisation dans la navigation par calques |
+| Code d’attribut | Recherche | Utilisation dans la navigation par calques |
 |--- |--- |--- |
 | allow_open_amount | Oui | Filtrable (avec résultats) |
 | description | Oui | Non |
