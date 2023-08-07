@@ -1,11 +1,11 @@
 ---
-title: '''[!DNL Product Recommendations] Notes de mise à jour de'
+title: '''[!DNL Product Recommendations] Notes de mise à jour d’'
 description: Les dernières informations de mise à jour pour [!DNL Product Recommendations] d’Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 91ad3b5f1fb9248685fc67071a7191dfbf6c2472
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,25 @@ Les notes de mise à jour incluent :
 ![Correction](../assets/fix.svg) Correctifs et améliorations
 ![Bogue](../assets/bug.svg) Problèmes connus
 
-Consultez la documentation destinée aux développeurs pour [en savoir plus sur la compatibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Consultez la documentation destinée aux développeurs pour [découvrez la compatibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
-## Version majeure actuelle
+## Mises à jour du service hébergé
+
+Ces notes décrivent les mises à jour publiées en dehors d’une version ou les améliorations apportées au service hébergé.
+
++++Mises à jour du service hébergé
 
 _18 juillet 2023_
 
-![Nouveau](../assets/new.svg) Recommendations produit dispose désormais d’un GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) requête.
+![Nouveau](../assets/new.svg) Recommendations de produit dispose désormais d’un GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) requête.
 
 _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) Les clients Recommendations de produit peuvent désormais tirer parti des [Indexation des prix SaaS](../price-index/index.md).
+
++++
+
+## Version majeure actuelle
 
 ### 5.0.0 de magento/product-recommendations
 
@@ -46,7 +54,7 @@ _25 avril 2023_
 
 #### Limites connues
 
-* Le `websiteCode` est renvoyée de manière incorrecte si elle contient un trait de soulignement (_).
+* La variable `websiteCode` est renvoyée de manière incorrecte si elle contient un trait de soulignement (_).
 
 ### Versions précédentes
 
@@ -63,17 +71,17 @@ _25 avril 2023_
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) Ajout [indicateurs de préparation](create.md) pour vous aider à visualiser la progression de la formation de chaque type de recommandation.
-![Nouveau](../assets/new.svg) Il s’agit d’une version majeure. [Modifier](install-configure.md#update) la racine `composer.json` pour votre projet. Cette version requiert également que vous fournissiez deux clés d’API lors de l’installation et de la configuration de Product Recommendations : [une clé de production et une clé d’environnement de test ;](../landing/saas.md).
+![Nouveau](../assets/new.svg) Il s’agit d’une version majeure. [Modifier](install-configure.md#update) la racine `composer.json` pour votre projet. Cette version requiert également que vous fournissiez deux clés d’API lors de l’installation et de la configuration de Product Recommendations : [une clé de production et une clé sandbox ;](../landing/saas.md).
 
 #### Limites connues
 
-* Le `websiteCode` est renvoyée de manière incorrecte si elle contient un trait de soulignement (_).
+* La variable `websiteCode` est renvoyée de manière incorrecte si elle contient un trait de soulignement (_).
 
 ### 3.3.7 de magento/product-recommendations
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.1
+![Nouveau](../assets/new.svg) Prise en charge de PHP 8.1 ajoutée
 ![Nouveau](../assets/new.svg) Amélioration du redimensionnement des images, de sorte que le dimensionnement des images soit géré de manière plus cohérente dans le modèle d’affichage de référence.
 
 ### 3.3.6 de magento/product-recommendations
@@ -93,7 +101,7 @@ _25 avril 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg) Ajout de nouvelles [types de recommandations](type.md): Conversion (affichage au panier), Conversion (affichage à l’achat) et Récemment consultés. Ces nouveaux types de recommandations sont disponibles dans la variable `magento/product-recommendations` module 3.2.2 et versions ultérieures.
+![Nouveau](../assets/new.svg) Ajout de nouvelles [types de recommandations](type.md): conversion (affichage du panier), conversion (affichage de l’achat) et affichage récent. Ces nouveaux types de recommandations sont disponibles dans la variable `magento/product-recommendations` module 3.2.2 et versions ultérieures.
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel le pare-feu d’application web de Fastly bloquait incorrectement un cookie.
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel les produits affectés à la vue de magasin non par défaut n’étaient pas affichés dans la variable _Aperçu du produit Recommendations_ lors de la création d’une recommandation pour cette vue de magasin spécifique
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel certains noms d’unité de recommandation dans le Créateur de pages empêchaient l’affichage de l’unité de recommandation sur le storefront.
@@ -127,7 +135,7 @@ _25 avril 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg) Services Magento renommés en [Services de commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) et amélioration de l’utilisation dans l’administration
+![Nouveau](../assets/new.svg) Les services Magento renommés en [Services de commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) et amélioration de l’utilisation dans l’administration
 
 ### 3.2.4 de magento/product-recommendations
 
@@ -150,7 +158,7 @@ _25 avril 2023_
 ![Nouveau](../assets/new.svg) Ajout de la capacité à [aperçu des résultats de la recommandation](create.md) au moment de la création. Cela peut nécessiter la mise à jour de votre module vers la dernière version.
 ![Nouveau](../assets/new.svg) Ajout de la capacité à [surveillance et gestion](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) le processus de synchronisation du catalogue à partir de l’administrateur.
 ![Nouveau](../assets/new.svg) Ajout [filtres](filters.md) pour contrôler les produits affichés dans les recommandations.
-![Nouveau](../assets/new.svg) Ajout de la fonction [similarité visuelle](type.md#visualsim) type de recommandation.
+![Nouveau](../assets/new.svg) Ajout de la [similarité visuelle](type.md#visualsim) type de recommandation.
 
 ### 1.2.1 de Magento/module-page-builder-product-recommendations pour le Créateur de pages
 
@@ -164,7 +172,7 @@ _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) Ajout de la capacité à [resync](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) votre catalogue vers les services SaaS via la ligne de commande.
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge des préfixes de table de base de données
-![Correction](../assets/fix.svg) Suppression de la prise en charge de PHP 7.1
+![Correction](../assets/fix.svg) Suppression du support PHP 7.1.
 
 ### 3.0.8 de magento/product-recommendations
 
@@ -182,7 +190,7 @@ _25 avril 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg) **(Version bêta)** [similarité visuelle](type.md#visualsim). Avec le _similarité visuelle_ type de recommandation, vous pouvez déployer une unité de recommandation sur la page des détails du produit qui affiche les produits visuellement similaires au produit consulté.
+![Nouveau](../assets/new.svg) **(Version bêta)** [similarité visuelle](type.md#visualsim). Avec la variable _similarité visuelle_ type de recommandation, vous pouvez déployer une unité de recommandation sur la page des détails du produit qui affiche les produits visuellement similaires au produit consulté.
 
 ### 3.0.5 de magento/product-recommendations
 
@@ -195,7 +203,7 @@ _25 avril 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Correction](../assets/fix.svg) Ajout de la prise en charge d’Adobe Commerce 2.4.0
+![Correction](../assets/fix.svg) Prise en charge supplémentaire d’Adobe Commerce 2.4.0
 
 ### 3.0.3 de magento/product-recommendations
 
@@ -222,7 +230,7 @@ _25 avril 2023_
 
 Il s’agit d’une version majeure. [Modifier](install-configure.md#update) le fichier racine compositeur.json de votre projet.
 
-![Nouveau](../assets/new.svg) Récupérer [!DNL Product Recommendations] d’autres espaces de données SaaS. Vous pouvez ainsi utiliser des recommandations de produits calculées dans votre environnement de produit sur d’autres environnements hors production. [Changement d’espace de données SaaS](settings.md) décrit plus en détail cette fonctionnalité.
+![Nouveau](../assets/new.svg) Récupérer [!DNL Product Recommendations] d’autres espaces de données SaaS. Cela vous permet d’utiliser des recommandations de produits calculées dans votre environnement de produit sur d’autres environnements hors production. [Changement d’espace de données SaaS](settings.md) décrit plus en détail cette fonctionnalité.
 
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel le passage en caisse était bloqué pour les acheteurs utilisant l’origine du bloc
 ![Correction](../assets/fix.svg) Correction d’un problème lors de l’envoi d’événements de panier à ajouter superflus.

@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] Notes de mise à jour d’'
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,49 @@ Les mises à jour sont les suivantes :
 ![Correction](../assets/fix.svg) Correctifs et améliorations
 ![Bogue](../assets/bug.svg) Problèmes connus
 
+## Mises à jour du service hébergé
+
+Ces notes décrivent les mises à jour publiées en dehors d’une version ou les améliorations apportées au service hébergé.
+
++++Mises à jour du service hébergé
 
 _13 juin 2023_
 
-![Nouveau](../assets/new.svg) La recherche en direct prend en charge 5 autres [valeurs de configuration](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel certains caractères, tels que les guillemets ou les apostrophes, provoquaient des problèmes de classement. La réindexation résoudra ces problèmes.
 
 _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) Les clients de la recherche en direct peuvent désormais profiter de la nouvelle [Indexeur de prix SaaS](../price-index/index.md).
+
++++
+
+## [!DNL Live Search] 3.0.2 {#302}
+
+_7 août 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+### Nouvelles fonctionnalités
+
+Les valeurs suivantes ont été ajoutées au `storeDetails` objet :
+
+* &quot;Autoriser tous les produits par page&quot;
+* Taux de change
+* &quot;Produits par page sur les valeurs autorisées de la grille&quot;
+* &quot;Produits par page sur la valeur par défaut de la grille&quot;
+* Langue du magasin
+
+### Mises à jour
+
+* Les modules de service de catalogue ont été ajoutés au métaphorage pour prendre en charge la récupération avancée des données.
+
+Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] version d’extension >= 3.0.2 pour accéder à ces fonctionnalités.
+
+Il est recommandé de mettre à niveau et de tester avant de passer en production. Envisagez de mettre à niveau l’environnement de production pendant les heures creuses après avoir vérifié les résultats de l’environnement de test.
+
+## Versions précédentes
+
++++3.0.1 et versions antérieures
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -73,10 +107,6 @@ _14 mars 2023_
 Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] version d’extension >= 3.0.1 pour accéder à ces fonctionnalités.
 
 Il est recommandé de mettre à niveau et de tester avant de passer en production. Envisagez de mettre à niveau l’environnement de production pendant les heures creuses après avoir vérifié les résultats de l’environnement de test.
-
-## Versions précédentes
-
-+++2.0.5 et versions antérieures
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
