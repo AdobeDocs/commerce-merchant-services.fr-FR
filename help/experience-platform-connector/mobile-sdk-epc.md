@@ -3,7 +3,7 @@ title: Intégration du SDK Mobile Adobe Experience Platform à Commerce
 description: Découvrez comment utiliser le SDK Mobile Adobe Experience Platform avec votre vitrine Commerce personnalisée ou sans interface.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f06020fd6bea6dbb73476f91f359987b3f61cd95
+source-git-commit: cae4d26d389376476b9b6a567841a847cc9c9732
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Après avoir terminé la configuration du SDK pour Experience Platform, ajoutez 
 
 L’exemple suivant montre comment effectuer le suivi de la variable `web.webpagedetails.pageViews` et définissez `identityMap` à l’aide du champ email .
 
-    &quot;swift
+    &quot;javascript
     let stateName = &quot;luma: content: ios: us: en: home&quot;
     var xdmData: [String: Any] = [
     &quot;eventType&quot;: &quot;web.webpagedetails.pageViews&quot;,
