@@ -5,9 +5,9 @@ breadcrumb-title: Connecteur Adobe Experience Platform pour Adobe Commerce
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 91db0176b5ecf09ac403e6e91a4b4513dfb06ea0
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 0%
    - [Installation du connecteur Experience Platform](install.md)
    - [Configuration du connecteur Experience Platform](connect-data.md)
    - [Ajout de groupes de champs au schéma XDM](update-xdm.md)
+   - [Intégration du SDK Mobile Adobe Experience Platform à Commerce](mobile-sdk-epc.md)
 - Capture de données {#event-forwarding}
    - [Événements](events.md)
    - [Événements personnalisés](custom-events.md)
