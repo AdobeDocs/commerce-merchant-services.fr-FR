@@ -3,9 +3,9 @@ title: Options de paiement
 description: Définissez les options de paiement pour personnaliser les méthodes disponibles pour les clients de votre magasin.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
+source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,12 @@ Avec [!DNL Adobe Commerce] et [!DNL Magento Open Source] [!DNL Payment Services]
 * [Paramètres d’accueil](payments-home.md)
 * [Configuration du magasin](configure-admin.md) (recommandé pour les options de paiement héritées ou une configuration multi-magasin)
 
-Il existe différents comportements pour chaque mode de paiement en fonction de l’endroit où vous vous trouvez dans le processus de passage en caisse :
+Il existe différents comportements pour chaque mode de paiement en fonction de l’emplacement du processus de passage en caisse :
 
 * Page de produit : page de produit d’un article.
 * Mini panier : disponible en un clic sur l’icône de panier lorsqu’un produit a été ajouté au panier.
 * Panier : disponible en un clic de _Afficher et modifier le panier_ du mini-panier
-* Mode Extraction : disponible en un clic de _Passez à la Passage en caisse ._ à partir d’un mini-panier ou d’un panier
+* Mode Extraction : disponible en un clic de _Passez à l’extraction_ depuis un mini-panier ou un panier
 
 >[!IMPORTANT]
 >
@@ -52,19 +52,19 @@ Voir PayPal [Documentation sur les méthodes de paiement](https://developer.payp
 
 Les clients peuvent effectuer leur paiement en toute simplicité et en toute confiance à l’aide du bouton PayPal .
 
-Le [!DNL PayPal] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
+La variable [!DNL PayPal] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
 
 ### [!DNL Venmo] button
 
 Les clients peuvent extraire à l’aide de la variable [Venmo](https://venmo.com/) bouton .
 
-Le [!DNL Venmo] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
+La variable [!DNL Venmo] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
 
 ### [!DNL Apple Pay] button
 
 Les clients peuvent utiliser des Touch ID sur leurs appareils. [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), qui utilise les informations d’identification de paiement de carte de crédit et de débit stockées sur leur appareil iOS ou macOS.
 
-Le [!DNL Apple Pay] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
+La variable [!DNL Apple Pay] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
 
 >[!NOTE]
 >
@@ -76,21 +76,21 @@ Les clients peuvent régler leur paiement à l’aide du bouton Payer le débit 
 
 Le bouton Débit PayPal ou Carte de crédit est visible à partir de la page de passage en caisse.
 
-Cette option peut être utilisée pour présenter une option de paiement par carte de crédit ou par débit PayPal à vos acheteurs lorsque vous n’avez pas de fournisseur de carte de crédit alternatif.
+Cette option peut être utilisée pour proposer une option de paiement par carte de crédit ou de débit à vos acheteurs avec un bouton hébergé par PayPal comme alternative à une intégration par carte de crédit.
 
 ### [!DNL Pay Later] button
 
 Offrez à vos clients des paiements à court terme sans intérêts et d’autres options de financement afin qu’ils puissent acheter maintenant et payer ultérieurement avec le [!DNL Pay Later] bouton .
 
-Le [!DNL Pay Later] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
+La variable [!DNL Pay Later] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
 
-Consultez les informations sur les offres Payer plus tard dans [Documentation sur les offres PayPal plus tard](https://developer.paypal.com/docs/checkout/pay-later/us/). Utilisez la variable **Pays ou région** pour sélectionner une région d’intérêt.
+Consultez les informations sur les offres Payer plus tard dans [Documentation sur les offres PayPal plus tard](https://developer.paypal.com/docs/checkout/pay-later/us/). Utilisez la variable **Pays ou région** pour sélectionner une région intéressante.
 
 Voir [Paramètres](settings.md#payment-buttons) pour savoir comment désactiver/activer le [!DNL Pay Later] messages.
 
 ### [!DNL Pay Now] button
 
-Le [!DNL Pay Now] est visible dans la fenêtre contextuelle PayPal lorsqu’un client clique sur un bouton de paiement dans l’écran des paiements.
+La variable [!DNL Pay Now] est visible dans la fenêtre contextuelle PayPal lorsqu’un client clique sur un bouton de paiement dans l’écran des paiements.
 
 Si le montant final de la commande n’est pas encore connu (par exemple, lorsque vous ne disposez pas encore des informations sur l’adresse de livraison) et que le client est en train d’extraire de la page produit, du mini-panier ou du panier, une _Continuer_ est disponible à la place. Lorsqu’un client clique _Continuer_, une fois qu’ils ont confirmé leur mode de paiement, ils sont dirigés vers une page de vérification de commande afin de rassembler les détails nécessaires avant de terminer le passage en caisse.
 
@@ -110,7 +110,7 @@ Vous pouvez ainsi :
 1. [Configuration des boutons de paiement PayPal de votre choix](settings.md#payment-buttons) dans Paramètres.
 1. Tourner _Off_ la valeur **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** dans le _[!UICONTROL Payment buttons]_.
 
-À **effectuer des paiements de capture avec votre fournisseur de carte de crédit existant ; _et_ Boutons de paiement PayPal**:
+À **capture des paiements avec votre fournisseur de carte de crédit existant _et_ Boutons de paiement PayPal**:
 
 1. Assurez-vous que votre boutique est [en mode de production](settings.md#enable-payment-services).
 1. [Configuration des boutons de paiement PayPal de votre choix](settings.md#payment-buttons).
