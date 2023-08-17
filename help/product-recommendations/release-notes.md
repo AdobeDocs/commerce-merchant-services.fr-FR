@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Product Recommendations] Notes de mise à jour d’'
+title: '[!DNL Product Recommendations] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Product Recommendations] d’Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
@@ -253,5 +253,5 @@ Il s’agit d’une version majeure. [Modifier](install-configure.md#update) le 
 
 Pour en savoir plus sur [!DNL Product Recommendations] et [!DNL Product Recommendations] development :
 
-* [Guide de l’utilisateur](overview.md)
+* [Guide d’utilisation](overview.md)
 * [Documentation destinée aux développeurs](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

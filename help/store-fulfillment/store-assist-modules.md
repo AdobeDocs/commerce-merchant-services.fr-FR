@@ -36,12 +36,12 @@ Vos associés peuvent également choisir de sélectionner une commande à la foi
 
 Lors de la sélection, les associés au magasin affichent une liste de tous les articles à sélectionner pour chaque commande, leurs quantités, leur prix et la description du produit de votre catalogue. Une barre de progression s’affiche pour les aider à naviguer dans l’assistant de magasin lors du choix des commandes.
 
-Une fois que vos associés commencent à sélectionner les éléments à sélectionner, toutes les informations appropriées s’affichent, telles que : taille, couleur, quantité, prix, description, ajustement et SKU/UPC. Deux actions sont disponibles pour les associés lors du choix des commandes :
+Une fois que vos associés commencent à sélectionner les éléments à sélectionner, toutes les informations pertinentes s’affichent : taille, couleur, quantité, prix, description, ajustement et SKU/UPC. Deux actions sont disponibles pour les associés lors du choix des commandes :
 
 - Indique que l’article est introuvable et déclenche un remboursement.
-- Analysez le code à barres sur l’élément. L’analyse a pour but de vérifier qu’ils ont sélectionné l’élément correct. Si la caméra ne parvient pas à lire le code à barres, les associés de magasin doivent saisir manuellement le SKU de l’élément qu’ils ont sélectionné.
+- Analysez le code à barres sur l’élément. L’analyse a pour but de vérifier qu’ils ont sélectionné l’élément approprié. Si la caméra ne parvient pas à lire le code à barres, les associés de magasin doivent saisir manuellement le SKU de l’élément qu’ils ont sélectionné.
 
-Si les associés ne parviennent pas à trouver un élément, ils peuvent l’ignorer et y revenir ultérieurement.  Le remboursement mentionné ci-dessus n&#39;est émis qu&#39;une fois qu&#39;ils ont terminé leur étape de la commande.
+Si les associés ne parviennent pas à trouver un élément, ils peuvent l’ignorer et y revenir ultérieurement.  Le remboursement mentionné ci-dessus n&#39;est émis qu&#39;une fois qu&#39;ils ont terminé leur étape de prise de commande.
 
 ## Module d’évaluation
 
@@ -53,7 +53,7 @@ Vous pouvez également facilement mettre à jour l’emplacement d’évaluation
 
 ## Module de désactivation de la main
 
-Le [!UICONTROL Hand Off] indique les clients qui se sont connectés pour reprendre leurs commandes, et où leurs commandes sont mises en scène et les attendent. Les clients peuvent prendre des commandes soit dans le magasin soit dans le parking à l&#39;extérieur ou au bord du trottoir. Les informations sur leur emplacement exact sont présentées dans ce module une fois qu’elles sont connectées.
+La variable [!UICONTROL Hand Off] indique les clients qui se sont connectés pour reprendre leurs commandes, et où leurs commandes sont mises en scène et les attendent. Les clients peuvent prendre des commandes soit dans le magasin soit dans le parking à l&#39;extérieur ou au bord du trottoir. Les informations sur leur emplacement exact sont présentées dans ce module une fois qu’elles sont connectées.
 
 Une fois que vous avez sélectionné une commande prête à être remise au client. Tout le monde peut consulter les informations sur la commande, y compris les éléments introuvables, l’emplacement d’attente du client, le temps d’attente, l’emplacement d’évaluation de la commande et, le cas échéant, le numéro de téléphone du client.
 

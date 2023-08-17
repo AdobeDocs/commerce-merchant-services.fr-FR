@@ -60,7 +60,7 @@ Lorsque vous mettez à jour les éléments de données et les règles dans les b
 
 Par exemple, ajoutons l’Adobe Commerce `signOut` vers les balises Adobe Experience Platform. Les étapes décrites ci-dessous, à l’exception des valeurs spécifiques que vous définissez, décrivent comment ajouter des [éléments de données](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) et [rules](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule), qui s’appliquent à tous les événements Adobe Commerce que vous ajoutez à des balises.
 
-1. Création d’un élément de données :
+1. Créer un élément de données :
 
    ![Créer un élément de données](assets/create-new-data-elements.png)
    _Créer un élément de données_
@@ -71,7 +71,7 @@ Par exemple, ajoutons l’Adobe Commerce `signOut` vers les balises Adobe Experi
 
 1. Définir **Type d’élément de données** to `XDM object`.
 
-1. Sélectionnez la **Sandbox** et **Schéma** que vous souhaitez mettre à jour.
+1. Sélectionnez la variable **Sandbox** et **Schéma** que vous souhaitez mettre à jour.
 
 1. Sous **userAccount** > **déconnexion**, définissez la variable **value** in **Déconnexion du visiteur** to `1`.
 
@@ -80,7 +80,7 @@ Par exemple, ajoutons l’Adobe Commerce `signOut` vers les balises Adobe Experi
 
 1. Sélectionner **Enregistrer**.
 
-1. Création d’une règle :
+1. Créer une règle :
 
    ![Créer une règle](assets/create-new-rule.png)
    _Créer une règle_
@@ -109,7 +109,7 @@ Par exemple, ajoutons l’Adobe Commerce `signOut` vers les balises Adobe Experi
 
 1. Cliquez sur **Enregistrer**.
 
-   Vous avez créé un élément de données dans votre schéma pour la variable `signOut` d’Adobe Commerce. En outre, vous avez créé une règle avec une action spécifique qui doit se produire lorsque cet événement est déclenché à partir du storefront Adobe Commerce.
+   Vous avez créé un élément de données dans votre schéma pour le `signOut` d’Adobe Commerce. En outre, vous avez créé une règle avec une action spécifique qui doit se produire lorsque cet événement est déclenché à partir du storefront Adobe Commerce.
 
 Répétez les étapes ci-dessus dans les balises pour chacun des événements Adobe Commerce décrits ci-dessous.
 
@@ -184,7 +184,7 @@ Créez les éléments de données suivants :
    - **Type d’élément de données**: `Data Layer Computed State`
    - **[Facultatif] path**: `accountContext.accountType`
 
-1. ID de compte :
+1. Identifiant de compte:
 
    - **Nom**: `account id`
    - **Extension**: `Adobe Client Data Layer`
@@ -243,7 +243,7 @@ Créez les éléments de données suivants :
    - **Type d’élément de données**: `Data Layer Computed State`
    - **[Facultatif] path**: `accountContext.accountType`
 
-1. ID de compte :
+1. Identifiant de compte:
 
    - **Nom**: `account id`
    - **Extension**: `Adobe Client Data Layer`
@@ -302,7 +302,7 @@ Créez les éléments de données suivants :
    - **Type d’élément de données**: `Data Layer Computed State`
    - **[Facultatif] path**: `accountContext.accountType`
 
-1. ID de compte :
+1. Identifiant de compte:
 
    - **Nom**: `account id`
    - **Extension**: `Adobe Client Data Layer`
@@ -475,7 +475,7 @@ Créez les éléments de données suivants :
 
 ### searchRequestSent
 
-Déclenché par des événements dans la fenêtre contextuelle &quot;Rechercher lorsque vous tapez&quot; et par des événements sur les pages de résultats de recherche.
+Déclenché par des événements dans la fenêtre contextuelle &quot;Rechercher lorsque vous tapez&quot; et par des événements sur les pages de résultats de la recherche.
 
 #### Éléments de données
 
@@ -558,7 +558,7 @@ Créez les éléments de données suivants :
    - **Extension**: `Adobe Experience Platform Web SDK`
    - **Type d’élément de données**: `XDM object`
    - **Groupe de champs**: `siteSearch` > `phrase`
-   - **value**: Pas encore disponible
+   - **value**: pas encore disponible
    - **Groupe de champs**: `siteSearch` > `sort`. Sélectionner **Fournir un objet entier**.
    - **Groupe de champs**: `siteSearch` > `filter`. Sélectionner **Fournir un objet entier**.
    - **Groupe de champs**: `searchRequest` > `id`
@@ -1323,7 +1323,7 @@ Créez les éléments de données suivants :
 
 ## Définition de l’identité dans les événements du storefront
 
-Les événements Storefront contiennent des informations de profil basées sur la variable `personalEmail` (pour les événements de compte) et `identityMap` (pour tous les autres événements storefront). Le connecteur Experience Platform se joint et génère des profils en fonction de ces deux champs. Toutefois, chaque champ comprend différentes étapes à suivre pour créer des profils :
+Les événements Storefront contiennent des informations de profil basées sur `personalEmail` (pour les événements de compte) et `identityMap` (pour tous les autres événements storefront). Le connecteur Experience Platform se joint et génère des profils en fonction de ces deux champs. Toutefois, chaque champ comprend différentes étapes à suivre pour créer des profils :
 
 >[!NOTE]
 >
@@ -1380,7 +1380,7 @@ Contrairement aux événements storefront qui utilisent ECID pour identifier et 
 1. Créez un élément de mappage d’identité.
 
    ![Carte d’identité du bureau](assets/custom-code-backoffice.png)
-   _Création d’une carte d’identité back-office_
+   _Créer une carte d’identité back-office_
 
 1. Sélectionner [!UICONTROL Open Editor] et ajoutez le code personnalisé suivant :
 
@@ -1412,7 +1412,7 @@ return IdentityMap;
 
 ## Définition du consentement
 
-Le consentement pour la collecte de données des connecteurs Adobe Commerce et Experience Platform est activé par défaut. L’exclusion est gérée par le biais du [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Vous pouvez suivre les étapes décrites ici si vous choisissez d’utiliser `mg_dnt` pour gérer le consentement. Le [Documentation du SDK Web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) comporte plusieurs options supplémentaires pour gérer le consentement.
+Le consentement pour la collecte de données des connecteurs Adobe Commerce et Experience Platform est activé par défaut. L’exclusion est gérée par le biais du [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Vous pouvez suivre les étapes décrites ici si vous choisissez d’utiliser `mg_dnt` pour gérer le consentement. La variable [Documentation du SDK Web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) comporte plusieurs options supplémentaires pour gérer le consentement.
 
 1. Créez un **Code personnalisé principal** élément de données (`%do not track cookie%`) pour la variable `mg_dnt` cookie :
 
@@ -1432,5 +1432,5 @@ Le consentement pour la collecte de données des connecteurs Adobe Commerce et E
 ## Avertissements
 
 - Si vous ne suivez pas les étapes pour désactiver les collections Experience Platform, les événements sont comptabilisés deux fois.
-- Le fait de ne pas configurer les mappages/événements comme décrit dans cette rubrique peut avoir une incidence sur les panoramas Adobe Analytics.
+- Le fait de ne pas configurer les mappages/événements comme décrit dans cette rubrique peut affecter les panoramas Adobe Analytics.
 - Vous ne pouvez pas configurer Target via le connecteur Experience Platform si la collecte de données est désactivée.

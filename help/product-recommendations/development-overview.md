@@ -43,4 +43,4 @@ Lisez les rubriques suivantes pour commencer à utiliser Product Recommendations
 
 - [Installation et configuration de Product Recommendations](install-configure.md)
 
-- [Création d’un Recommendations de produit](create.md)
+- [Créer un Recommendations de produit](create.md)

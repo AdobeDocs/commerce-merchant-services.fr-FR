@@ -18,7 +18,7 @@ Les sections suivantes décrivent les exigences techniques et métier de l’ins
 
 ## Exigences en matière de version de plateforme et de logiciel
 
-Le [!DNL Store Fulfillment] La solution est disponible pour les clients Adobe Commerce sur les plateformes suivantes.
+La variable [!DNL Store Fulfillment] La solution est disponible pour les clients Adobe Commerce sur les plateformes suivantes.
 
 - Adobe Commerce sur l’infrastructure cloud (ECE)
 - Adobe Commerce On-Premise (EE)
@@ -41,7 +41,7 @@ Pour connaître les exigences détaillées, consultez Adobe Commerce [Configurat
 
 Le processus de bout en bout de gestion des commandes de saut de magasin est géré via l’application d’assistance Boutique installée sur les périphériques mobiles. Ces appareils, fournis par le détaillant ou par les employés du magasin à l’aide de leurs smartphones personnels, doivent répondre aux exigences suivantes :
 
-**Configuration minimale requise pour le système d’exploitation**
+**Configuration requise du système d’exploitation**
 
 - Android 6
 - iOS 12
@@ -65,7 +65,7 @@ Votre entreprise doit satisfaire aux critères minimaux suivants pour mettre en 
 
 - Capacité à syndiquer l’inventaire des commerçants
 
-- Disponibilité du Wi-Fi dans tous les emplacements qui prennent en charge la solution Store Fulfillment : Vitesse Internet minimale de 3 Mbit/s
+- Disponibilité du Wi-Fi en magasin à tous les emplacements qui prennent en charge la solution Store Fulfillment : vitesse Internet minimale de 3 Mbit/s.
 
 - Les associés de magasin et d’entrepôt ont accès aux appareils mobiles iOS ou Android au cours de leurs équipes, personnels ou fournis par le marchand.
 

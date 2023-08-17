@@ -60,7 +60,7 @@ Les filtres de produits spécifient les produits spécifiques éligibles, ou non
 
 ### Type
 
-Un filtre basé sur le type de produit inclut ou exclut tous les produits d’un type spécifique. Les types pris en charge sont les suivants : _Simple_, _Configurable_, _Virtuel_, _Téléchargeable_ ou _Carte cadeau_. _Bundle_ et _Regroupé_ Les produits ne sont pas encore pris en charge.
+Un filtre basé sur le type de produit inclut ou exclut tous les produits d’un type spécifique. Les types pris en charge incluent : _Simple_, _Configurable_, _Virtuel_, _Téléchargeable_, ou _Carte cadeau_. _Bundle_ et _Regroupé_ Les produits ne sont pas encore pris en charge.
 
 ### Visibilité
 

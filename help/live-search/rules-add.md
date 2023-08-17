@@ -24,7 +24,7 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 
 Les conditions sont les conditions requises pour déclencher un événement. Une règle peut comporter jusqu’à dix conditions et 25 événements.
 
-![Règle - Créer votre règle](assets/rules-add-workspace.png)
+![Règle - Création de votre règle](assets/rules-add-workspace.png)
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Les conditions sont les conditions requises pour déclencher un événement. Une
 1. Sous *Créer votre règle*, sélectionnez la variable **Condition** et suivez les instructions pour remplir l’instruction .
 
    * Requête de recherche contenant : entrez la chaîne de texte qui doit se trouver dans la requête de l’acheteur. Le paramètre Correspondance détermine le degré auquel la requête de l’acheteur correspond au catalogue. Options :<br /> N’importe lequel : toute partie du texte de requête de l’acheteur peut correspondre à la condition.<br />Tous : toutes les requêtes de l’acheteur doivent correspondre à la condition .
-   * La requête de recherche est : entrez une chaîne de texte correspondant exactement à la requête de l’acheteur. Par exemple : &quot;pantalon de yoga&quot;. Règles avec `Search query is` et Correspondance `All` ne peut comporter qu’une seule condition.
+   * La requête de recherche est : entrez une chaîne de texte correspondant exactement à la requête de l’acheteur. Par exemple : &quot;pantalon de yoga&quot;. Règles avec `Search query is` et correspondre `All` ne peut comporter qu’une seule condition.
    * La requête de recherche commence par : saisissez un caractère ou une chaîne de texte qui doit se trouver au début de la requête du client.
    * La requête de recherche se termine par : saisissez un caractère ou une chaîne de texte qui doit se trouver à la fin de la requête du client.
 
@@ -59,10 +59,10 @@ Une règle peut comporter jusqu&#39;à dix conditions. L’opérateur logique qu
 
 1. Pour modifier la logique de la règle, modifiez la variable **Correspondance** pour déterminer dans quelle mesure les critères de recherche de l’acheteur doivent correspondre à la condition de requête. Définir **Correspondance** à l’une des options suivantes :
 
-   * Any - (par défaut) Tous les opérateurs logiques de la règle sont définis sur `OR` et les résultats apparaissent dans le volet test.
-   * Tous : tous les opérateurs logiques de la règle sont définis sur `AND` et les résultats apparaissent dans le volet test.
+   * Any - (par défaut) Tous les opérateurs logiques de la règle sont définis sur `OR` et les résultats s’affichent dans le volet test.
+   * Tous : tous les opérateurs logiques de la règle sont définis sur `AND` et les résultats s’affichent dans le volet test.
 
-   Le *Correspondance* détermine l’opérateur logique utilisé pour joindre plusieurs conditions. Changement de la variable *Correspondance* modifie tous les opérateurs logiques de la règle. Il n’est pas possible de combiner des `AND` et `OR` dans la même règle.
+   La variable *Correspondance* détermine l’opérateur logique utilisé pour joindre plusieurs conditions. Changement de la variable *Correspondance* modifie tous les opérateurs logiques de la règle. Il n’est pas possible de combiner des `AND` et `OR` dans la même règle.
 
    Dans cet exemple, plutôt que de rechercher &quot;pantalon de yoga&quot;, il existe deux requêtes distinctes qui recherchent &quot;yoga&quot; ou &quot;pantalon&quot;. Cette règle est moins spécifique et est déclenchée plus souvent dans le storefront que l’autre.
 
@@ -77,12 +77,12 @@ Les propriétaires de magasins peuvent configurer les types de stratégies de cl
 
 ![Règles - Correspondance](assets/rules-ranking-type.png)
 
-* La plus achetée : Cela classe les produits par total d’achats par SKU au cours des 7 jours précédents.
+* Le plus acheté : les produits sont classés par total d’achats par SKU au cours des 7 jours précédents.
 * Le plus ajouté au panier : Classement par ordre d’importance des activités &quot;Ajouter au panier&quot; totales au cours des 7 jours précédents.
-* Les plus consultés : Classe le nombre total de vues par SKU au cours des 7 jours précédents.
+* Le plus consulté : classe le nombre total de vues par SKU au cours des 7 jours précédents.
 * Recommandé pour vous : permet d’utiliser la variable `viewed-viewed` point de données : les acheteurs qui ont consulté ce SKU ont également consulté ces autres SKU.
-* Tendance : Recherche les événements de page vue des dernières 72 heures pour les événements d’arrière-plan et 24 heures pour les événements de premier plan
-* Aucun : Les produits sont classés selon la pertinence.
+* Tendance : recherche les événements de page vue des dernières 72 heures pour les événements d’arrière-plan et 24 heures pour les événements de premier plan.
+* Aucun : les produits sont commandés selon la pertinence
 
 1. Sélectionnez le type de stratégie de la règle. La fenêtre Tester votre règle affiche les résultats attendus.
 
@@ -125,7 +125,7 @@ Les informations saisies ici apparaissent dans le [Détails de la règle](rules-
 
 1. Sous *Détails*, saisissez une **Nom** pour la règle. Tous les noms de règle doivent être uniques.
 1. Entrez un résumé **Description** de la règle.
-1. Saisissez le **Date de début** et **Date de fin** pour que la règle soit principale ou sélectionnez les dates du calendrier.
+1. Saisissez le **Date de début** et **Date de fin** pour que la règle soit active ou sélectionnez les dates du calendrier.
 
    Pour sélectionner une plage de dates, cliquez sur la première date et faites glisser le curseur pour la sélectionner.
 
@@ -135,11 +135,11 @@ Les informations saisies ici apparaissent dans le [Détails de la règle](rules-
 
 1. Examinez les résultats de la règle dans le volet de test.
 1. Si la règle comporte plusieurs requêtes, testez chacune d’elles susceptibles d’être affectées par la règle.
-1. Une fois l’opération terminée, cliquez sur **Enregistrer et publier**.
+1. Lorsque vous avez terminé, cliquez sur **Enregistrer et publier**.
 
    La règle est ajoutée à la liste dans l’espace de travail des règles.
 
-1. Bien que les principales règles entrent immédiatement en vigueur, vous devrez peut-être attendre jusqu’à 15 minutes que les résultats de la requête mise en cache dans le storefront soient actualisés.
+1. Bien que les règles actives entrent immédiatement en vigueur, vous devrez peut-être attendre jusqu’à 15 minutes que les résultats de la requête mise en cache dans le storefront soient actualisés.
 
 ## Descriptions des champs
 

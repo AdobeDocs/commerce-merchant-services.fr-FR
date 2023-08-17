@@ -1,12 +1,12 @@
 ---
-title: "[!DNL Live Search] Guide Overview"
+title: "[!DNL Live Search] Présentation du guide"
 description: "[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, super pertinente et intuitive."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 recommendations: noCatalog
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 [!DNL Live Search] comporte trois zones pour les administrateurs :
 
-* Storefront : Utiliser le style CSS pour personnaliser le [!DNL storefront popover].
-* Administrateur : Utilisez cette zone pour accéder à la configuration et à la configuration.
-* Interface de ligne de commande : Utilisez cet outil pour exécuter les tâches d’installation et de configuration du serveur principal.
+* Storefront : utilisez le style CSS pour personnaliser le [!DNL storefront popover].
+* Administration : utilisez cette zone pour accéder à la configuration et à la configuration.
+* Interface de ligne de commande : utilisez cet outil pour exécuter les tâches d’installation et de configuration du serveur principal.
 
 ## Documentation supplémentaire
 
-| Guide | Description |
+| Guide  | Description |
 |--- |--- |
 | Guide de l’utilisateur d’Adobe Commerce 2.4 | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
 | Guide du développeur d’Adobe Commerce 2.4 | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source |
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
 
-[Base de connaissances](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Voir [!DNL Live Search]Articles de dépannage liés à .
+[Base de connaissances](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Voir la [!DNL Live Search]Articles de dépannage liés à .
 [tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Envoyez un ticket pour recevoir une aide supplémentaire.
 
 Avant d’envoyer un ticket d’assistance, exécutez le code suivant depuis la ligne de commande pour vérifier la version de [!DNL Live Search] qui est actuellement installé :

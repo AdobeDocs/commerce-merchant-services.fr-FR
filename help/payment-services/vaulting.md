@@ -45,4 +45,4 @@ Pour créer une commande dans l’Admin pour un client à l’aide de sa carte d
 
 ## Sécurité
 
-Les informations minimales relatives aux cartes de crédit sont partagées avec l’acheteur ; ils ne voient que les quatre derniers chiffres, la date d’expiration et la marque de leur carte de crédit voûtée. Les informations de carte de crédit sont stockées avec le fournisseur de paiement pour satisfaire les besoins [PCI](security.md#PCI-compliance) les normes de conformité.
+Les informations minimales relatives aux cartes de crédit sont partagées avec l’acheteur ; il ne voit que les quatre derniers chiffres, la date d’expiration et la marque de sa carte de crédit votée. Les informations de carte de crédit sont stockées avec le fournisseur de paiement pour satisfaire les besoins [PCI](security.md#PCI-compliance) les normes de conformité.

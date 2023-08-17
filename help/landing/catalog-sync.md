@@ -24,11 +24,11 @@ Le processus de synchronisation du catalogue s’exécute toutes les heures pour
 
 >[!NOTE]
 >
-> Le _Synchronisation du catalogue_ Le tableau de bord n’est disponible que lorsque la variable _Recommendations de produit_ Les modules sont installés et reflètent les projections de données liées à cette fonctionnalité uniquement. Prise en charge d’autres services Commerce, tels que _Recherche en direct_ et _Service de catalogue_ sont planifiées pour le futur.
+> La variable _Synchronisation du catalogue_ Le tableau de bord n’est disponible que lorsque la variable _Recommendations de produit_ Les modules sont installés et reflètent les projections de données liées à cette fonctionnalité uniquement. Prise en charge d’autres services Commerce, tels que _Recherche en direct_ et _Service de catalogue_ sont planifiées pour le futur.
 
 Pour accéder au tableau de bord de synchronisation du catalogue, sélectionnez **Système** > _Transfert de données_ > **Synchronisation du catalogue**.
 
-Avec le **Synchronisation du catalogue** Vous pouvez réaliser les opérations suivantes dans le tableau de bord :
+Avec la variable **Synchronisation du catalogue** Vous pouvez réaliser les opérations suivantes dans le tableau de bord :
 
 - Afficher l’état de synchronisation (**En cours**, **Succès**, **En échec**)
 - Afficher le nombre total de produits synchronisés, en cas de réussite
@@ -42,7 +42,7 @@ Avec le **Synchronisation du catalogue** Vous pouvez réaliser les opérations s
 Signale un état de synchronisation de :
 
 - **Succès** - Affiche la date et l’heure de réussite de la synchronisation et le nombre de produits mis à jour.
-- **En échec** : affiche la date et l’heure de tentative de synchronisation.
+- **En échec** : affiche la date et l’heure de tentative de synchronisation
 - **En cours** : affiche la date et l’heure de la dernière synchronisation réussie.
 
 >[!NOTE]
@@ -63,7 +63,7 @@ Si vous devez initier une nouvelle synchronisation de votre catalogue avant que 
 
 1. Dans la _Synchronisation du catalogue_ tableau de bord, sélectionnez **Paramètres**.
 
-   Le _Paramètres de synchronisation du catalogue_ s’affiche.
+   La variable _Paramètres de synchronisation du catalogue_ s’affiche.
 
 1. Dans le _Resynchronisation des données_ , cliquez sur [!UICONTROL Resync].
 
@@ -72,14 +72,14 @@ Si vous devez initier une nouvelle synchronisation de votre catalogue avant que 
 
 ## Produits de catalogue synchronisés
 
-Le **Produits de catalogue synchronisés** le tableau affiche les informations suivantes.
+La variable **Produits de catalogue synchronisés** le tableau affiche les informations suivantes.
 
 | Champ | Description |
 |---|---|
 | ID | Identifiant unique du produit |
 | Nom | Nom de la vitrine du produit |
 | Type | Identifie le type de produit, par exemple simple, configurable, téléchargeable, etc. |
-| Dernière exportation | Date à laquelle le produit a été exporté pour la dernière fois à partir de votre catalogue |
+| Dernière exportation | Date à laquelle le produit a été exporté pour la dernière fois depuis votre catalogue |
 | Dernière modification | Date de la dernière modification du produit dans votre catalogue |
 | SKU | Affiche l’unité de gestion des stocks du produit. |
 | Prix | Prix du produit |
@@ -93,7 +93,7 @@ Lorsque vous déclenchez une nouvelle synchronisation des données, la mise à j
 
 1. Affichez la vue détaillée du produit en question dans les résultats de la recherche.
 1. Copiez la sortie JSON et vérifiez que le contenu correspond à ce que vous avez dans la variable [!DNL Commerce] catalogue.
-1. Si le contenu ne correspond pas, apportez une modification mineure au produit de votre catalogue, par exemple en ajoutant un espace ou un point.
+1. Si le contenu ne correspond pas, apportez une modification mineure au produit de votre catalogue, comme l’ajout d’un espace ou d’un point.
 1. Attendez une nouvelle synchronisation ou [déclencher une resynchronisation manuelle](#resync).
 
 ### Synchronisation non en cours
@@ -106,7 +106,7 @@ Si l’état de la synchronisation du catalogue est **En échec**, soumettez une
 
 ## Interface de ligne de commande {#resynccmdline}
 
-Le `saas:resync` fait partie de la commande `magento/saas-export` module. Vous pouvez installer ce module à l’aide de l’une des [!DNL Commerce Services] les produits, tels que [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) ou [[!DNL Live Search]](/help/live-search/install.md).
+La variable `saas:resync` fait partie de la `magento/saas-export` module. Vous pouvez installer ce module à l’aide de l’une des [!DNL Commerce Services] les produits, tels que [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) ou [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >

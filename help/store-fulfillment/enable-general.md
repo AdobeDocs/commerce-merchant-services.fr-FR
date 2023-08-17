@@ -67,7 +67,7 @@ Gestion des paramètres des services d’exécution de magasin à partir de la [
 
 >[!NOTE]
 >
->Le [!UICONTROL Search Radius] n’est utilisé que si vous avez configuré la variable [configuration de l’emplacement et du mappage du magasin](store-location-map-provider-setup.md) pour Adobe Commerce.
+>La variable [!UICONTROL Search Radius] n’est utilisé que si vous avez configuré la variable [configuration de l’emplacement et du mappage du magasin](store-location-map-provider-setup.md) pour Adobe Commerce.
 
 ## Activation de la solution d’exécution de magasin
 
@@ -85,7 +85,7 @@ Activez la variable [!DNL Store Fulfillment] pour ajouter les fonctionnalités d
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Activez ou désactivez la solution. Lorsque cette option est activée, configurez et utilisez les fonctionnalités d’exécution de magasin et établissez la connexion entre votre boutique Adobe Commerce et [!DNL Store Fulfillment] services. Lorsque cette option est désactivée, toutes les fonctions d’exécution de magasin sont désactivées. Il n’existe aucune communication entre Adobe Commerce et les services d’exécution de magasin. Les informations de commande ne peuvent pas être traitées ni reçues.</td>
+<td>Activez ou désactivez la solution. Une fois activée, configurez et utilisez les fonctionnalités d’exécution de magasin et établissez la connexion entre votre boutique Adobe Commerce et [!DNL Store Fulfillment] services. Lorsque cette option est désactivée, toutes les fonctions d’exécution de magasin sont désactivées. Il n’existe aucune communication entre Adobe Commerce et les services d’exécution de magasin. Les informations de commande ne peuvent pas être traitées ni reçues.</td>
 <td>Site Web</td>
 <td>Oui</td>
 </tr>
@@ -103,7 +103,7 @@ Activez la variable [!DNL Store Fulfillment] pour ajouter les fonctionnalités d
 </tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>Sélectionnez <i>[!UICONTROL Sandbox]</i> ou <i>[!UICONTROL Production]</i><br></br>Sélection [!UICONTROL Sandbox] permet la communication avec les services d’exécution dans un environnement de test.<br></br>Sélection [!UICONTROL Production] permet la communication avec les services d’exécution dans un environnement en ligne.<br></br>Un ensemble d’informations d’identification vous est attribué pour chaque environnement et vous pouvez gérer les deux ensembles dans la même installation. <br></br>Enregistrez les informations d’identification avant de valider la connexion.</td>
+<td>Sélectionnez <i>[!UICONTROL Sandbox]</i> ou <i>[!UICONTROL Production]</i><br></br>Sélection [!UICONTROL Sandbox] permet la communication avec les services d’exécution dans un environnement de test.<br></br>Sélection [!UICONTROL Production] permet la communication avec les services d’exécution dans un environnement en ligne.<br></br>Un ensemble d’informations d’identification vous est attribué pour chaque environnement et vous pouvez gérer les deux ensembles dans la même installation. <br></br>Enregistrez les identifiants avant de valider la connexion.</td>
 <td>Global</td>
 <td>Oui</td>
 </tr>
@@ -147,7 +147,7 @@ Les journaux des services d’exécution de magasin sont disponibles dans le fic
 
 Demandez à l’administrateur système de configurer vos environnements pour autoriser la gestion des exceptions afin que les exceptions liées à l’API puissent être capturées via le pare-feu ou le cache.
 
-Comme le fichier journal de l’application peut croître rapidement, n’activez la journalisation de l’application que pendant une courte période, si nécessaire, par exemple lors de la résolution des problèmes d’exécution du magasin pour une [!DNL Commerce] commande. Cette configuration empêche les problèmes de temps de réponse dans les environnements de production causés par des fichiers journaux volumineux.
+Étant donné que le fichier journal de l’application peut croître rapidement, n’activez la journalisation de l’application que pendant une courte période, si nécessaire, par exemple lors de la résolution des problèmes d’exécution du magasin pour une [!DNL Commerce] commande. Cette configuration empêche les problèmes de temps de réponse dans les environnements de production causés par des fichiers journaux volumineux.
 
 >[!TIP]
 >
@@ -312,7 +312,7 @@ Configurez les paramètres de sécurité du compte utilisateur et du mot de pass
  <tbody>
 <tr>
 <td><strong>[!UICONTROL User Session Lifetime]</strong></td>
-<td>Période, en secondes, pendant laquelle une session utilisateur associée de magasin reste principale avant la déconnexion automatique. Les valeurs valides vont de 60 à 31536000.</td>
+<td>Période, en secondes, pendant laquelle une session utilisateur associée de magasin reste active avant la déconnexion automatique. Les valeurs valides sont comprises entre 60 et 31536000.</td>
 <td>Global</td>
 <td>Non</td>
 </tr>
@@ -330,7 +330,7 @@ Configurez les paramètres de sécurité du compte utilisateur et du mot de pass
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td><em>[!UICONTROL Yes]</em>: L’utilisateur doit modifier son mot de passe après la configuration du compte.<br></br><em>[!UICONTROL No]</em>: Recommande à l’utilisateur de modifier le mot de passe après la configuration du compte.</td>
+<td><em>[!UICONTROL Yes]</em>: l’utilisateur doit modifier son mot de passe après la configuration du compte.<br></br><em>[!UICONTROL No]</em>: recommande à l’utilisateur de modifier le mot de passe après la configuration du compte.</td>
 <td>Global</td>
 <td>Non</td>
 </tr>

@@ -18,21 +18,21 @@ Prise en main d’ [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerc
 
 - **Extension d’exécution de magasin**- Installez et configurez cette extension tierce sur votre instance Adobe Commerce. Une fois l’installation terminée, vous pouvez configurer et gérer la solution Store Fulfillment à partir de l’Admin pour la prise en charge. [!DNL buys online, pickup in store] Scénarios BOPIS dans le storefront Commerce.
 
-  ![[!DNL Store Fulfillment Service] configuration dans la vue Admin](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] configuration dans la vue d’administration](assets/store-fulfillment-admin-home.png)
 
 - **Compte d’exécution de la boutique**-Au cours du processus d’activation, un gestionnaire de compte crée votre compte d’exécution Boutique et vous fournit les informations et les informations d’identification du compte. Ces informations d’identification sont requises pour activer la connexion entre Adobe Commerce et la solution d’exécution de magasin.
 
 - **Application d’assistance pour la boutique**: fournit des associés de magasin à un workflow d’exécution de magasin de bout en bout pour gérer les commandes BOPIS des appareils mobiles. Store Associates peut télécharger et installer Walmart&#39;s [!DNL Store Assist] pour les appareils iOS et Android™. Le processus d’intégration des applications est géré par le Centre client de Walmart Commerce Technologies en tant que processus distinct. Cependant, [certains paramètres de configuration de l’application](user-setup.md) sont terminées à partir de l’administrateur Adobe Commerce.
 
-  | Application d’aide à la boutique - Vue de prise en main | Application d’assistance de la boutique - Mode Modules |
+  | Application d’aide à la boutique - Vue de démarrage | Application d’assistance de la boutique - Mode Modules |
   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-  | ![[!DNL Store Assist App Getting Started] Affichage sur appareil mobile](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] sur appareil mobile](assets/store-assist-orders-small.png) |
+  | ![[!DNL Store Assist App Getting Started] Affichage sur un appareil mobile](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] sur appareil mobile](assets/store-assist-orders-small.png) |
 
 ## Etapes de configuration
 
 - **Inscrivez-vous à[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**- Remplissez le formulaire d’inscription sur [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)ou contactez votre gestionnaire de compte Adobe Commerce pour obtenir de l’aide.
 
-- **Lancement de la demande d’approvisionnement pour l’exécution du magasin**- Remplissez le formulaire de prise fourni par votre gestionnaire de compte pour fournir les informations nécessaires au démarrage du processus d’approvisionnement.
+- **Lancement de la demande d’approvisionnement pour l’exécution du magasin**- Remplissez le formulaire de prise fourni par votre gestionnaire de compte pour fournir les informations nécessaires au démarrage du processus de mise en service.
 
 - **Obtention des informations d’identification de votre compte d’exécution de magasin**- Une fois votre compte d’exécution de magasin créé pour vous, vous recevez les informations d’identification requises pour intégrer la solution d’exécution de magasin à Adobe Commerce.
 
@@ -50,6 +50,6 @@ Prise en main d’ [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerc
 
 1. [Création d’utilisateurs et de rôles pour l’application d’aide à la boutique](user-setup.md).
 
-1. [Télécharger Walmart&#39;s [!DNL Store Assist] sur l’appareil de votre choix. L’application est disponible sur l’application Apple (iOS) et sur Google Play (Android™).](app-setup.md) magasins.
+1. [Télécharger Walmart&#39;s [!DNL Store Assist] de votre choix. L’application est disponible sur l’application Apple (iOS) et sur Google Play (Android™).](app-setup.md) les magasins.
 
 Une fois que vous avez installé, configuré, intégré et que vous avez accès à la variable [!DNL Store Assist] application, vous pouvez [commencer à créer des commandes et des tests ;](test-and-deploy.md).

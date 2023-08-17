@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Live Search] Workspace'
-description: Le [!DNL Live Search] workspace est utilisé pour configurer, gérer et surveiller les performances de recherche.
+description: La variable [!DNL Live Search] workspace est utilisé pour configurer, gérer et surveiller les performances de recherche.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 source-git-commit: 166665c3ee27ed7e07e00df0e3eab060f3686869
 workflow-type: tm+mt
@@ -15,9 +15,9 @@ L’espace de travail vous permet de configurer, de gérer et de surveiller les 
 
 ![Espace de travail de facette](assets/faceting-workspace.png)
 
-## Définir la portée
+## Définition de la portée
 
-Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) de tous [!DNL Live Search] est défini sur `Default Store View`. Si votre [!DNL Commerce] l’installation comprend plusieurs vues de magasin, définies **Portée** au [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) où s’appliquent vos paramètres de facette.
+Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) de tous [!DNL Live Search] est défini sur `Default Store View`. Si votre [!DNL Commerce] l’installation comprend plusieurs vues de magasin, définies **Portée** à la fonction [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) où s’appliquent vos paramètres de facette.
 
 ## Options de menu
 

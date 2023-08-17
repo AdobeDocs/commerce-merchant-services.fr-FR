@@ -6,7 +6,7 @@ feature: Payments, Release Notes
 source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1989'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

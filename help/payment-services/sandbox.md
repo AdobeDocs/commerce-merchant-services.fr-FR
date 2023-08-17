@@ -1,6 +1,6 @@
 ---
 title: Configuration de l’environnement de test
-description: Utilisez un compte sandbox PayPal à utiliser [!DNL Payment Services] en mode test.
+description: Utilisation d’un compte sandbox PayPal à utiliser [!DNL Payment Services] en mode test.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
@@ -41,11 +41,11 @@ Pour finaliser l’intégration des environnements de test :
 
    Cette option est visible si vous n’avez pas encore terminé l’intégration à l’environnement de test pour [!DNL Payment Services].
 
-   Un ID de marchand d’environnement de test est généré automatiquement et renseigné dans [paramètres](settings.md). Ne modifiez pas ou ne modifiez pas cet identifiant.
+   Un ID de commerce sandbox est généré automatiquement et renseigné dans [paramètres](settings.md). Ne modifiez pas ou ne modifiez pas cet identifiant.
 
    Une fenêtre PayPal s’affiche pour vous permettre de connecter un compte PayPal afin de commencer à accepter les paiements.
 
-1. Saisissez l’adresse électronique et le mot de passe du compte sandbox PayPal que vous avez généré à l’étape 3 (et non les informations de votre compte professionnel PayPal), ainsi que votre pays ou votre région.
+1. Saisissez l’adresse électronique et le mot de passe du compte sandbox PayPal que vous avez généré à l’étape 3 (et non les informations de votre compte professionnel PayPal) et votre pays ou région.
 1. Cliquez sur **[!UICONTROL Next]**.
 
    ![PayPal - Connecter le compte PayPal pour les paiements](assets/paypal-connectacct.png)
@@ -53,7 +53,7 @@ Pour finaliser l’intégration des environnements de test :
 1. Continuez à suivre le flux PayPal, à l’aide des informations d’identification de votre compte sandbox précédemment enregistrées.
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   Le **[!UICONTROL Sandbox onboarding]** n’est plus visible et un texte &quot;Paiements en attente d’un environnement de test&quot; s’affiche.
+   La variable **[!UICONTROL Sandbox onboarding]** n’est plus visible et un texte &quot;Paiements en attente d’un environnement de test&quot; s’affiche.
 
 Lorsque votre intégration à l’environnement de test PayPal est approuvée, une notification vous indique que votre système de paiement est actuellement en mode sandbox et qu’il ne traite pas les paiements en direct.
 

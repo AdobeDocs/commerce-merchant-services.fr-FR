@@ -16,17 +16,17 @@ ht-degree: 0%
 
 Application d’aide à la boutique Les utilisateurs sont gérés dans Adobe Commerce. Toutefois, ces utilisateurs n’interagissent pas directement avec Adobe Commerce. La gestion des utilisateurs est configurée dans Adobe Commerce pour activer les connexions sécurisées entre Adobe Commerce et l’application.
 
-Le modèle utilisateur de l’application d’exécution de magasin est séparé des autres modèles d’utilisateur Adobe Commerce. L’application conserve son propre modèle d’autorisation par le biais de rôles utilisateur et d’utilisateurs pouvant être affectés à tous les emplacements ou à des emplacements spécifiques. Les autorisations suivantes sont prises en charge : Ordre de sélection, ordre de distribution et réduction de la quantité d’articles (et annulation).
+Le modèle utilisateur de l’application d’exécution de magasin est séparé des autres modèles d’utilisateur Adobe Commerce. L’application conserve son propre modèle d’autorisation par le biais de rôles utilisateur et d’utilisateurs pouvant être affectés à tous les emplacements ou à des emplacements spécifiques. Les autorisations suivantes sont prises en charge : Ordre de sélection, Ordre de remise et Réduction de la quantité d’articles (et annulation).
 
 >[!TIP]
 >
->Pour de meilleurs résultats, [configurer votre connexion](connect-set-up-service.md) avant d’ajouter des utilisateurs et des autorisations pour Store Associates qui utilisent l’application d’assistance de magasin.
+>Pour de meilleurs résultats, [configurer votre connexion](connect-set-up-service.md) avant d’ajouter des utilisateurs et des autorisations pour Store Associates qui utilisent l’application d’assistance en magasin.
 
 ## Application d’assistance de la boutique - Rôles utilisateur
 
 Lors de la configuration initiale de l’utilisateur pour l’application d’aide à la boutique, créez des rôles d’utilisateur pour personnaliser les autorisations d’utilisateur sur l’application d’aide à la boutique. Par exemple, vous pouvez créer différents rôles pour les gestionnaires de magasins et les associés de magasin et affecter différentes ressources de rôles pour gérer les autorisations pour chaque type d’utilisateur.
 
-Configuration des rôles utilisateur à partir de **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
+Configuration des rôles utilisateur depuis **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
 ### Infos sur le rôle
 
@@ -42,7 +42,7 @@ Configuration des rôles utilisateur à partir de **[!UICONTROL System > Store F
 
 ## Aide de la boutique - Informations sur l’utilisateur
 
-Gérez les profils utilisateur de l’application d’assistance de la boutique depuis les paramètres du système d’administration :  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
+Gérez les profils utilisateur de l’application d’assistance de la boutique à partir des paramètres du système d’administration :  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
 | **Champ** | **Description** | **Portée** | **Obligatoire** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -53,5 +53,5 @@ Gérez les profils utilisateur de l’application d’assistance de la boutique 
 | **[!UICONTROL Role]** | Rôle associé à l’utilisateur | Global | Non |
 | **[!UICONTROL Access to all locations]** | Attribuez aux utilisateurs l’accès à tous les magasins ou sélectionnez des magasins individuellement. | Global | Non |
 | **Paramètres régionaux de l’interface** | Si votre boutique comporte plusieurs langues, définissez Paramètres régionaux de l’interface sur la langue à utiliser pour l’interface d’administration. | Global | Non |
-| **Principal de** | Pour définir une date de début, cliquez sur l&#39;icône de calendrier. | Global | Non |
-| **Principal à** | Définissez la Date d’expiration en cliquant sur l’icône de calendrier. La définition d’une date d’expiration est utile pour configurer des affectations temporaires d’utilisateurs ou de rôles. Après la date d’expiration, l’état du compte utilisateur passe à `Inactive`, mais le compte peut toujours être mis à jour si nécessaire. | Global | Non |
+| **Actif à partir de** | Pour définir une date de début, cliquez sur l&#39;icône de calendrier. | Global | Non |
+| **Actif à** | Définissez la Date d’expiration en cliquant sur l’icône de calendrier. La définition d’une date d’expiration est utile pour configurer des affectations temporaires d’utilisateurs ou de rôles. Après la date d’expiration, l’état du compte utilisateur passe à `Inactive`, mais le compte peut toujours être mis à jour si nécessaire. | Global | Non |

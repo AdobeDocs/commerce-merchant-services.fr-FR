@@ -22,17 +22,17 @@ Si votre vitrine est implémentée à l’aide de PWA Studio, reportez-vous à l
 >
 >Il existe de nombreuses façons de développer une implémentation personnalisée ou sans interface utilisateur graphique. Ce guide décrit une manière de procéder, à l’aide de PWA Studio. Il ne couvre pas tous les scénarios ou toutes les éventualités.
 
-## Confidentialité
+## Privacy
 
 La collecte de données aux fins des recommandations de produits n’inclut aucune information d’identification personnelle (PII). En outre, tous les identifiants d’utilisateur tels que les identifiants de cookie et les adresses IP sont strictement anonymisés. Pour en savoir plus, voir la section [Politique de confidentialité des Adobes](https://www.adobe.com/privacy/policy.html).
 
 ## Recommandations produit et relations produit
 
-Étant donné les complexités sans cesse changeantes des achats en ligne, ce qui fonctionne le mieux pour votre vitrine est souvent une combinaison de plusieurs technologies clés. Utilisation des deux [!DNL Product Recommendations] et [Relations entre les produits](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) vous offre davantage de flexibilité lors de la promotion de produits. Vous pouvez tirer parti de [!DNL Product Recommendations] optimisée par Adobe Sensei pour automatiser intelligemment vos recommandations à grande échelle. Vous pouvez ensuite tirer parti de [Règles de produit connexes](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) lorsque vous devez intervenir manuellement et vous assurer qu’une recommandation spécifique est faite à un segment d’acheteurs cible ou lorsque certains objectifs de l’entreprise doivent être atteints.
+Étant donné les complexités sans cesse changeantes des achats en ligne, ce qui fonctionne le mieux pour votre vitrine est souvent une combinaison de plusieurs technologies clés. En utilisant les deux [!DNL Product Recommendations] et [Relations entre les produits](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) vous offre davantage de flexibilité lors de la promotion de produits. Vous pouvez tirer parti de [!DNL Product Recommendations] optimisée par Adobe Sensei pour automatiser intelligemment vos recommandations à grande échelle. Vous pouvez ensuite tirer parti de [Règles de produit connexes](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) lorsque vous devez intervenir manuellement et vous assurer qu’une recommandation spécifique est faite à un segment d’acheteurs cible ou lorsque certains objectifs de l’entreprise doivent être atteints.
 
 Les recommandations de produits vous permettent d’effectuer les opérations suivantes :
 
-- Choisissez parmi neuf types de recommandations intelligentes distincts, en fonction des domaines suivants : d’achat, basées sur des éléments, basées sur la popularité, les tendances et les similarités ;
+- Faites votre choix parmi neuf types de recommandations intelligentes distinctes, en fonction des domaines suivants : achat, article, popularité, tendance et similarité.
 - Utiliser les données comportementales pour personnaliser les recommandations tout au long du parcours de storefront de l’acheteur
 - Mesurez les mesures clés pertinentes pour chaque recommandation afin de vous aider à comprendre l’impact de vos recommandations.
 

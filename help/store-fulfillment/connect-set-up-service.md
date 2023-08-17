@@ -45,7 +45,7 @@ Pour intégrer Adobe Commerce aux services d’exécution de magasin, vous crée
 
 1. Contactez votre gestionnaire de compte pour terminer la configuration du côté Exécution de magasin et autoriser l’intégration.
 
-1. Activation d’Adobe Commerce [!UICONTROL Consumer Settings] option à [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
+1. Activer Adobe Commerce [!UICONTROL Consumer Settings] option à [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
    - Depuis l’administrateur, accédez à **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
 

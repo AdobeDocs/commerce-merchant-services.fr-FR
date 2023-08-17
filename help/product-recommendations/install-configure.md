@@ -37,13 +37,13 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-En activant [!DNL Product Recommendations] Dans le créateur de pages, vous pouvez ajouter une variable principale existante [unité de recommandation](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) à tout contenu créé dans le Créateur de pages, tel que les pages, les blocs et les blocs dynamiques.
+En activant [!DNL Product Recommendations] dans le créateur de pages, vous pouvez ajouter une [unité de recommandation](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) à tout contenu créé dans le Créateur de pages, tel que les pages, les blocs et les blocs dynamiques.
 
 Voir [Utilisation [!DNL Product Recommendations] avec le contenu du créateur de pages](page-builder.md) pour plus d’informations.
 
 ### Ajout d’un type de recommandation similarité visuelle {#vissimsupport}
 
-Le _similarité visuelle_ le type de recommandation vous permet de déployer une unité de recommandation sur la page des détails du produit qui affiche les produits qui sont [similaire visuellement](type.md#visualsim) au produit consulté. Ce type de recommandation est particulièrement utile lorsque les images et les aspects visuels des produits sont des éléments importants de l’expérience d’achat. Installez le _similarité visuelle_ type de recommandation en exécutant la commande suivante :
+La variable _similarité visuelle_ le type de recommandation vous permet de déployer une unité de recommandation sur la page des détails du produit qui affiche les produits qui sont [similaire visuellement](type.md#visualsim) au produit consulté. Ce type de recommandation est particulièrement utile lorsque les images et les aspects visuels des produits sont des éléments importants de l’expérience d’achat. Installez le _similarité visuelle_ type de recommandation en exécutant la commande suivante :
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -53,7 +53,7 @@ composer require magento/module-visual-product-recommendations
 
 Après avoir installé la variable `magento/product-recommendations` , vous devez configurer la variable [Connecteur Commerce Services](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) en spécifiant les clés d’API et en sélectionnant un espace de données SaaS.
 
-Pour vous assurer que l’exportation de catalogue s’exécute correctement, vérifiez que la variable [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) les tâches et la [indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sont en cours d’exécution et la variable `Product Feed` l’indexeur est défini sur `Update by Schedule`.
+Pour vous assurer que l’exportation de catalogue s’exécute correctement, vérifiez que la variable [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) les tâches et la [indexeurs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sont en cours d’exécution et le `Product Feed` l’indexeur est défini sur `Update by Schedule`.
 
 Lorsque vous parvenez à établir un lien vers Commerce Services par le biais de clés d’API et à spécifier l’espace de données SaaS, la synchronisation du catalogue commence. Vous pouvez alors [verify](verify.md) que les données comportementales sont envoyées à votre storefront.
 
@@ -75,7 +75,7 @@ Pour effectuer une mise à jour vers une version majeure, telle que de la versio
 }
 ```
 
-Reprenons la version majeure de `3.0` to `4.0`:
+Revenons à la version majeure de `3.0` to `4.0`:
 
 ```json
 "require": {
@@ -103,7 +103,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## pare-feu
 
-Pour laisser Recommendations de produit passer par un pare-feu, ajoutez `commerce.adobe.io` à la liste autorisée.
+Pour laisser le Recommendations de produit passer par un pare-feu, ajoutez `commerce.adobe.io` à la liste autorisée.
 
 ## Désinstaller [!DNL Product Recommendations] {#uninstall}
 

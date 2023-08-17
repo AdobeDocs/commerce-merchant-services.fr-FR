@@ -45,7 +45,7 @@ Les clés d’API de production et d’environnement de test sont générées à
 
 1. Connectez-vous à [!DNL Commerce] compte à l’adresse [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
 
-1. Sous , **Magento** onglet, sélectionnez **Portail d’API** dans la barre latérale.
+1. Sous , **Magento** onglet, sélectionnez **Portail API** dans la barre latérale.
 
 1. Dans la _Environnement_ menu, sélectionnez **Production** ou **Sandbox**.
 
@@ -63,11 +63,11 @@ Les clés d’API de production et d’environnement de test sont générées à
 
 1. Répétez les étapes ci-dessus pour chaque environnement (production et environnement de test).
 
-   Le **Clés API** affiche désormais vos clés d’API. Vous avez besoin des clés de production et d’environnement de test lorsque vous [sélectionner ou créer un projet SaaS ;](#createsaasenv).
+   La variable **Clés API** affiche désormais vos clés d’API. Vous avez besoin des clés de production et d’environnement de test lorsque vous [sélectionner ou créer un projet SaaS ;](#createsaasenv).
 
 ## Configuration SaaS {#saasenv}
 
-[!DNL Commerce] Les instances doivent être configurées avec un projet SaaS et un espace de données SaaS afin que [!DNL Commerce Services] peut envoyer des données à l’emplacement approprié. Un projet SaaS regroupe tous les espaces de données SaaS. Les espaces de données SaaS sont utilisés pour collecter et stocker des données qui permettent [!DNL Commerce Services] au travail. Certaines de ces données peuvent être exportées à partir de la variable [!DNL Commerce] et certains peuvent être collectés à partir du comportement de l’acheteur sur le storefront. Ces données sont ensuite conservées pour sécuriser l’espace de stockage dans le cloud.
+[!DNL Commerce] Les instances doivent être configurées avec un projet SaaS et un espace de données SaaS afin que [!DNL Commerce Services] peut envoyer des données à l’emplacement approprié. Un projet SaaS regroupe tous les espaces de données SaaS. Les espaces de données SaaS sont utilisés pour collecter et stocker des données qui activent [!DNL Commerce Services] au travail. Certaines de ces données peuvent être exportées à partir de la variable [!DNL Commerce] et certains peuvent être collectés à partir du comportement de l’acheteur sur le storefront. Ces données sont ensuite conservées pour sécuriser l’espace de stockage dans le cloud.
 
 Pour [!DNL Product Recommendations], l’espace de données SaaS contient des données de catalogue et des données comportementales. Vous pouvez pointer une [!DNL Commerce] à un espace de données SaaS en [la sélectionner](https://docs.magento.com/user-guide/configuration/services/saas.html) dans le [!DNL Commerce] configuration.
 
@@ -79,7 +79,7 @@ Pour [!DNL Product Recommendations], l’espace de données SaaS contient des do
 
 >[!NOTE]
 >
-> Si vous ne voyez pas l’événement **[!UICONTROL Commerce Services Connector]** dans la section [!DNL Commerce] configuration, vous devez installer le [!DNL Commerce] modules pour répondre à vos besoins [[!DNL Commerce] service](#availableservices).
+> Si vous ne voyez pas le **[!UICONTROL Commerce Services Connector]** dans la section [!DNL Commerce] configuration, vous devez installer le [!DNL Commerce] modules pour répondre à vos besoins [[!DNL Commerce] service](#availableservices).
 
 Pour sélectionner ou créer un projet SaaS, demandez la variable [!DNL Commerce] Clé API de [!DNL Commerce] détenteur de licence pour votre boutique.
 
@@ -93,19 +93,19 @@ Pour sélectionner ou créer un projet SaaS, demandez la variable [!DNL Commerce
 
 Tous les projets SaaS associés à vos clés apparaissent dans le **Projet** dans le champ **Identifiant SaaS** .
 
-1. S’il n’existe aucun projet SaaS, cliquez sur **Créer un projet**. Ensuite, dans le **Projet** , saisissez un nom pour votre projet SaaS.
+1. Si aucun projet SaaS n’existe, cliquez sur **Créer un projet**. Ensuite, dans le **Projet** , saisissez un nom pour votre projet SaaS.
 
    Lorsque vous créez un projet SaaS, [!DNL Commerce] génère un ou plusieurs espaces de données SaaS en fonction de votre [!DNL Commerce] license :
    - Adobe Commerce : un espace de données de production ; deux espaces de données de test
    - Magento Open Source : un espace de données de production ; aucun espace de données de test
 
-1. Sélectionnez la **Espace de données** à utiliser pour la configuration actuelle de votre [!DNL Commerce] magasin.
+1. Sélectionnez la variable **Espace de données** à utiliser pour la configuration actuelle de votre [!DNL Commerce] magasin.
 
 >[!WARNING]
 >
 > Si vous générez de nouvelles clés dans la section Portail API de Mon compte, mettez immédiatement à jour les clés API dans la configuration Admin. Si vous générez de nouvelles clés sans les mettre à jour dans l’Admin, vos extensions SaaS ne fonctionnent plus et vous perdez des données importantes.
 
-Pour modifier les noms de projet ou d’espace de données SaaS, cliquez sur **Renommer**.
+Pour modifier les noms des projets ou espaces de données SaaS, cliquez sur **Renommer**.
 
 ## Organisation IMS (facultatif) {#organizationid}
 

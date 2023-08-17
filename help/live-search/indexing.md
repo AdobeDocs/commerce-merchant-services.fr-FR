@@ -17,9 +17,9 @@ Les propriétés d’attribut de produit (métadonnées) déterminent :
 * Son apparence et son comportement dans le magasin
 * Données incluses dans les opérations de transfert de données
 
-La portée des métadonnées d’attribut est la suivante : `website/store/store view`.
+La portée des métadonnées d’attribut est `website/store/store view`.
 
-Le [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit qui possède la variable [storefront, propriété](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` défini sur `Yes` dans l’administrateur Adobe Commerce. Lorsqu’elle est activée, `Search Weight` et `Visible in Advanced Search` peut être défini pour l’attribut .
+La variable [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit qui possède la variable [storefront, propriété](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` défini sur `Yes` dans l’administrateur Adobe Commerce. Lorsqu’elle est activée, `Search Weight` et `Visible in Advanced Search` peut être défini pour l’attribut .
 
 [!DNL Live Search] n’indexe pas les produits supprimés ou ceux définis sur `Not Visible Individually`.
 
@@ -64,16 +64,16 @@ Une fois l’index initial créé pendant la [intégration](install.md#synchroni
 * Nouveaux produits ajoutés au catalogue
 * Modifications des valeurs d’attribut de produit
 
-Par exemple, l’ajout d’une nouvelle valeur d’échantillon à la variable `color` est géré comme une mise à jour de produit par flux.
+Par exemple, l’ajout d’une nouvelle valeur d’échantillon au `color` est géré comme une mise à jour de produit par flux.
 Workflow de mise à jour en flux continu :
 
 1. Les produits mis à jour sont synchronisés de l’instance Adobe Commerce vers le service de catalogue.
-1. Le service d’indexation recherche en permanence les mises à jour de produit à partir du service de catalogue. Les produits mis à jour sont indexés au fur et à mesure qu’ils arrivent dans le service de catalogue.
+1. Le service d’indexation recherche en permanence les mises à jour de produit à partir du service de catalogue. Les produits mis à jour sont indexés à leur arrivée dans le service de catalogue.
 1. La disponibilité d’une mise à jour de produit dans peut prendre jusqu’à 15 minutes. [!DNL Live Search].
 
 ## Recherche de client
 
-Le [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit triable en définissant la variable [storefront, propriété](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Utilisé pour le tri dans les listes de produits* to `Yes`. En fonction du thème, ce paramètre entraîne l’inclusion de l’attribut comme option dans la variable [Tri par](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) contrôle de pagination sur les pages du catalogue. Jusqu’à 200 attributs de produit peuvent être indexés par [!DNL Live Search], avec [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) qui peuvent faire l’objet de recherches et être filtrées.
+La variable [!DNL Live Search] L’API permet à un client de trier selon n’importe quel attribut de produit triable en définissant la variable [storefront, propriété](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Utilisé pour le tri dans les listes de produits* to `Yes`. En fonction du thème, ce paramètre entraîne l’inclusion de l’attribut comme option dans la variable [Tri par](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) contrôle de pagination sur les pages du catalogue. Jusqu’à 200 attributs de produit peuvent être indexés par [!DNL Live Search], avec [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) qui peuvent faire l’objet de recherches et être filtrées.
 Les métadonnées d’index sont stockées dans le pipeline d’indexation et sont accessibles par le service de recherche.
 
 ![[!DNL Live Search] diagramme de l’API des métadonnées d’index](assets/index-metadata-api.svg)

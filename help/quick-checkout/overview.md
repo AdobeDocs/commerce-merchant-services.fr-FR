@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Quick Checkout] pour Adobe Commerce"
-description: "Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."
+description: "Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension."
 exl-id: 6f205568-18af-4f2f-827c-b46f04e0a10a
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] pour Adobe Commerce
 
-Le [!DNL Quick Checkout] pour l’extension Adobe Commerce, une expérience de passage en caisse transparente a été conçue pour convertir les clients invités uniques en titulaires de compte fidèles. Les acheteurs attendent une expérience de shopping rapide. Et pourtant, les frictions dans le passage en caisse restent une des principales raisons pour lesquelles les acheteurs ne terminent pas leur achat. Lorsque vous rationalisez votre passage en caisse et améliorez votre taux de conversion, vous êtes libre de vous concentrer sur des éléments ayant un réel impact.
+La variable [!DNL Quick Checkout] pour l’extension Adobe Commerce, une expérience de passage en caisse transparente a été conçue pour convertir des clients invités uniques en titulaires de compte fidèles. Les acheteurs attendent une expérience de shopping rapide. Et pourtant, les frictions dans le passage en caisse restent une des principales raisons pour lesquelles les acheteurs ne terminent pas leur achat. Lorsque vous rationalisez votre passage en caisse et améliorez votre taux de conversion, vous êtes libre de vous concentrer sur des éléments ayant un réel impact.
 
 Ce guide présente une vue d’ensemble de l’expérience de passage en caisse standard d’Adobe Commerce et explique comment la variable [!DNL Quick Checkout] avantages et bonnes pratiques à suivre le long de ce parcours.
 
-Le [!DNL Quick Checkout] pour l’extension Adobe Commerce, vise à améliorer cette expérience de passage en caisse. Reportez-vous à la section [intégration](../quick-checkout/onboarding.md) rubrique pour plus d’informations sur la configuration de la variable [!DNL Quick Checkout] pour Adobe Commerce.
+La variable [!DNL Quick Checkout] pour l’extension Adobe Commerce, vise à améliorer cette expérience de passage en caisse. Voir [intégration](../quick-checkout/onboarding.md) rubrique pour plus d’informations sur la configuration de la variable [!DNL Quick Checkout] pour Adobe Commerce.
 
 Vérifiez les [page de passage en caisse](../quick-checkout/checkout-page.md) pour plus d’informations sur le traitement d’une commande avec la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce.
 

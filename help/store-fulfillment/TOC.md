@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Informations détaillées sur l’installation, la configuration et l’utilisation de l’exécution de magasin pour les magasins Adobe Commerce.
-breadcrumb-title: Exécution de la boutique pour Adobe Commerce
+breadcrumb-title: Traitement des commandes en magasin pour Adobe Commerce
 index: true
 feature: Shipping/Delivery
 role: Admin, User
@@ -9,12 +9,12 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Exécution de la boutique pour Commerce {#store-fulfillment}
+# Traitement des commandes en magasin pour  Commerce {#store-fulfillment}
 
 - [Présentation du guide](guide-overview.md)
 - [Introduction à [!DNL Store Fulfillment]](introduction.md)

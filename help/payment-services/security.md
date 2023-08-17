@@ -46,7 +46,7 @@ Si vous êtes un commerçant de l’UE ou de Grande-Bretagne où la conformité 
 
 Les commandes passées pour l’acheteur par le vendeur ou le personnel du magasin ne sont pas configurées avec des mesures de conformité 3DS.
 
-Voir [3DS dans les paramètres](settings.md#3ds) pour plus d’informations.
+Voir [Paramètres 3DS](settings.md#3ds) pour plus d’informations.
 
 ### Valorisation des cartes
 
@@ -60,4 +60,4 @@ Avec les boutons PayPal Smart, aucune donnée PCI n’est transmise à vos servi
 
 Pour des raisons de sécurité, PayPal ne transmet pas l’adresse de facturation lors du passage en caisse : le pays, l’email et le nom sont les seules informations de facturation utilisées. Vous pouvez éventuellement activer le passage en caisse PayPal de votre site pour renvoyer l’adresse de facturation complète en contactant PayPal et en effectuant un processus de vérification.
 
-PayPal dispose également d&#39;une protection intégrée contre les fraudes qui utilise l&#39;apprentissage automatique pour vous aider à combattre la fraude. Voir PayPal [Documentation sur la protection des revendeurs](https://www.paypal.com/us/webapps/mpp/security/seller-protection) pour plus d’informations.
+PayPal dispose également d&#39;une protection intégrée contre les fraudes qui utilise l&#39;apprentissage automatique pour vous aider à lutter contre les fraudes. Voir PayPal [Documentation sur la protection des revendeurs](https://www.paypal.com/us/webapps/mpp/security/seller-protection) pour plus d’informations.

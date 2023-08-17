@@ -34,7 +34,7 @@ Dans la référence de configuration de chaque type, les détails de configurati
 
 - **Description** fournit des détails importants sur l’objectif et le comportement du champ ;
 
-- **Portée** indique la portée de la configuration Adobe Commerce pour le paramètre (global, site web, magasin).
+- **Portée** indique la portée de la configuration Adobe Commerce pour le paramètre (global, site web, magasin)
 
 - **Obligatoire** indique si une valeur doit être définie sur le champ.
 

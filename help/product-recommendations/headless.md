@@ -54,4 +54,4 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
 
 1. Une fois les données comportementales collectées, vous pouvez [create](create.md) [!DNL Product Recommendations] dans Admin.
 
-1. Utilisez la variable [SDK Recommendations](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandations sur le storefront. Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.
+1. Utilisez la variable [SDK RECOMMENDATIONS](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandations sur le storefront. Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.

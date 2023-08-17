@@ -58,7 +58,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 <td>Non</td>
 </tr>
 <tr>
-<td><strong>Commande prête pour l’expéditeur d’emails de ramassage</strong></td>
+<td><strong>Commande prête pour l’expéditeur d’emails de récupération</strong></td>
 <td>Identité de l’expéditeur utilisée lors de l’envoi de la notification électronique.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
@@ -257,7 +257,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </thead>
 <tbody><tr>
 <td><strong>Activé</strong></td>
-<td>Cet email est envoyé au client pour l'informer qu'une partie de sa commande a été annulée dans la boutique. Définissez sur . <code>No</code> pour désactiver la notification électronique. Si le modèle d'email est désactivé, cela n'empêche pas l'annulation partielle d'une commande.</td>
+<td>Cet email est envoyé au client pour l'informer qu'une partie de sa commande a été annulée dans la boutique. Définissez sur . <code>No</code> pour désactiver la notification électronique. Si le modèle d'email est désactivé, une commande n'est pas partiellement annulée.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -312,7 +312,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </thead>
 <tbody><tr>
 <td><strong>Commande possède un expéditeur de produits Expédier</strong></td>
-<td>Courrier électronique envoyé au personnel marchand spécifié sous la forme d’un rapport agrégé de toutes les commandes ouvertes qui ne peuvent pas être sélectionnées dans un magasin marchand tant que leur inventaire n’est pas disponible. </br></br> Les vendeurs peuvent utiliser ce rapport pour lancer et gérer les transferts d’inventaire ou le réapprovisionnement de magasin à magasin. </br></br>Cette notification s’applique uniquement lorsque la variable [!DNL Ship-to-Store] sont activées.
+<td>Courrier électronique envoyé au personnel marchand spécifié sous la forme d’un rapport agrégé de toutes les commandes ouvertes qui ne peuvent pas être sélectionnées dans un magasin marchand tant que leur inventaire n’est pas disponible. </br></br> Les vendeurs peuvent utiliser ce rapport pour lancer et gérer les transferts d’inventaire ou le réapprovisionnement de magasin à magasin. </br></br>Cette notification s’applique uniquement lorsque la variable [!DNL Ship-to-Store] Les fonctions sont activées.
 </br></br>Ce libellé n’a aucune incidence sur l’opérateur de livraison sélectionné ni sur les étiquettes de méthode de livraison disponibles.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>

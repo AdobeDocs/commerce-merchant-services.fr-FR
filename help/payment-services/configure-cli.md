@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Après l’installation [!DNL Payment Services], vous pouvez facilement la configurer à partir de [dans la maison](payments-home.md) ou via l’interface de ligne de commande.
 
-## Configurer l’exportation des données
+## Configuration de l’exportation des données
 
-[!DNL Payment Services] combine les données de commande exportées depuis [!DNL Magento Open Source] et [!DNL Adobe Commerce] avec des données de paiement agrégées provenant des fournisseurs de paiement afin de créer des rapports utiles. Le [!DNL Payment Services] l’extension utilise des indexeurs pour collecter efficacement toutes les données nécessaires aux rapports.
+[!DNL Payment Services] combine les données de commande exportées depuis [!DNL Magento Open Source] et [!DNL Adobe Commerce] avec des données de paiement agrégées provenant des fournisseurs de paiement afin de créer des rapports utiles. La variable [!DNL Payment Services] l’extension utilise des indexeurs pour collecter efficacement toutes les données nécessaires aux rapports.
 
 Pour en savoir plus sur les données utilisées dans [!DNL Payment Services] reporting, voir [Rapport d’état des paiements de commande](order-payment-status.md#data-used-in-the-report).
 
@@ -54,7 +54,7 @@ Pour en savoir plus sur la modification manuelle du mode d’un indexeur, voir [
 
 Vous pouvez réindexer manuellement les données au lieu d’attendre qu’elles se produisent automatiquement. Voir [Reindex](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} pour plus d’informations.
 
-When `BY SCHEDULE` est défini, le système effectue le suivi des entités modifiées et la tâche cron met à jour l’index pour ces entités selon une planification définie. Voir [Exécutez cron à partir de la ligne de commande](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Configuration et exécution de cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) pour savoir comment déclencher manuellement l’indexation à l’aide de tâches cron.
+When `BY SCHEDULE` est défini, le système effectue le suivi des entités modifiées et la tâche cron met à jour l’index pour ces entités selon une planification définie. Voir [Exécutez cron depuis la ligne de commande](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Configuration et exécution de cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) pour savoir comment déclencher manuellement l’indexation à l’aide de tâches cron.
 
 ### Envoi de données réindexées au service de paiement
 
@@ -71,7 +71,7 @@ Utilisez les options de commande suivantes :
 | `bin/magento saas:resync --feed [feedName]` | Réindexation du flux spécifié et envoi au service correspondant |
 | `bin/magento saas:resync --no-reindex` | Ignore l’indexation et envoie des données non synchronisées à partir des index. |
 
-Le `--feed` vous permet de spécifier le flux à envoyer :
+La variable `--feed` vous permet de spécifier le flux à envoyer :
 
 | Flux | Description |
 |  ---  |  ---  |

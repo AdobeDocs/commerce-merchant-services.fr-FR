@@ -28,10 +28,10 @@ Procédez comme suit :
 
 1. Choisissez la méthode d’intégration qui répond à vos besoins et suivez les instructions.
 
-   * [Méthode 1](#method-1): Installer sans [!DNL Elasticsearch]
-   * [Méthode 2](#method-2): Installer avec [!DNL Elasticsearch] (Pas d’interruption)
+   * [Méthode 1](#method-1): installation sans [!DNL Elasticsearch]
+   * [Méthode 2](#method-2): installation avec [!DNL Elasticsearch] (Pas d’interruption)
 
-## Méthode 1 : Installation sans Elasticsearch {#method-1}
+## Méthode 1 : installation sans Elasticsearch {#method-1}
 
 Cette méthode d’intégration est recommandée lors de l’installation de [!DNL Live Search] à un :
 
@@ -74,17 +74,17 @@ Dans ce scénario, les opérations de storefront sont interrompues pendant que l
    * Flux de variante de produit
    * Flux d’attributs du catalogue
 
-1. Configurez [Clés API](#configure-api-keys) et vérifier que les données de votre catalogue sont [synchronisé](#synchronize-catalog-data) avec [!DNL Live Search] services.
+1. Configurez vos [Clés API](#configure-api-keys) et vérifier que les données de votre catalogue sont [synchronisé](#synchronize-catalog-data) avec [!DNL Live Search] services.
 
-1. Pour rendre les facettes disponibles en tant que filtres dans le storefront, ajoutez le [facettes](facets-add.md) vous avez besoin, selon les [configuration requise](facets.md).
+1. Pour rendre les facettes disponibles en tant que filtres dans le storefront, ajoutez le [facettes](facets-add.md) vous avez besoin, en fonction des [configuration requise](facets.md).
 
-   Vous devriez être en mesure d’ajouter des facettes après `cron` exécute les flux d’attributs et exporte les métadonnées d’attribut.
+   Vous devriez pouvoir ajouter des facettes après `cron` exécute les flux d’attributs et exporte les métadonnées d’attribut.
 
 1. Patientez au moins une heure après `cron` s’exécute pour synchroniser les données. Alors, [verify](#verify-export) que les données ont été exportées.
 
 1. [Test](#test-the-connection) la connexion depuis le storefront.
 
-## Méthode 2 : Installation avec Elasticsearch {#method-2}
+## Méthode 2 : installation avec Elasticsearch {#method-2}
 
 >[!IMPORTANT]
 >
@@ -122,18 +122,18 @@ Dans ce scénario, [!DNL Elasticsearch] gère temporairement les requêtes de re
    * Flux de variante de produit
    * Flux d’attributs du catalogue
 
-1. Configurez [Clés API](#configure-api-keys) et vérifier que les données de votre catalogue sont [synchronisé](#synchronize-catalog-data) avec [!DNL Live Search] services.
+1. Configurez vos [Clés API](#configure-api-keys) et vérifier que les données de votre catalogue sont [synchronisé](#synchronize-catalog-data) avec [!DNL Live Search] services.
 
-1. Pour rendre les facettes disponibles en tant que filtres dans le storefront, ajoutez le [facettes](facets-add.md) vous avez besoin, selon les [configuration requise](facets.md).
+1. Pour rendre les facettes disponibles en tant que filtres dans le storefront, ajoutez le [facettes](facets-add.md) vous avez besoin, en fonction des [configuration requise](facets.md).
 
-   Vous devriez être en mesure d’ajouter des facettes après `cron` exécute les flux de produit et d’attribut et exporte les métadonnées d’attribut vers [!DNL Live Search] services.
+   Vous devriez pouvoir ajouter des facettes après `cron` exécute les flux de produit et d’attribut et exporte les métadonnées d’attribut vers [!DNL Live Search] services.
 
 1. Patientez au moins une heure pour que les données soient indexées et synchronisées. Ensuite, utilisez le [Jeu GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) avec la requête par défaut pour vérifier les éléments suivants :
 
    * Le nombre de produits renvoyé est proche de ce que vous attendez pour la vue de magasin.
    * Les facettes sont renvoyées.
 
-1. Exécutez les commandes suivantes pour activer [!DNL Live Search] modules, désactiver [!DNL Elasticsearch]et exécutez `setup`.
+1. Exécutez les commandes suivantes pour activer [!DNL Live Search] modules, désactiver [!DNL Elasticsearch], puis exécutez `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
@@ -185,7 +185,7 @@ Après la synchronisation initiale, il peut s’écouler jusqu’à 15 minutes a
 
 Dans le storefront, vérifiez les éléments suivants :
 
-* Le [!UICONTROL Search] la zone renvoie les résultats correctement
+* La variable [!UICONTROL Search] la zone renvoie les résultats correctement
 * La navigation dans les catégories renvoie correctement les résultats.
 * Les facettes sont disponibles sous forme de filtres sur les pages de résultats de recherche.
 
@@ -211,7 +211,7 @@ Pour mettre à jour [!DNL Live Search], exécutez les opérations suivantes à p
 composer update magento/live-search --with-dependencies
 ```
 
-Pour effectuer une mise à jour vers une version majeure, telle que de la version 2.0.0 à la version 3.0.1, modifiez la racine du projet. [!DNL Composer] `.json` comme suit :
+Pour effectuer une mise à jour vers une version majeure, telle que de 2.0.0 à 3.0.1, modifiez la racine du projet. [!DNL Composer] `.json` comme suit :
 
 1. Si votre `magento/live-search` version est `2.0.3` ou version inférieure et que vous effectuez une mise à niveau vers la version `3.0.0` ou supérieur, exécutez la commande suivante avant la mise à niveau :
 

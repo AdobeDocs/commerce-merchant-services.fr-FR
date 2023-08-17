@@ -1,5 +1,5 @@
 ---
-title: Configuration du processus en arrière-plan
+title: Configuration du processus d’arrière-plan
 description: "Configuration des plannings pour [!DNL Store Fulfillment] processus d’arrière-plan utilisés pour synchroniser les données avec les services d’exécution."
 role: Admin, Developer
 level: Intermediate
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Configuration du processus en arrière-plan
+# Configuration du processus d’arrière-plan
 
 L’intégration d’exécution de magasin utilise des processus en arrière-plan et des files d’attente de messages pour des performances et une échelle optimales. Créez des environnements pour vos magasins Adobe Commerce à l’aide de [variables de déploiement](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) qui démarre automatiquement [exécuteurs de file d’attente des messages](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html).
 

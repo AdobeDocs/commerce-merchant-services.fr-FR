@@ -48,4 +48,4 @@ Les responsables du projet qui ne respectent pas ou n’appliquent pas de bonne 
 
 ## Attribution
 
-Ce code de conduite est adapté à partir de la variable [Convention du contributeur](https://www.contributor-covenant.org/), version 1.4, disponible à l’adresse [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).
+Ce code de conduite est adapté à partir de la [Convention du contributeur](https://www.contributor-covenant.org/), version 1.4, disponible à l’adresse [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).

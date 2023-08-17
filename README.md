@@ -56,5 +56,5 @@ Tous les articles de ce référentiel utilisent GitHub Flavored Markdown. Si vou
 
 Dans le référentiel public, des étiquettes automatisées sont attribuées aux demandes d’extraction afin de nous aider à gérer le workflow de demande d’extraction et de vous aider à savoir ce qui se passe avec votre demande d’extraction :
 
-* **Modification envoyée à l’auteur**: L’auteur a été informé de la demande d’extraction en attente.
-* **ready-to-merge**: Prêt à être examiné par notre équipe d’examen des demandes d’extraction.
+* **Modification envoyée à l’auteur**: l’auteur a été informé de la demande d’extraction en attente.
+* **ready-to-merge**: prêt à être analysé par notre équipe d’examen des demandes d’extraction.

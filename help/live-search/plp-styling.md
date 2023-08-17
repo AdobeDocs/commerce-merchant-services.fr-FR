@@ -1,7 +1,8 @@
 ---
 title: Widget de page de liste de produits
-description: "Activation et définition de style de la variable [!DNL Live Search Product Listing Page Widget]"
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+description: Activation et définition de style de la variable [!DNL Live Search Product Listing Page Widget]
+exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Widget de page de liste de produits
 
-Le [!DNL Live Search Product Listing Page Widget] (PLP) utilise la plateforme Commerce Services pour fournir une page de liste de produits performante, indexable et facettable. Cette rubrique décrit comment activer et mettre en forme le widget PLP.
+La variable [!DNL Live Search Product Listing Page Widget] (PLP) utilise la plateforme Commerce Services pour fournir une page de liste de produits performante, indexable et facettable. Cette rubrique décrit comment activer et mettre en forme le widget PLP.
 
 ## Activation du widget PLP
 
@@ -26,7 +27,7 @@ Vous pouvez personnaliser l’aspect du widget PLP pour qu’il corresponde à v
 
 >[!NOTE]
 >
->Les éléments avec des classes personnalisées dans un thème Adobe Commerce ne sont pas hérités. Ces éléments doivent être ciblés par leur classe spécifique pour correspondre aux classes personnalisées. Les classes d’action Principales ne fonctionneront pas sur un bouton de widget.
+>Les éléments avec des classes personnalisées dans un thème Adobe Commerce ne sont pas hérités. Ces éléments doivent être ciblés par leur classe spécifique pour correspondre aux classes personnalisées ; les classes d’action principales ne fonctionneront pas sur un bouton de widget.
 >Les éléments ciblés génériques dans le CSS seront hérités ; `button` s’applique aux boutons de widget.
 
 Les divisions en surbrillance contiennent la classe cible `ds-sdk-product-item__product-name`.
@@ -47,8 +48,8 @@ Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscu
 
 ### Liste de produits
 
-* `.ds-sdk-product-list`: Div externe
-* `.ds-sdk-product-list__grid`: Div interne
+* `.ds-sdk-product-list`: div externe
+* `.ds-sdk-product-list__grid`: div interne
 
 ![Pagination](assets/plp-css-product-list.png)
 
@@ -68,17 +69,17 @@ Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscu
 
 ### Widgets
 
-* `.ds-widgets`: Div externe
-* `.ds-widgets__actions`: Diviseur interne du côté gauche
-* `.ds-widgets__results`: Diviseur interne du côté droit
+* `.ds-widgets`: div externe
+* `.ds-widgets__actions`: div interne du côté gauche
+* `.ds-widgets__results`: div interne du côté droit
 
 ![Résultats du widget](assets/plp-css-widgets.png)
 
-### Liste déroulante Trier
+### Menu déroulant Trier
 
 * `.ds-sdk-sort-dropdown`
 
-![Liste déroulante Trier](assets/plp-css-dropdown.png)
+![Menu déroulant Trier](assets/plp-css-dropdown.png)
 
 * `.ds-sdk-sort-dropdown__button`
 
@@ -98,7 +99,7 @@ Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscu
 
 * `.ds-sdk-sort-dropdown__items--item-active`
 
-![Principale sélection de liste déroulante](assets/plp-css-dropdown-active.png)
+![Liste déroulante de sélection active](assets/plp-css-dropdown-active.png)
 
 ### Facettes
 

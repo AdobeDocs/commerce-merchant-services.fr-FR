@@ -10,9 +10,9 @@ ht-degree: 0%
 
 ---
 
-# Un utilisateur Adobe Commerce existant : Fonctionnement
+# Un utilisateur Adobe Commerce existant : son fonctionnement
 
-Un utilisateur Adobe Commerce existant peut sélectionner des informations d’expédition et de paiement enregistrées lors du placement d’une commande avec la variable [!DNL Quick Checkout] pour une expérience de passage en caisse plus rapide.
+Un utilisateur Adobe Commerce existant peut sélectionner des informations d’expédition et de paiement enregistrées lors du placement d’une commande avec la variable [!DNL Quick Checkout] pour accélérer le passage en caisse.
 
 Lorsqu’un acheteur saisit son adresse électronique au moment de l’extraction, la variable [!DNL Quick Checkout] valide et trouve un [!DNL Bolt] compte .
 
@@ -24,7 +24,7 @@ Si une [!DNL Bolt] compte trouvé lors du passage en caisse, les clients peuvent
 
 1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique ou mobile du compte, en fonction des [préférences de l’utilisateur dans la variable [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Fenêtre contextuelle OTP](assets/new-logo-otp-email.png)
+![pop-up OTP](assets/new-logo-otp-email.png)
 
 1. Une fois connecté avec votre [!DNL Bolt] , les détails sont automatiquement ajoutés :
 
@@ -43,7 +43,7 @@ Si vous rencontrez des problèmes lorsque vous passez une commande en tant qu’
 
 ## Connexion automatique
 
-Le composant Connexion automatique détecte lorsqu’un acheteur dispose d’une session de vidage principale et connecte automatiquement l’acheteur. Cela permet d’ignorer les étapes de détection de compte et de code de passe unique (OTP), car l’acheteur les a terminées au cours d’une session précédente.
+Le composant Connexion automatique détecte lorsqu’un acheteur dispose d’une session de blocage active et connecte automatiquement l’acheteur. Cela permet d’ignorer les étapes de détection de compte et de code de passe unique (OTP), car l’acheteur les a terminées au cours d’une session précédente.
 
 Il est possible de configurer une connexion automatique pour [!DNL Quick Checkout] utilisateurs. Vous pouvez activer une configuration pour vous connecter automatiquement à un utilisateur lors de l’extraction.
 
@@ -63,6 +63,6 @@ Si non [!DNL Bolt] est trouvé, les acheteurs continuent de passer en caisse Ado
 - Informations sur l’expédition et la facturation
 - Mode de livraison
 - Vérification du mode de paiement
-- L’option d’enregistrement dans [!DNL Bolt] pour des passages en caisse plus rapides avant de placer la commande. L’acheteur peut accepter les conditions générales pour créer sa [!DNL Bolt] compte .
+- L’option d’enregistrement dans [!DNL Bolt] pour des passages en caisse plus rapides avant que la commande ne s’affiche. L’acheteur peut accepter les conditions générales pour créer sa [!DNL Bolt] compte .
 
   ![Mémoriser [!DNL Bolt]](assets/checkbox-remember-bolt.png)

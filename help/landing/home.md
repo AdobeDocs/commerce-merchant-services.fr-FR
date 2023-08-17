@@ -57,8 +57,8 @@ Voir [nouveautés de notre documentation](whats-new.md) ou [notes de mise à jou
     </tr>
 <tr>
   <td valign="top" width="200px">
-    <img alt="Passage en caisse rapide" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Passage en caisse rapide</strong></a>  <br><em>(Disponible pour Magento Open Source)</em>
+    <img alt="Achat rapide" src="assets/quick-checkout.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Achat rapide</strong></a>  <br><em>(Disponible pour Magento Open Source)</em>
     <div>Convertissez des acheteurs ponctuels en titulaires de comptes fidèles en offrant une expérience d’achat rapide et intuitive.</div>
   </td>
     </tr>

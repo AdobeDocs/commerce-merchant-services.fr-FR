@@ -1,6 +1,6 @@
 ---
 title: "À l’intégration de [!DNL Quick Checkout] pour l’extension Adobe Commerce"
-description: "Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension avec succès."
+description: "Découvrez comment [!DNL Quick Checkout] pourrait bénéficier à votre instance Adobe Commerce et comment intégrer et configurer l’extension."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
@@ -14,22 +14,22 @@ ht-degree: 0%
 
 Pour commencer à utiliser la méthode [!DNL Quick Checkout] pour l’extension Adobe Commerce, vous devez suivre quelques étapes d’intégration afin de connecter votre instance à notre fonctionnalité de passage en caisse.
 
-![Passage en caisse rapide](assets/overview-admin-panel.png)
+![Achat rapide](assets/overview-admin-panel.png)
 
-1. [Obtenir l’extension](#get-extension).
+1. [Get extension](#get-extension).
 1. [Création d’un compte commercial de production ou d’environnement de test avec [!DNL Bolt]](#create-account-with-bolt). Fournissez toutes les informations requises pour vérifier votre identité.
 1. [Fournissez les [!DNL API Key] et [!DNL Publishable Key]](#obtain-api-credentials) généré dans [!DNL Bolt].
-1. [Configurez un fournisseur de paiement dans la variable [!DNL Bolt] account](#configure-payment-providers).
+1. [Configurez un fournisseur de paiement dans [!DNL Bolt] account](#configure-payment-providers).
 1. [Définir la liste déroulante Activer sur Oui](#enable-extension) pour activer l’extension.
 1. [Définition des paramètres du service](#complete-admin-configuration) pour configurer la variable [!DNL Quick Checkout] extension .
 1. [Cliquez sur Enregistrer la configuration .](#enable-live-quick-checkout) pour activer l’extension.
 1. Basculer l’étendue vers **Site web principal** et [Cliquez sur Configurer l’URL de rappel .](#check-shopper-valid-account) bouton .
 
-Si Gainsight est activé, il déclenche la variable **Visitez le site** dans votre [!DNL Quick Checkout] Panneau d’administration à propos [!DNL Quick Checkout] pour Adobe Commerce :
+Si Gainsight est activé, il déclenche la variable **Visitez** dans votre [!DNL Quick Checkout] Panneau d’administration à propos [!DNL Quick Checkout] pour Adobe Commerce :
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Avancé :
 
-   ![Passage en caisse rapide](assets/gainsight-admin.png)
+   ![Achat rapide](assets/gainsight-admin.png)
 
 Si Gainsight n’est pas activé, passez aux étapes d’intégration.
 
@@ -47,29 +47,29 @@ Pour utiliser la variable [!DNL Quick Checkout], les éléments suivants doivent
 - Compte Marchand et Production dans [!DNL Bolt]
 - API et [!DNL Publishable key] généré dans [!DNL Bolt]
 
-Reportez-vous à la section [conditions préalables](../quick-checkout/prerequisites.md) pour plus d’informations.
+Voir [conditions préalables](../quick-checkout/prerequisites.md) pour plus d’informations.
 
-Voir [Informations d’identification de l’API](#obtain-api-credentials) pour savoir comment créer ou accéder à votre [!DNL API keys] pour votre instance.
+Voir [Informations d’identification API](#obtain-api-credentials) pour savoir comment créer ou accéder à votre [!DNL API keys] pour votre instance.
 
-## Obtenir l’extension
+## Get extension
 
 Voir [install](../quick-checkout/install.md) rubrique pour obtenir des informations détaillées sur l’obtention de l’extension.
 
 ## Créer un compte avec [!DNL Bolt]
 
-Avant de configurer le [!DNL Quick Checkout] dans votre administrateur Adobe Commerce, vous devez créer une [sandbox](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  comptes commerciaux dans [!DNL Bolt]. Indiquez tous les détails requis pour créer un compte dans [!DNL Bolt].
+Avant de configurer la variable [!DNL Quick Checkout] dans votre administrateur Adobe Commerce, vous devez créer une [sandbox](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  comptes de commerce dans [!DNL Bolt]. Indiquez tous les détails requis pour créer un compte dans [!DNL Bolt].
 
-Reportez-vous à la section [test et validation](../quick-checkout/testing.md) pour plus d’informations.
+Voir [test et validation](../quick-checkout/testing.md) pour plus d’informations.
 
 ## Obtention des informations d’identification de l’API
 
-Pour utiliser la variable [!DNL Quick Checkout] vous avez besoin de [!DNL Bolt] clés uniques et [!DNL signing secret]. Procurez-vous les éléments suivants : [!DNL API keys] en accédant à **Développeurs** > **API** > **Clés** dans le **Tableau de bord des commerçants de Bolt**.
+Pour utiliser la variable [!DNL Quick Checkout] vous avez besoin de [!DNL Bolt] clés uniques et [!DNL signing secret]. Procurez-vous les [!DNL API keys] en accédant à **Développeurs** > **API** > **Clés** dans le **Tableau de bord des commerçants de Bolt**.
 
-- [!DNL API key]: Clé privée utilisée par votre serveur principal pour interagir avec [!DNL Bolt] API.
-- [!DNL Publishable key]: Clé utilisée par votre front-end pour interagir avec [!DNL Bolt] API.
-- [!DNL Signing secret]: Utilisé pour la vérification des signatures sur les demandes reçues d’ [!DNL Bolt].
+- [!DNL API key]: clé privée utilisée par votre serveur principal pour interagir avec [!DNL Bolt] API.
+- [!DNL Publishable key]: clé utilisée par votre front-end pour interagir avec [!DNL Bolt] API.
+- [!DNL Signing secret]: utilisé pour la vérification des signatures sur les demandes reçues d’ [!DNL Bolt].
 
-  ![Passage en caisse rapide](assets/account-credentials.png)
+  ![Achat rapide](assets/account-credentials.png)
 
 Voir [[!DNL Bolt] détails de l’environnement](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} pour en savoir plus sur les clés et la signature du secret à partir de [!DNL Bolt] pour le [!DNL Quick Checkout] extension .
 
@@ -87,7 +87,7 @@ Pour connecter votre fournisseur de services de paiement, procédez comme décri
 1. Dans le panneau de gauche, développez **Ventes** et sélectionnez **Passage en caisse**.
 1. Dans le [!DNL Quick Checkout] vue, définir **Activer** to `Yes`.
 
-![Passage en caisse rapide](assets/quick-checkout-view-no-enable.png)
+![Achat rapide](assets/quick-checkout-view-no-enable.png)
 
 >[!CAUTION]
 >
@@ -95,14 +95,14 @@ Pour connecter votre fournisseur de services de paiement, procédez comme décri
 
 1. Sélectionnez la méthode (sandbox ou production) à utiliser.
 
-   - Environnement de test à des fins de test et de développement
+   - Environnement de test pour les tests et le développement
    - Production pour traiter les transactions avec le responsable du paiement en direct
 
 1. Validation des informations d’identification après avoir fourni votre API unique et [!DNL Publishable keys].
 
-![Passage en caisse rapide](assets/quick-checkout-main-view.png)
+![Achat rapide](assets/quick-checkout-main-view.png)
 
-Reportez-vous à la section [Paramètres](../quick-checkout/settings-quick-checkout.md) rubrique pour plus d’informations sur les options de configuration de la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce.
+Voir [Paramètres](../quick-checkout/settings-quick-checkout.md) rubrique pour plus d’informations sur les options de configuration de la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce.
 
 >[!CAUTION]
 >
@@ -114,12 +114,12 @@ Reportez-vous à la section [Paramètres](../quick-checkout/settings-quick-check
 1. Dans le _Paramètres du service_ , fournissez tous les détails requis pour activer l’extension.
 1. Définir _Action de paiement_ à l’une des options suivantes :
 
-   - `Authorize`: Ne capturez pas automatiquement les transactions sur autorisation.
-   - `Authorize and Capture`: Capturez automatiquement la transaction lors de l’autorisation.
+   - `Authorize`: ne pas capturer les transactions automatiquement lors de l’autorisation.
+   - `Authorize and Capture`: capturer automatiquement la transaction lors de l’autorisation.
 
-Pour plus d’informations sur les options de passage en caisse standard d’Adobe Commerce, reportez-vous à la section [passage en caisse](https://docs.magento.com/user-guide/configuration/sales/checkout.html) rubrique.
+Pour plus d’informations sur les options de paiement standard d’Adobe Commerce, reportez-vous à la section [passage en caisse](https://docs.magento.com/user-guide/configuration/sales/checkout.html) rubrique.
 
-## Activation du paiement rapide en direct
+## Activation de l’extraction rapide en direct
 
 Pour activer la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce :
 
@@ -141,7 +141,7 @@ Voir [Site, magasin et portée de l’affichage](https://experienceleague.adobe.
 
 ## Configuration des paramètres du service
 
-![Passage en caisse rapide](assets/service-settings.png)
+![Achat rapide](assets/service-settings.png)
 
 1. Définir **Activation du suivi du passage en caisse** to `Yes`.
 
@@ -149,8 +149,8 @@ Voir [Site, magasin et portée de l’affichage](https://experienceleague.adobe.
    >
    > La désactivation de cette option aura une incidence sur la création de rapports, car Adobe Commerce n’est pas autorisé à partager les informations de suivi de passage en caisse avec Bolt.
 
-1. Sélectionnez la **Étape suivante après la connexion** pour modifier le flux de navigation une fois le client connecté. Par défaut, il est défini sur la valeur **Paiements** page.
-1. Définissez si [!DNL Quick Checkout] autorise le **connexion automatique** pendant le passage en caisse. Par défaut, il est activé pour se connecter automatiquement au [!DNL Bolt] réseau.
+1. Sélectionnez la variable **Étape suivante après la connexion** pour modifier le flux de navigation une fois le client connecté. Par défaut, il est défini sur la valeur **Paiements** page.
+1. Définissez si [!DNL Quick Checkout] permet d’afficher la variable **connexion automatique** pendant le passage en caisse. Par défaut, il est activé pour se connecter automatiquement au [!DNL Bolt] réseau.
 
    >[!NOTE]
    >
@@ -158,7 +158,7 @@ Voir [Site, magasin et portée de l’affichage](https://experienceleague.adobe.
 
 ## Obtenir de l’aide
 
-Le processus d’intégration est conçu pour vous guider tout au long des étapes nécessaires à la configuration et à l’activation de la variable [!DNL Express Checkout] .
+Le processus d’intégration est conçu pour vous guider tout au long des étapes requises pour configurer et activer la variable [!DNL Express Checkout] .
 
 Contactez l’assistance d’Adobe Commerce via le [Centre d’aide Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) pour toute assistance.
 

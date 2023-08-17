@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Ajout de groupes de champs au schéma XDM
 
-L’un des [Etapes d’intégration](overview.md#onboarding-steps) pour utiliser le connecteur Experience Platform, accédez à l’espace de travail du flux de données et [création d’un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) qui est spécifique à Adobe Commerce. Lorsque vous créez ce flux de données, vous devez également sélectionner un schéma XDM qui représente les données que vous prévoyez d’ingérer. Cette rubrique vous fournit les groupes de champs que votre schéma XDM doit inclure pour collecter avec succès les données fournies par le storefront Adobe Commerce. [events](events.md).
+L’un des [Etapes d’intégration](overview.md#onboarding-steps) pour utiliser le connecteur Experience Platform, accédez à l’espace de travail du flux de données et [créer un flux de données ;](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) spécifique à Adobe Commerce. Lorsque vous créez ce flux de données, vous devez également sélectionner un schéma XDM qui représente les données que vous prévoyez d’ingérer. Cette rubrique vous fournit les groupes de champs que votre schéma XDM doit inclure pour collecter avec succès les données fournies par le storefront Adobe Commerce. [events](events.md).
 
 1. Si vous ne disposez pas déjà d’un schéma XDM, [create](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) un. Sinon, [edit](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) votre schéma XDM existant dans l’interface utilisateur de Adobe Experience Platform.
 
@@ -26,7 +26,7 @@ L’un des [Etapes d’intégration](overview.md#onboarding-steps) pour utiliser
    - Détails du contact personnel
    - Détails du commerce
    - Adobe Analytics ExperienceEvent Commerce (si vous souhaitez envoyer des données à Adobe Analytics)
-   - Mappage d’identités
+   - Carte des identités
 
    >[!NOTE]
    >

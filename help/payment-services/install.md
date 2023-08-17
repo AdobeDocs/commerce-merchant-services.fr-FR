@@ -146,7 +146,7 @@ Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocat
 
 Vous pouvez également spécifier la limite de mémoire à l’aide de cette commande : `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 
-Par exemple :
+Par exemple :
 
 ```bash
 php -d memory_limit=-1 vendor/bin/composer require magento/payment-services

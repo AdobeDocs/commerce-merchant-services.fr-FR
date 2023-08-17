@@ -5,7 +5,7 @@ exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,11 @@ L’espace de travail des règles répertorie la sélection actuelle des règles
 * Supprimer des règles
 * Accès à l’éditeur de règles
 
-![Espace de travail des règles](assets/rules-workspace.png)
+![Espace de travail Règles](assets/rules-workspace.png)
 
-## Définir la portée
+## Définition de la portée
 
-Si votre installation Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** au [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où vos règles s’appliquent.
+Si votre installation Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** à la fonction [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où vos règles s’appliquent.
 
 ## Afficher/masquer les colonnes
 
@@ -42,7 +42,7 @@ Les colonnes visibles sont cochées en bleu dans le menu d’options. Le nom de 
 1. Pour répertorier uniquement les règles avec un paramètre d’état spécifique, définissez **État** à l’une des options suivantes :
 
    * Tous
-   * Principal
+   * Actif
    * Inactif
    * Planifié
 
@@ -77,17 +77,17 @@ Vous pouvez effectuer l’une des opérations suivantes à partir du panneau Aff
 | Dernière mise à jour | Date de la dernière mise à jour de la règle. |
 | Date de début | Date de début d’une règle planifiée. |
 | Date de fin | Date de fin d’une règle planifiée. |
-| État | L’état codé par couleur indique l’état actuel de la règle. Utilisez le contrôle État situé au-dessus de la grille pour filtrer les règles par état. Valeurs :<br />Tout état : affiche toutes les règles, quel que soit l’état.<br />Principal (bleu) : affiche uniquement les règles principales.<br />Planifié (orange) : affiche uniquement les règles planifiées.<br />Inactif (gris) : affiche uniquement les règles inactives. |
+| État | L’état codé par couleur indique l’état actuel de la règle. Utilisez le contrôle État situé au-dessus de la grille pour filtrer les règles par état. Valeurs :<br />Tout état : affiche toutes les règles, quel que soit l’état.<br />Actif (bleu) : affiche uniquement les règles actives.<br />Planifié (orange) : affiche uniquement les règles planifiées.<br />Inactif (gris) : affiche uniquement les règles inactives. |
 
 ## Contrôles
 
 | Contrôle | Description |
 |--- |--- |
 | Ajouter une règle | Ouvre la [éditeur de règles](rules-add.md). |
-| État | Filtre la liste des règles par statut. Options : Tout, Principal, Inactif, Planifié |
+| État | Filtre la liste des règles par statut. Options : Toutes, Actives, Inactives, Planifiées |
 | ![Sélecteur de colonnes](assets/btn-show-hide-columns.png) | Spécifie les colonnes visibles dans la grille. Options : Dernière mise à jour, Date de début, Date de fin, État |
 | Rechercher | Recherche une règle par nom complet ou correspondance partielle. |
-| ![Sélecteur supplémentaire](assets/btn-more.png) | Affiche un menu d’actions supplémentaires pouvant être appliquées à la règle sélectionnée. Options : Modifier, afficher les détails, supprimer |
+| ![Sélecteur supplémentaire](assets/btn-more.png) | Affiche un menu d’actions supplémentaires pouvant être appliquées à la règle sélectionnée. Options : modification, afficher les détails, supprimer |
 
 ## Détails de la règle
 
@@ -99,4 +99,4 @@ Vous pouvez effectuer l’une des opérations suivantes à partir du panneau Aff
 | Date de fin | Date d’expiration de la règle, le cas échéant. |
 | Description | Brève description de la règle. |
 | Dernière mise à jour | Date et heure de la dernière mise à jour de la règle. |
-| Activé | Contrôle qui modifie l’état de la règle. Options : Activé/Désactivé |
+| Activé | Contrôle qui modifie l’état de la règle. Options : activé/désactivé |

@@ -50,7 +50,7 @@ Vous pouvez activer [!DNL Payment Services] pour votre magasin et activez le tes
 
 ## [!UICONTROL Credit Card Fields]
 
-Le [!UICONTROL Credit Card Fields] les options de paiement offrent un passage en caisse simple et sécurisé pour les modes de paiement par carte de crédit ou carte de débit.
+La variable [!UICONTROL Credit Card Fields] les options de paiement offrent un passage en caisse simple et sécurisé pour les modes de paiement par carte de crédit ou carte de débit.
 
 Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d’informations.
 
@@ -75,7 +75,7 @@ Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d
 | Champ | Portée | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue de magasin | Ajoutez le texte à afficher comme titre de cette option de paiement dans la vue Mode de paiement lors de l’extraction. Options : [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | site web | Le [action de paiement](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site web | La variable [action de paiement](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | site web | Activez ou désactivez les champs de carte de crédit sur la page de passage en caisse. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | vue de magasin | Activer ou désactiver [coffre-fort à carte de crédit](vaulting.md). Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | vue de magasin | Activation ou désactivation de la fonctionnalité [le marchand pour terminer les commandes des clients dans l’administrateur](vaulting.md) utilisation d’un mode de paiement par défaut. Options : [!UICONTROL Yes] / [!UICONTROL No] |
@@ -84,7 +84,7 @@ Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d
 
 ## [!DNL PayPal Smart Buttons]
 
-Le [!DNL PayPal Smart Buttons] les options de paiement offrent un processus de paiement simple, rapide et sécurisé pour votre client.
+La variable [!DNL PayPal Smart Buttons] les options de paiement offrent un processus de paiement simple, rapide et sécurisé pour votre client.
 
 Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d’informations.
 
@@ -101,7 +101,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 1. Pour activer/désactiver la fonction [Payer les messages plus tard](payments-options.md#pay-later-button), sélectionnez `Yes`/`No` pour **[!UICONTROL Display Pay Later Message]**.
 1. Pour afficher les boutons intelligents PayPal sur la page de passage en caisse, sélectionnez `Yes` pour le **[!UICONTROL Show buttons on checkout page]**.
 1. Pour afficher les boutons intelligents PayPal dans l’aperçu du mini panier, sélectionnez `Yes` pour **[!UICONTROL Show buttons in mini cart preview]**.
-1. Pour activer Venmo en tant qu’option de paiement, sélectionnez `Yes` pour **[!UICONTROL Venmo Enabled]**.
+1. Pour activer l’option de paiement Venmo, sélectionnez `Yes` pour **[!UICONTROL Venmo Enabled]**.
 1. Pour activer l’option Paiement Apple en tant que paiement, sélectionnez `Yes` pour **[!UICONTROL Apple Pay Enabled]**.
 1. Pour activer les cartes de crédit et de débit PayPal comme option de paiement (bouton PayPal Smart), sélectionnez `Yes` pour **[!UICONTROL PayPal Credit and Debit Card Enabled]**.
 1. Pour activer/désactiver la fonction [PayPal - Payer plus tard](payments-options.md#pay-later-button) option de paiement, sélectionnez `Yes`/`No` pour **[!UICONTROL PayPal Pay Later Enabled]**.
@@ -114,7 +114,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 | Champ | Portée | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue de magasin | Ajoutez le texte à afficher comme titre pour cette option de paiement dans la vue Mode de paiement lors de l’extraction. Options : champ de texte |
-| [!UICONTROL Payment Action] | site web | Le [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site web | La variable [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | site web | Activez ou désactivez la messagerie Payer plus tard dans le panier, la page du produit, le mini-panier et pendant le flux de passage en caisse. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on checkout page] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] sur la page de passage en caisse. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] sur la page des détails du produit. Options : [!UICONTROL Yes] / [!UICONTROL No] |
@@ -133,7 +133,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 | [!UICONTROL Color] | Affichage en magasin | Définissez la couleur des boutons Paypal Smart. Options : [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
 | [!UICONTROL Shape] | Affichage en magasin | Définissez la forme des boutons intelligents de Paypal. Options : [!UICONTROL Rectangular] / [!UICONTROL Pill] |
 | [!UICONTROL Use Default Height] | Affichage en magasin | Définit si les boutons intelligents PayPal utilisent une hauteur par défaut. Options : [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Height] | Affichage en magasin | Définissez la hauteur des boutons intelligents PayPal. Valeur par défaut : none |
+| [!UICONTROL Height] | Affichage en magasin | Définissez la hauteur des boutons intelligents PayPal. Valeur par défaut : aucune |
 | [!UICONTROL Label] | Affichage en magasin | Définissez le libellé qui apparaît dans les boutons intelligents PayPal. Options : [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 | [!UICONTROL Tagline] | Affichage en magasin | Active le tag. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 

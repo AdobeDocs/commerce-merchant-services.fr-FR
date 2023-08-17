@@ -22,9 +22,9 @@ Pour commencer à utiliser [!DNL Payment Services] pour [!DNL Adobe Commerce] et
 
 Ce diagramme de flux d’intégration affiche le processus général d’intégration. [!DNL Payment Services].
 
-Une fois l’intégration terminée pour les environnements de test ou les paiements en direct, les rapports financiers sont accessibles à partir de [!DNL Payment Services] dans Admin.
+Une fois l’intégration terminée pour l’environnement de test ou les paiements en direct, les rapports financiers sont accessibles à partir de [!DNL Payment Services] dans Admin.
 
-Si les paiements en environnement de test et en direct sont intégrés et activés, vous pouvez facilement basculer entre ces modes à partir de la variable [!DNL Payment Services] Chez soi.
+Si les paiements en environnement de test et en direct sont intégrés et activés, vous pouvez facilement basculer entre ces modes à partir de la [!DNL Payment Services] Chez soi.
 
 ## Conditions préalables
 
@@ -36,7 +36,7 @@ Pour utiliser [!DNL Payment Services], les éléments suivants doivent être dis
 
 Les modules Connecteur de services et Identifiant de services sont automatiquement installés pendant la [installation de [!DNL Payment Services]](install.md). Une fois l’installation terminée, une nouvelle section s’affiche dans les paramètres de configuration (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) lorsque vous développez **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
 
-Pour savoir comment créer des clés d’API ou y accéder, voir [Informations d’identification de l’API](#obtain-api-credentials).
+Pour savoir comment créer des clés d’API ou y accéder, voir [Informations d’identification API](#obtain-api-credentials).
 
 ## Étapes d’intégration
 

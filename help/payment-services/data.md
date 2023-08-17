@@ -24,7 +24,7 @@ Lorsque les services de paiement envoient la commande Commerce à PayPal, l’ID
 
 Les identifiants sont facilement accessibles dans les détails de l’activité commerciale pour un paiement et dans le webhook PayPal.
 
-Le `invoice_id` et `custom_id` s’affichent près du bas du détail de l’activité commerciale pour un paiement :
+La variable `invoice_id` et `custom_id` s’affichent près du bas du détail de l’activité commerciale pour un paiement :
 
 ![`custom_id` dans le détail de l’activité commerciale](assets/merchant-activity-ids.png)
 

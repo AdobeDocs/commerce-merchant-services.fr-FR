@@ -20,7 +20,7 @@ Vous pouvez mettre le service en production et terminer la [processus d’intég
 
 ## Définir [!DNL Payment Services] comme mode de paiement
 
-Après vous [Configuration de Commerce Services](connect.md#configure-commerce-services) et activez [test sandbox](sandbox.md#enable-sandbox-testing) ou [paiements en direct](#enable-live-payments), vous devez définir [!DNL Payment Services] comme méthode de paiement.
+Après vous [Configuration de Commerce Services](connect.md#configure-commerce-services) et activez [test des environnements de test](sandbox.md#enable-sandbox-testing) ou [paiements en direct](#enable-live-payments), vous devez définir [!DNL Payment Services] comme méthode de paiement.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Cliquez sur **[!UICONTROL Enable Payment Services]**.
@@ -30,7 +30,7 @@ Après vous [Configuration de Commerce Services](connect.md#configure-commerce-s
    Vous êtes dirigé vers la zone des paramètres dans la vue Accueil avec les options appropriées développées (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), où vous pouvez activer la fonction [!DNL Payment Services] d’ [mode de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. Dans _[!UICONTROL General Configuration]_, définit **[!UICONTROL Enable]**to `Yes`.
-1. Définir **[!UICONTROL Payment Action]**, pour les deux _[!UICONTROL Credit Card Fields]_et_[!UICONTROL PayPal Smart Buttons]_, à l’une des méthodes suivantes :
+1. Définir **[!UICONTROL Payment Action]**, pour les _[!UICONTROL Credit Card Fields]_et_[!UICONTROL PayPal Smart Buttons]_, à l’une des méthodes suivantes :
 
    | Paramètre | Description |
    |---|---|
@@ -57,7 +57,7 @@ Voir [Configuration des services de paiement](settings.md) pour plus d’informa
 1. Poursuivez avec le flux PayPal, en utilisant les informations d’identification de votre compte PayPal (et non les informations d’identification de votre compte sandbox) ou inscrivez-vous à un nouveau compte PayPal.
 1. Dans la barre latérale d’administration, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   Le _[!UICONTROL Live onboarding]_n’est plus visible et un &quot;[!UICONTROL Live payments pending]&quot;.
+   La variable _[!UICONTROL Live onboarding]_n’est plus visible et un &quot;[!UICONTROL Live payments pending]&quot;.
 
    Dans cette zone de texte, vous pouvez également être invité à confirmer votre adresse électronique avec PayPal pour terminer l’intégration.
 

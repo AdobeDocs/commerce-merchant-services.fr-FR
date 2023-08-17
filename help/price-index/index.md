@@ -15,7 +15,7 @@ ht-degree: 0%
 
 L’indexation des prix SaaS accélère le temps nécessaire pour que les changements de prix soient répercutés sur le site web d’un client SaaS après leur envoi. Ce module optionnel permet aux commerçants disposant de catalogues volumineux et complexes, ou de plusieurs sites web ou groupes de clients, de traiter les changements de prix plus rapidement et en continu.
 
-Le plus grand goulot d’étranglement du pipeline : les processus lourds informatiques tels que l’indexation et le calcul des prix ont été déplacés du coeur de PHP vers l’infrastructure cloud de l’Adobe. Cela permet aux commerçants d’augmenter rapidement les ressources pour augmenter les délais d’indexation des prix et de refléter ces modifications sur les sites web à une vitesse beaucoup plus rapide.
+Le goulot d’étranglement le plus important du pipeline : des processus lourds de calcul tels que l’indexation et le calcul des prix ont été déplacés du noyau PHP vers l’infrastructure cloud de l’Adobe. Cela permet aux commerçants d’augmenter rapidement les ressources pour augmenter les délais d’indexation des prix et de refléter ces modifications sur les sites web à une vitesse beaucoup plus rapide.
 
 Le flux de données d’indexation principal vers les services SaaS ressemble à ce qui suit :
 
@@ -27,9 +27,9 @@ Avec l’indexation des prix SaaS, le flux est :
 
 Tous les commerçants qui répondent aux exigences peuvent bénéficier de ces améliorations, mais ceux qui en bénéficieront le plus sont les clients avec :
 
-* Modifications constantes des prix : Les commerçants qui nécessitent des modifications répétées de leurs prix pour atteindre des objectifs stratégiques tels que des promotions fréquentes, des remises saisonnières ou des marqueurs d’inventaire.
-* Plusieurs sites web et/ou groupes de clients : Marchands avec des catalogues de produits partagés sur plusieurs sites web (domaines/marques) et/ou groupes de clients.
-* Grand nombre de prix uniques sur des sites web ou des groupes de clients : Marchands avec des catalogues de produits partagés étendus qui contiennent des prix uniques sur des sites web ou des groupes de clients, tels que des marchands B2B avec des prix négociés au préalable, des marques avec des stratégies de tarification différentes.
+* Changements constants des prix : les marchands qui nécessitent des modifications répétées de leurs prix pour atteindre des objectifs stratégiques tels que des promotions fréquentes, des remises saisonnières ou des marqueurs d’inventaire.
+* Plusieurs sites web et/ou groupes de clients : marchands avec des catalogues de produits partagés sur plusieurs sites web (domaines/marques) et/ou groupes de clients.
+* Grand nombre de prix uniques sur plusieurs sites web ou groupes de clients : marchands avec des catalogues de produits partagés étendus qui contiennent des prix uniques sur plusieurs sites web ou groupes de clients, tels que des marchands B2B avec des prix négociés au préalable, des marques avec des stratégies de tarification différentes.
 
 Si des applications tierces dépendent de l’indexeur de prix de base PHP, lisez la documentation et consultez le fournisseur d’extension avant d’apporter des modifications.
 
@@ -67,7 +67,7 @@ Les clients qui utilisent Luma et Adobe Commerce Core GraphQL peuvent installer 
 adobe-commerce/catalog-adapter
 ```
 
-Le `catalog-adapter` est uniquement compatible avec la version 2.4.5. La prise en charge des versions 2.4.4 et 2.4.6 sera publiée prochainement.
+La variable `catalog-adapter` est uniquement compatible avec la version 2.4.5. La prise en charge des versions 2.4.4 et 2.4.6 sera publiée prochainement.
 L’indexeur de prix de base PHP peut être réactivé si nécessaire par une extension tierce ou pour toute autre raison.
 
 ## Avertissements
@@ -92,7 +92,7 @@ Les nouveaux flux doivent être synchronisés manuellement avec la variable `res
 
 ### Luma et Adobe Commerce Core GraphQl avec dépendances de l’indexeur de prix principal PHP
 
-* Un commerçant Luma ou Adobe Commerce Core GraphQL qui dispose d’un service pris en charge installé (Live Search, Recommendations produit, Catalog Service)
+* Un commerçant Luma ou Adobe Commerce Core GraphQL qui a installé un service pris en charge (Live Search, Recommendations produit, Catalog Service)
 * Avec une extension tierce reposant sur l’indexeur de prix de base PHP
 * Vendre des produits dynamiques simples, configurables, groupés, virtuels et regroupés
 

@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # [!DNL Catalog Service and API Mesh]
 
-Le [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces à des produits Adobe à l’aide de Adobe I/O Runtime.
+La variable [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces à des produits Adobe à l’aide de Adobe I/O Runtime.
 
 ![Diagramme d’architecture du catalogue](assets/catalog-service-architecture-mesh.png)
 
-La première étape de l’utilisation du maillage API avec le service de catalogue consiste à connecter le maillage API à votre instance. Voir les instructions détaillées dans [Création d’un maillage](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+La première étape de l’utilisation du maillage API avec le service de catalogue consiste à connecter le maillage API à votre instance. Voir les instructions détaillées dans [Créer un maillage](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 Pour terminer la configuration, installez le [Package de ligne de commande Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 

@@ -22,7 +22,7 @@ Pour une configuration multi-magasin ou héritée, voir [Configuration dans l’
 
 ## Configuration des paramètres généraux
 
-Le [!UICONTROL General] ces paramètres permettent d’activer ou de désactiver les services de paiement en tant que mode de paiement et d’ajouter des informations aux transactions client pour marquer ou préfixer un site web ou stocker des informations personnalisées.
+La variable [!UICONTROL General] ces paramètres permettent d’activer ou de désactiver les services de paiement en tant que mode de paiement et d’ajouter des informations aux transactions client pour marquer ou préfixer un site web ou stocker des informations personnalisées.
 
 ### Activation des services de paiement
 
@@ -34,7 +34,7 @@ Vous pouvez activer [!DNL Payment Services] pour votre site web et activez les t
 
 1. Cliquez sur **[!UICONTROL Settings]**. Voir [Introduction à [!DNL Payment Services] Accueil](payments-home.md) pour plus d’informations.
 
-   Le _[!UICONTROL General]_comprend les paramètres utilisés pour activer [!DNL Payment Services] comme mode de paiement.
+   La variable _[!UICONTROL General]_comprend les paramètres utilisés pour activer [!DNL Payment Services] comme mode de paiement.
 
 1. Pour activer [!DNL Payment Services] comme mode de paiement pour votre boutique, dans la variable _[!UICONTROL General]_section, bascule **[!UICONTROL Enable Payment Services as payment method]**to `Yes`.
 
@@ -84,7 +84,7 @@ Vous pouvez ajouter une [!UICONTROL Soft Descriptor] à votre(s) site(s) web ou 
 | [!UICONTROL Payment mode] | vue de magasin | Définissez la méthode, ou l’environnement, de votre magasin. Options : [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | vue de magasin | Votre ID de marchand d’environnement de test, qui est généré automatiquement lors de l’intégration des environnements de test. |
 | [!UICONTROL Production Merchant ID] | vue de magasin | Votre identifiant commercial de production, qui est généré automatiquement lors de l’intégration des environnements de test. |
-| [!UICONTROL Soft Descriptor] | site web ou vue de magasin | Ajoutez un descripteur logiciel à votre ou vos sites web et vues de magasin pour ajouter des informations aux transactions client qui délimitent les marques, les magasins ou les lignes de produits. Le [!UICONTROL Use website] s’applique à tout descripteur logiciel ajouté au niveau du site web. Le [!UICONTROL Use default] Le bouton bascule applique tout descripteur de type Soft ajouté comme valeur par défaut. |
+| [!UICONTROL Soft Descriptor] | site web ou vue de magasin | Ajoutez un descripteur logiciel à votre ou vos sites web et vues de magasin pour ajouter des informations aux transactions client qui délimitent les marques, les magasins ou les lignes de produits. La variable [!UICONTROL Use website] s’applique à tout descripteur logiciel ajouté au niveau du site web. La variable [!UICONTROL Use default] Le bouton bascule applique tout descripteur de type Soft ajouté comme valeur par défaut. |
 
 ## Configuration des options de paiement
 
@@ -99,7 +99,7 @@ Maintenant que vous avez activé [!UICONTROL Payment Services] pour votre site w
 
 ### Champs de carte de crédit
 
-Le _[!UICONTROL Credit Card Fields]_ces paramètres offrent une option de paiement simple et sécurisée pour les modes de paiement par carte de crédit ou carte de débit.
+La variable _[!UICONTROL Credit Card Fields]_ces paramètres offrent une option de paiement simple et sécurisée pour les modes de paiement par carte de crédit ou carte de débit.
 
 Voir [Options de paiement](payments-options.md#credit-card-fields) pour plus d’informations.
 
@@ -126,7 +126,7 @@ Voir [Options de paiement](payments-options.md#credit-card-fields) pour plus d�
 | Champ | Portée | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue de magasin | Ajoutez le texte à afficher comme titre de cette option de paiement dans la vue Mode de paiement lors de l’extraction. Options : [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | site web | Le [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site web | La variable [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | site web | Activer ou désactiver [Authentification sécurisée 3DS](security.md#3ds). Options : [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | site web | Activez ou désactivez les champs de carte de crédit à afficher sur la page de paiement. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | vue de magasin | Activer ou désactiver [coffre-fort à carte de crédit](vaulting.md). Options : [!UICONTROL Yes] / [!UICONTROL No] |
@@ -135,7 +135,7 @@ Voir [Options de paiement](payments-options.md#credit-card-fields) pour plus d�
 
 ### Boutons de paiement
 
-Le [!DNL PayPal Smart Buttons] les options de paiement offrent un processus de paiement simple, rapide et sécurisé pour votre client. Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d’informations.
+La variable [!DNL PayPal Smart Buttons] les options de paiement offrent un processus de paiement simple, rapide et sécurisé pour votre client. Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d’informations.
 
 Vous pouvez activer et configurer les options de paiement des boutons intelligents PayPal :
 
@@ -172,7 +172,7 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 | Champ | Portée | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue de magasin | Ajoutez le texte à afficher comme titre pour cette option de paiement dans la vue Mode de paiement lors de l’extraction. Options : champ de texte |
-| [!UICONTROL Payment Action] | site web | Le [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site web | La variable [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on checkout page] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] sur la page de passage en caisse. Options : [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] sur la page des détails du produit. Options : [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] dans l’aperçu du mini-panier. Options : [!UICONTROL Yes] / [!UICONTROL No] |
@@ -221,7 +221,7 @@ Vous pouvez configurer [!DNL PayPal Smart Buttons] style [dans la configuration 
 | [!UICONTROL Color] | Affichage en magasin | Définissez la couleur des boutons de paiement. Options : [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
 | [!UICONTROL Shape] | Affichage en magasin | Définissez la forme des boutons de paiement. Options : [!UICONTROL Rectangular] / [!UICONTROL Pill] |
 | [!UICONTROL Responsive Button Height] | Affichage en magasin | Définit si les boutons de paiement utilisent une hauteur par défaut. Options : [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Height] | Affichage en magasin | Définissez la hauteur des boutons de paiement. Valeur par défaut : none |
+| [!UICONTROL Height] | Affichage en magasin | Définissez la hauteur des boutons de paiement. Valeur par défaut : aucune |
 | [!UICONTROL Label] | Affichage en magasin | Définissez le libellé qui apparaît dans les boutons de paiement. Options : [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
 ## Configuration des rôles
@@ -232,7 +232,7 @@ Voir [Rôles utilisateur](https://experienceleague.adobe.com/docs/commerce-admin
 
 Lorsque vous attribuez des ressources au rôle, vous devez sélectionner :
 
-- **Payer avec[!DNL Payment Services]**: cette ressource garantit que lorsque vous créez une commande dans l’administrateur, [!DNL Payment Services] les cartes de crédit sont disponibles en tant que mode de paiement. Si vous sélectionnez la variable **Actions** ressource parente, cette ressource sera également sélectionnée.
+- **Payer avec[!DNL Payment Services]**: cette ressource garantit que lorsque vous créez une commande dans l’administrateur, [!DNL Payment Services] les cartes de crédit sont disponibles en tant que mode de paiement. Si vous sélectionnez l’option **Actions** ressource parente, cette ressource sera également sélectionnée.
 - **[!DNL Payment Services]**: cette ressource inclut la variable **Tableau de bord** et **Proxy de services SaaS** ressources, qui doit également être sélectionnée. Ils s’assurent que [!DNL Payment Services] apparaît dans la variable _Ventes_ .
 
   ![Ressources des services de paiement](assets/roles-payments.png)

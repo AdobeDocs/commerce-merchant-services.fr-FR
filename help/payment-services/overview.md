@@ -39,12 +39,12 @@ Que vous soyez une petite entreprise, un concurrent de moyenne envergure ou une 
 * [**Intégration**](onboard.md): le processus vous guide tout au long des étapes suivantes : inscription commerciale, configuration technique, droits, configuration de l’environnement de test et activation des paiements en direct.
 * [**Options de paiement**](payments-options.md): définissez les options de paiement pour personnaliser les méthodes disponibles pour vos clients de magasin (ou multi-magasin).
 * **Reporting financier de la gestion des flux de trésorerie**—Synchronize [informations de paiement](order-payment-status.md) avec des commandes pour obtenir une transparence complète du volume traité, du solde des paiements et des détails [rapport au niveau des transactions](payouts.md) pour la réconciliation financière.
-* **Tarification transparente**- La tarification est claire et rapide ; ce que vous voyez, c&#39;est ce que vous obtenez.
+* **Tarification transparente**- La tarification est claire et rapide ; ce que vous voyez est ce que vous obtenez.
 * **Expérience de passage en caisse efficace**: supprimez les obstacles à un passage en caisse rapide et simple et créez des clients fidèles, avec [coffre-fort à carte](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) et [achat instantané](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (activé par défaut pour Adobe Commerce).
 
 ## Disponibilité
 
-[!DNL Payment Services] est disponible pour [!DNL Adobe Commerce] et [!DNL Magento Open Source]. Le [!DNL Payment Services] est désormais compatible avec [!DNL Adobe Commerce] versions 2.4.x.
+[!DNL Payment Services] est disponible pour [!DNL Adobe Commerce] et [!DNL Magento Open Source]. La variable [!DNL Payment Services] est désormais compatible avec [!DNL Adobe Commerce] versions 2.4.x.
 
 Actuellement, [!DNL Payment Services] est disponible dans les pays suivants :
 
@@ -52,9 +52,9 @@ Actuellement, [!DNL Payment Services] est disponible dans les pays suivants :
 * Canada (CA)
 * Australie (AUS)
 * France (FR)
-* Royaume-Uni (Royaume-Uni)
+* Royaume-Uni
 
-Voir [Stratégie de cycle de vie](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) et le [[!DNL Payment Services] notes de mise à jour](release-notes.md) pour plus d’informations sur la version et la version.
+Voir [Stratégie de cycle de vie](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) et la variable [[!DNL Payment Services] notes de mise à jour](release-notes.md) pour plus d’informations sur la version et la version.
 
 ### Carte de crédit et devises acceptées
 

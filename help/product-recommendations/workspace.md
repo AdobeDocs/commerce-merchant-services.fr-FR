@@ -4,21 +4,21 @@ description: Découvrez comment configurer, gérer et surveiller les performance
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
 source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
 # [!DNL Product Recommendations] Workspace
 
-Le [!DNL Product Recommendations] workspace affiche une liste de recommandations configurées précédemment avec des mesures qui vous aident à suivre le succès de chaque recommandation. La liste peut être configurée pour calculer les mesures du dernier jour, semaine ou mois. Vous pouvez utiliser les mesures pour créer des informations exploitables en fonction de la fréquence de consultation ou de clic d’une unité de recommandations, ou pour analyser les performances de vos recommandations.
+La variable [!DNL Product Recommendations] workspace affiche une liste de recommandations configurées précédemment avec des mesures qui vous aident à suivre le succès de chaque recommandation. La liste peut être configurée pour calculer des mesures pour le dernier jour, la dernière semaine ou le dernier mois. Vous pouvez utiliser les mesures pour créer des informations exploitables en fonction de la fréquence de consultation ou de clic d’une unité de recommandations, ou pour analyser les performances de vos recommandations.
 
 ![Espace de travail Recommendations](assets/workspace.png)
 _Espace de travail Recommendations_
 
-## Définir la portée
+## Définition de la portée
 
-Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de tous les paramètres de recommandation définis sur `Default Store View`. Si votre installation Commerce comprend plusieurs vues de magasin, définissez **Portée** au [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où s’appliquent vos recommandations.
+Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de tous les paramètres de recommandation définis sur `Default Store View`. Si votre installation Commerce comprend plusieurs vues de magasin, définissez **Portée** à la fonction [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où s’appliquent vos recommandations.
 
 ## Définition de la période des mesures
 
@@ -92,7 +92,7 @@ Sur la page des détails de la recommandation, cliquez sur **Créer**. Pour en s
 | Nom | Nom de la recommandation. |
 | Page | Page dans laquelle la recommandation s’affiche. |
 | Type | Type de recommandation. |
-| État | État de la recommandation. Options : Inactif/Principal/Brouillon |
+| État | État de la recommandation. Options : inactif/actif/brouillon |
 | Créé | Date de création de la recommandation. |
 | Dernière modification | Date de dernière modification de la recommandation. |
 | Impressions | Nombre de chargements et de rendus d’une unité de recommandation sur une page. Une unité de recommandation située sous le pli de la fenêtre d’affichage du navigateur s’affiche sur la page, mais n’est pas affichée par l’acheteur. Dans ce cas, l’unité rendue est comptée comme une impression, mais une vue n’est comptée que si l’utilisateur fait défiler l’unité dans la vue. |

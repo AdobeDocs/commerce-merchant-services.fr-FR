@@ -8,7 +8,7 @@ feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
    ![Vue d’accueil](assets/home-view.png)
 
-1. Dans cette vue Accueil, vous pouvez accéder à _Accueil_ vue, _En savoir plus_ about [!DNL Payment Services], configurer l’extension _Paramètres_, ou get _Aide_.
+1. Dans cette vue Accueil, vous pouvez accéder à _Accueil_ vue, _Formation_ about [!DNL Payment Services], configurer l’extension _Paramètres_, ou get _Aide_.
 
 ## Accueil
 
@@ -29,11 +29,11 @@ ht-degree: 0%
 | [!UICONTROL Orders] | Ces rapports vous permettent d’afficher rapidement l’état du paiement de vos commandes et d’identifier les problèmes potentiels. |
 | [!UICONTROL Payouts] | Les rapports sur les paiements affichent des informations complètes sur les paiements en un coup d’oeil, ce qui vous permet d’obtenir une transparence complète du montant des paiements, du volume traité et des rapports détaillés sur le niveau des transactions pour la réconciliation financière. |
 
-## En savoir plus
+## Formation
 
 | Champ | Description |
 |---|---|
-| [!UICONTROL Read documentation] | Consultez la documentation la plus récente à l’intention des utilisateurs et des développeurs pour [!DNL Payment Services]. |
+| [!UICONTROL Read documentation] | Consultez la documentation la plus récente sur les utilisateurs et les développeurs pour [!DNL Payment Services]. |
 | [!UICONTROL How to onboard] | Trouvez tous les éléments dont vous avez besoin pour configurer et commencer à utiliser le [!DNL Payment Services] fonction . |
 | [!UICONTROL Understand financial reports] | Explication détaillée de la création de rapports sur la gestion des flux de trésorerie dans [!DNL Payment Services]. |
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 | Champ | Description |
 |---|---|
-| [!UICONTROL Visit help center] | Le [!DNL Adobe Commerce] Le centre d’aide contient des articles sur la base de connaissances [!DNL Payment Services]. |
+| [!UICONTROL Visit help center] | La variable [!DNL Adobe Commerce] Le centre d’aide contient des articles sur la base de connaissances [!DNL Payment Services]. |
 | [!UICONTROL Get support] | Visitez le [!DNL Adobe Commerce] portail d’assistance pour [!DNL Payment Services.] |
 
 ## Paramètres

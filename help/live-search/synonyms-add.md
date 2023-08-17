@@ -18,11 +18,11 @@ Augmentez l’engagement des clients en ajoutant votre propre liste organisée d
 ## Étape 1 : Ajouter un synonyme
 
 1. Dans Admin, accédez à **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Pour plusieurs magasins, définissez **Portée** au [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où les paramètres de synonyme s’appliquent.
+1. Pour plusieurs magasins, définissez **Portée** à la fonction [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où les paramètres de synonyme s’appliquent.
 1. Cliquez sur le bouton **Synonymes** .
 1. Cliquez sur le bouton **Ajouter des synonymes** bouton .
 
-## Étape 2 : Définition du synonyme par type
+## Etape 2 : définir le synonyme par type
 
 Suivez les instructions de la section [type de synonyme](synonyms-type.md) que vous souhaitez créer.
 
@@ -30,7 +30,7 @@ Suivez les instructions de la section [type de synonyme](synonyms-type.md) que v
 
 1. Acceptation de la valeur par défaut **À double sens** .
 
-   ![Ajout d’un synonyme bidirectionnel](assets/synonym-add-two-way.png)
+   ![Ajouter un synonyme bidirectionnel](assets/synonym-add-two-way.png)
 
 
 1. Saisissez le **Mot-clé** terme ou expression à mettre en correspondance.
@@ -39,7 +39,7 @@ Dans cet exemple, le mot-clé à associer est &quot;pantalon&quot; et l’ensemb
 
    ![Exemple de synonyme bidirectionnel](assets/synonym-add-two-way-example.png)
 
-1. Une fois l’opération terminée, cliquez sur **Enregistrer**.
+1. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 L’ensemble de synonymes apparaît dans la liste avec une flèche bidirectionnelle entre chaque terme, ce qui signifie que les termes sont interchangeables.
 
    ![synonyme bidirectionnel](assets/synonym-two-way.png)
@@ -56,7 +56,7 @@ L’ensemble de synonymes apparaît dans la liste avec une flèche bidirectionne
 
    Dans cet exemple, le mot-clé est &quot;pantalon&quot; et les termes d’extension unidirectionnelle &quot;capris, pantalon-length, pédophiles&quot; sont tous deux un sous-ensemble de &quot;pantalons&quot;, mais avec une signification spécifique.
 
-1. Une fois l’opération terminée, cliquez sur **Enregistrer**.
+1. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 L’ensemble de synonymes apparaît dans la liste avec une flèche à sens unique indiquant les termes d’extension au mot-clé afin d’indiquer que les termes sont des sous-ensembles du mot-clé. Un signe plus sépare chaque terme d’extension.
 
    ![Un synonyme unidirectionnel](assets/synonym-one-way.png)
@@ -70,6 +70,6 @@ L’ensemble de synonymes apparaît dans la liste avec une flèche à sens uniqu
 
 | Champ | Description |
 |--- |--- |
-| [Type](synonyms.md) | Détermine si les synonymes ont la même signification que le mot-clé ou sont un sous-ensemble du mot-clé. Options :<br />bidirectionnel (par défaut) : termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />A sens unique : termes qui sont un sous-ensemble du mot-clé. Les synonymes unidirectionnels renvoient une liste plus étroite de produits spécifiques. |
+| [Type](synonyms.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options :<br />bidirectionnel (par défaut) : termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />A sens unique : termes qui sont un sous-ensemble du mot-clé. Les synonymes unidirectionnels renvoient une liste plus étroite de produits spécifiques. |
 | Mot-clé | Mot généralement associé à une sélection de produits de votre catalogue. |
 | Extension | Termes supplémentaires ayant la même signification ou la même signification que le mot-clé. |

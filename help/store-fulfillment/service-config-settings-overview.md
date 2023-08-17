@@ -20,7 +20,7 @@ Dans l’administrateur Adobe Commerce, les paramètres de configuration des ser
 
 | **Type** | **Description** | **API configurable** |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [Configuration générale](enable-general.md) | Intégration générale configurée pour la solution d’exécution de magasin, ses principales fonctionnalités et ses informations d’identification pour se connecter aux services d’exécution. | Non |
+| [Configuration générale](enable-general.md) | Intégration générale configurée pour la solution d’exécution de magasin, ses fonctionnalités actives et ses informations d’identification pour se connecter aux services d’exécution. | Non |
 | [Configuration des e-mails de ventes](sales-emails.md) | Configurez des modèles d’e-mail supplémentaires pour les notifications client envoyées pendant le processus d’archivage. | Non |
 | [Configuration de la boutique marchande](merchant-store-configuration.md) | Configurez des sources Inventory management améliorées en tant que magasins marchands. | Oui |
 | [Gestion des stocks de produits](product-stock.md) | Configurez les fonctionnalités et la messagerie du stock commercial disponibles pour les clients. | Oui |
@@ -42,7 +42,7 @@ Dans la référence de configuration de chaque type, les détails de configurati
 
 - **Description** fournit des détails importants sur l’objectif et le comportement du champ ;
 
-- **Portée** indique la portée de la configuration Adobe Commerce pour le paramètre (global, site web, magasin).
+- **Portée** indique la portée de la configuration Adobe Commerce pour le paramètre (global, site web, magasin)
 
 - **Obligatoire** indique si une valeur doit être définie sur le champ.
 

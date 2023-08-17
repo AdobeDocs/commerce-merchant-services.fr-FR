@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - Catalogue : métadonnées de produit, telles que le nom, le prix et la disponibilité.
 
-Lorsque vous installez le `magento/product-recommendations module`, Adobe Sensei agrège les données comportementales et de catalogue et crée [!DNL Product Recommendations] pour chaque type de recommandation. Le [!DNL Product Recommendations] le service déploie ensuite ces recommandations sur votre storefront. Pour vous aider à mettre en oeuvre des recommandations de produits sur votre vitrine, utilisez le workflow suivant :
+Lorsque vous installez le `magento/product-recommendations module`, Adobe Sensei agrège les données comportementales et de catalogue et crée [!DNL Product Recommendations] pour chaque type de recommandation. La variable [!DNL Product Recommendations] puis déploie ces recommandations sur votre storefront. Pour vous aider à mettre en oeuvre des recommandations de produits sur votre vitrine, utilisez le workflow suivant :
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Lorsque vous installez le `magento/product-recommendations module`, Adobe Sensei
 
 1. **Déploiement de la collecte de données en production**
 
-   Déploiement [!DNL Product Recommendations] requiert deux éléments principaux [sources de données](type.md): catalogue et comportement. La production étant le seul environnement dans lequel les actions de vos acheteurs sont capturées et analysées, il est dans votre intérêt de commencer dès que possible la collecte de données en production. [En savoir plus](behavioral-data.md) la manière dont Adobe Sensei entraîne des modèles d’apprentissage automatique qui génèrent des recommandations de meilleure qualité. En outre, lorsque vous commencez à collecter des données comportementales sur la production, vous pouvez [récupérer les recommandations](verify.md) sur la base de ces données de production lors de l’exploitation dans des environnements hors production. Vous pouvez ensuite tester et tester différentes recommandations calculées à partir de données réelles d’acheteurs collectées en production.
+   Déploiement [!DNL Product Recommendations] requiert deux éléments principaux [sources de données](type.md): catalogue et comportement. La production étant le seul environnement dans lequel les actions de vos acheteurs sont capturées et analysées, il est dans votre intérêt de commencer dès que possible la collecte de données en production. [Formation](behavioral-data.md) la manière dont Adobe Sensei entraîne des modèles d’apprentissage automatique qui génèrent des recommandations de meilleure qualité. En outre, lorsque vous commencez à collecter des données comportementales sur la production, vous pouvez [récupérer les recommandations](verify.md) sur la base de ces données de production lors de l’exploitation dans des environnements hors production. Vous pouvez ensuite tester et tester différentes recommandations calculées à partir de données réelles d’acheteurs collectées en production.
 
    Pour déployer la collecte de données en production, vous devez [installation et configuration](install-configure.md) la valeur [!DNL Product Recommendations] en fournissant un module [Clé API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
@@ -57,4 +57,4 @@ Lorsque vous installez le `magento/product-recommendations module`, Adobe Sensei
 
 1. **Créer et déployer des recommandations sur votre vitrine de production**
 
-   Maintenant que vous avez déployé la collecte de données comportementales en production, modifié le modèle de recommandations de produits et testé les recommandations à l’aide du comportement d’achat réel, vous êtes prêt à convertir tout le code en production et [create](create.md) recommandations de produits en direct.
+   Maintenant que vous avez déployé la collecte de données comportementales en production, modifié le modèle de recommandations de produits et testé les recommandations à l’aide du comportement réel d’acheteur, vous êtes prêt à convertir tout le code en production et [create](create.md) recommandations de produits en direct.

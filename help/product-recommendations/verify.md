@@ -34,7 +34,7 @@ Pour vous assurer que les événements se déclenchent sur les pages de votre si
 1. Rechargez la page.
 1. Vous devriez voir des appels sous `tp2` dans le **Nom** colonne .
 
-![Déclenchement d’événements](assets/filter-tp2.png)
+![Déclenchement des événements](assets/filter-tp2.png)
 _Vérification du déclenchement des événements_
 
 ## Vérification à l’aide de l’extension Chrome Snowplow

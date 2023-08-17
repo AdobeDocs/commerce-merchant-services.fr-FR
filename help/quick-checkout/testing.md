@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Avant d’exposer la variable [!DNL Quick Checkout] pour l’extension Adobe Commerce à vos clients, il est recommandé de tester dans un environnement de test et dans votre environnement de production. Les tests et la validation permettent de s’assurer que la variable [!DNL Quick Checkout] fonctionne comme prévu et offre une expérience de passage en caisse transparente à votre magasin et à vos clients.
 
-Avant de configurer la variable [!DNL Quick Checkout] Dans votre administrateur Adobe Commerce, il est nécessaire de créer  [production](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} comptes commerciaux dans [!DNL Bolt].
+Avant de configurer la variable [!DNL Quick Checkout] Dans votre administrateur Adobe Commerce, il est nécessaire de créer  [production](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} comptes de commerce dans [!DNL Bolt].
 
 ## Test dans un environnement de test
 
@@ -25,7 +25,7 @@ Test de la variable [!DNL Quick Checkout] dans un environnement de test est une 
 
 Lorsque vous testez et validez votre environnement de test, vous devez utiliser un faux numéro de carte de crédit et une [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} compte commercial dans [!DNL Bolt], afin que vous ne créiez pas de frais réels pour un compte de carte de crédit existant.
 
-## Test en production
+## Tests en production
 
 >[!NOTE]
 >

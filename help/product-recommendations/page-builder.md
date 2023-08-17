@@ -21,7 +21,7 @@ Le Recommendations de produit peut être intégré à n’importe quel contenu d
 ## Utilisation de Recommendations de produit avec du contenu de Page Builder
 
 1. Créez une unité de recommandation dans la vue de magasin par défaut d’un site web. Elles doivent être créées dans la vue de magasin par défaut, même si vous envisagez de les utiliser dans différentes vues de magasin.
-1. Dans Page Builder, sélectionnez le widget de contenu Recommendations du produit et placez-le sur votre site.
+1. Dans le créateur de pages, sélectionnez le widget de contenu Recommendations du produit et placez-le sur votre site.
 
 ![Insérer l’unité de recommandation](assets/pb-insert.png)
 

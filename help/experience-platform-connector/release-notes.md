@@ -6,7 +6,7 @@ feature: Personalization, Integration, Release Notes
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ Pour les modifications et correctifs de fonctionnalités liés aux extensions ut
 
 Voir [Versions à venir](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) pour en savoir plus sur les calendriers de publication et l’assistance.
 
-Consultez la documentation destinée aux développeurs pour [en savoir plus sur la compatibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Consultez la documentation destinée aux développeurs pour [découvrez la compatibilité des produits](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Mises à jour du service prises en charge
 
@@ -91,7 +91,7 @@ _17 janvier 2023_
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 * ![Nouveau](../assets/new.svg) - Mise à jour de la [Administrateur des connecteurs Experience Platform](connect-data.md) vous pouvez donc spécifier votre propre SDK Web AEP (allié).
-* ![Correction](../assets/fix.svg) Remplacé par l’utilisation de `identityMap` au lieu de `personID` lors de la définition de l’identité Principale pour toutes les données transmises à la périphérie.
+* ![Correction](../assets/fix.svg) Remplacé par l’utilisation `identityMap` au lieu de `personID` lors de la définition de l’identité principale pour toutes les données transmises à la périphérie.
 
 ## 2.0.1
 

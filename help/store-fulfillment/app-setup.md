@@ -1,6 +1,6 @@
 ---
 title: Configuration de l’application
-description: Configurez les [!DNL Store Assist] pour gérer les processus d’exécution de magasin de bout en bout et les processus d’achat en ligne, sélectionnez dans les commandes de magasin.
+description: Configurez la variable [!DNL Store Assist] pour gérer les processus d’exécution de magasin de bout en bout et les processus d’achat en ligne, sélectionnez dans les commandes de magasin.
 level: Intermediate
 role: Admin
 feature: Shipping/Delivery, Configuration, Tools and External Services
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Store Assist est une application de plateforme FaaS (fulfillment as a service) optimisée par Walmart Commerce Technologies. L’application fournit des fonctionnalités d’exécution en magasin à gérer. [!DNL buy online, pick up in store] Commandes (BOPIS). Grâce à l’assistant de magasin, les associés peuvent identifier les articles commandés par les clients, sélectionner les articles appropriés plus rapidement et configurer les commandes exécutées pour la remise en magasin ou à la prise en main aux clients.
 
-L’application d’aide au magasin reçoit toutes les informations sur la commande et les clients, depuis les détails de la commande jusqu’aux heures de prise en charge, et met les données à la disposition des associés du magasin en ligne, via les appareils mobiles. L’application comprend : [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], et [!UICONTROL Orders] modules pour aider Store Associates à exécuter des activités d’exécution comme celles-ci :
+L’application d’aide au magasin reçoit toutes les informations sur la commande et les clients, depuis les détails de la commande jusqu’aux heures de prise en charge, et met les données à la disposition des associés du magasin en ligne, via les appareils mobiles. L’application comprend : [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], et [!UICONTROL Orders] modules pour aider Store Associates à exécuter des activités d’exécution telles que :
 
 - Attribuez des dates et heures de remise de commande.
 - Recevez des notifications des clients lorsqu’ils arrivent pour le nettoyage de la commande.
@@ -39,17 +39,17 @@ L’application d’aide à la boutique nécessite deux types de configuration :
 
    - **Mise à jour des instructions par défaut**: personnalisez les instructions des modules d’aide à la boutique, sélection, évaluation, passation de commandes et commande pour guider Store Associates tout au long de chaque étape du processus d’exécution pour votre entreprise.
 
-   - **Localisation**: sélectionnez la langue disponible pour l’application. Sélectionnez le format de date et d’heure, puis les unités de mesure par défaut et la devise par défaut.
+   - **Localisation**: sélectionnez la langue disponible pour l’application. Choisissez le format de date et d’heure, puis sélectionnez vos unités de mesure par défaut et votre devise par défaut.
 
    - **Durée d’inactivité**: indiquez la durée pendant laquelle l’application doit être inactive avant de se déconnecter.
 
-   - **Annulation de la boutique**: indiquez si les commandes peuvent être annulées à partir du magasin et quels rôles disposent de droits d’annulation.
+   - **Annulation de la boutique**: indiquez si les commandes peuvent être annulées à partir du magasin et les rôles autorisés à annuler.
 
    - **Fenêtre de nettoyage des commandes**: indiquez la durée au-delà de laquelle la variable [Délai d’avance estimé pour la collecte](enable-general.md#delivery-method-title-configuration) qu’une commande sélectionnée reste en cours d’évaluation avant d’être réinitialisée (trois jours, par exemple). La valeur par défaut est de sept jours. Si cette configuration est activée, la commande est automatiquement annulée à l’expiration de ce délai. Les articles sont réactivés et le marchand reçoit un email d’annulation.
 
    - Personnalisez toutes les instructions de l’application (sélection, évaluation, remise).
 
-   - **Sélectionner des notifications**: indiquez si vous souhaitez envoyer une notification push pour démarrer le processus de sélection après qu’un client a passé une commande.
+   - **Récupération des notifications**: indiquez si vous souhaitez envoyer une notification push pour démarrer le processus de sélection après qu’un client a passé une commande.
 
    - **Archivage des notifications**: indiquez s’il faut envoyer une notification push pendant le processus d’archivage pour les récupérations de commande. Après l’enregistrement, le temps d’attente du client dépasse une période spécifiée. Vous pouvez également désactiver la notification.
 

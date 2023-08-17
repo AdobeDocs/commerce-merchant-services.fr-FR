@@ -23,19 +23,19 @@ Ce guide est destiné aux administrateurs de [!DNL Adobe Commerce] et [!DNL Mage
 
 [!DNL Payment Services] comporte deux zones pour les administrateurs :
 
-* L’administrateur : Utilisez cette zone pour accéder à l’interface utilisateur de configuration et aux rapports.
-* Interface de ligne de commande (ou CLI) : Utilisez cet outil pour exécuter les tâches d’installation et de configuration du serveur principal.
+* L’administrateur : utilisez cette zone pour accéder à l’interface utilisateur de configuration et aux rapports.
+* Interface de ligne de commande (ou CLI) : utilisez cet outil pour exécuter les tâches d’installation et de configuration du serveur principal.
 
 Ce guide couvre :
 
 * Tous [!DNL Payment Services]Tâches spécifiques effectuées dans l’administrateur.
-* Tous [!DNL Payment Services]Tâches spécifiques effectuées à l’aide de la ligne de commande Commerce
+* Tous [!DNL Payment Services]tâches spécifiques effectuées à l’aide de la ligne de commande Commerce
 
 Ce guide ne couvre pas les principales fonctionnalités de [!DNL Adobe Commerce] et [!DNL Magento Open Source].
 
 ## Documentation supplémentaire
 
-| Guide | Description |
+| Guide  | Description |
 |------ | ----------- |
 | [[!DNL Adobe Commerce] 2.4 Guide de l’utilisateur](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentation axée sur le marché pour les deux [!DNL Adobe Commerce] et [!DNL Magento Open Source] |
 | [[!DNL Adobe Commerce] 2.4 Guide du développeur](https://developer.adobe.com/commerce/docs) | Documentation destinée aux développeurs utilisée pour créer et personnaliser [!DNL Adobe Commerce] ou [!DNL Magento Open Source] |
@@ -47,4 +47,4 @@ Si vous avez besoin d’informations ou si vous avez des questions qui ne sont p
 ![Ressources d’aide](assets/help-resources.png)
 
 * [Centre d’aide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Rechercher [!DNL Payment Services]- articles de dépannage liés à dans la base de connaissances.
-* [tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket): soumettez un ticket pour recevoir une aide supplémentaire.
+* [tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket): soumettez un ticket pour recevoir de l’aide supplémentaire.

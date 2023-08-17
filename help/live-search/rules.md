@@ -19,7 +19,7 @@ Chaque règle comporte trois composants principaux :
 * Événements : actions qui se produisent lorsque les conditions sont remplies.
 * Détails : nom de la règle, période et description facultative.
 
-Vous pouvez combiner plusieurs conditions et actions et planifier une règle pour qu’elle soit principale pendant une période.
+Vous pouvez combiner plusieurs conditions et actions et programmer l’activation d’une règle pour une période.
 
 ## Conditions
 
@@ -36,7 +36,7 @@ Le texte de la requête peut contenir :
 
 ## Opérateurs logiques
 
-Les opérateurs logiques `AND` et `OR` joignez deux conditions et renvoyez des résultats différents. Tous les opérateurs logiques utilisés dans une règle avec plusieurs conditions sont identiques. Il n’est pas possible d’utiliser les deux `AND` et `OR` dans la même règle.
+Les opérateurs logiques `AND` et `OR` joignez deux conditions et renvoyez des résultats différents. Tous les opérateurs logiques utilisés dans une règle avec plusieurs conditions sont identiques. Il est impossible d’utiliser les deux `AND` et `OR` dans la même règle.
 
 ### Opérateurs de correspondance
 
@@ -53,19 +53,19 @@ Une seule règle est appliquée à un terme de recherche à la fois.
 Si plusieurs règles s’appliquent à une expression de recherche, toutes ces règles sont appliquées. En cas de collision entre deux règles —`rule 1` qui amplifie sku1 mais `rule 2` masque le même SKU, puis la règle la plus récemment appliquée (`rule 2`) a la priorité.
 
 * Les règles sont classées selon l’horodatage &quot;Dernière modification&quot;. La règle la plus récemment modifiée est appliquée en premier, puis les règles plus anciennes, dans l’ordre d’horodatage.
-* Le `query is` La condition a la priorité sur les autres conditions. Si une règle plus récente contient une `query contains` , mais une règle plus ancienne comporte une `query is` , la condition `query is` est appliquée.
+* La variable `query is` La condition a la priorité sur les autres conditions. Si une règle plus récente contient une `query contains` , mais une règle plus ancienne comporte une `query is` , la condition `query is` est appliquée.
 
 ### Demandes Storefront
 
-Si une règle principale contenant une `query is` La condition correspond à l’expression recherchée, elle est appliquée. S’il existe plusieurs règles correspondantes avec une `query is` , la règle principale la plus récemment mise à jour est appliquée.
-Dans le cas contraire, la règle principale mise à jour le plus récemment est appliquée.
+Si une règle active contenant une `query is` La condition correspond à l’expression recherchée, elle est appliquée. S’il existe plusieurs règles correspondantes avec une `query is` , la règle active mise à jour le plus récemment est appliquée.
+Dans le cas contraire, la règle active mise à jour le plus récemment est appliquée.
 
 ### Aperçu des requêtes
 
 Les requêtes effectuées dans l’administrateur fonctionnent légèrement différemment. Lors de la prévisualisation dans l’administrateur, toutes les règles sont appliquées, y compris celles qui ont expiré et planifiées.
 
 * Si la règle en cours de prévisualisation comporte une `query is` , elle est appliquée.
-* Si la règle en cours de prévisualisation n’a pas de `query is` et une principale suivante, correspondant à une règle `query is` est trouvée, la condition `query is` est appliquée.
+* Si la règle en cours de prévisualisation n’a pas de `query is` et une règle active, correspondante suivante avec une `query is` est trouvée, la condition `query is` est appliquée.
 * Si la règle en cours de prévisualisation n’a pas de `query is` et aucune autre règle avec une `query is` condition est trouvée, puis la règle en cours de prévisualisation est appliquée.
 
 ## Règles de catégorie et affectations de produits de catégorie

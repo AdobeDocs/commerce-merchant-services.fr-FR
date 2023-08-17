@@ -6,7 +6,7 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> Pour permettre à Adobe Commerce de partager les informations de passage en caisse avec Bolt, la variable [**Tracking de passage en caisse**](../quick-checkout/settings-quick-checkout.md)  doit être activé dans Admin. Par défaut, cette option de configuration est définie sur **Oui**. Si cette option est définie sur **Non**, les rapports seront affectés. Bolt actualise les informations de rapport une fois par jour à 03h00 (heure normale de l’Est).
+> Pour permettre à Adobe Commerce de partager les informations de passage en caisse avec Bolt, la variable [**Tracking de passage en caisse**](../quick-checkout/settings-quick-checkout.md)  doit être activé dans Admin. Par défaut, cette option de configuration est définie sur **Oui**. Si cette option est définie sur **Non**, la création de rapports sera affectée. Bolt actualise les informations de rapport une fois par jour à 03h00, heure normale de l’Est (HNE).
 
 ## Rapports de présentation
 
@@ -30,7 +30,7 @@ Les graphiques de la section Aperçu contiennent des informations détaillées s
 |---|---|
 | [!UICONTROL Checkout abandonment] | Pourcentage de visiteurs qui quittent le processus de passage en caisse sans effectuer d’achat. |
 | [!UICONTROL Checkout abandonment breakdown] | Abandon de passage en caisse divisé par type de visiteur. L’info-bulle affiche une différence en pourcentage entre Bolt et Guest. Options : [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
-| [!UICONTROL Average checkout time] | Durée moyenne requise par un visiteur pour terminer le processus de passage en caisse. |
+| [!UICONTROL Average checkout time] | La durée moyenne de passage en caisse d’un visiteur. |
 | [!UICONTROL Average checkout time breakdown] | Durée moyenne de passage en caisse divisée par type de visiteur. L’info-bulle affiche une différence en pourcentage entre Bolt et Guest. Options : [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | Commandes passées divisées par type de visiteur. Options : [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
@@ -55,4 +55,4 @@ Vous pouvez filtrer les résultats affichés par date ou les paramètres prédé
 | Champ | Description |
 |---|---|
 | [!UICONTROL Preset] | Liste déroulante qui affiche des paramètres prédéfinis par défaut pouvant être utilisés pour afficher des plages de données spécifiques. Par défaut : 30 derniers jours |
-| [!UICONTROL Date range] | Une liste déroulante permettant de sélectionner une plage de données spécifique selon les dates sélectionnées. |
+| [!UICONTROL Date range] | Une liste déroulante qui vous permet de sélectionner une plage de données spécifique en fonction des dates sélectionnées. |

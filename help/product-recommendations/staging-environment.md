@@ -22,7 +22,7 @@ Les types de recommandations suivants nécessitent des données comportementales
 - A consulté ceci, consulté cela
 - Acheté ceci, acheté cela
 
-Comment pouvez-vous tester vos recommandations dans un environnement hors production à l’aide de données comportementales ? Il y a quelques options.
+Comment tester vos recommandations dans un environnement hors production à l’aide de données comportementales ? Il y a deux ou trois options.
 
 ## Récupération des recommandations de l’environnement de production (recommandé)
 
@@ -42,7 +42,7 @@ Pour récupérer les recommandations de votre environnement de production, vous 
 1. Générez vous-même les données en cliquant autour de votre vitrine pour imiter le comportement des acheteurs réels (ou créez un script d’automatisation). Grâce à vos tests, vous générez des événements comportementaux sur votre environnement hors production. Ces événements sont utilisés pour produire les affinités produit qui alimentent les recommandations. Pour les tests, [!DNL Commerce] suggère que vous interagissiez avec les types de recommandations suivants :
 
    - Le plus consulté : nécessite un minimum de données d’entrée. Les utilisateurs doivent afficher les produits.
-   - A consulté ceci, consulté cela : nécessite que plusieurs utilisateurs affichent plusieurs produits.
+   - A consulté ceci, consulté cela - Nécessite que plusieurs utilisateurs affichent plusieurs produits.
    - Acheté ceci, acheté cela - Nécessite que plusieurs utilisateurs achètent plusieurs produits.
 
 ### Avertissements

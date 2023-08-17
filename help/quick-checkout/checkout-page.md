@@ -14,7 +14,7 @@ ht-degree: 0%
 
 La page de passage en caisse permet aux clients de saisir les informations requises pour passer une commande.
 
-Exemple de page de passage en caisse :
+Exemple de page de paiement :
 
 ![Page Passage en caisse](assets/checkout-page.png)
 
@@ -29,4 +29,4 @@ Par défaut, le passage en caisse se compose de deux étapes :
 >
 > Une fois la première étape terminée, le passage en caisse affiche les totaux de passage en caisse et les informations de barre latérale correspondantes.
 
-Reportez-vous à la section [flux de passage en caisse](../quick-checkout/checkout-flow.md) pour plus d’informations sur la rubrique [!DNL Quick Checkout] flux.
+Voir [flux de passage en caisse](../quick-checkout/checkout-flow.md) pour plus d’informations sur la rubrique [!DNL Quick Checkout] flux.

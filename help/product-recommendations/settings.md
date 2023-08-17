@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Paramètres
 
-Lorsque vous [configuration d’un espace de données SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) pour Recommendations, l’espace de données SaaS collecte des données de catalogue et des données comportementales de storefront. [Adobe Sensei](https://www.adobe.com/sensei.html) analyse les données et calcule les associations de produits utilisées pour servir Product Recommendations.
+Lorsque vous [configurer un espace de données SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) pour Recommendations, l’espace de données SaaS collecte des données de catalogue et des données comportementales de storefront. [Adobe Sensei](https://www.adobe.com/sensei.html) analyse les données et calcule les associations de produits utilisées pour servir Product Recommendations.
 
 Les environnements hors production pour le test ou l’évaluation n’ont généralement pas la quantité ou la qualité des données comportementales de storefront pour fournir des recommandations de produits réalistes. Le comportement réel des acheteurs à l’échelle ne peut être capturé que dans un environnement de production. Pour résoudre ce problème, Adobe Commerce vous permet d’utiliser les recommandations de produits de votre environnement de production avec d’autres espaces de données SaaS hors production. L’utilisation de données de vitrine réelles dans un environnement hors production vous permet de prévisualiser les recommandations que vos acheteurs voient et d’expérimenter avec différents types de recommandations et emplacements. Les acheteurs peuvent prévisualiser les Recommendations d’un autre espace de données SaaS, mais pas cliquer dessus.
 
 >[!NOTE]
 >
->Lors de l’utilisation de Recommendations de produit par le biais de REST, la variable `alternateEnvironmentId` peut être utilisé pour spécifier d’autres aspects des données. Lorsque vous utilisez le Recommendations de produit via GraphQL, ce paramètre n’est pas disponible.
+>Lors de l’utilisation de Recommendations de produit par le biais de REST, la variable `alternateEnvironmentId` peut être utilisé pour spécifier d’autres aspects de données. Lorsque vous utilisez le Recommendations de produit via GraphQL, ce paramètre n’est pas disponible.
 
 ## Choisissez la source des recommandations
 
@@ -35,7 +35,7 @@ Pour modifier la source de vos données de recommandations de produits, choisiss
    ![paramètres de recommandation de produit](assets/settings.png)
    _Paramètres_
 
-1. Dans le _Source Recommendations_ , activez la fonction **Récupérer des recommandations à partir d’un autre espace de données SaaS** . Le _Source Recommendations_ s’affiche uniquement dans un environnement hors production.
+1. Dans le _Source Recommendations_ , activez la fonction **Récupérer des recommandations à partir d’un autre espace de données SaaS** . La variable _Source Recommendations_ s’affiche uniquement dans un environnement hors production.
 
    Une liste de _Espaces de données SaaS disponibles_ apparaît.
 
@@ -62,4 +62,4 @@ Pour modifier la source de vos données de recommandations de produits, choisiss
 
 Si la variable [Visual Product Recommendations](install-configure.md) est installé, vous devez activer Visual Recommendations pour utiliser la variable [Similarité visuelle](type.md#visualsim) type de recommandation.
 
-Dans le _Visual Recommendations_ , définissez **Activer Visual Recommendations** à la principale position.
+Dans le _Visual Recommendations_ , définissez **Activer Visual Recommendations** à la position active.

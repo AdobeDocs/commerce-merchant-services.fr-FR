@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Style [!DNL Popover] Éléments
 
-Le [[!DNL storefront popover]](storefront-popover.md) affiche toujours le produit `name` et `price`et la sélection des champs n’est pas configurable. Cependant, [!DNL popover] Les éléments peuvent être stylisés à l’aide de classes CSS. Par exemple, les déclarations suivantes modifient la couleur d’arrière-plan de la variable [!DNL popover] conteneur et pied de page.
+La variable [[!DNL storefront popover]](storefront-popover.md) affiche toujours le produit `name` et `price`et la sélection des champs n’est pas configurable. Cependant, [!DNL popover] Les éléments peuvent être stylisés à l’aide de classes CSS. Par exemple, les déclarations suivantes modifient la couleur d’arrière-plan de la variable [!DNL popover] conteneur et pied de page.
 
 ```css
 .livesearch.popover-container {
@@ -25,7 +25,7 @@ Le [[!DNL storefront popover]](storefront-popover.md) affiche toujours le produi
 
 ## Visibilité des conteneurs
 
-Le composant parent du `.livesearch.popover-container` is `.search-autocomplete`.  Le `.active` indique la visibilité du conteneur. Le `.active` est ajoutée de manière conditionnelle lorsque la variable [!DNL popover] est ouvert.
+Le composant parent du `.livesearch.popover-container` is `.search-autocomplete`.  La variable `.active` indique la visibilité du conteneur. La variable `.active` est ajoutée de manière conditionnelle lorsque la variable [!DNL popover] est ouvert.
 
 ```css
 .search-autocomplete.active   /* visible */
@@ -75,7 +75,7 @@ Les sélecteurs de classe suivants peuvent être utilisés pour mettre en forme 
 
 ## Utilisation d’un thème modifié {#working-with-modified-theme}
 
-Le [!DNL storefront popover] peut être utilisé avec une [thème](https://developer.adobe.com/commerce/frontend-core/guide/themes/) qui hérite des fichiers requis de *Luma*. Le `top.search` dans le `header-wrapper` de `Magento_Search` ne doit pas être modifié.
+La variable [!DNL storefront popover] peut être utilisé avec une [thème](https://developer.adobe.com/commerce/frontend-core/guide/themes/) qui hérite des fichiers requis de *Luma*. La variable `top.search` dans le `header-wrapper` de `Magento_Search` ne doit pas être modifié.
 
 ```html
 <referenceContainer name="header-wrapper">

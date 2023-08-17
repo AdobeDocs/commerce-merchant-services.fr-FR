@@ -15,8 +15,8 @@ ht-degree: 0%
 [!DNL Payment Services] est optimisé par Commerce Services et déployé en tant que SaaS (logiciel en tant que service). Vous connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration à l’aide de la variable [Connecteur Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **Vous ne configurez cette connexion qu’une seule fois.**
 
 * Si vous avez *votre instance déjà connectée*, en obtenant et en utilisant vos informations d’identification d’API et en configurant Commerce Services, vous pouvez passer à [configuration de votre environnement de test](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
-* Si vous continuez *besoin de connecter votre instance ;*, reportez-vous aux informations de cette rubrique sur [Obtention des informations d’identification d’API](#obtain-api-credentials) et [configuration de Commerce Services](#configure-commerce-services).
-* Si vous êtes *ne pas savoir si votre instance est connectée*, accédez à **Système** > Services > **Connecteur Commerce Services** et d’afficher les valeurs des clés API publiques et privées dans la variable [!UICONTROL Sandbox Keys] et [!UICONTROL Production Keys] et la variable *Projet* et *Espace de données* dans le champ [!UICONTROL SaaS Identifier] . Si ces valeurs sont présentes, votre instance est connectée.
+* Si vous continuez *besoin de connecter votre instance*, reportez-vous aux informations de cette rubrique sur [Obtention des informations d’identification d’API](#obtain-api-credentials) et [configuration de Commerce Services](#configure-commerce-services).
+* Si vous *ne pas savoir si votre instance est connectée*, accédez à **Système** > Services > **Connecteur Commerce Services** et d’afficher les valeurs des clés API publiques et privées dans la variable [!UICONTROL Sandbox Keys] et [!UICONTROL Production Keys] et la variable *Projet* et *Espace de données* dans le champ [!UICONTROL SaaS Identifier] . Si ces valeurs sont présentes, votre instance est connectée.
 
 ## Obtention des informations d’identification de l’API
 
@@ -26,7 +26,7 @@ Pour utiliser un service SaaS Commerce, vous devez utiliser les clés d’API de
 >
 >Besoin d’aide pour accéder à [!UICONTROL My Account] tableau de bord ? Voir [Création d’un compte Commerce](https://docs.magento.com/user-guide/magento/magento-account-create.html).
 
-Une fois créée, une clé API publique est toujours disponible dans le tableau de bord Mon compte. Il peut être copié ou supprimé si nécessaire. La clé d’API privée devient visible lorsque vous créez une clé d’API publique pour l’environnement de test ou la production ; il n’est disponible que pour la copie ou l’enregistrement à partir de la boîte de dialogue qui s’ensuit et il est inaccessible ultérieurement.
+Une fois créée, une clé API publique est toujours disponible dans le tableau de bord Mon compte. Il peut être copié ou supprimé si nécessaire. La clé d’API privée devient visible lorsque vous créez une clé d’API publique pour l’environnement de test ou la production. Elle n’est disponible que pour la copie ou l’enregistrement à partir de la boîte de dialogue qui s’ensuit et ne peut pas être consultée ultérieurement.
 
 Une paire de clés API donnée est valide pour tous les services de commerce dans un environnement. Par conséquent, si vous avez déjà configuré les services de commerce pour votre instance, votre paire de clés API est déjà présente dans le connecteur de services de commerce.
 
@@ -37,7 +37,7 @@ Voir [liste des services Commerce disponibles qui utilisent l’API](https://doc
 Pour savoir comment générer une clé API pour des environnements de test ou de production, voir [Informations d’identification](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
->Il est recommandé de ne pas régénérer une paire de clés API *et* Modifiez l’identifiant SaaS et/ou l’espace de données sur une instance de production principale. Vous perdrez des données pour votre instance si elles sont modifiées.
+>Il est recommandé de ne pas régénérer une paire de clés API *et* Modifiez l’identifiant SaaS et/ou l’espace de données sur une instance de production active. Vous perdrez des données pour votre instance si elles sont modifiées.
 
 ## Configuration de Commerce Services
 

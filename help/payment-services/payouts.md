@@ -25,7 +25,7 @@ Les vues Payouts affichent des informations complètes en un coup d’oeil, ce q
 
 >[!NOTE]
 >
->Les rapports sur les paiements affichent uniquement les commandes capturées (l’action de paiement est définie sur [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))—ou [marqué comme `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
+>Les rapports sur les paiements affichent uniquement les commandes capturées (l’action de paiement est définie sur [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))—ou [Marqué comme `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
 ## Vue de visualisation des données de paiement
 
@@ -56,8 +56,8 @@ La vue de visualisation des données de paiement comprend les informations suiva
 
 | Données | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Transaction amount] | Période pour les transactions pendant une période spécifiée ; données sur l’axe Y (gauche) |
-| Période | période pour la période spécifiée ; données sur l’axe X (bas) |
+| [!UICONTROL Transaction amount] | Période pour les transactions sur une période spécifiée ; données sur l’axe Y (gauche) |
+| Période | Période pour la période spécifiée ; données sur l’axe X (bas) |
 | Crédit | Paiements pour la période spécifiée |
 | Débit | Débits (remboursements) pour la période spécifiée |
 | Moyenne glissante | Représentation du paiement moyen pour chaque date de la période spécifiée |
@@ -65,7 +65,7 @@ La vue de visualisation des données de paiement comprend les informations suiva
 
 ## Vue du rapport Payements
 
-La vue Rapport de paiements est disponible dans la vue Versements des Services de paiement. Elle contient toutes les informations disponibles sur les paiements pour vos magasins. Le [Vue de visualisation des données de paiement](#payouts-data-visualization-view) dans la page d’accueil des services de paiement est une représentation visuelle des montants agrégés par jour dans cette vue de rapport plus détaillée.
+La vue Rapport de paiements est disponible dans la vue Versements des Services de paiement. Elle contient toutes les informations disponibles sur les paiements pour vos magasins. La variable [Vue de visualisation des données de paiement](#payouts-data-visualization-view) dans la page d’accueil des services de paiement est une représentation visuelle des montants agrégés par jour dans cette vue de rapport plus détaillée.
 
 Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** pour afficher le tableau détaillé de la vue Rapport de versements .
 
@@ -79,7 +79,7 @@ Vous pouvez [téléchargement des transactions de paiement](#download-transactio
 
 >[!NOTE]
 >
->Les données affichées dans ce tableau sont triées par ordre décroissant (`DESC`) par défaut, à l’aide de la fonction `TRANS DATE`. Le `TRANS DATE` est la date et l’heure auxquelles la transaction a été lancée.
+>Les données affichées dans ce tableau sont triées par ordre décroissant (`DESC`) par défaut, à l’aide de la fonction `TRANS DATE`. La variable `TRANS DATE` est la date et l’heure auxquelles la transaction a été lancée.
 
 ### Sélectionner la source de données
 
@@ -108,11 +108,11 @@ Par défaut, 30 jours de transactions sont affichés.
 
 Le nombre de lignes renvoyé dans une recherche, ou indiqué dans les 30 jours par défaut des transactions, s’affiche au-dessus de la grille Vue des paiements avec le filtre du sélecteur de dates de transaction .
 
-Faites défiler l’écran vers la gauche et la droite pour afficher [informations pour chaque transaction de paiement](#column-descriptions) dans le rapport quotidien, notamment la date de transaction, l’ID de référence, le numéro de facture et les détails du mode de paiement.
+Faites défiler vers la gauche et la droite pour afficher [informations pour chaque transaction de paiement](#column-descriptions) dans le rapport quotidien, notamment la date de transaction, l’ID de référence, le numéro de facture et les détails du mode de paiement.
 
 #### Personnalisation de la période des transactions
 
-Dans la vue Rapport de versements, vous pouvez personnaliser la période des transactions de paiement que vous souhaitez afficher en saisissant des dates spécifiques ou en sélectionnant une période dans le sélecteur de date :
+Dans la vue Rapport de versements, vous pouvez personnaliser la période des transactions de paiement que vous souhaitez afficher en saisissant des dates spécifiques ou en sélectionnant une plage de dates dans le sélecteur de date :
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
 1. Cliquez sur le filtre du sélecteur de calendrier des dates de transaction .
@@ -124,8 +124,8 @@ Dans la vue Rapport de versements, vous pouvez personnaliser la période des tra
 La vue Rapport de paiements affiche la plupart des colonnes d’informations disponibles par défaut. Vous pouvez toutefois personnaliser les colonnes affichées dans le rapport.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
-1. Cliquez sur le bouton _Paramètres des colonnes_ Icône (![icône des paramètres de colonne](assets/column-settings.png)).
-1. Pour personnaliser les colonnes affichées dans le rapport, cochez ou décochez celles de la liste.
+1. Cliquez sur le bouton _Paramètres des colonnes_ icône (![icône des paramètres de colonne](assets/column-settings.png)).
+1. Pour personnaliser les colonnes affichées dans le rapport, cochez ou décochez les colonnes de la liste.
 
    La vue du rapport Versions affiche immédiatement les modifications que vous avez apportées au menu Paramètres de colonne. Les préférences de colonne seront enregistrées et resteront en vigueur si vous quittez la vue du rapport.
 
@@ -155,13 +155,13 @@ Les rapports de paiement comprennent les informations suivantes.
 | [!UICONTROL Invoice] | Identifiant de facture (une par commande) de la transaction |
 | [!UICONTROL Commerce order] | ID de commande de commerce <br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html), cliquez sur l’identifiant. |
 | [!UICONTROL Commerce trans] | Commerce transaction ID |
-| [!UICONTROL Pay method] | Type de carte de crédit —*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*: et fournisseur de carte associé (par exemple, *Visa* ou *MasterCard*) |
+| [!UICONTROL Pay method] | Type de carte de crédit —*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*: et le fournisseur de carte associé (par exemple, *Visa* ou *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Montant de la transaction |
 | [!UICONTROL CUR] | Unité de devise pour le montant des transactions |
 | [!UICONTROL PENDING] | Montant à débourser |
 | [!UICONTROL CUR] | Unité de devise pour le montant en attente |
 | [!UICONTROL SELLER AMT] | Montant des fonds transférés à ou à un client <br> <br>Les fonds sortants du compte du vendeur affichent un préfixe tiret (-). |
-| [!UICONTROL CUR] | Unité de devise du montant du vendeur |
+| [!UICONTROL CUR] | Unité de devise pour le montant du vendeur |
 | [!UICONTROL PARTNER FEE] | Frais de partenaire associés à la transaction <br> <br>Les fonds qui sortent du compte de frais du partenaire affichent un préfixe tiret (-). |
 | [!UICONTROL CUR] | Unité de devise pour les frais de partenaire |
 | [!UICONTROL PROV FEES] | Frais associés à la transaction <br> <br>Les fonds qui sortent du compte de frais du fournisseur affichent un préfixe tiret (-). |
@@ -183,7 +183,7 @@ Ces types de transaction peuvent être indiqués dans les transactions de paieme
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Argent passé entre un acheteur et un vendeur pour une commande |
 | [!UICONTROL AUTH] | Transactions d’autorisation et d’autorisation nulle |
-| [!UICONTROL BONUS] | -- |
+| [!UICONTROL BONUS] | — |
 | [!UICONTROL CHARGEBACK] | Transactions d’annulation et d’annulation de frais |
 | [!UICONTROL CORRECTION] | -- |
 | [!UICONTROL CURRENCY_CONVERSION] | -- |

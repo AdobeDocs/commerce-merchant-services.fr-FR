@@ -22,12 +22,12 @@ Pour les commandes traitées avec PayPal ou une carte de crédit, vous pouvez :
 * Remboursement d’un montant partiel d’une commande (ou de plusieurs montants partiels)
 * Rembourser un montant inférieur à la valeur d’un article de commande spécifique
 
-Voir [Émission d’un avoir](https://docs.magento.com/user-guide/sales/credit-memo-create.html){target="_blank"} pour plus d’informations.
+Voir [Émission d’une note de crédit](https://docs.magento.com/user-guide/sales/credit-memo-create.html){target="_blank"} pour plus d’informations.
 
 >[!NOTE]
 >
 >Une erreur se produit pour PayPal ou les commandes traitées par carte de crédit si vous tentez de partiellement rembourser une commande pour plus que le montant restant de la commande (montant original moins le total des remboursements existants), ou si vous effectuez un remboursement pour un montant supérieur au montant total de la commande.
 
-Le [!UICONTROL Payment Action] dans votre [!UICONTROL Payment Settings] configuration : soit `Authorize` ou `Authorize and Capture`: détermine la variable [workflow de remboursement de base](https://docs.magento.com/user-guide/sales/credit-memos.html#refund-workflow){target="_blank"} pour les commandes.
+La variable [!UICONTROL Payment Action] dans votre [!UICONTROL Payment Settings] configuration : soit `Authorize` ou `Authorize and Capture`: détermine la variable [workflow de remboursement de base](https://docs.magento.com/user-guide/sales/credit-memos.html#refund-workflow){target="_blank"} pour les commandes.
 
-Voir [Section de paramétrage des actions de paiement](https://docs.magento.com/user-guide/sales/credit-memo-create.html#payment-action-setting){target="_blank"} de _Émission d’un avoir_ pour plus d’informations.
+Voir [Section de paramétrage des actions de paiement](https://docs.magento.com/user-guide/sales/credit-memo-create.html#payment-action-setting){target="_blank"} de _Émission d’une note de crédit_ pour plus d’informations.

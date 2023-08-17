@@ -1,7 +1,8 @@
 ---
 title: Modifier la recommandation
 description: Découvrez comment modifier une recommandation de produit.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 36fd6d3a-74f8-4510-a187-a2a91742cd1a
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
@@ -18,7 +19,7 @@ La page Modifier la recommandation vous permet d’ajuster les paramètres indiv
 - [Emplacement et position](#placement)
 - [Filtrage des produits](#filters)
 
-L’aperçu sur le côté droit de la page indique comment la recommandation avec les paramètres actuels peut apparaître dans le storefront. Le _Aperçu des produits recommandés_ reste visible à titre de référence lorsque vous faites défiler la page vers le bas. L’aperçu affiche une image miniature du produit, le nom du produit, le SKU, le prix et le type de résultat pour chaque produit renvoyé. Le type de résultat indique s’il existe suffisamment de données comportementales Principales pour générer la recommandation ou s’il utilise des données comportementales de sauvegarde.
+L’aperçu sur le côté droit de la page indique comment la recommandation avec les paramètres actuels peut apparaître dans le storefront. La variable _Aperçu des produits recommandés_ reste visible à titre de référence lorsque vous faites défiler la page vers le bas. L’aperçu affiche une image miniature du produit, le nom du produit, le SKU, le prix et le type de résultat pour chaque produit renvoyé. Le type de résultat indique s’il existe suffisamment de données comportementales primaires pour générer la recommandation ou s’il utilise des données comportementales de sauvegarde.
 
 ![Modifier Recommendations](assets/edit-recommendation.png)
 
@@ -30,7 +31,7 @@ L’aperçu sur le côté droit de la page indique comment la recommandation ave
 
 1. Cliquez sur **Modifier**. Suivez ensuite les instructions ci-dessous pour apporter les modifications dont vous avez besoin.
 
-1. Une fois l’opération terminée, cliquez sur **Enregistrer les modifications**.
+1. Lorsque vous avez terminé, cliquez sur **Enregistrer les modifications**.
 
 ### Nom de la recommandation {#name}
 
@@ -67,7 +68,7 @@ Réglez le curseur pour afficher jusqu’à 20 produits dans l’unité de recom
 
 Toute modification apportée au produit [filtres](filters.md) sont reflétés dans la variable _Aperçu des produits recommandés_. Seuls les produits qui correspondent aux filtres d’inclusion peuvent être recommandés. Les produits qui correspondent à des filtres d’exclusion ne sont pas recommandés.
 
-Le _Inclusions_ et _Exclusions_ les onglets répertorient les filtres disponibles de chaque type. Dans la liste, chaque principal filtre est identifié par un point bleu.
+La variable _Inclusions_ et _Exclusions_ les onglets répertorient les filtres disponibles de chaque type. Dans la liste, chaque filtre actif est marqué d’un point bleu.
 
 - Pour afficher les détails de chaque filtre, cliquez sur le nom du filtre.
 - Pour modifier l’état du filtre, définissez la variable **Activer le filtre** basculer vers le `on` ou `off` position.

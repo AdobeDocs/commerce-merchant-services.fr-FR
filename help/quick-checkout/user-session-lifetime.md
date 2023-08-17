@@ -17,8 +17,8 @@ La durée de vie d’une session d’acheteur est déterminée par plusieurs fac
 La durée de vie configurée des cookies peut affecter votre [!DNL Quick Checkout] if :
 
 1. En raison de l’inactivité, l’acheteur est déconnecté d’Adobe Commerce.
-1. Le [!DNL Bolt] expire.
+1. La variable [!DNL Bolt] expire.
 
 Si un acheteur passe une commande lors de la [!DNL Bolt] expire, la commande est placée correctement, mais l’utilisateur est déconnecté des deux réseaux.
 
-Si l’utilisateur est toujours principal après un passage en caisse réussi, il ne sera pas déconnecté d’Adobe Commerce et de [!DNL Bolt].
+Si l’utilisateur est toujours actif après un passage en caisse réussi, il ne sera pas déconnecté d’Adobe Commerce et de [!DNL Bolt].

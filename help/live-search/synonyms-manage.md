@@ -1,6 +1,6 @@
 ---
-title: '"Gestion des Synonymes"'
-description: '"Découvrez comment gérer les [!DNL Live Search] synonymes."'
+title: "Gestion des Synonymes"
+description: "Découvrez comment gérer les [!DNL Live Search] synonymes."
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
 source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
@@ -33,9 +33,9 @@ Pour faciliter la recherche d&#39;un synonyme, vous pouvez filtrer la liste par 
 Le mot-clé est le premier terme de la liste et chaque terme est séparé par une virgule. Le mot-clé et les termes d’extension peuvent être mis à jour, mais le type de synonyme ne peut pas être modifié.
 1. Cliquez sur l’élément à modifier. Mettez ensuite le texte à jour selon vos besoins.
 
-   ![modification d’un synonyme bidirectionnel](assets/synonym-two-way-edit.png)
+   ![modifier un synonyme bidirectionnel](assets/synonym-two-way-edit.png)
 
-1. Une fois l’opération terminée, cliquez sur **Enregistrer**.
+1. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
 ## Suppression d’un synonyme
 

@@ -28,7 +28,7 @@ Une réussite [!DNL Quick Checkout] Le flux se compose des étapes suivantes :
 1. Lorsque vous y êtes invité, saisissez une adresse électronique associée à un événement [!DNL Bolt] compte .
 1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique ou numéro de téléphone du compte.
 
-![Fenêtre contextuelle OTP](assets/new-logo-otp-email.png)
+![pop-up OTP](assets/new-logo-otp-email.png)
 
 1. Une fois connecté avec votre [!DNL Bolt] compte, les détails du passage en caisse sont automatiquement renseignés :
 
@@ -41,11 +41,11 @@ Une réussite [!DNL Quick Checkout] Le flux se compose des étapes suivantes :
 
 1. Ordre.
 
-Le [!DNL Quick Checkout] est compatible avec les options de passage en caisse standard d’Adobe Commerce, telles que [cartes cadeau](https://docs.magento.com/user-guide/catalog/product-gift-card.html) ou [codes remise](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
+La variable [!DNL Quick Checkout] est compatible avec les options de passage en caisse standard d’Adobe Commerce, telles que [cartes cadeau](https://docs.magento.com/user-guide/catalog/product-gift-card.html) ou [codes remise](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
 
 ## [!DNL Quick Checkout] cas d’utilisation
 
-Le [!DNL Quick Checkout] permet plusieurs cas d’utilisation lors d’un flux de passage en caisse :
+La variable [!DNL Quick Checkout] permet plusieurs cas d’utilisation lors d’un flux de passage en caisse :
 
 - [Utilisateur invité](../quick-checkout/checkout-bolt.md) avec un enregistrement ou un nouveau [!DNL Bolt] compte .
 - Une [Utilisateur Adobe Commerce](../quick-checkout/checkout-adobe-commerce.md) avec ou sans enregistrement [!DNL Bolt] compte .

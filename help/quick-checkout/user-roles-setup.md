@@ -18,9 +18,9 @@ Pour accéder au [!DNL Quick Checkout] Panneau d’administration :
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
 
-   ![Menu Passage en caisse rapide](assets/overview-admin-panel.png)
+   ![Menu Achat rapide](assets/overview-admin-panel.png)
 
-Reportez-vous à la section [intégration](../quick-checkout/onboarding.md) rubrique pour plus d’informations sur la configuration de la variable [!DNL Quick Checkout] pour Adobe Commerce.
+Voir [intégration](../quick-checkout/onboarding.md) rubrique pour plus d’informations sur la configuration de la variable [!DNL Quick Checkout] pour Adobe Commerce.
 
 Pour permettre à l’utilisateur d’accéder au [!DNL Quick Checkout] Dans le panneau d’administration, vous devez vérifier que l’utilisateur dispose des ressources de rôle appropriées accordées :
 
@@ -29,10 +29,10 @@ Pour permettre à l’utilisateur d’accéder au [!DNL Quick Checkout] Dans le 
    ![Rôles utilisateur](assets/user-roles-small.png)
 
 1. Dans le _Rôles_ afficher, cliquez sur **Ajouter un nouveau rôle**
-1. Sélectionnez la [!DNL Quick Checkout] ressources :
+1. Sélectionnez la variable [!DNL Quick Checkout] ressources :
 
    ![Rôles et autorisations du passage en caisse rapide](assets/role-resource-quick-checkout.png)
 
 1. Cliquez sur **Rôle d’enregistrement**.
 
-Reportez-vous à la section [Rôles utilisateur](https://docs.magento.com/user-guide/system/permissions-user-roles.html) pour plus d’informations sur la définition d’un rôle ou l’affectation d’un rôle à un utilisateur.
+Voir [Rôles utilisateur](https://docs.magento.com/user-guide/system/permissions-user-roles.html) pour plus d’informations sur la définition d’un rôle ou l’affectation d’un rôle à un utilisateur.

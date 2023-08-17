@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Catalog Service] Notes de mise à jour de'
+title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
@@ -95,9 +95,9 @@ _17 janvier 2023_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg) Simplification et amélioration de l’expérience d’intégration.
+![Nouveau](../assets/new.svg) Simplification et amélioration de l’intégration.
 ![Nouveau](../assets/new.svg) De nouveaux points de terminaison d’environnement de test client sont disponibles pour les tests de pré-production.
-![Nouveau](../assets/new.svg) Ajout de la prise en charge des produits virtuels.
+![Nouveau](../assets/new.svg) Ajout de la prise en charge des produits virtuels
 ![Correction](../assets/fix.svg) Améliorations de l’évolutivité et des performances des API.
 
 ### Version V1.1
@@ -130,8 +130,8 @@ _12 septembre 2022_
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) Prise en charge des images pour les variantes : les images de produit sont renvoyées en fonction des options sélectionnées.
-![Nouveau](../assets/new.svg) Les rôles pour les prix prennent en charge : autoriser uniquement les membres de groupes de clients spécifiques à voir le prix des produits ;
-![Correction](../assets/fix.svg) Amélioration de la stabilité et des performances du service
+![Nouveau](../assets/new.svg) Rôles de prise en charge des prix : permettent uniquement aux membres de groupes de clients spécifiques de voir le prix des produits.
+![Correction](../assets/fix.svg) Stabilité et performances améliorées du service
 ![Nouveau](../assets/new.svg) Des mises à jour sont reçues lorsque des produits sont supprimés du catalogue.
 
 ### Version bêta
@@ -140,7 +140,7 @@ _9 août 2022_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg) Le `products` et `refineProduct` les requêtes renvoient les données suivantes :
+![Nouveau](../assets/new.svg) La variable `products` et `refineProduct` les requêtes renvoient les données suivantes :
 
 * Attributs de produit prédéfinis (système).
 * Attributs de produit dynamiques et filtrez-les par rôle (page d’affichage de produit/page de liste de produits).

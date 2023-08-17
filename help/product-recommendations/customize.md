@@ -15,7 +15,7 @@ Lorsque vous installez le module Recommendations de produit, Adobe Commerce cré
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-Pour plus d’informations sur la modification des fichiers de modèle, reportez-vous à la section [Personnalisation des modèles](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) dans le guide de développement de Frontend.
+Pour plus d’informations sur la modification des fichiers de modèle, voir [Personnalisation des modèles](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) dans le guide de développement de Frontend.
 
 Si vous modifiez la variable `recommendations.html` , vous devez conserver les balises suivantes dans le fichier pour vous assurer qu’Adobe Commerce peut collecter des mesures de recommandation à partir de votre vitrine :
 
@@ -37,7 +37,7 @@ En plus de la variable `recommendations.html` , `ProductRecommendationsLayout` c
 
 Lorsque vous [create](create.md) une recommandation, vous spécifiez la variable [location](placement.md) où il apparaît sur la page. Une unité de recommandation peut être placée en haut ou en bas du conteneur de contenu principal. Vous pouvez toutefois personnaliser cet emplacement. Si vous créez un type de contenu de recommandation Page Builder , utilisez les outils Page Builder pour positionner l’unité de recommandation sur la page. Pour tous les autres types de page, modifiez la variable `*.xml` fichiers générés lors de la création de la recommandation.
 
-1. Changement de la variable `layout` directory:
+1. Changement de la `layout` directory:
 
    ```bash
    cd `<your theme>/Magento_ProductRecommendationsLayout/layout`
@@ -57,7 +57,7 @@ Lorsque vous [create](create.md) une recommandation, vous spécifiez la variable
    >
    >Les noms de fichier dans la variable `layout` peut être différent si votre magasin utilise des extensions tierces.
 
-1. Modifiez le `catalog_product_view.xml` afin que l’unité de recommandation s’affiche après l’image du produit sur la page des détails du produit. Avant de personnaliser ce fichier XML, consultez le fichier et comprenez les sections à modifier :
+1. Modifiez la variable `catalog_product_view.xml` afin que l’unité de recommandation s’affiche après l’image du produit sur la page des détails du produit. Avant de personnaliser ce fichier XML, consultez le fichier et comprenez les sections à modifier :
 
    ```xml
    <?xml version="1.0"?>
@@ -101,9 +101,9 @@ Lorsque vous [create](create.md) une recommandation, vous spécifiez la variable
    </page>
    ```
 
-   Cette modification entraîne l’affichage de votre unité de recommandation après l’image du produit sur la page des détails du produit. Si vous souhaitez que l’unité de recommandation apparaisse avant l’événement `product.info.media`, modifiez la variable `after="-"` Attribuer à `before="-"`. Le `pagePlacement` est un argument interne qui ne doit pas être modifié.
+   Cette modification entraîne l’affichage de votre unité de recommandation après l’image du produit sur la page des détails du produit. Si vous souhaitez que l’unité de recommandation apparaisse avant l’événement `product.info.media`, modifiez la variable `after="-"` Attribuer à `before="-"`. La variable `pagePlacement` est un argument interne qui ne doit pas être modifié.
 
-Voir [présentation de la disposition](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) pour plus d’informations sur les types de blocs dans la page.
+Voir [présentation de la mise en page](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) pour plus d’informations sur les types de blocs dans la page.
 
 ## Attributs de produit personnalisés
 

@@ -1,5 +1,5 @@
 ---
-title: "Performance"
+title: "Performances"
 description: "Le [!DNL Live Search] Le tableau de bord des performances fournit des informations sur les termes de recherche que les acheteurs utilisent."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Performances
 
-Le [!DNL Live Search] Le tableau de bord des performances fournit des informations sur les termes de recherche utilisés par les acheteurs. Les informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. Le tableau de bord Performances fournit un instantané des mesures de recherche pour une période spécifique et comprend les rapports suivants :
+La variable [!DNL Live Search] Le tableau de bord des performances fournit des informations sur les termes de recherche utilisés par les acheteurs. Les informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. Le tableau de bord Performances fournit un instantané des mesures de recherche pour une période spécifique et comprend les rapports suivants :
 
 * Recherches uniques
 * Zéro résultat

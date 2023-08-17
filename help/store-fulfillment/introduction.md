@@ -17,7 +17,7 @@ La création de magasins pour Adobe Commerce par Walmart Commerce Technologies e
 
 ![Configuration de l’administrateur de l’Adobe de la solution Store Fulfillat](assets/store-fulfillment-admin-home.png)
 
-L’exécution de magasin offre également un workflow d’exécution de bout en bout qui aide les commerçants à réduire les coûts tout en augmentant les taux de conversion, la valeur de commande moyenne et les taux de satisfaction client. Ce workflow fournit :
+L’exécution de magasin offre également un workflow d’exécution de bout en bout qui aide les commerçants à réduire les coûts tout en augmentant les taux de conversion, la valeur de commande moyenne et les taux de satisfaction client. Ce workflow permet d’effectuer les opérations suivantes :
 
 * **Flexibilité omnicanal**- Transformer les magasins et les entrepôts en points de prise en charge et centres d’exécution.
 
@@ -43,7 +43,7 @@ La solution d’exécution de magasin prend en charge et améliore les fonctionn
 
 * Compatibilité partielle avec les vitrines sans PWA et sans interface
 
-* Prend en charge l’application d’aide au magasin de Walmart Commerce Technologies. Cette application fournit des informations sur la commande de prise en charge directement à l’appareil de poche de votre employé dans l’emplacement de magasin sélectionné. Grâce à ces informations, ils peuvent sélectionner, préparer et remettre rapidement et précisément des articles aux clients lorsqu’ils arrivent au magasin.
+* Prend en charge l’application d’aide au magasin de Walmart Commerce Technologies. Cette application fournit des informations sur la commande de prise en charge directement à l’appareil de poche de votre employé dans l’emplacement de magasin sélectionné. Grâce à ces informations, ils peuvent sélectionner, monter en scène et remettre rapidement et précisément des articles aux clients lorsqu’ils arrivent au magasin.
 
 ## Application d’aide à la boutique
 
@@ -73,7 +73,7 @@ L’exécution de magasin améliore Adobe Commerce en ajoutant des fonctionnalit
 
 * **Emails transactionnels**- Étend les fonctionnalités d’administration pour [!UICONTROL Sales Emails] pour ajouter des modèles de courrier électronique à acheter en ligne, récupérez dans les transactions du magasin. Les modèles prennent en charge la communication en temps réel entre les clients et les associés du magasin pendant le processus de récupération des commandes.
 
-* **Exécution flexible**-Étend [!DNL Commerce] des fonctionnalités permettant de prendre en charge des scénarios de traitement des commandes différées, de réduction de quantité et d’exécution partielle des commandes, tout en facilitant les annulations et les notes de crédit nécessaires pour prendre en charge ces scénarios.
+* **Flexibilité des performances**-Étend [!DNL Commerce] des fonctionnalités permettant de prendre en charge des scénarios de traitement des commandes différées, de réduction de quantité et d’exécution partielle des commandes, tout en facilitant les annulations et les notes de crédit nécessaires à la prise en charge de ces scénarios.
 
 >[!TIP]
 >

@@ -29,7 +29,7 @@ Une fois qu’un acheteur se connecte avec [!DNL Bolt], toutes les informations 
 
 Ce point d’extension permet d’empêcher la navigation vers une étape de paiement et peut s’avérer utile en cas d’extensions qui nécessitent qu’un acheteur effectue des actions supplémentaires sur l’étape d’expédition. Consultez un exemple ci-dessous sur l’utilisation du point d’extension avec un mixin :
 
-1. Enregistrement d’un nouveau mixin dans `require-config.js` fichier situé dans `app/code/Vendor/ModuleName/view/frontend/`.
+1. Enregistrer un nouveau mixin dans `require-config.js` fichier situé dans `app/code/Vendor/ModuleName/view/frontend/`.
 
    ```js
    var config = {

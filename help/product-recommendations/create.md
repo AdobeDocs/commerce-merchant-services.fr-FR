@@ -16,11 +16,11 @@ Lorsque vous créez une recommandation, vous créez une _unité de recommandatio
 ![Unité de recommandation](assets/unit.png)
 _Unité de recommandation_
 
-Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [collecter des données](workspace.md) pour mesurer les impressions, les vues, les clics, etc. Le [!DNL Product Recommendations] le tableau affiche les mesures de chaque unité de recommandations afin de vous aider à prendre des décisions professionnelles éclairées.
+Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [collecter des données](workspace.md) pour mesurer les impressions, les vues, les clics, etc. La variable [!DNL Product Recommendations] le tableau affiche les mesures de chaque unité de recommandations afin de vous aider à prendre des décisions professionnelles éclairées.
 
 1. Sur le _Administration_ barre latérale, accédez à **Marketing** > _Promotions_ > **Recommendations de produit** pour afficher la variable _Recommendations de produit_ workspace.
 
-1. Spécifiez la variable [Affichage en magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où afficher les recommandations.
+1. Spécifiez la variable [Affichage en magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où vous souhaitez que les recommandations s’affichent.
 
    >[!NOTE]
    >
@@ -39,7 +39,7 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
    - Confirmation
    - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
-   Vous pouvez créer jusqu’à cinq unités de recommandations principales pour chaque type de page et jusqu’à 25 unités pour le créateur de pages. Le type de page est grisé Lorsque la limite est atteinte.
+   Vous pouvez créer jusqu’à cinq unités de recommandations actives pour chaque type de page et jusqu’à 25 unités pour le Créateur de pages. Le type de page est grisé Lorsque la limite est atteinte.
 
    ![Nom et page de la recommandation](assets/create-recommendation.png)
    _Nom de la recommandation et placement de page_
@@ -48,9 +48,9 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
    Certains types de recommandations utilisent les données comportementales de vos acheteurs pour [former des modèles d’apprentissage automatique ;](behavioral-data.md) pour créer des recommandations personnalisées. Pour vous aider à visualiser la progression de la formation de chaque type de recommandation, cette section affiche une mesure de la préparation pour chaque type. Ces indicateurs de préparation sont calculés sur la base de deux facteurs :
 
-   - Taille suffisante du jeu de résultats : Existe-t-il suffisamment de résultats renvoyés dans la plupart des scénarios pour éviter d’utiliser [recommandations de sauvegarde](behavioral-data.md#backuprecs)?
+   - Taille de jeu de résultats suffisante : la plupart des scénarios renvoient-ils suffisamment de résultats pour éviter d’utiliser [recommandations de sauvegarde](behavioral-data.md#backuprecs)?
 
-   - Variété suffisante de l’ensemble de résultats : Les produits renvoyés représentent-ils une variété de produits de votre catalogue ? L’objectif de ce facteur est d’éviter qu’une minorité de produits soit le seul élément recommandé sur l’ensemble du site.
+   - Suffisante variété d’ensembles de résultats : les produits renvoyés représentent-ils une variété de produits de votre catalogue ? L’objectif de ce facteur est d’éviter qu’une minorité de produits soit le seul élément recommandé sur l’ensemble du site.
 
    En fonction des facteurs ci-dessus, une valeur de préparation est calculée et affichée. Un type de recommandation est considéré comme prêt à être déployé lorsque sa valeur de préparation est supérieure ou égale à 75 %. Un type de recommandation est considéré comme partiellement prêt lorsque son état de préparation est d’au moins 50 %. Enfin, un type de recommandation est considéré comme non prêt à être déployé lorsque sa valeur de préparation est inférieure à 50 %.
 
@@ -70,12 +70,12 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
 1. (Facultatif) Pour modifier l’ordre des recommandations, sélectionnez et déplacez les lignes dans la variable _Choisir la position_ table.
 
-   Le _Choisir la position_ affiche toutes les recommandations (le cas échéant) créées pour le type de page que vous avez sélectionné.
+   La variable _Choisir la position_ affiche toutes les recommandations (le cas échéant) créées pour le type de page que vous avez sélectionné.
 
    ![Ordre de recommandation](assets/create-recommendation-select-placement.png)
    _Ordre de recommandation sur la page_
 
-1. (Facultatif) Dans le _Filtres_ , [appliquer des filtres ;](filters.md) pour contrôler les produits qui apparaissent dans l’unité de recommandation.
+1. (Facultatif) Dans la variable _Filtres_ , [appliquer des filtres ;](filters.md) pour contrôler les produits qui apparaissent dans l’unité de recommandation.
 
    ![Filtres de recommandations](assets/create-recommendation-filter-products.png)
    _Filtres de produits de recommandation_
@@ -88,7 +88,7 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
 ## Aperçu de Recommendations {#preview}
 
-Le _Aperçu des produits recommandés_ est toujours disponible avec un exemple de sélection de produits pouvant apparaître dans l’unité de recommandation lors de son déploiement sur storefront.
+La variable _Aperçu des produits recommandés_ est toujours disponible avec un exemple de sélection de produits pouvant apparaître dans l’unité de recommandation lors de son déploiement sur storefront.
 
 Pour tester une recommandation dans un environnement hors production, vous pouvez récupérer les données de recommandation d’une [source différente](settings.md). Cela permet aux commerçants d’expérimenter des règles et de prévisualiser les recommandations avant leur déploiement en production.
 
@@ -97,7 +97,7 @@ Pour tester une recommandation dans un environnement hors production, vous pouve
 | Nom | Nom du produit. |
 | SKU | Unité de gestion des stocks affectée au produit |
 | Prix | Le prix du produit. |
-| Type de résultat | Principal : indique qu’il existe suffisamment de données de formation collectées pour afficher une recommandation.<br />Sauvegarde : indique qu’il n’y a pas suffisamment de données d’entraînement collectées. Une recommandation de sauvegarde est donc utilisée pour remplir l’emplacement. Accédez à [Données comportementales](behavioral-data.md) pour en savoir plus sur les modèles d’apprentissage automatique et les recommandations de sauvegarde. |
+| Type de résultat | Principal : indique qu’il existe suffisamment de données de formation pour afficher une recommandation.<br />Sauvegarde : indique qu’il n’y a pas suffisamment de données d’entraînement collectées. Une recommandation de sauvegarde est donc utilisée pour remplir l’emplacement. Accédez à [Données comportementales](behavioral-data.md) pour en savoir plus sur les modèles d’apprentissage automatique et les recommandations de sauvegarde. |
 
 À mesure que vous créez votre unité de recommandations, testez le type de page, le type de recommandation et les filtres pour obtenir des commentaires en temps réel immédiats sur les produits qui seront inclus. Lorsque vous commencez à comprendre les produits qui apparaissent, vous pouvez configurer l’unité de recommandations en fonction des besoins de votre entreprise.
 

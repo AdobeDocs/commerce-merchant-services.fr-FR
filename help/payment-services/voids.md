@@ -26,6 +26,6 @@ Vous pouvez également [annuler une commande ;](https://docs.magento.com/user-gu
 >
 >L’annulation d’une commande engendre également un vide, mais l’annulation d’une commande ne déclenche pas d’annulation.
 
-Pour en savoir plus sur les étapes de base d’une commande, reportez-vous à la section [Processus de commande](https://docs.magento.com/user-guide/sales/order-workflow.html){target="_blank"} dans le guide d’utilisation principal.
+Pour en savoir plus sur les étapes de base d’une commande, voir la section [Processus de commande](https://docs.magento.com/user-guide/sales/order-workflow.html){target="_blank"} dans le guide d’utilisation principal.
 
 Pour en savoir plus sur la fonctionnalité d’annulation et sur la façon d’annuler une transaction de commande, voir [Traitement de la commande](https://docs.magento.com/user-guide/sales/order-processing.html){target="_blank"} dans le guide d’utilisation principal.

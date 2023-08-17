@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Installer [!DNL Quick Checkout]
 
-Le [!DNL Quick Checkout] extension pour Adobe Commerce et [!DNL Magento Open Source] peut être installé avec [!DNL Composer keys], qui sont liés au compte Commerce [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} fourni dans le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale d’Adobe Commerce ou dans les cas où la fonction [!DNL Composer keys] n’ont pas été précédemment enregistrés dans le `auth.json` fichier .
+La variable [!DNL Quick Checkout] extension pour Adobe Commerce et [!DNL Magento Open Source] peut être installé avec [!DNL Composer keys], qui sont liés au compte Commerce [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} fourni dans le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale d’Adobe Commerce ou dans les cas où la fonction [!DNL Composer keys] n’ont pas été précédemment enregistrés dans la variable `auth.json` fichier .
 
-Voir [Obtention des clés d’authentification](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} rubrique pour plus d’informations sur l’obtention de [!DNL Composer keys].
+Voir [Obtention des clés d’authentification](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} rubrique pour plus d’informations sur l’obtention [!DNL Composer keys].
 
 Il existe deux manières d’installer cette extension : pour [Adobe Commerce sur l’infrastructure cloud](#magento-commerce-cloud) ou [sur site](#on-premises) installations. Pour utiliser ces méthodes, vous devez utiliser l’interface de ligne de commande.
 
@@ -46,15 +46,15 @@ Cette méthode est utilisée pour installer le [!DNL Quick Checkout] pour une in
    composer update
    ```
 
-   Le `composer update` met à jour toutes les dépendances. Si vous ne souhaitez pas mettre à jour toutes les dépendances en même temps, utilisez plutôt la commande suivante : `composer update magento/quick-checkout`.
+   La variable `composer update` met à jour toutes les dépendances. Si vous ne souhaitez pas mettre à jour toutes les dépendances en même temps, utilisez plutôt la commande suivante : `composer update magento/quick-checkout`.
 
-1. Validez et envoyez vos modifications.
+1. Validez et poussez vos modifications.
 
 ### Sur site
 
 Cette méthode est utilisée pour installer le [!DNL Quick Checkout] pour une instance On-Premise.
 
-1. Ajoutez le module Achat rapide au `require` de la section `composer.json` fichier :
+1. Ajoutez le module Achat rapide au `require` de la `composer.json` fichier :
 
    ```bash
    composer require magento/quick-checkout --no-update
@@ -66,7 +66,7 @@ Cette méthode est utilisée pour installer le [!DNL Quick Checkout] pour une in
    composer update
    ```
 
-   Le `composer update` met à jour toutes les dépendances. Si vous ne souhaitez pas mettre à jour toutes les dépendances en même temps, utilisez plutôt la commande suivante : `composer update magento/quick-checkout`.
+   La variable `composer update` met à jour toutes les dépendances. Si vous ne souhaitez pas mettre à jour toutes les dépendances en même temps, utilisez plutôt la commande suivante : `composer update magento/quick-checkout`.
 
 1. Mettre à niveau Adobe Commerce :
 
@@ -93,9 +93,9 @@ Lorsque nous publions une nouvelle version de la variable [!DNL Quick Checkout],
    composer update
    ```
 
-   Le `composer update` met à jour toutes les dépendances. Si vous ne souhaitez pas mettre à jour toutes les dépendances en même temps, utilisez plutôt la commande suivante : `composer update magento/quick-checkout`.
+   La variable `composer update` met à jour toutes les dépendances. Si vous ne souhaitez pas mettre à jour toutes les dépendances en même temps, utilisez plutôt la commande suivante : `composer update magento/quick-checkout`.
 
-1. Validez et envoyez vos modifications.
+1. Validez et poussez vos modifications.
 
 ## Dépannage
 

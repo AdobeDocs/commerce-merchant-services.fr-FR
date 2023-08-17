@@ -21,7 +21,7 @@ Suivez ces instructions pour mettre à jour les propriétés des règles existan
 1. Mettez à jour les champs Nom, Date de début et de fin, ainsi que les champs de description si nécessaire. Tous les noms de règle doivent être uniques.
 1. Testez la règle.
 1. Publiez les modifications.
-La règle est ajoutée à la liste dans l’espace de travail des règles. Bien que les principales règles entrent immédiatement en vigueur, l’actualisation des résultats de requête mis en cache dans le storefront peut prendre jusqu’à 15 minutes.
+La règle est ajoutée à la liste dans l’espace de travail des règles. Bien que les règles actives entrent immédiatement en vigueur, l’actualisation des résultats de requête mis en cache dans le storefront peut prendre jusqu’à 15 minutes.
 
 ## Supprimer la règle
 

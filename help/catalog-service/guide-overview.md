@@ -1,12 +1,12 @@
 ---
-title: '''[!DNL Catalog Service] Présentation du guide'
-description: '''[!DNL Catalog Service for Adobe Commerce] fournit un moyen de récupérer le contenu des pages d’affichage de produit et des pages de liste de produits plus rapidement que les requêtes GraphQL natives d’Adobe Commerce."'
+title: '[!DNL Catalog Service] Présentation du guide'
+description: '''[!DNL Catalog Service for Adobe Commerce] permet de récupérer le contenu des pages d’affichage de produit et des pages de liste de produits plus rapidement que les requêtes GraphQL natives d’Adobe Commerce."'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
 recommendations: noCatalog
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -21,14 +21,14 @@ Ce guide est destiné aux administrateurs d’Adobe [!DNL Commerce]. Il contient
 
 ## Documentation supplémentaire
 
-| Guide | Description |
+| Guide  | Description |
 |------ | ----------- |
 | [Guide de l’utilisateur d’Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
 | [Guide du développeur d’Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source |
 
 ## Assistance
 
-Le [processus d’intégration](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) est conçu pour vous guider tout au long des étapes requises pour configurer et activer la variable [!DNL Catalog Service] .
+La variable [processus d’intégration](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) est conçu pour vous guider tout au long des étapes requises pour configurer et activer la variable [!DNL Catalog Service] .
 
 Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
 

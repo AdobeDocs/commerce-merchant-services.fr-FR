@@ -6,7 +6,7 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 0%
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
 1. Dans cette vue, vous pouvez accéder au _Panneau d’administration_ aperçu, _Ressources_ about [!DNL Quick Checkout], get _Aide et assistance_ ou configurer l’extension via _Paramètres_.
 
-   ![Menu Passage en caisse rapide](assets/admin-panel-view.png)
+   ![Menu Achat rapide](assets/admin-panel-view.png)
 
 Vérifiez que les rôles et autorisations appropriés sont accordés à l’utilisateur pour la variable [!DNL Quick Checkout] Panneau d’administration à afficher. Voir [Rôles utilisateur et autorisations](../quick-checkout/user-roles-setup.md) pour plus d’informations.
 
-Reportez-vous à la section [Intégration](../quick-checkout/onboarding.md) rubrique pour plus d’informations sur la configuration de la variable [!DNL Quick Checkout] pour Adobe Commerce.
+Voir [Intégration](../quick-checkout/onboarding.md) rubrique pour plus d’informations sur la configuration de la variable [!DNL Quick Checkout] pour Adobe Commerce.
 
 ## Accueil
 
@@ -34,7 +34,7 @@ Reportez-vous à la section [Intégration](../quick-checkout/onboarding.md) rubr
 
 | Champ | Description |
 |---|---|
-| [!UICONTROL Troubleshooting guide] | Le centre d’aide d’Adobe Commerce contient [!DNL Quick Checkout] articles de dépannage. |
+| [!UICONTROL Troubleshooting guide] | Le centre d’aide Adobe Commerce contient [!DNL Quick Checkout] articles de dépannage. |
 | [!UICONTROL Feedback] | Fournissez des commentaires à l’équipe. |
 
 ## Ressources

@@ -19,7 +19,7 @@ Avec autant de types de recommandations parmi lesquels choisir, que devez-vous u
 | Page de produit | `Viewed this, viewed that` |
 | Panier | `Bought this, bought that` |
 
-Vous pouvez effectuer le suivi de la variable [mesures](workspace.md) et s’ajuster si nécessaire. Rappelez-vous que l&#39;expérimentation est la clé.
+Vous pouvez effectuer le suivi du [mesures](workspace.md) et ajustez-les si nécessaire. Rappelez-vous que l&#39;expérimentation est la clé.
 
 Certaines pages de storefront limitent l’emplacement où vous pouvez placer les recommandations. Vous pouvez placer les recommandations à l’un des emplacements de page suivants. Pour plus d’informations, reportez-vous au tableau ci-dessous.
 
@@ -41,8 +41,8 @@ _Recommandation en plus des résultats de recherche_
 | Le plus consulté<br> Les plus ajoutés au panier<br>Le plus acheté<br>Conversion (vue vers le panier)<br>Conversion (vue achat) | Le plus populaire<br>Éléments populaires<br>Tendance<br>Populaire en ce moment<br>Récemment populaire<br>Éléments populaires inspirés par cet élément (PDP)<br>Meilleurs vendeurs<br>Il se peut que vous soyez intéressé par |
 | Recommandé pour vous | Juste pour vous<br>Recommandé pour vous<br>Inspiré par vos tendances d’achat |
 | A consulté ceci, consulté cela | Les clients qui ont consulté cet article ont également consulté<br>Les clients ont également consulté<br>Éléments connexes |
-| A consulté ceci, acheté cela | Les clients qui ont consulté ceci ont finalement acheté<br>Les clients ont finalement acheté<br>Que les autres achètent-ils après avoir consulté cet article ? |
-| Acheté ceci, acheté cela | Obtenez tout ce dont vous avez besoin<br>N&#39;oubliez pas ceux-ci !<br>Fréquemment achetés ensemble |
+| A consulté ceci, acheté cela | Les clients qui ont consulté ceci ont finalement acheté<br>Les clients ont finalement acheté<br>Qu’est-ce que les autres achètent après avoir consulté cet article ? |
+| Acheté ceci, acheté cela | Obtenez tout ce dont vous avez besoin<br>N&#39;oubliez pas ceux-ci !<br>fréquemment achetés ensemble |
 | Plus comme ceci | Plus d’éléments comme celui-ci<br>Similaire à ceci |
 | Générique | Vous pouvez également<br>Les acheteurs aussi appréciés<br>Options similaires<br>Éléments connexes |
 | Tendance | Tendance<br>Tendance maintenant<br>Dernièrement tendance<br>Éléments chauds<br>Suivi des tendances des produits associés (PDP) |

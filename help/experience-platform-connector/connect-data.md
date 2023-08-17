@@ -21,7 +21,7 @@ Pour connecter votre instance Adobe Commerce à Adobe Experience Platform, vous 
 
 ## Mise à jour du connecteur Commerce Services
 
-Si vous avez précédemment installé un service Adobe Commerce, vous avez probablement déjà configuré le connecteur Commerce Services. Si ce n’est pas le cas, vous devez effectuer les tâches suivantes sur la page [Connecteur Commerce Services](../landing/saas.md) page :
+Si vous avez précédemment installé un service Adobe Commerce, vous avez probablement déjà configuré le connecteur Commerce Services. Dans le cas contraire, vous devez effectuer les tâches suivantes sur la page [Connecteur Commerce Services](../landing/saas.md) page :
 
 1. Connectez-vous à votre compte Commerce pour [récupération de vos clés d’API de production et d’environnement de test](../landing/saas.md#credentials).
 1. Sélectionnez une [Espace de données SaaS](../landing/saas.md#saas-configuration).
@@ -55,7 +55,7 @@ Dans cette section, vous indiquez le type de données à envoyer à l’Experien
 
 Les données côté client sont capturées sur le storefront. Cela inclut les interactions avec les acheteurs, telles que `View Page`, `View Product`, `Add to Cart`, et [liste des demandes](events.md#b2b-events) informations (pour les commerçants B2B). Les données côté serveur, ou les données de back-office, sont capturées dans les serveurs de commerce. Cela inclut des informations sur l’état d’une commande, par exemple si une commande a été passée, annulée, remboursée, expédiée ou terminée.
 
-Pour vous assurer que votre instance Adobe Commerce peut commencer la collecte de données, reportez-vous à la section [conditions préalables](overview.md#prerequisites).
+Pour vous assurer que votre instance Adobe Commerce peut commencer la collecte de données, consultez la section [conditions préalables](overview.md#prerequisites).
 
 Consultez la rubrique Événements pour en savoir plus sur [storefront](events.md#storefront-events) et [back office](events.md#back-office-events) événements .
 
@@ -67,7 +67,7 @@ Consultez la rubrique Événements pour en savoir plus sur [storefront](events.m
 
    >[!NOTE]
    >
-   >Le **Événements Storefront** est automatiquement activée si le SDK Web AEP et l’ID d’organisation sont valides.
+   >La variable **Événements Storefront** est automatiquement activée si le SDK Web AEP et l’ID d’organisation sont valides.
 
 1. Sélectionner **Événements de back-office** si vous souhaitez envoyer des informations sur l’état de la commande, par exemple si une commande a été passée, annulée, remboursée ou expédiée.
 
@@ -102,12 +102,12 @@ Consultez la rubrique Événements pour en savoir plus sur [storefront](events.m
 | Champ | Description |
 |--- |--- |
 | Portée | Site web spécifique sur lequel vous souhaitez appliquer les paramètres de configuration. |
-| ID d’organisation (global) | Identifiant appartenant à l’organisation ayant acheté le produit Adobe DX. Cet identifiant associe votre instance Adobe Commerce à Adobe Experience Platform. |
+| ID d’organisation (global) | Identifiant appartenant à l’organisation qui a acheté le produit Adobe DX. Cet identifiant associe votre instance Adobe Commerce à Adobe Experience Platform. |
 | Le SDK Web AEP est-il déjà déployé sur votre site ? | Cochez cette case si vous avez déployé votre propre SDK Web AEP sur votre site. |
 | Nom du SDK Web AEP (global) | Si un SDK Web Experience Platform est déjà déployé sur votre site, indiquez le nom de ce SDK dans ce champ. Cela permet au collecteur d’événements Storefront et au SDK d’événements Storefront d’utiliser votre SDK web Experience Platform plutôt que la version déployée par le connecteur Experience Platform. Si aucun SDK Web Experience Platform n’est déployé sur votre site, laissez ce champ vide et le connecteur Experience Platform en déploie un pour vous. |
-| Événements Storefront | Est coché par défaut tant que l’ID d’organisation et l’ID de flux de données sont valides. Les événements Storefront collectent des données comportementales anonymes de vos clients lorsqu’ils parcourent votre site. |
+| Événements Storefront | Est coché par défaut tant que l’ID d’organisation et l’ID de flux de données sont valides. Les événements Storefront collectent des données comportementales anonymes de vos clients lorsqu’ils naviguent sur votre site. |
 | Événements de back-office | Si cette case est cochée, la payload d’événement contient des informations d’état de commande anonymes, telles qu’une commande passée, annulée, remboursée ou expédiée. |
-| Identifiant de flux de données (site web) | Identifiant qui permet aux données de passer de Adobe Experience Platform à d’autres produits DX d’Adobe. Cet identifiant doit être associé à un site web spécifique au sein de votre instance Adobe Commerce spécifique. Si vous spécifiez votre propre SDK Web Experience Platform, ne spécifiez pas d’identifiant de flux de données dans ce champ. Le connecteur Experience Platform utilise l’identifiant de flux de données associé à ce SDK et ignore tout identifiant de flux de données spécifié dans ce champ (le cas échéant). |
+| Identifiant de flux de données (site web) | Identifiant qui permet aux données de passer de Adobe Experience Platform à d’autres produits DX d’Adobe. Cet identifiant doit être associé à un site web spécifique dans votre instance Adobe Commerce spécifique. Si vous spécifiez votre propre SDK Web Experience Platform, ne spécifiez pas d’identifiant de flux de données dans ce champ. Le connecteur Experience Platform utilise l’identifiant de flux de données associé à ce SDK et ignore tout identifiant de flux de données spécifié dans ce champ (le cas échéant). |
 
 >[!NOTE]
 >
@@ -163,7 +163,7 @@ Pour activer la collecte de données d’ordre historique pour la version bêta,
 
 ### Configuration de la version bêta de l’ordre historique
 
-Pour vous assurer que l’historique des commandes de vos clients peut être envoyé à l’Experience Platform, vous devez spécifier les informations d’identification qui relient votre instance Commerce à l’Experience Platform. Si vous avez déjà installé et activé la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , vous avez déjà spécifié les informations d’identification nécessaires et vous pouvez ignorer cette étape. Si vous n’avez pas encore installé et activé l’extension d’Audience Activation, procédez comme suit :
+Pour vous assurer que l’historique des commandes de vos clients peut être envoyé à Experience Platform, vous devez spécifier les informations d’identification qui relient votre instance Commerce à Experience Platform. Si vous avez déjà installé et activé la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , vous avez déjà spécifié les informations d’identification nécessaires et vous pouvez ignorer cette étape. Si vous n’avez pas encore installé et activé l’extension d’Audience Activation, procédez comme suit :
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Dans cette section, vous indiquez la période des commandes historiques que vous
 
 1. Dans Admin, accédez à **Système** > Services > **Connecteur Experience Platform**.
 
-1. Sélectionnez la **Historique des commandes** .
+1. Sélectionnez la variable **Historique des commandes** .
 
 1. Sous **Synchronisation de l’historique des commandes**, saisissez la variable **Identifiant du jeu de données**. Il doit s’agir du même jeu de données associé au flux de données que celui spécifié dans la variable [collecte de données](#data-collection) ci-dessus.
 
@@ -236,7 +236,7 @@ Dans cette section, vous indiquez la période des commandes historiques que vous
 
 ## Confirmation que les données d’événement sont collectées
 
-Pour confirmer que les données sont collectées à partir de votre boutique Commerce, utilisez la variable [Débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) pour examiner votre site Commerce. Une fois que vous avez confirmé que les données sont collectées, vous pouvez vérifier que les données d’événement storefront et back-office s’affichent à la périphérie en exécutant une requête qui renvoie des données issues de la variable [jeu de données que vous avez créé](overview.md#prerequisites).
+Pour confirmer que les données sont collectées à partir de votre boutique Commerce, utilisez la variable [Débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) pour examiner votre site Commerce. Une fois que vous avez confirmé que les données sont en cours de collecte, vous pouvez vérifier que les données d’événement storefront et back-office s’affichent en périphérie en exécutant une requête qui renvoie les données de la variable [jeu de données que vous avez créé](overview.md#prerequisites).
 
 1. Sélectionner **Requêtes** dans le volet de navigation de gauche de Experience Platform, cliquez sur [!UICONTROL Create Query].
 
