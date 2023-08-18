@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </thead>
 <tbody><tr>
 <td><strong>Envoi asynchrone</strong></td>
-<td>Désactivez cette fonction. L’envoi asynchrone d’emails n’est pas pris en charge. Pour que le délai de communication et de réponse de la collecte en magasin soit le plus rapide, envoyez immédiatement des e-mails au lieu de les traiter par lots. </td>
+<td>Détermine si les courriers électroniques de vente sont envoyés de manière asynchrone. Options : <br/>**`Désactiver** - (Par défaut) Les emails de vente sont envoyés lorsqu’ils sont déclenchés par un événement. Pour le délai de communication et de réponse le plus rapide pour le nettoyage de la boutique, utilisez le paramètre par défaut. <br/>**Activer** : l’activation de cette option déplace les processus qui gèrent le passage en caisse et le traitement des notifications email en arrière-plan à envoyer à intervalles réguliers et prédéterminés.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>

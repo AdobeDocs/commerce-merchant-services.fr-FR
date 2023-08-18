@@ -5,7 +5,7 @@ role: Leader, Admin, User
 level: Intermediate
 feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -18,7 +18,7 @@ L’application d’assistance Boutique fournit à Store Associates quatre modul
 
 - **[Pick](#pick-module)**: obtenez une visibilité complète de tous les articles commandés et des outils pour vous assurer que les bons articles et les bonnes quantités sont sélectionnés. Les associés de magasin peuvent sélectionner simultanément une ou plusieurs commandes pour une plus grande efficacité.
 
-- **[Évaluation](#stage-module)**: entrez l’emplacement où les commandes sont passées pendant que les clients se rendent au magasin afin que les associés de magasin puissent facilement les trouver pour la remise de commande.
+- **[Évaluation](#stage-module)**: renseignez l’emplacement où les commandes sont passées pendant que les clients se rendent au magasin afin que les associés de magasin puissent trouver et remettre les commandes plus rapidement.
 
 - **[Main désactivée](#hand-off-module)**: obtenez des notifications en temps réel une fois les clients arrivés au magasin afin de minimiser leur temps d’attente et de passer facilement des commandes.
 
