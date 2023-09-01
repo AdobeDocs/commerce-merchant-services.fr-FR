@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Notes de mise à jour'
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 282c652304ba362fcceca1faa35e1d0c1378041b
+source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1403'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,25 @@ _25 avril 2023_
 
 +++
 
+## [!DNL Live Search] 3.1.0 {#310}
+
+_1 septembre 2023_
+
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+
+### Mises à jour
+
+* Le widget Liste des produits a été mis à jour pour utiliser la variable [API Catalog Service](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+
+## Versions précédentes
+
++++3.0.2 et versions antérieures
+
 ## [!DNL Live Search] 3.0.2 {#302}
 
 _7 août 2023_
 
-[!BADGE Compatibilité]{type="Informatif" tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
 ### Nouvelles fonctionnalités
 
@@ -62,17 +76,11 @@ Les valeurs suivantes ont été ajoutées au `storeDetails` objet :
 
 Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] version d’extension >= 3.0.2 pour accéder à ces fonctionnalités.
 
-Il est recommandé de mettre à niveau et de tester avant de passer en production. Envisagez de mettre à niveau l’environnement de production pendant les heures creuses après avoir vérifié les résultats de l’environnement de test.
-
-## Versions précédentes
-
-+++3.0.1 et versions antérieures
-
 ## [!DNL Live Search] 3.0.1 {#301}
 
 _14 mars 2023_
 
-[!BADGE Compatibilité]{type="Informatif" tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
 ### Nouvelles fonctionnalités
 
@@ -114,7 +122,7 @@ Il est recommandé de mettre à niveau et de tester avant de passer en productio
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
-[!BADGE Compatibilité]{type="Informatif" tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
 * ![Correction](../assets/fix.svg) - La recherche en direct renvoie une erreur lorsque les ressources du SDK n’étaient pas disponibles en raison de problèmes de réseau. Ce bogue a été corrigé.
 
@@ -124,7 +132,7 @@ Il est recommandé de mettre à niveau et de tester avant de passer en productio
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
-[!BADGE Compatibilité]{type="Informatif" tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) La recherche en direct prend désormais en charge le filtrage selon le paramètre &quot;Afficher les produits en rupture de stock&quot; dans l’administrateur. Si &quot;Produits en rupture de stock&quot; est défini sur false, `inStock = true` est ajouté au filtre.
 ![Correction](../assets/fix.svg) Pour améliorer les performances, le bloc &quot;Suggestions&quot; a été supprimé de la fenêtre contextuelle Recherche en direct . Les données sont toujours transmises par GraphQL, au cas où vous souhaitez remplacer la fonctionnalité.
@@ -138,7 +146,7 @@ Il est conseillé aux utilisateurs de mettre à niveau et de tester avant de pas
 
 ### [!DNL Live Search] 2.0.3 {#203}
 
-[!BADGE Compatibilité]{type="Informatif" tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) La recherche en direct prend désormais en charge les fonctionnalités B2B en respectant les autorisations de catégorie, les catalogues partagés et la tarification spécifique aux groupes de clients.
 
@@ -148,14 +156,14 @@ Il est conseillé aux utilisateurs de mettre à niveau et de tester avant de pas
 
 ### [!DNL Live Search] 2.0 {#20}
 
-[!BADGE Compatibilité]{type="Informatif" tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
 Existant [!DNL Live Search] Les installations doivent être mises à niveau vers [!DNL Live Search] 2.0.0 pour tirer parti des nouvelles fonctionnalités, correctifs et améliorations suivants :
 
 ![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge PHP 8.1 pour les installations exécutant Adobe Commerce 2.4.4.
 ![Nouveau](../assets/new.svg) La variable `Magento_ElasticsearchCatalogPermissionsGraphQl` module est ajouté à la liste des modules désactivés lors de l’installation.
 ![Nouveau](../assets/new.svg) Le nombre de lignes disponibles dans la variable [[!DNL storefront popover]](quick-tour.md) peut être configuré à partir du *Administration*.
-![Nouveau](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibilité pour [!DNL Live Search].
+![Nouveau](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) pris en charge pour [!DNL Live Search].
 ![Nouveau](../assets/new.svg) La variable [!DNL Live Search] le processus d’installation est mis à jour avec des modifications avancées des processus.
 ![Correction](../assets/fix.svg) [Recherche avancée](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) lien supprimé du pied de page du storefront.
 ![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par [API Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) lorsqu’elle est utilisée en rapport avec la version bêta de PWA : `description`, `name`, `short_description`
@@ -163,7 +171,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 
 ### [!DNL Live Search] 1.3.1 {#131}
 
-[!BADGE Compatibilité]{type="Informatif" tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
 ![Correction](../assets/fix.svg) [Attribut de prix personnalisé](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) ne renvoie plus d’erreur lorsqu’elle est configurée en tant que [facette]({% lien live-search/facets-add.md %}).
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel une erreur se produisait lorsqu’aucune [symbole de devise](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`) est disponible.
@@ -171,7 +179,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
-[!BADGE Compatibilité]{type="Informatif" tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) [Performances](performance.md) le tableau de bord des rapports fournit des informations sur les termes de recherche que les acheteurs utilisent.
 ![Nouveau](../assets/new.svg) [!DNL Live Search] [SDK des événements Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) permet d’accéder à une couche de données commune avec des services de publication et d’abonnement d’événements, ainsi que des mesures.
@@ -182,7 +190,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 
 ### [!DNL Live Search] 1.2.0 {#120}
 
-[!BADGE Compatibilité]{type="Informatif" tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) affiche les produits suggérés et les images miniatures des principaux résultats de recherche sous la forme de requêtes de type shoppers dans la zone de recherche.
 ![Nouveau](../assets/new.svg) Commerce *Administration* la session reste ouverte pendant les longues périodes d’inactivité du clavier ;
@@ -195,7 +203,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 
 ### [!DNL Live Search] 1.1.0 {#110}
 
-[!BADGE Compatibilité]{type="Informatif" tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
 ![Bogue](../assets/bug.svg) La variable [!DNL Live Search] ne prend en charge que les [monnaie de base](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) de l’installation Adobe Commerce.
 ![Bogue](../assets/bug.svg) Lors de l’ajout d’une facette, le flux d’attributs de produit ne se met pas à jour correctement lorsqu’il est défini sur `Update on Save`. Pour éviter ce problème, accédez à [Gestion des index](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) et définissez le flux Attributs du produit sur `Update by Schedule`.

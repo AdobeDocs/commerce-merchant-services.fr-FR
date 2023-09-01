@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Les mises à jour sont les suivantes :
 
 _18 juillet 2023_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Le service de catalogue prend désormais en charge la variable [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Requête GraphQL pour le Recommendations de produit.
 
@@ -49,7 +49,7 @@ Les limites suivantes peuvent être résolues à l’aide du maillage de l’API
 
 _27 juin 2023_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Le service de catalogue peut désormais afficher les produits associés dans le widget Page Détails du produit .
 
@@ -57,7 +57,7 @@ _27 juin 2023_
 
 _12 avril 2023_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Le service de catalogue nettoie désormais les variantes de produits supprimées.
 ![Correction](../assets/fix.svg) Évolutivité de l’infrastructure et améliorations des performances.
@@ -66,7 +66,7 @@ _12 avril 2023_
 
 _28 mars 2023_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Ajout d’échantillons aux [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) requête.
 ![Nouveau](../assets/new.svg) Ajout de la possibilité d’obtenir `entityId` using [Mesh de l’API](mesh.md).
@@ -75,7 +75,7 @@ _28 mars 2023_
 
 _6 mars 2023_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Ajout [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) Fonctionnalité de GraphQL.
 ![Correction](../assets/fix.svg) Amélioration des performances et de l’évolutivité des API.
@@ -84,7 +84,7 @@ _6 mars 2023_
 
 _7 février 2023_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Mise en page du métaphorage du service de catalogue pour simplifier les étapes d’installation.
 ![Correction](../assets/fix.svg) Améliorations de l’évolutivité et des performances des API.
@@ -93,7 +93,7 @@ _7 février 2023_
 
 _17 janvier 2023_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Simplification et amélioration de l’intégration.
 ![Nouveau](../assets/new.svg) De nouveaux points de terminaison d’environnement de test client sont disponibles pour les tests de pré-production.
@@ -104,7 +104,7 @@ _17 janvier 2023_
 
 _18 novembre 2022_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Le service de catalogue prend désormais en charge les Adobes [Mesh de l’API](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Correction](../assets/fix.svg) Amélioration de l’évolutivité des API et des performances globales.
@@ -113,7 +113,7 @@ _18 novembre 2022_
 
 _4 octobre 2022_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Prise en charge des produits regroupés et regroupés.
 ![Nouveau](../assets/new.svg) Ajout de remplacements de visibilité B2B. Les produits peuvent désormais faire l’objet de recherches et peuvent être ajoutés au panier pour des groupes de clients spécifiques.
@@ -127,7 +127,7 @@ _4 octobre 2022_
 
 _12 septembre 2022_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Prise en charge des images pour les variantes : les images de produit sont renvoyées en fonction des options sélectionnées.
 ![Nouveau](../assets/new.svg) Rôles de prise en charge des prix : permettent uniquement aux membres de groupes de clients spécifiques de voir le prix des produits.
@@ -138,7 +138,7 @@ _12 septembre 2022_
 
 _9 août 2022_
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) La variable `products` et `refineProduct` les requêtes renvoient les données suivantes :
 
