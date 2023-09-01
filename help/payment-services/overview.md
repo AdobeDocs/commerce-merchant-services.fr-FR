@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Que vous soyez une petite entreprise, un concurrent de moyenne envergure ou une 
 
 * [**Intégration**](onboard.md): le processus vous guide tout au long des étapes suivantes : inscription commerciale, configuration technique, droits, configuration de l’environnement de test et activation des paiements en direct.
 * [**Options de paiement**](payments-options.md): définissez les options de paiement pour personnaliser les méthodes disponibles pour vos clients de magasin (ou multi-magasin).
-* **Reporting financier de la gestion des flux de trésorerie**—Synchronize [informations de paiement](order-payment-status.md) avec des commandes pour obtenir une transparence complète du volume traité, du solde des paiements et des détails [rapport au niveau des transactions](payouts.md) pour la réconciliation financière.
+* **Reporting financier de la gestion des flux de trésorerie**—Synchronize [informations de paiement](order-payment-status.md) avec des commandes permettant d&#39;obtenir une transparence totale sur le volume traité, le solde des paiements, [payouts](payouts.md), et détaillée [rapport au niveau des transactions](transactions.md) pour la réconciliation financière et le meilleur de la visibilité des transactions.
 * **Tarification transparente**- La tarification est claire et rapide ; ce que vous voyez est ce que vous obtenez.
 * **Expérience de passage en caisse efficace**: supprimez les obstacles à un passage en caisse rapide et simple et créez des clients fidèles, avec [coffre-fort à carte](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) et [achat instantané](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (activé par défaut pour Adobe Commerce).
 

@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 # Rapport de paiements
 
-[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous offre des rapports détaillés afin d’obtenir une vue claire des commandes et des paiements de votre boutique.
+[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous offre des rapports complets afin que vous puissiez avoir une vue claire des transactions, commandes et paiements de votre boutique.
 
 Il existe deux vues de rapport sur les versements disponibles pour vous permettre d’afficher des informations détaillées sur tous vos versements :
 
@@ -22,6 +22,8 @@ Il existe deux vues de rapport sur les versements disponibles pour vous permettr
 * **[Vue du rapport Payements](#payouts-report-view)**: rapport disponible dans les paiements qui affiche des informations détaillées sur les paiements pour toutes les transactions.
 
 Les vues Payouts affichent des informations complètes en un coup d’oeil, ce qui vous permet d’obtenir une transparence complète du montant du paiement, du volume traité et des rapports détaillés au niveau de la transaction pour la réconciliation financière.
+
+Vous pouvez [téléchargement des transactions de paiement](#download-transactions) dans un format de fichier .csv à utiliser dans les logiciels de gestion des commandes ou de comptabilité existants.
 
 >[!NOTE]
 >
@@ -65,15 +67,15 @@ La vue de visualisation des données de paiement comprend les informations suiva
 
 ## Vue du rapport Payements
 
-La vue Rapport de paiements est disponible dans la vue Versements des Services de paiement. Elle contient toutes les informations disponibles sur les paiements pour vos magasins. La variable [Vue de visualisation des données de paiement](#payouts-data-visualization-view) dans la page d’accueil des services de paiement est une représentation visuelle des montants agrégés par jour dans cette vue de rapport plus détaillée.
+La vue Rapport de paiements est disponible dans la vue Versements des Services de paiement. Elle contient toutes les informations disponibles sur les paiements pour vos magasins.
 
-Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** pour afficher le tableau détaillé de la vue Rapport de versements .
+Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**pour afficher le tableau détaillé de la vue Rapport de versements .
 
 ![Transactions de paiement dans l&#39;administrateur](assets/payouts-report-new.png){zoomable=yes}
 
 Vous pouvez configurer cette vue, selon les sections de cette rubrique, pour présenter au mieux les données que vous souhaitez afficher.
 
-Voir les ID de commande et de transaction Commerce liés, le montant des transactions, le mode de paiement par transaction, etc., dans le rapport Paiements de l’administrateur.
+Consultez les ID de commande et de transaction Commerce liés, le montant des transactions, le mode de paiement par transaction, etc., dans ce rapport.
 
 Vous pouvez [téléchargement des transactions de paiement](#download-transactions) dans un format de fichier .csv à utiliser dans les logiciels de gestion des commandes ou de comptabilité existants.
 
@@ -83,7 +85,7 @@ Vous pouvez [téléchargement des transactions de paiement](#download-transactio
 
 ### Sélectionner la source de données
 
-Dans la vue Rapport de versements, vous pouvez sélectionner la source de données..._[!UICONTROL Live]_ou_[!UICONTROL Sandbox]_: pour lequel vous souhaitez afficher les résultats du rapport.
+Dans la vue Rapport de versements, vous pouvez sélectionner la source de données...**[!UICONTROL Live]** ou **[!UICONTROL Sandbox]**: pour lequel vous souhaitez afficher les résultats du rapport.
 
 ![Sélection des sources de données](assets/datasource.png){width=400px}
 
@@ -97,8 +99,8 @@ Les sélections de sources de données fonctionnent comme suit :
 
 Pour sélectionner la source de données de votre rapport État du paiement de la commande :
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Cliquez sur **[!UICONTROL Data source]** et sélectionnez _[!UICONTROL Live]_ou_[!UICONTROL Sandbox]_.
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Cliquez sur **[!UICONTROL Data source]** et sélectionnez **[!UICONTROL Live]** ou **[!UICONTROL Sandbox]**.
 
    Les résultats du rapport se régénèrent en fonction de la source de données sélectionnée.
 
@@ -114,8 +116,8 @@ Faites défiler vers la gauche et la droite pour afficher [informations pour cha
 
 Dans la vue Rapport de versements, vous pouvez personnaliser la période des transactions de paiement que vous souhaitez afficher en saisissant des dates spécifiques ou en sélectionnant une plage de dates dans le sélecteur de date :
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Cliquez sur le filtre du sélecteur de calendrier des dates de transaction .
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Cliquez sur le bouton _[!UICONTROL Transaction dates]_filtre du sélecteur de calendrier.
 1. Sélectionnez la période applicable.
 1. Affichez les états des paiements dans la grille pour les dates spécifiées.
 
@@ -123,7 +125,7 @@ Dans la vue Rapport de versements, vous pouvez personnaliser la période des tra
 
 La vue Rapport de paiements affiche la plupart des colonnes d’informations disponibles par défaut. Vous pouvez toutefois personnaliser les colonnes affichées dans le rapport.
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. Cliquez sur le bouton _Paramètres des colonnes_ icône (![icône des paramètres de colonne](assets/column-settings.png)).
 1. Pour personnaliser les colonnes affichées dans le rapport, cochez ou décochez les colonnes de la liste.
 
@@ -133,7 +135,7 @@ La vue Rapport de paiements affiche la plupart des colonnes d’informations dis
 
 Vous pouvez télécharger un fichier .csv contenant toutes les transactions visibles dans la grille Affichage des paiements .
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Personnalisation de la période de la période de la période pour vos transactions](#customize-transactions-timeframe).
 1. Cliquez sur le bouton _Télécharger_ (![](assets/icon-download.png)).
 

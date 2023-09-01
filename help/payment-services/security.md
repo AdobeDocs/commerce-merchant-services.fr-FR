@@ -3,9 +3,10 @@ title: Sécurité et conformité
 description: Examinez les exigences en matière de sécurité et de conformité de votre site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -61,3 +62,10 @@ Avec les boutons PayPal Smart, aucune donnée PCI n’est transmise à vos servi
 Pour des raisons de sécurité, PayPal ne transmet pas l’adresse de facturation lors du passage en caisse : le pays, l’email et le nom sont les seules informations de facturation utilisées. Vous pouvez éventuellement activer le passage en caisse PayPal de votre site pour renvoyer l’adresse de facturation complète en contactant PayPal et en effectuant un processus de vérification.
 
 PayPal dispose également d&#39;une protection intégrée contre les fraudes qui utilise l&#39;apprentissage automatique pour vous aider à lutter contre les fraudes. Voir PayPal [Documentation sur la protection des revendeurs](https://www.paypal.com/us/webapps/mpp/security/seller-protection) pour plus d’informations.
+
+## Protection contre les fraudes
+
+Vous pouvez activer la protection automatisée contre la fraude pour les services de paiement à l’aide de la variable [Extension Signifyd](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+Voir [Protection Signifyd contre la fraude](fraud-protection.md) pour plus d’informations.
+

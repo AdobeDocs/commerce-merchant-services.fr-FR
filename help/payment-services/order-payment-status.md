@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1868'
 ht-degree: 0%
 
 ---
 
 # Rapport État des paiements de commande
 
-[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous offre des rapports détaillés afin d’obtenir une vue claire des commandes et des paiements de votre boutique.
+[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous offre des rapports complets afin que vous puissiez obtenir une vue claire des [transactions](transactions.md), commandes et paiements.
 
 Deux vues de rapport d’état des paiements de commande sont disponibles pour vous permettre d’afficher rapidement l’état des paiements de vos commandes :
 
@@ -23,7 +23,7 @@ Deux vues de rapport d’état des paiements de commande sont disponibles pour v
 
 Les vues d’état des paiements de la commande vous aident à comprendre facilement où se trouve une commande spécifique dans le flux de processus de trésorerie. Ces rapports vous permettent d’afficher rapidement les commandes, en fonction de leur état de paiement et de leur date de paiement, et d’identifier les problèmes potentiels.
 
-Vous pouvez télécharger les transactions d’état des paiements de commande au format .csv pour les utiliser dans les logiciels de gestion des commandes ou de comptabilité existants.
+Vous pouvez [télécharger Statuts de paiement des commandes](#download-order-payment-statuses) dans un format de fichier .csv à utiliser dans les logiciels de gestion des commandes ou de comptabilité existants.
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ Vous pouvez télécharger les transactions d’état des paiements de commande a
 
 La visualisation des données d’état des paiements de la commande est disponible dans la page d’accueil des services de paiement. Il s’agit d’une représentation visuelle des états de paiement agrégés par jour à partir du tableau détaillé [Afficher le rapport d’état des paiements](#order-payment-status-report-view).
 
-Sur le _Administration_ barre latérale, accédez à **Ventes** > **Services de paiement** pour afficher la visualisation des données [graphique des états des paiements](#statuses-information).
+Sur le _Administration_ barre latérale, accédez à **Ventes** > **Services de paiement** > _Commandes_ pour afficher la visualisation des données [graphique des états des paiements](#statuses-information).
 
 ![Visualisation des données de paiement dans l’Admin](assets/orderpayment-dataviz.png){zoomable=yes}
 
-Cliquez sur **Afficher le rapport** pour accéder au tableau détaillé [Afficher le rapport d’état des paiements](#order-payment-status-report-view).
+Cliquez sur **[!UICONTROL View Report]** pour accéder au tableau détaillé [Afficher le rapport d’état des paiements](#order-payment-status-report-view).
 
 ### Personnalisation de la période des états
 
@@ -45,7 +45,7 @@ Par défaut, les états des 30 jours de paiement s’affichent.
 
 Dans la vue Visualisation de l’état des paiements des commandes, vous pouvez personnaliser la période des états de paiement que vous souhaitez afficher en sélectionnant une période :
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. La visualisation des données de statut des paiements de commande est visible dans la section État des paiements de commande .
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. La visualisation des données d’état des paiements de commande est visible dans la _Commandes_ .
 1. Cliquez sur le bouton **[!UICONTROL Range]** filtre de sélecteur.
 1. Sélectionnez la période applicable : 30 jours, 15 jours ou 7 jours.
 1. Affichez les informations d’état pour les dates spécifiées.
@@ -69,9 +69,9 @@ La visualisation des données de statut des paiements de commande comprend les i
 
 ## Afficher le rapport d’état des paiements
 
-La vue du rapport État des paiements de la commande est disponible dans la vue État des paiements de la commande des services de paiement. Il comprend des états détaillés (paiement, facturation, expédition, remboursement, litige, etc.) pour toutes les transactions. La variable [Vue de visualisation des données d’état de paiement des commandes](#order-payment-status-data-visualization-view) Dans la page d’accueil des services de paiement, vous trouverez une représentation visuelle des états de paiement agrégés par jour à partir de la vue de rapport État des paiements de la commande .
+La vue du rapport État des paiements de la commande est disponible dans la vue Accueil des services de paiement. Il comprend des états détaillés (paiement, facturation, expédition, remboursement, litige, etc.) pour toutes les transactions.
 
-Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** pour afficher le tableau détaillé Rapport d’état des paiements de la commande .
+Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**pour afficher le tableau détaillé Rapport d’état des paiements de la commande .
 
 ![Commande des transactions d’état de paiement dans l’administrateur](assets/orders-report-data.png)
 
@@ -87,11 +87,11 @@ Vous pouvez [téléchargement des transactions de paiement](#download-order-paym
 
 La variable [!DNL Payment Services] Le module utilise les données de commande et les combine aux données de paiement agrégées provenant d’autres sources (y compris PayPal) afin de fournir des rapports pertinents et très utiles.
 
-Les données de commande sont exportées et conservées dans le service de paiement. Lorsque vous [modifier ou ajouter des statuts de commande ;](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, ou nom du site web, ces données sont combinées avec les données de paiement et le rapport État du paiement de la commande est renseigné avec les informations combinées.
+Les données de commande sont exportées et conservées dans le service de paiement. Lorsque vous [modifier ou ajouter des statuts de commande ;](https://docs.magento.com/user-guide/sales/order-status-custom.html) ou [modification d’une vue de magasin](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [store](https://docs.magento.com/user-guide/stores/store-information.html), ou nom du site web, ces données sont combinées avec les données de paiement et le rapport État du paiement de la commande est renseigné avec les informations combinées.
 
 Ce processus comprend deux étapes :
 
-1. Les données de l’index sont modifiées : `ON SAVE` (chaque fois que les informations de commande ou de magasin sont modifiées) ou `BY SCHEDULE` (selon un planning cron préconfiguré), selon la manière dont il est configuré dans [Gestion des index](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} dans Admin.
+1. Les données de l’index sont modifiées : `ON SAVE` (chaque fois que les informations de commande ou de magasin sont modifiées) ou `BY SCHEDULE` (selon un planning cron préconfiguré), selon la manière dont il est configuré dans [Gestion des index](https://docs.magento.com/user-guide/system/index-management.html) dans Admin.
 
    Par défaut, l’indexation des données se produit. `ON SAVE`, ce qui signifie que chaque fois qu’un élément change dans l’ordre, l’état de la commande, l’affichage du magasin, le magasin ou le site web, le processus de réindexation se produit immédiatement.
 
@@ -107,13 +107,13 @@ Les seules données exportées et regroupées à des fins de création de rappor
 
 Même si, par défaut, la réindexation se produit dans `ON SAVE` , il est recommandé d’indexer dans `BY SCHEDULE` mode . La variable `BY SCHEDULE` s’exécute selon un planning cron d’une minute. Toute donnée modifiée apparaît dans votre rapport d’état de commande dans les deux minutes suivant tout changement de données. Cette réindexation planifiée vous aide à réduire toute contrainte sur votre boutique, en particulier si vous avez un grand volume de commandes entrantes, car cela se produit sur un planning (et non au moment où chaque commande est passée).
 
-Vous pouvez modifier le mode d’index :`ON SAVE` ou `BY SCHEDULE`—[dans Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
+Vous pouvez modifier le mode d’index :`ON SAVE` ou `BY SCHEDULE`—[dans Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 
 Pour savoir comment configurer l’exportation des données, voir [Configuration de ligne de commande](configure-cli.md#configure-data-export).
 
 ### Sélectionner la source de données
 
-Dans la vue Rapport d’état des paiements de la commande, vous pouvez sélectionner la source de données :_[!UICONTROL Live]_ou_[!UICONTROL Sandbox]_: pour lequel vous souhaitez afficher les résultats du rapport.
+Dans la vue Rapport d’état des paiements de la commande, vous pouvez sélectionner la source de données :**[!UICONTROL Live]** _ ou **[!UICONTROL Sandbox]**: pour lequel vous souhaitez afficher les résultats du rapport.
 
 ![Sélection des sources de données](assets/datasource.png){width=400px}
 
@@ -127,8 +127,8 @@ Les sélections de sources de données fonctionnent comme suit :
 
 Pour sélectionner la source de données [!UICONTROL Order Payment Status] rapport :
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Cliquez sur **[!UICONTROL Data source]** et sélectionnez _[!UICONTROL Live]_ou_[!UICONTROL Sandbox]_.
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. Cliquez sur le bouton _[!UICONTROL Data source]_filtre de sélecteur et sélectionnez **[!UICONTROL Live]**ou **[!UICONTROL Sandbox]**.
 
    Les résultats du rapport se régénèrent en fonction de la source de données sélectionnée.
 
@@ -136,16 +136,26 @@ Pour sélectionner la source de données [!UICONTROL Order Payment Status] rappo
 
 Dans la vue Rapport d’état des paiements de la commande, vous pouvez personnaliser la période des états que vous souhaitez afficher en sélectionnant des dates spécifiques. Par défaut, 30 jours de statut de paiement de la commande sont affichés dans la grille.
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Cliquez sur le bouton **[!UICONTROL Order dates]** filtre du sélecteur de calendrier.
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. Cliquez sur le bouton _[!UICONTROL Order dates]_filtre du sélecteur de calendrier.
 1. Sélectionnez la période applicable.
 1. Affichez les états des paiements de la commande pour les dates spécifiées dans la grille.
+
+### Filtrage des informations sur le rapport
+
+Dans la vue Rapport d’état des paiements des commandes , vous pouvez filtrer les résultats des états que vous souhaitez afficher en sélectionnant des critères de filtrage.
+
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. Cliquez sur le bouton **[!UICONTROL Filter]** sélecteur.
+1. Activez/désactivez la variable _État de paiement_ pour afficher les résultats des rapports uniquement pour les états de paiement de commande sélectionnés.
+1. Saisissez un _Montant de la commande min_ ou _Montant max. de la commande_ pour afficher les résultats du rapport sur cette période.
+1. Cliquez sur **[!UICONTROL Hide filters]** pour masquer le filtre.
 
 ### Afficher et masquer les colonnes
 
 Le rapport État du paiement de la commande affiche toutes les colonnes d’informations disponibles par défaut. Vous pouvez toutefois personnaliser les colonnes affichées dans votre rapport.
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Cliquez sur le bouton _Paramètres des colonnes_ icône (![icône des paramètres de colonne](assets/column-settings.png)).
 1. Pour personnaliser les colonnes affichées dans le rapport, cochez ou décochez les colonnes de la liste.
 
@@ -153,9 +163,7 @@ Le rapport État du paiement de la commande affiche toutes les colonnes d’info
 
 ### Affichage des états
 
-La vue du rapport État des paiements de la commande affiche des informations complètes sur l’état des transactions et l’état des paiements pour chaque commande de services de paiement.
-
-#### État des transactions
+La vue du rapport État des paiements de la commande affiche des informations complètes sur l’état des paiements pour chaque commande.
 
 Par défaut, 30 jours de statut de paiement de la commande sont affichés dans la grille.
 
@@ -177,7 +185,7 @@ La vue Rapport d’état des paiements de la commande affiche une _[!UICONTROL L
 
 Vous pouvez également forcer manuellement l’actualisation des données du rapport État des paiements de la commande afin d’afficher les informations de rapport les plus récentes.
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Cliquez sur le bouton _Actualiser_ icône (![icône d’actualisation](assets/refresh-button-med.png)).
 
    Les données du rapport d’état des paiements de la commande sont actualisées. *[!UICONTROL Update complete]* une confirmation s’affiche et les informations les plus récentes sont présentes dans la grille.
@@ -186,7 +194,7 @@ Vous pouvez également forcer manuellement l’actualisation des données du rap
 
 Vous pouvez afficher tous les litiges relatifs aux commandes de votre boutique et accéder au Centre de résolution PayPal pour agir sur ces litiges, depuis le rapport État des paiements des commandes .
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Accédez au **[!UICONTROL Disputes column]**.
 1. Affichez tous les conflits pour une commande spécifique, puis reportez-vous à la section [le statut du différend](#order-payment-status-information).
 1. Cliquez sur le lien ID du litige (en commençant par _PP-D-_) pour accéder au [Centre de résolution PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
@@ -198,28 +206,13 @@ Vous pouvez afficher tous les litiges relatifs aux commandes de votre boutique e
 
 Vous pouvez télécharger un fichier .csv avec tous les états visibles dans la grille Affichage de l’état des paiements des commandes , que vous visualisiez les 30 jours par défaut des états ou une période personnalisée.
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Si vous souhaitez afficher les états pour une période autre que les 30 derniers jours, [personnaliser la période de la période de la période pour vos états ;](#customize-dates-timeframe).
 1. Cliquez sur le bouton _Télécharger_ (![icône de téléchargement](assets/icon-download.png)).
 
 Les statuts de paiement de votre commande sont téléchargés au format .csv .
 
-<!-- ## Default order payment status timeframes
-
-These order payment status timeframes are currently available in [!DNL Payment Services].
-
-| Report       | Description          |
-| ------------ | -------------------- |
-| Yesterday | Available from the Order payment status dates selector, this shows information for the prior date. |
-| | Today | Available from the Order payment status dates selector, this shows information for the current day. |
-| Last 7 days | Available from the Order payment status dates selector, this shows information for the last seven days. |
-| Last 30 days | Available from the Order payment status dates selector and by default in the Order payment statuses view, this shows information for the last 30 days. |
-| Last 90 days | Available from the Order payment status dates selector, this shows information for the last 90 days. |
-| Year to date | Available from the Order payment status dates selector, this shows information for the the entire year to date. |
-| Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
--->
-
-#### Informations sur les états
+### Descriptions des colonnes
 
 Les rapports d’état des paiements de commande incluent les informations suivantes.
 

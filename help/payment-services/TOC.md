@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '85'
 ht-degree: 2%
 
 ---
@@ -37,10 +37,13 @@ ht-degree: 2%
 - [Tester et valider](test-validate.md)
 - [Création d’une commande](create-order.md)
 - Rapports financiers {#reporting}
+   - [Rapport des transactions](transactions.md)
    - [Rapport d’état des paiements de commande](order-payment-status.md)
    - [Rapport de paiements](payouts.md)
    - [Données disponibles](data.md)
 - Gestion des paiements {#manage}
    - [Remboursement](refunds.md)
    - [Voix](voids.md)
-- [Sécurité et conformité](security.md)
+- Sécurité {#security-compliance}
+   - [Sécurité et conformité](security.md)
+   - [Protection Signifyd contre la fraude](fraud-protection.md)
