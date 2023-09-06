@@ -3,7 +3,7 @@ title: "Flux de passage en caisse dans Adobe Commerce"
 description: "Présentation de la variable [!DNL Quick Checkout] flux dans Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Une réussite [!DNL Quick Checkout] Le flux se compose des étapes suivantes :
 1. Ouvrez votre storefront et ajoutez des éléments dans votre panier.
 1. Passez à la caisse.
 
-![Passage en caisse](assets/proceed-checkout.png)
+![Passage en caisse](assets/proceed-checkout.png){width="200" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Une réussite [!DNL Quick Checkout] Le flux se compose des étapes suivantes :
 1. Lorsque vous y êtes invité, saisissez une adresse électronique associée à un événement [!DNL Bolt] compte .
 1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique ou numéro de téléphone du compte.
 
-![pop-up OTP](assets/new-logo-otp-email.png)
+![pop-up OTP](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Une fois connecté avec votre [!DNL Bolt] compte, les détails du passage en caisse sont automatiquement renseignés :
 

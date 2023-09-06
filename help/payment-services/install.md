@@ -4,7 +4,7 @@ description: Installez l’extension Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Téléchargement et installation du [!DNL Payment Services] extension pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] est une étape prérequise pour utiliser [!DNL Payment Services].
 
-![[!DNL Payment Services] vue d’administration de l’extension](assets/admin-view.png)
+![[!DNL Payment Services] vue d’administration de l’extension](assets/admin-view.png){width="300" zoomable="yes"}
 
 ## Télécharger l’extension
 

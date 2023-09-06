@@ -3,7 +3,7 @@ title: "Flux de passage en caisse d’un utilisateur Bolt dans Adobe Commerce"
 description: Présentation de la variable [!DNL Quick Checkout] flux d’un utilisateur Bolt dans Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Si une [!DNL Bolt] compte trouvé, les acheteurs continuent avec leurs [!DNL Qui
 
 1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique ou mobile du compte, en fonction des [préférences de l’utilisateur dans la variable [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![pop-up OTP](assets/new-logo-otp-email.png)
+![pop-up OTP](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Une fois connecté avec votre [!DNL Bolt] , les détails sont automatiquement ajoutés :
 

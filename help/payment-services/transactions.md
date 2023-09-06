@@ -3,7 +3,7 @@ title: Rapport de transactions
 description: Utilisez le rapport Transactions pour connaître les taux d'autorisation des transactions et les tendances des transactions.
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous offre des rapports complets afin que vous puissiez avoir une vue claire des transactions, commandes et paiements de votre boutique.
 
-![Rapport des transactions](assets/transactions-report.png){width="600" zoomable="yes"}
+![Rapport des transactions](assets/transactions-report.png){width="700" zoomable="yes"}
 
 Le rapport Transactions offre une visibilité sur les taux d’autorisation des transactions et les tendances des transactions négatives afin que vous puissiez contrôler efficacement l’intégrité de votre magasin et identifier et résoudre de manière préventive les problèmes de transaction.
 
@@ -91,7 +91,7 @@ Depuis la vue Rapport des transactions, vous pouvez filtrer les résultats des �
 Le rapport Transactions affiche toutes les colonnes d&#39;informations disponibles par défaut. Vous pouvez toutefois personnaliser les colonnes affichées dans votre rapport.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Cliquez sur le bouton **[!UICONTROL Column settings]** icon ![icône des paramètres de colonne](assets/column-settings.png){width="25"}.
+1. Cliquez sur le bouton **[!UICONTROL Column settings]** icon ![icône des paramètres de colonne](assets/column-settings.png){width="20" zoomable="yes"}.
 1. Pour personnaliser les colonnes affichées dans le rapport, cochez ou décochez les colonnes de la liste.
 
    Le rapport Transactions affiche immédiatement les modifications que vous avez apportées au menu Paramètres de colonne . Les préférences de colonne sont enregistrées et restent en vigueur si vous quittez la vue du rapport.
@@ -103,7 +103,7 @@ La vue Rapport des transactions affiche une _[!UICONTROL Last updated]_horodatag
 Vous pouvez également forcer manuellement une actualisation des données du rapport afin d’afficher les informations les plus récentes.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Cliquez sur le bouton _Actualiser_ icône (![icône d’actualisation](assets/refresh-button-med.png)).
+1. Cliquez sur le bouton _Actualiser_ icône (![icône d’actualisation](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Les données du rapport des transactions sont actualisées et une *[!UICONTROL Update complete]* une confirmation s’affiche et les informations les plus récentes sont présentes dans la grille.
 
@@ -113,7 +113,7 @@ Vous pouvez télécharger un fichier .csv avec toutes les transactions visibles 
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. Si vous souhaitez afficher les transactions pour une période autre que les 30 derniers jours, [personnaliser la période de la période de la période pour vos états ;](#customize-dates-timeframe).
-1. Cliquez sur le bouton _Télécharger_ ![icône de téléchargement](assets/icon-download.png){width="25"} Icône
+1. Cliquez sur le bouton _Télécharger_ ![icône de téléchargement](assets/icon-download.png){width="20" zoomable="yes"} Icône
 
 Vos transactions sont téléchargées au format .csv.
 

@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ La vue de visualisation des données de paiement est disponible dans la page d�
 
 Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** pour afficher le graphique de visualisation des données des crédits par rapport aux débits et les moyennes mobiles au fil du temps.
 
-![Visualisation des données de paiement dans l’Admin](assets/payouts-report.png){zoomable=yes}
+![Visualisation des données de paiement dans l’Admin](assets/payouts-report.png){width="800" zoomable="yes"}
 
 Cliquez sur **[!UICONTROL View Report]** pour accéder au tableau détaillé [Vue du rapport Payements](#payouts-report-view).
 
@@ -71,7 +71,7 @@ La vue Rapport de paiements est disponible dans la vue Versements des Services d
 
 Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**pour afficher le tableau détaillé de la vue Rapport de versements .
 
-![Transactions de paiement dans l&#39;administrateur](assets/payouts-report-new.png){zoomable=yes}
+![Transactions de paiement dans l&#39;administrateur](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
 Vous pouvez configurer cette vue, selon les sections de cette rubrique, pour présenter au mieux les données que vous souhaitez afficher.
 
@@ -87,7 +87,7 @@ Vous pouvez [téléchargement des transactions de paiement](#download-transactio
 
 Dans la vue Rapport de versements, vous pouvez sélectionner la source de données...**[!UICONTROL Live]** ou **[!UICONTROL Sandbox]**: pour lequel vous souhaitez afficher les résultats du rapport.
 
-![Sélection des sources de données](assets/datasource.png){width=400px}
+![Sélection des sources de données](assets/datasource.png){width="300" zoomable="yes"}
 
 If _[!UICONTROL Live]_est la source de données sélectionnée. vous pouvez afficher les informations du rapport pour les magasins en mode de production. If_[!UICONTROL Sandbox]_ est la source de données sélectionnée. vous pouvez afficher les magasins d’informations de rapport en mode sandbox.
 
@@ -126,7 +126,7 @@ Dans la vue Rapport de versements, vous pouvez personnaliser la période des tra
 La vue Rapport de paiements affiche la plupart des colonnes d’informations disponibles par défaut. Vous pouvez toutefois personnaliser les colonnes affichées dans le rapport.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
-1. Cliquez sur le bouton _Paramètres des colonnes_ icône (![icône des paramètres de colonne](assets/column-settings.png)).
+1. Cliquez sur le bouton _Paramètres des colonnes_ icône (![icône des paramètres de colonne](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Pour personnaliser les colonnes affichées dans le rapport, cochez ou décochez les colonnes de la liste.
 
    La vue du rapport Versions affiche immédiatement les modifications que vous avez apportées au menu Paramètres de colonne. Les préférences de colonne seront enregistrées et resteront en vigueur si vous quittez la vue du rapport.
@@ -137,7 +137,7 @@ Vous pouvez télécharger un fichier .csv contenant toutes les transactions visi
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Personnalisation de la période de la période de la période pour vos transactions](#customize-transactions-timeframe).
-1. Cliquez sur le bouton _Télécharger_ (![](assets/icon-download.png)).
+1. Cliquez sur le bouton _Télécharger_ (![](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Vos transactions de paiement sont téléchargées au format .csv.
 

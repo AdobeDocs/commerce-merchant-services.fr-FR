@@ -3,7 +3,7 @@ title: Configurez la variable [!DNL Quick Checkout] pour l’extension Adobe Com
 description: Découvrez les options de configuration pour le [!DNL Quick Checkout] et comment intégrer et configurer l’extension.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 1%
@@ -19,13 +19,13 @@ Pour accéder à ces paramètres de configuration :
 1. Sur le _Administration_ barre latérale, accédez à **Magasins** > _Paramètres_ > **Configuration**.
 1. Dans le panneau de gauche, développez **Ventes** et sélectionnez **Passage en caisse**.
 
-   ![Achat rapide](assets/config-new-logo-view.png)
+   ![Achat rapide](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 Voir [Intégration](../quick-checkout/onboarding.md) rubrique pour plus d’informations sur la configuration de la variable [!DNL Quick Checkout] pour Adobe Commerce.
 
 ## Activer l’extension
 
-![Achat rapide](assets/enable-method.png)
+![Achat rapide](assets/enable-method.png){width="500" zoomable="yes"}
 
 | Champ | Portée | Description |
 |---|---|---|
@@ -36,7 +36,7 @@ Voir [Intégration](../quick-checkout/onboarding.md) rubrique pour plus d’info
 
 ## Identifiants de compte
 
-![Achat rapide](assets/account-creds.png)
+![Achat rapide](assets/account-creds.png){width="500" zoomable="yes"}
 
 | Champ | Portée | Description |
 |---|---|---|
@@ -48,7 +48,7 @@ Voir [Intégration](../quick-checkout/onboarding.md) rubrique pour plus d’info
 
 ## Paramètres du service
 
-![Achat rapide](assets/service-settings.png)
+![Achat rapide](assets/service-settings.png){width="500" zoomable="yes"}
 
 | Champ | Portée | Description |
 |---|---|---|

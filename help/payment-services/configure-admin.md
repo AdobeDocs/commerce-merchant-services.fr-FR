@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 366689fccdf3ae93700d458bf9cbcab63e4583a8
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Vous pouvez activer [!DNL Payment Services] pour votre magasin et activez le tes
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Dans le panneau de gauche, développez **[!UICONTROL Sales]** et choisissez **[!UICONTROL Payment Methods]**.
 
-   ![Affichage des méthodes](assets/methods-view.png)
+   ![Affichage des méthodes](assets/methods-view.png){width="400" zoomable="yes"}
 
 1. Développez l’objet _[!UICONTROL Recommended Solutions]_.
 1. Dans le _[!UICONTROL [!DNL Payment Services]]_, développez la section_[!UICONTROL General Configuration]_ .

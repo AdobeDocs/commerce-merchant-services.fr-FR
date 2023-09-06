@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] rapport'
 description: '''[!DNL Quick Checkout] offre des informations de création de rapports complètes."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Quick Checkout] pour Adobe Commerce et Magento Open Source, vous pouvez créer des rapports détaillés afin d’obtenir des informations détaillées sur les statistiques d’expérience de passage en caisse de votre boutique.
 
-![Vue Rapports](assets/reports-view-big-checkout.png)
+![Vue Rapports](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Les graphiques de la section Aperçu contiennent des informations détaillées sur les performances de passage en caisse de votre magasin, notamment le temps moyen de passage en caisse, les nouveaux comptes créés lors du passage en caisse ou de l’abandon du passage en caisse.
 
-![Présentation des rapports](assets/overview-report-checkout.png)
+![Présentation des rapports](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | Graphique | Description |
 |---|---|
@@ -38,7 +38,7 @@ Les graphiques de la section Aperçu contiennent des informations détaillées s
 
 Les graphiques de la section Tendances affichent les tendances de votre expérience de passage en caisse filtrées par type de compte ou les nouveaux comptes créés pendant le passage en caisse.
 
-![Tendances des rapports](assets/trends-report-checkout.png)
+![Tendances des rapports](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | Graphique | Description |
 |---|---|
@@ -50,7 +50,7 @@ Les graphiques de la section Tendances affichent les tendances de votre expérie
 
 Vous pouvez filtrer les résultats affichés par date ou les paramètres prédéfinis existants, comme **30 derniers jours**.
 
-![Affichage des filtres](assets/filter-view.png)
+![Affichage des filtres](assets/filter-view.png){width="300" zoomable="yes"}
 
 | Champ | Description |
 |---|---|

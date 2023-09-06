@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ La visualisation des données d’état des paiements de la commande est disponi
 
 Sur le _Administration_ barre latérale, accédez à **Ventes** > **Services de paiement** > _Commandes_ pour afficher la visualisation des données [graphique des états des paiements](#statuses-information).
 
-![Visualisation des données de paiement dans l’Admin](assets/orderpayment-dataviz.png){zoomable=yes}
+![Visualisation des données de paiement dans l’Admin](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 Cliquez sur **[!UICONTROL View Report]** pour accéder au tableau détaillé [Afficher le rapport d’état des paiements](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ La vue du rapport État des paiements de la commande est disponible dans la vue 
 
 Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**pour afficher le tableau détaillé Rapport d’état des paiements de la commande .
 
-![Commande des transactions d’état de paiement dans l’administrateur](assets/orders-report-data.png)
+![Commande des transactions d’état de paiement dans l’administrateur](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 Vous pouvez configurer cette vue, selon les sections de cette rubrique, pour présenter au mieux les données que vous souhaitez afficher.
 
@@ -115,7 +115,7 @@ Pour savoir comment configurer l’exportation des données, voir [Configuration
 
 Dans la vue Rapport d’état des paiements de la commande, vous pouvez sélectionner la source de données :**[!UICONTROL Live]** _ ou **[!UICONTROL Sandbox]**: pour lequel vous souhaitez afficher les résultats du rapport.
 
-![Sélection des sources de données](assets/datasource.png){width=400px}
+![Sélection des sources de données](assets/datasource.png){width="300" zoomable="yes"}
 
 If _[!UICONTROL Live]_est la source de données sélectionnée. Vous pouvez afficher les informations de rapport pour vos magasins qui utilisent [!DNL Payment Services] en mode de production. If_[!UICONTROL Sandbox]_ est la source de données sélectionnée. vous pouvez afficher les informations de rapport pour le mode sandbox.
 
@@ -156,7 +156,7 @@ Dans la vue Rapport d’état des paiements des commandes , vous pouvez filtrer 
 Le rapport État du paiement de la commande affiche toutes les colonnes d’informations disponibles par défaut. Vous pouvez toutefois personnaliser les colonnes affichées dans votre rapport.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Cliquez sur le bouton _Paramètres des colonnes_ icône (![icône des paramètres de colonne](assets/column-settings.png)).
+1. Cliquez sur le bouton _Paramètres des colonnes_ icône (![icône des paramètres de colonne](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Pour personnaliser les colonnes affichées dans le rapport, cochez ou décochez les colonnes de la liste.
 
    Le rapport État des paiements de la commande affiche immédiatement les modifications que vous avez apportées au menu Paramètres de colonne . Les préférences de colonne seront enregistrées et resteront en vigueur si vous quittez la vue du rapport.
@@ -186,7 +186,7 @@ La vue Rapport d’état des paiements de la commande affiche une _[!UICONTROL L
 Vous pouvez également forcer manuellement l’actualisation des données du rapport État des paiements de la commande afin d’afficher les informations de rapport les plus récentes.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Cliquez sur le bouton _Actualiser_ icône (![icône d’actualisation](assets/refresh-button-med.png)).
+1. Cliquez sur le bouton _Actualiser_ icône (![icône d’actualisation](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Les données du rapport d’état des paiements de la commande sont actualisées. *[!UICONTROL Update complete]* une confirmation s’affiche et les informations les plus récentes sont présentes dans la grille.
 
@@ -208,7 +208,7 @@ Vous pouvez télécharger un fichier .csv avec tous les états visibles dans la 
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Si vous souhaitez afficher les états pour une période autre que les 30 derniers jours, [personnaliser la période de la période de la période pour vos états ;](#customize-dates-timeframe).
-1. Cliquez sur le bouton _Télécharger_ (![icône de téléchargement](assets/icon-download.png)).
+1. Cliquez sur le bouton _Télécharger_ (![icône de téléchargement](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Les statuts de paiement de votre commande sont téléchargés au format .csv .
 

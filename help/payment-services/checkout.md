@@ -2,7 +2,7 @@
 title: Passage en caisse
 description: Personnalisez le passage en caisse en fonction des besoins de votre client.
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Si une erreur se produit lors de l’extraction, [!DNL Payment Services] annule/
 
 Un message d’erreur s’affiche sur la page de passage en caisse de l’acheteur. Le message peut varier.
 
-![Erreur lors de la vérification](assets/user-checkout-error.png "Erreur lors de l’extraction")
+![Erreur lors de la vérification](assets/user-checkout-error.png "Erreur lors de l’extraction"){width="600" zoomable="yes"}
 
 Un commentaire sur la commande annulée s’affiche également dans l’onglet Admin pour un [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![Annulation du commentaire de commande dans Admin pour commande](assets/admin-checkout-error.png "Annulation du commentaire de commande dans Admin pour commande")
+![Annulation du commentaire de commande dans Admin pour commande](assets/admin-checkout-error.png "Annulation du commentaire de commande dans Admin pour commande"){width="600" zoomable="yes"}
 
 Si un acheteur obtient l’autorisation d’une commande, mais que celle-ci n’a pas été créée et convertie en `Capture`, la commande est automatiquement annulée. Ce processus garantit qu’aucun crédit n’est réservé sur la carte de crédit de l’acheteur et évite les frais du fournisseur de paiement qui surviennent lorsque l’autorisation est annulée à la fin de la période standard de 29 jours.
 

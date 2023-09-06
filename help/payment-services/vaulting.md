@@ -3,7 +3,7 @@ title: Valorisation des cartes de crédit
 description: Les acheteurs peuvent sauvegarder (enregistrer) les détails de leur carte de crédit pour les achats futurs.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Convertissez des clients ponctuels en clients fidèles avec des achats par carte de crédit en chambre forte. Les acheteurs peuvent enregistrer (ou &quot;coffre&quot;) leurs informations d’identification de carte de crédit au cours du passage en caisse afin de les utiliser dans un achat ultérieur pour le même magasin, ou un autre, dans le même compte marchand.
 
-![Mettre leur carte de crédit en banque pour une utilisation ultérieure](assets/save-card-for-later.png)
+![Mettre leur carte de crédit en banque pour une utilisation ultérieure](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 Les acheteurs utilisent le jeton stocké pour effectuer un passage en caisse ultérieur avec les informations de carte de crédit enregistrées.
 
-![Utiliser les informations d’identification stockées pour un achat ultérieur](assets/use-stored-card.png)
+![Utiliser les informations d’identification stockées pour un achat ultérieur](assets/use-stored-card.png){width="400" zoomable="yes"}
 
 Ils peuvent également facilement supprimer leurs cartes de crédit voûtées de [Méthodes de paiement stockées](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) dans leur compte.
 
-![Méthodes de paiement stockées dans mon compte](assets/stored-payment-methods.png)
+![Méthodes de paiement stockées dans mon compte](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 ## Activation de la mise en valeur
 
@@ -41,7 +41,7 @@ Pour créer une commande dans l’Admin pour un client à l’aide de sa carte d
 1. Sélectionnez le mode de paiement par carte de crédit voûtée de votre choix.
 1. Après avoir effectué toute autre étape nécessaire pour la commande, [envoyer](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Utilisation de la carte de crédit votée dans Admin pour le client](assets/admin-vaultedcard.png)
+   ![Utilisation de la carte de crédit votée dans Admin pour le client](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Sécurité
 

@@ -3,7 +3,7 @@ title: "Flux de passage en caisse pour un utilisateur Adobe Commerce"
 description: "Présentation de la variable [!DNL Quick Checkout] flux pour un utilisateur Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Si une [!DNL Bolt] compte trouvé lors du passage en caisse, les clients peuvent
 
 1. Saisissez le mot de passe unique (OTP) envoyé à cette fin. [!DNL Bolt] adresse électronique ou mobile du compte, en fonction des [préférences de l’utilisateur dans la variable [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![pop-up OTP](assets/new-logo-otp-email.png)
+![pop-up OTP](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Une fois connecté avec votre [!DNL Bolt] , les détails sont automatiquement ajoutés :
 
@@ -65,4 +65,4 @@ Si non [!DNL Bolt] est trouvé, les acheteurs continuent de passer en caisse Ado
 - Vérification du mode de paiement
 - L’option d’enregistrement dans [!DNL Bolt] pour des passages en caisse plus rapides avant que la commande ne s’affiche. L’acheteur peut accepter les conditions générales pour créer sa [!DNL Bolt] compte .
 
-  ![Mémoriser [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![Mémoriser [!DNL Bolt]](assets/checkbox-remember-bolt.png){width="300" zoomable="yes"}
