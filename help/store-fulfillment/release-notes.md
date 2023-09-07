@@ -4,10 +4,10 @@ description: "Consultez les notes de mise à jour pour plus d’informations sur
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: db1d5523f48f5686c2a28c7dfb7b1175238b37cf
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,15 @@ Ces notes de mise à jour décrivent la version initiale de [!DNL Store Fulfillm
 ![Correction d’un problème](../assets/fix.svg) Correctifs et améliorations
 ![Problème connu](../assets/bug.svg) Problèmes connus
 
+Voir [Versions à venir](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) pour en savoir plus sur les calendriers de publication et l’assistance.
+
+Voir [Disponibilité du produit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) pour découvrir quelles versions d’Adobe Commerce prennent en charge cette extension.
+
 ## v1.5.0
 
 *3 août 2023*
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}[Adobe Commerce 2.4.4 à 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), y compris les versions de correctif de sécurité 2.4.6-p1, 2.4.5-p3 et 2.4.4-p4.
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}[Adobe Commerce 2.4.4 à 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), y compris les versions de correctif de sécurité 2.4.6-p1, 2.4.5-p3 et 2.4.4-p4
 
 Cette version contient les mises à jour suivantes :
 
@@ -63,7 +67,7 @@ Cette version contient les mises à jour suivantes :
 
 *13 avril 2023*
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/fix.svg) [!DNL Store Fulfillment] est maintenant [compatible avec [!DNL Adobe Commerce] 2.4.4 à 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -72,7 +76,7 @@ Cette version contient les mises à jour suivantes :
 
 *27 février 2023*
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 Cette version contient les mises à jour suivantes :
 
@@ -82,7 +86,7 @@ Cette version contient les mises à jour suivantes :
 
 *27 septembre 2022*
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 Cette version contient les mises à jour suivantes :
 
@@ -93,7 +97,7 @@ Cette version contient les mises à jour suivantes :
 
 *15 juillet 2022*
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 Stabilité : Disponibilité générale
 
@@ -103,7 +107,7 @@ Stabilité : Disponibilité générale
 
 *4 mars 2022*
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 Stabilité : Disponibilité générale
 
