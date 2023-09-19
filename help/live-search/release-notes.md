@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Notes de mise à jour'
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
+source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1459'
 ht-degree: 1%
 
 ---
@@ -75,6 +75,16 @@ Les valeurs suivantes ont été ajoutées au `storeDetails` objet :
 * La variable **Mon compte** La navigation sur les pages ne disparaît plus lors de l’utilisation du widget Page de liste de produits .
 
 Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] version d’extension >= 3.0.2 pour accéder à ces fonctionnalités.
+
+Il est recommandé de mettre à niveau et de tester avant de passer en production. Envisagez de mettre à niveau l’environnement de production pendant les heures creuses après avoir vérifié les résultats de l’environnement de test.
+
+### Limites
+
+L’utilisation du widget Page de liste des produits de la recherche en direct entraînera l’échec du Gestionnaire de balises de Google. Utilisez l’outil d’adaptation de recherche par défaut si Google Tag Manager est nécessaire.
+
+## Versions précédentes
+
++++3.0.1 et versions antérieures
 
 ## [!DNL Live Search] 3.0.1 {#301}
 

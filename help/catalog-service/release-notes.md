@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
+source-git-commit: 232dce5db4a82fcec367dce04fb6fba5826b9733
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,14 @@ Les mises à jour sont les suivantes :
 
 ## Version majeure actuelle
 
-### Version 1.11
+### Version 1.12
 
-_18 juillet 2023_
+_19 septembre 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) Le service de catalogue prend désormais en charge la variable [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Requête GraphQL pour le Recommendations de produit.
+![Nouveau](../assets/new.svg) Le service de catalogue utilise désormais [Indexation des prix SaaS](../price-index/index.md).
+![Correction](../assets/fix.svg) Cette version contient des correctifs et des améliorations du côté service.
 
 #### Limites connues
 
@@ -45,13 +46,25 @@ Les limites suivantes peuvent être résolues à l’aide du maillage de l’API
 * [Prix de niveau](mesh.md)
 * Produits téléchargeables et cartes-cadeaux
 
+## Versions précédentes
+
++++ Versions précédentes
+
+### Version 1.11
+
+_18 juillet 2023_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg) Le service de catalogue prend désormais en charge la variable [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Requête GraphQL pour le Recommendations de produit.
+
 ### Version 1.10
 
 _27 juin 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) Le service de catalogue peut désormais afficher les produits associés dans le widget Page Détails du produit .
+![Nouveau](../assets/new.svg) L’API Catalog Service prend désormais en charge les &quot;produits associés&quot;.
 
 ### Version V1.7
 
@@ -118,10 +131,6 @@ _4 octobre 2022_
 ![Nouveau](../assets/new.svg) Prise en charge des produits regroupés et regroupés.
 ![Nouveau](../assets/new.svg) Ajout de remplacements de visibilité B2B. Les produits peuvent désormais faire l’objet de recherches et peuvent être ajoutés au panier pour des groupes de clients spécifiques.
 ![Correction](../assets/fix.svg) Le service est désormais plus stable et offre de meilleures performances.
-
-## Versions précédentes
-
-+++Versions bêta
 
 ### Version 0.3 - Bêta+
 

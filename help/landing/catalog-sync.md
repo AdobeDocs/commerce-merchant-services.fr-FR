@@ -3,9 +3,9 @@ title: Synchronisation du catalogue
 description: Découvrez comment exporter des données de produit à partir du [!DNL Commerce] serveur à [!DNL Commerce Services] afin de maintenir les services à jour.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 4326daafecc08c758aa05bf2d59fc69eca913155
+source-git-commit: 1fd5f25b88fa129cc136b93fdf88b981624f0678
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -127,20 +127,36 @@ Le tableau suivant décrit la variable `saas:resync` paramètres et descriptions
 
 Le nom du flux peut être l’un des suivants :
 
-- `products`— Produits dans votre catalogue
 - `categories`— Catégories dans votre catalogue
-- `variants`— Variations de produit d’un produit configurable, telles que la couleur et la taille
+- `categoryPermissions` - Autorisations pour chacune des catégories
+- `products`— Produits dans votre catalogue
 - `productattributes`— Attributs de produit tels que `activity`, `gender`, `tops`, `bottoms`, etc.
 - `productoverrides`: règles de tarification et de visibilité du catalogue spécifiques au client, telles que celles basées sur les autorisations de catégorie
+- `variants`— Variations de produit d’un produit configurable, telles que la couleur et la taille
 
 Lorsque vous déclenchez une nouvelle synchronisation des données à partir de la ligne de commande, la mise à jour des données peut prendre jusqu’à une heure.
+
+### Synchronisation de l’indexation des prix SaaS
 
 Si vous utilisez [Indexation des prix SaaS](../price-index/index.md) et devez effectuer une nouvelle synchronisation, exécutez la commande suivante :
 
 ```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+```
+
+### Synchronisation du service de catalogue
+
+Pour effectuer une resynchronisation pour le service de catalogue, il est important d’exécuter les commandes dans l’ordre suivant :
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions 
 ```
 
 ### Exemples

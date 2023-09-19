@@ -2,9 +2,9 @@
 title: Intégration et installation
 description: Découvrez comment installer [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,16 @@ Le processus d’intégration pour [!DNL Catalog Service] requiert l’accès à
 - Adobe Commerce sur l’infrastructure cloud : 2.4.4+
 - Adobe Commerce sur site : 2.4.4+
 
-## Environnements
+## Points de fin
 
-Le service de catalogue propose deux environnements d’intégration :
+Le service de catalogue comporte deux points de terminaison disponibles pour l’intégration :
 
 - Environnement de test (https://catalog-service-sandbox.adobe.io/graphql) : utilisé pour le test et la validation avant la mise en ligne.
 - Production (https://catalog-service.adobe.io/graphql)- utilisée pour le trafic en direct pour les marchands et les sites web de commerce
 
-Le test de chargement ne doit être effectué que dans l’environnement Sandbox. Il est recommandé d’effectuer une [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) être ouvert lors du test de chargement afin que l’équipe Services puisse anticiper le trafic de serveur supplémentaire.
+Toutes les instances de test de Commerce doivent utiliser le point de terminaison Sanbox.
+
+Le test de chargement ne doit être effectué que sur le point de terminaison Sandbox. Il est recommandé d’effectuer une [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) être ouvert lors du test de chargement afin que l’équipe Services puisse anticiper le trafic de serveur supplémentaire.
 
 ## Installation et configuration
 

@@ -1,9 +1,9 @@
 ---
 title: Service d’ingestion de flux
 description: En savoir plus sur le service d’ingestion de flux pour Adobe Commerce
-source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
+source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 >
 >Le service d’ingestion de flux est actuellement en version bêta privée. Il n’est pas encore disponible pour une utilisation générale.
 
+Le service d’ingestion de flux permet aux clients disposant de catalogues volumineux et/ou complexes d’envoyer directement des données aux services Adobe Commerce.
+
 Le service d’ingestion des flux réduit le temps nécessaire au traitement des modifications de produits (mises à jour des prix, ajout de nouveaux attributs) en contournant l’instance Adobe Commerce et en déplaçant les données de catalogue d’un ERP (Enterprise Resource Planning) tiers directement vers les services Adobe Commerce.
 
-Ce service est destiné aux clients qui stockent et gèrent leur catalogue de produits dans un système externe à l’application Adobe Commerce principale.
+Ce service est destiné aux clients qui stockent et gèrent leur catalogue de produits dans un système externe à l’application Adobe Commerce principale. Il est fourni sous la forme d’une API, de sorte que les clients puissent l’intégrer à leurs systèmes existants, ce qui offre une plus grande flexibilité dans la manière dont il est déployé.
 
 Les clients qui disposent de catalogues complexes et volumineux ou qui reçoivent de fréquentes mises à jour craignent que les nouvelles données ne prennent plus de temps que prévu pour apparaître dans le magasin en ligne. Puisque le service de catalogue sait quelles données il doit traiter ces mises à jour, il n’est pas nécessaire d’envoyer les données par l’intermédiaire du produit Commerce principal, mais elles doivent être transférées au service de catalogue. La suppression de cette étape intermédiaire est l’endroit où des gains d’efficacité sont constatés.
 
