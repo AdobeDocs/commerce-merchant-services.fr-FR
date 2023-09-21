@@ -3,10 +3,10 @@ title: '[!DNL Live Search] Notes de mise à jour'
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
+source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 1%
+source-wordcount: '1662'
+ht-degree: 0%
 
 ---
 
@@ -36,6 +36,52 @@ _25 avril 2023_
 
 +++
 
+## [!DNL Live Search] 3.1.1 {#311}
+
+_15 septembre 2023_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+### Nouvelles fonctionnalités
+
+* Un nouvel onglet Marchandisage des catégories a été ajouté. Les utilisateurs peuvent désormais ajouter des classements intelligents et des classements manuels (épingle, amplification, inhumation, masquage) par catégorie.
+* Les utilisateurs peuvent ajouter une règle de catégorie unique avec un classement intelligent ou manuel
+* Les utilisateurs peuvent désormais ajouter des règles de classement intelligent aux sous-catégories.
+* Des informations détaillées sont fournies lors de la suppression de sous-catégories avec un classement intelligent
+* Ajout de la possibilité de supprimer des règles pour les stratégies de classement héritées
+* Ajout de la possibilité de supprimer des règles pour une seule catégorie
+* Les utilisateurs peuvent désormais rechercher par nom de catégorie lors de l’ajout d’une règle.
+* Avec l’affichage de l’arborescence des catégories, les utilisateurs peuvent désormais afficher la catégorie pour laquelle des règles sont appliquées.
+* L’aperçu des catégories affiche uniquement la catégorie sélectionnée.
+
+### Mises à jour
+
+* L’onglet &quot;Règles&quot; est renommé &quot;Règles de recherche&quot;.
+* Lors du classement par &quot;tendance&quot;, vous pouvez désormais choisir entre :
+   * 3 jours (par défaut)
+   * 14 jours
+   * 30 jours
+* &quot;Événements&quot; (Amplifier/Epingler/Masquer) a été renommé &quot;Classement manuel&quot;
+* &quot;Type de classement&quot; a été renommé &quot;Classement intelligent&quot;.
+
+### Correctifs
+
+* Correctifs de bogues mineurs
+
+Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] version d’extension >= 3.1.1 pour accéder à ces fonctionnalités.
+
+Après l’installation de la version 3.1.1, ces nouveaux indexeurs doivent être activés :
+
+* Flux de prix du produit
+* Porte le flux de données du site web
+* Porte le flux de données de groupes de clients
+
+Il est recommandé de mettre à niveau et de tester l’assurance qualité ou l’évaluation avant d’appliquer les modifications à la production.
+
+## Versions précédentes
+
++++3.1.0 et versions antérieures
+
 ## [!DNL Live Search] 3.1.0 {#310}
 
 _1 septembre 2023_
@@ -45,10 +91,6 @@ _1 septembre 2023_
 ### Mises à jour
 
 * Le widget Liste des produits a été mis à jour pour utiliser la variable [API Catalog Service](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
-
-## Versions précédentes
-
-+++3.0.2 et versions antérieures
 
 ## [!DNL Live Search] 3.0.2 {#302}
 

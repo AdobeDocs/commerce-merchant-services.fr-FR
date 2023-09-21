@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Workspace'
 description: La variable [!DNL Live Search] workspace est utilisé pour configurer, gérer et surveiller les performances de recherche.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 166665c3ee27ed7e07e00df0e3eab060f3686869
+source-git-commit: 550c382671fd5bb611cb6c502204dacc9748cffc
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 L’espace de travail vous permet de configurer, de gérer et de surveiller les performances de [!DNL Live Search]. Le menu situé en haut permet d’accéder aux outils de chaque domaine fonctionnel.  Les fonctionnalités disponibles reflètent la sélection de menu actuelle.
 
-![Espace de travail de facette](assets/faceting-workspace.png)
+![Espace de travail de facette](assets/workspace.png)
 
 ## Définition de la portée
 
@@ -26,6 +26,7 @@ Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commer
 | [Performances](performance.md) | Le tableau de bord donne des informations sur les performances de recherche de produits. |
 | [Facturation](facets.md) | Filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut pour affiner les critères de recherche. |
 | [Synonymes](synonyms.md) | Étendez la portée de la recherche pour inclure les mots que les acheteurs peuvent utiliser pour trouver des produits différents de ceux de votre catalogue. |
-| [Règles](rules.md) | Formez l’expérience de recherche à l’aide de règles logiques qui déclenchent des actions planifiées. Amplifiez, enseignez, épinglez ou masquez des produits afin d’étalonner les résultats de recherche en fonction de vos objectifs commerciaux. |
+| [Règles de recherche](rules.md) | Formez l’expérience de recherche à l’aide de règles logiques qui déclenchent des actions planifiées. Amplifiez, enseignez, épinglez ou masquez des produits afin d’étalonner les résultats de recherche en fonction de vos objectifs commerciaux. |
+| [Marchandisage des catégories](category-merch.md) | Appliquez la règle et le marchandisage intelligent au niveau de la catégorie. |
 | [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Les développeurs connectés à l’administrateur de votre boutique peuvent composer et tester des requêtes avec des données de catalogue réelles. Pour en savoir plus, accédez à [Présentation de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) dans le [!DNL Live Search] documentation destinée aux développeurs. |
 | [Paramètres](settings.md) | Déterminez comment les valeurs des facettes de prix sont regroupées par fourchette de prix dans le storefront. |

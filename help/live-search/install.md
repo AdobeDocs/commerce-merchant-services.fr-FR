@@ -3,9 +3,9 @@ title: "Installer [!DNL Live Search]"
 description: "Découvrez comment installer, mettre à jour et désinstaller [!DNL Live Search] d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,9 @@ Dans ce scénario, les opérations de storefront sont interrompues pendant que l
    * Flux de produit
    * Flux de variante de produit
    * Flux d’attributs du catalogue
+   * Flux de prix du produit
+   * Flux de données de site web de Portée
+   * Portée Flux de données de groupes de clients
 
 1. Configurez vos [Clés API](#configure-api-keys) et vérifier que les données de votre catalogue sont [synchronisé](#synchronize-catalog-data) avec [!DNL Live Search] services.
 
@@ -121,6 +124,9 @@ Dans ce scénario, [!DNL Elasticsearch] gère temporairement les requêtes de re
    * Flux de produit
    * Flux de variante de produit
    * Flux d’attributs du catalogue
+   * Flux de prix du produit
+   * Porte le flux de données du site web
+   * Porte le flux de données de groupes de clients
 
 1. Configurez vos [Clés API](#configure-api-keys) et vérifier que les données de votre catalogue sont [synchronisé](#synchronize-catalog-data) avec [!DNL Live Search] services.
 
@@ -211,7 +217,7 @@ Pour mettre à jour [!DNL Live Search], exécutez les opérations suivantes à p
 composer update magento/live-search --with-dependencies
 ```
 
-Pour effectuer une mise à jour vers une version majeure, telle que de 2.0.0 à 3.0.1, modifiez la racine du projet. [!DNL Composer] `.json` comme suit :
+Pour effectuer une mise à jour vers une version majeure, telle que de la version 2.0.0 à la version 3.1.1, modifiez la racine du projet. [!DNL Composer] `.json` comme suit :
 
 1. Si votre `magento/live-search` version est `2.0.3` ou version inférieure et que vous effectuez une mise à niveau vers la version `3.0.0` ou supérieur, exécutez la commande suivante avant la mise à niveau :
 

@@ -1,17 +1,17 @@
 ---
-title: "Espace de travail des règles"
+title: '"Search Rules Workspace" (Espace de travail des règles de recherche)'
 description: "Découvrez comment contourner le problème [!DNL Live Search] espace de travail des règles."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
 
-# Espace de travail des règles
+# Espace de travail des règles de recherche
 
-L’espace de travail des règles répertorie la sélection actuelle des règles et leur état, et permet d’accéder aux outils dont vous avez besoin pour créer et gérer des règles. Dans l’espace de travail, vous pouvez :
+L’espace de travail Règles de recherche répertorie la sélection actuelle des règles et leur état, et permet d’accéder aux outils dont vous avez besoin pour créer et gérer des règles. Dans l’espace de travail, vous pouvez :
 
 * Recherche de règles
 * Afficher les détails des règles
@@ -46,18 +46,18 @@ Les colonnes visibles sont cochées en bleu dans le menu d’options. Le nom de 
    * Inactif
    * Planifié
 
-## Règles de recherche par nom
+## Rechercher des règles de recherche par nom
 
 Commencez à saisir le nom de la règle ou tout mot du nom de la règle.
 La recherche trouve la ou les règles correspondantes lorsque vous tapez. La chaîne des caractères correspondants est mise en surbrillance dans le nom de chaque règle trouvée.
 
-![Règles : recherche par nom](assets/rules-workspace-search-name.png)
+![Règles : rechercher par nom](assets/rules-workspace-search-name.png)
 
 ## Afficher les détails
 
 Le panneau Détails affiche le nom, l’état, les conditions et événements de la règle, la date de début et de fin, la description et la date de dernière modification de la règle. Les règles peuvent être activées, modifiées et supprimées du panneau Détails.
 
-1. Sur le *Règles* , recherchez la règle dans la grille à afficher, puis cliquez sur **Plus** (...).
+1. Sur le *Règles de recherche* , recherchez la règle dans la grille à afficher, puis cliquez sur **Plus** (...).
 1. Cliquez sur **Afficher les détails**.
 Vous pouvez effectuer l’une des opérations suivantes à partir du panneau Afficher les détails :
 

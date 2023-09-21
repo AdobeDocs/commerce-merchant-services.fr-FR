@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Le [!DNL Live Search storefront popover] renvoie dynamiquement les produits suggérés et les miniatures."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -49,10 +49,13 @@ La variable [Service de catalogue pour Adobe Commerce](../catalog-service/overvi
 
 Les marchands peuvent personnaliser et étendre des widgets ou des éléments de storefront à l’aide du service de catalogue, mais cela n’a pas de portée pour l’équipe d’assistance d’Adobe.
 
+## Implémentations sans affichage
+
+Pour les implémentations sans interface utilisateur graphique, il est possible d’installer la fenêtre contextuelle Live Search avec une [package npm](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+
 ## Limites
 
 * La variable [!DNL Live Search] [!DNL storefront popover] est disponible uniquement pour les magasins qui utilisent la variable *Luma* ou un thème personnalisé basé sur *Luma*. Le chemin de navigation de la page des résultats de recherche ne comporte pas *Lume* style.
 * La variable [!DNL popover] ne prend pas en charge la variable *Vide* thème. Voir [Style [!DNL Popover] Éléments](storefront-popover-styling.md) pour en savoir plus.
 * La variable [!DNL popover] n’est pas pris en charge dans le formulaire de commande rapide.
 * Les listes blanches et les comparaisons de produits ne sont pas prises en charge.
-* Seule la devise de base est prise en charge.

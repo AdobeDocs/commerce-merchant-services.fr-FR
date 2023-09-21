@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Product Recommendations] d’Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 1dc69bf92ce8c9105724dea0ce70c34afa25a091
+source-git-commit: f3e94b20580fcd14b341b2b04a04966afd4be5ce
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ _25 avril 2023_
 
 ## Version majeure actuelle
 
-### 5.0.0 de magento/product-recommendations
+### 5.0.1 de magento/product-recommendations
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) Mise à jour de Product Recommendations pour la prise en charge d’Adobe Commerce 2.4.6.
-![Nouveau](../assets/new.svg) Il s’agit d’une version majeure. [Modifier](install-configure.md#update) la racine `composer.json` pour votre projet.
+![Nouveau](../assets/new.svg) Ajout de nouveaux modules pour la prise en charge de la fonction [Indexeur de prix Saas](../price-index/index.md).
+![Nouveau](../assets/new.svg) Ajout de nouveaux modules d’exportation de données pour la prise en charge de l’exportation d’autres types de produits, y compris les produits regroupés et les cartes-cadeaux.
 
 #### Limites connues
 
@@ -58,7 +58,14 @@ _25 avril 2023_
 
 ### Versions précédentes
 
-+++4.0.1 et versions antérieures
++++5.0.0 et versions antérieures
+
+### 5.0.0 de magento/product-recommendations
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Nouveau](../assets/new.svg) Mise à jour de Product Recommendations pour la prise en charge d’Adobe Commerce 2.4.6.
+![Nouveau](../assets/new.svg) Il s’agit d’une version majeure. [Modifier](install-configure.md#update) la racine `composer.json` pour votre projet.
 
 ### 4.0.1 de magento/product-recommendations
 

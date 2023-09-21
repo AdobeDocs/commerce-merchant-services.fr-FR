@@ -1,15 +1,15 @@
 ---
-title: "Règles"
+title: "Règles de recherche"
 description: "[!DNL Live Search] les règles combinent logique et actions pour façonner l’expérience d’achat."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# Règles
+# Règles de recherche
 
 [!DNL Live Search] les règles combinent logique et actions pour former l’expérience de recherche d’un acheteur dans votre magasin. Vous pouvez utiliser des règles pour dynamiser, enterrer, épingler ou masquer des produits afin d’étalonner les résultats de recherche en temps réel en fonction des objectifs de votre entreprise.
 
@@ -23,7 +23,7 @@ Vous pouvez combiner plusieurs conditions et actions et programmer l’activatio
 
 ## Conditions
 
-Une règle simple peut comporter une seule condition et un seul événement, tandis qu’une règle complexe peut comporter jusqu’à dix conditions qui déclenchent jusqu’à 25 événements.
+Une règle de recherche simple peut comporter une seule condition et un seul événement, tandis qu’une règle complexe peut comporter jusqu’à dix conditions qui déclenchent jusqu’à 25 événements.
 Les règles peuvent comporter :
 
 * Jusqu’à dix conditions
@@ -49,7 +49,7 @@ Lors de la composition d’une règle complexe, il peut être utile de l’écri
 
 ## Ordre de priorité avec plusieurs règles
 
-Une seule règle est appliquée à un terme de recherche à la fois.
+Une seule règle de recherche est appliquée à un terme de recherche à la fois.
 Si plusieurs règles s’appliquent à une expression de recherche, toutes ces règles sont appliquées. En cas de collision entre deux règles —`rule 1` qui amplifie sku1 mais `rule 2` masque le même SKU, puis la règle la plus récemment appliquée (`rule 2`) a la priorité.
 
 * Les règles sont classées selon l’horodatage &quot;Dernière modification&quot;. La règle la plus récemment modifiée est appliquée en premier, puis les règles plus anciennes, dans l’ordre d’horodatage.

@@ -3,9 +3,9 @@ title: "Présentation de l’intégration"
 description: "[!DNL Live Search] flux d’intégration, exigences système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: ee8c37dc5dab9fcbc47d3d66e3ae0f99c9cb82d8
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Pour commencer à utiliser [!DNL Live Search] pour Adobe Commerce, exécutez le 
 
 * Adobe Commerce on-premise (EE) : 2.4.4+
 * Adobe Commerce on Cloud (CEE) : 2.4.4+
+
+## Point d’entrée
+
+[!DNL Live Search] communique par le biais du point de terminaison à l’adresse `https://catalog-service.adobe.io/graphql`.
 
 ## Limites et seuils
 

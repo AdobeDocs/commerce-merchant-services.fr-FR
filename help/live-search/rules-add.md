@@ -2,9 +2,9 @@
 title: "Ajouter des règles"
 description: "Découvrez comment créer [!DNL Live Search] règles."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
+source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 
 1. Dans Admin, accédez à **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Définissez la variable **Portée** pour identifier la variable [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) lorsque la règle s’applique.
-1. Cliquez sur le bouton **Règles** .
+1. Cliquez sur le bouton **Règles de recherche** .
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 
 ## Conditions
@@ -70,9 +70,9 @@ Une règle peut comporter jusqu&#39;à dix conditions. L’opérateur logique qu
 
 1. Pour ajouter une autre condition, cliquez sur **Ajouter une condition** et répétez le processus.
 
-## Type de classement
+## Classement intelligent
 
-Le classement combine les comportements des utilisateurs et les statistiques du site pour déterminer le classement des produits.
+Le classement intelligent combine les comportements des utilisateurs et les statistiques du site pour déterminer le classement des produits.
 Les propriétaires de magasins peuvent configurer les types de stratégies de classement suivants :
 
 ![Règles - Correspondance](assets/rules-ranking-type.png)
@@ -90,9 +90,9 @@ Les propriétaires de magasins peuvent configurer les types de stratégies de cl
 >
 >Les apostrophes et guillemets dans les requêtes peuvent entraîner des problèmes mineurs de classement et de pertinence dans certaines langues.
 
-## Ajout d’événements
+## Classement manuel
 
-Les événements sont des actions qui modifient les résultats de la recherche lorsque des conditions définies sont remplies. Une seule règle peut comporter jusqu’à 25 événements.
+Le classement manuel (anciennement appelé Événements) sont des actions qui modifient les résultats de la recherche lorsque les conditions définies sont remplies. Une seule règle peut comporter jusqu’à 25 événements.
 
 * Amplifier : déplace un produit plus haut dans les résultats de recherche.
 * Bury : déplace un SKU plus bas dans les résultats de recherche.
@@ -166,7 +166,7 @@ Les informations saisies ici apparaissent dans le [Détails de la règle](rules-
 | Quelconque | Modifie tous les opérateurs logiques de la règle en `OR` et renvoie l’ensemble des produits correspondants. |
 | Tous | Modifie tous les opérateurs logiques de la règle en `AND` et renvoie l’ensemble des produits correspondants. |
 
-### Événements
+### Classement manuel
 
 | Événement | Description |
 |--- |--- |
