@@ -2,7 +2,7 @@
 title: Intégration et installation
 description: Découvrez comment installer [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Le service de catalogue comporte deux points de terminaison disponibles pour l�
 - Environnement de test (https://catalog-service-sandbox.adobe.io/graphql) : utilisé pour le test et la validation avant la mise en ligne.
 - Production (https://catalog-service.adobe.io/graphql)- utilisée pour le trafic en direct pour les marchands et les sites web de commerce
 
-Toutes les instances de test de Commerce doivent utiliser le point de terminaison Sanbox.
+Toutes les instances de test de Commerce doivent utiliser le point de terminaison Sandbox.
 
 Le test de chargement ne doit être effectué que sur le point de terminaison Sandbox. Il est recommandé d’effectuer une [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) être ouvert lors du test de chargement afin que l’équipe Services puisse anticiper le trafic de serveur supplémentaire.
 

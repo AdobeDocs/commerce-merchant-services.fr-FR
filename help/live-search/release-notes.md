@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Notes de mise à jour'
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -44,29 +44,23 @@ _15 septembre 2023_
 
 ### Nouvelles fonctionnalités
 
-* Un nouvel onglet Marchandisage des catégories a été ajouté. Les utilisateurs peuvent désormais ajouter des classements intelligents et des classements manuels (épingle, amplification, inhumation, masquage) par catégorie.
-* Les utilisateurs peuvent ajouter une règle de catégorie unique avec un classement intelligent ou manuel
-* Les utilisateurs peuvent désormais ajouter des règles de classement intelligent aux sous-catégories.
-* Des informations détaillées sont fournies lors de la suppression de sous-catégories avec un classement intelligent
-* Ajout de la possibilité de supprimer des règles pour les stratégies de classement héritées
-* Ajout de la possibilité de supprimer des règles pour une seule catégorie
-* Les utilisateurs peuvent désormais rechercher par nom de catégorie lors de l’ajout d’une règle.
-* Avec l’affichage de l’arborescence des catégories, les utilisateurs peuvent désormais afficher la catégorie pour laquelle des règles sont appliquées.
-* L’aperçu des catégories affiche uniquement la catégorie sélectionnée.
+![Nouveau](../assets/new.svg) Un nouvel onglet Marchandisage des catégories a été ajouté. Les utilisateurs peuvent désormais ajouter des classements intelligents et des classements manuels (épingle, amplification, inhumation, masquage) par catégorie.
+![Nouveau](../assets/new.svg) Les utilisateurs peuvent ajouter une règle de catégorie unique avec un classement intelligent ou manuel
+![Nouveau](../assets/new.svg) Les utilisateurs peuvent désormais ajouter des règles de classement intelligent aux sous-catégories.
+![Nouveau](../assets/new.svg) Des informations détaillées sont fournies lors de la suppression de sous-catégories avec un classement intelligent
+![Nouveau](../assets/new.svg) Ajout de la possibilité de supprimer des règles pour les stratégies de classement héritées
+![Nouveau](../assets/new.svg) Ajout de la possibilité de supprimer des règles pour une seule catégorie
+![Nouveau](../assets/new.svg) Les utilisateurs peuvent désormais rechercher par nom de catégorie lors de l’ajout d’une règle.
+![Nouveau](../assets/new.svg) Avec l’affichage de l’arborescence des catégories, les utilisateurs peuvent désormais afficher la catégorie pour laquelle des règles sont appliquées.
+![Nouveau](../assets/new.svg) L’aperçu des catégories affiche uniquement la catégorie sélectionnée.
 
 ### Mises à jour
 
-* L’onglet &quot;Règles&quot; est renommé &quot;Règles de recherche&quot;.
-* Lors du classement par &quot;tendance&quot;, vous pouvez désormais choisir entre :
-   * 3 jours (par défaut)
-   * 14 jours
-   * 30 jours
-* &quot;Événements&quot; (Amplifier/Epingler/Masquer) a été renommé &quot;Classement manuel&quot;
-* &quot;Type de classement&quot; a été renommé &quot;Classement intelligent&quot;.
-
-### Correctifs
-
-* Correctifs de bogues mineurs
+![Correction](../assets/fix.svg) L’onglet &quot;Règles&quot; est renommé &quot;Règles de recherche&quot;.
+![Correction](../assets/fix.svg) Lors du classement par &quot;tendance&quot;, vous pouvez désormais choisir entre : * 3 jours (par défaut) * 14 jours * 30 jours
+![Correction](../assets/fix.svg) &quot;Événements&quot; (Amplifier/Epingler/Masquer) a été renommé &quot;Classement manuel&quot;
+![Correction](../assets/fix.svg) &quot;Type de classement&quot; a été renommé &quot;Classement intelligent&quot;.
+![Correction](../assets/fix.svg) Correctifs de bogues mineurs
 
 Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] version d’extension >= 3.1.1 pour accéder à ces fonctionnalités.
 
@@ -90,7 +84,7 @@ _1 septembre 2023_
 
 ### Mises à jour
 
-* Le widget Liste des produits a été mis à jour pour utiliser la variable [API Catalog Service](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![Correction](../assets/fix.svg) Le widget Liste des produits a été mis à jour pour utiliser la variable [API Catalog Service](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -100,7 +94,7 @@ _7 août 2023_
 
 ### Nouvelles fonctionnalités
 
-Les valeurs suivantes ont été ajoutées au `storeDetails` objet :
+![Nouveau](../assets/new.svg) Les valeurs suivantes ont été ajoutées au `storeDetails` objet :
 
 * &quot;Autoriser tous les produits par page&quot;
 * Taux de change
@@ -110,11 +104,8 @@ Les valeurs suivantes ont été ajoutées au `storeDetails` objet :
 
 ### Mises à jour
 
-* Les modules de service de catalogue ont été ajoutés au métaphorage pour prendre en charge la récupération avancée des données.
-
-### Correctifs
-
-* La variable **Mon compte** La navigation sur les pages ne disparaît plus lors de l’utilisation du widget Page de liste de produits .
+![Correction](../assets/fix.svg) Les modules de service de catalogue ont été ajoutés au métaphorage pour prendre en charge la récupération avancée des données.
+![Correction](../assets/fix.svg) La variable **Mon compte** La navigation sur les pages ne disparaît plus lors de l’utilisation du widget Page de liste de produits .
 
 Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] version d’extension >= 3.0.2 pour accéder à ces fonctionnalités.
 
@@ -122,11 +113,7 @@ Il est recommandé de mettre à niveau et de tester avant de passer en productio
 
 ### Limites
 
-L’utilisation du widget Page de liste des produits de la recherche en direct entraînera l’échec du Gestionnaire de balises de Google. Utilisez l’outil d’adaptation de recherche par défaut si Google Tag Manager est nécessaire.
-
-## Versions précédentes
-
-+++3.0.1 et versions antérieures
+L’utilisation du widget Page de liste des produits de la recherche en direct entraînera l’échec du Gestionnaire de balises de Google. Utilisez l’adaptateur de recherche par défaut si Google Tag Manager est nécessaire.
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -136,37 +123,33 @@ _14 mars 2023_
 
 ### Nouvelles fonctionnalités
 
-* Carte des éléments de produit dans l’aperçu des règles
-* [Widget de page de liste de produits](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-* [Options de filtrage des catégories](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-* Ajout de la possibilité de faire glisser et de déposer des événements Pin
-* Nouvelles actions d’épingle :
-   * Epingler pour repérer : bouton Epingler pour créer un événement Epingler en un clic
-   * Epingler au-dessus : place le produit en première position.
-   * Epingler vers le bas : place le produit au bas des résultats.
-   * Désolidarisation d’un événement d’un seul clic
-* [Classement intelligent des règles](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![Nouveau](../assets/new.svg) Carte des éléments de produit dans l’aperçu des règles
+![Nouveau](../assets/new.svg) [Widget de page de liste de produits](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![Nouveau](../assets/new.svg) [Options de filtrage des catégories](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![Nouveau](../assets/new.svg) Ajout de la possibilité de faire glisser et de déposer des événements Pin
+![Nouveau](../assets/new.svg) Nouvelles actions Epingler : * Epingler à l’emplacement - Bouton Epingler pour créer l’événement Epingler d’un seul clic * Epingler au haut - Placer le produit dans la première position * Epingler au bas des résultats * Détacher un événement d’un seul clic
+![Nouveau](../assets/new.svg) [Classement intelligent des règles](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### Mises à jour
 
-* La configuration des règles trie désormais automatiquement les positions de manière unique.
-* La suppression d’un événement existant met désormais à jour l’aperçu
-* Les règles sans événement peuvent être enregistrées.
-* Suppression du sélecteur de facettes &quot;Select Type&quot;
-* Ajout d’un nouvel état &quot;En édition&quot; pour les règles non enregistrées
+![Correction](../assets/fix.svg) La configuration des règles trie désormais automatiquement les positions de manière unique.
+![Correction](../assets/fix.svg) La suppression d’un événement existant met désormais à jour l’aperçu
+![Correction](../assets/fix.svg) Les règles sans événement peuvent être enregistrées.
+![Correction](../assets/fix.svg) Suppression du sélecteur de facettes &quot;Select Type&quot;
+![Correction](../assets/fix.svg) Ajout d’un nouvel état &quot;En édition&quot; pour les règles non enregistrées
 
 ### Correctifs
 
-* Correction d’une erreur du serveur en cas d’événement inachevé au cours de l’enregistrement.
-* Correction de la suppression correcte d’un événement spécifique lorsqu’il existe plusieurs événements.
-* Correction d’un événement de règle existant qui ne se mettait pas à jour lors de l’ajout d’un nouvel événement
-* Corrigé lors du second clic &quot;Modifier&quot; à partir des détails, [!DNL Live Search] page nécessitant un rechargement
-* Synonymes : correction d’un problème lorsqu’un utilisateur cliquait en dehors d’une entrée, empêchant la sélection du champ.
-* Autres correctifs mineurs et mises à jour des performances
+![Correction](../assets/fix.svg) Correction d’une erreur du serveur en cas d’événement inachevé au cours de l’enregistrement.
+![Correction](../assets/fix.svg) Correction de la suppression correcte d’un événement spécifique lorsqu’il existe plusieurs événements.
+![Correction](../assets/fix.svg) Correction d’un événement de règle existant qui ne se mettait pas à jour lors de l’ajout d’un nouvel événement
+![Correction](../assets/fix.svg) Corrigé lors du second clic &quot;Modifier&quot; à partir des détails, [!DNL Live Search] page nécessitant un rechargement
+![Correction](../assets/fix.svg) Synonymes : correction d’un problème lorsqu’un utilisateur cliquait en dehors d’une entrée, empêchant la sélection du champ.
+![Correction](../assets/fix.svg) Autres correctifs mineurs et mises à jour des performances
 
 
-* ![Bogue](../assets/bug.svg) - Le classement par &quot;Recommandé pour vous&quot; n’est pris en charge que dans les widgets de recherche en direct. Elle n’est pas prise en charge avec la fonctionnalité de recherche par défaut de Luma et de PWA.
-* ![Bogue](../assets/bug.svg) - Les facettes d’attribut de prix personnalisées ne s’affichent pas correctement dans Luma, mais l’API les filtre correctement.
+![Bogue](../assets/bug.svg) - Le classement par &quot;Recommandé pour vous&quot; n’est pris en charge que dans les widgets de recherche en direct. Elle n’est pas prise en charge avec la fonctionnalité de recherche par défaut de Luma et de PWA.
+![Bogue](../assets/bug.svg) - Les facettes d’attribut de prix personnalisées ne s’affichent pas correctement dans Luma, mais l’API les filtre correctement.
 
 Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] version d’extension >= 3.0.1 pour accéder à ces fonctionnalités.
 
@@ -176,7 +159,7 @@ Il est recommandé de mettre à niveau et de tester avant de passer en productio
 
 [!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
-* ![Correction](../assets/fix.svg) - La recherche en direct renvoie une erreur lorsque les ressources du SDK n’étaient pas disponibles en raison de problèmes de réseau. Ce bogue a été corrigé.
+![Correction](../assets/fix.svg) - La recherche en direct renvoie une erreur lorsque les ressources du SDK n’étaient pas disponibles en raison de problèmes de réseau. Ce bogue a été corrigé.
 
 Les commerçants doivent mettre à niveau l’extension Live Search >= 2.0.5 pour accéder à ces fonctionnalités.
 
