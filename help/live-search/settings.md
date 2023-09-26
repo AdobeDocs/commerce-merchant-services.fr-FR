@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Paramètres"
 description: "Configurez les paramètres de la variable [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: d367fdb0cb0ddf67ee1ce31b178fcb29ec5283ad
+source-git-commit: eefae3c849545062012cea1a7092c27f7df56b58
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Vous pouvez indiquer le nombre de groupes de prix et la manière dont les valeur
 | Nombre de sélections | Indique le nombre de groupements de plages de prix pouvant être utilisés comme filtres de recherche dans le storefront. Valeur par défaut : 8, Valeur maximale : 50 |
 | Valeur d&#39;intervalle | Indique l’intervalle de prix pour chaque groupe. Par exemple, cinq sélections avec une valeur d’intervalle de 20 créent cinq groupes de 0 à 20, 20 à 40, 40 à 60, 60 à 80 et >80. Valeur par défaut : 5, Valeur maximale : 10 000 |
 
-## Langue
+<!-- ## Language
 
-Le paramètre Langue indique : [!DNL Live Search] la langue à attendre lors de la lecture du catalogue et de l’écriture de l’index.
+The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
 
-Les langues ont différents ensembles de règles grammaticales : la séparation des mots, les tenses de verbe et les synonymes, par exemple.
-Le paramètre Langue garantit que le jeu correct de règles est appliqué au mécanisme d’indexation.
+Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
+The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
 
-Les paramètres de langue doivent être définis sur la langue principale du catalogue.
+The Language settings should be set to the primary language of the catalog. -->
