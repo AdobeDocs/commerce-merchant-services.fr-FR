@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1725'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ _14 mars 2023_
 ![Nouveau](../assets/new.svg) Ajout de la possibilité de faire glisser et de déposer des événements Pin
 ![Nouveau](../assets/new.svg) Nouvelles actions Epingler : * Epingler à l’emplacement - Bouton Epingler pour créer l’événement Epingler d’un seul clic * Epingler au haut - Placer le produit dans la première position * Epingler au bas des résultats * Détacher un événement d’un seul clic
 ![Nouveau](../assets/new.svg) [Classement intelligent des règles](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
-![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge le stock multi-source (MSI). Pour utiliser MSI, vous devez [install](install.md#update) la valeur `commerce-data-export` Module 102.2.0+. Vérifiez votre version à l’aide de la commande suivante : `composer update magento/live-search --with-dependencies`.
+![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge l’intégralité [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) Fonctionnalités dans Commerce (anciennement appelées inventaire multi-source ou MSI). Pour activer la prise en charge complète, vous devez [update](install.md#update) le module de dépendance ; `commerce-data-export` vers la version 102.2.0+.
 
 ### Mises à jour
 
