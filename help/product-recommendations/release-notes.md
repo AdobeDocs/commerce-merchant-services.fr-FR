@@ -3,7 +3,7 @@ title: '[!DNL Product Recommendations] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Product Recommendations] d’Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
+source-git-commit: 7bc63a6b647dd010ef58c5d4d4df7a0a2c3cabe0
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 0%
@@ -66,6 +66,7 @@ _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) Mise à jour de Product Recommendations pour la prise en charge d’Adobe Commerce 2.4.6.
 ![Nouveau](../assets/new.svg) Il s’agit d’une version majeure. [Modifier](install-configure.md#update) la racine `composer.json` pour votre projet.
+![Nouveau](../assets/new.svg) [!DNL Product Recommendations] prend désormais en charge l’intégralité [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) Fonctionnalités dans Commerce (anciennement appelées inventaire multi-source ou MSI). Pour activer la prise en charge complète, vous devez [update](install-configure.md#update) le module de dépendance ; `commerce-data-export` vers la version 102.2.0+.
 
 ### 4.0.1 de magento/product-recommendations
 
@@ -79,7 +80,6 @@ _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) Ajout [indicateurs de préparation](create.md) pour vous aider à visualiser la progression de la formation de chaque type de recommandation.
 ![Nouveau](../assets/new.svg) Il s’agit d’une version majeure. [Modifier](install-configure.md#update) la racine `composer.json` pour votre projet. Cette version requiert également que vous fournissiez deux clés d’API lors de l’installation et de la configuration de Product Recommendations : [une clé de production et une clé sandbox ;](../landing/saas.md).
-![Nouveau](../assets/new.svg) [!DNL Product Recommendations] prend désormais en charge l’intégralité [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) Fonctionnalités dans Commerce (anciennement appelées inventaire multi-source ou MSI). Pour activer la prise en charge complète, vous devez [update](install-configure.md#update) le module de dépendance ; `commerce-data-export` vers la version 102.2.0+.
 
 #### Limites connues
 
