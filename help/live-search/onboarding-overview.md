@@ -3,9 +3,9 @@ title: "Présentation de l’intégration"
 description: "[!DNL Live Search] flux d’intégration, exigences système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,19 @@ Pour restreindre les groupes de clients à l’aide des autorisations du catalog
 
 * [!DNL Live Search] peut gérer jusqu’à 200 synonymes par vue de magasin.
 
+## Marchandisage des catégories
+
+Le marchandisage des catégories vous permet de configurer [!DNL Live Search] pour travailler au niveau de la catégorie de produits.
+
+Cette vidéo présente le marchandisage par catégorie.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
 ## Indexateur de prix
 
 Les clients Live Search peuvent utiliser la nouvelle [Indexeur de prix SaaS](../price-index/index.md), qui accélère les mises à jour des changements de prix et le temps de synchronisation.
 
-### Prise en charge des PWA
+## Prise en charge des PWA
 
 [!DNL Live Search] fonctionne avec PWA Studio, mais les utilisateurs peuvent voir de légères différences par rapport aux autres mises en oeuvre de Commerce. Les fonctionnalités de base telles que la recherche et la liste de produits fonctionnent dans Venia, mais certaines permutations de Graphql peuvent ne pas fonctionner correctement. Il peut également y avoir des différences de performances.
 
@@ -96,7 +104,7 @@ Pour utiliser [!DNL Live Search] avec PWA Studio, les intégrateurs doivent éga
        };
    ```
 
-### Non pris en charge actuellement
+## Non pris en charge actuellement
 
 * La variable [Recherche avancée](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module est désactivé lorsque [!DNL Live Search] est installé et le lien Recherche avancée dans le pied de page du storefront est supprimé.
 * Les prix des produits ne sont pas inclus [taxe sur la valeur ajoutée](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (TVA).
