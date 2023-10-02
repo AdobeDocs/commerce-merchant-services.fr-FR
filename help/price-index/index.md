@@ -4,18 +4,19 @@ description: Utilisation de l’indexation des prix SaaS pour améliorer les per
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
+source-git-commit: af57acec1208204128feec6c523e3745a9948d51
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
 
 # Indexation des prix SaaS
 
-L’indexation des prix SaaS accélère le temps nécessaire pour que les changements de prix soient répercutés sur le site web d’un client SaaS après leur envoi. Ce module optionnel permet aux commerçants disposant de catalogues volumineux et complexes, ou de plusieurs sites web ou groupes de clients, de traiter les changements de prix plus rapidement et en continu.
+L’indexation des prix SaaS accélère le temps nécessaire pour que les changements de prix soient répercutés. [Services de commerce](../landing/saas.md) après avoir été soumis. Cela permet aux commerçants disposant de catalogues volumineux et complexes, ou de plusieurs sites web ou groupes de clients, de traiter en permanence les changements de prix.
+Si vous disposez d’une vitrine sans interface utilisateur graphique ou utilisez la variable [catalog-adapter](./catalog-adapter.md) , les clients peuvent désactiver l’indexeur de prix de base d’Adobe Commerce.
 
-Le goulot d’étranglement le plus important du pipeline : des processus lourds de calcul tels que l’indexation et le calcul des prix ont été déplacés du noyau PHP vers l’infrastructure cloud de l’Adobe. Cela permet aux commerçants d’augmenter rapidement les ressources pour augmenter les délais d’indexation des prix et de refléter ces modifications sur les sites web à une vitesse beaucoup plus rapide.
+Les processus lourds informatiques, tels que l’indexation et le calcul des prix, ont été déplacés du coeur de Commerce vers l’infrastructure cloud d’Adobe. Cela permet aux commerçants d’augmenter rapidement les ressources pour augmenter les délais d’indexation des prix et refléter ces changements plus rapidement.
 
 Le flux de données d’indexation principal vers les services SaaS ressemble à ce qui suit :
 
@@ -25,94 +26,70 @@ Avec l’indexation des prix SaaS, le flux est :
 
 ![Flux de données d’indexation de prix SaaS](assets/new_way.png)
 
-Tous les commerçants qui répondent aux exigences peuvent bénéficier de ces améliorations, mais ceux qui en bénéficieront le plus sont les clients avec :
+Tous les commerçants peuvent bénéficier de ces améliorations, mais ceux qui en bénéficieront le plus sont les clients avec :
 
 * Changements constants des prix : les marchands qui nécessitent des modifications répétées de leurs prix pour atteindre des objectifs stratégiques tels que des promotions fréquentes, des remises saisonnières ou des marqueurs d’inventaire.
 * Plusieurs sites web et/ou groupes de clients : marchands avec des catalogues de produits partagés sur plusieurs sites web (domaines/marques) et/ou groupes de clients.
 * Grand nombre de prix uniques sur plusieurs sites web ou groupes de clients : marchands avec des catalogues de produits partagés étendus qui contiennent des prix uniques sur plusieurs sites web ou groupes de clients, tels que des marchands B2B avec des prix négociés au préalable, des marques avec des stratégies de tarification différentes.
 
-Si des applications tierces dépendent de l’indexeur de prix de base PHP, lisez la documentation et consultez le fournisseur d’extension avant d’apporter des modifications.
-
-L’indexation des prix SaaS est disponible gratuitement pour les clients utilisant les services Adobe Commerce.
+L’indexation des prix SaaS est disponible gratuitement pour les clients utilisant les services Adobe Commerce et prend en charge le calcul des prix pour tous les types de produits Adobe Commerce intégrés.
 
 Ce mini-guide décrit le fonctionnement de l’indexation de prix SaaS et comment l’activer.
 
-## Configuration requise
-
-Pour utiliser l’indexation des prix SaaS, vous devez :
+## Conditions
 
 * Adobe Commerce 2.4.4+
-* Au moins un des services SaaS suivants est installé :
+* Au moins l’un des services Commerce suivants avec la dernière version de l’extension Adobe Commerce :
 
    * [Service de catalogue](../catalog-service/overview.md)
    * [Recherche en direct](../live-search/guide-overview.md)
    * [Recommendations de produit](../product-recommendations/guide-overview.md)
 
-## Modules
+Les utilisateurs de Luma et Adobe Commerce Core GraphQL peuvent installer la variable [`catalog-adapter`](catalog-adapter.md) qui fournit la compatibilité Luma et Core GraphQl et désactive l’indexeur de prix des produits Adobe Commerce.
 
-L’indexation des prix SaaS utilise un ensemble de modules pour fournir des fonctionnalités. La liste des modules requis peut être légèrement différente, selon la configuration du magasin.
+## Utilisation
 
-Ces modules ajoutent les nouveaux flux à l’administrateur. Ces flux transfèrent les données requises pour le calcul des prix à l’indexeur SaaS et ignorent l’indexeur de prix de base PHP.
+Après la mise à niveau de votre instance Adobe Commerce avec la prise en charge de l’indexation de prix SaaS, synchronisez les nouveaux flux :
 
-```
-magento/module-saas-price
-magento/module-saas-scopes
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
-```
-
-Les clients qui utilisent Luma et Adobe Commerce Core GraphQL peuvent installer un module qui offre une compatibilité Luma et Core GraphQL et désactive l’indexeur de prix de base PHP :
-
-```
-adobe-commerce/catalog-adapter
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
 ```
 
-La variable `catalog-adapter` est uniquement compatible avec la version 2.4.5. La prise en charge des versions 2.4.4 et 2.4.6 sera publiée prochainement.
-L’indexeur de prix de base PHP peut être réactivé si nécessaire par une extension tierce ou pour toute autre raison.
+## Prix des types de produits personnalisés
 
-## Avertissements
+Les calculs de prix sont pris en charge pour les types de produits personnalisés tels que le prix de base, le prix spécial, le prix de groupe, le prix de règle de catalogue, etc.
 
-Selon des facteurs tels que les types de produits, la complexité des prix et la taille du catalogue, l’indexation des prix SaaS peut être la bonne solution pour votre boutique. Lisez les restrictions suivantes et déterminez s’il s’agit d’une bonne solution pour votre site.
+Si vous disposez d’un type de produit personnalisé qui utilise une formule spécifique pour calculer le prix final, vous pouvez étendre le comportement du flux de prix du produit.
 
-Actuellement, l’indexation des prix SaaS prend en charge les éléments simples, groupés, virtuels, configurables et [Bundle Dynamic](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) types de produits.
-La prise en charge des types de produits téléchargeables, Gift Cards et Bundle Fixed est bientôt disponible.
+1. Créez un module externe sur le `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` classe .
 
-Les nouveaux flux doivent être synchronisés manuellement avec la variable `resync` [Commande CLI](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Dans le cas contraire, les données sont actualisées dans le processus de synchronisation standard. Obtenez plus d’informations sur la variable [Synchronisation du catalogue](../landing/catalog-sync.md) processus.
+   ```xml
+   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+       <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+           <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
+       </type>
+   </config>
+   ```
 
-## Scénarios d’utilisation
+1. Créez une méthode avec la formule personnalisée :
 
-### Luma sans dépendances d’extension
-
-* Un commerçant Luma ou Adobe Commerce Core GraphQL qui a installé le service requis (Live Search, Recommendations produit, Catalog Service)
-* Aucune extension tierce reposant sur l’indexeur de prix de base PHP
-* Vendre des produits dynamiques simples, configurables, groupés, virtuels et regroupés
-
-1. Activez les nouveaux flux.
-1. Installez l’adaptateur de catalogue.
-
-### Luma et Adobe Commerce Core GraphQl avec dépendances de l’indexeur de prix principal PHP
-
-* Un commerçant Luma ou Adobe Commerce Core GraphQL qui a installé un service pris en charge (Live Search, Recommendations produit, Catalog Service)
-* Avec une extension tierce reposant sur l’indexeur de prix de base PHP
-* Vendre des produits dynamiques simples, configurables, groupés, virtuels et regroupés
-
-1. Activation des nouveaux flux
-1. Installez l’adaptateur de catalogue.
-1. Réactivez l’indexeur de prix de base PHP.
-1. Utilisez les nouveaux flux et le code de compatibilité Luma dans la variable `catalog-adapter` module .
-
-### Marchand sans tête
-
-* Un commerçant sans tête qui dispose d’un service pris en charge installé (recherche en direct, Recommendations de produit, service de catalogue)
-* Pas de dépendance à l’indexeur de prix de base PHP
-* Vendre des produits dynamiques simples, configurables, groupés, virtuels et regroupés
-
-1. Activation de nouveaux flux
-1. Installez l’adaptateur de catalogue, qui désactive l’indexeur de prix de base PHP.
-
-### Luma/Core GraphQL/Headless avec les types de produits non pris en charge
-
-* Marchand Luma/Headless
-* Vendre des cartes-cadeaux, des produits téléchargeables ou des produits fixes groupés
-
-Avec les types de produit actuellement non pris en charge, attendez la prise en charge complète du type de produit.
+   ```php
+   class UpdatePriceFromFeed
+   {
+       /**
+       * @param ProductPrice $subject
+       * @param array $result
+       * @param array $values
+       *
+       * @return array
+       */
+       public function afterGet(ProductPrice $subject, array $result, array $values) : array
+       {
+           // Override the output $result with your data for the corresponding products (see original method for details) 
+           return $result;
+       }
+   }
+   ```
