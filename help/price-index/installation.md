@@ -5,9 +5,9 @@ seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
+source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,15 @@ Si vous ne disposez pas de la dernière version et souhaitez activer l’indexat
 ## Installation des modules requis
 
 Selon votre configuration, le processus d’installation peut être légèrement différent.
-Il existe des extensions qui ajoutent les nouveaux flux et le code de prise en charge, ainsi qu’une extension qui supprime le flux de prix par défaut.
+Il existe des extensions qui ajoutent les nouveaux flux et le code qui les prend en charge.
 
 1. Ajoutez les modules suivants à votre `composer.json` fichier :
 
    ```json
-   "magento/module-saas-price": "^102.2.0",
-   "magento/module-saas-scopes": ^"102.2.0",
-   "magento/module-product-override-price-remover": "^102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
+   "magento/module-saas-price": "^103.0",
+   "magento/module-saas-scopes": "^103.0",
+   "magento/module-bundle-product-override-data-exporter": "^103.0",
+   "magento/module-gift-card-product-data-exporter": "^103.0",
    ```
 
 1. Exécutez la commande de mise à niveau :
@@ -70,7 +70,7 @@ Après la mise à niveau, trois nouveaux flux sont disponibles :
 Exécutez les indexeurs ci-dessus manuellement, si nécessaire. Dans le cas contraire, les données sont actualisées dans le processus de synchronisation standard. En savoir plus sur les [Synchronisation du catalogue](../landing/catalog-sync.md) service.
 
 
-Les utilisateurs de Luma et Adobe Commerce Core GraphQL peuvent installer la variable [`Catalog Adapter`](catalog-adapter.md) qui fournit la compatibilité Luma et Core GraphQl et désactive l’indexeur de prix des produits Adobe Commerce.
+Pour configurer la recherche en direct et l’adaptateur de catalogue, suivez la [Connecteur Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instructions.
 
 ## Avertissements
 
