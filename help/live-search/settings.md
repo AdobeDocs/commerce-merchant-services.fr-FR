@@ -2,20 +2,18 @@
 title: "[!DNL Live Search] Paramètres"
 description: "Configurez les paramètres de la variable [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 # Paramètres
 
-Utilisez la variable *Paramètres* pour configurer les plages de facettes de prix et les intervalles, ainsi que la langue par défaut de l’index.
+Utilisez la variable *Paramètres* pour configurer les plages et les intervalles de facettes de prix.
 
 La facette des prix indique le nombre de groupes de prix et la manière dont les valeurs de prix sont réparties entre eux.
-
-Les paramètres de langue indiquent la variable [!DNL Live Search] service de la langue à attendre lors de l’écriture de l’index.
 
 ![Paramètres](assets/settings.png)
 
