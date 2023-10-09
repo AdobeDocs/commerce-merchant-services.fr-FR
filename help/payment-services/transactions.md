@@ -3,9 +3,10 @@ title: Rapport de transactions
 description: Utilisez le rapport Transactions pour connaître les taux d'autorisation des transactions et les tendances des transactions.
 role: User
 level: Intermediate
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
+source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ Vous pouvez configurer cette vue, selon les sections de cette rubrique, pour pr�
 
 Consultez les ID de transaction de commande et de fournisseur liés, les montants de transaction, le mode de paiement par transaction, etc., dans ce rapport.
 
-Tous les modes de paiement ne fournissent pas la même granularité d’informations. Par exemple, les transactions par carte de crédit fournissent des codes de réponse, AVS et CCV dans le rapport des transactions ; ce n’est pas le cas des boutons PayPal Smart.
+Tous les modes de paiement ne fournissent pas la même granularité d’informations. Par exemple, les transactions par carte de crédit fournissent des codes de réponse, AVS et CCV, ainsi que les quatre derniers chiffres de la carte dans le rapport des transactions. Ce n’est pas le cas des boutons PayPal Smart.
 
 Vous pouvez [transactions de téléchargement](#download-transactions) dans un format de fichier .csv à utiliser dans les logiciels de gestion des commandes ou de comptabilité existants.
 
@@ -84,6 +85,7 @@ Depuis la vue Rapport des transactions, vous pouvez filtrer les résultats des �
 1. Activez/désactivez la variable _[!UICONTROL Payment Method]_pour afficher les résultats des rapports uniquement pour les méthodes de paiement sélectionnées.
 1. Saisissez un _Montant de la commande min_ ou _Montant max. de la commande_ pour afficher les résultats du rapport sur cette période.
 1. Saisissez un _[!UICONTROL Order ID]_pour rechercher une transaction spécifique.
+1. Saisissez le _[!UICONTROL Card Last Four Digits]_pour rechercher une carte de crédit ou de débit spécifique.
 1. Cliquez sur **[!UICONTROL Hide filters]** pour masquer le filtre.
 
 ### Afficher et masquer les colonnes
@@ -126,7 +128,8 @@ Les rapports sur les transactions comprennent les informations suivantes.
 | [!UICONTROL Order ID] | ID de commande de commerce (contient uniquement des valeurs pour les transactions réussies et est vide pour les transactions rejetées)<br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, cliquez sur l’identifiant. |
 | [!UICONTROL Provider Transaction ID] | ID de transaction fourni par le fournisseur de paiement ; contient uniquement les valeurs pour les transactions réussies et contient un tiret pour les transactions rejetées. |
 | [!UICONTROL Transaction Date] | Date et heure des transactions |
-| [!UICONTROL Payment Method] | Mode de paiement de la transaction ; disponible pour les services de paiement versions 1.6.0 et plus récentes |
+| [!UICONTROL Payment Method] | Mode de paiement de la transaction avec des informations détaillées sur la marque et le type de carte. Voir [types de carte](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) pour plus d’informations ; disponible pour les versions 1.6.0 et ultérieures de Paiement Services |
+| [!UICONTROL Card Last Four Digits] | Quatre derniers chiffres des cartes de crédit ou de débit utilisées pour la transaction |
 | [!UICONTROL Result] | Résultat de la transaction...*[!UICONTROL OK]* (transaction réussie), *[!UICONTROL Rejected by Payment Provider]* (rejeté par PayPal), *[!UICONTROL Rejected by Bank]* (rejeté par la banque qui a émis la carte) |
 | [!UICONTROL Response Code] | Code d’erreur qui indique le motif de rejet de la part du fournisseur de paiement ou de la banque ; voir la liste des codes de réponse possibles et les descriptions pour [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) et [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | Code du service de vérification de l’adresse ; les informations de réponse du processeur pour les demandes de paiement. Voir [liste des codes et descriptions possibles](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) pour plus d’informations. |
@@ -147,4 +150,3 @@ La variable _Code de réponse_ affiche une erreur ou un code de réussite spéci
 * `5650`—La transaction a été refusée par la banque associée parce que la banque nécessite une authentification forte du client ([3DS](security.md#3ds)).
 
 Des codes détaillés de réponse aux erreurs pour les transactions en échec sont disponibles pour les transactions ultérieures au 1er juin 2023. Des données de rapport partielles s’afficheront pour les transactions antérieures au 1er juin 2023.
-
