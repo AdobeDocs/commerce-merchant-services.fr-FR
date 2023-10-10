@@ -4,9 +4,9 @@ description: Découvrez comment installer, configurer, mettre à jour et désins
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ L’extension Experience Platform Connector est disponible à partir de la [Adob
 >
 >![B2B pour Adobe Commerce](../assets/b2b.svg) Pour les commerçants B2B, vous devez installer une extension distincte. Cette extension ajoute la prise en charge des événements spécifiques B2B. [En savoir plus](#install-the-b2b-extension).
 
-
 1. Pour télécharger le `experience-platform-connector` , exécutez les éléments suivants à partir de la ligne de commande :
 
    ```bash
@@ -33,11 +32,44 @@ L’extension Experience Platform Connector est disponible à partir de la [Adob
    Ce métapaquage contient les modules et extensions suivants :
 
    * `module-experience-connector-admin` - Met à jour l’interface utilisateur d’administration afin que vous puissiez sélectionner l’identifiant de flux de données pour une instance Adobe Commerce spécifique.
-   * `module-experience-connector` - Définit la variable `Organization ID` et `datastreamId` dans le SDK des événements Storefront
+   * `module-experience-connector` - Définit la variable `Organization ID` et `datastreamId` dans le SDK des événements Storefront.
    * `data-services` - Fournit un contexte d’attribut pour les événements storefront. Par exemple, lorsqu’un événement de passage en caisse se produit, des informations sur le nombre d’articles figurant dans le panier et les données d’attribut de produit pour ces articles sont incluses.
-   * `services-id` - Connecte votre instance Adobe Commerce à [Adobe Commerce SaaS](../landing/saas.md) à l’aide des clés d’API de test et de production et de Adobe Experience Platform pour récupérer l’ID d’organisation IMS ;
+   * `services-id` - Connecte votre instance Adobe Commerce à [Adobe Commerce SaaS](../landing/saas.md) à l’aide de l’environnement de test et des clés d’API de production, ainsi qu’à Adobe Experience Platform, pour récupérer l’identifiant de l’organisation IMS.
+   * `orders-connector` - Connecte le service d’état de la commande à votre instance Adobe Commerce.
 
-1. (Facultatif) Pour inclure [!DNL Live Search] , qui comprend les événements de recherche, installez la variable [[!DNL Live Search]](../live-search/install.md) extension .
+1. (Facultatif) Pour inclure [!DNL Live Search] , qui comprend [événements de recherche](events.md#search-events), installez le [[!DNL Live Search]](../live-search/install.md) extension .
+
+### Configuration du connecteur des commandes
+
+Après avoir installé la variable `experience-platform-connector`, vous devez finaliser l’installation du `orders-connector` module basé sur le type de déploiement : infrastructure sur site ou Adobe Commerce on Cloud.
+
+#### Sur site
+
+Dans les environnements locaux, vous devez activer manuellement la génération de code et les événements Adobe Commerce :
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### Sur l’infrastructure cloud
+
+Dans l’infrastructure Adobe Commerce on Cloud, activez la variable `ENABLE_EVENTING` variable globale dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+
+```bash
+stage:
+   global:
+      ENABLE_EVENTING: true
+```
+
+Validez et envoyez les fichiers mis à jour dans l’environnement cloud. Lorsque le déploiement est terminé, activez l’envoi d’événements avec la commande suivante :
+
+```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
 
 ### Installation de l’extension B2B
 

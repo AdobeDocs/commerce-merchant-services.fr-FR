@@ -3,9 +3,9 @@ title: Connexion des données commerciales à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
+source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '2232'
 ht-degree: 0%
 
 ---
@@ -65,15 +65,21 @@ Consultez la rubrique Événements pour en savoir plus sur [storefront](events.m
 
 1. Sélectionner **Événements Storefront** si vous souhaitez envoyer des données comportementales storefront.
 
-   >[!NOTE]
-   >
-   >La variable **Événements Storefront** est automatiquement activée si le SDK Web AEP et l’ID d’organisation sont valides.
-
 1. Sélectionner **Événements de back-office** si vous souhaitez envoyer des informations sur l’état de la commande, par exemple si une commande a été passée, annulée, remboursée ou expédiée.
 
    >[!NOTE]
    >
    >Si vous sélectionnez **Événements de back-office**, toutes les données du back-office sont envoyées au serveur Edge de l’Experience Platform. Si un acheteur choisit de se désabonner de la collecte de données, vous devez définir explicitement la préférence de confidentialité de l’acheteur dans l’Experience Platform. Cela diffère des événements storefront où le collecteur gère déjà le consentement en fonction des préférences de l’acheteur. [En savoir plus](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) à propos de la définition de la préférence de confidentialité d’un acheteur dans l’Experience Platform.
+
+1. (Ignorez cette étape si vous utilisez votre propre SDK Web AEP.) [Créer](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) un flux de données dans Adobe Experience Platform ou sélectionnez un flux de données existant à utiliser pour la collecte. Saisissez cet identifiant de flux de données dans la variable **Identifiant du flux de données** champ .
+
+1. Saisissez le **Identifiant du jeu de données** que vous souhaitez contenir vos données Commerce. Pour trouver l’identifiant du jeu de données :
+
+   1. Ouvrez l’interface utilisateur de l’Experience Platform et sélectionnez **Jeux de données** dans le volet de navigation de gauche pour ouvrir la **Jeux de données** tableau de bord. Le tableau de bord répertorie tous les jeux de données disponibles pour votre organisation. Des détails s’affichent pour chaque jeu de données répertorié, notamment son nom, le schéma auquel le jeu de données adhère et l’état de l’exécution d’ingestion la plus récente.
+   1. Ouvrez le jeu de données associé à votre flux de données.
+   1. Dans le volet de droite, affichez les détails du jeu de données. Copiez l’identifiant du jeu de données.
+
+   ![Copier l’identifiant du jeu de données](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
 
 1. Pour garantir les mises à jour des données d’événement du back-office selon un planning [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) , vous devez modifier la fonction `Sales Orders Feed` index à `Update by Schedule`.
 
@@ -93,10 +99,6 @@ Consultez la rubrique Événements pour en savoir plus sur [storefront](events.m
       bin/magento saas:resync --feed orders
       ```
 
-1. (Ignorez cette étape si vous utilisez votre propre SDK Web AEP.) [Créer](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) un flux de données dans Adobe Experience Platform ou sélectionnez un flux de données existant à utiliser pour la collecte.
-
-1. (Ignorez cette étape si vous utilisez votre propre SDK Web AEP.) Dans le **Identifiant du flux de données** collez l’identifiant de ce flux de données nouveau ou existant.
-
 ## Descriptions des champs
 
 | Champ | Description |
@@ -107,25 +109,22 @@ Consultez la rubrique Événements pour en savoir plus sur [storefront](events.m
 | Nom du SDK Web AEP (global) | Si un SDK Web Experience Platform est déjà déployé sur votre site, indiquez le nom de ce SDK dans ce champ. Cela permet au collecteur d’événements Storefront et au SDK d’événements Storefront d’utiliser votre SDK web Experience Platform plutôt que la version déployée par le connecteur Experience Platform. Si aucun SDK Web Experience Platform n’est déployé sur votre site, laissez ce champ vide et le connecteur Experience Platform en déploie un pour vous. |
 | Événements Storefront | Est coché par défaut tant que l’ID d’organisation et l’ID de flux de données sont valides. Les événements Storefront collectent des données comportementales anonymes de vos clients lorsqu’ils naviguent sur votre site. |
 | Événements de back-office | Si cette case est cochée, la payload d’événement contient des informations d’état de commande anonymes, telles qu’une commande passée, annulée, remboursée ou expédiée. |
-| Identifiant de flux de données (site web) | Identifiant qui permet aux données de passer de Adobe Experience Platform à d’autres produits DX d’Adobe. Cet identifiant doit être associé à un site web spécifique dans votre instance Adobe Commerce spécifique. Si vous spécifiez votre propre SDK Web Experience Platform, ne spécifiez pas d’identifiant de flux de données dans ce champ. Le connecteur Experience Platform utilise l’identifiant de flux de données associé à ce SDK et ignore tout identifiant de flux de données spécifié dans ce champ (le cas échéant). |
+| Identifiant de la banque de données (site web) | Identifiant qui permet aux données de passer de Adobe Experience Platform à d’autres produits DX d’Adobe. Cet identifiant doit être associé à un site web spécifique dans votre instance Adobe Commerce spécifique. Si vous spécifiez votre propre SDK Web Experience Platform, ne spécifiez pas d’identifiant de flux de données dans ce champ. Le connecteur Experience Platform utilise l’identifiant de flux de données associé à ce SDK et ignore tout identifiant de flux de données spécifié dans ce champ (le cas échéant). |
+| Identifiant du jeu de données (site web) | Identifiant du jeu de données qui contient vos données Commerce. Ce champ est obligatoire, sauf si vous avez désélectionné l’option **Événements Storefront** ou **Événements de back-office** des cases à cocher. En outre, si vous utilisez votre propre SDK Web Experience Platform et n’avez donc pas spécifié d’identifiant de flux de données, vous devez toujours ajouter l’identifiant de jeu de données associé à votre flux de données. Sinon, vous ne pouvez pas enregistrer ce formulaire. |
 
 >[!NOTE]
 >
 >Une fois l’intégration effectuée, les données du storefront commencent à s’écouler vers le bord Experience Platform. Les données du back-office prennent environ cinq minutes pour s’afficher à la périphérie. Les mises à jour suivantes sont visibles à la périphérie en fonction de la planification cron.
 
-## (Version bêta) Envoi de données de commande historiques
+## Envoi de données de commande historiques
 
->[!NOTE]
->
->Cette fonctionnalité est disponible uniquement pour les utilisateurs bêta. Vous pouvez rejoindre la version bêta en envoyant un courrier électronique à l’adresse suivante : `dataconnection@adobe.com`.
+Adobe Commerce collecte jusqu’à cinq ans de [données et état de l’ordre historique](events.md#back-office-events). Vous pouvez utiliser le connecteur Experience Platform pour envoyer ces données historiques à l’Experience Platform afin d’enrichir vos profils clients en fonction de ces commandes passées. Les données sont stockées dans un jeu de données dans Experience Platform.
 
-Adobe Commerce collecte jusqu’à cinq années de données et d’état historiques des commandes. Vous pouvez utiliser le connecteur Experience Platform pour envoyer ces données historiques à l’Experience Platform afin d’enrichir vos profils clients en fonction de ces commandes passées. Les données sont stockées dans un jeu de données dans Experience Platform.
+Bien que Commerce collecte déjà les données de commande historiques, vous devez effectuer plusieurs étapes pour envoyer ces données à Experience Platform.
 
-Bien que Commerce collecte déjà les données de commande historiques, vous devez effectuer plusieurs tâches pour envoyer ces données à Experience Platform. Les sections suivantes vous guident tout au long du processus.
+### Étape 1 : installation de la collecte de données de l’ordre historique
 
-### Installer la version bêta de l’ordre historique
-
-Pour activer la collecte de données d’ordre historique pour la version bêta, vous devez mettre à jour la racine du projet. [!DNL Composer] `.json` comme suit :
+Pour activer la collecte de données d’ordre historique, vous devez mettre à jour la racine du projet. [!DNL Composer] `.json` comme suit :
 
 1. Ouvrez la racine `composer.json` fichier et recherchez `magento/experience-platform-connector`.
 
@@ -134,7 +133,7 @@ Pour activer la collecte de données d’ordre historique pour la version bêta,
    ```json
    "require": {
       ...
-      "magento/experience-platform-connector": "^3.0.0-beta1",
+      "magento/experience-platform-connector": "^3.0.0",
       ...
     }
    ```
@@ -144,7 +143,7 @@ Pour activer la collecte de données d’ordre historique pour la version bêta,
    ```json
    "require": {
      ...
-     "magento/experience-platform-connector-b2b": "^2.0.0-beta1"
+     "magento/experience-platform-connector-b2b": "^2.0.0"
      ...
    }
    ```
@@ -161,31 +160,49 @@ Pour activer la collecte de données d’ordre historique pour la version bêta,
    composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
-### Configuration de la version bêta de l’ordre historique
-
-Pour vous assurer que l’historique des commandes de vos clients peut être envoyé à Experience Platform, vous devez spécifier les informations d’identification qui relient votre instance Commerce à Experience Platform. Si vous avez déjà installé et activé la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , vous avez déjà spécifié les informations d’identification nécessaires et vous pouvez ignorer cette étape. Si vous n’avez pas encore installé et activé l’extension d’Audience Activation, procédez comme suit :
+### Étape 2 : création d’un projet dans la console Adobe Developer
 
 >[!NOTE]
 >
->Dans cette section, vous saisissez des informations d’identification à partir de la console de développement. Assurez-vous que votre projet de console de développement dispose des [rôles et autorisations configurés](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+>Si vous avez déjà installé et activé la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , vous avez déjà effectué les étapes 2 et 3.
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+Créez un projet dans la console Adobe Developer qui authentifie Commerce afin qu’il puisse effectuer des appels API Experience Platform.
 
-1. Développer **[!UICONTROL Services]** et sélectionnez **[!UICONTROL Experience Platform Connector]**.
+Pour créer le projet, suivez les étapes décrites dans la section [Authentification et accès aux API Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) tutoriel .
 
-1. Saisissez les informations d’identification de configuration figurant dans le [console de développement](https://developer.adobe.com/console/home).
+Lorsque vous passez en revue le tutoriel, assurez-vous que votre projet comporte les éléments suivants :
+
+- L’accès aux [profils de produit](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Accès complet par défaut à la production** et **AEP Accès par défaut**.
+- Le bon [les rôles et autorisations sont configurés.](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- Si vous avez décidé d’utiliser des jetons Web JSON (JWT) comme méthode d’authentification serveur à serveur, vous devez également télécharger une clé privée.
+
+Le résultat de cette étape crée un fichier de configuration que vous utilisez à l’étape suivante.
+
+### Étape 3 : téléchargement du fichier de configuration
+
+Téléchargez la [fichier de configuration de l&#39;espace de travail](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copiez et collez le contenu de ce fichier dans le **Informations d’identification/compte de service** de l’administrateur Commerce.
+
+1. Dans l’administrateur Commerce, accédez à **Magasins** > Paramètres > **Configuration** > **Services** > **Connecteur Experience Platform**.
+
+1. Sélectionnez la méthode d’autorisation serveur à serveur que vous avez mise en oeuvre à partir du **Type d’autorisation d’Adobe I/O** . Adobe recommande d’utiliser OAuth. JWT a été abandonné. [En savoir plus](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+
+1. (JWT uniquement) Copiez et collez le contenu de votre `private.key` dans le fichier **Secret du client** champ . Utilisez la commande suivante pour copier le contenu.
+
+   ```bash
+   cat config/private.key | pbcopy
+   ```
+
+   Voir [Authentification du compte de service (JWT)](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) pour plus d’informations sur la variable `private.key` fichier .
+
+1. Copiez le contenu de la `<workspace-name>.json` dans le fichier **Informations d’identification/compte de service** champ .
 
    ![Configuration de l’administrateur du connecteur Experience Platform](./assets/epc-admin-config.png){width="700" zoomable="yes"}
 
-   >[!NOTE]
-   >
-   >Pour la version bêta, Commerce utilise les informations d’identification JSON Web Tokens (JWT) dans la console de développement. Après la version bêta, Commerce utilisera OAuth 2.0 dans la console de développement.
-
 1. Cliquez sur **Enregistrer la configuration**.
 
-### Configuration du service de synchronisation des commandes
+### Étape 4 : configuration du service de synchronisation des commandes
 
-Après avoir saisi les informations d’identification du développeur, vous pouvez configurer le service de synchronisation des commandes. Le service de synchronisation des commandes utilise la variable [Structure de la file d’attente des messages](https://developer.adobe.com/commerce/php/development/components/message-queues/) et RabbitMQ. Une fois ces étapes terminées, les données d’état de la commande peuvent être synchronisées avec SaaS, ce qui est nécessaire avant d’être envoyées à l’Experience Platform.
+Une fois que vous avez saisi les informations d’identification du développeur, configurez le service de synchronisation des commandes. Le service de synchronisation des commandes utilise la variable [Structure de la file d’attente des messages](https://developer.adobe.com/commerce/php/development/components/message-queues/) et RabbitMQ. Une fois ces étapes terminées, les données d’état de la commande peuvent être synchronisées avec SaaS, ce qui est nécessaire avant d’être envoyées à l’Experience Platform.
 
 1. [Activer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
 
@@ -208,9 +225,9 @@ Après avoir saisi les informations d’identification du développeur, vous pou
 
 Une fois le service de synchronisation des commandes activé, vous pouvez spécifier la période de commande historique dans la page du connecteur Experience Platform.
 
-### Définition de la période d’historique des commandes
+### Étape 5 : spécification de la plage de dates de l’historique des commandes
 
-Dans cette section, vous indiquez la période des commandes historiques que vous souhaitez envoyer à Experience Platform.
+Indiquez la période des commandes historiques à envoyer à l’Experience Platform.
 
 ![Historique des commandes de synchronisation](./assets/order-history.png){width="700" zoomable="yes"}
 
@@ -218,21 +235,25 @@ Dans cette section, vous indiquez la période des commandes historiques que vous
 
 1. Sélectionnez la variable **Historique des commandes** .
 
-1. Sous **Synchronisation de l’historique des commandes**, saisissez la variable **Identifiant du jeu de données**. Il doit s’agir du même jeu de données associé au flux de données que celui spécifié dans la variable [collecte de données](#data-collection) ci-dessus.
+1. Sous **Synchronisation de l’historique des commandes**, la variable **Copier l’identifiant du jeu de données depuis les paramètres** est déjà activée. Cela vous garantit d’utiliser le même jeu de données que celui spécifié dans la variable **Paramètres** .
 
-   1. Pour accéder à l’identifiant du jeu de données, ouvrez l’interface utilisateur de l’Experience Platform et sélectionnez **Jeux de données** dans le volet de navigation de gauche pour ouvrir la **Jeux de données** tableau de bord. Le tableau de bord répertorie tous les jeux de données disponibles pour votre organisation. Des détails s’affichent pour chaque jeu de données répertorié, notamment son nom, le schéma auquel le jeu de données adhère et l’état de l’exécution d’ingestion la plus récente.
-   1. Ouvrez le jeu de données associé à votre flux de données.
-   1. Dans le volet de droite, vous trouverez des détails sur le jeu de données. Copiez l’identifiant du jeu de données.
+1. Dans le **De** et **À** , spécifiez la période des données de l’ordre historique à envoyer. Vous ne pouvez pas sélectionner de période supérieure à cinq ans.
 
-   ![Copier l’identifiant du jeu de données](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
+1. Sélectionner **[!UICONTROL Start Sync]** pour déclencher la synchronisation. Les données d’ordre historique sont des données par lots, contrairement aux données de vitrine et de back-office qui diffusent des données en continu. Les données mises en cache prennent environ 45 minutes pour arriver en Experience Platform.
 
-1. Dans le **De** et **À** les champs spécifient la plage de données des données de commande historiques que vous souhaitez envoyer. Vous ne pouvez pas sélectionner de période supérieure à cinq ans.
+| Champ | Description |
+|--- |--- |
+| Copier l’identifiant du jeu de données depuis les paramètres | Copie l’identifiant du jeu de données que vous avez saisi dans la variable **Paramètres** . |
+| Identifiant du jeu de données (site web) | Identifiant du jeu de données qui contient vos données Commerce. Ce champ est obligatoire, sauf si vous avez désélectionné l’option **Événements Storefront** ou **Événements de back-office** des cases à cocher. En outre, si vous utilisez votre propre SDK Web Experience Platform et n’avez donc pas spécifié d’identifiant de flux de données, vous devez toujours ajouter l’identifiant de jeu de données associé à votre flux de données. Sinon, vous ne pouvez pas enregistrer ce formulaire. |
+| De | Date à partir de laquelle vous souhaitez commencer à collecter les données de l’historique des commandes. |
+| À | Date à partir de laquelle vous souhaitez terminer la collecte des données d’historique des commandes. |
+| Démarrer la synchronisation | Démarre le processus de synchronisation des données de l’historique des commandes avec le serveur Experience Platform Edge. Ce bouton est désactivé si la variable **[!UICONTROL Dataset ID]** est vide ou l’identifiant du jeu de données n’est pas valide. |
 
-1. Sélectionner [!UICONTROL Start Sync] pour déclencher la synchronisation. Les données d’ordre historique sont des données par lots, contrairement aux données de vitrine et de back-office qui diffusent des données en continu. Les données mises en cache prennent environ 45 minutes pour arriver en Experience Platform.
+### Démonstration de la commande historique
 
-   >[!NOTE]
-   >
-   >Pour la version bêta, si vous déclenchez une synchronisation plusieurs fois sur la même période ou sur une période qui chevauche, des événements en double s’affichent dans le jeu de données.
+Regardez cette vidéo pour en savoir plus sur les commandes historiques :
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## Confirmation que les données d’événement sont collectées
 

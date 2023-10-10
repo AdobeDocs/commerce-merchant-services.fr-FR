@@ -4,9 +4,9 @@ description: Découvrez les données que chaque événement capture.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 0be39c5d46289a12bc2cfa704e942dc594fbded2
+source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
 workflow-type: tm+mt
-source-wordcount: '6126'
+source-wordcount: '6906'
 ht-degree: 0%
 
 ---
@@ -37,24 +37,24 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `productListAdds` | Indique si un produit a été ajouté à un panier. Une valeur de `1` indique qu’un produit a été ajouté. |
-| `productListItems` | Tableau de produits ajoutés au panier |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Prix total de l’article de ligne de produit |
-| `quantity` | Nombre d’unités de produits ajoutées au panier |
-| `discountAmount` | Indique le montant de remise appliqué |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `productImageUrl` | URL de l’image principale du produit |
-| `selectedOptions` | Champ utilisé pour un produit configurable. |
-| `attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color` |
-| `value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
-| `cartID` | Identifiant unique qui identifie le panier du client |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.productListAdds` | Indique si un produit a été ajouté à un panier. Une valeur de `1` indique qu’un produit a été ajouté. |
+| `commerce.cart.cartID` | Identifiant unique qui identifie le panier du client. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `productListItems` | Tableau de produits qui ont été ajoutés au panier. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.productImageUrl` | URL de l’image principale du produit. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
 ### openCart
 
@@ -68,24 +68,24 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `productListOpens` | Indique si un panier a été créé. Une valeur de `1` indique qu’un panier a été créé. |
-| `productListItems` | Tableau de produits ajoutés au panier |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Prix total de l’article de ligne de produit |
-| `quantity` | Nombre d’unités de produits ajoutées au panier |
-| `discountAmount` | Indique le montant de remise appliqué |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `productImageUrl` | URL de l’image principale du produit |
-| `selectedOptions` | Champ utilisé pour un produit configurable. |
-| `attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color` |
-| `value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
-| `cartID` | Identifiant unique qui identifie le panier du client |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.productListOpens` | Indique si un panier a été créé. Une valeur de `1` indique qu’un panier a été créé. |
+| `commerce.cart.cartID` | Identifiant unique qui identifie le panier du client. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `productListItems` | Tableau de produits qui ont été ajoutés au panier. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.productImageUrl` | URL de l’image principale du produit. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
 ### removeFromCart
 
@@ -99,24 +99,24 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `productListRemovals` | Indique si un produit a été supprimé du panier. Une valeur de `1` indique qu’un produit a été supprimé du panier. |
-| `productListItems` | Tableau de produits supprimés du panier |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Prix total de l’article de ligne de produit |
-| `quantity` | Nombre d’unités de produits supprimées du panier |
-| `discountAmount` | Indique le montant de remise appliqué |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `productImageUrl` | URL de l’image principale du produit |
-| `selectedOptions` | Champ utilisé pour un produit configurable. |
-| `attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color` |
-| `value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
-| `cartID` | Identifiant unique qui identifie le panier du client |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.productListRemovals` | Indique si un produit a été supprimé du panier. Une valeur de `1` indique qu’un produit a été supprimé du panier. |
+| `commerce.cart.cartID` | Identifiant unique qui identifie le panier du client. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `productListItems` | Tableau de produits qui ont été ajoutés au panier. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.productImageUrl` | URL de l’image principale du produit. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
 ### shoppingCartView
 
@@ -130,24 +130,24 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `productListViews` | Indique si une liste de produits a été affichée |
-| `productListItems` | Tableau de produits dans le panier |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Prix total de l’article de ligne de produit |
-| `quantity` | Nombre d’unités de produits dans le panier |
-| `discountAmount` | Indique le montant de remise appliqué |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `productImageUrl` | URL de l’image principale du produit |
-| `selectedOptions` | Champ utilisé pour un produit configurable. |
-| `attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color` |
-| `value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
-| `cartID` | Identifiant unique qui identifie le panier du client |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.productListViews` | Indique si une liste de produits a été consultée. |
+| `commerce.cart.cartID` | Identifiant unique qui identifie le panier du client. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `productListItems` | Tableau de produits qui ont été ajoutés au panier. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.productImageUrl` | URL de l’image principale du produit. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
 ### pageView
 
@@ -161,12 +161,15 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `pageViews` | Indique si une page a été chargée. A `value` de `1` indique que la page a été chargée. |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `web.webPageDetails.pageViews` | Indique si une page a été chargée. A `value` de `1` indique que la page a été chargée. |
+| `web.webPageDetails.URL` | URL normative ou habituelle de la page web. Il peut s’agir de l’URL réelle utilisée pour atteindre la page, qui serait enregistrée à l’aide de `Web Link`. |
+| `web.webPageDetails.name` | Nom normatif de la page web. Ce nom n’est pas nécessairement le titre de la page ou directement associé au contenu de la page, mais il est utilisé pour organiser les pages d’un site à des fins de classification. |
+| `web.webReferrer.URL` | URL de la page web visitée par un acheteur avant de cliquer sur un lien vers votre site. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
 
 ### productPageView
 
@@ -180,22 +183,23 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `productViews` | Indique si le produit a été consulté |
-| `productListItems` | Tableau de produits dans le panier |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Prix total de l’article de ligne de produit |
-| `discountAmount` | Indique le montant de remise appliqué |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `productImageUrl` | URL de l’image principale du produit |
-| `selectedOptions` | Champ utilisé pour un produit configurable. |
-| `attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color` |
-| `value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.productViews` | Indique si le produit a été consulté. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `productListItems` | Tableau de produits qui ont été ajoutés au panier. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.productImageUrl` | URL de l’image principale du produit. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
 ### startCheckout
 
@@ -209,24 +213,24 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `checkouts` | Indique si une action s’est produite pendant le processus de passage en caisse |
-| `productListItems` | Tableau de produits dans le panier |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Prix total de l’article de ligne de produit |
-| `quantity` | Nombre d’unités de produits dans le panier |
-| `discountAmount` | Indique le montant de remise appliqué |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `productImageUrl` | URL de l’image principale du produit |
-| `selectedOptions` | Champ utilisé pour un produit configurable. |
-| `attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color` |
-| `value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
-| `cartID` | Identifiant unique qui identifie le panier du client |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.checkouts` | Indique si une action s’est produite au cours du processus de passage en caisse. |
+| `commerce.cart.cartID` | Identifiant unique qui identifie le panier du client. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `productListItems` | Tableau de produits qui ont été ajoutés au panier. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.productImageUrl` | URL de l’image principale du produit. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
 ### completeCheckout
 
@@ -240,38 +244,38 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `purchases` | Indique si une commande a été acceptée |
-| `order` | Contient des informations sur la commande passée pour un ou plusieurs produits. |
-| `purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’identifiant est unique. |
-| `orderType` | Indique le type de commande qui a été passé, tel que Passage en caisse ou Achat instantané |
-| `payments` | Liste des paiements pour cette commande |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `paymentAmount` | Valeur du paiement |
-| `paymentType` | Mode de paiement de cette commande. Les options sont les suivantes : `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
-| `transactionID` | L’identifiant de transaction unique de cet élément de paiement |
-| `shipping` | Informations d’expédition pour un ou plusieurs produits. |
-| `shippingMethod` | Le mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
-| `shippingAmount` | Le coût total de livraison des articles du panier. |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `promotionID` | Identifiant unique de la promotion, le cas échéant |
-| `personalEmail` | Indique l’adresse électronique personnelle |
-| `address` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
-| `productListItems` | Tableau de produits dans le panier |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `priceTotal` | Prix total de l’article de ligne de produit |
-| `quantity` | Nombre d’unités de produits dans le panier |
-| `discountAmount` | Indique le montant de remise appliqué |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `productImageUrl` | URL de l’image principale du produit |
-| `selectedOptions` | Champ utilisé pour un produit configurable. |
-| `attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color` |
-| `value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.purchases` | Indique si une commande a été acceptée. |
+| `commerce.order` | Contient des informations sur la commande passée pour un ou plusieurs produits. |
+| `commerce.order.purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’identifiant est unique. |
+| `commerce.order.payments` | Liste des paiements pour cette commande. |
+| `commerce.order.payments.paymentTransactionID` | Identifiant unique de cette transaction de paiement. |
+| `commerce.order.payments.paymentAmount` | Valeur du paiement. |
+| `commerce.order.payments.paymentType` | Mode de paiement de cette commande. Les options sont les suivantes : `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other`. |
+| `commerce.order.payments.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `commerce.order.taxAmount` | Montant de l&#39;impôt payé par l&#39;acheteur dans le cadre du paiement final. |
+| `commerce.order.discountAmount` | Indique le montant de remise appliqué à la commande entière. |
+| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple, `2022-10-15T20:20:39+00:00`. |
+| `commerce.shipping` | Informations d’expédition pour un ou plusieurs produits. |
+| `commerce.shipping.shippingMethod` | Mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
+| `commerce.shipping.shippingAmount` | Le montant que le client a dû payer pour l’expédition. |  | `shipping` | Informations d’expédition pour un ou plusieurs produits. |
+| `commerce.shipping.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `personalEmail` | Adresse électronique personnelle. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `productListItems` | Tableau de produits qui ont été ajoutés au panier. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.productImageUrl` | URL de l’image principale du produit. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
 ## Événements de profil
 
@@ -293,19 +297,19 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `person` | Acteur, contact ou propriétaire individuel |
-| `accountID` | Capture l’ID du compte utilisateur |
-| `accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant |
-| `personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
-| `personalEmail` | Capture les coordonnées - un email et les informations associées |
-| `address` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
-| `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et les autres préférences de compte. |
-| `login` | Indique si un visiteur a tenté de se connecter. |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `person` | Acteur, contact ou propriétaire individuel. |
+| `person.accountID` | Capture l’ID du compte d’utilisateur. |
+| `person.accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant. |
+| `person.personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `personalEmail` | Capture les coordonnées : un e-mail et les informations associées. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et d’autres préférences de compte. |
+| `userAccount.login` | Indique si un visiteur a tenté de se connecter. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
 
 ### signOut
 
@@ -323,13 +327,13 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et les autres préférences de compte. |
-| `logout` | Indique si un visiteur a tenté de se déconnecter. |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et d’autres préférences de compte. |
+| `userAccount.logout` | Indique si un visiteur a tenté de se déconnecter. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
 
 ### createAccount
 
@@ -347,19 +351,19 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `person` | Acteur, contact ou propriétaire individuel |
-| `accountID` | Capture l’ID du compte utilisateur |
-| `accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant |
-| `personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
-| `personalEmail` | Capture les coordonnées - un email et les informations associées |
-| `address` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
-| `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et les autres préférences de compte. |
-| `createProfile` | Indique si un utilisateur a créé un profil de compte |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `person` | Acteur, contact ou propriétaire individuel. |
+| `person.accountID` | Capture l’ID du compte d’utilisateur. |
+| `person.accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant. |
+| `person.personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `personalEmail` | Capture les coordonnées : un e-mail et les informations associées. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et d’autres préférences de compte. |
+| `userAccount.updateProfile` | Indique si un utilisateur a mis à jour son profil de compte. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
 
 ### editAccount
 
@@ -377,25 +381,25 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `person` | Acteur, contact ou propriétaire individuel |
-| `accountID` | Capture l’ID du compte utilisateur |
-| `accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant |
-| `personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
-| `personalEmail` | Capture les coordonnées - un email et les informations associées |
-| `address` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
-| `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et les autres préférences de compte. |
-| `updateProfile` | Indique si un utilisateur a mis à jour son profil de compte |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `person` | Acteur, contact ou propriétaire individuel. |
+| `person.accountID` | Capture l’ID du compte d’utilisateur. |
+| `person.accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant. |
+| `person.personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `personalEmail` | Capture les coordonnées : un e-mail et les informations associées. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et d’autres préférences de compte. |
+| `userAccount.updateProfile` | Indique si un utilisateur a mis à jour son profil de compte. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
 
 ## Recherche d’événements
 
 Les événements de recherche fournissent des données pertinentes pour l’intention de l’acheteur. L’aperçu de l’intention d’un acheteur permet aux marchands de voir comment les acheteurs recherchent des articles, ce sur quoi ils cliquent et, au bout du compte, achètent ou abandonnent. Vous pouvez, par exemple, utiliser ces données si vous souhaitez cibler les acheteurs existants qui recherchent votre meilleur produit, mais n’achètent jamais le produit.
 
-Utilisez la variable `uniqueIdentifier` champ situé dans les deux `searchRequestSent` et `searchResponseReceived` pour effectuer une référence croisée à une requête de recherche vers la réponse de recherche correspondante.
+Utilisez la variable `searchRequest.id` et `searchResponse.id` des champs figurant dans les deux `searchRequestSent` et `searchResponseReceived` pour effectuer une référence croisée à une requête de recherche vers la réponse de recherche correspondante.
 
 ### searchRequestSent
 
@@ -413,21 +417,23 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `searchRequest` | Indique si une requête de recherche a été envoyée |
-| `id` | L’identifiant unique de cette requête de recherche spécifique |
-| `filter` | Indique si des filtres ont été appliqués pour limiter les résultats de recherche. |
-| `attribute` (filter) | La facette d’un élément utilisée pour déterminer s’il doit être inclus dans les résultats de recherche |
-| `value` | Valeurs d’attribut utilisées pour déterminer les éléments inclus dans les résultats de recherche |
-| `isRange` | Si la valeur est true, les valeurs indiquent les points de fin d’une plage de valeurs acceptable. |
-| `sort` | Indique le mode de tri des résultats de recherche. |
-| `attribute` (sort) | Attribut utilisé pour trier les éléments dans les résultats de recherche |
-| `order` | Ordre dans lequel renvoyer les résultats de la recherche |
-| `query` | Termes recherchés |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `searchRequest` | Indique si une requête de recherche a été envoyée. |
+| `searchRequest.id` | L’identifiant unique de cette requête de recherche spécifique. |
+| `searchRequest.value` | Valeur quantifiable de la requête. |
+| `siteSearch` | Contient des informations sur la recherche. |
+| `siteSearch.filter` | Indique si des filtres ont été appliqués pour limiter les résultats de la recherche. |
+| `siteSearch.filter.attribute` (filter) | La facette d’un élément utilisée pour déterminer s’il doit être inclus dans les résultats de recherche. |
+| `siteSearch.filter.isRange` | Si la valeur est true, les valeurs indiquent les points de fin d’une plage de valeurs acceptable. |
+| `siteSearch.filter.value` | Valeur d’attribut utilisée pour déterminer les éléments qui sont inclus dans les résultats de recherche. |
+| `siteSearch.sort` | Indique le mode de tri des résultats de recherche. |
+| `siteSearch.sort.attribute` (sort) | Attribut utilisé pour trier les éléments dans les résultats de recherche. |
+| `siteSearch.sort.order` | Ordre dans lequel renvoyer les résultats de la recherche. |
+| `siteSearch.query` | Termes recherchés. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
 
 ### searchResponseReceived
 
@@ -445,19 +451,20 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `searchResponse` | Indique si une réponse de recherche a été reçue |
-| `id` | L’identifiant unique de cette réponse de recherche spécifique |
-| `suggestions` | Tableau de chaînes qui incluent les noms des produits et des catégories existant dans le catalogue et similaires à la requête de recherche |
-| `numberOfResults` | Le nombre de produits renvoyés |
-| `productListItems` | Un tableau de produits dans le panier. |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `productImageUrl` | URL de l’image principale du produit |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `searchResponse` | Indique si une réponse de recherche a été reçue. |
+| `searchResponse.id` | L’identifiant unique de cette réponse de recherche spécifique. |
+| `searchResponse.value` | Valeur quantifiable de la réponse. |
+| `siteSearch.numberOfResults` | Nombre de produits renvoyés. |
+| `siteSearch.suggestions` | Tableau de chaînes qui incluent les noms des produits et des catégories existant dans le catalogue et similaires à la requête de recherche. |
+| `productListItems` | Tableau de produits qui ont été ajoutés au panier. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.productImageUrl` | URL de l’image principale du produit. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
 
 ## Événements B2B
 
@@ -477,15 +484,16 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `requisitionList` | Propriétés de la liste de demandes créée par le client |
-| `ID` | Identifiant unique de la liste des demandes |
-| `name` | Nom de la liste des demandes spécifiée par le client |
-| `description` | Description de la liste des demandes spécifiée par le client |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.requisitionListOpens` | Indique l’initialisation d’une nouvelle liste de demandes d’achat. |
+| `commerce.requisitionList` | Propriétés de la liste de demandes créée par le client. |
+| `commerce.requisitionList.ID` | Identifiant unique de la liste des demandes. |
+| `commerce.requisitionList.name` | Nom de la liste des demandes spécifiée par le client. |
+| `commerce.requisitionList.description` | Description de la liste des demandes spécifiée par le client. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
 
 ### addToRequestList
 
@@ -493,35 +501,32 @@ Le tableau suivant décrit les données collectées pour cet événement.
 |---|---|
 | Déclenché lorsqu’un acheteur ajoute un produit à une liste de demandes existante ou lors de la création d’une nouvelle liste. | `commerce.requisitionListAdds` |
 
->[!NOTE]
->
->`addToRequisitionList` n’est pas pris en charge sur les pages d’affichage des catégories ou pour les produits configurables. Elle est prise en charge sur les pages d’affichage de produit et pour les produits simples.
-
 #### Données collectées à partir de addToRequestList
 
 Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `requisitionList` | Propriétés de la liste de demandes créée par le client |
-| `ID` | Identifiant unique de la liste des demandes |
-| `name` | Nom de la liste des demandes spécifiée par le client |
-| `description` | Description de la liste des demandes spécifiée par le client |
-| `productListItems` | Tableau de produits qui ont été ajoutés à la liste des demandes d’acquisition |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `quantity` | Nombre d’unités de produits ajoutées |
-| `priceTotal` | Prix total de l’article de ligne de produit |
-| `discountAmount` | Indique le montant de remise appliqué |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `selectedOptions` | Champ utilisé pour un produit configurable. |
-| `attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color` |
-| `value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.requisitionListAdds` | Indique l’ajout d’un ou de plusieurs produits à une liste de demandes d’achat. |
+| `commerce.requisitionList` | Propriétés de la liste de demandes créée par le client. |
+| `commerce.requisitionList.ID` | Identifiant unique de la liste des demandes. |
+| `commerce.requisitionList.name` | Nom de la liste des demandes spécifiée par le client. |
+| `commerce.requisitionList.description` | Description de la liste des demandes spécifiée par le client. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `productListItems` | Tableau de produits qui ont été ajoutés à la liste des demandes d’acquisition. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
 ### removeFromRequestList
 
@@ -535,25 +540,26 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `requisitionList` | Propriétés de la liste de demandes créée par le client |
-| `ID` | Identifiant unique de la liste des demandes |
-| `name` | Nom de la liste des demandes spécifiée par le client |
-| `description` | Description de la liste des demandes spécifiée par le client |
-| `productListItems` | Tableau de produits qui ont été ajoutés à la liste des demandes d’acquisition |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `quantity` | Nombre d’unités de produits ajoutées |
-| `priceTotal` | Prix total de l’article de ligne de produit |
-| `discountAmount` | Indique le montant de remise appliqué |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `selectedOptions` | Champ utilisé pour un produit configurable. |
-| `attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color` |
-| `value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.requsitionListRemovals` | Indique la suppression d’un ou de plusieurs produits d’une liste de demandes d’achat. |
+| `commerce.requisitionList` | Propriétés de la liste de demandes créée par le client. |
+| `commerce.requisitionList.ID` | Identifiant unique de la liste des demandes. |
+| `commerce.requisitionList.name` | Nom de la liste des demandes spécifiée par le client. |
+| `commerce.requisitionList.description` | Description de la liste des demandes spécifiée par le client. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `productListItems` | Tableau de produits qui ont été ajoutés à la liste des demandes d’acquisition. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
 ## Événements de back-office
 
@@ -575,56 +581,94 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `address` | L’adresse technique, par exemple : `name@domain.com` comme couramment défini dans la norme RFC2822 et les normes ultérieures. |
-| `productListItems` | Tableau de produits dans l’ordre |
-| `id` | Identifiant de l’élément de ligne pour cette entrée de produit. Le produit lui-même est identifié via la variable `product` champ . |
-| `name` | Nom d’affichage ou nom lisible du produit. |
-| `SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
-| `quantity` | Nombre d’unités de produits dans le panier |
-| `priceTotal` | Prix total de l’article de ligne de produit |
-| `discountAmount` | Indique le montant de remise appliqué à l’article |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `productImageUrl` | URL de l’image principale du produit |
-| `selectedOptions` | Champ utilisé pour un produit configurable. |
-| `attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color` |
-| `value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
-| `commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
-| `environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
-| `storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
-| `storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
-| `websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
-| `order` | Contient des informations sur la commande. |
-| `purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’ID est unique. |
-| `priceTotal` | Le prix total de cette commande une fois toutes les remises et taxes appliquées |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `purchaseOrderNumber` | Identifiant unique attribué par l’acheteur pour cet achat ou ce contrat. |
-| `payments` | Liste des paiements pour cette commande |
-| `paymentType` | Mode de paiement de cette commande. Valeurs énumérées et personnalisées autorisées. |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `paymentAmount` | Valeur du paiement |
-| `taxAmount` | Montant de la taxe payé par l&#39;acheteur dans le cadre du paiement final |
-| `discountAmount` | Indique le montant de remise appliqué à la commande entière |
-| `createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple, `2022-10-15T20:20:39+00:00` |
-| `shipping` | Informations d’expédition pour un ou plusieurs produits |
-| `shippingMethod` | Le mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
-| `shippingAmount` | Le montant que le client a dû payer pour l’expédition. |
-| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR` |
-| `address` | Adresse postale physique |
-| `street1` | Principal des informations sur le niveau de la rue, le numéro de l’appartement, le numéro de la rue et le nom de la rue |
-| `street2` | Champ supplémentaire pour les informations de niveau rue |
-| `city` | Nom de la ville |
-| `state` | Nom de l’état. C&#39;est un champ de forme libre. |
-| `postalCode` | Code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ce champ ne contiendra qu&#39;une partie du code postal. |
-| `country` | Nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue. |
-| `billingAddress` | Adresse postale de facturation |
-| `street1` | Principal des informations sur le niveau de la rue, le numéro de l’appartement, le numéro de la rue et le nom de la rue |
-| `street2` | Champ supplémentaire pour les informations de niveau rue |
-| `city` | Nom de la ville |
-| `state` | Nom de l’état. C&#39;est un champ de forme libre. |
-| `postalCode` | Code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ce champ ne contiendra qu&#39;une partie du code postal. |
-| `country` | Nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue. |
-| `personalEmail` | Adresse électronique personnelle |
-| `address` | Adresse technique, par exemple, &quot;name@domain.com&quot;, telle que généralement définie dans la norme RFC2822 et les normes ultérieures. |
+| `commerce.order` | Contient des informations sur la commande. |
+| `commerce.order.purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’identifiant est unique. |
+| `commerce.order.payments` | Liste des paiements pour cette commande. |
+| `commerce.order.payments.paymentTransactionID` | Identifiant unique de cette transaction de paiement. |
+| `commerce.order.payments.paymentAmount` | Valeur du paiement. |
+| `commerce.order.payments.paymentType` | Mode de paiement de cette commande. Valeurs énumérées et personnalisées autorisées. |
+| `commerce.order.payments.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `commerce.order.taxAmount` | Montant de l&#39;impôt payé par l&#39;acheteur dans le cadre du paiement final. |
+| `commerce.order.discountAmount` | Indique le montant de remise appliqué à la commande entière. |
+| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.currencyCode` | Code de devise ISO 4217 utilisé pour les totaux de commande. |
+| `commerce.shipping` | Informations d’expédition pour un ou plusieurs produits. |
+| `commerce.shipping.shippingMethod` | Mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
+| `commerce.shipping.shippingAmount` | Le montant que le client a dû payer pour l’expédition. |
+| `commerce.shipping.currencyCode` | Code de devise ISO 4217 utilisé pour le total de la livraison. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.billing.address` | Adresse postale de facturation. |
+| `commerce.billing.address.street1` | Principal des informations sur le niveau de la rue, le numéro de l’appartement, le numéro de la rue et le nom de la rue |
+| `commerce.billing.address.street2` | Champ supplémentaire pour les informations au niveau de la rue. |
+| `commerce.billing.address.city` | Nom de la ville. |
+| `commerce.billing.address.state` | Nom de l’état. C&#39;est un champ de forme libre. |
+| `commerce.billing.address.postalCode` | Code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ce champ ne contiendra qu&#39;une partie du code postal. |
+| `commerce.billing.address.country` | Nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue. |
+| `personalEmail` | Adresse électronique personnelle. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `productListItems` | Tableau de produits dans la commande. |
+| `productListItems.id` | Identifiant de l’élément de ligne pour cette entrée de produit. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.categories` | Contient des informations sur la catégorie d’un produit. |
+| `productListItems.categories.id` | Identifiant unique de la catégorie. |
+| `productListItems.categories.name` | Nom de la catégorie. |
+| `productListItems.categories.path` | Chemin d’accès à la catégorie. |
+| `productListItems.productImageUrl` | URL de l’image principale du produit. |
+
+### orderInvotered
+
+| Description | Nom de l’événement XDM |
+|---|---|
+| Déclenché lorsqu’un marchand envoie une facture pour demander le paiement. | `commerce.backofficeOrderInvoiced` |
+
+#### Données collectées à partir de orderInvotered
+
+Le tableau suivant décrit les données collectées pour cet événement.
+
+| Champ | Description |
+|---|---|
+| `commerce.order` | Contient des informations sur la commande. |
+| `commerce.order.purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’identifiant est unique. |
+| `commerce.order.priceTotal` | Le prix total de cette commande une fois toutes les remises et taxes appliquées. |
+| `commerce.order.currencyCode` | Code de devise ISO 4217 utilisé pour les totaux de commande. |
+| `commerce.order.purchaseOrderNumber` | Identifiant unique attribué par l’acheteur pour cet achat ou ce contrat. |
+| `commerce.order.payments` | Liste des paiements pour cette commande. |
+| `commerce.order.payments.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `commerce.order.payments.paymentType` | Mode de paiement de cette commande. Valeurs énumérées et personnalisées autorisées. |
+| `commerce.order.payments.paymentAmount` | Valeur du paiement. |
+| `commerce.shipping` | Informations d’expédition pour un ou plusieurs produits. |
+| `commerce.shipping.shippingMethod` | Mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
+| `commerce.shipping.shippingAmount` | Le montant que le client a dû payer pour l’expédition. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `personalEmail` | Adresse électronique personnelle. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `productListItems` | Tableau de produits dans la commande. |
+| `productListItems.id` | Identifiant de l’élément de ligne pour cette entrée de produit. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.categories` | Contient des informations sur la catégorie d’un produit. |
+| `productListItems.categories.id` | Identifiant unique de la catégorie. |
+| `productListItems.categories.name` | Nom de la catégorie. |
+| `productListItems.categories.path` | Chemin d’accès à la catégorie. |
 
 ### orderItemsShipped
 
@@ -635,7 +679,62 @@ Le tableau suivant décrit les données collectées pour cet événement.
 #### Données collectées à partir de orderItemsShipped
 
 Le tableau suivant décrit les données collectées pour cet événement.
-|Field|Description| |—|—| |`address`|L’adresse technique, par exemple : `name@domain.com` comme défini couramment dans la norme RFC2822 et les normes ultérieures| |`productListItems`|Un tableau de produits dans la commande| |`id`|L’identifiant de l’élément de ligne pour cette entrée de produit. Le produit lui-même est identifié via la variable `product` champ .| |`name`|Le nom d’affichage ou le nom lisible du produit| |`SKU`|Unité de gestion des stocks. Identifiant unique du produit.| |`quantity`|Le nombre d’unités de produits dans le panier| |`priceTotal`|Le prix total de l’article de ligne de produit| |`discountAmount`|Indique le montant de remise appliqué| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`productImageUrl`|URL de l’image principale du produit| |`selectedOptions`|Champ utilisé pour un produit configurable.| |`attribute`|Identifie un attribut du produit configurable, tel que `size` ou `color`| |`value`|Identifie la valeur de l’attribut, comme `small` ou `black`.| |`commerceScope`|Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.).| |`environmentID`|L’ID d’environnement. ID alphanumérique de 32 chiffres séparés par des tirets.| |`storeCode`|Le code de magasin unique. Vous pouvez avoir de nombreux magasins par site web.| |`storeViewCode`|Le code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin.| |`websiteCode`|Le code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement.| |`order`|Contient des informations sur la commande| |`purchaseID`|Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’ID est unique| |`priceTotal`|Le prix total de cette commande une fois toutes les remises et taxes appliquées| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`purchaseOrderNumber`|Identifiant unique attribué par l’acheteur pour cet achat ou ce contrat| |`payments`|La liste des paiements pour cette commande| |`paymentType`|Mode de paiement de cette commande. Valeurs énumérées et personnalisées autorisées.| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`paymentAmount`|La valeur du paiement| |`lastUpdatedDate`|Heure à laquelle un enregistrement de commande particulier est mis à jour pour la dernière fois dans le système commercial| |`shipping`|Informations d’expédition pour un ou plusieurs produits| |`shippingMethod`|Le mode de livraison choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc.| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`trackingNumber`|Le numéro de suivi fourni par le transporteur pour l’expédition d’un article de commande| |`trackingURL`|L’URL permettant de suivre l’état d’expédition d’un article de commande| |`shipDate`|La date à laquelle un ou plusieurs articles d’une commande sont expédiés| |`address`|Adresse de livraison physique| |`street1`|Informations au niveau de la rue par Principal, numéro de l’appartement, numéro de la rue et nom de la rue| |`street2`|Champ supplémentaire pour les informations au niveau de la rue| |`city`|Nom de la ville| |`state`|Nom de l’état. C&#39;est un champ de forme libre.| |`postalCode`|Le code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ce champ ne contiendra qu&#39;une partie du code postal.| |`country`|Le nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue.| |`shippingAmount`|Le montant que le client a dû payer pour l’expédition.| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`billingAddress`|Adresse postale de facturation| |`street1`|Informations au niveau de la rue par Principal, numéro de l’appartement, numéro de la rue et nom de la rue| |`street2`|Champ supplémentaire pour les informations au niveau de la rue| |`city`|Nom de la ville| |`state`|Nom de l’état. C&#39;est un champ de forme libre.| |`postalCode`|Le code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ce champ ne contiendra qu&#39;une partie du code postal.| |`country`|Le nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue.| |`personalEmail`|Une adresse électronique personnelle| |`address`|L’adresse technique, par exemple, &quot;name@domain.com&quot;, telle que généralement définie dans la norme RFC2822 et les normes ultérieures|
+
+| Champ | Description |
+|---|---|
+| `commerce.order` | Contient des informations sur la commande. |
+| `commerce.order.purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’identifiant est unique. |
+| `commerce.order.payments` | Liste des paiements pour cette commande. |
+| `commerce.order.payments.paymentTransactionID` | Identifiant unique de cette transaction de paiement. |
+| `commerce.order.payments.paymentAmount` | Valeur du paiement. |
+| `commerce.order.payments.paymentType` | Mode de paiement de cette commande. Valeurs énumérées et personnalisées autorisées. |
+| `commerce.order.payments.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `commerce.order.priceTotal` | Le prix total de cette commande une fois toutes les remises et taxes appliquées. |
+| `commerce.order.purchaseOrderNumber` | Identifiant unique attribué par l’acheteur pour cet achat ou ce contrat. |
+| `commerce.order.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `commerce.order.lastUpdatedDate` | Heure à laquelle un enregistrement de commande particulier est mis à jour pour la dernière fois dans le système commercial. |
+| `commerce.shipping` | Informations d’expédition pour un ou plusieurs produits. |
+| `commerce.shipping.shippingMethod` | Mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
+| `commerce.shipping.shippingAmount` | Le montant que le client a dû payer pour l’expédition. |
+| `commerce.shipping.address` | Adresse de transport physique. |
+| `commerce.shipping.address.street1` | Informations au niveau de la rue par Principal, numéro d’appartement, numéro de rue et nom de rue. |
+| `commerce.shipping.address.street2` | Informations facultatives sur la rue, deuxième ligne. |
+| `commerce.shipping.address.city` | Nom de la ville. |
+| `commerce.shipping.address.state` | Nom de l’État. C&#39;est un champ de forme libre. |
+| `commerce.shipping.address.postalCode` | Code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ce champ ne contiendra qu&#39;une partie du code postal. |
+| `commerce.shipping.address.country` | Nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue. |
+| `commerce.shipping.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `commerce.shipping.trackingNumber` | Numéro de suivi fourni par le transporteur pour l’expédition d’un article de commande. |
+| `commerce.shipping.trackingURL` | URL permettant de suivre l’état de livraison d’un article de commande. |
+| `commerce.shipping.shipDate` | Date à laquelle un ou plusieurs articles d’une commande sont expédiés. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.billing.address` | Adresse postale de facturation. |
+| `commerce.billing.address.street1` | Principal des informations sur le niveau de la rue, le numéro de l’appartement, le numéro de la rue et le nom de la rue |
+| `commerce.billing.address.street2` | Champ supplémentaire pour les informations au niveau de la rue. |
+| `commerce.billing.address.city` | Nom de la ville. |
+| `commerce.billing.address.state` | Nom de l’état. C&#39;est un champ de forme libre. |
+| `commerce.billing.address.postalCode` | Code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ce champ ne contiendra qu&#39;une partie du code postal. |
+| `commerce.billing.address.country` | Nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue. |
+| `personalEmail` | Adresse électronique personnelle. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `productListItems` | Tableau de produits dans la commande. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.categories` | Contient des informations sur la catégorie d’un produit. |
+| `productListItems.categories.id` | Identifiant unique de la catégorie. |
+| `productListItems.categories.name` | Nom de la catégorie. |
+| `productListItems.categories.path` | Chemin d’accès à la catégorie. |
 
 ### orderCancelled
 
@@ -646,26 +745,201 @@ Le tableau suivant décrit les données collectées pour cet événement.
 #### Données collectées à partir de orderCancelled
 
 Le tableau suivant décrit les données collectées pour cet événement.
-|Field|Description| |—|—| |`address`|L’adresse technique, par exemple : `name@domain.com` comme défini couramment dans la norme RFC2822 et les normes ultérieures| |`productListItems`|Un tableau de produits dans la commande| |`id`|L’identifiant de l’élément de ligne pour cette entrée de produit. Le produit lui-même est identifié via la variable `product` champ .| |`name`|Le nom d’affichage ou le nom lisible du produit| |`SKU`|Unité de gestion des stocks. Identifiant unique du produit.| |`quantity`|Le nombre d’unités de produits dans le panier| |`priceTotal`|Le prix total de l’article de ligne de produit| |`discountAmount`|Indique le montant de remise appliqué| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`productImageUrl`|URL de l’image principale du produit| |`selectedOptions`|Champ utilisé pour un produit configurable.| |`attribute`|Identifie un attribut du produit configurable, tel que `size` ou `color`| |`value`|Identifie la valeur de l’attribut, comme `small` ou `black`.| |`commerceScope`|Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.).| |`environmentID`|L’ID d’environnement. ID alphanumérique de 32 chiffres séparés par des tirets.| |`storeCode`|Le code de magasin unique. Vous pouvez avoir de nombreux magasins par site web.| |`storeViewCode`|Le code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin.| |`websiteCode`|Le code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement.| |`order`|Contient des informations sur la commande| |`purchaseID`|Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’ID est unique| |`purchaseOrderNumber`|Identifiant unique attribué par l’acheteur pour cet achat ou ce contrat| |`cancelDate`|La date et l’heure auxquelles un acheteur annule une commande| |`lastUpdatedDate`|Heure à laquelle un enregistrement de commande particulier est mis à jour pour la dernière fois dans le système commercial| |`personalEmail`|Une adresse électronique personnelle| |`address`|L’adresse technique, par exemple, &quot;name@domain.com&quot;, telle que généralement définie dans la norme RFC2822 et les normes ultérieures|
 
-### CreditMemoIssued
+| Champ | Description |
+|---|---|
+| `commerce.order` | Contient des informations sur la commande. |
+| `commerce.order.purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’identifiant est unique. |
+| `commerce.order.purchaseOrderNumber` | Identifiant unique attribué par l’acheteur pour cet achat ou ce contrat. |
+| `commerce.order.cancelDate` | Date et heure auxquelles un acheteur annule une commande. |
+| `commerce.order.lastUpdatedDate` | Heure à laquelle un enregistrement de commande particulier est mis à jour pour la dernière fois dans le système commercial. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `personalEmail` | Adresse électronique personnelle. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+
+### orderLineItemRefunding
 
 | Description | Nom de l’événement XDM |
 |---|---|
-| Déclenché lorsqu’un acheteur renvoie un article dans une commande. | `commerce.backofficeCreditMemoIssued` |
+| Déclenché lorsqu’un acheteur est remboursé pour un article renvoyé. | `commerce.backofficeCreditMemoIssued` |
 
-#### Données collectées à partir de CreditMemoIssued
+#### Données collectées à partir de orderLineItemRefunding
 
 Le tableau suivant décrit les données collectées pour cet événement.
-|Field|Description| |—|—| |`address`|L’adresse technique, par exemple : `name@domain.com` comme défini couramment dans la norme RFC2822 et les normes ultérieures| |`productListItems`|Un tableau de produits dans la commande| |`id`|L’identifiant de l’élément de ligne pour cette entrée de produit. Le produit lui-même est identifié via la variable `product` champ .| |`name`|Le nom d’affichage ou le nom lisible du produit| |`SKU`|Unité de gestion des stocks. Identifiant unique du produit.| |`quantity`|Le nombre d’unités de produits dans le panier| |`priceTotal`|Le prix total de l’article de ligne de produit| |`discountAmount`|Indique le montant de remise appliqué| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`productImageUrl`|URL de l’image principale du produit| |`selectedOptions`|Champ utilisé pour un produit configurable.| |`attribute`|Identifie un attribut du produit configurable, tel que `size` ou `color`| |`value`|Identifie la valeur de l’attribut, comme `small` ou `black`.| |`order`|Contient des informations sur la commande| |`purchaseID`|Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’ID est unique| |`purchaseOrderNumber`|Identifiant unique attribué par l’acheteur pour cet achat ou ce contrat| |`lastUpdatedDate`|Heure à laquelle un enregistrement de commande particulier est mis à jour pour la dernière fois dans le système commercial| |`priceTotal`|Le prix total de l’article de ligne de produit| |`discountAmount`|Indique le montant de remise appliqué| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`taxAmount`|Le montant de la taxe payé par l’acheteur dans le cadre du paiement final.| |`refunds`|La liste des remboursements pour cette commande| |`refundPaymentType`|Mode de paiement de cette commande. Valeurs énumérées et personnalisées autorisées.| |`refundAmount`|La valeur du remboursement.| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`personalEmail`|Une adresse électronique personnelle| |`address`|L’adresse technique, par exemple : `name@domain.com` comme défini couramment dans la norme RFC2822 et les normes ultérieures|
+
+| Champ | Description |
+|---|---|
+| `commerce.order` | Contient des informations sur la commande. |
+| `commerce.order.purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’identifiant est unique. |
+| `commerce.order.lastUpdatedDate` | Heure à laquelle un enregistrement de commande particulier est mis à jour pour la dernière fois dans le système commercial. |
+| `commerce.order.purchaseOrderNumber` | Identifiant unique attribué par l’acheteur pour cet achat ou ce contrat. |
+| `commerce.refunds` | La liste des remboursements pour cette commande. |
+| `commerce.refunds.transactionID` | Identifiant unique pour ce remboursement. |
+| `commerce.refunds.refundAmount` | La valeur du remboursement. |
+| `commerce.refunds.refundPaymentType` | Mode de paiement de cette commande. Valeurs énumérées et personnalisées autorisées. |
+| `commerce.refunds.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `personalEmail` | Adresse électronique personnelle. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `productListItems` | Tableau de produits dans la commande. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.categories` | Contient des informations sur la catégorie d’un produit. |
+| `productListItems.categories.id` | Identifiant unique de la catégorie. |
+| `productListItems.categories.name` | Nom de la catégorie. |
+| `productListItems.categories.path` | Chemin d’accès à la catégorie. |
+
+### orderItemsReturnInitiated
+
+| Description | Nom de l’événement XDM |
+|---|---|
+| Déclenché lorsqu’un acheteur demande de renvoyer un élément. | `commerce.backofficeOrderItemsReturnInitiated` |
+
+#### Données collectées à partir de orderItemsReturnInitiated
+
+Le tableau suivant décrit les données collectées pour cet événement.
+
+| Champ | Description |
+|---|---|
+| `commerce.order` | Contient des informations sur la commande. |
+| `commerce.order.purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’identifiant est unique. |
+| `commerce.order.returns` | Informations de la RMA (Return Merchandise Authorization) pour cette commande. |
+| `commerce.order.returns.returnID` | Identifiant unique de cette RMA (Return Merchandise Authorization). |
+| `commerce.order.returns.returnStatus` | État actuel de la RAM (autorisation de marchandisage de retour), comme En attente, Fermé, etc. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `personalEmail` | Adresse électronique personnelle. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `productListItems` | Tableau de produits dans la commande. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.categories` | Contient des informations sur la catégorie d’un produit. |
+| `productListItems.categories.id` | Identifiant unique de la catégorie. |
+| `productListItems.categories.name` | Nom de la catégorie. |
+| `productListItems.categories.path` | Chemin d’accès à la catégorie. |
+| `productListItems.returnItem` | Informations de la RMA (Return Merchandise Authorization) pour cet élément. |
+| `productListItems.returnItem.returnStatus` | État de l’élément renvoyé, par exemple En attente, Approuvé, etc. |
+| `productListItems.returnItem.returnReason` | Motif pour lequel un retour est demandé pour cet élément. |
+| `productListItems.returnItem.returnItemCondition` | La condition de l’élément pour lequel le renvoi est demandé. |
+| `productListItems.returnItem.returnResolution` | Résolution demandée de l’élément renvoyé, telle que Rembourser, Exchange, etc. |
+| `productListItems.returnItem.returnQuantityRequested` | Numéro de cet élément que l’acheteur a demandé de renvoyer. |
+| `productListItems.returnItem.returnQuantityAuthorized` | Numéro de cet élément autorisé à être renvoyé. |
+| `productListItems.returnItem.eturnQuantityReceived` | Nombre d’éléments renvoyés reçus. |
+| `productListItems.returnItem.returnQuantityApproved` | Numéro de cet élément avec le renvoi complet et approuvé. |
+
+### orderItemReturnCompleted
+
+| Description | Nom de l’événement XDM |
+|---|---|
+| Déclenché lorsqu’un article qu’un acheteur demandait de renvoyer est terminé. | `commerce.backofficeOrderItemsReturnCompleted` |
+
+#### Données collectées à partir de orderItemReturnCompleted
+
+Le tableau suivant décrit les données collectées pour cet événement.
+
+| Champ | Description |
+|---|---|
+| `commerce.order` | Contient des informations sur la commande. |
+| `commerce.order.purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’identifiant est unique. |
+| `commerce.order.returns` | Informations de la RMA (Return Merchandise Authorization) pour cette commande. |
+| `commerce.order.returns.returnID` | Identifiant unique de cette RMA (Return Merchandise Authorization). |
+| `commerce.order.returns.returnStatus` | État actuel de la RAM (autorisation de marchandisage de retour), comme En attente, Fermé, etc. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `personalEmail` | Adresse électronique personnelle. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `productListItems` | Tableau de produits dans la commande. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.categories` | Contient des informations sur la catégorie d’un produit. |
+| `productListItems.categories.id` | Identifiant unique de la catégorie. |
+| `productListItems.categories.name` | Nom de la catégorie. |
+| `productListItems.categories.path` | Chemin d’accès à la catégorie. |
+| `productListItems.returnItem` | Informations de la RMA (Return Merchandise Authorization) pour cet élément. |
+| `productListItems.returnItem.returnStatus` | État de l’élément renvoyé, par exemple En attente, Approuvé, etc. |
+| `productListItems.returnItem.returnReason` | Motif pour lequel un retour est demandé pour cet élément. |
+| `productListItems.returnItem.returnItemCondition` | La condition de l’élément pour lequel le renvoi est demandé. |
+| `productListItems.returnItem.returnResolution` | Résolution demandée de l’élément renvoyé, telle que Rembourser, Exchange, etc. |
+| `productListItems.returnItem.returnQuantityRequested` | Numéro de cet élément que l’acheteur a demandé de renvoyer. |
+| `productListItems.returnItem.returnQuantityAuthorized` | Numéro de cet élément autorisé à être renvoyé. |
+| `productListItems.returnItem.eturnQuantityReceived` | Nombre d’éléments renvoyés reçus. |
+| `productListItems.returnItem.returnQuantityApproved` | Numéro de cet élément avec le renvoi complet et approuvé. |
 
 ### orderShipmentCompleted
 
 | Description | Nom de l’événement XDM |
 |---|---|
-| Déclenché lorsqu’un acheteur renvoie un article dans une commande. | `commerce.backofficeOrderShipmentCompleted` |
+| Déclenché à la fin d’une expédition. | `commerce.backofficeOrderShipmentCompleted` |
 
 #### Données collectées à partir de orderShipmentCompleted
 
 Le tableau suivant décrit les données collectées pour cet événement.
-|Field|Description| |—|—| |`address`|L’adresse technique, par exemple : `name@domain.com` comme défini couramment dans la norme RFC2822 et les normes ultérieures| |`productListItems`|Un tableau de produits dans la commande| |`id`|L’identifiant de l’élément de ligne pour cette entrée de produit. Le produit lui-même est identifié via la variable `product` champ .| |`name`|Le nom d’affichage ou le nom lisible du produit| |`SKU`|Unité de gestion des stocks. Identifiant unique du produit.| |`quantity`|Le nombre d’unités de produits dans le panier| |`priceTotal`|Le prix total de l’article de ligne de produit| |`discountAmount`|Indique le montant de remise appliqué| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`productImageUrl`|URL de l’image principale du produit| |`selectedOptions`|Champ utilisé pour un produit configurable.| |`attribute`|Identifie un attribut du produit configurable, tel que `size` ou `color`| |`value`|Identifie la valeur de l’attribut, comme `small` ou `black`.| |`order`|Contient des informations sur la commande| |`purchaseID`|Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’ID est unique| |`priceTotal`|Le prix total de cette commande une fois toutes les remises et taxes appliquées| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`purchaseOrderNumber`|Identifiant unique attribué par l’acheteur pour cet achat ou ce contrat| |`taxAmount`|Le montant de la taxe payé par l’acheteur dans le cadre du paiement final.| |`createdDate`|L’heure et la date de création d’une commande dans le système commercial. Par exemple : `2022-10-15T20:20:39+00:00`| |`payments`|La liste des paiements pour cette commande| |`paymentType`|Mode de paiement de cette commande. Valeurs énumérées et personnalisées autorisées.| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`paymentAmount`|La valeur du paiement| |`shipping`|Informations d’expédition pour un ou plusieurs produits| |`shippingMethod`|Le mode de livraison choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc.| |`address`|Adresse de livraison physique| |`street1`|Informations au niveau de la rue par Principal, numéro de l’appartement, numéro de la rue et nom de la rue| |`street2`|Champ supplémentaire pour les informations au niveau de la rue| |`city`|Nom de la ville| |`state`|Nom de l’état. C&#39;est un champ de forme libre.| |`postalCode`|Le code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ce champ ne contiendra qu&#39;une partie du code postal.| |`country`|Le nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue.| |`shippingAmount`|Le montant que le client a dû payer pour l’expédition.| |`currencyCode`|Le [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`| |`address`|L’adresse technique, par exemple : `name@domain.com` comme défini couramment dans la norme RFC2822 et les normes ultérieures| |`billingAddress`|Adresse postale de facturation| |`street1`|Informations au niveau de la rue par Principal, numéro de l’appartement, numéro de la rue et nom de la rue| |`street2`|Champ supplémentaire pour les informations au niveau de la rue| |`city`|Nom de la ville| |`state`|Nom de l’état. C&#39;est un champ de forme libre.| |`postalCode`|Le code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ces données ne contiennent qu’une partie du code postal.| |`country`|Le nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue.| |`personalEmail`|Une adresse électronique personnelle| |`address`|L’adresse technique, par exemple, &quot;name@domain.com&quot;, telle que généralement définie dans la norme RFC2822 et les normes ultérieures|
+
+| Champ | Description |
+|---|---|
+| `commerce.order` | Contient des informations sur la commande. |
+| `commerce.order.purchaseID` | Identifiant unique attribué par le vendeur pour cet achat ou ce contrat. Il n’existe aucune garantie que l’identifiant est unique. |
+| `commerce.order.payments` | Liste des paiements pour cette commande. |
+| `commerce.order.payments.paymentTransactionID` | Identifiant unique de cette transaction de paiement. |
+| `commerce.order.payments.paymentAmount` | Valeur du paiement. |
+| `commerce.order.payments.paymentType` | Mode de paiement de cette commande. Valeurs énumérées et personnalisées autorisées. |
+| `commerce.order.payments.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `commerce.order.taxAmount` | Montant de l&#39;impôt payé par l&#39;acheteur dans le cadre du paiement final. |
+| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple, `2022-10-15T20:20:39+00:00`. |
+| `commerce.shipping` | Informations d’expédition pour un ou plusieurs produits. |
+| `commerce.shipping.shippingMethod` | Mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
+| `commerce.shipping.shippingAmount` | Le montant que le client a dû payer pour l’expédition. |
+| `commerce.shipping.shipDate` | Date à laquelle un ou plusieurs articles d’une commande sont expédiés. |
+| `commerce.shipping.address` | Adresse de transport physique. |
+| `commerce.shipping.address.street1` | Informations au niveau de la rue par Principal, numéro d’appartement, numéro de rue et nom de rue. |
+| `commerce.shipping.address.street2` | Informations facultatives sur la rue, deuxième ligne. |
+| `commerce.shipping.address.city` | Nom de la ville. |
+| `commerce.shipping.address.state` | Nom de l’État. C&#39;est un champ de forme libre. |
+| `commerce.shipping.address.postalCode` | Code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ce champ ne contiendra qu&#39;une partie du code postal. |
+| `commerce.shipping.address.country` | Nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue. |
+| `commerce.billing.address` | Adresse postale de facturation. |
+| `commerce.billing.address.street1` | Principal des informations sur le niveau de la rue, le numéro de l’appartement, le numéro de la rue et le nom de la rue |
+| `commerce.billing.address.street2` | Champ supplémentaire pour les informations au niveau de la rue. |
+| `commerce.billing.address.city` | Nom de la ville. |
+| `commerce.billing.address.state` | Nom de l’état. C&#39;est un champ de forme libre. |
+| `commerce.billing.address.postalCode` | Code postal de l’emplacement. Les codes postaux ne sont pas disponibles pour tous les pays. Dans certains pays, ce champ ne contiendra qu&#39;une partie du code postal. |
+| `commerce.billing.address.country` | Nom du territoire administré par le gouvernement. Autre que `xdm:countryCode`, il s’agit d’un champ de forme libre qui peut avoir le nom du pays dans n’importe quelle langue. |
+| `personalEmail` | Adresse électronique personnelle. |
+| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `productListItems` | Tableau de produits dans la commande. |
+| `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
+| `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
+| `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
+| `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
+| `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
+| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
+| `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.categories` | Contient des informations sur la catégorie d’un produit. |
+| `productListItems.categories.id` | Identifiant unique de la catégorie. |
+| `productListItems.categories.name` | Nom de la catégorie. |
+| `productListItems.categories.path` | Chemin d’accès à la catégorie. |
