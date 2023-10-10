@@ -3,9 +3,9 @@ title: Connexion des données commerciales à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
+source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,13 @@ Consultez la rubrique Événements pour en savoir plus sur [storefront](events.m
 
 ## Envoi de données de commande historiques
 
-Adobe Commerce collecte jusqu’à cinq ans de [données et état de l’ordre historique](events.md#back-office-events). Vous pouvez utiliser le connecteur Experience Platform pour envoyer ces données historiques à l’Experience Platform afin d’enrichir vos profils clients en fonction de ces commandes passées. Les données sont stockées dans un jeu de données dans Experience Platform.
+Adobe Commerce collecte jusqu’à cinq ans de [données et état de l’ordre historique](events.md#back-office-events). Vous pouvez utiliser le connecteur Experience Platform pour envoyer ces données historiques à l’Experience Platform afin d’enrichir vos profils client et de personnaliser les expériences client en fonction de ces commandes passées. Les données sont stockées dans un jeu de données dans Experience Platform.
 
 Bien que Commerce collecte déjà les données de commande historiques, vous devez effectuer plusieurs étapes pour envoyer ces données à Experience Platform.
+
+Regardez cette vidéo pour en savoir plus sur les commandes historiques, puis effectuez les étapes suivantes pour mettre en oeuvre la collecte et la configuration des commandes historiques.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### Étape 1 : installation de la collecte de données de l’ordre historique
 
@@ -248,12 +252,6 @@ Indiquez la période des commandes historiques à envoyer à l’Experience Plat
 | De | Date à partir de laquelle vous souhaitez commencer à collecter les données de l’historique des commandes. |
 | À | Date à partir de laquelle vous souhaitez terminer la collecte des données d’historique des commandes. |
 | Démarrer la synchronisation | Démarre le processus de synchronisation des données de l’historique des commandes avec le serveur Experience Platform Edge. Ce bouton est désactivé si la variable **[!UICONTROL Dataset ID]** est vide ou l’identifiant du jeu de données n’est pas valide. |
-
-### Démonstration de la commande historique
-
-Regardez cette vidéo pour en savoir plus sur les commandes historiques :
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## Confirmation que les données d’événement sont collectées
 
