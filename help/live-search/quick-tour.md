@@ -2,9 +2,9 @@
 title: "Quick Tour"
 description: "Visitez rapidement le [!DNL Live Search] de la vitrine."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ Utilisez les facettes comme paramètres d’URL :`http://yourwebsite.com?color=r
 ## Règles de marchandisage
 
 Marchandisage [rules](rules.md) façonnez l’expérience d’achat avec des instructions if-then ajoutant une logique et des événements à rechercher. Vous pouvez facilement booster ou enterrer des produits pour une promotion, une saison ou toute autre période.
+
+## Prise en charge des termes de recherche
+
+[!DNL Live Search] prend en charge Commerce [redirections de termes de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Par exemple, les utilisateurs peuvent rechercher un terme tel que &quot;Taux de livraison&quot; et être redirigés directement vers la page des taux de livraison.

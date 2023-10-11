@@ -3,20 +3,30 @@ title: Introduction à [!DNL Live Search]
 description: "[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, super pertinente et intuitive."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
 # Introduction à [!DNL Live Search]
 
-[!DNL Live Search] est un ensemble de packages autonomes pour Adobe Commerce qui remplace les fonctionnalités de recherche standard. La variable [!DNL Live Search] est installé à partir de la ligne de commande du serveur et se connecte à votre installation Commerce as a [service](../landing/saas.md). Une fois le processus terminé, [!DNL Live Search] apparaît sur la *Marketing* sous *SEO &amp; Search* dans le [!DNL Commerce] *Administration*.
+[!DNL Live Search] est un service pour Adobe Commerce qui remplace les fonctionnalités de recherche standard. La variable [!DNL Live Search] module est installé avec le compositeur et connecte votre [!DNL Commerce] à l’emplacement [!DNL Live Search] [service](../landing/saas.md). Lorsqu’il est configuré, le champ de texte de recherche par défaut est remplacé par le champ [!DNL Live Search] Champ de texte.
 
-Le côté Adobe Commerce de l’architecture inclut l’hébergement de la recherche. *Administration*, synchroniser les données du catalogue et exécuter le service de requête. Après [!DNL Live Search] est installé et configuré, Adobe Commerce commence à partager les données de recherche et de catalogue avec les services SaaS. À ce stade, les utilisateurs administrateurs peuvent configurer, personnaliser et gérer les facettes de recherche, les synonymes et les règles de marchandisage.
+[!DNL Live Search] apparaît sur la *Marketing* sous *SEO &amp; Search* dans le [!DNL Commerce] *Administration*.
+
+Le côté Adobe Commerce de l’architecture inclut l’hébergement de la recherche. *Administration*, synchroniser les données du catalogue et exécuter le service de requête. Après [!DNL Live Search] est installé et configuré, Adobe Commerce commence à partager les données de recherche et de catalogue avec les services SaaS. À ce stade, les utilisateurs administrateurs peuvent configurer, personnaliser et gérer la recherche. [facettes](facets.md), [synonyms](synonyms.md), et [règles de marchandisage](category-merch.md).
 
 ![Schéma de l’architecture de la recherche en direct](assets/architecture-diagram.svg)
+
+## Composants de recherche en direct
+
+* [!DNL Live Search] [fenêtre contextuelle](storefront-popover.md) est la zone qui s’ouvre sous le champ de recherche qui contient les résultats de la recherche.
+* [Widget de page de liste de produits](plp-styling.md) fournit une page de liste de produits pouvant faire l’objet d’une recherche, avec facettes et prise en charge de synonymes.
+* L&#39;AEM [Composant CIF](https://github.com/adobe/aem-cif-guides-venia/pull/319) permet à AEM sites de tirer parti des [!DNL Live Search].
+* [[!DNL Live Search] Administration](workspace.md) est l’emplacement où les règles, les facettes et les synonymes sont configurés.
+* L’adaptateur de recherche est l’implémentation par défaut de [!DNL Live Search].
 
 ## [!DNL Live Search] demo
 

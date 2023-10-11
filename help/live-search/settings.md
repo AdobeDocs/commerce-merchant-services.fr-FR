@@ -2,18 +2,20 @@
 title: "[!DNL Live Search] Paramètres"
 description: "Configurez les paramètres de la variable [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
+source-git-commit: 5e3cdae0e7362b921c51dc6edb12f4b58ffeb31e
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
 # Paramètres
 
-Utilisez la variable *Paramètres* pour configurer les plages et les intervalles de facettes de prix.
+Utilisez la variable *Paramètres* pour configurer les plages de facettes de prix et les intervalles, ainsi que la langue par défaut de l’index.
 
 La facette des prix indique le nombre de groupes de prix et la manière dont les valeurs de prix sont réparties entre eux.
+
+Le paramètre Langue indique à la [!DNL Live Search] service de la langue à attendre lors de l’écriture de l’index.
 
 ![Paramètres](assets/settings.png)
 
@@ -35,3 +37,53 @@ Vous pouvez indiquer le nombre de groupes de prix et la manière dont les valeur
 |--- |--- |
 | Nombre de sélections | Indique le nombre de groupements de plages de prix pouvant être utilisés comme filtres de recherche dans le storefront. Valeur par défaut : 8, Valeur maximale : 50 |
 | Valeur d&#39;intervalle | Indique l’intervalle de prix pour chaque groupe. Par exemple, cinq sélections avec une valeur d’intervalle de 20 créent cinq groupes de 0 à 20, 20 à 40, 40 à 60, 60 à 80 et >80. Valeur par défaut : 5, Valeur maximale : 10 000 |
+
+## Langue
+
+Le paramètre Langue indique : [!DNL Live Search] la langue à attendre lors de la lecture du catalogue et de l’écriture de l’index.
+
+Les langues ont différents ensembles de règles grammaticales : la séparation des mots, les tenses de verbe et les formulaires de mots, par exemple.
+Le paramètre Langue garantit que le jeu correct de règles est appliqué au mécanisme d’indexation.
+
+Définissez le paramètre Langue sur la langue principale du catalogue. Lorsque vous modifiez la langue de l’index, il peut s’écouler entre 5 et 60 minutes avant que la modification du storefront ne soit reflétée, selon la taille et la complexité du catalogue.
+
+| Langue | Code |
+|----|----|
+| Arabe | ar |
+| Arménien | hy |
+| Basque | eu |
+| Bengali | bn |
+| Brésilien | pt-br |
+| Bulgare | bg |
+| Catalan | ca |
+| Chinois (simplifié) | zh-cn |
+| Chinois (traditionnel) | zh-tw |
+| Tchèque | cs |
+| Danois | da |
+| Néerlandais | nl |
+| Anglais | en |
+| Estonien | et |
+| Finnois | fi |
+| Français | fr |
+| Galicien | gl |
+| Allemand | de |
+| Grec | el |
+| Hindi | hi |
+| Hongrois | hu |
+| Indonésien | id |
+| Irlandais | ga |
+| Italien | it |
+| Japonais | ja |
+| Coréen | ko |
+| Letton | lv |
+| Lituanien | lt |
+| Norvégien | non |
+| Perse | fa |
+| Portuge | pt |
+| Roumain | ro |
+| Russe | ru |
+| Sorani | ku |
+| Espagnol | es |
+| Suédois | sv |
+| Turc | tr |
+| Thaï | th |

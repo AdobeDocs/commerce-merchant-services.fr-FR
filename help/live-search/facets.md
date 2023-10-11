@@ -2,9 +2,9 @@
 title: "Facettes"
 description: "[!DNL Live Search] les facettes utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # Facettes
 
 La facette est une méthode de filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut comme critères de recherche. La recherche à facettes est similaire, mais considérablement &quot;plus intelligente&quot; que la norme [navigation par couches](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). La liste des filtres disponibles est déterminée par la variable [attributs filtrables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) des produits renvoyés dans les résultats de recherche.
+
+[!DNL Live Search] utilise la variable `productSearch` qui renvoie des facettes et d’autres données spécifiques à [!DNL Live Search]. Voir [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) dans la documentation destinée aux développeurs pour consulter des exemples de code.
 
 ![Résultats de la recherche filtrés](assets/storefront-search-results-run.png)
 
@@ -33,6 +35,14 @@ Les exigences d’attribut de catégorie et de produit pour la facette sont simi
 | [Paramètres d’affichage des catégories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ancre - `Yes` |
 | [Propriétés d’attribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Type d’entrée de catalogue](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (widget uniquement), `Text swatch` (widget uniquement) |
 | Propriétés Attribute storefront | Utilisation dans la navigation par couches des résultats de recherche - `Yes` |
+
+## Agrégation des facettes
+
+L’agrégation des facettes est effectuée comme suit : si le storefront comporte trois facettes (catégories, couleur et prix) et que les filtres du nouvel acheteur sont appliqués aux trois éléments (couleur = bleu, le prix est compris entre 10,00 et 50,00 $, catégories = `promotions`).
+
+* `categories` agrégation - Agrégats `categories`, puis applique la variable `color` et `price` filtres, mais pas le filtre `categories` filtre.
+* `color` agrégation - Agrégats `color`, puis applique la variable`price` et `categories` filtres, mais pas le filtre `color` filtre.
+* `price` agrégation - Agrégats `price`, puis applique la variable `color` et `categories` filtres, mais pas le filtre `price` filtre.
 
 ## Valeurs d’attribut par défaut
 
