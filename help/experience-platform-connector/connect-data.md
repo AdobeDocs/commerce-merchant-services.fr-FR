@@ -3,9 +3,9 @@ title: Connexion des données commerciales à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
+source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2320'
 ht-degree: 0%
 
 ---
@@ -278,3 +278,7 @@ Pour confirmer que les données sont collectées à partir de votre boutique Com
 Dans cet exemple, vous voyez les données d’événement de la variable [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), etc. Cette vue vous permet de vérifier que vos données Commerce sont arrivées à la périphérie.
 
 Si les résultats ne correspondent pas à vos attentes, ouvrez votre jeu de données et recherchez les importations de lots ayant échoué. En savoir plus sur [dépannage des imports par lots](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+## Étapes suivantes
+
+Lorsque des données Commerce sont envoyées à l’Experience Platform Edge, d’autres produits Adobe Experience Cloud, tels que Adobe Journey Optimizer, peuvent utiliser ces données. Vous pouvez, par exemple, configurer Journey Optimizer pour écouter certains événements. En fonction de ces données d’événement, déclencher un courrier électronique pour un nouvel utilisateur ou si un panier est abandonné. Découvrez comment étendre votre plateforme Commerce en [création de parcours client](using-ajo.md) dans Journey Optimizer.
