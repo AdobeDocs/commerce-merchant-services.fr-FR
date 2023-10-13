@@ -3,9 +3,9 @@ title: Connexion des données commerciales à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2263'
 ht-degree: 0%
 
 ---
@@ -122,53 +122,15 @@ Adobe Commerce collecte jusqu’à cinq ans de [données et état de l’ordre h
 
 Bien que Commerce collecte déjà les données de commande historiques, vous devez effectuer plusieurs étapes pour envoyer ces données à Experience Platform.
 
-Regardez cette vidéo pour en savoir plus sur les commandes historiques, puis effectuez les étapes suivantes pour mettre en oeuvre la collecte et la configuration des commandes historiques.
+Regardez cette vidéo pour en savoir plus sur les commandes historiques, puis effectuez les étapes suivantes pour mettre en oeuvre la collecte des commandes historiques.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### Étape 1 : installation de la collecte de données de l’ordre historique
-
-Pour activer la collecte de données d’ordre historique, vous devez mettre à jour la racine du projet. [!DNL Composer] `.json` comme suit :
-
-1. Ouvrez la racine `composer.json` fichier et recherchez `magento/experience-platform-connector`.
-
-1. Dans le `require` , mettez à jour le numéro de version comme suit :
-
-   ```json
-   "require": {
-      ...
-      "magento/experience-platform-connector": "^3.0.0",
-      ...
-    }
-   ```
-
-1. Pour les commerçants B2B, mettez à jour la variable `.json` comme suit :
-
-   ```json
-   "require": {
-     ...
-     "magento/experience-platform-connector-b2b": "^2.0.0"
-     ...
-   }
-   ```
-
-1. **Enregistrer** `composer.json`. Exécutez ensuite la commande suivante à partir de la ligne de commande :
-
-   ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
-   ```
-
-   ou, pour les marchands B2B :
-
-   ```bash
-   composer update magento/experience-platform-connector-b2b --with-dependencies
-   ```
-
-### Étape 2 : création d’un projet dans la console Adobe Developer
+### Étape 1 : création d’un projet dans la console Adobe Developer
 
 >[!NOTE]
 >
->Si vous avez déjà installé et activé la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , vous avez déjà effectué les étapes 2 et 3.
+>Si vous avez déjà installé et activé la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , vous avez déjà effectué les étapes 1 et 2 et pouvez passer à l’étape 3.
 
 Créez un projet dans la console Adobe Developer qui authentifie Commerce afin qu’il puisse effectuer des appels API Experience Platform.
 
@@ -182,7 +144,7 @@ Lorsque vous passez en revue le tutoriel, assurez-vous que votre projet comporte
 
 Le résultat de cette étape crée un fichier de configuration que vous utilisez à l’étape suivante.
 
-### Étape 3 : téléchargement du fichier de configuration
+### Étape 2 : téléchargement du fichier de configuration
 
 Téléchargez la [fichier de configuration de l&#39;espace de travail](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copiez et collez le contenu de ce fichier dans le **Informations d’identification/compte de service** de l’administrateur Commerce.
 
@@ -204,7 +166,7 @@ Téléchargez la [fichier de configuration de l&#39;espace de travail](https://d
 
 1. Cliquez sur **Enregistrer la configuration**.
 
-### Étape 4 : configuration du service de synchronisation des commandes
+### Étape 3 : configuration du service de synchronisation des commandes
 
 Une fois que vous avez saisi les informations d’identification du développeur, configurez le service de synchronisation des commandes. Le service de synchronisation des commandes utilise la variable [Structure de la file d’attente des messages](https://developer.adobe.com/commerce/php/development/components/message-queues/) et RabbitMQ. Une fois ces étapes terminées, les données d’état de la commande peuvent être synchronisées avec SaaS, ce qui est nécessaire avant d’être envoyées à l’Experience Platform.
 
@@ -229,7 +191,7 @@ Une fois que vous avez saisi les informations d’identification du développeur
 
 Une fois le service de synchronisation des commandes activé, vous pouvez spécifier la période de commande historique dans la page du connecteur Experience Platform.
 
-### Étape 5 : spécification de la plage de dates de l’historique des commandes
+### Étape 4 : spécification de la plage de dates de l’historique des commandes
 
 Indiquez la période des commandes historiques à envoyer à l’Experience Platform.
 
