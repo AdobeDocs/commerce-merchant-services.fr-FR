@@ -1,10 +1,10 @@
 ---
 title: "Ajouter des règles"
-description: "Découvrez comment créer [!DNL Live Search] règles."
+description: "Découvrez comment créer des règles de marchandisage de recherche."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 
 1. Dans Admin, accédez à **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Définissez la variable **Portée** pour identifier la variable [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) lorsque la règle s’applique.
-1. Cliquez sur le bouton **Règles de recherche** .
+1. Cliquez sur le bouton **Marchandisage des recherches** .
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 
 ## Conditions

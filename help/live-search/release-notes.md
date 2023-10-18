@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,18 @@ Ces notes décrivent les mises à jour publiées en dehors d’une version ou le
 
 +++Mises à jour du service hébergé
 
+_12 octobre 2023_
+
+![Nouveau](../assets/new.svg) Les administrateurs de commerce peuvent maintenant spécifier la langue de l’index pour [!DNL Live Search]. Voir [Paramètres](settings.md).
+![Correction](../assets/fix.svg) L’onglet &quot;Règles de recherche&quot; a été renommé &quot;Marchandisage de recherche&quot;.
+
 _13 juin 2023_
 
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel certains caractères, tels que les guillemets ou les apostrophes, provoquaient des problèmes de classement. La réindexation résoudra ces problèmes.
 
 _25 avril 2023_
 
-![Nouveau](../assets/new.svg) Les clients de la recherche en direct peuvent désormais profiter de la nouvelle [Indexeur de prix SaaS](../price-index/index.md).
+![Nouveau](../assets/new.svg) [!DNL Live Search] les clients peuvent désormais profiter de la nouvelle [Indexeur de prix SaaS](../price-index/index.md).
 
 +++
 

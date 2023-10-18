@@ -1,17 +1,17 @@
 ---
-title: '"Search Rules Workspace" (Espace de travail des règles de recherche)'
-description: "Découvrez comment contourner le problème [!DNL Live Search] espace de travail des règles."
+title: "Recherche dans Workspace de marchandisage"
+description: "Découvrez comment vous déplacer dans l’espace de travail Rechercher le marchandisage."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '580'
 ht-degree: 1%
 
 ---
 
-# Espace de travail des règles de recherche
+# Recherche dans Workspace de marchandisage
 
-L’espace de travail Règles de recherche répertorie la sélection actuelle des règles et leur état, et permet d’accéder aux outils dont vous avez besoin pour créer et gérer des règles. Dans l’espace de travail, vous pouvez :
+L’espace de travail Rechercher le marchandisage répertorie la sélection actuelle des règles et leur état, et permet d’accéder aux outils dont vous avez besoin pour créer et gérer des règles. Dans l’espace de travail, vous pouvez :
 
 * Recherche de règles
 * Afficher les détails des règles
@@ -19,7 +19,7 @@ L’espace de travail Règles de recherche répertorie la sélection actuelle de
 * Supprimer des règles
 * Accès à l’éditeur de règles
 
-![Espace de travail Règles](assets/rules-workspace.png)
+![Rechercher dans l’espace de travail de marchandisage](assets/rules-workspace.png)
 
 ## Définition de la portée
 
@@ -57,7 +57,7 @@ La recherche trouve la ou les règles correspondantes lorsque vous tapez. La cha
 
 Le panneau Détails affiche le nom, l’état, les conditions et événements de la règle, la date de début et de fin, la description et la date de dernière modification de la règle. Les règles peuvent être activées, modifiées et supprimées du panneau Détails.
 
-1. Sur le *Règles de recherche* , recherchez la règle dans la grille à afficher, puis cliquez sur **Plus** (...).
+1. Sur le *Marchandisage des recherches* , recherchez la règle dans la grille à afficher, puis cliquez sur **Plus** (...).
 1. Cliquez sur **Afficher les détails**.
 Vous pouvez effectuer l’une des opérations suivantes à partir du panneau Afficher les détails :
 

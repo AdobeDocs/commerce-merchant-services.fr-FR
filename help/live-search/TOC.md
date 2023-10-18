@@ -4,9 +4,9 @@ user-guide-description: "Ce guide fournit des instructions détaillées sur l’
 breadcrumb-title: « Guide [!DNL Live Search] »
 role: Admin
 feature: Services, Search
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 9%
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Style [!DNL Popover] Éléments](storefront-popover-styling.md)
 - [!DNL Live Search] Administration{#live-search-admin}
-   - [Marchandisage des catégories](category-merch.md)
    - [Paramètres de configuration de Commerce](configuration.md)
    - Facettes {#facets}
       - [Présentation](facets.md)
@@ -35,9 +34,10 @@ ht-degree: 9%
       - [Gestion des facettes](facets-manage.md)
    - [Indexation](indexing.md)
    - [Performances](performance.md)
-   - Règles {#rules}
+   - [Marchandisage des catégories](category-merch.md)
+   - Marchandisage des recherches {#rules}
       - [Présentation](rules.md)
-      - [Espace de travail des règles](rules-workspace.md)
+      - [Recherche dans Workspace de marchandisage](rules-workspace.md)
       - [Ajout de règles](rules-add.md)
       - [Gestion des règles](rules-manage.md)
    - [Paramètres](settings.md)

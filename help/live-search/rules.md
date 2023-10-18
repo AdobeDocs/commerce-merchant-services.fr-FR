@@ -1,17 +1,17 @@
 ---
-title: "Règles de recherche"
-description: "[!DNL Live Search] les règles combinent logique et actions pour façonner l’expérience d’achat."
+title: "Rechercher un marchandisage"
+description: "[!DNL Live Search] les règles de marchandisage combinent logique et actions pour façonner l’expérience d’achat."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
-# Règles de recherche
+# Marchandisage des recherches
 
-[!DNL Live Search] les règles combinent logique et actions pour former l’expérience de recherche d’un acheteur dans votre magasin. Vous pouvez utiliser des règles pour dynamiser, enterrer, épingler ou masquer des produits afin d’étalonner les résultats de recherche en temps réel en fonction des objectifs de votre entreprise.
+Le marchandisage de recherche fait référence à un ensemble de règles qui combinent logique et actions pour former l’expérience de recherche d’un acheteur dans votre magasin. Vous pouvez utiliser des règles de marchandisage pour dynamiser, enterrer, épingler ou masquer des produits afin d’étalonner les résultats de recherche en temps réel pour prendre en charge vos objectifs commerciaux.
 
 Chaque règle comporte trois composants principaux :
 
@@ -68,7 +68,7 @@ Les requêtes effectuées dans l’administrateur fonctionnent légèrement diff
 * Si la règle en cours de prévisualisation n’a pas de `query is` et une règle active, correspondante suivante avec une `query is` est trouvée, la condition `query is` est appliquée.
 * Si la règle en cours de prévisualisation n’a pas de `query is` et aucune autre règle avec une `query is` condition est trouvée, puis la règle en cours de prévisualisation est appliquée.
 
-## Règles de catégorie et affectations de produits de catégorie
+## Marchandisage des catégories et affectations de produits de catégorie
 
-[!DNL Live Search] vous permet de filtrer par catégories.
+[!DNL Live Search] vous permet de filtrer par catégories. Voir [Marchandisage des catégories](category-merch.md) pour plus d’informations.
 Cependant, dans Adobe Commerce, vous pouvez créer une catégorie virtuelle avec [Affectations de produits de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Ce type de catégorie est créé au moment de l’exécution et n’existe pas dans la base de données des catégories. Par conséquent, [!DNL Live Search] ne peuvent pas lire ni utiliser ce type de catégorie.

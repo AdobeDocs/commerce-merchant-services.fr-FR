@@ -3,16 +3,16 @@ title: "[!DNL Live Search] Présentation du guide"
 description: "[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, super pertinente et intuitive."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '217'
 ht-degree: 2%
 
 ---
 
 # [!DNL Live Search] Présentation du guide
 
-[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, surpertinente et intuitive, éclair pour Adobe Commerce, sans frais supplémentaires. [!DNL Live Search] optimisée par [Adobe Sensei](https://www.adobe.com/sensei.html) utilise l’intelligence artificielle et des algorithmes d’apprentissage automatique pour effectuer une analyse approfondie des données agrégées sur les visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, génèrent des expériences d’achat très attrayantes, pertinentes et personnalisées. En mettant l&#39;accent sur la rapidité, la pertinence et la facilité d&#39;utilisation, [!DNL Live Search] est un outil de transformation pour les acheteurs comme pour les marchands.
+[!DNL Live Search] pour Adobe Commerce, offre une expérience de recherche rapide, pertinente et intuitive, sans frais supplémentaires. [!DNL Live Search] optimisée par [Adobe Sensei](https://www.adobe.com/sensei.html) utilise l’intelligence artificielle et des algorithmes d’apprentissage automatique pour effectuer une analyse approfondie des données agrégées sur les visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, génèrent des expériences d’achat pertinentes et personnalisées.
 
 [!DNL Live Search] comporte trois zones pour les administrateurs :
 
@@ -23,9 +23,9 @@ ht-degree: 2%
 ## Documentation supplémentaire
 
 | Guide  | Description |
-|--- |--- |
-| Guide de l’utilisateur d’Adobe Commerce 2.4 | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
-| Guide du développeur d’Adobe Commerce 2.4 | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source |
+|------ | ----------- |
+| [Guide de l’utilisateur d’Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentation axée sur le marché pour Adobe Commerce et Magento Open Source |
+| [Guide du développeur d’Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source |
 
 ## Assistance
 

@@ -3,9 +3,9 @@ title: Paramètres des configurations de commerce et [!DNL Live Search] '
 description: Décrit les paramètres de configuration Adobe Commerce qui [!DNL Live Search] peuvent lire.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 694a1c91425f246e497de50530d02f09a3093953
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Il existe des paramètres de configuration de Commerce qui [!DNL Live Search] pr
 | Magasins > Configuration > Général > Configuration de devise > Options de devise > Devise de base | Oui | Oui |
 
 Les prix dans la page de liste de produits du widget et la fenêtre contextuelle sont désormais convertis en devise d’affichage par défaut à l’aide des taux de devise configurés.
+
+## Termes de recherche
+
+[!DNL Live Search] prend [redirections de termes de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) sur les implémentations dans lesquelles Adobe Commerce gère le routage : Luma et d’autres thèmes basés sur php.
 
 ## Valeurs de configuration non prises en charge
 
