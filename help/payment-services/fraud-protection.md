@@ -4,13 +4,13 @@ description: Activation de la protection automatisée contre les fraudes pour [!
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
-source-git-commit: 400d1f8a384fceebcd13e9496f8e218e694d2752
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 480b35fbc57b8528dbc305aa7db52483ba49d98c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # Protection Signifyd contre la fraude
 
@@ -18,15 +18,9 @@ Vous pouvez activer la protection automatisée contre les fraudes pour [!DNL Pay
 
 Adobe Commerce prend en charge les versions 5.4.0 et ultérieures de Signifyd. [!DNL Payment Services] prend en charge les flux Signifyd avant et après l’authentification.
 
+The Signifyd/[!DNL Payment Services] L’intégration offre une couverture pour les cartes de crédit, les cartes de débit, les cartes voûtées, le passage en caisse par l’administrateur et les méthodes de paiement PayPal et Apple. Bien que certains détails des transactions ne soient pas partagés entre les Services de paiement et Signifyd, Signifyd offre une couverture de risque complète pour tous les modes de paiement, assurant une protection optimale.
+
 Voir [Documentation Signifyd](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) pour en savoir plus sur l’installation et la configuration de l’extension.
-
-## Limites de l’intégration
-
-Actuellement, les restrictions suivantes s’appliquent à l’intégration entre Signifyd et [!DNL Payment Services]:
-
-* The Signifyd/[!DNL Payment Services] prise en charge de l’intégration uniquement [champs de carte de crédit](../payment-services/payments-options.md#credit-card-fields) (pas les boutons de paiement PayPal ou Apple Pay). [!DNL Payment Services] envoie les données de commande reçues via les boutons de paiement PayPal et le paiement Apple à Signifyd, mais l’intégration ne fournit que les détails des commandes passées via les champs de carte de crédit.
-* Signifyd ne prend pas en charge les commandes passées dans l’administrateur par un commerçant pour un acheteur.
-* Signifyd ne prend pas en charge les commandes passées avec [cartes de crédit en coffre](../payment-services/vaulting.md).
 
 ## Intégration
 

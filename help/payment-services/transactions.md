@@ -4,9 +4,9 @@ description: Utilisez le rapport Transactions pour connaître les taux d'autoris
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
+source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,8 @@ Depuis la vue Rapport des transactions, vous pouvez filtrer les résultats des �
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Cliquez sur le bouton **[!UICONTROL Filter]** sélecteur.
 1. Activez/désactivez la variable _[!UICONTROL Transaction Result]_pour afficher les résultats du rapport uniquement pour les transactions de commande sélectionnées.
+1. Sélectionnez la variable _[!UICONTROL Card Type]_pour afficher les résultats du rapport pour le type de carte sélectionné. Une info-bulle contenant plus d’informations s’affiche lorsque le processeur de paiement ne parvient pas à identifier le type de carte.
+1. Sélectionnez la variable _[!UICONTROL Card Brand]_pour afficher les résultats du rapport pour la marque de carte sélectionnée. Une info-bulle contenant plus d’informations s’affiche lorsque le processeur de paiement ne parvient pas à identifier la marque de carte.
 1. Activez/désactivez la variable _[!UICONTROL Payment Method]_pour afficher les résultats des rapports uniquement pour les méthodes de paiement sélectionnées.
 1. Saisissez un _Montant de la commande min_ ou _Montant max. de la commande_ pour afficher les résultats du rapport sur cette période.
 1. Saisissez un _[!UICONTROL Order ID]_pour rechercher une transaction spécifique.
