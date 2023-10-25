@@ -2,9 +2,9 @@
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
+source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
 1. Dans le _Sélectionner le type de page_ , sélectionnez la page sur laquelle vous souhaitez que la recommandation apparaisse dans les options suivantes :
 
-   - Page d’accueil
-   - Catégorie
-   - Détails du produit
-   - Panier
-   - Confirmation
-   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * Page d’accueil
+   * Catégorie
+   * Détails du produit
+   * Panier
+   * Confirmation
+   * [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Vous pouvez créer jusqu’à cinq unités de recommandations actives pour chaque type de page et jusqu’à 25 unités pour le Créateur de pages. Le type de page est grisé Lorsque la limite est atteinte.
 
@@ -45,21 +45,6 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
    _Nom de la recommandation et placement de page_
 
 1. Dans le _Sélectionner le type de recommandation_ , spécifiez la variable [type de recommandation](type.md) vous souhaitez afficher la page sélectionnée. Pour certaines pages, la variable [placement](placement.md) de recommandations est limitée à certains types.
-
-   Certains types de recommandations utilisent les données comportementales de vos acheteurs pour [former des modèles d’apprentissage automatique ;](behavioral-data.md) pour créer des recommandations personnalisées. Pour vous aider à visualiser la progression de la formation de chaque type de recommandation, cette section affiche une mesure de la préparation pour chaque type. Ces indicateurs de préparation sont calculés sur la base de deux facteurs :
-
-   - Taille de jeu de résultats suffisante : la plupart des scénarios renvoient-ils suffisamment de résultats pour éviter d’utiliser [recommandations de sauvegarde](behavioral-data.md#backuprecs)?
-
-   - Suffisante variété d’ensembles de résultats : les produits renvoyés représentent-ils une variété de produits de votre catalogue ? L’objectif de ce facteur est d’éviter qu’une minorité de produits soit le seul élément recommandé sur l’ensemble du site.
-
-   En fonction des facteurs ci-dessus, une valeur de préparation est calculée et affichée. Un type de recommandation est considéré comme prêt à être déployé lorsque sa valeur de préparation est supérieure ou égale à 75 %. Un type de recommandation est considéré comme partiellement prêt lorsque son état de préparation est d’au moins 50 %. Un type de recommandation est considéré comme non prêt à être déployé lorsque sa valeur de préparation est inférieure à 50 %.
-
-   >[!NOTE]
-   >
-   >L’indicateur ne peut jamais atteindre 100 %.
-
-   ![Type de recommandation](assets/create-recommendation-select-type.png)
-   _Type de recommandation_
 
 1. Dans le _Libellé d’affichage de la vitrine_ , saisissez la [label](placement.md#recommendation-labels) qui est visible par vos acheteurs, par exemple &quot;Meilleurs vendeurs&quot;.
 
@@ -69,8 +54,8 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
 1. Dans le _Sélectionner un emplacement_ , indiquez l’emplacement d’affichage de l’unité de recommandation sur la page.
 
-   - Au bas du contenu principal
-   - En haut du contenu principal
+   * Au bas du contenu principal
+   * En haut du contenu principal
 
 1. (Facultatif) Pour modifier l’ordre des recommandations, sélectionnez et déplacez les lignes dans la variable _Choisir la position_ table.
 
@@ -86,9 +71,50 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 
 1. Une fois l’opération terminée, cliquez sur l’une des options suivantes :
 
-   - **Enregistrer en tant que brouillon** pour modifier ultérieurement l’unité de recommandation. Vous ne pouvez pas modifier le type de page ou de recommandation d’une unité de recommandation dans un état de brouillon.
+   * **Enregistrer en tant que brouillon** pour modifier ultérieurement l’unité de recommandation. Vous ne pouvez pas modifier le type de page ou de recommandation d’une unité de recommandation dans un état de brouillon.
 
-   - **Activer** pour activer l’unité de recommandation sur votre vitrine.
+   * **Activer** pour activer l’unité de recommandation sur votre vitrine.
+
+## Indicateurs de préparation
+
+Certains types de recommandations utilisent les données comportementales de vos acheteurs pour [former des modèles d’apprentissage automatique ;](behavioral-data.md) pour créer des recommandations personnalisées.
+
+Nécessite uniquement des données de catalogue. Aucune donnée comportementale n’est nécessaire pour les éléments suivants :
+
+* _Le plus apprécié_
+* _Récemment consultés_
+* _Similarité visuelle_
+
+Sur la base des six derniers mois des données comportementales du storefront :
+
+* _A consulté ceci, consulté cela_
+* _Consulté ceci, acheté cela_
+* _Acheté ceci, acheté cela_
+* _Recommandé pour vous_
+
+Les types de recommandations basés sur la popularité utilisent les sept derniers jours des données comportementales du storefront :
+
+* Les plus consultés
+* Le plus acheté
+* Ajout au panier
+* Tendance
+
+Les valeurs des indicateurs de préparation devraient fluctuer en raison de facteurs tels que la taille globale du catalogue, le volume des événements d’interaction du produit (vues, ajouts au panier, achats) et le pourcentage de SKU qui enregistrent ces événements dans une certaine période, comme indiqué ci-dessus. Par exemple, pendant le trafic de haute saison des fêtes, les indicateurs de préparation peuvent afficher des valeurs plus élevées que lors des périodes de volume normal.
+
+Pour vous aider à visualiser la progression de la formation de chaque type de recommandation, la variable _Sélectionner le type de recommandation_ affiche une mesure de l’état de préparation de chaque type. Ces indicateurs de préparation sont calculés sur la base de deux facteurs :
+
+* Taille de jeu de résultats suffisante : la plupart des scénarios renvoient-ils suffisamment de résultats pour éviter d’utiliser [recommandations de sauvegarde](behavioral-data.md#backuprecs)?
+
+* Suffisante variété d’ensembles de résultats : les produits renvoyés représentent-ils une variété de produits de votre catalogue ? L’objectif de ce facteur est d’éviter qu’une minorité de produits soit le seul élément recommandé sur l’ensemble du site.
+
+En fonction des facteurs ci-dessus, une valeur de préparation est calculée et affichée. Un type de recommandation est considéré comme prêt à être déployé lorsque sa valeur de préparation est supérieure ou égale à 75 %. Un type de recommandation est considéré comme partiellement prêt lorsque son état de préparation est d’au moins 50 %. Un type de recommandation est considéré comme non prêt à être déployé lorsque sa valeur de préparation est inférieure à 50 %. Il s’agit de directives générales, mais chaque cas peut varier en fonction de la nature des données collectées, comme indiqué ci-dessus.
+
+![Type de recommandation](assets/create-recommendation-select-type.png)
+_Type de recommandation_
+
+>[!NOTE]
+>
+>Les indicateurs peuvent ne jamais atteindre 100 %.
 
 ## Aperçu de Recommendations {#preview}
 
