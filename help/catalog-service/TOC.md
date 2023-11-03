@@ -5,9 +5,9 @@ breadcrumb-title: « Guide [!DNL Catalog Service] »
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 0089d1bba0ebd18b0dbfea123ba8a6e0a33af1b2
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '71'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 8%
 - [Service d’ingestion de flux (bêta)](feed-ingestion.md)
 - Requêtes GraphQL {#graphql}
    - [requête categories](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
-   - [requête products](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/products/)
-   - [requête productSearch](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/product-search/)
-   - [requête refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/refine-product/)
+   - [requête products](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
+   - [requête productSearch](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/)
+   - [requête refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [Notes de mise à jour](release-notes.md)

@@ -4,9 +4,9 @@ user-guide-description: "Ce guide fournit des instructions détaillées sur l’
 breadcrumb-title: « Guide [!DNL Live Search] »
 role: Admin
 feature: Services, Search
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 0089d1bba0ebd18b0dbfea123ba8a6e0a33af1b2
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '94'
 ht-degree: 10%
 
 ---
@@ -49,4 +49,4 @@ ht-degree: 10%
    - [Workspace](workspace.md)
 - Requêtes GraphQL {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
-   - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/queries/product-search/)
+   - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
