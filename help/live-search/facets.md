@@ -2,9 +2,9 @@
 title: "Facettes"
 description: "[!DNL Live Search] les facettes utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La facette est une méthode de filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut comme critères de recherche. La recherche à facettes est similaire, mais considérablement &quot;plus intelligente&quot; que la norme [navigation par couches](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). La liste des filtres disponibles est déterminée par la variable [attributs filtrables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) des produits renvoyés dans les résultats de recherche.
 
-[!DNL Live Search] utilise la variable `productSearch` qui renvoie des facettes et d’autres données spécifiques à [!DNL Live Search]. Voir [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) dans la documentation destinée aux développeurs pour consulter des exemples de code.
+[!DNL Live Search] utilise la variable `productSearch` qui renvoie des facettes et d’autres données spécifiques à [!DNL Live Search]. Voir [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) dans la documentation destinée aux développeurs pour consulter des exemples de code.
 
 ![Résultats de la recherche filtrés](assets/storefront-search-results-run.png)
 

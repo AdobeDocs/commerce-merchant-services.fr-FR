@@ -2,7 +2,7 @@
 title: '[!DNL Live Search] Workspace'
 description: La variable [!DNL Live Search] workspace est utilisé pour configurer, gérer et surveiller les performances de recherche.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -28,5 +28,5 @@ Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commer
 | [Synonymes](synonyms.md) | Étendez la portée de la recherche pour inclure les mots que les acheteurs peuvent utiliser pour trouver des produits différents de ceux de votre catalogue. |
 | [Marchandisage des recherches](rules.md) | Formez l’expérience de recherche à l’aide de règles logiques qui déclenchent des actions planifiées. Amplifiez, enseignez, épinglez ou masquez des produits afin d’étalonner les résultats de recherche en fonction de vos objectifs commerciaux. |
 | [Marchandisage des catégories](category-merch.md) | Appliquez des règles et du marchandisage intelligent au niveau de la catégorie. |
-| [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Les développeurs connectés à l’administrateur de votre boutique peuvent composer et tester des requêtes avec des données de catalogue réelles. Pour en savoir plus, accédez à [Présentation de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) dans le [!DNL Live Search] documentation destinée aux développeurs. |
+| [GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) | Les développeurs connectés à l’administrateur de votre boutique peuvent composer et tester des requêtes avec des données de catalogue réelles. Pour en savoir plus, accédez à [Présentation de GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) dans le [!DNL Live Search] documentation destinée aux développeurs. |
 | [Paramètres](settings.md) | Déterminez comment les valeurs des facettes de prix sont regroupées par tranche de prix dans le storefront et définissez la langue d’indexation. |

@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 59de14773849dfd996b6eac115ed821342ccd48d
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ _18 juillet 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) Le service de catalogue prend désormais en charge la variable [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Requête GraphQL pour le Recommendations de produit.
+![Nouveau](../assets/new.svg) Le service de catalogue prend désormais en charge la variable [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) Requête GraphQL pour le Recommendations de produit.
 
 ### Version 1.10
 
@@ -90,7 +90,7 @@ _28 mars 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) Ajout d’échantillons aux [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) requête.
+![Nouveau](../assets/new.svg) Ajout d’échantillons aux [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) requête.
 ![Nouveau](../assets/new.svg) Ajout de la possibilité d’obtenir `entityId` using [Mesh de l’API](mesh.md).
 
 ### Version V1.5
@@ -99,7 +99,7 @@ _6 mars 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) Ajout [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) Fonctionnalité de GraphQL.
+![Nouveau](../assets/new.svg) Ajout [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) Fonctionnalité de GraphQL.
 ![Correction](../assets/fix.svg) Amélioration des performances et de l’évolutivité des API.
 
 ### Version V1.4

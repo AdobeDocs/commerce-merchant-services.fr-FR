@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a3f89b74f3cafb855e39b410c1ab60e09d789da0
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ _1 septembre 2023_
 
 ### Mises à jour
 
-![Correction](../assets/fix.svg) Le widget Liste des produits a été mis à jour pour utiliser la variable [API Catalog Service](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![Correction](../assets/fix.svg) Le widget Liste des produits a été mis à jour pour utiliser la variable [API Catalog Service](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -132,7 +132,7 @@ _14 mars 2023_
 
 ![Nouveau](../assets/new.svg) Carte des éléments de produit dans l’aperçu des règles
 ![Nouveau](../assets/new.svg) [Widget de page de liste de produits](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-![Nouveau](../assets/new.svg) [Options de filtrage des catégories](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![Nouveau](../assets/new.svg) [Options de filtrage des catégories](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![Nouveau](../assets/new.svg) Ajout de la possibilité de faire glisser et de déposer des événements Pin
 ![Nouveau](../assets/new.svg) Nouvelles actions Epingler : * Epingler à l’emplacement - Bouton Epingler pour créer l’événement Epingler d’un seul clic * Epingler au haut - Placer le produit dans la première position * Epingler au bas des résultats * Détacher un événement d’un seul clic
 ![Nouveau](../assets/new.svg) [Classement intelligent des règles](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
@@ -179,7 +179,7 @@ Il est recommandé de mettre à niveau et de tester avant de passer en productio
 
 ![Nouveau](../assets/new.svg) La recherche en direct prend désormais en charge le filtrage selon le paramètre &quot;Afficher les produits en rupture de stock&quot; dans l’administrateur. Si &quot;Produits en rupture de stock&quot; est défini sur false, `inStock = true` est ajouté au filtre.
 ![Correction](../assets/fix.svg) Pour améliorer les performances, le bloc &quot;Suggestions&quot; a été supprimé de la fenêtre contextuelle Recherche en direct . Les données sont toujours transmises par GraphQL, au cas où vous souhaitez remplacer la fonctionnalité.
-![Correction](../assets/fix.svg) `categories` et `categoryPath` ont remplacé `categoryIds` pour le filtrage par catégorie. En savoir plus dans la section [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) rubrique.
+![Correction](../assets/fix.svg) `categories` et `categoryPath` ont remplacé `categoryIds` pour le filtrage par catégorie. En savoir plus dans la section [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) rubrique.
 ![Correction](../assets/fix.svg) Auparavant, un utilisateur lié à une entreprise B2B recevait un code de groupe client incorrect lors des recherches. La fonction de recherche en direct renvoie désormais la valeur correcte.
 ![Correction](../assets/fix.svg) Auparavant, la recherche en direct renvoyait une erreur lors de la recherche d’un terme qui n’existe pas. Ce bogue est maintenant corrigé.
 
@@ -209,7 +209,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 ![Nouveau](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) pris en charge pour [!DNL Live Search].
 ![Nouveau](../assets/new.svg) La variable [!DNL Live Search] le processus d’installation est mis à jour avec des modifications avancées des processus.
 ![Correction](../assets/fix.svg) [Recherche avancée](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) lien supprimé du pied de page du storefront.
-![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par [API Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) lorsqu’elle est utilisée en rapport avec la version bêta de PWA : `description`, `name`, `short_description`
+![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par [API Commerce GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) lorsqu’elle est utilisée en rapport avec la version bêta de PWA : `description`, `name`, `short_description`
 ![Bogue](../assets/bug.svg) La version bêta de PWA pour [!DNL Live Search] ne prend pas en charge [gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1 {#131}
