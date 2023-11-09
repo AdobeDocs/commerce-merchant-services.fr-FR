@@ -3,11 +3,11 @@ title: Installation manuelle de l’indexation des prix SaaS
 description: Installation de l’indexation des prix SaaS pour une ancienne version
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
+source-git-commit: b2ebf26c9a34e5e2e08b7adbabcc780f24363e3c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 # Installation manuelle de l’indexation des prix SaaS
 
 L’indexation des prix SaaS est disponible prête à l’emploi pour la prise en charge [dernière version](index.md#Requirements) de Commerce Services.
-Si vous ne disposez pas de la dernière version et souhaitez activer l’indexation des prix SaaS pour votre instance Adobe Commerce, veuillez utiliser ce mini-guide.
+Si vous ne disposez pas de la dernière version et souhaitez activer l’indexation des prix SaaS pour votre instance Adobe Commerce, utilisez ce guide.
 
 ## Conditions préalables
 
@@ -29,7 +29,7 @@ Si vous ne disposez pas de la dernière version et souhaitez activer l’indexat
 ## Installation des modules requis
 
 Selon votre configuration, le processus d’installation peut être légèrement différent.
-Il existe des extensions qui ajoutent les nouveaux flux et le code qui les prend en charge.
+Il existe des extensions qui ajoutent les nouveaux flux et le code de prise en charge, ainsi qu’une extension qui supprime le flux de prix par défaut.
 
 1. Ajoutez les modules suivants à votre `composer.json` fichier :
 
@@ -52,7 +52,6 @@ Après la mise à niveau, trois nouveaux flux sont disponibles :
 * `scopesCustomerGroup` : responsable de la diffusion des groupes de clients au service
 * `scopesWebsite` : responsable de la diffusion des sites web, des groupes de magasins et des vues de magasin au service.
 
-
 1. Configurez les nouveaux flux à définir en mode &quot;Mise à jour selon le calendrier&quot; :
 
    ```bash
@@ -69,8 +68,7 @@ Après la mise à niveau, trois nouveaux flux sont disponibles :
 
 Exécutez les indexeurs ci-dessus manuellement, si nécessaire. Dans le cas contraire, les données sont actualisées dans le processus de synchronisation standard. En savoir plus sur les [Synchronisation du catalogue](../landing/catalog-sync.md) service.
 
-
-Pour configurer la recherche en direct et l’adaptateur de catalogue, suivez la [Connecteur Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instructions.
+Les utilisateurs de Luma et Adobe Commerce Core GraphQL peuvent installer la variable [`Catalog Adapter`](catalog-adapter.md) qui fournit la compatibilité Luma et Core GraphQl et désactive l’indexeur de prix des produits Adobe Commerce.
 
 ## Avertissements
 

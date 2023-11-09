@@ -3,10 +3,10 @@ title: Indexation des prix SaaS
 description: Utilisation de l’indexation des prix SaaS pour améliorer les performances
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
-exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
+exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Tous les commerçants peuvent bénéficier de ces améliorations, mais ceux qui 
 
 L’indexation des prix SaaS est disponible gratuitement pour les clients utilisant les services Adobe Commerce et prend en charge le calcul des prix pour tous les types de produits Adobe Commerce intégrés.
 
-Ce mini-guide décrit le fonctionnement de l’indexation de prix SaaS et comment l’activer.
+Ce guide décrit le fonctionnement de l’indexation de prix SaaS et comment l’activer.
 
 ## Conditions
 
@@ -43,7 +43,6 @@ Ce mini-guide décrit le fonctionnement de l’indexation de prix SaaS et commen
 
    * [Service de catalogue](../catalog-service/overview.md)
    * [Recherche en direct](../live-search/guide-overview.md)
-   * [Recommendations de produit](../product-recommendations/guide-overview.md)
 
 Les utilisateurs de Luma et Adobe Commerce Core GraphQL peuvent installer la variable [`catalog-adapter`](catalog-adapter.md) qui fournit la compatibilité Luma et Core GraphQl et désactive l’indexeur de prix des produits Adobe Commerce.
 
@@ -51,7 +50,7 @@ Les utilisateurs de Luma et Adobe Commerce Core GraphQL peuvent installer la var
 
 Après la mise à niveau de votre instance Adobe Commerce avec la prise en charge de l’indexation de prix SaaS, synchronisez les nouveaux flux :
 
-```
+```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
 bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
@@ -63,109 +62,33 @@ Les calculs de prix sont pris en charge pour les types de produits personnalisé
 
 Si vous disposez d’un type de produit personnalisé qui utilise une formule spécifique pour calculer le prix final, vous pouvez étendre le comportement du flux de prix du produit.
 
-## Utilisation
-
-```xml
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
-        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
-    </type>
-</config>
-```
-
-Les nouveaux flux doivent être synchronisés manuellement avec la variable `resync` [Commande CLI](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Dans le cas contraire, les données sont actualisées dans le processus de synchronisation standard. Obtenez plus d’informations sur la variable [Synchronisation du catalogue](../landing/catalog-sync.md) processus.
-
-## Scénarios d’utilisation
-
-### Luma sans dépendances d’extension
-
-* Un commerçant Luma ou Adobe Commerce Core GraphQL qui a installé le service requis (Live Search, Recommendations produit, Catalog Service)
-* Aucune extension tierce reposant sur l’indexeur de prix de base PHP
-* Vendre des produits dynamiques simples, configurables, groupés, virtuels et regroupés
-
-1. Activez les nouveaux flux.
-1. Installez l’adaptateur de catalogue.
-
-### Luma et Adobe Commerce Core GraphQl avec dépendances de l’indexeur de prix principal PHP
-
-* Un commerçant Luma ou Adobe Commerce Core GraphQL qui a installé un service pris en charge (Live Search, Recommendations produit, Catalog Service)
-* Avec une extension tierce reposant sur l’indexeur de prix de base PHP
-* Vendre des produits dynamiques simples, configurables, groupés, virtuels et regroupés
-
-1. Activation des nouveaux flux
-1. Installez l’adaptateur de catalogue.
-1. Réactivez l’indexeur de prix de base PHP.
-1. Utilisez les nouveaux flux et le code de compatibilité Luma dans la variable `catalog-adapter` module .
-
-### Marchand sans tête
-
-* Un commerçant sans tête qui dispose d’un service pris en charge installé (recherche en direct, Recommendations de produit, service de catalogue)
-* Pas de dépendance à l’indexeur de prix de base PHP
-* Vendre des produits dynamiques simples, configurables, groupés, virtuels et regroupés
-
-1. Activation de nouveaux flux
-1. Installez l’adaptateur de catalogue, qui désactive l’indexeur de prix de base PHP.
-
-## Prix personnalisés
-
-L’indexeur de prix SaaS prend en charge les fonctionnalités de prix de type de produit personnalisées disponibles dans Adobe Commerce, telles que le prix spécial, le prix du groupe et le prix de la règle de catalogue.
-
-Par exemple : il existe un type de produit personnalisé  `custom_type` et un produit avec le SKU &quot;Produit de type personnalisé&quot;.
-
-Par défaut, l’extension Exportation de données Commerce envoie le flux de prix suivant à l’indexeur de prix :
-
-```json
-{
-    "sku": "Custom Type Product",
-    "type": "SIMPLE", // must be "SIMPLE" regardless of the real product type
-    "customerGroupCode": "0",
-    "websiteCode": "base",
-    "regular": 123, // the regular base price found in catalog_product_entity_decimal table
-    "discounts":    // list of discounts: special_price, group, catalog_rule
-    [
-        {
-            "code": "catalog_rule",
-            "price": 102.09
-        }
-    ],
-    "deleted": false,
-    "updatedAt": "2023-07-31T13:07:54+00:00"
-}
-```
-
-Si &quot;Type de produit personnalisé&quot; utilise une formule unique pour calculer le prix du produit, les intégrateurs système peuvent remplacer les champs de prix et de remise en étendant l’extension Exportation de données de commerce.
-
 1. Créez un module externe sur le `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` classe .
 
-`di.xml` fichier :
-
-```xml
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
-        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" disabled="false" />
-    </type>
-</config>
-```
+   ```xml
+   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+       <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+           <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
+       </type>
+   </config>
+   ```
 
 1. Créez une méthode avec la formule personnalisée :
 
-```php
-class UpdatePriceFromFeed
-{
-    /**
-    * @param ProductPrice $subject
-    * @param array $result
-    * @param array $values
-    *
-    * @return array
-    */
-    public function afterGet(ProductPrice $subject, array $result, array $values) : array
-    {
-        // Get all custom products, prices and discounts per website and customer groups
-        // Override the output $result with your data for the corresponding products
-        return $result;
-    }
-}
-```
+   ```php
+   class UpdatePriceFromFeed
+   {
+       /**
+       * @param ProductPrice $subject
+       * @param array $result
+       * @param array $values
+       *
+       * @return array
+       */
+       public function afterGet(ProductPrice $subject, array $result, array $values) : array
+       {
+           // Override the output $result with your data for the corresponding products (see original method for details) 
+           return $result;
+       }
+   }
+   ```

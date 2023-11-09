@@ -3,9 +3,9 @@ title: Extension de l’adaptateur de catalogue
 description: Utilisation de l’adaptateur de catalogue pour effectuer le rendu des prix à partir de Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: 6b578e7113c278a05a64f2db5e032bccc4a9580a
+source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ L’indexeur de prix des produits Adobe Commerce est désactivé et ne peut pas 
 ## Conditions
 
 * Adobe Commerce 2.4.4+
-* L’un des services de commerce suivants est installé :
+* Vous devez installer les deux services Commerce suivants :
 
    * [Service de catalogue](../catalog-service/overview.md)
    * [Recherche en direct](../live-search/guide-overview.md)
@@ -34,14 +34,14 @@ Une fois ces services installés, exécutez la commande suivante :
 composer require adobe-commerce/catalog-adapter
 ```
 
-## Réactivez l’indexeur de prix de produit Adobe Commerce
+## Réactivez l’indexeur de prix des produits Adobe Commerce
 
 Si des applications tierces dépendent de l’indexeur de prix des produits Adobe Commerce par défaut, elles peuvent être réactivées à l’aide des commandes suivantes :
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
@@ -78,4 +78,4 @@ Voici quelques exemples courants `Catalog Adapter` scénarios.
 * Un commerçant avec une instance Commerce sans interface utilisateur graphique avec les services requis installés (Live Search, Recommendations produit, Catalog Service)
 * Ne pas dépendre de l’indexeur de prix de produit Adobe Commerce par défaut
 
-1. Installer &quot;price disabler&quot; à partir du package de l’adaptateur de catalogue
+1. Installez le `magento/module-price-indexer-disabler` du module de l’adaptateur de catalogue.

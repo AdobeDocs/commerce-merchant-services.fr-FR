@@ -3,9 +3,9 @@ title: Synchronisation du catalogue
 description: Découvrez comment exporter des données de produit à partir du [!DNL Commerce] serveur à [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Avec la variable **Synchronisation du catalogue** Vous pouvez réaliser les opé
 - Afficher l’état de synchronisation (**En cours**, **Succès**, **En échec**)
 - Afficher le nombre total de produits synchronisés
 - Rechercher des produits synchronisés pour afficher leur état actuel
-- Rechercher dans le catalogue du magasin par nom, SKU, etc.
+- Rechercher un catalogue de magasin par nom, SKU, etc.
 - Affichage des détails du produit synchronisé dans JSON pour aider à diagnostiquer une incohérence de synchronisation
 - Réinitialiser le processus de synchronisation
 
@@ -67,7 +67,6 @@ Si vous devez lancer une nouvelle synchronisation de votre catalogue avant que l
 1. Dans le _Resynchronisation des données_ , cliquez sur [!UICONTROL Resync].
 
    [!DNL Commerce] synchronise votre catalogue lors de la prochaine fenêtre de synchronisation planifiée. Selon la taille de votre catalogue, cette opération peut prendre un certain temps.
-
 
 ## Produits de catalogue synchronisés
 
@@ -166,7 +165,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 Si vous ne voyez pas les données attendues dans [!DNL Commerce Service], vérifiez si un problème s’est produit au cours de la synchronisation avec l’événement [!DNL Adobe Commerce] à l’instance [!DNL Commerce Service] plateforme.
 
-Il existe 2 fichiers journaux dans la variable `var/log/` directory:
+Il existe deux fichiers journaux dans la variable `var/log/` directory:
 
 - `commerce-data-export-errors.log` - si une erreur s’est produite au cours de _collecte_ phase
 - `saas-export-errors.log` - si une erreur s’est produite au cours de _transmission_ phase
@@ -205,4 +204,4 @@ Les données de profil sont stockées dans `var/log/commerce-data-export.log` au
 
 #### Soumettre une demande d’assistance
 
-Si des erreurs ne sont pas liées à la configuration ou aux extensions tierces, envoyez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) avec autant d’informations que possible.
+Si des erreurs ne sont pas liées à la configuration ou à des extensions tierces, envoyez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) avec autant d’informations que possible.
