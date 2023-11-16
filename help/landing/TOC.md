@@ -5,16 +5,16 @@ title: Services pour Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 1858e450d635105d4655ec24a01d2e23ae2e1244
+source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 24%
+source-wordcount: '103'
+ht-degree: 25%
 
 ---
 
 # Documentation sur les services pour Adobe Commerce {#user-guides}
 
-- [Présentation](home.md)
+- [Vue d’ensemble](home.md)
 - Informations sur la version {#release-information}
    - [Notes de mise à jour](/help/landing/release-notes-all.md)
    - [Nouveautés de la documentation](/help/landing/whats-new.md)
@@ -28,7 +28,7 @@ ht-degree: 24%
    - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
    - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
 - Services d’intégration {#integration-services}
-   - [Connecteur Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [Connecteur Services](/help/landing/saas.md)
 - Services de données {#data-services}
    - [Synchronisation du catalogue](/help/landing/catalog-sync.md)
