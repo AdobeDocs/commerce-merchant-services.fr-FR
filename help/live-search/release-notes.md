@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,47 @@ _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) [!DNL Live Search] les clients peuvent désormais profiter de la nouvelle [Indexeur de prix SaaS](../price-index/index.md).
 
+## [!DNL Live Search] 4.0.0 {#400}
+
+_13 novembre 2023_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+### Nouvelles fonctionnalités
+
+![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge les échantillons de couleurs dans le widget PLP.
+![Nouveau](../assets/new.svg) [!DNL Live Search] affiche maintenant le nom de la catégorie plutôt que l’ID de catégorie.
+![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge les prix balisés dans le widget PLP.
+![Nouveau](../assets/new.svg) Ajout du bouton &quot;Masquer les filtres&quot; pour masquer le panneau des filtres.
+
+
+### Mises à jour
+
+![Correction](../assets/fix.svg) La variable [!DNL Live Search] Le widget PLP est désormais activé par défaut pour les nouvelles installations.
+![Correction](../assets/fix.svg) Reconfiguration des styles CSS pour mieux isoler les classes de widget.
+![Correction](../assets/fix.svg) Correctifs de bogues mineurs
+
+Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] extension vers version >= 4.0.0 pour accéder à ces fonctionnalités.
+
+Après avoir installé la version 3.1.1 ou ultérieure, activez les nouveaux indexeurs :
+
+* Flux de prix du produit
+* Porte le flux de données du site web
+* Porte le flux de données de groupes de clients
+
+Après la mise à niveau, testez la configuration mise à jour dans l’AQ ou l’Évaluation avant de publier les modifications en production.
+
+## Versions précédentes
+
++++3.1.1 et versions antérieures
+
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _15 septembre 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-### Nouvelles fonctionnalités
+
 
 ![Nouveau](../assets/new.svg) Un nouvel onglet Marchandisage des catégories a été ajouté. Les utilisateurs peuvent désormais ajouter des classements intelligents et des classements manuels (épingle, amplification, inhumation, masquage) par catégorie.
 ![Nouveau](../assets/new.svg) Les utilisateurs peuvent ajouter une règle de catégorie unique avec un classement intelligent ou manuel
@@ -68,20 +102,6 @@ _15 septembre 2023_
 ![Correction](../assets/fix.svg) &quot;Événements&quot; (Amplifier/Epingler/Masquer) a été renommé &quot;Classement manuel&quot;
 ![Correction](../assets/fix.svg) &quot;Type de classement&quot; a été renommé &quot;Classement intelligent&quot;.
 ![Correction](../assets/fix.svg) Correctifs de bogues mineurs
-
-Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] version d’extension >= 3.1.1 pour accéder à ces fonctionnalités.
-
-Après l’installation de la version 3.1.1, ces nouveaux indexeurs doivent être activés :
-
-* Flux de prix du produit
-* Porte le flux de données du site web
-* Porte le flux de données de groupes de clients
-
-Il est recommandé de mettre à niveau et de tester l’assurance qualité ou l’évaluation avant d’appliquer les modifications à la production.
-
-## Versions précédentes
-
-+++3.1.0 et versions antérieures
 
 ## [!DNL Live Search] 3.1.0 {#310}
 

@@ -3,9 +3,9 @@ title: "Présentation de l’intégration"
 description: "[!DNL Live Search] flux d’intégration, exigences système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
+source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,22 @@ Pour restreindre les groupes de clients à l’aide des autorisations du catalog
 ### Synonymes
 
 * [!DNL Live Search] peut gérer jusqu’à 200 synonymes par vue de magasin.
+
+## Prise en charge linguistique
+
+[!DNL Live Search] Les widgets prennent en charge les langues suivantes :
+
+* en_US (par défaut)
+* de_DE
+* es_MX
+* fr_FR
+* it_IT
+* ja_JA
+* nl_NL
+* no_NO
+* pt_PT
+
+Si le widget détecte que le paramètre de langue d’administrateur Commerce (_Magasins_ > Paramètres > _Configuration_ > _Général_ > Options de pays) correspond à une langue prise en charge. Par défaut, cette langue est utilisée. Sinon, les widgets sont définis par défaut sur Anglais.
 
 ## Marchandisage des catégories
 

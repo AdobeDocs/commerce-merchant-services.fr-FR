@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Le [!DNL Live Search storefront popover] renvoie dynamiquement les produits suggérés et les miniatures."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,6 @@ Par défaut, la valeur Recherche catalogue - Limite de saisie automatique est d�
 
 La variable [Service de catalogue pour Adobe Commerce](../catalog-service/overview.md) L’extension fournit des données de catalogue de modèles d’affichage enrichies pour générer rapidement et intégralement des expériences storefront liées aux produits. Le service de catalogue peut être utilisé conjointement avec Live Search pour fournir des fonctionnalités qui ne sont actuellement pas prises en charge par l’extension native :
 
-* Échantillons de couleurs
 * Attributs étendus
 * D’autres informations sur les produits peuvent être introduites
 
