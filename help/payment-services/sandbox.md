@@ -3,9 +3,9 @@ title: Configuration de l’environnement de test
 description: Utilisation d’un compte sandbox PayPal à utiliser [!DNL Payment Services] en mode test.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Pour réinitialiser votre compte sandbox :
 
 ## Activer le numéro de téléphone de contact
 
-Le numéro de téléphone de contact permet d&#39;obtenir les numéros de téléphone de contact que PayPal collecte auprès de vos clients. PayPal collecte toujours les numéros de téléphone des titulaires du compte PayPal afin de les aider à confirmer leur identité et à les contacter pour résoudre les problèmes sur leurs comptes, ou pour terminer leurs processus d&#39;exécution. Cependant, PayPal déconseille l&#39;utilisation des numéros de téléphone directement par le marchand, car cela peut avoir un impact négatif sur les ventes. Voir [PayPal reçoit les numéros de téléphone des contacts](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) pour plus d’informations.
+Le numéro de téléphone de contact permet d&#39;obtenir les numéros de téléphone de contact que PayPal collecte auprès de vos clients. PayPal collecte toujours les numéros de téléphone des titulaires du compte PayPal afin de les aider à confirmer leur identité et à les contacter pour résoudre les problèmes sur leurs comptes, ou pour terminer leurs processus d&#39;exécution. Cependant, PayPal déconseille l&#39;utilisation des numéros de téléphone directement par le marchand, car cela peut avoir un impact négatif sur les ventes. Voir [PayPal reçoit les numéros de téléphone des contacts](https://www.sandbox.paypal.com/businessmanage/preferences/website) pour plus d’informations.
 
 Cette fonctionnalité est `off` par défaut. Lorsque vous l’activez, les administrateurs de magasin peuvent voir les numéros de téléphone lorsqu’un client effectue un flux de passage en caisse de marque en dehors de la page de passage en caisse.
 
