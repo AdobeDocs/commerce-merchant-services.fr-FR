@@ -3,9 +3,9 @@ title: "Présentation de l’intégration"
 description: "[!DNL Live Search] flux d’intégration, exigences système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ Le marchandisage des catégories vous permet de configurer [!DNL Live Search] po
 Cette vidéo présente le marchandisage par catégorie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## Référentiel de code de widget
+
+Le widget Page de liste de produits et le widget Fenêtre contextuelle de recherche peuvent tous deux être téléchargés à partir de leur référentiel github.
+
+Cela permet aux développeurs de personnaliser entièrement les fonctionnalités et le style. Ces utilisateurs hébergent le code eux-mêmes tout en tirant parti de la fonction [!DNL Live Search] service.
+
+* [Widget PLP](https://github.com/adobe/storefront-product-listing-page)
+* [Barre de recherche](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 

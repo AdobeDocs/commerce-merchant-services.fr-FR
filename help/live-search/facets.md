@@ -2,9 +2,9 @@
 title: "Facettes"
 description: "[!DNL Live Search] les facettes utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ Les exigences d’attribut de catégorie et de produit pour la facette sont simi
 * 50 attributs triables
 * 200 attributs filtrables
 * 200 attributs pouvant faire l’objet de recherches
+
+>[!NOTE]
+>
+> Si plus de 200 attributs filtrables sont définis, il n’est pas déterministe de savoir lequel 200 sera réellement indexé.
+
+Si vous avez un grand nombre d’attributs à utiliser, pensez à combiner les attributs en un seul &quot;méta-attribut&quot;. Par exemple, les chaussures ont généralement des tailles numériques, tandis que les chemises sont généralement de la taille &quot;S/M/L/XL&quot;. Ces deux types de tailles peuvent être combinés en un seul attribut pouvant faire l’objet d’une recherche.
 
 | Paramètre | Description |
 |--- |--- |
