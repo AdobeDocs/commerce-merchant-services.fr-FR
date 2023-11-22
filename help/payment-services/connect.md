@@ -3,9 +3,9 @@ title: Connexion à votre instance
 description: Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,16 @@ Voir [liste des services Commerce disponibles qui utilisent l’API](https://doc
 Pour savoir comment générer une clé API pour des environnements de test ou de production, voir [Informations d’identification](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >Il est recommandé de ne pas régénérer une paire de clés API *et* Modifiez l’identifiant SaaS et/ou l’espace de données sur une instance de production active. Vous perdrez des données pour votre instance si elles sont modifiées.
 
 ## Configuration de Commerce Services
 
 La même clé API peut être utilisée entre les instances, mais chaque instance doit avoir sa propre clé [Espace de données SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>Les commerçants doivent utiliser les mêmes clés générées pour le MageID pour leurs droits au paiement.
 
 Maintenant que vous avez obtenu vos informations d’identification, vous pouvez configurer votre projet SaaS et Saas Data Space.
 

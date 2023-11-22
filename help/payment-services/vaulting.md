@@ -3,9 +3,9 @@ title: Valorisation des cartes de crédit
 description: Les acheteurs peuvent sauvegarder (enregistrer) les détails de leur carte de crédit pour les achats futurs.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Les acheteurs utilisent le jeton stocké pour effectuer un passage en caisse ult
 Ils peuvent également facilement supprimer leurs cartes de crédit voûtées de [Méthodes de paiement stockées](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) dans leur compte.
 
 ![Méthodes de paiement stockées dans mon compte](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>PayPal peut actuellement stocker un maximum de cinq cartes en coffre-fort.
 
 ## Activation de la mise en valeur
 
