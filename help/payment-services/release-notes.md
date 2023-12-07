@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
+source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2132'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,14 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et la variable [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
 
 +++
+
+## v2.3.1
+
+_7 décembre 2023_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Nouveau](../assets/new.svg)<!-- PAY-5047 --> La marque de carte de crédit/de débit ou le type de mode de paiement est désormais disponible sur la page de commande du client sur le storefront, dans l’e-mail de confirmation de commande envoyé au client et dans la variable [vue des détails de commande](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) dans l’administrateur Commerce.
 
 ## v2.3.0
 
