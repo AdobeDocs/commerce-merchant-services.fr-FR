@@ -1,20 +1,20 @@
 ---
-title: "Marchandisage des catégories"
-description: "Utilisation [!DNL Live Search] Marchandisage des catégories pour une expérience d’achat plus rapide."
+title: Marchandisage des catégories
+description: Utilisation [!DNL Live Search] Marchandisage des catégories pour une expérience d’achat plus rapide.
 gourl: ls_catalog_merchandising
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
+source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
-
 
 # Marchandisage des catégories
 
 Le marchandisage des catégories permet aux propriétaires de magasins d’appliquer des [!DNL Live Search] Classement intelligent [rules](rules.md) aux catégories de produits et aux sous-catégories.
 
-La fonctionnalité est accessible dans l’administrateur à l’adresse **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > **Marchandisage des catégories**.
+Cette fonctionnalité est accessible dans l’Admin à l’adresse **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > **Marchandisage des catégories**.
 
 >[!NOTE]
 >
