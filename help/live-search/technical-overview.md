@@ -3,9 +3,9 @@ title: "Présentation technique"
 description: "[!DNL Live Search] flux d’intégration, exigences système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: ab09bc53666915713bd0180d87b3e40aec430a86
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,8 @@ Pour restreindre les groupes de clients à l’aide des autorisations du catalog
 * pt_PT
 
 Si le widget détecte que le paramètre de langue d’administrateur Commerce (_Magasins_ > Paramètres > _Configuration_ > _Général_ > Options de pays) correspond à une langue prise en charge. Par défaut, cette langue est utilisée. Sinon, les widgets sont définis par défaut sur Anglais.
+
+Les administrateurs peuvent également définir la langue de la variable [index de recherche](settings.md#language), pour améliorer les résultats de la recherche.
 
 ## Marchandisage des catégories
 

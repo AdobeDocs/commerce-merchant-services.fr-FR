@@ -3,9 +3,9 @@ title: "Installer [!DNL Live Search]"
 description: "Découvrez comment installer, mettre à jour et désinstaller [!DNL Live Search] d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,21 @@ Dans ce scénario, les opérations de storefront sont interrompues pendant que l
 
    Vous devriez pouvoir ajouter des facettes après `cron` exécute les flux d’attributs et exporte les métadonnées d’attribut.
 
-1. Patientez au moins une heure après `cron` s’exécute pour synchroniser les données. Alors, [verify](#verify-export) que les données ont été exportées.
+1. Exécutez la commande suivante dans cet ordre :
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. [Vérifier](#verify-export) que les données ont été exportées.
 
 1. [Test](#test-the-connection) la connexion depuis le storefront.
 
@@ -126,7 +140,21 @@ Dans ce scénario, [!DNL OpenSearch] gère temporairement les requêtes de reche
 
    Vous devriez pouvoir ajouter des facettes après `cron` exécute les flux de produit et d’attribut et exporte les métadonnées d’attribut vers [!DNL Live Search] services.
 
-1. Patientez au moins une heure pour que les données soient indexées et synchronisées. Ensuite, utilisez le [Jeu GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) avec la requête par défaut pour vérifier les éléments suivants :
+1. Exécutez la commande suivante dans cet ordre :
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. Une fois la synchronisation terminée, utilisez la méthode [Jeu GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) avec la requête par défaut pour vérifier les éléments suivants :
 
    * Le nombre de produits renvoyé est proche de ce que vous attendez pour la vue de magasin.
    * Les facettes sont renvoyées.
