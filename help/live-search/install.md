@@ -3,7 +3,7 @@ title: "Installer [!DNL Live Search]"
 description: "Découvrez comment installer, mettre à jour et désinstaller [!DNL Live Search] d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Dans ce scénario, [!DNL OpenSearch] gère temporairement les requêtes de reche
 1. Exécutez la commande suivante pour désactiver temporairement la fonction [!DNL Live Search] modules qui diffusent les résultats de recherche storefront.
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
    ```
 
    ```bash
@@ -162,7 +162,7 @@ Dans ce scénario, [!DNL OpenSearch] gère temporairement les requêtes de reche
 1. Exécutez les commandes suivantes pour activer [!DNL Live Search] modules, désactiver [!DNL OpenSearch], puis exécutez `setup`.
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing 
    ```
 
    ```bash
