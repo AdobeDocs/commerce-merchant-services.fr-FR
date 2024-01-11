@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d
 
 ## [!UICONTROL Apple Pay]
 
-La variable [!UICONTROL Apple Pay] l’option de paiement permet au marchand d’offrir un paiement Apple à ses acheteurs, qui peuvent utiliser un identifiant tactile sur leurs appareils pour effectuer des achats.
+La variable [!UICONTROL Apple Pay] l’option de paiement permet au marchand d’offrir Apple Pay à ses acheteurs, qui peuvent utiliser un identifiant tactile sur leurs appareils pour effectuer des achats depuis le navigateur Safari.
 
 Voir [Options de paiement](payments-options.md#apple-pay-button) pour plus d’informations.
 

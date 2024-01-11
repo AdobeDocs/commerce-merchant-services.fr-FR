@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2364'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Voir [Options de paiement](payments-options.md#credit-card-fields) pour plus d�
 
 ### Apple Pay
 
-La variable [!UICONTROL Apple Pay] l’option de paiement de bouton vous permet de fournir un [!UICONTROL Apple Pay] le bouton paiement dans le passage en caisse de votre boutique.
+La variable [!UICONTROL Apple Pay] l’option de paiement de bouton vous permet de fournir un [!UICONTROL Apple Pay] bouton paiement dans le passage en caisse de votre boutique à partir du navigateur Safari.
 
 Vous ne pouvez utiliser Apple Pay que si vous avez terminé [Enregistrement automatique des paiements Apple via Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) puis [configurer Apple Pay](settings.md/#payment-buttons) pour vos magasins. Voir [Options de paiement](payments-options.md#apple-pay-button) pour plus d’informations.
 
@@ -230,7 +230,7 @@ Vous pouvez également configurer la variable _[!UICONTROL Button style]_options
 1. Pour activer le sélecteur de hauteur de bouton, faites basculer le bouton **[!UICONTROL Responsive button height]** sélecteur.
 1. Pour modifier la variable **[!UICONTROL Label]**, sélectionnez l’option de libellé de votre choix.
 
-   Lorsque vous modifiez les options de configuration pour la disposition, la couleur, la forme, la hauteur et le libellé, un aperçu visuel de cette configuration s’affiche au bas de la page Paramètres .
+   Lorsque vous modifiez les options de configuration pour la disposition, la couleur, la forme, la hauteur et le libellé, un aperçu visuel de cette configuration s’affiche au bas de la page Paramètres . Dans l’image ci-dessous, la variable **[!UICONTROL Shape]** est défini sur _Rectangle_ et la variable **[!UICONTROL Label]** est défini sur _PayPal (recommandé)_.
 
    ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 

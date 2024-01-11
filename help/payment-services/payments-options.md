@@ -3,9 +3,9 @@ title: Options de paiement
 description: Définissez les options de paiement pour personnaliser les méthodes disponibles pour les clients de votre magasin.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 
 [!UICONTROL Credit Card Fields] proposer un passage en caisse simple et sécurisé pour les modes de paiement par carte de crédit ou carte de débit ; Lorsqu’un acheteur passe en caisse en utilisant des champs de carte de crédit, il saisit son nom, son adresse de facturation et les informations de carte de crédit ou de débit pour passer sa commande. Les informations sur les clients sont utilisées de manière sécurisée au cours de la session d’achat pour les guider de manière transparente tout au long du flux de passage en caisse.
 
+![Champs de carte de crédit dans le passage en caisse](assets/credit-card-fields.png){width="500" zoomable="yes"}
+
 Activer [coffre-fort à carte de crédit](#vaulting) pour que vos magasins permettent aux clients de sauvegarder (enregistrer) leurs informations de carte de crédit pour un passage en caisse rapide plus tard.
 
 Vous pouvez configurer [!UICONTROL Credit Card Fields] dans la configuration du magasin ou dans la page d’accueil des services de paiement. Voir [Paramètres](settings.md#credit-card-fields) pour plus d’informations.
@@ -41,6 +43,10 @@ Vous pouvez également modifier la disposition, la largeur, la hauteur et le sty
 ## [!DNL Apple Pay] button
 
 Les clients peuvent utiliser [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), qui utilise les informations d’identification de paiement de carte de crédit et de débit stockées sur un appareil iOS ou macOS, pour effectuer des achats.
+
+[!DNL Apple Pay] n’est disponible que dans le navigateur Safari.
+
+![Bouton Payer Apple dans le minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
 La variable [!DNL Apple Pay] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
 
@@ -54,7 +60,7 @@ Vous pouvez configurer [!UICONTROL Apple Pay] dans la configuration du magasin o
 
 [!DNL PayPal Smart Buttons], qui utilise PayPal pour effectuer un achat, stocke l’adresse de livraison de votre acheteur, les adresses de facturation et les détails de paiement en vue d’une utilisation ultérieure. Les acheteurs peuvent utiliser n&#39;importe quel mode de paiement précédemment stocké ou proposé par PayPal.
 
-![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
+![Bouton Pal](assets/paypal-button.png){width="350" zoomable="yes"}
 
 Vous pouvez configurer [!UICONTROL PayPal Smart Buttons] dans la configuration du magasin ou dans la page d’accueil des services de paiement.  Voir [Paramètres](settings.md#payment-buttons) pour plus d’informations.
 
@@ -89,12 +95,6 @@ La variable [!DNL Pay Later] est visible à partir de la page produit, du mini-p
 Consultez les informations sur les offres Payer plus tard dans [Documentation sur les offres PayPal plus tard](https://developer.paypal.com/docs/checkout/pay-later/us/). Utilisez la variable **Pays ou région** pour sélectionner une région intéressante.
 
 Voir [Paramètres](settings.md#payment-buttons) pour savoir comment désactiver/activer le [!DNL Pay Later] messages.
-
-### [!DNL Pay Now] button
-
-La variable [!DNL Pay Now] est visible dans la fenêtre contextuelle PayPal lorsqu’un client clique sur un bouton de paiement dans l’écran des paiements.
-
-Si le montant final de la commande n’est pas encore connu (par exemple, lorsque vous ne disposez pas encore des informations sur l’adresse de livraison) et que le client est en train d’extraire de la page produit, du mini-panier ou du panier, une _Continuer_ est disponible à la place. Lorsqu’un client clique _Continuer_, une fois qu’ils ont confirmé leur mode de paiement, ils sont dirigés vers une page de vérification de commande afin de rassembler les détails nécessaires avant de terminer le passage en caisse.
 
 ## Utiliser uniquement les boutons de paiement PayPal
 
