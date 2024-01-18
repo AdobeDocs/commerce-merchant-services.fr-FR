@@ -5,9 +5,9 @@ seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
 recommendations: noDisplay
-source-git-commit: 4dd93d38caffa1507a55f2b4f74b63a5aff9229d
+source-git-commit: e666d1293a4dd9224930d2898074869ec048c741
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '62'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,6 @@ Les éléments suivants sont des modifications notables récentes apportées à 
 
 | Service | Modifier | Type |
 | -- | -- | -- |
-| [**Recherche en direct**](../live-search/guide-overview.md) | Ajout de la fonction Live Search [Marchandisage des catégories](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/category-merch.html) rubrique. | Nouvelle rubrique |
+| [**Service de catalogue**](../live-search/guide-overview.md) | Ajout de la [Affichage des taxes avec le service de catalogue et le maillage API](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) rubrique. | Nouvelle rubrique |
 
 Ce tableau est mis à jour le premier lundi de chaque mois.
