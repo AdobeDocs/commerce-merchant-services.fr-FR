@@ -3,10 +3,10 @@ title: Notes de mise à jour
 description: Les dernières informations de mise à jour pour la variable [!DNL Data Connection] à partir d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 69c1a5c00796f96cafe0169632ad5e1e3c53a297
+source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 1%
+source-wordcount: '774'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +33,10 @@ Consultez la documentation destinée aux développeurs pour [connaître les vers
 Ces notes de mise à jour décrivent les modifications et les correctifs liés aux extensions utilisées par les [!DNL Data Connection] extension .
 
 Mises à jour du service +++prises en charge
+
+_24 janvier 2024_
+
+![Nouveau](../assets/new.svg) - Mise à jour de la `data-services-b2b` pour inclure un nouvel événement de demande appelé [deleteRequestList](events.md#deleterequisitionlist) pour les commerçants B2B.
 
 _16 novembre 2023_
 

@@ -4,9 +4,9 @@ description: Découvrez les données que chaque événement capture.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
 workflow-type: tm+mt
-source-wordcount: '6894'
+source-wordcount: '6957'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Description | Nom de l’événement XDM |
 |---|---|
-| Déclenché lorsque l’acheteur commande. | `commerce.order` |
+| Déclenché lorsque l’acheteur commande. | `commerce.purchases` |
 
 #### Données collectées depuis completeCheckout
 
@@ -254,7 +254,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `commerce.order.payments.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
 | `commerce.order.taxAmount` | Montant de l&#39;impôt payé par l&#39;acheteur dans le cadre du paiement final. |
 | `commerce.order.discountAmount` | Indique le montant de remise appliqué à la commande entière. |
-| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple : `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | Informations d’expédition pour un ou plusieurs produits. |
 | `commerce.shipping.shippingMethod` | Mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
 | `commerce.shipping.shippingAmount` | Le montant que le client a dû payer pour l’expédition. |  | `shipping` | Informations d’expédition pour un ou plusieurs produits. |
@@ -561,6 +561,29 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
 | `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
+### deleteRequestList
+
+| Description | Nom de l’événement XDM |
+|---|---|
+| Déclenché lorsqu’un acheteur supprime une liste de demandes d’achat. | `commerce.requisitionListDeletes` |
+
+#### Données collectées à partir de deleteRequestList
+
+Le tableau suivant décrit les données collectées pour cet événement.
+
+| Champ | Description |
+|---|---|
+| `commerce.requisitionListDeletes` | Indique qu’une liste de demandes d’achat a été supprimée. |
+| `commerce.requisitionList` | Propriétés de la liste de demandes créée par le client. |
+| `commerce.requisitionList.ID` | Identifiant unique de la liste des demandes. |
+| `commerce.requisitionList.name` | Nom de la liste des demandes spécifiée par le client. |
+| `commerce.requisitionList.description` | Description de la liste des demandes spécifiée par le client. |
+| `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
+| `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
+| `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
+| `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
+| `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+
 ## Événements de back-office
 
 Les événements back-office contiennent des informations sur l’état d’une commande, par exemple si une commande a été passée, annulée, remboursée, expédiée ou terminée. Les données collectées par ces événements côté serveur affichent une vue 360 de la commande du client. Cette vue permet aux commerçants de mieux cibler ou analyser l’état complet de la commande lors du développement de campagnes marketing. Vous pouvez, par exemple, repérer des tendances dans certaines catégories de produits qui se portent bien à différents moments de l’année. Des vêtements d’hiver qui se vendent mieux pendant les mois les plus froids ou certaines couleurs de produits qui intéressent les acheteurs au fil des ans. En outre, les données sur l’état de la commande peuvent vous aider à calculer la valeur client sur la durée de vie en comprenant la propension d’un acheteur à effectuer des conversions en fonction des commandes précédentes.
@@ -590,7 +613,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `commerce.order.payments.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
 | `commerce.order.taxAmount` | Montant de l&#39;impôt payé par l&#39;acheteur dans le cadre du paiement final. |
 | `commerce.order.discountAmount` | Indique le montant de remise appliqué à la commande entière. |
-| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple : `2022-10-15T20:20:39+00:00`. |
 | `commerce.order.currencyCode` | Code de devise ISO 4217 utilisé pour les totaux de commande. |
 | `commerce.shipping` | Informations d’expédition pour un ou plusieurs produits. |
 | `commerce.shipping.shippingMethod` | Mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
@@ -908,7 +931,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `commerce.order.payments.paymentType` | Mode de paiement de cette commande. Valeurs comptées et personnalisées autorisées. |
 | `commerce.order.payments.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
 | `commerce.order.taxAmount` | Montant de l&#39;impôt payé par l&#39;acheteur dans le cadre du paiement final. |
-| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple : `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | Informations d’expédition pour un ou plusieurs produits. |
 | `commerce.shipping.shippingMethod` | Mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
 | `commerce.shipping.shippingAmount` | Le montant que le client a dû payer pour l’expédition. |
