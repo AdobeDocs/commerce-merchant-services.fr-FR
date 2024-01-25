@@ -3,19 +3,18 @@ title: Options de paiement
 description: Définissez les options de paiement pour personnaliser les méthodes disponibles pour les clients de votre magasin.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
 # Options de paiement
 
-Avec [!DNL Adobe Commerce] et [!DNL Magento Open Source] [!DNL Payment Services], plusieurs options de paiement sont à votre disposition. Vous pouvez configurer ces options de paiement en procédant comme suit :
+Avec [!DNL Adobe Commerce] et [!DNL Magento Open Source] [!DNL Payment Services], plusieurs options de paiement sont à votre disposition.
 
-* [Paramètres d’accueil](payments-home.md)
-* [Configuration du magasin](configure-admin.md) (recommandé pour les options de paiement héritées ou une configuration multi-magasin)
+Vous pouvez configurer ces options de paiement dans [Paramètres d’accueil](payments-home.md) ou [Configuration du magasin](configure-admin.md) (recommandé pour les options de paiement héritées ou une configuration multi-magasin).
 
 Il existe différents comportements pour chaque mode de paiement en fonction de l’emplacement du processus de passage en caisse :
 
@@ -26,7 +25,16 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 
 >[!IMPORTANT]
 >
->L’intégration des services de paiement doit être effectuée avant que les paiements puissent être traités.
+>[!DNL Payment Services] l’intégration doit être effectuée avant que les paiements puissent être traités.
+
+## Comparaison entre l’expérience de paiement standard et l’expérience de paiement avancé
+
+[!DNL Payment Services] fournit **Avancé** (entièrement pris en charge) et **Standard** les options de paiement et les flux d’intégration (paiement express), en fonction du pays dans lequel vous opérez.
+
+* **Avancé** - Toutes disponibles [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays entièrement pris en charge](../payment-services/overview.md#availability). Lors de l’intégration pour activer les paiements en direct, sélectionnez la variable [Option d’intégration avancée](../payment-services/production.md#advanced-onboarding).
+* **Standard** - Un sous-ensemble d’options de paiement (paiement express), des cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez la variable [Option d’intégration standard](../payment-services/production.md#standard-onboarding).
+
+Voir [Activer [!DNL Payment Services] pour la production](../payment-services/production.md#complete-merchant-onboarding) pour plus d’informations sur l’intégration à Advanced and Standard.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -36,7 +44,7 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 
 Activer [coffre-fort à carte de crédit](#vaulting) pour que vos magasins permettent aux clients de sauvegarder (enregistrer) leurs informations de carte de crédit pour un passage en caisse rapide plus tard.
 
-Vous pouvez configurer [!UICONTROL Credit Card Fields] dans la configuration du magasin ou dans la page d’accueil des services de paiement. Voir [Paramètres](settings.md#credit-card-fields) pour plus d’informations.
+Vous pouvez configurer [!UICONTROL Credit Card Fields] dans la configuration du magasin ou la [!DNL Payment Services] Chez soi. Voir [Paramètres](settings.md#credit-card-fields) pour plus d’informations.
 
 Vous pouvez également modifier la disposition, la largeur, la hauteur et le style externe des champs de la carte de crédit. Voir [Documentation PayPal](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) pour plus d’informations.
 
@@ -62,7 +70,7 @@ Vous pouvez configurer [!UICONTROL Apple Pay] dans la configuration du magasin o
 
 ![Bouton Pal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Vous pouvez configurer [!UICONTROL PayPal Smart Buttons] dans la configuration du magasin ou dans la page d’accueil des services de paiement.  Voir [Paramètres](settings.md#payment-buttons) pour plus d’informations.
+Vous pouvez configurer [!UICONTROL PayPal Smart Buttons] dans la configuration du magasin ou la [!DNL Payment Services] Chez soi.  Voir [Paramètres](settings.md#payment-buttons) pour plus d’informations.
 
 Voir PayPal [Documentation sur les méthodes de paiement](https://developer.paypal.com/docs/checkout/payment-methods/) pour savoir dans quels pays chaque mode de paiement est actuellement disponible.
 

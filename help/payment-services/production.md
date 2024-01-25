@@ -3,9 +3,9 @@ title: Activer [!DNL Payment Services] pour la production
 description: Terminez le processus d’intégration en activant [!DNL Payment Services] pour la production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Après vous [Configuration de Commerce Services](connect.md#configure-commerce-s
 
 1. Cliquez sur **[!UICONTROL Save]**.
 1. Cliquez sur **[!UICONTROL Go to Payment Services]** pour être dirigé vers le [!DNL Payment Services] Chez soi.
-1. [Effacer le cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Effacer le cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    L’effacement doit être effectué après chaque modification de configuration.
 
@@ -51,14 +51,58 @@ Voir [Configuration des services de paiement](settings.md) pour plus d’informa
 
 ## Intégration complète de commerce
 
+L’étape suivante permettant à vos magasins de passer en ligne avec les Services de paiement consiste à effectuer l’intégration en direct.
+
+Services de paiement [**Avancé** (entièrement pris en charge) et **Standard** Options de paiement (paiement express)](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) et les flux d’intégration, en fonction du pays dans lequel vous opérez et de votre expérience de paiement préférée.
+
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Cliquez sur **[!UICONTROL Live onboarding]**.
 
    Cette option est visible si vous n’avez pas encore terminé l’intégration pour [!DNL Payment Services].
 
-   Une fenêtre PayPal s’affiche.
+1. Dans le _Sélectionner votre pays_ modale, sélectionnez le pays à partir duquel vous opérez.
 
-1. Poursuivez avec le flux PayPal, en utilisant les informations d’identification de votre compte PayPal (et non les informations d’identification de votre compte sandbox) ou inscrivez-vous à un nouveau compte PayPal.
+   Les services de paiement prennent entièrement en charge toutes les options de paiement dans [cinq pays](../payment-services/overview.md#availability) actuellement. Les Services de paiement offrent des fonctionnalités de paiement express (un sous-ensemble d’options de paiement) pour tous les autres pays représentés dans la liste des pays.
+
+   Le pays choisi dans la liste détermine les options de paiement et le flux d’intégration.[Avancé](#advanced-onboarding) (entièrement pris en charge) ou [Standard](#standard-onboarding) (Passage en caisse express) : disponible pour vous.
+
+>[!TIP]
+>
+> Une fois que vous avez choisi et traité une option d’intégration (Standard ou Avancé), vous devez terminer l’intégration pour effectuer une mise à niveau ou une rétrogradation à partir de votre sélection initiale.
+
+### Intégration avancée
+
+Ce flux d’intégration est disponible pour les commerçants dans [pays entièrement pris en charge](../payment-services/overview.md#availability).
+
+Une fois le pays sélectionné :
+
+1. Dans le modal qui s’affiche, sélectionnez **Avancé**.
+
+   Pour le **Standard** , passez à la [Flux d’intégration standard](#standard-onboarding).
+
+1. Cliquez sur **Continuer**.
+1. Poursuivez avec le flux PayPal pour l’intégration avancée entièrement prise en charge, en utilisant les informations d’identification de votre compte PayPal (et non les informations d’identification de votre compte sandbox). _ou_ inscrivez-vous à un nouveau compte PayPal.
+
+>[!IMPORTANT]
+>
+>**Intégration avancée** nécessite que les commerçants [droits de paiement des demandes](#request-payments-entitlement-from-adobe) pour activer l’intégration en direct.
+
+### Intégration standard
+
+Ce flux d’intégration standard est disponible pour les commerçants des pays disponibles pour lesquels [uniquement prise en charge du passage en caisse express ;](../payment-services/overview.md#availability) est fournie.
+
+Une fois le pays sélectionné :
+
+1. Dans le _Accord sur les services de paiement_ modal qui s’affiche, cliquez sur **Accord sur les services de paiement** lien pour consulter le contrat de services de paiement Adobe Commerce.
+1. Dans le _Accord sur les services de paiement_ modal, cliquez sur **J&#39;accepte**.
+1. Passez au flux PayPal pour l’intégration du paiement express, en utilisant les informations d’identification de votre compte PayPal (et non les informations d’identification de votre compte sandbox) ou en vous inscrivant à un nouveau compte PayPal.
+
+>[!IMPORTANT]
+>
+>[Champs de paiement et de carte de crédit Apple](../payment-services/payments-options.md) ne sont pas disponibles pour **Intégration standard**.
+
+## Confirmer l’adresse électronique
+
 1. Dans la barre latérale d’administration, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
    La variable _[!UICONTROL Live onboarding]_n’est plus visible et un &quot;[!UICONTROL Live payments pending]&quot;.
@@ -77,7 +121,7 @@ Voir [Configuration des services de paiement](settings.md) pour plus d’informa
 
 ## Demander des droits sur les paiements depuis l’Adobe
 
-Pour activer l’intégration en direct, vous devez demander des droits de paiement à l’Adobe :
+Pour activer vos magasins, demandez des droits de paiement à l’Adobe (pour [Intégration avancée uniquement](#advanced-onboarding)) :
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Cliquez sur **[!UICONTROL Get Live Payments]** dans votre [!DNL Payment Services] Chez soi.
@@ -87,7 +131,7 @@ Pour activer l’intégration en direct, vous devez demander des droits de paiem
 1. Remplissez le formulaire.
 1. Un membre de l&#39;équipe commerciale vous contactera.
 
-Vous pouvez également demander des droits au paiement auprès d’un Adobe à l’adresse [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+Vous pouvez également demander des droits sur les paiements auprès d’Adobe à l’adresse [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
@@ -95,8 +139,7 @@ Vous pouvez également demander des droits au paiement auprès d’un Adobe à l
 
 ## Configurer le niveau de tarification
 
-Pour obtenir votre [!DNL Payment Services] _Identifiant du marchand_:
-
+Obtenez votre [!DNL Payment Services] _Identifiant du marchand_:
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Dans la vue Accueil, cliquez sur **[!UICONTROL Settings]**. Voir [Accueil](payments-home.md) pour plus d’informations.
@@ -106,7 +149,7 @@ Pour obtenir votre [!DNL Payment Services] _Identifiant du marchand_:
 
 A _identifiant du commerçant de production_ est généré automatiquement et renseigné dans la variable [configuration](configure-admin.md). Ne modifiez pas ou ne modifiez pas cet identifiant.
 
-Pour activer les paiements en direct :
+Activer les paiements en direct :
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Sur la page d’accueil, cliquez sur **[!UICONTROL Settings]** en haut à droite de la page. Voir [Accueil](payments-home.md) pour plus d’informations.
