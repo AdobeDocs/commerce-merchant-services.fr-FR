@@ -1,47 +1,51 @@
 ---
 title: Intégration et installation
-description: Découvrez comment installer [!DNL Catalog Service]
+description: "Découvrez comment installer [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
+source-git-commit: d02ffe4028bdf5765fb0f23fd210f398729bee62
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
 # Intégration et installation
 
-Afficher une présentation détaillée de la variable [!DNL Catalog Service] processus.
+Les vidéos suivantes vous guident tout au long de la [!DNL Catalog Service] processus.
 
-Partie 1 :
+**Partie 1**: intégration et installation
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415599)
 
-Partie 2 :
+**Partie 2**: en utilisant la variable [!DNL Catalog Service]
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415600)
+
+>[!BEGINSHADEBOX]
 
 ## Conditions préalables
 
 Le processus d’intégration pour [!DNL Catalog Service] requiert l’accès à la ligne de commande du serveur. Si vous n’êtes pas familiarisé avec l’utilisation de la ligne de commande, demandez de l’aide à un développeur ou à un intégrateur système.
 
-### Exigences logicielles
+**Exigences logicielles**
 
 - Adobe Commerce 2.4.4+
 - PHP 8.1, 8.2
 - Compositeur : 2.x
 
-### Plateformes prises en charge
+**Plateformes prises en charge**
 
 - Adobe Commerce sur l’infrastructure cloud : 2.4.4+
 - Adobe Commerce sur site : 2.4.4+
+
+>[!ENDSHADEBOX]
 
 ## Points de fin
 
 [!DNL Catalog Service] comporte deux points de terminaison disponibles pour l’intégration :
 
-- Environnement de test (https://catalog-service-sandbox.adobe.io/graphql) : utilisé pour le test et la validation avant la mise en ligne.
-- Production (https://catalog-service.adobe.io/graphql)- utilisée pour le trafic en direct pour les marchands et les sites web de commerce
+- Environnement de test (`https://catalog-service-sandbox.adobe.io/graphql`) : utilisé pour les tests et la validation avant la mise en ligne.
+- Production (`https://catalog-service.adobe.io/graphql`) : utilisé pour le trafic en direct pour les commerçants et les sites web de commerce.
 
 Toutes les instances de test de Commerce doivent utiliser le point de terminaison Sandbox.
 
@@ -61,7 +65,7 @@ Le processus d’intégration pour [!DNL Catalog Service] requiert l’accès à
 
 La variable [!DNL Catalog Service] L’extension peut être installée sur l’infrastructure cloud Adobe Commerce et sur les instances sur site.
 
-La variable [!DNL Catalog Service] est installé avec les clés du compositeur, qui sont liées au compte Commerce. [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) fourni pendant le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale d’Adobe Commerce, ou dans les cas où les clés du compositeur n’étaient pas précédemment enregistrées dans une instance externe `auth.json` fichier .
+La variable [!DNL Catalog Service] est installé avec les clés du compositeur, qui sont liées au compte Commerce. [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) fourni pendant le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale d’Adobe Commerce, ou dans les cas où les clés du compositeur n’étaient pas précédemment enregistrées dans une instance externe `auth.json` fichier .
 
 Voir [Obtention des clés d’authentification](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) pour plus d’informations sur l’obtention des clés du compositeur.
 
@@ -69,21 +73,20 @@ Voir [Obtention des clés d’authentification](https://experienceleague.adobe.c
 
 Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instance de Commerce Cloud.
 
-1. Utilisez le compositeur pour ajouter le module de service de catalogue à votre projet :
+1. Sur votre poste de travail local, modifiez le répertoire de votre projet.
+1. Ajoutez le module Catalog Service.
 
-```bash
-composer require "magento/catalog-service" "^3.0.1"
-```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
-1. Mettez à jour les dépendances en exécutant :
+1. Mettez à jour les dépendances de package.
 
-```bash
-composer update
-```
+   ```bash
+   composer update
+   ```
 
-La commande met à jour toutes les dépendances.
-
-1. Validez et envoyez vos modifications pour `composer.json` et `composer.lock`.
+1. Validation et modification du code push pour la variable `composer.json` et `composer.lock` fichiers .
 
 #### Sur site
 
@@ -91,29 +94,27 @@ Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instan
 
 1. Utilisez le compositeur pour ajouter le module de service de catalogue à votre projet :
 
-```bash
-composer require "magento/catalog-service" "^3.0.1"
-```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
 1. Mettez à jour les dépendances et installez l’extension :
 
-```bash
-composer update
-```
-
-La commande met à jour toutes les dépendances.
+   ```bash
+   composer update
+   ```
 
 1. Mettre à niveau Adobe Commerce :
 
-```bash
-bin/magento setup:upgrade
-```
+   ```bash
+   bin/magento setup:upgrade
+   ```
 
 1. Effacez le cache :
 
-```bash
-bin/magento cache:clean
-```
+   ```bash
+   bin/magento cache:clean
+   ```
 
 ### Configuration du service et de l’exportation des données
 
@@ -143,4 +144,4 @@ Pour autoriser [!DNL Catalog Service] via un pare-feu, ajoutez `commerce.adobe.i
 
 La variable [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
 
-Voir  [[!DNL Catalog Service] et maillage API](mesh.md) pour plus d’informations sur l’installation et la configuration.
+Voir [[!DNL Catalog Service] et maillage API](mesh.md) pour plus d’informations sur l’installation et la configuration.
