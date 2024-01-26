@@ -4,9 +4,9 @@ description: Utilisez le rapport Transactions pour connaître les taux d'autoris
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Vous pouvez configurer cette vue, selon les sections de cette rubrique, pour pr�
 
 Consultez les ID de transaction de commande et de fournisseur liés, les montants de transaction, le mode de paiement par transaction, etc., dans ce rapport.
 
-Tous les modes de paiement ne fournissent pas la même granularité d’informations. Par exemple, les transactions par carte de crédit fournissent des codes de réponse, AVS et CCV, ainsi que les quatre derniers chiffres de la carte dans le rapport des transactions. Ce n’est pas le cas des boutons PayPal Smart.
+Tous les modes de paiement ne fournissent pas la même granularité d’informations. Par exemple, les transactions par carte de crédit fournissent des codes de réponse, AVS et CCV, ainsi que les quatre derniers chiffres de la carte dans le rapport des transactions. Ce n’est pas le cas des boutons de paiement PayPal.
 
 Vous pouvez [transactions de téléchargement](#download-transactions) dans un format de fichier .csv à utiliser dans les logiciels de gestion des commandes ou de comptabilité existants.
 

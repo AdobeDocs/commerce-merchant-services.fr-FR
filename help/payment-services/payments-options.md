@@ -3,7 +3,7 @@ title: Options de paiement
 description: Définissez les options de paiement pour personnaliser les méthodes disponibles pour les clients de votre magasin.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -64,13 +64,13 @@ La variable [!DNL Apple Pay] est visible à partir de la page produit, du mini-p
 
 Vous pouvez configurer [!UICONTROL Apple Pay] dans la configuration du magasin ou dans la page d’accueil des services de paiement. Voir [Paramètres](settings.md#apple-pay) pour plus d’informations.
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal Smart Buttons], qui utilise PayPal pour effectuer un achat, stocke l’adresse de livraison de votre acheteur, les adresses de facturation et les détails de paiement en vue d’une utilisation ultérieure. Les acheteurs peuvent utiliser n&#39;importe quel mode de paiement précédemment stocké ou proposé par PayPal.
+[!DNL PayPal payment buttons], qui utilise PayPal pour effectuer un achat, stocke l’adresse de livraison de votre acheteur, les adresses de facturation et les détails de paiement en vue d’une utilisation ultérieure. Les acheteurs peuvent utiliser n&#39;importe quel mode de paiement précédemment stocké ou proposé par PayPal.
 
 ![Bouton Pal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Vous pouvez configurer [!UICONTROL PayPal Smart Buttons] dans la configuration du magasin ou la [!DNL Payment Services] Chez soi.  Voir [Paramètres](settings.md#payment-buttons) pour plus d’informations.
+Vous pouvez configurer [!UICONTROL PayPal payment buttons] dans la configuration du magasin ou la [!DNL Payment Services] Chez soi.  Voir [Paramètres](settings.md#payment-buttons) pour plus d’informations.
 
 Voir PayPal [Documentation sur les méthodes de paiement](https://developer.paypal.com/docs/checkout/payment-methods/) pour savoir dans quels pays chaque mode de paiement est actuellement disponible.
 

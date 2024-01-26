@@ -4,9 +4,9 @@ description: Examinez les exigences en matière de sécurité et de conformité 
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ Lorsqu’un acheteur [les valeurs (ou &quot;enregistre&quot;) leurs informations
 
 Voir [Valorisation des cartes de crédit](vaulting.md) pour plus d’informations.
 
-### Boutons intelligents PayPal
+### Boutons de paiement PayPal
 
-Avec les boutons PayPal Smart, aucune donnée PCI n’est transmise à vos services. Vous n’avez pas à stocker ni à gérer ces données, ce qui réduit considérablement les problèmes de conformité PCI.
+Avec les boutons de paiement PayPal, aucune donnée réglementée par PCI n’est transmise à vos services. Vous n’avez pas à stocker ni à gérer ces données, ce qui réduit considérablement les problèmes de conformité PCI.
 
 Pour des raisons de sécurité, PayPal ne transmet pas l’adresse de facturation lors du passage en caisse : le pays, l’email et le nom sont les seules informations de facturation utilisées. Vous pouvez éventuellement activer le passage en caisse PayPal de votre site pour renvoyer l’adresse de facturation complète en contactant PayPal et en effectuant un processus de vérification.
 

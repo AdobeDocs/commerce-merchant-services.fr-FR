@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '2132'
 ht-degree: 0%
@@ -168,7 +168,7 @@ _29 janvier 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-4110 --> Correction d’un problème qui empêchait les acheteurs de passer une commande à l’aide de boutons intelligents sur la page du produit, le mini-panier et le panier. Les acheteurs peuvent désormais terminer les commandes avec succès.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-4110 --> Correction d’un problème qui empêchait les acheteurs de passer une commande à l’aide des boutons de paiement sur la page de produit, le mini-panier et le panier. Les acheteurs peuvent désormais terminer les commandes avec succès.
 
 ## v1.5.3
 
@@ -186,7 +186,7 @@ _22 décembre 2022_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3992 --> Amélioration de la facturation dans les services de paiement en cas de refus d’un mode de paiement.
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3999 --> Les services de paiement affichent désormais correctement les boutons intelligents PayPal pour les marchands qui utilisent [Déclenchement du passage en caisse](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} modèle personnalisé pour la page de passage en caisse. Auparavant, le minicart affichait par intermittence les boutons.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3999 --> Les services de paiement affichent désormais correctement les boutons de paiement PayPal pour les marchands qui utilisent [Déclenchement du passage en caisse](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} modèle personnalisé pour la page de passage en caisse. Auparavant, le minicart affichait par intermittence les boutons.
 
 ## v1.5.1
 
@@ -196,7 +196,7 @@ _23 novembre 2022_
 
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-3923 --> Les services de paiement incluent désormais le numéro de version dans l’en-tête de l’agent utilisateur pour que les demandes puissent effectuer le suivi, filtrer ou abandonner les points de terminaison inutilisés.
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3968 --> Les services de paiement affichent désormais correctement les données de commande lorsqu’une commande est passée à partir de la page de produit à l’aide de boutons intelligents.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3968 --> Les services de paiement affichent désormais correctement les données de commande lorsqu’une commande est passée à partir de la page de produits à l’aide de boutons de paiement.
 
 ## v1.5.0
 
@@ -226,7 +226,7 @@ _30 septembre 2022_
 
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-3231 --> Les commerçants peuvent [ajouter une [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) sur des sites web ou une configuration de vues de boutique individuelles qui s’affichent sur les relevés bancaires des transactions des clients pour délimiter les marques, les magasins ou les lignes de produits.
 
-![Nouveau](../assets/new.svg)<!-- Issue PAY-3707 --> [Activer ou désactiver les champs de carte de crédit et les boutons intelligents PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) pour l’extraction dans les paramètres des services de paiement.
+![Nouveau](../assets/new.svg)<!-- Issue PAY-3707 --> [Activer ou désactiver les champs de carte de crédit et les boutons de paiement PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) pour l’extraction dans les paramètres des services de paiement.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3546 --> Lorsqu’un client clique **[!UICONTROL Edit cart]**, la page redirige vers la page du panier et affiche les éléments mis à jour au lieu d’afficher un panier vide.
 
@@ -258,7 +258,7 @@ _29 juin 2022_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3264 --> Auparavant, lorsqu’un utilisateur connecté sélectionnait une autre adresse de facturation/de livraison que l’adresse par défaut de son compte, l’extraction échouait. Correction de ce problème. Désormais, l’adresse de facturation/d’expédition sélectionnée est envoyée (au lieu de l’adresse enregistrée par défaut) et le passage en caisse est terminé avec succès.
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3314 --> Si vous désactivez les boutons intelligents PayPal pour le passage en caisse, aucune erreur ne s’affiche.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3314 --> Si vous désactivez les boutons de paiement PayPal pour le passage en caisse, aucune erreur ne s’affiche.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3330 --> Les paiements n’échouent plus lors du passage en caisse lorsqu’un utilisateur invité saisit un numéro de téléphone contenant des tirets.
 
@@ -288,7 +288,7 @@ _31 mars 2022_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2742 --> Vous pouvez désormais activer et désactiver les méthodes de paiement disponibles, telles que Venmo, au niveau de la vue du magasin. Auparavant, vous pouviez configurer des méthodes de paiement par site web uniquement.
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2277 --> Vous pouvez désormais sélectionner [activation ou désactivation de boutons intelligents PayPal individuels](settings.md#payment-buttons).
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2277 --> Vous pouvez désormais sélectionner [activation ou désactivation de boutons de paiement PayPal individuels](settings.md#payment-buttons).
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-2561 --> Les produits précédemment supprimés n’apparaissent pas dans le panier sur la page _Ordre de révision_ page.
 
@@ -314,7 +314,7 @@ _29 novembre 2021_
 
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] prend en charge une tarification échelonnée flexible, basée sur le volume total de traitement, adaptée à n’importe quel commerçant.
 
-![Nouveau](../assets/new.svg)<!-- Issue PAY-1443 --> Vous pouvez facilement [personnaliser l’aspect](payments-options.md) des boutons intelligents PayPal et des champs de carte de crédit pour la variable [!DNL Payment Services] extension .
+![Nouveau](../assets/new.svg)<!-- Issue PAY-1443 --> Vous pouvez facilement [personnaliser l’aspect](payments-options.md) des boutons de paiement PayPal et des champs de carte de crédit pour la variable [!DNL Payment Services] extension .
 
 ![Problème connu](../assets/bug.svg)<!-- Issue PAY-2473 --> Utilisation [clés de compositeur incorrectes](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) lors de l’installation de l’extension empêche l’utilisateur de [authentification](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) avec la valeur `MAGEID`.
 

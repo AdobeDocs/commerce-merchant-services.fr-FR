@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '2364'
 ht-degree: 0%
@@ -163,9 +163,9 @@ Vous pouvez activer et configurer le [!UICONTROL Apple Pay] option de paiement d
 
 ### Boutons de paiement
 
-La variable [!DNL PayPal Smart Buttons] les options de paiement offrent un processus de paiement simple, rapide et sécurisé pour votre client. Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d’informations.
+La variable [!DNL PayPal payment buttons] les options de paiement offrent un processus de paiement simple, rapide et sécurisé pour votre client. Voir [Options de paiement](payments-options.md#paypal-smart-buttons) pour plus d’informations.
 
-Vous pouvez activer et configurer les options de paiement des boutons intelligents PayPal :
+Vous pouvez activer et configurer les options de paiement des boutons de paiement PayPal :
 
 1. Sélectionnez la vue de magasin, dans la **[!UICONTROL Scope]** menu déroulant, pour lequel vous souhaitez activer un mode de paiement.
 1. Pour modifier le nom du mode de paiement, comme indiqué lors de l’extraction, modifiez la valeur de la variable **[!UICONTROL Checkout Title]** champ .
@@ -203,10 +203,10 @@ Vous pouvez activer et configurer les options de paiement des boutons intelligen
 | [!UICONTROL Title] | vue de magasin | Ajoutez le texte à afficher comme titre pour cette option de paiement dans la vue Mode de paiement lors de l’extraction. Options : champ de texte |
 | [!UICONTROL Payment Action] | site web | La variable [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | vue de magasin | Ordre de tri du mode de paiement spécifié sur la page de passage en caisse. `Numeric Only` value |
-| [!UICONTROL Show PayPal buttons on checkout page] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] sur la page de passage en caisse. Options : [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on product detail page] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] sur la page des détails du produit. Options : [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini-cart preview] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] dans l’aperçu du mini-panier. Options : [!UICONTROL Off] / [!UICONTROL On] |
-| [!UICONTROL Show PayPal buttons on cart page] | vue de magasin | Activer ou désactiver [!DNL PayPal Smart Buttons] sur la page du panier. Options : [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on checkout page] | vue de magasin | Activer ou désactiver [!DNL PayPal payment buttons] sur la page de passage en caisse. Options : [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on product detail page] | vue de magasin | Activer ou désactiver [!DNL PayPal payment buttons] sur la page des détails du produit. Options : [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | vue de magasin | Activer ou désactiver [!DNL PayPal payment buttons] dans l’aperçu du mini-panier. Options : [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on cart page] | vue de magasin | Activer ou désactiver [!DNL PayPal payment buttons] sur la page du panier. Options : [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later button] | vue de magasin | Activez ou désactivez l’aspect de l’option de paiement ultérieur lorsque des boutons de paiement s’affichent. Options : [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later Message] | site web | Activez ou désactivez la messagerie Payer plus tard dans le panier, la page du produit, le mini-panier et pendant le flux de passage en caisse. Options : [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show Venmo button] | vue de magasin | Activez ou désactivez l’option de paiement Venmo lorsque les boutons de paiement s’affichent. Options : [!UICONTROL Off] / [!UICONTROL On] |
@@ -232,7 +232,7 @@ Vous pouvez également configurer la variable _[!UICONTROL Button style]_options
 
    Lorsque vous modifiez les options de configuration pour la disposition, la couleur, la forme, la hauteur et le libellé, un aperçu visuel de cette configuration s’affiche au bas de la page Paramètres . Dans l’image ci-dessous, la variable **[!UICONTROL Shape]** est défini sur _Rectangle_ et la variable **[!UICONTROL Label]** est défini sur _PayPal (recommandé)_.
 
-   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
+   ![[!DNL PayPal payment buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 1. Cliquez sur **[!UICONTROL Save]**.
 
