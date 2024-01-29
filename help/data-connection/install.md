@@ -4,9 +4,9 @@ description: Découvrez comment installer, mettre à jour et désinstaller le [!
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ Avant d’installer l’extension, [revoir les conditions préalables](overview.
 ## Installation de l’extension
 
 La variable [!DNL Data Connection] est disponible à partir de la fonction [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Lorsque vous installez cette extension à partir de la ligne de commande du serveur, elle se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, **[!DNL Data Connection]** et **Connecteur Commerce Services** apparaissent sur le **Système** sous **Services** dans Commerce _Administration_.
+
+![[!DNL Data Connection] vue d’administration de l’extension](assets/epc-adminui.png)
 
 >[!IMPORTANT]
 >
