@@ -3,9 +3,9 @@ title: Collecter des données
 description: Découvrez comment les événements collectent des données pour les recommandations de produits.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 7ed9321a2f4e58a7476aa91e74611fe896e1a7b1
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Lorsque vous installez et configurez des fonctionnalités Adobe Commerce basées
 
 >[!NOTE]
 >
->La collecte de données aux fins des recommandations de produits n’inclut pas d’informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les identifiants de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/privacy/experience-cloud.html).
+>La collecte de données aux fins des recommandations de produits n’inclut pas d’informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les identifiants de cookie et les adresses IP, sont strictement anonymisés. Formation [more](https://www.adobe.com/privacy/experience-cloud.html).
 
 Les événements suivants ne sont pas spécifiques à Product Recommendations, mais sont nécessaires pour renvoyer des résultats :
 
@@ -26,14 +26,17 @@ Les événements suivants ne sont pas spécifiques à Product Recommendations, m
 
 La variable [Collecteur d’événements Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) répertorie tous les événements déployés sur votre storefront. Toutefois, il existe dans cette liste un sous-ensemble d’événements spécifiques à Recommendations de produit. Ces événements collectent des données lorsque les acheteurs interagissent avec les unités de recommandations sur le storefront et optimisent les mesures utilisées pour vous aider à analyser les performances de vos recommandations.
 
-| Événement | Description | [Utilisé pour les mesures ?](workspace.md) |
+| Événement | Description | Utilisé pour les mesures ? |
 | --- | --- | --- |
 | `impression-render` | L’unité de recommandation est générée sur la page. | Oui |
 | `rec-add-to-cart-click` | Le client clique sur la variable **Ajouter au panier** pour un élément de l’entité de recommandation. | Oui, lorsqu’un **Ajouter au panier** est présent dans le modèle de recommandations. |
 | `rec-click` | Le client clique sur un produit dans l’unité de recommandation. | Oui |
 | `view` | L’unité de recommandation peut alors être consultée sur la page, par exemple en faisant défiler la page. | Oui |
 
-Si votre vitrine est implémentée avec PWA Studio, reportez-vous à la section [Documentation du PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si vous utilisez une technologie front-end personnalisée telle que React ou Vue JS, reportez-vous au guide d’utilisation pour découvrir comment intégrer Product Recommendations dans une [headless](headless.md) environnement.
+Les événements suivants sont requis pour remplir correctement le tableau de bord.
+| Colonne du tableau de bord | Événements | Champ de jointure | | — | — | — | | Impressions |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId | | Vues |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId | | Clics |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`    | unitId | | Recettes |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku | | Recettes LT |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku | | CTR |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | unitId, sku | | vCTR |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+
+Si votre vitrine est implémentée avec PWA Studio, reportez-vous à la section [Documentation du PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si vous utilisez une technologie front-end personnalisée telle que React ou Vue JS, reportez-vous au guide d’utilisation pour découvrir comment intégrer [Recommendations de produit sans tête](headless.md) environnement.
 
 ## Avertissements
 

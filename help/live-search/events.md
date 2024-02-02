@@ -2,9 +2,10 @@
 title: '''[!DNL Live Search] Événements'
 description: Découvrez comment les événements collectent des données pour [!DNL Live Search].
 feature: Services, Eventing
-source-git-commit: c14ba55bee54954ffcfe760e26dc1d69646ecd69
+exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
+source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -39,17 +40,17 @@ Ce tableau décrit les événements utilisés par [!DNL Live Search] stratégies
 
 ## Événements de tableau de bord obligatoires
 
-Certains événements sont nécessaires pour renseigner la variable [Tableau de bord de la recherche en direct](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/performance.html)
+Certains événements sont nécessaires pour renseigner la variable [Tableau de bord de la recherche en direct](performance.md)
 
-| Zone de tableau de bord | Événements |
-| ----- | ---- | 
-| Recherches uniques | `search-request-sent`,`search-response-received` |
-| Aucune recherche de résultats | `search-request-sent`,`search-response-received` |
-| Taux zéro résultat | `search-request-sent`,`search-response-received` |
-| Recherches populaires | `search-request-sent`,`search-response-received` |
-| Durée position du clic | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Taux de clics | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Taux de conversion | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click`,`product-view`,`add-to-cart`,`place-order` |
+| Zone de tableau de bord | Événements | Champ de jointure |
+| ------------------- | ------------- | ---------- |
+| Recherches uniques | `page-view`, `search-request-sent`, | searchRequestId |
+| Aucune recherche de résultats | `page-view`, `search-request-sent`, | searchRequestId |
+| Taux zéro résultat | `page-view`, `search-request-sent`, | searchRequestId |
+| Recherches populaires | `page-view`, `search-request-sent`, | searchRequestId |
+| Durée position du clic | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| Taux de clics | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
+| Taux de conversion | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
 
 ### contextes requis
 
