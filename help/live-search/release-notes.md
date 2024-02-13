@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
+source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1772'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ Les mises à jour sont les suivantes :
 
 Ces notes décrivent les mises à jour publiées en dehors d’une version ou les améliorations apportées au service hébergé.
 
+_13 février 2024_
+
+![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge la définition d’une règle par défaut pour [Marchandisage des recherches](rules.md).
+
 _27 octobre 2023_
 
 ![Nouveau](../assets/new.svg) La variable [!DNL Live Search] Le widget PLP prend désormais en charge les échantillons de couleurs.
@@ -41,37 +45,26 @@ _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) [!DNL Live Search] les clients peuvent désormais profiter de la nouvelle [Indexeur de prix SaaS](../price-index/index.md).
 
-## [!DNL Live Search] 4.1.0 {#410}
+<!--## [!DNL Live Search] 4.1.0 {#410}
 
-_13 février 2024_
+_Feb 13, 2024_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### Nouvelles fonctionnalités
+### New Features
 
-![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge la définition d’une règle par défaut pour [Marchandisage des recherches](rules.md).
-![Nouveau](../assets/new.svg) Plusieurs nouvelles fonctionnalités ont été ajoutées au [Widget PLP](plp-styling.md):
+![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
 
-* Modification du mode Liste/grille
-* Boutons Ajouter au panier
-* Prise en charge des échantillons
-* Images multiples par produit
-* Curseurs de prix
-* Prise en charge linguistique
+* List/grid view toggling
+* Add to Cart buttons
+* Swatch support
+* Multiple images per product
+* Price sliders
+* Language support
 
-Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] extension vers la version >= 4.1.0 pour accéder à ces fonctionnalités.
+Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
 
-Après avoir installé la version 3.1.1 ou ultérieure, activez les nouveaux indexeurs :
-
-* Flux de prix du produit
-* Porte le flux de données du site web
-* Porte le flux de données de groupes de clients
-
-Après la mise à niveau, testez la configuration mise à jour dans l’AQ ou l’Évaluation avant de publier les modifications en production.
-
-## Versions précédentes
-
-+++4.0.0 et versions antérieures
+--->
 
 ## [!DNL Live Search] 4.0.0 {#400}
 
@@ -92,6 +85,18 @@ _13 novembre 2023_
 ![Correction](../assets/fix.svg) La variable [!DNL Live Search] Le widget PLP est désormais activé par défaut pour les nouvelles installations.
 ![Correction](../assets/fix.svg) Reconfiguration des styles CSS pour mieux isoler les classes de widget.
 ![Correction](../assets/fix.svg) Correctifs de bogues mineurs
+
+Après avoir installé la version 3.1.1 ou ultérieure, activez les nouveaux indexeurs :
+
+* Flux de prix du produit
+* Porte le flux de données du site web
+* Porte le flux de données de groupes de clients
+
+Après la mise à niveau, testez la configuration mise à jour dans l’AQ ou l’Évaluation avant de publier les modifications en production.
+
+## Versions précédentes
+
++++3.1.1 et versions antérieures
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
