@@ -1,15 +1,15 @@
 ---
-title: "Performances"
+title: "Tableau de bord des performances"
 description: "Le [!DNL Live Search] Le tableau de bord des performances fournit des informations sur les termes de recherche que les acheteurs utilisent."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
-# Performances
+# Tableau de bord des performances
 
 La variable [!DNL Live Search] Le tableau de bord des performances fournit des informations sur les termes de recherche utilisés par les acheteurs. Les informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. Le tableau de bord Performances fournit un instantané des mesures de recherche pour une période spécifique et comprend les rapports suivants :
 
@@ -18,6 +18,8 @@ La variable [!DNL Live Search] Le tableau de bord des performances fournit des i
 * Résultats populaires
 
 ![Performances](assets/performance-unique-searches.png)
+
+Vous pouvez également consulter la section [Tableau de bord de la gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) pour plus de données sur la synchronisation des données.
 
 ## Affichage d’un rapport
 
@@ -29,7 +31,6 @@ La variable [!DNL Live Search] Le tableau de bord des performances fournit des i
 >[!NOTE]
 >
 >Le tableau de bord des performances est mis à jour toutes les 12 heures.
-
 
 ## Descriptions des champs
 

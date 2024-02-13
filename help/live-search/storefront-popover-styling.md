@@ -2,9 +2,9 @@
 title: "Style [!DNL Popover] Elements"
 description: "Notes techniques sur la personnalisation de la variable [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 67da9016d4bca9750fa9e440cce08ad1ae7100e2
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,10 @@ Les sélecteurs de classe suivants peuvent être utilisés pour mettre en forme 
 #### .livesearch.product-price
 
 ![Prix du produit](assets/livesearch-product-price.png)
+
+#### .livesearch product-link
+
+![Résultat du produit](assets/livesearch-product-link.png)
 
 ## Utilisation d’un thème modifié {#working-with-modified-theme}
 

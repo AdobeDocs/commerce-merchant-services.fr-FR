@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Catalog Service] Notes de mise à jour'
+title: '''[!DNL Catalog Service] Notes de mise à jour d’'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 1%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -22,21 +22,20 @@ Les mises à jour sont les suivantes :
 
 ## Version majeure actuelle
 
-### Version 1.13
+### Version 1.16
 
-_12 octobre 2023_
+_13 février 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) Le service de catalogue prend en charge la variable `inStock` Indicateur pour les variantes de produits.
-![Nouveau](../assets/new.svg) `urlKey` et `externalId` ont été ajoutés au schéma GraphQL.
-![Nouveau](../assets/new.svg) Les produits téléchargeables et les cartes-cadeaux sont désormais pris en charge.
+![Nouveau](../assets/new.svg) Les vidéos de produit sont désormais prises en charge par l’API Catalog Service.
+![Correction](../assets/fix.svg) Les produits groupés avec des prix fixes sont désormais pris en charge.
+![Correction](../assets/fix.svg) Les options en rupture de stock s’affichent désormais dans le widget PDP.
 
 #### Limites connues
 
 Ces fonctionnalités ne sont pas encore prises en charge :
 
-* Produits groupés avec prix fixe
 * La taille maximale de la charge utile des attributs dynamiques est de 9 Mo.
 * Prix du produit de groupe. Peuvent être calculées avec des prix de produit simples.
 * Dans un tableau d’images, seule la première image contient des rôles.
@@ -49,6 +48,16 @@ Les limites suivantes peuvent être résolues à l’aide du maillage de l’API
 ## Versions précédentes
 
 +++ Versions précédentes
+
+### Version 1.13
+
+_12 octobre 2023_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Nouveau](../assets/new.svg) Le service de catalogue prend en charge la variable `inStock` Indicateur pour les variantes de produits.
+![Nouveau](../assets/new.svg) `urlKey` et `externalId` ont été ajoutés au schéma GraphQL.
+![Nouveau](../assets/new.svg) Les produits téléchargeables et les cartes-cadeaux sont désormais pris en charge.
 
 ### Version 1.12
 

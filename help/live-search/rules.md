@@ -2,9 +2,9 @@
 title: "Rechercher un marchandisage"
 description: "[!DNL Live Search] les règles de marchandisage combinent logique et actions pour façonner l’expérience d’achat."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Chaque règle comporte trois composants principaux :
 * Événements : actions qui se produisent lorsque les conditions sont remplies.
 * Détails : nom de la règle, période et description facultative.
 
-Vous pouvez combiner plusieurs conditions et actions et programmer l’activation d’une règle pour une période.
+Vous pouvez combiner plusieurs conditions et actions et programmer l’activation d’une règle pour une période. Vous pouvez également définir une règle par défaut qui est appliquée même lorsqu’aucun terme de recherche n’est défini.
 
 ## Conditions
 
@@ -46,6 +46,10 @@ Les opérateurs Correspondance `All` et `Any` déterminer l’opérateur logique
 * `Any` - Utilise la variable `OR` opérateur logique pour joindre plusieurs conditions.
 
 Lors de la composition d’une règle complexe, il peut être utile de l’écrire avec une mise en retrait pour décrire les conditions, les événements associés, les noms de produits ou les SKU nécessaires pour renvoyer les résultats que vous souhaitez obtenir. Ensuite, créez la règle et testez le résultat.
+
+## Règle par défaut
+
+Vous pouvez définir une règle par défaut qui est appliquée lorsqu’aucun terme de recherche n’est fourni ou qu’aucune autre règle de recherche ne peut être appliquée. Si vous définissez la règle par défaut sur &quot;Le plus acheté&quot;, toutes les requêtes seront par défaut de ce type de classement, sauf si elles sont supercédées par un terme de recherche plus spécifique. Aucun terme de recherche ne peut être défini pour la règle par défaut.
 
 ## Ordre de priorité avec plusieurs règles
 

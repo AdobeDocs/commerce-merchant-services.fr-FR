@@ -1,19 +1,15 @@
 ---
 title: Service d’ingestion de flux
 description: En savoir plus sur le service d’ingestion de flux pour Adobe Commerce
-source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
+source-git-commit: d3798efa038c35f71bb0bb6874d954a8e66c7467
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-
 # Service d’ingestion de flux
-
->[!NOTE]
->
->Le service d’ingestion de flux est actuellement en version bêta privée. Il n’est pas encore disponible pour une utilisation générale.
 
 Le service d’ingestion de flux permet aux clients disposant de catalogues volumineux et/ou complexes d’envoyer directement des données aux services Adobe Commerce.
 
@@ -36,12 +32,6 @@ Selon la configuration d’Adobe Commerce, le stockage des données et les flux 
 
 En contournant l’application Commerce principale et en déplaçant les données directement vers les services Commerce, les mises à jour de produit sont répercutées plus rapidement dans le magasin. Les données de catalogue principales, telles que les SKU, sont envoyées à l’application Commerce principale pour un traitement distinct.
 
-## Rejoindre la version bêta
+## API
 
-Le service d’ingestion de flux est conçu pour :
-
-* Clients de moyenne entreprise avec implémentations sans interface utilisateur
-* Clients disposant de catalogues volumineux et complexes
-* Clients n’utilisant pas l’administrateur Adobe Commerce pour gérer les données de catalogue, mais utilisant un système ERP ou tiers pour gérer les données de catalogue
-
-Si vous souhaitez rejoindre le programme bêta, contactez l’équipe à l’adresse sagonzal@adobe.com.
+La variable [Documentation de l’API Feed Ingestion Service](https://developer.adobe.com/commerce/services/feed-ingestion) fournit des détails sur la mise en oeuvre du service.

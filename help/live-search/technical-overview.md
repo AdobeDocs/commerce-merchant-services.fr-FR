@@ -3,9 +3,9 @@ title: "Présentation technique"
 description: "[!DNL Live Search] flux d’intégration, exigences système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
+source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Cette vidéo présente le marchandisage par catégorie.
 
 ## Référentiel de code de widget
 
-Le widget Page de liste de produits et le widget Fenêtre contextuelle de recherche peuvent tous deux être téléchargés à partir de leur référentiel github.
+Le widget Page de liste de produits et le widget Champ de recherche en direct peuvent tous deux être téléchargés à partir de leur référentiel github.
 
 Cela permet aux développeurs de personnaliser entièrement les fonctionnalités et le style. Ces utilisateurs hébergent le code eux-mêmes tout en tirant parti de la fonction [!DNL Live Search] service.
 
@@ -160,6 +160,8 @@ Actuellement, les prix de base sont pris en charge. Les prix avancés non pris e
 * Prix publicitaire minimal
 
 Regarder [Mesh de l’API](../catalog-service/mesh.md) pour des calculs de prix plus complexes.
+
+Le format de prix prend en charge le paramètre de configuration des paramètres régionaux dans l’instance Commerce : *Magasins* > Paramètres > *Configuration* > Général > *Général* > Options locales > Paramètres régionaux.
 
 ## Prise en charge des PWA
 
@@ -192,7 +194,7 @@ Pour utiliser [!DNL Live Search] avec PWA Studio, les intégrateurs doivent éga
 ## Non pris en charge actuellement
 
 * La variable [Recherche avancée](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module est désactivé lorsque [!DNL Live Search] est installé et le lien Recherche avancée dans le pied de page du storefront est supprimé.
-* [Tarifs de niveau](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) et [Tarifs spéciaux](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) ne sont pas pris en charge dans la variable [!DNL Live Search] Widget de page de liste de produits et de fenêtre contextuelle.
+* [Tarifs de niveau](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) et [Tarifs spéciaux](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) ne sont pas pris en charge dans la variable [!DNL Live Search] champ et widget de page de liste de produits.
 
 ## Cookies
 

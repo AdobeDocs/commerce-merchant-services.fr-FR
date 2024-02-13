@@ -2,9 +2,9 @@
 title: Intégration et installation
 description: "Découvrez comment installer [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: d02ffe4028bdf5765fb0f23fd210f398729bee62
+source-git-commit: 82ed90f48067d7daf20c1a9ebde318d428aad864
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -144,4 +144,8 @@ Pour autoriser [!DNL Catalog Service] via un pare-feu, ajoutez `commerce.adobe.i
 
 La variable [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
 
-Voir [[!DNL Catalog Service] et maillage API](mesh.md) pour plus d’informations sur l’installation et la configuration.
+Voir  [[!DNL Catalog Service] et maillage API](mesh.md) pour plus d’informations sur l’installation et la configuration.
+
+## Tableau de bord de la gestion des données
+
+Les utilisateurs peuvent se référer à la section [Tableau de bord de la gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) pour plus d’informations sur [!DNL Catalog Service] synchronisation des données.

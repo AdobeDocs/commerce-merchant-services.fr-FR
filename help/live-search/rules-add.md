@@ -2,9 +2,9 @@
 title: "Ajouter des règles"
 description: "Découvrez comment créer des règles de marchandisage de recherche."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,16 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 1. Cliquez sur le bouton **Marchandisage des recherches** .
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 
+## Type de règle
+
+Une requête de recherche permet de définir un terme de recherche spécifique, des conditions et des types de classement.
+
+Une règle Par défaut peut être définie et s’appliquer à toutes les requêtes, sauf si une requête de recherche plus spécifique est définie. Une seule règle par défaut peut être définie et ne peut contenir aucune condition. Si vous sélectionnez Par défaut, l’interface Conditions ne s’affiche pas.
+Choisissez le type de classement intelligent par défaut et tout classement manuel à appliquer à toutes les recherches par défaut. Les classements manuels sont toujours appliqués.
+
 ## Conditions
 
-Les conditions sont les conditions requises pour déclencher un événement. Une règle peut comporter jusqu’à dix conditions et 25 événements.
+Les conditions sont les conditions requises pour déclencher un événement. Une règle peut comporter jusqu’à dix conditions et 25 événements. Une règle par défaut ne peut pas avoir de conditions.
 
 ![Règle - Création de votre règle](assets/rules-add-workspace.png)
 
@@ -52,8 +59,6 @@ Au départ, le volet de test effectue le rendu de la requête à partir de la zo
 
 1. Pour créer une règle avec plusieurs conditions, cliquez sur **Ajouter une condition**.
 Une règle peut comporter jusqu&#39;à dix conditions. L’opérateur logique qui rejoint deux conditions est basé sur la condition actuelle *Correspondance* . Par défaut, *Correspondance* is `All` et l’opérateur logique est `AND`.
-
-   ![Règles : la requête de recherche contient](assets/rules-search-query-contains-and.png)
 
 1. Sélectionnez la seconde condition et saisissez le texte de la requête.
 
@@ -180,6 +185,7 @@ Les informations saisies ici apparaissent dans le [Détails de la règle](rules-
 | Champ | Description |
 |--- |--- |
 | Nom | Nom de la règle. Les noms des règles doivent être uniques. |
+| Type de règle | Valeur par défaut ou Requête. La valeur par défaut est appliquée à toutes les règles, sauf si une règle de requête plus spécifique est définie. |
 | Date de début | Date de début de la règle, le cas échéant. |
 | Date de fin | Date de fin de la règle, le cas échéant. |
 | Description | Brève description de la règle. |

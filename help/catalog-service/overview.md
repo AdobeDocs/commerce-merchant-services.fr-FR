@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] pour Adobe Commerce, vous pouvez récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes GraphQL natives d’Adobe Commerce."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 8e349cb8cfba7c4d828a6f3666a3b27fecfdbd15
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ La variable [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) pour dem
 
 Adobe Commerce possède deux systèmes GraphQL. Le système GraphQL principal fournit un large éventail de requêtes (opérations de lecture) et de mutations (opérations d’écriture) qui permettent à un acheteur d’interagir avec de nombreux types de pages, notamment un produit, un compte client, un panier, un passage en caisse, etc. Toutefois, les requêtes qui renvoient des informations sur les produits ne sont pas optimisées pour la vitesse. Le système GraphQL des services peut uniquement exécuter des requêtes sur les produits et les informations associées. Ces requêtes sont plus performantes que les requêtes principales similaires.
 
-Les clients du service de catalogue peuvent utiliser la nouvelle [Indexeur de prix SaaS](../price-index/index.md), qui accélère les mises à jour des changements de prix et le temps de synchronisation.
+[!DNL Catalog Service] les clients peuvent utiliser la nouvelle [Indexeur de prix SaaS](../price-index/index.md), qui accélère les mises à jour des changements de prix et le temps de synchronisation.
 
 ## Architecture
 
@@ -62,7 +62,7 @@ Les options de produits complexes sont unifiées et distinguées par leur compor
 
 ### Prix
 
-Les produits simples représentent l’unité de vente de base qui a un prix. Le service de catalogue calcule le prix normal avant remises ainsi que le prix final après remises. Les calculs de tarifs peuvent inclure des taxes fixes sur les produits. Elles excluent les promotions personnalisées.
+Les produits simples représentent l’unité de vente de base qui a un prix. [!DNL Catalog Service] calcule le prix normal avant remises ainsi que le prix final après remises. Les calculs de tarifs peuvent inclure des taxes fixes sur les produits. Elles excluent les promotions personnalisées.
 
 Un produit complexe n’a pas de prix fixe. Au lieu de cela, le service de catalogue renvoie les prix de l&#39;utilisation simple liée. Par exemple, un commerçant peut initialement attribuer les mêmes prix à toutes les variantes d’un produit configurable. Si certaines tailles ou couleurs sont impopulaires, le marchand peut réduire les prix de ces variantes. Ainsi, le prix du produit complexe (configurable) affiche au début une gamme de prix, reflétant le prix des variantes standard et impopulaires. Une fois que l’acheteur a sélectionné une valeur pour toutes les options disponibles, le storefront affiche un seul prix.
 
