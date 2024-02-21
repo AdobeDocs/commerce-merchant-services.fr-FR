@@ -3,7 +3,7 @@ title: Notes de mise à jour
 description: Les dernières informations de mise à jour pour la variable [!DNL Data Connection] à partir d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -46,7 +46,7 @@ _16 novembre 2023_
 
 _10 octobre 2023_
 
-![Nouveau](../assets/new.svg) - Ajout de nouveaux événements d’état de commande : [Commande facturée](events-backoffice.md#orderinvoiced), [Retour à la ligne de commande initié](events.md#orderitemsreturninitiated), et [Retour à la ligne de commande terminé](events.md#orderitemreturncompleted).
+![Nouveau](../assets/new.svg) - Ajout de nouveaux événements d’état de commande : [Commande facturée](events-backoffice.md#orderinvoiced), [Retour à la ligne de commande initié](events-backoffice.md#orderitemsreturninitiated), et [Retour à la ligne de commande terminé](events-backoffice.md#orderitemreturncompleted).
 ![Correction](../assets/fix.svg) - Correction d’un problème en raison duquel les modifications de configuration de devise n’étaient pas répercutées dans les événements après l’actualisation du cache.
 ![Correction](../assets/fix.svg) - Correction d’une erreur lorsque le message de confirmation de commande n’apparaissait pas si le placement de commande asynchrone était activé.
 ![Nouveau](../assets/new.svg) - Ajout de données à [addToRequestList](events.md#addtorequisitionlist) pour les produits simples sur la page d’affichage Catégorie.

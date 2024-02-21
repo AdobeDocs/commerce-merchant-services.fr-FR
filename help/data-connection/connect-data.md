@@ -3,7 +3,7 @@ title: Connexion des données commerciales à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Dans cette section, vous indiquez le type de données à collecter et à envoyer
 
 Pour vous assurer que votre instance Adobe Commerce peut commencer la collecte de données, consultez la section [conditions préalables](overview.md#prerequisites).
 
-Consultez la rubrique Événements pour en savoir plus sur [storefront](events.md#storefront-events), [back office](events.md#back-office-events), et [profile](events.md#customer-profile-events-server-side) événements .
+Consultez la rubrique Événements pour en savoir plus sur [storefront](events.md#storefront-events), [back office](events-backoffice.md), et [profile](events-backoffice.md#customer-profile-events-server-side) événements .
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ Il peut s’écouler environ 10 minutes avant qu’un enregistrement de profil s
 
 ### Envoi de données de commande historiques
 
-Adobe Commerce collecte jusqu’à cinq ans de [données et état de l’ordre historique](events.md#back-office-events). Vous pouvez utiliser la variable [!DNL Data Connection] pour envoyer ces données historiques à l’Experience Platform afin d’enrichir vos profils client et de personnaliser les expériences client en fonction de ces commandes passées. Les données sont stockées dans un jeu de données dans Experience Platform.
+Adobe Commerce collecte jusqu’à cinq ans de [données et état de l’ordre historique](events-backoffice.md#back-office-events). Vous pouvez utiliser la variable [!DNL Data Connection] pour envoyer ces données historiques à l’Experience Platform afin d’enrichir vos profils client et de personnaliser les expériences client en fonction de ces commandes passées. Les données sont stockées dans un jeu de données dans Experience Platform.
 
 Bien que Commerce collecte déjà les données de commande historiques, vous devez effectuer plusieurs étapes pour envoyer ces données à Experience Platform.
 

@@ -3,7 +3,7 @@ title: Enregistrements de profil
 description: Découvrez les données capturées par un enregistrement de profil.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -20,7 +20,7 @@ La section suivante décrit les données d’enregistrement de profil Commerce d
 
 ## Enregistrement de profil
 
-Des mises à jour d’enregistrement de profil sont disponibles dans l’Experience Platform lorsqu’un nouveau profil est créé, mis à jour ou supprimé.
+Les mises à jour des enregistrements de profil sont disponibles dans l’Experience Platform lorsqu’un nouveau profil est créé, mis à jour ou supprimé.
 
 ### Données collectées à partir de l’enregistrement de profil
 

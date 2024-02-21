@@ -3,9 +3,9 @@ title: Présentation du guide
 description: Découvrez comment intégrer des données Adobe Commerce à Adobe Experience Platform à l’aide du [!DNL Data Connection] extension .
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: af54529ad037dc99dbc07cf1a6ac270d17f16870
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1732'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Une fois que vous avez configuré la connexion entre Commerce et Experience Plat
 
 Le partage de données entre ces deux systèmes nécessite de comprendre plusieurs concepts.
 
-* **Données** - Les données qui sont partagées avec l’Experience Platform sont des données collectées à partir des événements du navigateur sur votre vitrine et des événements du back-office sur le serveur. Les événements de storefront sont capturés à partir des interactions des clients sur le site et incluent des événements tels que [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout), etc. Voir [événements storefront](events.md#storefront-events) pour obtenir la liste complète des événements storefront. Événements côté serveur ou back-office, y compris [état de la commande](events.md#back-office-events) des informations, telles que [`orderPlaced`](events.md#orderplaced), [`orderReturned`](events.md#orderitemreturncompleted), [`orderShipped`](events.md#ordershipmentcompleted), [`orderCancelled`](events.md#ordercancelled), etc. Voir [événements back office](events.md#back-office-events) pour obtenir la liste complète des événements back-office.
+* **Données** - Les données qui sont partagées avec l’Experience Platform sont des données collectées à partir des événements du navigateur sur votre vitrine, des événements du back-office sur le serveur et des données d’enregistrement de profil. Les événements de storefront sont capturés à partir des interactions des clients sur le site et incluent des événements tels que [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout), etc. Voir [événements storefront](events.md#storefront-events) pour obtenir la liste complète des événements storefront. Événements côté serveur ou back-office, y compris [état de la commande](events-backoffice.md#order-status) des informations, telles que [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled), etc. Voir [événements back office](events-backoffice.md) pour obtenir la liste complète des événements back-office. Les données d’enregistrement de profil contiennent des informations lorsqu’un nouveau profil est créé, mis à jour ou supprimé. Voir [données d’enregistrement de profil](events-profilerecord.md) pour en savoir plus.
 
 * **Experience Platform et réseau Edge** - entrepôt de données pour la plupart des produits DX Adobes. Les données envoyées à l’Experience Platform sont ensuite propagées aux produits DX Adobes par le biais du réseau Edge Experience Platform. Par exemple, vous pouvez lancer Journey Optimizer, récupérer vos données d’événement Commerce spécifiques à partir de la périphérie et créer un courrier électronique de panier abandonné dans Journey Optimizer. Journey Optimizer peut alors envoyer cet email s’il existe des paniers abandonnés dans votre boutique de commerce. En savoir plus sur les [Experience Platform et réseau Edge](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
 
