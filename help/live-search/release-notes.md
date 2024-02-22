@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
+source-git-commit: 89f0cd15e7eeb7f8f1f76df7a3612ba3ef02391e
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -45,26 +45,31 @@ _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) [!DNL Live Search] les clients peuvent désormais profiter de la nouvelle [Indexeur de prix SaaS](../price-index/index.md).
 
-<!--## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0 {#410}
 
-_Feb 13, 2024_
+_22 février 2024_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-### New Features
+### Nouvelles fonctionnalités
 
-![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
+![Nouveau](../assets/new.svg) La variable [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) est désormais disponible. Ce tableau de bord restructuré fournit des informations sur les flux de données pour [!DNL Product Recommendations], [!DNL Live Search], et [!DNL Catalog Service].
+![Nouveau](../assets/new.svg) Plusieurs nouvelles fonctionnalités ont été ajoutées au [Widget PLP](plp-styling.md):
 
-* List/grid view toggling
-* Add to Cart buttons
-* Swatch support
-* Multiple images per product
-* Price sliders
-* Language support
+* Modification du mode Liste/grille
+* Boutons Ajouter au panier
+* Prise en charge des échantillons
+* Images multiples par produit
+* Curseurs de prix
+* Prise en charge linguistique
 
-Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
+Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] extension vers la version >= 4.1.0 pour accéder à ces fonctionnalités.
 
---->
+### Mises à jour
+
+![Correction](../assets/fix.svg) Correction d’un problème qui provoquait une erreur lorsque des utilisateurs invités ajoutaient des produits à un panier dans des vues de magasin autres que celles par défaut.
+![Correction](../assets/fix.svg) Correction d’un problème en raison duquel la fenêtre contextuelle de recherche affichait toujours le symbole de devise devant la valeur de prix, quels que soient les paramètres régionaux.
+![Correction](../assets/fix.svg) Suppression des définitions de type inutiles pour les modules externes principaux désactivés afin de résoudre les problèmes de compatibilité lors de l’installation.
 
 ## [!DNL Live Search] 4.0.0 {#400}
 

@@ -2,9 +2,9 @@
 title: Intégration et installation
 description: "Découvrez comment installer [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Pour vous assurer que l’exportation du catalogue s’exécute correctement :
 - Vérifiez que les indexeurs sont en cours d’exécution.
 - Assurez-vous que la variable `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, et `Product Variant Feed` les indexeurs sont définis sur &quot;Mise à jour par planification&quot;.
 
-La synchronisation initiale peut prendre de quelques minutes à des heures selon la taille du catalogue. Après la synchronisation initiale, le catalogue exporte en permanence les données de produit du serveur Commerce vers les services Commerce afin de maintenir les services à jour.
+La synchronisation initiale peut prendre de quelques minutes à des heures selon la taille du catalogue. Après la synchronisation initiale, le catalogue exporte en permanence les données de produit du serveur Commerce vers les services Commerce afin de maintenir les services à jour. Pour surveiller l’état de la synchronisation, reportez-vous à la section [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### Accès au service
 
@@ -145,3 +145,7 @@ Pour autoriser [!DNL Catalog Service] via un pare-feu, ajoutez `commerce.adobe.i
 La variable [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
 
 Voir  [[!DNL Catalog Service] et maillage API](mesh.md) pour plus d’informations sur l’installation et la configuration.
+
+## Tableau de bord de la gestion des données
+
+Les utilisateurs peuvent se référer à la section [Tableau de bord de la gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) pour plus d’informations sur [!DNL Catalog Service] synchronisation des données.
