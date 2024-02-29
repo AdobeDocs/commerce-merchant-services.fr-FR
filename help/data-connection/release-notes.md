@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Les dernières informations de mise à jour pour la variable [!DNL Data Connection] à partir d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ _13 juin 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) - (Version bêta) Ajout de la capacité à [envoyer l’ordre historique](connect-data.md#beta-send-historical-order-data) données et état de l’Experience Platform. Cette fonctionnalité est disponible uniquement pour les utilisateurs bêta. Vous pouvez rejoindre la version bêta en envoyant un courrier électronique à l’adresse suivante : `dataconnection@adobe.com`.
+![Nouveau](../assets/new.svg) - (Version bêta) Ajout de la capacité à [envoyer l’ordre historique](connect-data.md#beta-send-historical-order-data) données et état de l’Experience Platform.
 
 ## 2.2.0
 

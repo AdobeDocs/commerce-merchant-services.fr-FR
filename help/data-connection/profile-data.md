@@ -3,18 +3,14 @@ title: Mise à jour du schéma d’enregistrement de profil pour l’ingestion d
 description: Découvrez comment créer un schéma, un jeu de données et un flux de données pour collecter et envoyer des données d’enregistrement de profil Commerce à l’Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # Mise à jour du schéma d’enregistrement de profil pour l’ingestion de données commerciales
-
->[!NOTE]
->
->Cette fonctionnalité est en version bêta. Si vous souhaitez rejoindre le programme bêta, envoyez une demande à [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Lorsque vos acheteurs créent un profil sur votre site Commerce, un enregistrement de profil est créé et des données sont capturées. Vous devez créer un schéma et un jeu de données spécifiques à cet enregistrement de profil avant de pouvoir diffuser ces données de profil vers l’Experience Platform.
 

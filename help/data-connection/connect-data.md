@@ -3,9 +3,9 @@ title: Connexion des données commerciales à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Dans cette section, vous découvrirez comment configurer la variable [!DNL Data 
 
 ### Ajout de détails sur le compte de service et les informations d’identification
 
-Si vous prévoyez de collecter et d’envoyer [données d’ordre historique](#send-historical-order-data) ou [(Version bêta) données de profil client](#send-customer-profile-data), vous devez ajouter les détails du compte de service et des informations d’identification. En outre, si vous configurez la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , vous devez effectuer ces étapes.
+Si vous prévoyez de collecter et d’envoyer [données d’ordre historique](#send-historical-order-data) ou [données de profil client](#send-customer-profile-data), vous devez ajouter les détails du compte de service et des informations d’identification. En outre, si vous configurez la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , vous devez effectuer ces étapes.
 
 Si vous collectez et envoyez uniquement des données de storefront ou back-office, vous pouvez passer à la variable [general](#general) .
 
@@ -97,7 +97,7 @@ Dans cette section, vous indiquez le type de données à collecter et à envoyer
 
 - **Retour au bureau** (données côté serveur) est des données capturées dans les serveurs de commerce. Cela inclut des informations sur l’état d’une commande, par exemple si une commande a été passée, annulée, remboursée, expédiée ou terminée. Elle comprend également [données d’ordre historique](#send-historical-order-data).
 
-- (**Beta**) **Profil** est des données liées aux informations de profil de votre acheteur. Formation [more](#send-customer-profile-data).
+- **Profil** est des données liées aux informations de profil de votre acheteur. Formation [more](#send-customer-profile-data).
 
 Pour vous assurer que votre instance Adobe Commerce peut commencer la collecte de données, consultez la section [conditions préalables](overview.md#prerequisites).
 
@@ -158,13 +158,9 @@ Une fois l’intégration effectuée, les données du storefront commencent à s
 
 ### Envoi des données de profil client
 
->[!IMPORTANT]
->
->Cette fonctionnalité est en version bêta. Si vous souhaitez rejoindre le programme bêta, envoyez une demande à [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
 Vous pouvez envoyer à l’Experience Platform deux types de données de profil : les enregistrements de profil et les événements de profil de série temporelle.
 
-Un enregistrement de profil contient des données enregistrées lorsqu’un acheteur crée un profil dans votre instance Commerce, tel que le nom de l’acheteur. Lorsque votre schéma et votre jeu de données sont [correctement configuré](profile-data.md), un enregistrement de profil est envoyé à l’Experience Platform et transféré au service de segmentation et de gestion des profils d’Adobe : [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Un enregistrement de profil contient des données enregistrées lorsqu’un acheteur crée un profil dans votre instance Commerce, tel que le nom de l’acheteur. Lorsque votre schéma et votre jeu de données sont [correctement configuré](profile-data.md), un enregistrement de profil est envoyé à l’Experience Platform et transféré au service de segmentation et de gestion des profils d’Adobe : [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=fr).
 
 Les événements de profil de série temporelle contiennent des données sur les informations de profil de votre acheteur, telles que la création, la modification ou la suppression d’un compte sur votre site. Lorsque des données d’événement de profil sont envoyées à l’Experience Platform, elles se trouvent dans un jeu de données où elles peuvent être utilisées par d’autres produits DX.
 

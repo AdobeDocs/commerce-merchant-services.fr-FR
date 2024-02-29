@@ -3,9 +3,9 @@ title: Types de données commerciales
 description: Découvrez les types de données que vous pouvez collecter et envoyer à l’Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,7 @@ Découvrez comment [création d’un schéma](update-xdm.md) qui peut ingérer d
 
 ## Enregistrer les données
 
->[!NOTE]
->
->Cette fonctionnalité est en version bêta. Si vous souhaitez rejoindre le programme bêta, envoyez une demande à [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
-Les données d’enregistrement fournissent des informations sur les attributs d’un sujet. Un sujet peut être une organisation ou un individu. Par exemple, un acheteur sur votre site crée un compte et génère des données d’enregistrement. Ces données sont ingérées dans l’Experience Platform à l’aide d’un schéma dont la classe est définie sur **Profil individuel**. Vous pouvez envoyer ces données d’enregistrement au service de gestion des profils et de segmentation d’Adobe : [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Les données d’enregistrement fournissent des informations sur les attributs d’un sujet. Un sujet peut être une organisation ou un individu. Par exemple, un acheteur sur votre site crée un compte et génère des données d’enregistrement. Ces données sont ingérées dans l’Experience Platform à l’aide d’un schéma dont la classe est définie sur **Profil individuel**. Vous pouvez envoyer ces données d’enregistrement au service de gestion des profils et de segmentation d’Adobe : [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=fr).
 
 ### Données d’enregistrement de profil capturées
 

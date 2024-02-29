@@ -4,9 +4,9 @@ description: Découvrez comment créer un schéma, un jeu de données et un flux
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ Avec les schémas, les jeux de données et les jeux de données configurés pour
 Pour inclure les informations de profil de votre acheteur, reportez-vous à la section suivante.
 
 ## Données d’événement de profil de série temporelle
-
->[!NOTE]
->
->Cette fonctionnalité est en version bêta. Si vous souhaitez rejoindre le programme bêta, envoyez une demande à [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Les données d’événement de profil de série temporelle sont générées à partir des événements suivants :
 

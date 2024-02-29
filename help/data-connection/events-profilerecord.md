@@ -3,18 +3,14 @@ title: Enregistrements de profil
 description: Découvrez les données capturées par un enregistrement de profil.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Enregistrements de profil (bêta)
-
->[!NOTE]
->
->Cette fonctionnalité est en version bêta. Si vous souhaitez rejoindre le programme bêta, envoyez une demande à [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] Enregistrements de profil
 
 La section suivante décrit les données d’enregistrement de profil Commerce disponibles lors de l’installation de la variable [!DNL Data Connection] extension . Les données des enregistrements de profil sont envoyées à Adobe Experience Platform.
 
