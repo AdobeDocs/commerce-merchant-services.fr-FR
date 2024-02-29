@@ -2,9 +2,9 @@
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Lorsque vous activez l’entité de recommandation, Adobe Commerce commence à [
 1. Dans le _Nommer votre recommandation_ , saisissez un nom descriptif pour la référence interne, tel que `Home page most popular`.
 
 1. Dans le _Sélectionner le type de page_ , sélectionnez la page sur laquelle vous souhaitez que la recommandation apparaisse dans les options suivantes :
+
+   >[!NOTE]
+   >
+   > Les Recommendations de produit ne sont pas pris en charge sur la page Panier lorsque votre boutique est configurée pour [afficher la page Panier immédiatement après l’ajout d’un produit au panier ;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * Page d’accueil
    * Catégorie
