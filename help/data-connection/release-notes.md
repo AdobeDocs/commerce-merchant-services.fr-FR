@@ -3,7 +3,7 @@ title: Notes de mise à jour
 description: Les dernières informations de mise à jour pour la variable [!DNL Data Connection] à partir d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: b1a029f07bf6b62443850146c9be0793bc8e7211
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -72,9 +72,9 @@ _12 octobre 2022_
 
 +++
 
-## 3.2.0-beta1
+## 3.2.0-beta2
 
-_16 février 2024_
+_4 mars 2024_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
