@@ -2,9 +2,9 @@
 title: "Add Synonyms"
 description: "Ajouter [!DNL Live Search] synonymes pour améliorer la réponse aux requêtes de recherche."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Suivez les instructions de la section [type de synonyme](synonyms-type.md) que v
 
 1. Saisissez le **Mot-clé** terme ou expression à mettre en correspondance.
 1. Saisissez le **Extension** terme(s) que vous souhaitez ajouter en tant que synonymes pour le mot-clé. Séparez plusieurs termes par une virgule.
-Dans cet exemple, le mot-clé à associer est &quot;pantalon&quot; et l’ensemble de termes d’extension est &quot;pantalon long, pantalon, pantalon&quot;.
+Dans cet exemple, le mot-clé à associer est &quot;pantalon&quot; et l’ensemble de termes d’extension est &quot;pantalon, pantalons&quot;.
 
    ![Exemple de synonyme bidirectionnel](assets/synonym-add-two-way-example.png)
 
@@ -54,7 +54,7 @@ L’ensemble de synonymes apparaît dans la liste avec une flèche bidirectionne
 
    ![Exemple de synonyme unidirectionnel](assets/synonym-add-one-way-example.png)
 
-   Dans cet exemple, le mot-clé est &quot;pantalon&quot; et les termes d’extension unidirectionnelle &quot;capris, pantalon-length, pédophiles&quot; sont tous deux un sous-ensemble de &quot;pantalons&quot;, mais avec une signification spécifique.
+   Dans cet exemple, le mot-clé est &quot;pantalon&quot; et les termes d’extension unidirectionnelle &quot;capris, peddle-pushers&quot; sont tous un sous-ensemble de &quot;pantalons&quot;, mais avec une signification spécifique.
 
 1. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 L’ensemble de synonymes apparaît dans la liste avec une flèche à sens unique indiquant les termes d’extension au mot-clé afin d’indiquer que les termes sont des sous-ensembles du mot-clé. Un signe plus sépare chaque terme d’extension.
