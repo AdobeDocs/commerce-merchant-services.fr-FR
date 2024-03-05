@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
+source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Voir [Disponibilité du produit](https://experienceleague.adobe.com/docs/commerc
 Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités qui se sont produits et qui ont été publiés en dehors des versions régulières des fonctionnalités pour le service hébergé.
 
 +++Mises à jour du service hébergé
+
+_5 mars 2024_
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-5252 --> Désormais, les marchands peuvent copier des données des grilles du tableau de bord en sélectionnant le contenu d’une seule cellule.
 
 _10 octobre 2023_
 
