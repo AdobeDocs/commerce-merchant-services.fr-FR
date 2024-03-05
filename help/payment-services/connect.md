@@ -3,9 +3,9 @@ title: Connexion à votre instance
 description: Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * Si vous avez *votre instance déjà connectée*, en obtenant et en utilisant vos informations d’identification d’API et en configurant Commerce Services, vous pouvez passer à [configuration de votre environnement de test](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * Si vous continuez *besoin de connecter votre instance*, reportez-vous aux informations de cette rubrique sur [Obtention des informations d’identification d’API](#obtain-api-credentials) et [configuration de Commerce Services](#configure-commerce-services).
 * Si vous *ne pas savoir si votre instance est connectée*, accédez à **Système** > Services > **Connecteur Commerce Services** et d’afficher les valeurs des clés API publiques et privées dans la variable [!UICONTROL Sandbox Keys] et [!UICONTROL Production Keys] et la variable *Projet* et *Espace de données* dans le champ [!UICONTROL SaaS Identifier] . Si ces valeurs sont présentes, votre instance est connectée.
+
+>[!NOTE]
+>
+>Tous les commerçants autorisés pour les services de paiement peuvent utiliser un espace de données de production et deux espaces de données de test.
 
 ## Obtention des informations d’identification de l’API
 
