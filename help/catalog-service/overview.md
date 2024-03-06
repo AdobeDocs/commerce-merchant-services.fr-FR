@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] pour Adobe Commerce, vous pouvez récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes GraphQL natives d’Adobe Commerce."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -25,7 +25,7 @@ La variable [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) pour dem
 
 Adobe Commerce possède deux systèmes GraphQL. Le système GraphQL principal fournit un large éventail de requêtes (opérations de lecture) et de mutations (opérations d’écriture) qui permettent à un acheteur d’interagir avec de nombreux types de pages, notamment un produit, un compte client, un panier, un passage en caisse, etc. Toutefois, les requêtes qui renvoient des informations sur les produits ne sont pas optimisées pour la vitesse. Le système GraphQL des services peut uniquement exécuter des requêtes sur les produits et les informations associées. Ces requêtes sont plus performantes que les requêtes principales similaires.
 
-[!DNL Catalog Service] les clients peuvent utiliser la nouvelle [Indexeur de prix SaaS](../price-index/index.md), qui accélère les mises à jour des changements de prix et le temps de synchronisation.
+[!DNL Catalog Service] les clients peuvent utiliser la nouvelle [Indexeur de prix SaaS](../price-index/price-indexing.md), qui accélère les mises à jour des changements de prix et le temps de synchronisation.
 
 ## Architecture
 
@@ -68,7 +68,7 @@ Un produit complexe n’a pas de prix fixe. Au lieu de cela, le service de catal
 
 >[!NOTE]
 >
-> Clients commerciaux avec [!DNL Catalog Service] peuvent tirer parti des modifications de prix plus rapides et du temps de synchronisation sur leurs sites web avec la variable [Indexeur de prix SaaS](../price-index/index.md).
+> Clients commerciaux avec [!DNL Catalog Service] peuvent tirer parti des modifications de prix plus rapides et du temps de synchronisation sur leurs sites web avec la variable [Indexeur de prix SaaS](../price-index/price-indexing.md).
 
 ## Implémentation
 

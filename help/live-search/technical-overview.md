@@ -3,7 +3,7 @@ title: "Présentation technique"
 description: "[!DNL Live Search] flux d’intégration, exigences système, limites et limites"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Cela permet aux développeurs de personnaliser entièrement les fonctionnalités
 
 ## Indexateur de prix
 
-Les clients Live Search peuvent utiliser la nouvelle [Indexeur de prix SaaS](../price-index/index.md), qui accélère les mises à jour des changements de prix et le temps de synchronisation.
+Les clients Live Search peuvent utiliser la nouvelle [Indexeur de prix SaaS](../price-index/price-indexing.md), qui accélère les mises à jour des changements de prix et le temps de synchronisation.
 
 ## Prise en charge des prix
 
