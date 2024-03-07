@@ -4,9 +4,9 @@ description: Découvrez les données que chaque événement comportemental captu
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '4497'
+source-wordcount: '4496'
 ht-degree: 0%
 
 ---
@@ -303,9 +303,9 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
 | `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
 
-## Événements de profil client (comportemental)
+## Événements de profil client
 
-Les événements de profil capturés à partir du storefront incluent des informations de compte, telles que `signIn`, `signOut`, `createAccount`, et `editAccount`. Ces données permettent de renseigner les détails clés des clients nécessaires pour mieux définir les segments ou exécuter des campagnes marketing, comme envoyer des offres de réduction d’inscription, confirmer des changements de compte, etc. Des événements de profil similaires sont capturés à partir de la variable [côté serveur](events-backoffice.md#customer-profile-events-back-office).
+Les événements de profil capturés à partir du storefront incluent des informations de compte, telles que `signIn`, `signOut`, `createAccount`, et `editAccount`. Ces données permettent de renseigner les détails clés des clients nécessaires pour mieux définir les segments ou exécuter des campagnes marketing, comme envoyer des offres de réduction d’inscription, confirmer des changements de compte, etc. Des événements de profil similaires sont capturés à partir de la variable [côté serveur](events-backoffice.md#customer-profile-events).
 
 ### signIn
 

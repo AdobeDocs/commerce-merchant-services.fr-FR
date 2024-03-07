@@ -3,9 +3,10 @@ title: Événements de back-office
 description: Découvrez les données que chaque événement back-office capture.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
+source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3571'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ La liste suivante répertorie les événements Commerce back-office disponibles 
 
 Outre les données collectées par les événements suivants, vous obtenez également [autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fourni par le SDK Web de Adobe Experience Platform.
 
-Les événements back-office contiennent des données côté serveur. Ces données comprennent : [état de la commande](#order-status) informations telles que si une commande a été passée, annulée, remboursée, expédiée ou terminée. Les données côté serveur incluent également [événements de profil client](#customer-profile-events-back-office) des informations, telles que la création, la mise à jour ou la suppression d’un compte.
+Les événements back-office contiennent des données côté serveur. Ces données comprennent : [état de la commande](#order-status) informations telles que si une commande a été passée, annulée, remboursée, expédiée ou terminée. Les données côté serveur incluent également [événements de profil client](#customer-profile-events) des informations, telles que la création, la mise à jour ou la suppression d’un compte.
 
 >[!NOTE]
 >
@@ -401,9 +402,9 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.categories.name` | Nom de la catégorie. |
 | `productListItems.categories.path` | Chemin d’accès à la catégorie. |
 
-## Événements de profil client (back-office)
+## Événements de profil client
 
-Les événements de profil capturés du côté serveur incluent des informations de compte, telles que `accountCreated`, `accountUpdated`, et `accountDeleted`. Ces données permettent de renseigner les détails clés des clients nécessaires pour mieux définir les segments ou exécuter des campagnes marketing, comme envoyer des offres de réduction d’inscription, confirmer des changements de compte, etc. Des événements de profil similaires sont capturés à partir de la variable [storefront](#customer-profile-events-storefront).
+Les événements de profil capturés du côté serveur incluent des informations de compte, telles que `accountCreated`, `accountUpdated`, et `accountDeleted`. Ces données permettent de renseigner les détails clés des clients nécessaires pour mieux définir les segments ou exécuter des campagnes marketing, comme envoyer des offres de réduction d’inscription, confirmer des changements de compte, etc. Des événements de profil similaires sont capturés à partir de la variable [storefront](events.md#customer-profile-events).
 
 ### accountCreated
 
