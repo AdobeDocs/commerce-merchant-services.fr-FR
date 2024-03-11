@@ -2,9 +2,9 @@
 title: "Types de synchronisation"
 description: "A sens unique et à sens unique [!DNL Live Search] les synonymes étendent la définition des mots-clés."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ Il n&#39;est pas nécessaire de définir les formes singulière et plurielle d&#
 ### Cohérence
 
 Soyez cohérent avec la manière dont la terminologie est utilisée dans votre catalogue. Gardez à l’esprit qu’il peut y avoir des différences régionales d’utilisation et parfois des différences au sein d’un secteur d’activité.
-
-### Mappage des mots-clés
-
-Cette technique utilise des attributs de produit pouvant faire l’objet de recherches, plutôt que des synonymes, pour créer des associations basées sur des mots-clés entre les produits. Par conséquent, un produit mappé peut apparaître dans les résultats de recherche d’un autre produit. Pour en savoir plus, voir [Résultats de la recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
