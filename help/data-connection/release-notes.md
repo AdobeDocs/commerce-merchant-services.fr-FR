@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Les dernières informations de mise à jour pour la variable [!DNL Data Connection] à partir d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: b1a029f07bf6b62443850146c9be0793bc8e7211
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,14 @@ _12 octobre 2022_
 ![Nouveau](../assets/new.svg) - Ajout de la prise en charge d’un [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.1.1
+
+_19 mars 2024_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.3
 
 ## 3.2.0-beta2
 

@@ -4,9 +4,9 @@ description: Découvrez les données que chaque événement comportemental captu
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4516'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,8 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
 | `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
 | `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
+| `commerce.order` | Contient des informations sur la commande en attente d’un ou de plusieurs produits. |
+| `commerce.order.discountAmount` | Indique le montant de remise appliqué à la commande entière. |
 | `productListItems` | Tableau de produits qui ont été ajoutés au panier. |
 | `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
 | `productListItems.name` | Nom d’affichage ou nom lisible du produit. |

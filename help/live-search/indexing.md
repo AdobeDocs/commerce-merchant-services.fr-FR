@@ -2,7 +2,7 @@
 title: "[!DNL Live Search] Indexation"
 description: "Découvrez comment [!DNL Live Search] indexe les propriétés d’attribut de produit."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 17b9383ad84c47f2b0314feccbabb33d7dd8fc11
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Pour construire une requête dynamique, le service de recherche doit savoir quel
 
 ### Index complet
 
-When [!DNL Live Search] est configuré et synchronisé lors de l’intégration. La création de l’index initial peut prendre jusqu’à 30 minutes. L’indexation des catalogues volumineux peut prendre plus de temps. Le processus commence après `cron` envoie le flux et termine l’exécution.
+When [!DNL Live Search] est configuré et synchronisé lors de l’intégration. La création de l’index initial peut prendre jusqu’à 60 minutes. L’indexation des catalogues volumineux peut prendre plus de temps. Le processus commence après `cron` envoie le flux et termine l’exécution.
 
 Les événements suivants déclenchent une synchronisation complète et une génération d’index :
 

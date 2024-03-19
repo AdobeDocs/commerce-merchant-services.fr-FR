@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1925'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,22 @@ _12 octobre 2023_
 
 _13 juin 2023_
 
-![Correction](../assets/fix.svg) Correction d’un problème en raison duquel certains caractères, tels que les guillemets ou les apostrophes, provoquaient des problèmes de classement. La réindexation résoudra ces problèmes.
+![Correction](../assets/fix.svg) Correction d’un problème en raison duquel certains caractères, tels que les guillemets ou les apostrophes, provoquaient des problèmes de classement. La réindexation résout ces problèmes.
 
 _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) [!DNL Live Search] les clients peuvent désormais profiter de la nouvelle [Indexeur de prix SaaS](../price-index/price-indexing.md).
+
+## [!DNL Live Search] 4.1.1 {#411}
+
+_19 mars 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+### Nouvelles fonctionnalités
+
+![Nouveau](../assets/new.svg) Ajout de la prise en charge linguistique pour [Polonais](technical-overview.md#language-support).
+![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge PHP 8.3 pour les installations exécutant Adobe Commerce 2.4.4.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -53,7 +64,7 @@ _22 février 2024_
 
 ### Nouvelles fonctionnalités
 
-![Nouveau](../assets/new.svg) La variable [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) est désormais disponible. Ce tableau de bord restructuré fournit des informations sur les flux de données pour [!DNL Product Recommendations], [!DNL Live Search], et [!DNL Catalog Service].
+![Nouveau](../assets/new.svg) La variable [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) est désormais disponible. Ce tableau de bord restructuré fournit des informations sur les flux de données pour [!DNL Product Recommendations], [!DNL Live Search], et [!DNL Catalog Service].
 ![Nouveau](../assets/new.svg) Plusieurs nouvelles fonctionnalités ont été ajoutées au [Widget PLP](plp-styling.md):
 
 * Modification du mode Liste/grille
@@ -166,7 +177,7 @@ Il est recommandé de mettre à niveau et de tester avant de passer en productio
 
 ### Limites
 
-L’utilisation du widget Page de liste des produits de la recherche en direct entraînera l’échec du Gestionnaire de balises de Google. Utilisez l’adaptateur de recherche par défaut si Google Tag Manager est nécessaire.
+L’utilisation du widget Page de liste des produits de la recherche en direct entraîne l’échec du Gestionnaire de balises de Google. Utilisez l’adaptateur de recherche par défaut si Google Tag Manager est nécessaire.
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -177,12 +188,12 @@ _14 mars 2023_
 ### Nouvelles fonctionnalités
 
 ![Nouveau](../assets/new.svg) Carte des éléments de produit dans l’aperçu des règles
-![Nouveau](../assets/new.svg) [Widget de page de liste de produits](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![Nouveau](../assets/new.svg) [Widget de page de liste de produits](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
 ![Nouveau](../assets/new.svg) [Options de filtrage des catégories](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![Nouveau](../assets/new.svg) Ajout de la possibilité de faire glisser et de déposer des événements Pin
 ![Nouveau](../assets/new.svg) Nouvelles actions Epingler : * Epingler à l’emplacement - Bouton Epingler pour créer l’événement Epingler d’un seul clic * Epingler au haut - Placer le produit dans la première position * Epingler au bas des résultats * Détacher un événement d’un seul clic
-![Nouveau](../assets/new.svg) [Classement intelligent des règles](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
-![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge l’intégralité [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) Fonctionnalités dans Commerce (anciennement appelées inventaire multi-source ou MSI). Pour activer la prise en charge complète, vous devez [update](install.md#update) le module de dépendance ; `commerce-data-export` vers la version 102.2.0+.
+![Nouveau](../assets/new.svg) [Classement intelligent des règles](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
+![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge l’intégralité [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Fonctionnalités dans Commerce (anciennement appelées inventaire multi-source ou MSI). Pour activer la prise en charge complète, vous devez [update](install.md#update) le module de dépendance ; `commerce-data-export` vers la version 102.2.0+.
 
 ### Mises à jour
 
@@ -254,7 +265,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 ![Nouveau](../assets/new.svg) Le nombre de lignes disponibles dans la variable [[!DNL storefront popover]](quick-tour.md) peut être configuré à partir du *Administration*.
 ![Nouveau](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) pris en charge pour [!DNL Live Search].
 ![Nouveau](../assets/new.svg) La variable [!DNL Live Search] le processus d’installation est mis à jour avec des modifications avancées des processus.
-![Correction](../assets/fix.svg) [Recherche avancée](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) lien supprimé du pied de page du storefront.
+![Correction](../assets/fix.svg) [Recherche avancée](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) lien supprimé du pied de page du storefront.
 ![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par [API Commerce GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) lorsqu’elle est utilisée en rapport avec la version bêta de PWA : `description`, `name`, `short_description`
 ![Bogue](../assets/bug.svg) La version bêta de PWA pour [!DNL Live Search] ne prend pas en charge [gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
@@ -262,9 +273,9 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 
 [!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
-![Correction](../assets/fix.svg) [Attribut de prix personnalisé](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) ne renvoie plus d’erreur lorsqu’elle est configurée en tant que [facette]({% lien live-search/facets-add.md %}).
-![Correction](../assets/fix.svg) Correction d’un problème en raison duquel une erreur se produisait lorsqu’aucune [symbole de devise](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`) est disponible.
-![Correction](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) affiche désormais la variable [Prix spécial](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) (prix final minimum) le cas échéant.
+![Correction](../assets/fix.svg) [Attribut de prix personnalisé](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) ne renvoie plus d’erreur lorsqu’elle est configurée en tant que [facette]({% lien live-search/facets-add.md %}).
+![Correction](../assets/fix.svg) Correction d’un problème en raison duquel une erreur se produisait lorsqu’aucune [symbole de devise](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`) est disponible.
+![Correction](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) affiche désormais la variable [Prix spécial](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (prix final minimum) le cas échéant.
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
@@ -273,9 +284,9 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 ![Nouveau](../assets/new.svg) [Performances](performance.md) le tableau de bord des rapports fournit des informations sur les termes de recherche que les acheteurs utilisent.
 ![Nouveau](../assets/new.svg) [!DNL Live Search] [SDK des événements Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) permet d’accéder à une couche de données commune avec des services de publication et d’abonnement d’événements, ainsi que des mesures.
 ![Correction](../assets/fix.svg) La variable [[!DNL Storefront popover]](storefront-popover.md) comporte une nouvelle `active` pour la classe `.search-autocomplete` conteneur contrôlant la visibilité.
-![Correction](../assets/fix.svg) Dans la vitrine, le [Termes de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#popular-search-terms) lien de pied de page supprimé et son cache désactivé pour [!DNL Live Search] installations.
+![Correction](../assets/fix.svg) Dans la vitrine, le [Termes de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) lien de pied de page supprimé et son cache désactivé pour [!DNL Live Search] installations.
 ![Bogue](../assets/bug.svg) Le correctif pour l’adaptateur de recherche gère les produits en double.
-![Bogue](../assets/bug.svg) [!DNL Live Search] prend [source unique](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) emplacements d’inventaire (physiques) avec plusieurs emplacements (virtuels) [stocks](https://experienceleague.adobe.com/docs/commerce-admin/inventory/stocks/stocks-manage.html). Plusieurs sources d’inventaire ne sont désormais pas prises en charge.
+![Bogue](../assets/bug.svg) [!DNL Live Search] prend [source unique](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) emplacements d’inventaire (physiques) avec plusieurs emplacements (virtuels) [stocks](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage). Plusieurs sources d’inventaire ne sont désormais pas prises en charge.
 
 ### [!DNL Live Search] 1.2.0 {#120}
 
@@ -294,8 +305,8 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 
 [!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
-![Bogue](../assets/bug.svg) La variable [!DNL Live Search] ne prend en charge que les [monnaie de base](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) de l’installation Adobe Commerce.
-![Bogue](../assets/bug.svg) Lors de l’ajout d’une facette, le flux d’attributs de produit ne se met pas à jour correctement lorsqu’il est défini sur `Update on Save`. Pour éviter ce problème, accédez à [Gestion des index](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) et définissez le flux Attributs du produit sur `Update by Schedule`.
+![Bogue](../assets/bug.svg) La variable [!DNL Live Search] ne prend en charge que les [monnaie de base](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) de l’installation Adobe Commerce.
+![Bogue](../assets/bug.svg) Lors de l’ajout d’une facette, le flux d’attributs de produit ne se met pas à jour correctement lorsqu’il est défini sur `Update on Save`. Pour éviter ce problème, accédez à [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) et définissez le flux Attributs du produit sur `Update by Schedule`.
 ![Bogue](../assets/bug.svg) [!DNL Live Search] les synonymes sont définis par vue de magasin, mais sont actuellement stockés par site web et identifiés par une combinaison de `environmentId` et `storeViewCode`. Par conséquent, tous les sites web et toutes les vues de magasin dans l’installation Adobe Commerce partagent des synonymes. Le dernier ensemble de synonymes créé pour la vue de magasin est prioritaire.
 ![Bogue](../assets/bug.svg) Si un terme de synonyme contient plusieurs mots, chaque mot est traité comme un synonyme distinct. Par exemple, si vous définissez &quot;pièce temporelle&quot; comme un synonyme de &quot;montre&quot;, &quot;heure&quot; et &quot;pièce&quot; sont tous deux traités comme des synonymes de montre.
 
@@ -306,5 +317,5 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 Pour en savoir plus :
 
 * [Documentation destinée aux développeurs Adobe Commerce](https://developer.adobe.com/commerce/docs)
-* [Guide de l’utilisateur d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html)
+* [Guide de l’utilisateur d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce)
 * [[!DNL Live Search] sur Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
