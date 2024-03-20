@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Dans la vue Visualisation de l’état des paiements des commandes, vous pouvez 
 
 ### Informations sur les états
 
-Les états de paiement pour une période sélectionnée sont affichés à gauche de la vue de visualisation des données sur l’état des paiements de la commande . Les dates de la période sélectionnée s’affichent au bas de la vue. Si aucune commande n’a été effectuée à une date spécifique, cette date n’apparaîtra pas.
+Les états de paiement pour une période sélectionnée sont affichés à gauche de la vue de visualisation des données sur l’état des paiements de la commande . Les dates de la période sélectionnée s’affichent au bas de la vue. Si aucune commande n’a été effectuée à une date spécifique, cette date n’apparaît pas.
 
 La visualisation des données de statut des paiements de commande comprend les informations suivantes.
 
@@ -83,9 +83,36 @@ Vous pouvez [téléchargement des transactions de paiement](#download-order-paym
 >
 >Les données affichées dans ce tableau sont triées par ordre décroissant (`DESC`) par défaut, à l’aide de la fonction `TRANS DATE`. La variable `TRANS DATE` est la date et l’heure auxquelles la transaction a été lancée.
 
+### Mises à jour du statut des paiements
+
+Certains modes de paiement nécessitent un délai pour capturer le paiement. [!DNL Payment Services] détecte désormais les états en attente d’une transaction de paiement dans une commande en :
+
+* Détection synchrone `pending capture` transactions
+* Surveillance asynchrone `pending capture` transactions
+
+>[!NOTE]
+>
+>La détection des états en attente des transactions de paiement dans une commande empêche l’expédition accidentelle des commandes si le paiement n’a pas encore été reçu. Cela peut se produire pour les transactions de contrôle électronique et PayPal.
+
+#### Détection synchrone des transactions de capture en attente
+
+Détecter automatiquement les transactions de capture dans un `Pending` et empêcher les commandes de saisir un `Processing` statut lorsqu’une telle transaction est détectée.
+
+Lors de l’extraction d’un client ou lorsqu’un administrateur crée une facture pour un paiement précédemment autorisé, [!DNL Payment Services] détecte automatiquement les transactions de capture dans une `Pending` l’état et les commandes correspondantes sont `Payment Review` statut.
+
+#### Surveillance asynchrone des transactions de capture en attente
+
+Détecter lorsqu’une transaction de capture en attente entre dans une `Completed` de sorte que les marchands puissent reprendre le traitement de la commande affectée.
+
+Pour s’assurer que ce processus fonctionne comme prévu, les marchands doivent configurer une nouvelle tâche cron. Une fois que la tâche est configurée pour s’exécuter automatiquement, aucune autre intervention du marchand n’est attendue.
+
+Voir [Configuration des tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Une fois configurée, la nouvelle tâche s’exécute toutes les 30 minutes pour récupérer les mises à jour des commandes qui se trouvent dans un `Payment Review` statut.
+
+Les vendeurs peuvent vérifier le statut du paiement mis à jour à l’aide de la vue Rapport d’état des paiements de la commande .
+
 ### Données utilisées dans le rapport
 
-La variable [!DNL Payment Services] Le module utilise les données de commande et les combine aux données de paiement agrégées provenant d’autres sources (y compris PayPal) afin de fournir des rapports pertinents et très utiles.
+[!DNL Payment Services] utilise les données de commande et les combine aux données de paiement agrégées provenant d’autres sources (y compris PayPal) afin de fournir des rapports pertinents et très utiles.
 
 Les données de commande sont exportées et conservées dans le service de paiement. Lorsque vous [modifier ou ajouter des statuts de commande ;](https://docs.magento.com/user-guide/sales/order-status-custom.html) ou [modification d’une vue de magasin](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [store](https://docs.magento.com/user-guide/stores/store-information.html), ou nom du site web, ces données sont combinées avec les données de paiement et le rapport État du paiement de la commande est renseigné avec les informations combinées.
 
@@ -132,9 +159,9 @@ Pour sélectionner la source de données [!UICONTROL Order Payment Status] rappo
 
    Les résultats du rapport se régénèrent en fonction de la source de données sélectionnée.
 
-### Personnalisation de la période de dates
+### Personnalisation de la période des dates de commande
 
-Dans la vue Rapport d’état des paiements de la commande, vous pouvez personnaliser la période des états que vous souhaitez afficher en sélectionnant des dates spécifiques. Par défaut, 30 jours de statut de paiement de la commande sont affichés dans la grille.
+Dans la vue Rapport d’état des paiements de la commande, vous pouvez personnaliser la période des résultats d’état que vous souhaitez afficher en sélectionnant des dates spécifiques. Par défaut, 30 jours de statut de paiement de la commande sont affichés dans la grille.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Cliquez sur le bouton _[!UICONTROL Order dates]_filtre du sélecteur de calendrier.
@@ -148,7 +175,7 @@ Dans la vue Rapport d’état des paiements des commandes , vous pouvez filtrer 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Cliquez sur le bouton **[!UICONTROL Filter]** sélecteur.
 1. Activez/désactivez la variable _État de paiement_ pour afficher les résultats des rapports uniquement pour les états de paiement de commande sélectionnés.
-1. Saisissez un _Montant de la commande min_ ou _Montant max. de la commande_ pour afficher les résultats du rapport sur cette période.
+1. Pour afficher les résultats d’un rapport sur une période de commande, saisissez une _[!UICONTROL Min Order Amount]_ou _[!UICONTROL Max Order Amount_].
 1. Cliquez sur **[!UICONTROL Hide filters]** pour masquer le filtre.
 
 ### Afficher et masquer les colonnes
@@ -159,7 +186,7 @@ Le rapport État du paiement de la commande affiche toutes les colonnes d’info
 1. Cliquez sur le bouton _Paramètres des colonnes_ icône (![icône des paramètres de colonne](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Pour personnaliser les colonnes affichées dans le rapport, cochez ou décochez les colonnes de la liste.
 
-   Le rapport État des paiements de la commande affiche immédiatement les modifications que vous avez apportées au menu Paramètres de colonne . Les préférences de colonne seront enregistrées et resteront en vigueur si vous quittez la vue du rapport.
+   Le rapport État des paiements de la commande affiche immédiatement les modifications que vous avez apportées au menu Paramètres de colonne . Les préférences de colonne sont enregistrées et restent en vigueur si vous quittez la vue du rapport.
 
 ### Affichage des états
 
@@ -197,10 +224,10 @@ Vous pouvez afficher tous les litiges relatifs aux commandes de votre boutique e
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Accédez au **[!UICONTROL Disputes column]**.
 1. Affichez tous les conflits pour une commande spécifique, puis reportez-vous à la section [le statut du différend](#order-payment-status-information).
-1. Cliquez sur le lien ID du litige (en commençant par _PP-D-_) pour accéder au [Centre de résolution PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Consultez les détails du litige depuis [Centre de résolution PayPal](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) en cliquant sur le lien ID du conflit qui commence par _PP-D-_.
 1. Prenez les mesures appropriées pour résoudre le conflit, le cas échéant.
 
-   Pour trier les conflits d’ordre par état, cliquez sur l’en-tête de colonne Conflits .
+   Pour trier les conflits d’ordre par état, cliquez sur le bouton [!UICONTROL Disputes] en-tête de colonne.
 
 ### Télécharger les statuts de paiement des commandes
 
