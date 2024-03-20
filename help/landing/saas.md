@@ -4,9 +4,9 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Tous les projets SaaS associés à vos clés apparaissent dans le **Projet** dan
 >
 > Si vous générez de nouvelles clés dans la section Portail API de Mon compte, mettez immédiatement à jour les clés API dans la configuration Admin. Si vous générez de nouvelles clés sans les mettre à jour dans l’Admin, vos extensions SaaS ne fonctionnent plus et vous perdez des données importantes.
 
-Pour modifier les noms des projets ou espaces de données SaaS, cliquez sur **Renommer**.
+Pour modifier les noms de votre projet SaaS ou de votre espace de données, cliquez sur **Renommer** en regard de l’un ou l’autre. La modification du nom n’affecte pas votre service, car il s’agit uniquement d’un libellé qui vous permet d’identifier et de différencier les projets et les espaces de données.
 
 ## Organisation IMS (facultatif) {#organizationid}
 
