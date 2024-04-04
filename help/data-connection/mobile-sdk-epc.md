@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le SDK Mobile Adobe Experience Platform
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
+source-git-commit: 593e92ebf890bd7d9bfef1cd13be727ca6be172b
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,10 @@ Après avoir terminé la configuration du SDK pour Experience Platform, ajoutez 
 
    Vous avez maintenant intégré le SDK Mobile Adobe Experience Platform à votre application mobile Commerce. Les données d’événement s’enchaînent de l’application au bord Experience Platform.
 
-Pour savoir comment récupérer les audiences Real-Time CDP de votre application de commerce mobile afin d’informer les règles de prix du panier et les blocs dynamiques, voir [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## Comment faire la distinction entre les événements de commerce générés et les applications mobiles
+
+Tous [events](events.md) contenir un champ appelé `channel`. La variable `channel` Le champ contient `channel._id` et `channel._type` qui, pour un storefront Luma, contient des valeurs d’espace de noms de `"https://ns.adobe.com/xdm/channels/web"` et `"https://ns.adobe.com/xdm/channel-types/web"` respectivement. Toutefois, pour une vitrine mobile, les valeurs de l’espace de noms sont `"https://ns.adobe.com/xdm/channels/mobile-app"` et `"https://ns.adobe.com/xdm/channel-types/mobile"` respectivement.
+
+## Étapes suivantes
+
+Pour savoir comment récupérer les audiences Real-Time CDP de votre application de commerce mobile afin d’informer les règles de prix du panier, les blocs dynamiques et les règles de produit associées, voir [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

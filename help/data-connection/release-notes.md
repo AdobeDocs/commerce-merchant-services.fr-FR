@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Les dernières informations de mise à jour pour la variable [!DNL Data Connection] à partir d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c95b1fc9393c507dd757c74c30473590760d47a6
+source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,15 @@ _12 octobre 2022_
 ![Nouveau](../assets/new.svg) - Ajout de la prise en charge d’un [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.1.1
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+_4 avril 2024_
+
+![Nouveau](../assets/new.svg) - Prise en charge de PHP 8.3 pour tous [!DNL Data Connection] extensions.
+![Nouveau](../assets/new.svg) - Ajout d’un article sur la procédure à suivre [intégrer](mobile-sdk-epc.md) le SDK Adobe Experience Platform Mobile avec Commerce.
 
 ## 3.2.0-beta2
 

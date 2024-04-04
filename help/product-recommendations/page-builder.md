@@ -3,9 +3,9 @@ title: '[!DNL Page Builder] Intégration'
 description: Découvrez comment utiliser [!DNL Product Recommendations] dans le Créateur de pages.
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 feature: Services, Recommendations, Page Builder
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 6bc8eb5ffbefc46c8666ead8c8ec8b274a0040e7
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,11 @@ Le Recommendations de produit peut être intégré à n’importe quel contenu d
 ## Utilisation de Recommendations de produit avec du contenu de Page Builder
 
 1. Créez une unité de recommandation dans la vue de magasin par défaut d’un site web. Elles doivent être créées dans la vue de magasin par défaut, même si vous envisagez de les utiliser dans différentes vues de magasin.
+
+   >[!NOTE]
+   >
+   >Les mesures des unités de recommandation du Créateur de pages n’apparaissent que sur la vue de magasin par défaut. [!DNL Product Recommendations] workspace. Même si vous placez une unité de recommandation Page Builder sur une vue de magasin qui n’est pas la vue de magasin par défaut, les mesures liées à ces unités de recommandation Page Builder ne s’affichent que sur la vue de magasin par défaut. [!DNL Product Recommendations] workspace. Pour afficher les mesures du Créateur de pages sur un storeview autre que celui par défaut [!DNL Product Recommendations] espace de travail, ouvrez et [edit](edit.md) de l’unité de recommandation du Créateur de pages dans l’aperçu de magasin autre que celui par défaut, puis cliquez sur [!UICONTROL **Enregistrer**]. Les mesures du Créateur de pages apparaissent désormais sur la page [!DNL Product Recommendations] workspace sous l’affichage de magasin autre que celui par défaut.
+
 1. Dans le créateur de pages, sélectionnez le widget de contenu Recommendations du produit et placez-le sur votre site.
 
 ![Insérer l’unité de recommandation](assets/pb-insert.png)
