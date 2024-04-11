@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 370d86f32ba0969e2d69f8a9a94f2d47be820ade
+source-git-commit: bc38c01f429b4d20d4ba0d04c34932e1857a20cf
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2445'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ _9 juin 2023_
 
 _25 janvier 2023_
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-4102 --> Les nouvelles installations de Services de paiement ne peuvent pas configurer les Services de commerce, ce qui rend les Services de paiement inutilisables. Pour résoudre ce problème, mettez à jour votre extension de services de paiement vers la version 1.5.3.
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-4102 --> Les nouvelles installations de Services de paiement ne peuvent pas configurer les services Commerce, ce qui rend les services de paiement inutilisables. Pour résoudre ce problème, mettez à jour votre extension de services de paiement vers la version 1.5.3.
 
 _12 septembre 2022_
 
@@ -78,6 +78,14 @@ _28 juin 2021_
 
 +++
 
+## v2.4.2
+
+_11 avril 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Nouveau](../assets/new.svg)<!-- Issue xxx --> Ajout de la prise en charge d’Adobe Commerce 2.4.7.
+
 ## v2.4.1
 
 _4 avril 2024_
@@ -96,7 +104,7 @@ _20 mars 2024_
 
 ![Nouveau](../assets/new.svg)<!-- PAY-4868 --> Les vendeurs peuvent réussir [configurer le paiement Google tout au long de l’expérience d’achat](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), comme les autres boutons de paiement dans les services de paiement via l’administrateur.
 
-![Nouveau](../assets/new.svg)<!-- PAY-4381 --> [Les services de paiement prennent en charge le paiement Google via GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) permettant aux commerçants d’avoir une expérience Commerce sans interface avec le mode de paiement de paiement de Google.
+![Nouveau](../assets/new.svg)<!-- PAY-4381 --> [Les services de paiement prennent en charge le paiement Google via GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) permettant aux commerçants d’avoir une expérience Commerce sans interface avec le mode de paiement Google Pay.
 
 ![Nouveau](../assets/new.svg)<!-- PAY-4878 --> Désormais, la fonctionnalité de paiement de base des services est fournie pour les marchands Adobe Commerce et Magento Open Source. Les Services de paiement peuvent désormais prendre en charge les commerçants de quelque 200 régions du monde. Le paiement de base des services de paiement fournit les options de débit/crédit, PayPal, Venmo (le cas échéant) et PayLater (le cas échéant) dans une intégration en libre-service.
 
@@ -139,7 +147,7 @@ _7 décembre 2023_
 ![Nouveau](../assets/new.svg)<!-- PAY-5047 --> La marque de carte de crédit/de débit ou le type de méthode de paiement est désormais disponible à partir des emplacements suivants :
 - la page de commande du client sur le storefront
 - l’e-mail de confirmation de commande envoyé au client
-- de la [vue des détails de commande](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) dans l’administrateur Commerce.
+- de la [vue des détails de commande](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) dans l’administrateur de Commerce.
 
 ## v2.3.0
 
@@ -147,7 +155,7 @@ _1 décembre 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg)<!-- PAY-4381 --> [Les services de paiement prennent désormais en charge l’intégration de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Grâce à la prise en charge par GraphQL des boutons de paiement PayPal, des champs hébergés et de Apple Pay, les services de paiement prennent désormais en charge une configuration commerciale sans interface utilisateur graphique.
+![Nouveau](../assets/new.svg)<!-- PAY-4381 --> [Les services de paiement prennent désormais en charge l’intégration de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Grâce à la prise en charge par GraphQL des boutons de paiement PayPal, des champs hébergés et de la fonction Apple Pay, les services de paiement prennent désormais en charge une configuration Commerce sans interface utilisateur graphique.
 
 ## v2.2.1
 
@@ -233,7 +241,7 @@ _25 janvier 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-4102 --> Publication d’un correctif pour un problème connu incompatible avec l’arrière. Cette version verrouille la version de l’extension d’ID de service sur la dernière version stable, ce qui permet à de nouvelles installations de services de paiement de configurer Commerce Services.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-4102 --> Publication d’un correctif pour un problème connu incompatible avec l’arrière. Cette version verrouille la version de l’extension d’ID de service sur la dernière version stable, ce qui permet à de nouvelles installations de services de paiement de configurer les services Commerce.
 
 ## v1.5.2
 
@@ -319,7 +327,7 @@ _29 juin 2022_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3330 --> Les paiements n’échouent plus lors du passage en caisse lorsqu’un utilisateur invité saisit un numéro de téléphone contenant des tirets.
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Lorsque les informations d’identification de Commerce Services ne sont pas valides, les services de paiement vous avertissent désormais en affichant une erreur d’identification provenant de la variable [!DNL Payment Services] Accueil dans l’administrateur.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Lorsque les informations d’identification de Commerce Services ne sont pas valides, les services de paiement vous avertissent désormais en affichant une erreur d’identification provenant de [!DNL Payment Services] Accueil dans l’administrateur.
 
 ![Problème connu](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] est incompatible avec `commerce-data-export` v101.20 et versions ultérieures, ce qui le rend incompatible avec la [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
