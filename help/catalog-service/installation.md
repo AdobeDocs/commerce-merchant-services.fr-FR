@@ -2,9 +2,9 @@
 title: Intégration et installation
 description: "Découvrez comment installer [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Le processus d’intégration pour [!DNL Catalog Service] requiert l’accès à
 [!DNL Catalog Service] comporte deux points de terminaison disponibles pour l’intégration :
 
 - Environnement de test (`https://catalog-service-sandbox.adobe.io/graphql`) : utilisé pour les tests et la validation avant la mise en ligne.
-- Production (`https://catalog-service.adobe.io/graphql`) : utilisé pour le trafic en direct pour les commerçants et les sites web de commerce.
+- Production (`https://catalog-service.adobe.io/graphql`) : utilisé pour le trafic en direct pour les marchands et les sites web Commerce.
 
 Toutes les instances de test de Commerce doivent utiliser le point de terminaison Sandbox.
 
@@ -65,7 +65,7 @@ Le processus d’intégration pour [!DNL Catalog Service] requiert l’accès à
 
 La variable [!DNL Catalog Service] L’extension peut être installée sur l’infrastructure cloud Adobe Commerce et sur les instances sur site.
 
-La variable [!DNL Catalog Service] est installé avec les clés du compositeur, qui sont liées au compte Commerce. [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) fourni pendant le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale d’Adobe Commerce, ou dans les cas où les clés du compositeur n’étaient pas précédemment enregistrées dans une instance externe `auth.json` fichier .
+La variable [!DNL Catalog Service] est installé avec les clés du compositeur, liées au compte Commerce. [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) fourni pendant le processus d’inscription. Le compositeur utilise ces clés lors de l’installation initiale d’Adobe Commerce, ou dans les cas où les clés du compositeur n’étaient pas précédemment enregistrées dans une instance externe `auth.json` fichier .
 
 Voir [Obtention des clés d’authentification](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) pour plus d’informations sur l’obtention des clés du compositeur.
 
@@ -120,7 +120,7 @@ Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instan
 
 Après l’installation [!DNL Catalog Service], vous devez configurer le [Connecteur Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) en spécifiant les clés d’API et en sélectionnant un espace de données SaaS.
 
-Une fois la configuration SaaS terminée, effectuez une synchronisation initiale des données en suivant la [Synchronisation du catalogue](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guide.
+Une fois la configuration SaaS terminée, effectuez une synchronisation initiale des données en utilisant la variable [Tableau de bord de la gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Vous pouvez utiliser ce tableau de bord pour surveiller l’état de synchronisation des données de produit transférées de la base de données Commerce vers les services Commerce SaaS.
 
 Pour vous assurer que l’exportation du catalogue s’exécute correctement :
 

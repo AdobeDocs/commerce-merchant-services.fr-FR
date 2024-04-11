@@ -3,9 +3,9 @@ title: "Installer [!DNL Live Search]"
 description: "Découvrez comment installer, mettre à jour et désinstaller [!DNL Live Search] d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -188,13 +188,15 @@ Pour générer une clé API et une clé privée, reportez-vous à la section [Co
 
 ### Développeur Adobe Commerce ou SI
 
-Le développeur ou l’ID configure l’espace de données SaaS comme décrit dans la section *Services de commerce* de la configuration. Dans le *Administration*, Commerce Services devient disponible dans le *Configuration* barre latérale lorsqu’un module SaaS est installé.
+Le développeur ou l’ID configure l’espace de données SaaS comme décrit dans la section *Services Commerce* de la configuration. Dans le *Administration*, les services Commerce sont disponibles dans la variable *Configuration* barre latérale lorsqu’un module SaaS est installé.
 
 ## Synchronisation des données de catalogue {#synchronize-catalog-data}
 
 [!DNL Live Search] nécessite des données de produit synchronisées pour les opérations de recherche et des données d’attribut synchronisées pour configurer les facettes. La synchronisation initiale entre le catalogue de produits et le service de catalogue commence lorsque [!DNL Live Search] est d’abord connecté. Selon la méthode d&#39;installation et la taille du catalogue, l&#39;export et l&#39;indexation des données par peuvent prendre jusqu&#39;à 30 minutes. [!DNL Live Search]. La liste des données synchronisées et partagées avec le service de catalogue se trouve dans le schéma, défini dans :
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+Utilisez la variable [Tableau de bord de la gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) pour surveiller l’état de synchronisation des données de produit transférées de la base de données Commerce vers les services Commerce SaaS.
 
 ### Vérifier l’exportation {#verify-export}
 
