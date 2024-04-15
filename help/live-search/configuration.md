@@ -1,18 +1,18 @@
 ---
-title: Paramètres des configurations de commerce et [!DNL Live Search] '
+title: Paramètres des configurations Commerce et [!DNL Live Search] '
 description: Décrit les paramètres de configuration Adobe Commerce qui [!DNL Live Search] peuvent lire.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] et Paramètres de configuration Adobe Commerce
 
-Il existe des paramètres de configuration de Commerce qui [!DNL Live Search] prend en charge . Cette rubrique répertorie ces valeurs de configuration.
+Il existe des paramètres de configuration Commerce qui [!DNL Live Search] prend en charge . Cette rubrique répertorie ces valeurs de configuration.
 
 ## Valeurs de configuration compatibles
 
@@ -41,3 +41,4 @@ Les prix dans la page de liste de produits du widget et la fenêtre contextuelle
 | Magasins > Configuration > Catalogue > Magasin > Mode Liste | Les rendus sont corrects, mais les événements ne sont pas envoyés pour certaines interactions de page. |
 | Magasins > Configuration > Catalogue > Catalogue > Recherche catalogue > Longueur maximale de requête | Non implémenté ; les services de recherche acceptent jusqu’à 255 caractères |
 | Configuration > Ventes > Taxe > Paramètres d’affichage des prix > Afficher les prix des produits dans le catalogue |  |
+| Magasins > Configuration > Catalogue > Magasin > Liste de produits Trier par | Ne s’applique pas à la variable [!DNL Live Search] [Widget de page de liste de produits](plp-styling.md) |
