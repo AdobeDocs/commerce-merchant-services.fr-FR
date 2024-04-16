@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: bc38c01f429b4d20d4ba0d04c34932e1857a20cf
+source-git-commit: 880cb5c70727224217297d5d5b09490bdb112ff1
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2481'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,14 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans la variable [Rapport d’état des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et la variable [Rapport de paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne .
 
 +++
+
+## v2.4.3
+
+_16 avril 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Correction](../assets/fix.svg)<!-- Issue PAY-5106 --> Correction d’un problème qui renseignait incorrectement les totaux des montants de commande lors de l’extraction entre PayPal et Adobe Commerce. Désormais, les vendeurs peuvent s’assurer que les totaux des montants de commande sont corrects lors du placement d’une commande.
 
 ## v2.4.2
 
