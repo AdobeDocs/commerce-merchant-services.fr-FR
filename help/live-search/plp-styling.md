@@ -2,9 +2,9 @@
 title: Widget de page de liste de produits
 description: Activation et définition de style de la variable [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
+source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,12 @@ La variable [!DNL Live Search Product Listing Page Widget] (PLP) utilise la plat
 Lorsque la variable [!DNL Live Search] est installé, la fonctionnalité de recherche par défaut est convertie en [!DNL Live Search] automatiquement.
 
 La variable [!DNL Live Search] Le widget PLP est activé par défaut pour les nouvelles installations. Si vous effectuez une mise à niveau [!DNL Live Search] et le widget PLP a déjà été désactivé, il le restera.
+
+>[!IMPORTANT]
+>
+>Lorsque la variable [!DNL Live Search Product Listing Page Widget] est activée, la direction de l’ordre de tri sur une page de liste de produits ne peut pas être modifiée.
+
+## Désactivation du widget PLP
 
 Pour désactiver le widget PLP :
 

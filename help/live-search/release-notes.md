@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -34,7 +34,7 @@ _27 octobre 2023_
 
 _12 octobre 2023_
 
-![Nouveau](../assets/new.svg) Les administrateurs de commerce peuvent maintenant spécifier la langue de l’index pour [!DNL Live Search]. Voir [Paramètres](settings.md).
+![Nouveau](../assets/new.svg) Les administrateurs Commerce peuvent maintenant spécifier la langue de l’index pour [!DNL Live Search]. Voir [Paramètres](settings.md).
 ![Correction](../assets/fix.svg) L’onglet &quot;Règles de recherche&quot; a été renommé &quot;Marchandisage de recherche&quot;.
 
 _13 juin 2023_
@@ -54,7 +54,7 @@ _19 mars 2024_
 ### Nouvelles fonctionnalités
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge linguistique pour [Polonais](technical-overview.md#language-support).
-![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge PHP 8.3 pour les installations exécutant Adobe Commerce 2.4.4.
+![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge PHP 8.3 pour les installations exécutant Adobe Commerce 2.4.7.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -193,7 +193,7 @@ _14 mars 2023_
 ![Nouveau](../assets/new.svg) Ajout de la possibilité de faire glisser et de déposer des événements Pin
 ![Nouveau](../assets/new.svg) Nouvelles actions Epingler : * Epingler à l’emplacement - Bouton Epingler pour créer l’événement Epingler d’un seul clic * Epingler au haut - Placer le produit dans la première position * Epingler au bas des résultats * Détacher un événement d’un seul clic
 ![Nouveau](../assets/new.svg) [Classement intelligent des règles](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
-![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge l’intégralité [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Fonctionnalités dans Commerce (anciennement appelées inventaire multi-source ou MSI). Pour activer la prise en charge complète, vous devez [update](install.md#update) le module de dépendance ; `commerce-data-export` vers la version 102.2.0+.
+![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge l’intégralité [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Fonctionnalités de Commerce (anciennement appelées inventaire multi-source ou MSI). Pour activer la prise en charge complète, vous devez [update](install.md#update) le module de dépendance ; `commerce-data-export` vers la version 102.2.0+.
 
 ### Mises à jour
 
@@ -266,7 +266,7 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 ![Nouveau](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) pris en charge pour [!DNL Live Search].
 ![Nouveau](../assets/new.svg) La variable [!DNL Live Search] le processus d’installation est mis à jour avec des modifications avancées des processus.
 ![Correction](../assets/fix.svg) [Recherche avancée](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) lien supprimé du pied de page du storefront.
-![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par [API Commerce GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) lorsqu’elle est utilisée en rapport avec la version bêta de PWA : `description`, `name`, `short_description`
+![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par [API COMMERCE GRAPHQL](https://developer.adobe.com/commerce/services/graphql/live-search/) lorsqu’elle est utilisée en rapport avec la version bêta de PWA : `description`, `name`, `short_description`
 ![Bogue](../assets/bug.svg) La version bêta de PWA pour [!DNL Live Search] ne prend pas en charge [gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1 {#131}
