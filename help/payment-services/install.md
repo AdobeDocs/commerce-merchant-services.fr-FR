@@ -4,14 +4,20 @@ description: Installez l’extension Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Installer [!DNL Payment Services]
+
+Pour commencer à utiliser les services de paiement pour [!DNL Adobe Commerce] et [!DNL Magento Open Source], vous devez effectuer quelques étapes d’intégration.
+
+>[!INFO]
+>
+> Voir notre [Configurer [!DNL Payment Services] pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) vidéo pour plus d’informations.
 
 Téléchargement et installation du [!DNL Payment Services] extension pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] est une étape prérequise pour utiliser [!DNL Payment Services].
 
@@ -29,7 +35,8 @@ Vous devez d’abord télécharger l’extension depuis [Commerce Marketplace](h
 
 ## Installation de l’extension
 
-Vous pouvez installer le [!DNL Payment Services] extension pour les deux [!DNL Adobe Commerce] sur l’infrastructure cloud et les instances sur site, qui sont liées à votre compte Commerce ; [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) fourni dans le processus d’inscription. [!DNL Magento Open Source] Les clients utilisent les instructions sur site.
+Vous pouvez installer le [!DNL Payment Services] extension pour les deux [!DNL Adobe Commerce] sur l’infrastructure cloud et les instances sur site, qui sont liées à votre compte Commerce. [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) fourni dans le processus d’inscription.
+[!DNL Magento Open Source] Les clients utilisent les instructions sur site.
 
 Le compositeur utilise ces clés lors de l’installation initiale de [!DNL Adobe Commerce], ou dans les cas où les clés du compositeur n’ont pas été précédemment enregistrées dans la variable `auth.json` fichier .
 
@@ -132,7 +139,7 @@ Pour voir quelles clés de compositeur sont configurées :
    cat /path/to/auth.json
    ```
 
-1. Voir [les clés associées à votre compte Commerce ; `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Voir [les clés associées à votre compte Commerce `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### Mémoire insuffisante pour PHP
 
