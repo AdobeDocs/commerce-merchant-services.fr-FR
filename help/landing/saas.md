@@ -4,9 +4,9 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
+source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ La liste suivante répertorie les [!DNL Commerce] fonctions auxquelles vous pouv
 
 À un niveau élevé, la variable [!DNL Commerce Services Connector] est constitué des éléments principaux suivants :
 
-![Architecture du connecteur de Commerce Services](assets/saas-config-sync-workflow.png)
+![Architecture du connecteur de services Commerce](assets/saas-config-sync-workflow.png)
 
 Les sections suivantes abordent plus en détail chacun de ces éléments.
 
@@ -63,7 +63,7 @@ Les clés d’API de production et d’environnement de test sont générées à
 
 1. Répétez les étapes ci-dessus pour chaque environnement (production et environnement de test).
 
-   La variable **Clés API** affiche désormais vos clés d’API. Vous avez besoin des clés de production et d’environnement de test lorsque vous [sélectionner ou créer un projet SaaS ;](#createsaasenv).
+   La variable **Clés API** affiche désormais vos clés API (publiques). Vous avez besoin des clés de production et d’environnement de test (Public + Privé) lorsque vous [sélectionner ou créer un projet SaaS ;](#createsaasenv).
 
 ## Configuration SaaS {#saasenv}
 
