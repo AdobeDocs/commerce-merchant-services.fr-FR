@@ -4,9 +4,9 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
+source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,11 @@ Pour [!DNL Product Recommendations], l’espace de données SaaS contient des do
 
 ### Sélection ou création d’un projet SaaS {#createsaasenv}
 
->[!NOTE]
->
-> Si vous ne voyez pas le **[!UICONTROL Commerce Services Connector]** dans la section [!DNL Commerce] configuration, vous devez installer le [!DNL Commerce] modules pour répondre à vos besoins [[!DNL Commerce] service](#availableservices).
-
 Pour sélectionner ou créer un projet SaaS, demandez la variable [!DNL Commerce] Clé API de [!DNL Commerce] détenteur de licence pour votre boutique.
 
 1. Sur le _Administration_ barre latérale, accédez à **Système** > Services > **Connecteur Commerce Services**.
+
+   Si vous ne voyez pas le **[!UICONTROL Commerce Services Connector]** dans la section [!DNL Commerce] configuration, installez le [!DNL Commerce] modules pour répondre à vos besoins [[!DNL Commerce] service](#availableservices). Assurez-vous également que la variable `magento/module-services-id` est installé.
 
 1. Dans le _Clés d’API Sandbox_ et _Clés d’API de production_ , collez vos valeurs clés.
 
