@@ -1,11 +1,11 @@
 ---
-title: Connexion des données commerciales à Adobe Experience Platform
+title: Connexion des données Commerce à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2486'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Le résultat de cette étape crée un fichier de configuration que vous utilisez
 
 Téléchargez la [fichier de configuration de l&#39;espace de travail](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copiez et collez le contenu de ce fichier dans le **Informations d’identification/compte de service** de l’administrateur Commerce.
 
-1. Dans l’administrateur Commerce, accédez à **Magasins** > Paramètres > **Configuration** > **Services** > **[!DNL Data Connection]**.
+1. Dans l’administrateur de Commerce, accédez à **Magasins** > Paramètres > **Configuration** > **Services** > **[!DNL Data Connection]**.
 
 1. Sélectionnez la méthode d’autorisation serveur à serveur que vous avez mise en oeuvre à partir du **Type d’autorisation Adobe Developer** . Adobe recommande d’utiliser OAuth. JWT a été abandonné. [En savoir plus](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
@@ -95,9 +95,9 @@ Dans cette section, vous indiquez le type de données à collecter et à envoyer
 
 - **Comportement** (données côté client) est des données capturées sur le storefront. Cela inclut les interactions avec les acheteurs, telles que `View Page`, `View Product`, `Add to Cart`, et [liste des demandes](events.md#b2b-events) informations (pour les commerçants B2B).
 
-- **Retour au bureau** (données côté serveur) est des données capturées dans les serveurs de commerce. Cela inclut des informations sur l’état d’une commande, par exemple si une commande a été passée, annulée, remboursée, expédiée ou terminée. Elle comprend également [données d’ordre historique](#send-historical-order-data).
+- **Retour au bureau** (données côté serveur) est une donnée capturée dans les serveurs Commerce. Cela inclut des informations sur l’état d’une commande, par exemple si une commande a été passée, annulée, remboursée, expédiée ou terminée. Elle comprend également [données d’ordre historique](#send-historical-order-data).
 
-- **Profil** est des données liées aux informations de profil de votre acheteur. Formation [more](#send-customer-profile-data).
+- **Profil (bêta)** est des données liées aux informations de profil de votre acheteur. Formation [more](#send-customer-profile-data).
 
 Pour vous assurer que votre instance Adobe Commerce peut commencer la collecte de données, consultez la section [conditions préalables](overview.md#prerequisites).
 
@@ -158,6 +158,10 @@ Une fois l’intégration effectuée, les données du storefront commencent à s
 
 ### Envoi des données de profil client
 
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est en version bêta.
+
 Vous pouvez envoyer à l’Experience Platform deux types de données de profil : les enregistrements de profil et les événements de profil de série temporelle.
 
 Un enregistrement de profil contient des données enregistrées lorsqu’un acheteur crée un profil dans votre instance Commerce, tel que le nom de l’acheteur. Lorsque votre schéma et votre jeu de données sont [correctement configuré](profile-data.md), un enregistrement de profil est envoyé à l’Experience Platform et transféré au service de segmentation et de gestion des profils d’Adobe : [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=fr).
@@ -191,7 +195,7 @@ Il peut s’écouler environ 10 minutes avant qu’un enregistrement de profil s
 
 Adobe Commerce collecte jusqu’à cinq ans de [données et état de l’ordre historique](events-backoffice.md#back-office-events). Vous pouvez utiliser la variable [!DNL Data Connection] pour envoyer ces données historiques à l’Experience Platform afin d’enrichir vos profils client et de personnaliser les expériences client en fonction de ces commandes passées. Les données sont stockées dans un jeu de données dans Experience Platform.
 
-Bien que Commerce collecte déjà les données de commande historiques, vous devez effectuer plusieurs étapes pour envoyer ces données à Experience Platform.
+Bien que Commerce collecte déjà les données de commande historiques, vous devez effectuer plusieurs étapes pour envoyer ces données à l’Experience Platform.
 
 Regardez cette vidéo pour en savoir plus sur les commandes historiques, puis effectuez les étapes suivantes pour mettre en oeuvre la collecte des commandes historiques.
 
@@ -250,7 +254,7 @@ Indiquez la période des commandes historiques à envoyer à l’Experience Plat
 
 ## Confirmation que les données d’événement sont collectées
 
-Pour confirmer que les données sont collectées à partir de votre boutique Commerce, utilisez la variable [Débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) pour examiner votre site Commerce. Une fois que vous avez confirmé que les données sont en cours de collecte, vous pouvez vérifier que les données d’événement storefront et back-office s’affichent en périphérie en exécutant une requête qui renvoie les données de la variable [jeu de données que vous avez créé](overview.md#prerequisites).
+Pour vérifier que les données sont collectées à partir de votre boutique Commerce, utilisez la variable [Débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) pour examiner votre site Commerce. Une fois que vous avez confirmé que les données sont en cours de collecte, vous pouvez vérifier que les données d’événement storefront et back-office s’affichent en périphérie en exécutant une requête qui renvoie les données de la variable [jeu de données que vous avez créé](overview.md#prerequisites).
 
 1. Sélectionner **Requêtes** dans le volet de navigation de gauche de Experience Platform, cliquez sur [!UICONTROL Create Query].
 

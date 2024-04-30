@@ -4,16 +4,16 @@ description: Découvrez les données que chaque événement back-office capture.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
+source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3611'
 ht-degree: 0%
 
 ---
 
 # [!DNL Data Connection] Événements de back-office
 
-La liste suivante répertorie les événements Commerce back-office disponibles lorsque vous installez le [!DNL Data Connection] extension . Les données collectées par ces événements sont envoyées à Adobe Experience Platform. Vous pouvez également créer [événements personnalisés](custom-events.md) pour collecter des données supplémentaires qui ne sont pas fournies en standard.
+Vous trouverez ci-dessous la liste des événements de back-office de Commerce disponibles lorsque vous installez le [!DNL Data Connection] extension . Les données collectées par ces événements sont envoyées à Adobe Experience Platform. Vous pouvez également créer [événements personnalisés](custom-events.md) pour collecter des données supplémentaires qui ne sont pas fournies en standard.
 
 Outre les données collectées par les événements suivants, vous obtenez également [autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fourni par le SDK Web de Adobe Experience Platform.
 
@@ -296,7 +296,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.returnItem.returnStatus` | État de l’élément renvoyé, par exemple En attente, Approuvé, etc. |
 | `productListItems.returnItem.returnReason` | Motif pour lequel un retour est demandé pour cet élément. |
 | `productListItems.returnItem.returnItemCondition` | La condition de l’élément pour lequel le renvoi est demandé. |
-| `productListItems.returnItem.returnResolution` | Résolution demandée de l’élément renvoyé, telle que Rembourser, Exchange, etc. |
+| `productListItems.returnItem.returnResolution` | Résolution demandée de l’élément renvoyé, telle que Remboursement, Exchange, etc. |
 | `productListItems.returnItem.returnQuantityRequested` | Numéro de cet élément que l’acheteur a demandé de renvoyer. |
 | `productListItems.returnItem.returnQuantityAuthorized` | Numéro de cet élément autorisé à être renvoyé. |
 | `productListItems.returnItem.eturnQuantityReceived` | Nombre d’éléments renvoyés reçus. |
@@ -340,7 +340,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.returnItem.returnStatus` | État de l’élément renvoyé, par exemple En attente, Approuvé, etc. |
 | `productListItems.returnItem.returnReason` | Motif pour lequel un retour est demandé pour cet élément. |
 | `productListItems.returnItem.returnItemCondition` | La condition de l’élément pour lequel le renvoi est demandé. |
-| `productListItems.returnItem.returnResolution` | Résolution demandée de l’élément renvoyé, telle que Rembourser, Exchange, etc. |
+| `productListItems.returnItem.returnResolution` | Résolution demandée de l’élément renvoyé, telle que Remboursement, Exchange, etc. |
 | `productListItems.returnItem.returnQuantityRequested` | Numéro de cet élément que l’acheteur a demandé de renvoyer. |
 | `productListItems.returnItem.returnQuantityAuthorized` | Numéro de cet élément autorisé à être renvoyé. |
 | `productListItems.returnItem.eturnQuantityReceived` | Nombre d’éléments renvoyés reçus. |
@@ -404,7 +404,15 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## Événements de profil client
 
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est en version bêta.
+
 Les événements de profil capturés du côté serveur incluent des informations de compte, telles que `accountCreated`, `accountUpdated`, et `accountDeleted`. Ces données permettent de renseigner les détails clés des clients nécessaires pour mieux définir les segments ou exécuter des campagnes marketing, comme envoyer des offres de réduction d’inscription, confirmer des changements de compte, etc. Des événements de profil similaires sont capturés à partir de la variable [storefront](events.md#customer-profile-events).
+
+>[!NOTE]
+>
+>Chaque événement de profil client inclut également la variable [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) qui inclut l’ID de client Commerce généré par le système comme identifiant principal du profil et un ID d’adresse électronique utilisé comme identifiant secondaire.
 
 ### accountCreated
 
