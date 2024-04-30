@@ -1,15 +1,15 @@
 ---
 title: Extension de l’adaptateur de catalogue
-description: Utilisation de l’adaptateur de catalogue pour effectuer le rendu des prix à partir de Commerce Services
+description: Utilisation de l’adaptateur de catalogue pour effectuer le rendu des prix à partir des services Commerce
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
+exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Adaptateur de catalogue
 
@@ -19,10 +19,10 @@ L’indexeur de prix des produits Adobe Commerce est désactivé et ne peut pas 
 ## Conditions
 
 * Adobe Commerce 2.4.4+
-* Vous devez installer les deux services Commerce suivants :
+* Installez les deux services Commerce suivants :
 
    * [Service de catalogue](../catalog-service/overview.md)
-   * [Recherche en direct](../live-search/guide-overview.md)
+   * [Recherche en direct](../live-search/overview.md)
 
 ## Installation
 
@@ -75,7 +75,7 @@ Voici quelques exemples courants `Catalog Adapter` scénarios.
 
 ### Instances Commerce sans tête
 
-* Un commerçant avec une instance Commerce sans interface utilisateur graphique avec les services requis installés (Live Search, Recommendations produit, Catalog Service)
+* Un commerçant avec une instance Commerce sans interface utilisateur graphique disposant des services requis installés (Live Search, Recommendations produit, Catalog Service)
 * Ne pas dépendre de l’indexeur de prix de produit Adobe Commerce par défaut
 
 1. Installez le `magento/module-price-indexer-disabler` du module de l’adaptateur de catalogue.

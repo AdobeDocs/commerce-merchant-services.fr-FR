@@ -4,28 +4,25 @@ user-guide-description: "Ce guide fournit des instructions détaillées sur l’
 breadcrumb-title: « Guide [!DNL Live Search] »
 role: Admin
 feature: Services, Search
-source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
+source-git-commit: 4fd8c313c27756f6da42dd01e01506847d2b6975
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 11%
+source-wordcount: '78'
+ht-degree: 10%
 
 ---
 
 # [!DNL Live Search] pour Commerce {#live-search}
 
-- [Présentation du guide](guide-overview.md)
-- [Introduction à [!DNL Live Search]](overview.md)
+- [Présentation [!DNL Live Search]?](overview.md)
+- [Installer](install.md)
+- [Limites et limites](boundaries-limits.md)
 - [Notes de mise à jour](release-notes.md)
-- Recherche en direct intégrée {#onboard}
-   - [Présentation technique](technical-overview.md)
-   - [Installer [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
    - [Widget de page de liste de produits](plp-styling.md)
-   - [Présentation rapide](quick-tour.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Style [!DNL Popover] Éléments](storefront-popover-styling.md)
 - [!DNL Live Search] Administration{#live-search-admin}
-   - [Paramètres de configuration de Commerce](configuration.md)
+   - [Paramètres de configuration Commerce](configuration.md)
    - Facettes {#facets}
       - [Vue d’ensemble](facets.md)
       - [Facturation de Workspace](faceting-workspace.md)

@@ -4,7 +4,7 @@ description: Utilisation de l’indexation des prix SaaS pour améliorer les per
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # Indexation des prix SaaS
 
-L’indexation des prix SaaS accélère le temps nécessaire pour que les changements de prix soient répercutés. [Services de commerce](../landing/saas.md) après avoir été soumis. Cela permet aux commerçants disposant de catalogues volumineux et complexes, ou de plusieurs sites web ou groupes de clients, de traiter en permanence les changements de prix.
+L’indexation des prix SaaS accélère le temps nécessaire pour que les changements de prix soient répercutés. [Services Commerce](../landing/saas.md) après avoir été soumis. Cela permet aux commerçants disposant de catalogues volumineux et complexes, ou de plusieurs sites web ou groupes de clients, de traiter en permanence les changements de prix.
 Si vous disposez d’une vitrine sans interface utilisateur graphique ou utilisez la variable [catalog-adapter](./catalog-adapter.md) , les clients peuvent désactiver l’indexeur de prix de base d’Adobe Commerce.
 
-Les processus lourds informatiques, tels que l’indexation et le calcul des prix, ont été déplacés du coeur de Commerce vers l’infrastructure cloud d’Adobe. Cela permet aux commerçants d’augmenter rapidement les ressources pour augmenter les délais d’indexation des prix et refléter ces changements plus rapidement.
+Les processus lourds informatiques, tels que l’indexation et le calcul des prix, ont été déplacés du coeur de Commerce vers l’infrastructure cloud de l’Adobe. Cela permet aux commerçants d’augmenter rapidement les ressources pour augmenter les délais d’indexation des prix et refléter ces changements plus rapidement.
 
 Le flux de données d’indexation principal vers les services SaaS ressemble à ce qui suit :
 
@@ -42,7 +42,7 @@ Ce guide décrit le fonctionnement de l’indexation de prix SaaS et comment l�
 * Au moins l’un des services Commerce suivants avec la dernière version de l’extension Adobe Commerce :
 
    * [Service de catalogue](../catalog-service/overview.md)
-   * [Recherche en direct](../live-search/guide-overview.md)
+   * [Recherche en direct](../live-search/overview.md)
    * [Recommendations de produit](../product-recommendations/guide-overview.md)
 
 Les utilisateurs de Luma et Adobe Commerce Core GraphQL peuvent installer la variable [`catalog-adapter`](catalog-adapter.md) qui fournit la compatibilité Luma et Core GraphQl et désactive l’indexeur de prix des produits Adobe Commerce.
