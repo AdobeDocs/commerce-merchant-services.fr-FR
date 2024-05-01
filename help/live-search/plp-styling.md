@@ -2,9 +2,9 @@
 title: Widget de page de liste de produits
 description: Activation et définition de style de la variable [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
+source-git-commit: 1e0baa20defe4e50bd9e45c03ff7c5f758b24e5d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ Le widget PLP fournit toute une gamme de fonctionnalités attendues dans une pag
 * Fonction Ajouter au panier
 * Prise en charge de plusieurs langues
 * Curseurs de prix
+
+Pour plus d’informations sur la personnalisation du widget PLP pour gérer les fonctionnalités ci-dessus, voir la section `storefront-product-listing-page` Lisez-moi dans ce qui suit [repo](https://github.com/adobe/storefront-product-listing-page/).
 
 ## Exemple de style
 

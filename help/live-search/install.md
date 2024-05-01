@@ -3,16 +3,16 @@ title: "Prise en main de [!DNL Live Search]"
 description: "Découvrez la configuration requise et les étapes d’installation pour [!DNL Live Search] d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: a55e3304d590c2bd6a591bdc78a4765ffed46cd1
+source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
 
-# Configurez pour la réussite avec [!DNL Live Search] et [!DNL Catalog Service]
+# Configurez pour la réussite avec [!DNL Live Search]
 
-Adobe Commerce [!DNL Live Search] et [!DNL Catalog Service] collaborez pour offrir une solution de recherche performante, pertinente et intuitive afin de permettre à vos clients de trouver rapidement ce dont ils ont exactement besoin. Plus précisément : [!DNL Catalog Service] affiche vos données de catalogue pour les services SaaS, comme [!DNL Live Search] à utiliser.
+Adobe Commerce [!DNL Live Search] et [[!DNL Catalog Service]](../catalog-service/guide-overview.md) collaborez pour offrir une solution de recherche performante, pertinente et intuitive afin de permettre à vos clients de trouver rapidement ce dont ils ont exactement besoin. Plus précisément : [!DNL Catalog Service] affiche vos données de catalogue pour les services SaaS, comme [!DNL Live Search] à utiliser.
 
 Cet article fournit des instructions détaillées pour la mise en oeuvre de [!DNL Live Search] avec [!DNL Catalog Service].
 
