@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Les dernières informations de mise à jour pour la variable [!DNL Data Connection] à partir d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
+source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Pour les modifications et correctifs de fonctionnalités liés aux extensions ut
 
 Voir [Versions à venir](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) pour en savoir plus sur les calendriers de publication et l’assistance.
 
-Consultez la documentation destinée aux développeurs pour [connaître les versions de Commerce qui prennent en charge ce module ;](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Consultez la documentation destinée aux développeurs pour [connaître les versions Commerce compatibles avec ce module](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Mises à jour du service prises en charge
 
@@ -87,7 +87,7 @@ _4 mars 2024_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Nouveau](../assets/new.svg) - Si vous participez à la version bêta, assurez-vous que votre `composer.json` se présente comme suit au niveau racine : ` "minimum-stability": "beta"`.
+![Nouveau](../assets/new.svg) - Si vous participez à la version bêta, assurez-vous que votre `composer.json` se présente comme suit au niveau racine : ` "minimum-stability": "beta"`. Ajoutez également `composer require "magento/customers-connector: ^1.2.0"` pour envoyer des profils client de votre instance Commerce vers SaaS.
 ![Nouveau](../assets/new.svg) - Ajout de la capacité à [ajout d’attributs personnalisés](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
 ![Nouveau](../assets/new.svg) - Ajout de la capacité à [collecter et envoyer des enregistrements de profil ;](connect-data.md#send-customer-profile-data) et les données à Experience Platform.
 
