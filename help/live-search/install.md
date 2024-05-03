@@ -3,9 +3,9 @@ title: "Prise en main de [!DNL Live Search]"
 description: "Découvrez la configuration requise et les étapes d’installation pour [!DNL Live Search] d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
+source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,6 @@ Cet article est destiné au développeur ou à l’intégrateur de systèmes de 
 ## Workflow - Aperçu
 
 à un niveau élevé ; [!DNL Live Search] requiert que vous :
-
-- Installation de l’extension
-- Configuration de vos clés d’API
-- Synchronisation des données de catalogue
-- Vérification de l’exportation des données
-- Configurer vos données
-- Tester la connexion
-- Personnalisation de votre storefront
 
 ![Processus de recherche en direct](assets/livesearch-workflow.png)
 

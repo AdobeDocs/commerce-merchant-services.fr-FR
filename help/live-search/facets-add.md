@@ -2,9 +2,9 @@
 title: "Ajouter des facettes"
 description: "Découvrez comment ajouter des attributs de produit filtrables en tant que [!DNL Live Search] facettes."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Tout attribut de produit filtrable peut être utilisé comme facette. La variable *Ajout de facettes* répertorie les facettes actives et facilite l’affectation d’attributs de produit supplémentaires en tant que facettes. Au cours de ce processus en trois étapes, un attribut est sélectionné pour être utilisé comme facette, les propriétés sont modifiées si nécessaire et les modifications publiées sur le storefront.
 
-![Espace de travail de facette](assets/facets-add.png)
+![Ajout de facettes](assets/facets-add.png)
 
 ## Étape 1 : Ajout d’une facette
 
@@ -48,7 +48,7 @@ La facette est ajoutée au bas de la *Facettes dynamiques* et la liste *Publier 
 
 1. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-   ![Espace de travail de facette](assets/facet-edit.png)
+   ![Modifier les facettes](assets/facet-edit.png)
 
 1. Pour épingler la facette en haut de la page *Filtres* , cliquez sur la punaise grise (![Sélecteur d’épingles](assets/btn-pin-gray.png)).
 1. Pour modifier l’ordre de la facette épinglée, cliquez sur le bouton **Déplacer** (![Sélecteur de déplacement](assets/btn-move.png)) et faites glisser la rangée vers un nouvel emplacement dans le *Facettes Pindu* .

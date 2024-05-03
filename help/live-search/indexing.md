@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Live Search] Indexation"
+title: "Indexation"
 description: "Découvrez comment [!DNL Live Search] indexe les propriétés d’attribut de produit."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 17b9383ad84c47f2b0314feccbabb33d7dd8fc11
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -27,7 +27,7 @@ La variable [!DNL Live Search] L’API permet à un client de trier selon n’im
 
 >[!NOTE]
 >
-> Clients commerciaux avec [!DNL Live Search] peuvent tirer parti des modifications de prix plus rapides et du temps de synchronisation sur leurs sites web avec la variable [Indexeur de prix SaaS](../price-index/price-indexing.md).
+> Clients Commerce avec [!DNL Live Search] peuvent tirer parti des modifications de prix plus rapides et du temps de synchronisation sur leurs sites web avec la variable [Indexeur de prix SaaS](../price-index/price-indexing.md).
 
 ## Indexation du pipeline
 

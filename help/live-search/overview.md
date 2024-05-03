@@ -3,16 +3,16 @@ title: Présentation [!DNL Live Search]?
 description: "[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, pertinente et intuitive."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # Présentation [!DNL Live Search]?
 
-[!DNL Live Search] est une extension qui remplace les fonctionnalités de recherche standard dans Adobe Commerce. La variable [!DNL Live Search] l’extension est installée avec le compositeur et connecte votre [!DNL Commerce] à l’emplacement [!DNL Live Search] [service](../landing/saas.md). Lorsqu’il est configuré, le champ de texte de recherche par défaut est remplacé par le champ [!DNL Live Search] Champ de texte. [!DNL Live Search] installe également le widget Page de liste de produits (PLP), qui fournit de puissantes fonctionnalités de filtrage lors de la navigation dans les résultats de recherche.
+[!DNL Live Search] est une fonctionnalité qui remplace les fonctionnalités de recherche standard dans Adobe Commerce. La variable [!DNL Live Search] Cette fonctionnalité est installée avec le compositeur d’expérience et connecte votre [!DNL Commerce] vers le [Connecteur Commerce Services](../landing/saas.md). Lorsqu’il est configuré, le champ de texte de recherche par défaut est remplacé par le champ [!DNL Live Search] Champ de texte. [!DNL Live Search] installe également le widget Page de liste de produits (PLP), qui fournit de puissantes fonctionnalités de filtrage lors de la navigation dans les résultats de recherche.
 
 Avec [!DNL Live Search], vous pouvez :
 
@@ -75,7 +75,6 @@ Marchandisage [rules](rules.md) façonnez l’expérience d’achat avec des ins
 
 - [!DNL Live Search] [widget contextuel](storefront-popover.md) est la zone qui s’ouvre sous le champ de recherche qui contient les résultats de la recherche.
 - [Widget de page de liste de produits](plp-styling.md) fournit une page de liste de produits pouvant faire l’objet d’une recherche, avec facettes et prise en charge de synonymes.
-- [[!DNL Live Search] Administration](workspace.md) est l’emplacement où les règles, les facettes et les synonymes sont configurés.
 
 ## [!DNL Live Search] workspace
 

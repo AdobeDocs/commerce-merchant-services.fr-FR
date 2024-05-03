@@ -1,17 +1,17 @@
 ---
-title: "Tableau de bord des performances"
-description: "Le [!DNL Live Search] Le tableau de bord des performances fournit des informations sur les termes de recherche que les acheteurs utilisent."
+title: "Performances"
+description: "Le [!DNL Live Search] Performance Workspace fournit des informations sur les termes de recherche que les acheteurs utilisent."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
-# Tableau de bord des performances
+# Performances
 
-La variable [!DNL Live Search] Le tableau de bord des performances fournit des informations sur les termes de recherche utilisés par les acheteurs. Les informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. Le tableau de bord Performances fournit un instantané des mesures de recherche pour une période spécifique et comprend les rapports suivants :
+La variable *Performances* workspace fournit des informations sur les termes de recherche utilisés par les acheteurs. Les informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. L’espace de travail Performances fournit un instantané des mesures de recherche pour une période spécifique et comprend les rapports suivants :
 
 * Recherches uniques
 * Zéro résultat
@@ -30,7 +30,7 @@ Vous pouvez également consulter la section [Tableau de bord de la gestion des d
 
 >[!NOTE]
 >
->Le tableau de bord des performances est mis à jour toutes les 12 heures.
+>L’espace de travail des performances est mis à jour toutes les 12 heures.
 
 ## Descriptions des champs
 

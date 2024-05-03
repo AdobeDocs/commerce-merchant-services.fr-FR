@@ -2,16 +2,16 @@
 title: "Recherche dans Workspace de marchandisage"
 description: "Découvrez comment vous déplacer dans l’espace de travail Rechercher le marchandisage."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '573'
 ht-degree: 1%
 
 ---
 
 # Recherche dans Workspace de marchandisage
 
-L’espace de travail Rechercher le marchandisage répertorie la sélection actuelle des règles et leur état, et permet d’accéder aux outils dont vous avez besoin pour créer et gérer des règles. Dans l’espace de travail, vous pouvez :
+La variable *Marchandisage des recherches* workspace répertorie la sélection actuelle des règles et leur état, et permet d’accéder aux outils dont vous avez besoin pour créer et gérer des règles. Dans l’espace de travail, vous pouvez :
 
 * Recherche de règles
 * Afficher les détails des règles
@@ -19,7 +19,7 @@ L’espace de travail Rechercher le marchandisage répertorie la sélection actu
 * Supprimer des règles
 * Accès à l’éditeur de règles
 
-![Rechercher dans l’espace de travail de marchandisage](assets/rules-workspace.png)
+![Recherche dans Workspace de marchandisage](assets/rules-workspace.png)
 
 ## Définition de la portée
 
@@ -57,7 +57,7 @@ La recherche trouve la ou les règles correspondantes lorsque vous tapez. La cha
 
 Le panneau Détails affiche le nom, l’état, les conditions et événements de la règle, la date de début et de fin, la description et la date de dernière modification de la règle. Les règles peuvent être activées, modifiées et supprimées du panneau Détails.
 
-1. Sur le *Marchandisage des recherches* , recherchez la règle dans la grille à afficher, puis cliquez sur **Plus** (...).
+1. Sur le *Marchandisage des recherches* espace de travail, recherchez la règle dans la grille que vous souhaitez afficher et cliquez sur **Plus** (...).
 1. Cliquez sur **Afficher les détails**.
 Vous pouvez effectuer l’une des opérations suivantes à partir du panneau Afficher les détails :
 

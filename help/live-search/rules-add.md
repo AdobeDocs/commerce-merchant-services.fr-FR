@@ -2,7 +2,7 @@
 title: "Ajouter des règles"
 description: "Découvrez comment créer des règles de marchandisage de recherche."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 
 1. Dans Admin, accédez à **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Définissez la variable **Portée** pour identifier la variable [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) lorsque la règle s’applique.
-1. Cliquez sur le bouton **Marchandisage des recherches** .
+1. Cliquez sur le bouton **Marchandisage des recherches** workspace.
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 
 ## Type de règle
@@ -142,7 +142,7 @@ Les informations saisies ici apparaissent dans le [Détails de la règle](rules-
 1. Si la règle comporte plusieurs requêtes, testez chacune d’elles susceptibles d’être affectées par la règle.
 1. Lorsque vous avez terminé, cliquez sur **Enregistrer et publier**.
 
-   La règle est ajoutée à la liste dans l’espace de travail des règles.
+   La règle est ajoutée à la liste dans la variable *Règles* workspace.
 
 1. Bien que les règles actives entrent immédiatement en vigueur, vous devrez peut-être attendre jusqu’à 15 minutes que les résultats de la requête mise en cache dans le storefront soient actualisés.
 

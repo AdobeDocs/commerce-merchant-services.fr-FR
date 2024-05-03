@@ -3,7 +3,7 @@ title: Marchandisage des catégories
 description: Utilisation [!DNL Live Search] Marchandisage des catégories pour une expérience d’achat plus rapide.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Cette fonctionnalité est accessible dans l’Admin à l’adresse **Marketing**
 
 >[!NOTE]
 >
->Le marchandisage des catégories est disponible avec [!DNL Live Search] [3.0.0 ou version ultérieure](release-notes.md). Si l’onglet Marchandisage des catégories s’affiche mais que les données ne sont pas renseignées, mettez à jour la variable [!DNL Live Search] module .
+>Le marchandisage des catégories est disponible avec [!DNL Live Search] [3.0.0 ou version ultérieure](release-notes.md). Si l’espace de travail Marchandisage des catégories s’affiche, mais qu’il n’est pas rempli de données, mettez à jour la variable [!DNL Live Search] module .
 
 ![Marchandisage par catégorie](assets/category_workspace.png)
 

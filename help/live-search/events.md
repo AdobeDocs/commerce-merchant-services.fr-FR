@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] Événements'
 description: Découvrez comment les événements collectent des données pour [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
+source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 0%
 [!DNL Live Search] utilise des événements pour alimenter les algorithmes de recherche tels que &quot;Les plus consultés&quot; et &quot;A consulté ceci, consulté cela&quot;. Bien que les utilisateurs de LUMA reçoivent des événements prêts à l’emploi, les implémentations sans tête et autres implémentations personnalisées doivent implémenter des événements pour leurs propres besoins.
 
 Depuis [!DNL Live Search] et [!DNL Product Recommendations] utilisent le même algorithme principal, certains événements sont partagés par les deux services. Certains événements Recommendations de produit sont nécessaires pour renseigner le tableau de bord Recommendations.
-
-## Événements
 
 Ce tableau décrit les événements utilisés par [!DNL Live Search] stratégies.
 

@@ -2,9 +2,9 @@
 title: "Types de facettes"
 description: "[!DNL Live Search] les facettes sont dynamiques et apparaissent dans la liste Filtres lorsque cela est pertinent."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 * Facettes épinglées : les facettes les plus couramment utilisées peuvent être collées en haut de la liste. Les autres facettes sont répertoriées dans la section *Type de tri* commande après les facettes épinglées.
 * Facettes dynamiques - Attributs de produit qui [Adobe Sensei](https://www.adobe.com/sensei.html) trouve le plus pertinent pour un ensemble de produits et une requête. Le calcul prend en compte les métadonnées d’attribut de l’ensemble du catalogue et détermine au moment de la requête les facettes les plus pertinentes pour la requête.
 * Facettes populaires : attributs de produit qui sont le plus souvent présents dans les résultats de recherche.
-* Facettes de prix : revenez des produits par tranche de prix. Vous pouvez indiquer le nombre de sélections et l’intervalle de prix sur la variable [*Paramètres*](settings.md) .
+* Facettes de prix : revenez des produits par tranche de prix. Vous pouvez indiquer le nombre de sélections et l’intervalle de prix sur la variable [*Paramètres*](settings.md) workspace.
 
 Au moment de la requête, [!DNL Live Search] génère les résultats de recherche dans des groupes de facettes dynamiques et populaires.
 

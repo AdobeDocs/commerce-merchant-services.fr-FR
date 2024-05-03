@@ -1,17 +1,17 @@
 ---
-title: "[!DNL Live Search] Paramètres"
+title: "Paramètres"
 description: "Configurez les paramètres de la variable [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 5e3cdae0e7362b921c51dc6edb12f4b58ffeb31e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
 # Paramètres
 
-Utilisez la variable *Paramètres* pour configurer les plages de facettes de prix et les intervalles, ainsi que la langue par défaut de l’index.
+Utilisez la variable *Paramètres* workspace pour configurer les plages de facettes de prix et les intervalles, ainsi que la langue par défaut de l’index.
 
 La facette des prix indique le nombre de groupes de prix et la manière dont les valeurs de prix sont réparties entre eux.
 
@@ -24,7 +24,7 @@ Le paramètre Langue indique à la [!DNL Live Search] service de la langue à at
 Vous pouvez indiquer le nombre de groupes de prix et la manière dont les valeurs de prix sont réparties. Chaque période de prix chevauche le groupe précédent d’une unité. Par exemple, cinq groupes avec un intervalle de 20 créent les plages de prix suivantes : 0-20, 20-40, 40-60, 60-80 et >80. Si le catalogue ne contient pas suffisamment de produits pour remplir toutes les plages définies, l’affichage des groupes disponibles est adapté en conséquence. Par exemple : 0-20, 60-80, >80.
 
 1. Dans Admin, accédez à **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]**.
-1. Sur le **Paramètres** sous *Facturation des prix*, procédez comme suit :
+1. Sur le **Paramètres** workspace sous *Facturation des prix*, procédez comme suit :
    * Saisissez le **Nombre de sélections**, ou des groupements de prix à mettre à disposition. Il est possible de définir jusqu’à 50 groupements de prix.
    * Saisissez le **Valeur d&#39;intervalle**, ou plage de prix pour chaque groupe. La valeur maximale est 10 000.
 1. Cliquez sur **Enregistrer**.
