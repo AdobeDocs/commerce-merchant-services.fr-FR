@@ -3,7 +3,7 @@ title: '''[!DNL Catalog Service] Notes de mise à jour d’'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 733bad1c12ff62b226ac8a9675faf9c091e84732
+source-git-commit: 77716f8fd74a7ba390fea5e4454b01152b024da0
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Les mises à jour sont les suivantes :
 
 ### Version 1.18
 
-_11 avril 2023_
+_11 avril 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
@@ -38,7 +38,7 @@ _11 avril 2023_
 
 ### Version 1.17
 
-_22 février 2023_
+_22 février 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
@@ -46,7 +46,7 @@ _22 février 2023_
 
 ### Version 1.16
 
-_13 février 2023_
+_13 février 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
