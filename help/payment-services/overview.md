@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Introduction à [!DNL Payment Services]
 
-[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] est votre solution de libre-service clé en main, notamment des tests d’environnement de test et une configuration simple, pour fournir un traitement de paiement robuste et sécurisé à vos sites web Commerce.
+[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] est votre solution de libre-service clé en main, notamment des tests sandbox et une configuration simple, pour fournir un traitement de paiement robuste et sécurisé à vos sites web Commerce.
 
 ![[!DNL Payment Services] vue d’administration de l’extension](assets/admin-view.png){width="300" zoomable="yes"}
 
@@ -71,7 +71,7 @@ Pour connaître les méthodes de paiement prises en charge par PayPal, voir leur
 Intégration et configuration [!DNL Payment Services] est effectué en quelques étapes seulement :
 
 1. Obtenez la variable [[!DNL Payment Services] extension](install.md).
-1. Connectez votre instance Commerce à Commerce Services.
+1. Connectez votre instance Commerce aux services Commerce.
 1. Intégrez et configurez le service sandbox.
 1. Activer [!DNL Payment Services] comme méthode de paiement et commencez à traiter les paiements de test.
 1. Intégrer les commerçants pour activer les paiements en direct pour vos sites web.
