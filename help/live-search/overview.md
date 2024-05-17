@@ -3,9 +3,9 @@ title: Présentation [!DNL Live Search]?
 description: "[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, pertinente et intuitive."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Avec [!DNL Live Search], vous pouvez :
 
 >[!IMPORTANT]
 >
->En ce qui concerne la recherche de site, Adobe Commerce vous offre des options. Veillez à lire [Limites et limites](boundaries-limits.md) avant l’implémentation, pour vérifier [!DNL Live Search] est adapté aux besoins de votre entreprise.
+>En ce qui concerne la recherche de site, Adobe Commerce vous offre des options. Avant de procéder à la mise en oeuvre, passez en revue les [Limites et limites](boundaries-limits.md) pour vous assurer que [!DNL Live Search] est adapté aux besoins de votre entreprise.
 
 ## Architecture
 
@@ -37,11 +37,11 @@ En mettant l&#39;accent sur la rapidité, la pertinence et la facilité d&#39;ut
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Pour une vidéo plus détaillée sur l’utilisation et la configuration de la recherche en direct, voir [Manifestation complète sur [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) rubrique.
+Pour une vidéo plus détaillée sur l’utilisation et la configuration de la recherche en direct, voir [Manifestation complète sur [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) rubrique.
 
 ### Recherche en cours de frappe
 
-[!DNL Live Search] répond avec des produits suggérés et une miniature des principaux résultats de recherche dans une [fenêtre contextuelle](storefront-popover.md) comme les clients saisissent des requêtes dans la variable [Rechercher](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) de la boîte. La variable [détail du produit](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) s’affiche lorsque les acheteurs cliquent sur un produit proposé ou présenté. A _Afficher tout_ dans le pied de page de la fenêtre contextuelle affiche la page des résultats de la recherche.
+[!DNL Live Search] répond avec des produits suggérés et une miniature des principaux résultats de recherche dans une [fenêtre contextuelle](storefront-popover.md) comme les clients saisissent des requêtes dans la variable [Rechercher](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) de la boîte. La variable [détail du produit](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) s’affiche lorsque les acheteurs cliquent sur un produit proposé ou présenté. A _Afficher tout_ dans le pied de page de la fenêtre contextuelle affiche la page des résultats de la recherche.
 
 [!DNL Live Search] renvoie &quot;search as you type&quot; (rechercher en cours de frappe) pour une requête de deux caractères ou plus. Pour une correspondance partielle, le nombre maximal de caractères par mot est de 20. Le nombre de caractères dans la requête n’est pas configurable. La fenêtre contextuelle comprend la variable`name`, `sku`, et `category_ids` des champs.
 
@@ -69,12 +69,13 @@ Marchandisage [rules](rules.md) façonnez l’expérience d’achat avec des ins
 
 ### Prise en charge des termes de recherche
 
-[!DNL Live Search] prend en charge Commerce [redirections de termes de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Par exemple, les utilisateurs peuvent rechercher un terme tel que &quot;Taux de livraison&quot; et être redirigés directement vers la page des taux de livraison.
+[!DNL Live Search] prend en charge Commerce [redirections de termes de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Par exemple, les utilisateurs peuvent rechercher un terme tel que &quot;Taux de livraison&quot; et être redirigés directement vers la page des taux de livraison.
 
 ## Composants de recherche en direct
 
 - [!DNL Live Search] [widget contextuel](storefront-popover.md) est la zone qui s’ouvre sous le champ de recherche qui contient les résultats de la recherche.
-- [Widget de page de liste de produits](plp-styling.md) fournit une page de liste de produits pouvant faire l’objet d’une recherche, avec facettes et prise en charge de synonymes.
+- [Widget de page de liste de produits](plp-styling.md) (PLP) fournit une page de liste de produits pouvant faire l’objet d’une recherche, avec des facettes et la prise en charge de synonymes. Le widget est installé et activé dans Live Search 4.0.0+.
+- (**Obsolète**) L’adaptateur de recherche était le précurseur du widget PLP et a été installé avec Live Search &lt; 4.0.0. Si vous utilisez une version de Live Search antérieure à 4.0.0, Commerce vous recommande de mettre à niveau pour bénéficier des avantages des fonctionnalités du widget PLP et des améliorations futures.
 
 ## [!DNL Live Search] workspace
 
