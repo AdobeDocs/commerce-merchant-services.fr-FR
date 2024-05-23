@@ -3,7 +3,7 @@ title: "Limites et limites"
 description: En savoir plus sur les limites et les limites de [!DNL Live Search] pour vous assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
+source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
