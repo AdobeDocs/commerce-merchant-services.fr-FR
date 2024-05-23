@@ -3,9 +3,9 @@ title: Connexion à votre instance
 description: Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,10 @@ Maintenant que vous avez obtenu vos informations d’identification, vous pouvez
    >[!INFO]
    >
    > Voir notre [[!DNL Adobe Commerce] Connecteur Services](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) vidéo pour plus d’informations.
+
+## Point d’entrée
+
+[!DNL Payment Services] utilise la variable [Connecteur Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) pour vous connecter aux services Commerce et les déployer en tant que SaaS. Ceci [!DNL Commerce Services Connector] communique par le biais du point de terminaison à l’adresse :
+
+* `commerce-beta.adobe.io` pour les environnements de test.
+* `commerce.adobe.io for` pour les environnements en ligne.
