@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Notes de mise à jour d’'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 187c3841a1682c53bb0f0e9c3f16cb43df146a58
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,12 @@ Les mises à jour sont les suivantes :
 ![Bogue](../assets/bug.svg) Problèmes connus
 
 ## Version majeure actuelle
+
+### Version 1.19
+
+_23 mai 2024_
+
+![Correction](../assets/fix.svg) La variable `InStock` L’indicateur pour les valeurs d’option prend désormais en compte la portée. `enabled` statut de la variante de produit.
 
 ### Version 1.18
 
