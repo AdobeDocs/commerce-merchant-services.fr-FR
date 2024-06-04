@@ -3,9 +3,9 @@ title: Activer [!DNL Payment Services] pour la production
 description: Terminez le processus d’intégration en activant [!DNL Payment Services] pour la production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Vous pouvez mettre le service en production et terminer la [processus d’intég
 
 ## Définir [!DNL Payment Services] comme mode de paiement
 
-Après vous [Configuration de Commerce Services](connect.md#configure-commerce-services) et activez [test des environnements de test](sandbox.md#enable-sandbox-testing) ou [paiements en direct](#enable-live-payments), vous devez définir [!DNL Payment Services] comme méthode de paiement.
+Après vous [configuration des services Commerce](connect.md#configure-commerce-services) et activez [test des environnements de test](sandbox.md#enable-sandbox-testing) ou [paiements en direct](#enable-live-payments), vous devez définir [!DNL Payment Services] comme méthode de paiement.
 
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Cliquez sur **[!UICONTROL Enable Payment Services]**.
@@ -144,6 +144,8 @@ Obtenez votre [!DNL Payment Services] _Identifiant du marchand_:
 1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Dans la vue Accueil, cliquez sur **[!UICONTROL Settings]**. Voir [Accueil](payments-home.md) pour plus d’informations.
 1. Sélectionnez les _Identifiant du marchand_ et soumettez-le à votre représentant commercial, qui configurera le niveau de tarification approprié.
+
+Voir [Traitement de niveau 2 et de niveau 3](levels-card-payment-transactions.md) pour plus d’informations sur les transactions de paiement.
 
 ## Activer les paiements en direct
 
