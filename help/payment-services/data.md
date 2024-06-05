@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 9a933d41bffc2af453eed00caeb941eb18b23852
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -79,5 +79,5 @@ La variable `invoice_id` et `custom_id` s’affichent près du bas du détail de
 
 Pour plus d’informations, consultez la documentation sur les API REST de PayPal :
 
-* [`purchase_unit`, dans laquelle `custom_id` et `invoice_id` résider](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Réduire)
+* [`purchase_unit`, dans laquelle `custom_id` et `invoice_id` résider](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Afficher les détails de commande](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
