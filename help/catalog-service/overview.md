@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] pour Adobe Commerce, vous pouvez récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes GraphQL natives d’Adobe Commerce."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Le diagramme suivant illustre les deux systèmes GraphQL :
 
 ![Diagramme d’architecture du catalogue](assets/catalog-service-architecture.png)
 
-Dans le système GraphQL principal, le PWA envoie une demande à l’application Commerce, qui reçoit chaque demande, la traite, peut-être en envoyant une demande via plusieurs sous-systèmes, puis renvoie une réponse au storefront. Ce aller-retour peut ralentir le temps de chargement des pages, ce qui peut entraîner des taux de conversion plus faibles.
+Dans le système GraphQL principal, le PWA envoie une demande à l’application Commerce, qui reçoit chaque demande, la traite, peut-être en envoyant une demande par l’intermédiaire de plusieurs sous-systèmes, puis renvoie une réponse au storefront. Ce aller-retour peut ralentir le temps de chargement des pages, ce qui peut entraîner des taux de conversion plus faibles.
 
 [!DNL Catalog Service] est une passerelle des services de Storefront. Le service accède à une base de données distincte qui contient les détails du produit et les informations connexes, telles que les attributs de produit, les variantes, les prix et les catégories. Le service maintient la synchronisation de la base de données avec Adobe Commerce par le biais de l’indexation.
 Comme le service contourne la communication directe avec l’application, il peut réduire la latence du cycle de demande et de réponse.
@@ -66,9 +66,11 @@ Les produits simples représentent l’unité de vente de base qui a un prix. [!
 
 Un produit complexe n’a pas de prix fixe. Au lieu de cela, le service de catalogue renvoie les prix de l&#39;utilisation simple liée. Par exemple, un commerçant peut initialement attribuer les mêmes prix à toutes les variantes d’un produit configurable. Si certaines tailles ou couleurs sont impopulaires, le marchand peut réduire les prix de ces variantes. Ainsi, le prix du produit complexe (configurable) affiche au début une gamme de prix, reflétant le prix des variantes standard et impopulaires. Une fois que l’acheteur a sélectionné une valeur pour toutes les options disponibles, le storefront affiche un seul prix.
 
+Le service de catalogue garantit des mises à jour et des calculs de prix précis en prenant en charge les prix avec des valeurs élevées (jusqu’à 16 chiffres) et une précision décimale élevée (jusqu’à 4 décimales).
+
 >[!NOTE]
 >
-> Clients commerciaux avec [!DNL Catalog Service] peuvent tirer parti des modifications de prix plus rapides et du temps de synchronisation sur leurs sites web avec la variable [Indexeur de prix SaaS](../price-index/price-indexing.md).
+> Clients Commerce avec [!DNL Catalog Service] peuvent tirer parti des modifications de prix plus rapides et du temps de synchronisation sur leurs sites web avec la variable [Indexeur de prix SaaS](../price-index/price-indexing.md).
 
 ## Implémentation
 

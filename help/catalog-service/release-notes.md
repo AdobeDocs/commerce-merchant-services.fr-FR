@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Notes de mise à jour d’'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ Les mises à jour sont les suivantes :
 
 _23 mai 2024_
 
-![Correction](../assets/fix.svg) La variable `InStock` L’indicateur pour les valeurs d’option prend désormais en compte la portée. `enabled` statut de la variante de produit.
+![Correction](../assets/fix.svg) <!--DATA-5033-->La variable `InStock` L’indicateur pour les valeurs d’option prend désormais en compte la portée. `enabled` statut de la variante de produit.
+
+![Correction](../assets/fix.svg) <!--DATA-5888-->Ajoutez la prise en charge des prix des produits qui nécessitent des nombres élevés (jusqu’à 16 chiffres) et une précision décimale supérieure (jusqu’à 4 décimales). Pour appliquer les mises à jour de configuration des prix à votre catalogue existant, resynchronisez les données du catalogue à partir du [Tableau de bord Data Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)ou en utilisant la variable [Interface de ligne de commande d’Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+
+## Versions précédentes
+
++++ Versions précédentes
 
 ### Version 1.18
 
@@ -37,10 +43,6 @@ _11 avril 2024_
 ![Nouveau](../assets/new.svg) Prise en charge de PHP 8.3.
 
 ![Nouveau](../assets/new.svg) La variable [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) et [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) les requêtes renvoient désormais des données d’options personnalisables pour des produits simples et complexes.<!--DATA-5538-->
-
-## Versions précédentes
-
-+++ Versions précédentes
 
 ### Version 1.17
 

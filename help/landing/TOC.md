@@ -5,10 +5,10 @@ title: Services pour Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 49%
+source-wordcount: '61'
+ht-degree: 45%
 
 ---
 
@@ -30,4 +30,5 @@ ht-degree: 49%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [Connecteur Services](/help/landing/saas.md)
 - Services de données {#data-services}
+   - [Indexation des prix SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-index/price-indexing.html)
    - [Synchronisation du catalogue](/help/landing/catalog-sync.md)
