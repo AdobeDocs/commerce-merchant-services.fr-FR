@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version [!DNL Live Search] d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 228ce5f3df3cc020a260fdd710eac02433d7bf0a
+source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,6 @@ _13 février 2024_
 
 ![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge la définition d’une règle par défaut pour [Marchandisage des recherches](rules.md).
 
-_27 octobre 2023_
-
-![Nouveau](../assets/new.svg) La variable [!DNL Live Search] Le widget PLP prend désormais en charge les échantillons de couleurs.
-
 _12 octobre 2023_
 
 ![Nouveau](../assets/new.svg) Les administrateurs Commerce peuvent maintenant spécifier la langue de l’index pour [!DNL Live Search]. Voir [Paramètres](settings.md).
@@ -44,6 +40,28 @@ _13 juin 2023_
 _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) [!DNL Live Search] les clients peuvent désormais profiter de la nouvelle [Indexeur de prix SaaS](../price-index/price-indexing.md).
+
+### Widget PLP
+
+_31 mai 2024_
+
+![Nouveau](../assets/new.svg) Version 2.0.0 du widget PLP, qui ajoute la prise en charge des fonctionnalités suivantes :
+
+- Boutons Ajouter au panier - Disponible uniquement pour les produits simples.
+- Plusieurs images par produit : l’image peut changer lorsqu’une autre couleur est sélectionnée pour un produit configurable.
+
+_27 octobre 2023_
+
+![Nouveau](../assets/new.svg) La variable [!DNL Live Search] Le widget PLP prend désormais en charge les échantillons de couleurs.
+
+
+## [!DNL Live Search] 4.2.0 {#420}
+
+_31 mai 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Nouveau](../assets/new.svg) Mise à jour de l’extension Live Search pour utiliser les widgets PLP version 2.0.0.
 
 ## [!DNL Live Search] 4.1.2 {#412}
 
@@ -75,16 +93,6 @@ _22 février 2024_
 ### Nouvelles fonctionnalités
 
 ![Nouveau](../assets/new.svg) La variable [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) est désormais disponible. Ce tableau de bord restructuré fournit des informations sur les flux de données pour [!DNL Product Recommendations], [!DNL Live Search], et [!DNL Catalog Service].
-![Nouveau](../assets/new.svg) Plusieurs nouvelles fonctionnalités ont été ajoutées au [Widget PLP](plp-styling.md):
-
-* Modification du mode Liste/grille
-* Boutons Ajouter au panier
-* Prise en charge des échantillons
-* Images multiples par produit
-* Curseurs de prix
-* Prise en charge linguistique
-
-Les vendeurs doivent mettre à niveau la variable [!DNL Live Search] extension vers la version >= 4.1.0 pour accéder à ces fonctionnalités.
 
 ### Mises à jour
 
@@ -114,9 +122,9 @@ _13 novembre 2023_
 
 Après avoir installé la version 3.1.1 ou ultérieure, activez les nouveaux indexeurs :
 
-* Flux de prix du produit
-* Porte le flux de données du site web
-* Porte le flux de données de groupes de clients
+- Flux de prix du produit
+- Porte le flux de données du site web
+- Porte le flux de données de groupes de clients
 
 Après la mise à niveau, testez la configuration mise à jour dans l’AQ ou l’Évaluation avant de publier les modifications en production.
 
@@ -145,7 +153,7 @@ _15 septembre 2023_
 
 ![Correction](../assets/fix.svg) La taille de la table des flux Produits et Prix a été considérablement réduite. Tableaux `catalog_data_exporter_products` et `catalog_data_exporter_product_prices` devrait voir une réduction substantielle de la taille.
 ![Correction](../assets/fix.svg) L’onglet &quot;Règles&quot; est renommé &quot;Règles de recherche&quot;.
-![Correction](../assets/fix.svg) Lors du classement par &quot;tendance&quot;, vous pouvez désormais choisir entre : * 3 jours (par défaut) * 14 jours * 30 jours
+![Correction](../assets/fix.svg) Lors du classement par &quot;tendance&quot;, vous pouvez désormais choisir entre : - 3 jours (par défaut) - 14 jours - 30 jours
 ![Correction](../assets/fix.svg) &quot;Événements&quot; (Amplifier/Epingler/Masquer) a été renommé &quot;Classement manuel&quot;
 ![Correction](../assets/fix.svg) &quot;Type de classement&quot; a été renommé &quot;Classement intelligent&quot;.
 ![Correction](../assets/fix.svg) Correctifs de bogues mineurs
@@ -170,11 +178,11 @@ _7 août 2023_
 
 ![Nouveau](../assets/new.svg) Les valeurs suivantes ont été ajoutées au `storeDetails` objet :
 
-* &quot;Autoriser tous les produits par page&quot;
-* Taux de change
-* &quot;Produits par page sur les valeurs autorisées de la grille&quot;
-* &quot;Produits par page sur la valeur par défaut de la grille&quot;
-* Langue du magasin
+- &quot;Autoriser tous les produits par page&quot;
+- Taux de change
+- &quot;Produits par page sur les valeurs autorisées de la grille&quot;
+- &quot;Produits par page sur la valeur par défaut de la grille&quot;
+- Langue du magasin
 
 ### Mises à jour
 
@@ -201,7 +209,7 @@ _14 mars 2023_
 ![Nouveau](../assets/new.svg) [Widget de page de liste de produits](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
 ![Nouveau](../assets/new.svg) [Options de filtrage des catégories](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![Nouveau](../assets/new.svg) Ajout de la possibilité de faire glisser et de déposer des événements Pin
-![Nouveau](../assets/new.svg) Nouvelles actions Epingler : * Epingler à l’emplacement - Bouton Epingler pour créer l’événement Epingler d’un seul clic * Epingler au haut - Placer le produit dans la première position * Epingler au bas des résultats * Détacher un événement d’un seul clic
+![Nouveau](../assets/new.svg) Nouvelles actions Epingler : - Epingler sur tache - Bouton Epingler pour créer l’événement Epingler d’un seul clic - Epingler sur le haut - Placer le produit en première position - Epingler sur le bas des résultats - Décocher un événement d’un seul clic
 ![Nouveau](../assets/new.svg) [Classement intelligent des règles](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
 ![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge l’intégralité [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Fonctionnalités de Commerce (anciennement appelées inventaire multi-source ou MSI). Pour activer la prise en charge complète, vous devez [update](install.md#update) le module de dépendance ; `commerce-data-export` vers la version 102.2.0+.
 
@@ -326,6 +334,6 @@ Existant [!DNL Live Search] Les installations doivent être mises à niveau vers
 
 Pour en savoir plus :
 
-* [Documentation destinée aux développeurs Adobe Commerce](https://developer.adobe.com/commerce/docs)
-* [Guide de l’utilisateur d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce)
-* [[!DNL Live Search] sur Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
+- [Documentation destinée aux développeurs Adobe Commerce](https://developer.adobe.com/commerce/docs)
+- [Guide de l’utilisateur d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce)
+- [[!DNL Live Search] sur Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
