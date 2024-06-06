@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Les dernières informations de mise à jour pour la variable [!DNL Data Connection] à partir d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
+source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,15 @@ _12 octobre 2022_
 ![Nouveau](../assets/new.svg) - Ajout de la prise en charge d’un [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.1.2
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+_5 juin 2024_
+
+![Correction](../assets/new.svg) - Correction d’un problème en raison duquel un format de date incorrect était utilisé lors du lancement d’une [synchronisation historique](connect-data.md#specify-order-history-date-range).
+![Correction](../assets/new.svg) - Correction d’un problème en raison duquel la variable [startCheckout](events.md#startcheckout) n’était pas envoyé sur Adobe Commerce 2.4.7.
 
 ## 3.1.1
 

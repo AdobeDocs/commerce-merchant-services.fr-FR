@@ -3,9 +3,9 @@ title: "Limites et limites"
 description: En savoir plus sur les limites et les limites de [!DNL Live Search] pour vous assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
+source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,14 @@ En ce qui concerne la recherche de site, Adobe Commerce vous offre des options. 
 - Dans une facette, un maximum de 30 compartiments peuvent être renvoyés. Si plus de 30 compartiments doivent être renvoyés, [créer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ainsi, Adobe peut analyser l’impact sur les performances et déterminer s’il est possible d’augmenter cette limite pour votre environnement.
 - Les facettes dynamiques peuvent entraîner des problèmes de performances dans les index volumineux et les index dont la qualité est élevée. Si vous avez créé des facettes dynamiques et que vous constatez une détérioration des performances ou un non-chargement de page avec des erreurs de délai d’expiration, essayez de modifier vos facettes pour les épingler afin de déterminer si cela résout votre problème de performances.
 - Etat des stocks (`quantity_and_stock_status`) n’est pas pris en charge en tant que facette. Vous pouvez utiliser `inStock: 'true'` pour exclure les produits en stock. Cette fonctionnalité est prise en charge par défaut dans la variable `LiveSearchAdapter` lorsque &quot;Display out of stock products&quot; est défini sur &quot;True&quot; dans la variable [!DNL Commerce] Administrateur.
+- Les attributs de type date ne sont pas pris en charge en tant que facette.
 
 ## Requête
 
 - [!DNL Live Search] n’a pas accès à la taxonomie complète de l’arborescence des catégories, ce qui rend certains scénarios de recherche de navigation par couches hors de sa portée.
 - [!DNL Live Search] utilise une variable [Point de terminaison GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) pour les requêtes afin de prendre en charge des fonctionnalités telles que les facettes dynamiques et la recherche par saisie. Bien que similaire à la variable [API GRAPHQL](https://developer.adobe.com/commerce/webapi/graphql/), il existe quelques différences et certains champs peuvent ne pas être entièrement compatibles.
 - Le nombre maximal de résultats pouvant être renvoyés dans une requête de recherche est de 10 000.
+- Il n’est pas possible de filtrer les résultats à l’aide d’un attribut de type date.
 
 ## Règles
 
@@ -56,7 +58,7 @@ En ce qui concerne la recherche de site, Adobe Commerce vous offre des options. 
 ## Synonymes
 
 - [!DNL Live Search] peut gérer jusqu’à 200 [synonyms](synonyms.md) par vue de magasin.
-- Les synonymes à plusieurs mots ne sont pas pris en charge.
+- Les synonymes à plusieurs mots sont limités à 20 par vue de magasin.
 
 ## Marchandisage des catégories
 
