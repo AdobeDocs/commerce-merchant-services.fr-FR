@@ -4,9 +4,9 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ Les sections suivantes abordent plus en détail chacun de ces éléments.
 
 ## Informations d’identification {#apikey}
 
-Les clés d’API de production et d’environnement de test sont générées à partir de la variable [!DNL Commerce] du compte [propriétaire de licence](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) qui est identifié par une variable [!DNL Commerce] ID (MageID). Pour transmettre la validation des droits pour des services tels que [!DNL Product Recommendations] ou [!DNL Live Search], le propriétaire de la licence de l’organisation du commerçant peut générer le jeu de clés API tant que le compte est en règle. Les clés peuvent être partagées sur la base du &quot;besoin de savoir&quot; avec l’intégrateur système ou l’équipe de développement qui gère les projets et les environnements pour le compte du détenteur de licence. En outre, les intégrateurs de solution sont également autorisés à utiliser [!DNL Commerce Services]. Si vous êtes un intégrateur de solution, le signataire de [!DNL Commerce] le contrat de partenaire doit générer les clés d’API.
+Les clés d’API de production et d’environnement de test sont générées à partir de la variable [!DNL Commerce] du compte [propriétaire de licence](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) qui est identifié par une variable [!DNL Commerce] ID (MageID). Pour transmettre la validation des droits pour des services tels que [!DNL Product Recommendations] ou [!DNL Live Search], le propriétaire de la licence de l’organisation du commerçant peut générer le jeu de clés d’API, à condition que le compte soit en règle.
+
+Les clés peuvent être partagées &quot;au besoin&quot; avec l’intégrateur système ou l’équipe de développement qui gère les projets et environnements pour le compte du détenteur de la licence. Les développeurs qui ont reçu une autorisation [!DNL Shared Access] par le propriétaire de la licence ne peut pas générer les clés en leur nom, même si l’organisation du marchand est présente dans la variable [!DNL Switch Accounts] liste déroulante de leur compte.
+
+En outre, les intégrateurs de solution sont également autorisés à utiliser [!DNL Commerce Services]. Si vous êtes un intégrateur de solution, le signataire de [!DNL Commerce] le contrat de partenaire doit générer les clés d’API.
 
 >[!NOTE]
 >
