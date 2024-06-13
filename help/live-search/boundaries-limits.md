@@ -3,9 +3,9 @@ title: "Limites et limites"
 description: En savoir plus sur les limites et les limites de [!DNL Live Search] pour vous assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ En ce qui concerne la recherche de site, Adobe Commerce vous offre des options. 
 
 ## Requête
 
-- [!DNL Live Search] n’a pas accès à la taxonomie complète de l’arborescence des catégories, ce qui rend certains scénarios de recherche de navigation par couches hors de sa portée.
 - [!DNL Live Search] utilise une variable [Point de terminaison GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) pour les requêtes afin de prendre en charge des fonctionnalités telles que les facettes dynamiques et la recherche par saisie. Bien que similaire à la variable [API GRAPHQL](https://developer.adobe.com/commerce/webapi/graphql/), il existe quelques différences et certains champs peuvent ne pas être entièrement compatibles.
 - Le nombre maximal de résultats pouvant être renvoyés dans une requête de recherche est de 10 000.
 - Il n’est pas possible de filtrer les résultats à l’aide d’un attribut de type date.
@@ -74,3 +73,4 @@ En ce qui concerne la recherche de site, Adobe Commerce vous offre des options. 
    - Le groupe de clients &quot;Non connecté&quot; doit disposer des autorisations de navigation &quot;Autoriser&quot;.
    - Pour limiter les produits au groupe de clients &quot;Non connecté&quot;, accédez à chaque catégorie et définissez des autorisations pour chaque groupe de clients.
 - La prise en charge de B2B avec la recherche en direct pour PWA Studio n’est pas prise en charge pour le moment.
+- Facettes de catégorie dans [!DNL Live Search] peut afficher des catégories qui ne sont pas visibles pour un groupe de clients spécifique.

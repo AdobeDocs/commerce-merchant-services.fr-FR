@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] Notes de mise à jour d’'
 description: Les dernières informations de mise à jour pour [!DNL Product Recommendations] d’Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
+source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ _9 mai 2024_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel la commande **[!DNL Add to Cart]** sur un produit simple dans une unité Recommendations de produit redirigeait l’acheteur vers la page d’accueil au lieu de rester sur la page active.
+![Bogue](../assets/bug.svg) Une erreur de validation provoquée par la variable `referenceBlock` dans le `ProductRecommendations Layout` Fichier XML.
 
 ### Versions précédentes
 
