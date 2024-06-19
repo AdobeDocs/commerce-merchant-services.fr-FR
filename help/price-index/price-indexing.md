@@ -4,53 +4,55 @@ description: Utilisation de l’indexation des prix SaaS pour améliorer les per
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # Indexation des prix SaaS
 
-L’indexation des prix SaaS accélère le temps nécessaire pour que les changements de prix soient répercutés. [Services Commerce](../landing/saas.md) après avoir été soumis. Cela permet aux commerçants disposant de catalogues volumineux et complexes, ou de plusieurs sites web ou groupes de clients, de traiter en permanence les changements de prix.
+L’indexation des prix SaaS améliore les performances du site en déplaçant de lourds processus de calcul tels que l’indexation et le calcul des prix de l’application Commerce vers l’infrastructure cloud d’Adobe. Cette approche permet aux commerçants d’augmenter rapidement les ressources afin d’accélérer les temps d’indexation des prix afin de refléter les changements de prix plus rapidement lors de l’envoi de données aux services Commerce connectés et de storefront.
 
-Si vous disposez d’une vitrine sans interface utilisateur graphique ou utilisez la variable [catalog-adapter](./catalog-adapter.md) , les clients peuvent utiliser l’indexation des prix SaaS en désactivant l’indexeur de prix de base d’Adobe Commerce.
-
-Les processus lourds informatiques, tels que l’indexation et le calcul des prix, ont été déplacés du coeur de Commerce vers l’infrastructure cloud de l’Adobe. Cela permet aux commerçants d’augmenter rapidement les ressources pour augmenter les délais d’indexation des prix et refléter ces changements plus rapidement.
-
-Le flux de données d’indexation principal vers les services SaaS ressemble à ce qui suit :
+Le diagramme suivant montre le flux de données d’indexation vers les services SaaS lorsque Commerce utilise la variable [indexation de prix](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) processus inclus dans l’application Commerce :
 
 ![Flux de données par défaut](assets/old_way.png)
 
-Avec l’indexation des prix SaaS, le flux est :
+Lorsque l’indexation des prix SaaS est activée, le flux de données change. L&#39;indexation des prix est effectuée à l&#39;aide de [Exportation des données Commerce SaaS](../data-export/data-synchronization.md).
 
 ![Flux de données d’indexation de prix SaaS](assets/new_way.png)
 
-Tous les commerçants peuvent bénéficier de ces améliorations, mais ceux qui en bénéficieront le plus sont les clients avec :
+Tous les commerçants peuvent bénéficier de l’indexation de prix SaaS, mais les marchands qui ont des projets avec les caractéristiques suivantes peuvent réaliser les plus grands avantages :
 
-* Changements constants des prix : les marchands qui nécessitent des modifications répétées de leurs prix pour atteindre des objectifs stratégiques tels que des promotions fréquentes, des remises saisonnières ou des marqueurs d’inventaire.
-* Plusieurs sites web et/ou groupes de clients : marchands avec des catalogues de produits partagés sur plusieurs sites web (domaines/marques) et/ou groupes de clients.
-* Grand nombre de prix uniques sur plusieurs sites web ou groupes de clients : marchands avec des catalogues de produits partagés étendus qui contiennent des prix uniques sur plusieurs sites web ou groupes de clients, tels que des marchands B2B avec des prix négociés au préalable, des marques avec des stratégies de tarification différentes.
+* **Modifications constantes des prix**-Les commerçants qui nécessitent des modifications répétées de leurs prix pour atteindre des objectifs stratégiques tels que des promotions fréquentes, des remises saisonnières ou des marqueurs d’inventaire.
+* **Plusieurs sites web et/ou groupes de clients**-Marchands avec des catalogues de produits partagés sur plusieurs sites web (domaines/marques) et/ou groupes de clients.
+* **Nombreux prix uniques sur plusieurs sites web ou groupes de clients**-Marchands avec des catalogues de produits partagés étendus qui contiennent des prix uniques sur plusieurs sites web ou groupes de clients. Par exemple, les marchands B2B qui ont des prix négociés au préalable ou des marques ayant des stratégies de tarification différentes.
 
-L’indexation des prix SaaS est disponible gratuitement pour les clients utilisant les services Adobe Commerce et prend en charge le calcul des prix pour tous les types de produits Adobe Commerce intégrés.
+## Utilisation de l’indexation des prix SaaS
 
-Ce guide décrit le fonctionnement de l’indexation de prix SaaS et comment l’activer.
+L’indexation des prix SaaS est activée automatiquement lors de l’installation des services Adobe Commerce. Il prend en charge le calcul des prix pour tous les types de produits Adobe Commerce intégrés.
 
-## Conditions
+### Conditions
 
 * Adobe Commerce 2.4.4+
-* Au moins l’un des services Commerce suivants avec la dernière version de l’extension Adobe Commerce :
+
+### Conditions préalables
+
+* L’un des services Commerce suivants doit être installé avec la dernière version de l’extension Commerce :
 
    * [Service de catalogue](../catalog-service/overview.md)
    * [Recherche en direct](../live-search/overview.md)
    * [Recommendations de produit](../product-recommendations/guide-overview.md)
 
-Les utilisateurs de Luma et Adobe Commerce Core GraphQL peuvent installer la variable [`catalog-adapter`](catalog-adapter.md) qui fournit la compatibilité Luma et Core GraphQl et désactive l’indexeur de prix des produits Adobe Commerce.
 
-## Utilisation
+>[!NOTE]
+>
+>Si nécessaire, l’indexeur de prix par défaut de l’application Commerce peut être désactivé à l’aide de la fonction [Adaptateur de catalogue](catalog-adapter.md).
 
-Après la mise à niveau de votre instance Adobe Commerce avec la prise en charge de l’indexation de prix SaaS, synchronisez les nouveaux flux :
+## Synchronisation des prix avec l’indexation des prix SaaS
+
+Après avoir activé l’indexation des prix SaaS pour Adobe Commerce, mettez à jour les prix sur Storefront et dans les services Commerce en synchronisant les nouveaux flux :
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -58,9 +60,9 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-## Prix des types de produits personnalisés
+### Prix des types de produits personnalisés
 
-Les calculs de prix sont pris en charge pour les types de produits personnalisés tels que le prix de base, le prix spécial, le prix de groupe, le prix de règle de catalogue, etc.
+Les calculs de prix sont pris en charge pour les types de produits personnalisés tels que le prix de base, le prix spécial, le prix du groupe, le prix des règles de catalogue, etc.
 
 Si vous disposez d’un type de produit personnalisé qui utilise une formule spécifique pour calculer le prix final, vous pouvez étendre le comportement du flux de prix du produit.
 
@@ -94,3 +96,4 @@ Si vous disposez d’un type de produit personnalisé qui utilise une formule sp
        }
    }
    ```
+

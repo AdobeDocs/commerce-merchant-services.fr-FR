@@ -6,7 +6,7 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Documentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Voir [nouveautés de notre documentation](whats-new.md) ou [notes de mise à jou
 <tr>
   <td valign="top" width="200">
       <img alt="[!DNL Live Search]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>  
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview"><strong>[!DNL Live Search]</strong></a>
     <div>Implémentez cet outil de recherche optimisé par l’IA qui fournit des résultats plus intelligents, plus rapides et pertinents pour les acheteurs B2C.</div>
   </td>
    </tr>
@@ -37,42 +37,42 @@ Voir [nouveautés de notre documentation](whats-new.md) ou [notes de mise à jou
    <td valign="top" width="200">
        <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
-   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html"><strong>[!DNL Product Recommendations]</strong></a>
+   <a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview"><strong>[!DNL Product Recommendations]</strong></a>
     <div>Ajoutez des recommandations alimentées par l’IA basées sur le comportement des acheteurs, les tendances populaires, la similarité de produits, etc.</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="Service de catalogue" src="assets/catalog-service.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html"> <strong>Service de catalogue</strong></a> <br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong>Service de catalogue</strong></a> <br>
     <div>Offrez à vos clients une expérience produit optimisée tout en améliorant les performances, l’évolutivité et les conversions.</div>
   </td>
    </tr>
 <tr>
   <td valign="top" width="200px">
     <img alt="Services de paiement" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>Services de paiement</strong></a>  <br><em>(Disponible pour Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Services de paiement</strong></a>  <br><em>(Disponible pour Magento Open Source)</em>
     <div>Stimuler la satisfaction des clients en proposant facilement différents modes de paiement, notamment des versements sans intérêts, et une vue unique du traitement des paiements, des commandes et des factures.</div>
   </td>
     </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="Exécution de la boutique" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Exécution de la boutique</strong></a></br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>Exécution de la boutique</strong></a></br>
     <div>Proposer une expérience client supérieure d’achat en ligne, d’achat en magasin (BOPIS) et d’optimiser la productivité des employés en fournissant un workflow d’exécution complet activé par le biais d’un appareil mobile.</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Canal de vente Amazon</strong></a> <br><em>(Disponible pour Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Canal de vente Amazon</strong></a> <br><em>(Disponible pour Magento Open Source)</em>
     <div>Intégrez-vous à la plus grande destination mondiale d’achats en ligne pour activer les ventes Amazon, automatiser et synchroniser les données, gérer les listes Amazon, etc. à l’aide d’un seul tableau de bord.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Gestionnaire de canaux</strong></a> <br><em>(Disponible pour Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>Gestionnaire de canaux</strong></a> <br><em>(Disponible pour Magento Open Source)</em>
     <div>Augmentez les ventes, atteignez de nouveaux clients, rationalisez les opérations et gagnez du temps grâce à l’intégration à Walmart Marketplace. Permettre au personnel de gérer de manière transparente les ventes, les stocks et les tarifs de Walmart Marketplace, le tout dans Commerce.</div>
   </td>
    </tr>
@@ -84,7 +84,7 @@ Voir [nouveautés de notre documentation](whats-new.md) ou [notes de mise à jou
 <tr>
   <td valign="top" width="200">
       <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html"><strong>[!DNL Data Connection]</strong></a>  
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview"><strong>[!DNL Data Connection]</strong></a>  
     <div>Tirez parti de la connexion entre Adobe Commerce et Adobe Experience Platform Edge pour utiliser les données Commerce pour d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target.</div>
   </td>
    </tr>
@@ -92,7 +92,7 @@ Voir [nouveautés de notre documentation](whats-new.md) ou [notes de mise à jou
    <td valign="top" width="200">
        <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
-   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
+   <a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas"><strong>[!DNL Services Connector]</strong></a>
     <div>Commerce Services Connector fournit l’intégration de votre instance Adobe Commerce ou de Magento Open Source à l’aide d’une clé API et d’une clé privée. Pour les services de données (Adobe Commerce uniquement), vous pouvez également spécifier l’espace de données dans la configuration.</div>
   </td>
    </tr>
@@ -104,7 +104,7 @@ Voir [nouveautés de notre documentation](whats-new.md) ou [notes de mise à jou
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync"><strong>[!DNL Catalog Sync]</strong></a>
     <div>La synchronisation du catalogue exporte les données de produit du serveur Commerce vers les services Commerce sur pour maintenir les services à jour. Les indexeurs, déclenchés par des événements tels qu’une modification du prix d’un produit ou au niveau de l’inventaire, compilent des données de catalogue. Vous pouvez observer et gérer ce processus via le tableau de bord *Synchronisation du catalogue* ou l’interface de ligne de commande.</div>
   </td>
 </tr>
