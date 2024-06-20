@@ -3,9 +3,9 @@ title: Synchronisation du catalogue
 description: Découvrez comment exporter des données de produit à partir du [!DNL Commerce] serveur à [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Commerce utilise des indexeurs pour compiler des données de catalogue dans des tables. Le processus est automatiquement déclenché par [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) comme une modification du prix d’un produit ou du niveau de stock.
 
-Le service de synchronisation de catalogue déplace les données de produit d’une [!DNL Adobe Commerce] à l’instance [!DNL Commerce Services] plateforme de manière continue afin de maintenir les données à jour. Par exemple : [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) nécessite des informations de catalogue actuelles pour renvoyer avec précision des recommandations dont les noms, les tarifs et la disponibilité sont corrects. Utilisez la variable _Synchronisation du catalogue_ tableau de bord pour observer et gérer le processus de synchronisation ou l’ [interface de ligne de commande](#resynccmdline) pour déclencher une synchronisation de catalogue et réindexer les données de produit pour les utiliser par [!DNL Commerce Services].
+Le service de synchronisation de catalogue déplace les données de produit d’une [!DNL Adobe Commerce] à l’instance [!DNL Commerce Services] plateforme de manière continue afin de maintenir les données à jour. Par exemple : [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) nécessite des informations de catalogue actuelles pour renvoyer avec précision des recommandations dont les noms, les tarifs et la disponibilité sont corrects. Utilisez la variable _Synchronisation du catalogue_ tableau de bord pour observer et gérer le processus de synchronisation ou l’interface de ligne de commande pour déclencher une synchronisation de catalogue et réindexer les données de produit à utiliser par [!DNL Commerce Services]. Voir [Référence de l’interface de ligne de commande](../data-export/data-export-cli-commands.md) dans le _Exportation des données SaaS_ Guide.
 
 ## Accès au tableau de bord de synchronisation du catalogue
 
@@ -81,123 +81,4 @@ La variable **Produits de catalogue synchronisés** le tableau affiche les infor
 
 ## Résolution des problèmes de synchronisation de catalogue {#resolvesync}
 
-Lorsque vous déclenchez une nouvelle synchronisation des données, la mise à jour des données peut prendre jusqu’à une heure pour être répercutée dans les composants de l’interface utilisateur, tels que les unités de recommandation. Si vous constatez toujours des incohérences entre votre catalogue et les données sur le storefront, ou si la synchronisation du catalogue a échoué, reportez-vous à ce qui suit :
-
-### Incohérence des données
-
-1. Affichez la vue détaillée du produit en question dans les résultats de la recherche.
-1. Copiez la sortie JSON et vérifiez que le contenu correspond à ce que vous avez dans la variable [!DNL Commerce] catalogue.
-1. Si le contenu ne correspond pas, apportez une modification mineure au produit de votre catalogue, comme l’ajout d’un espace ou d’un point.
-1. Attendez une nouvelle synchronisation ou [déclencher une resynchronisation manuelle](#resync).
-
-### Synchronisation non en cours
-
-Si la synchronisation n’est pas en cours d’exécution ou si rien n’est synchronisé, reportez-vous à cette section [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) article.
-
-### Échec de la synchronisation
-
-Si l’état de la synchronisation du catalogue est **En échec**, soumettez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
-
-## Interface de ligne de commande {#resynccmdline}
-
-La variable `saas:resync` fait partie de la `magento/saas-export` et est disponible prêt à l’emploi avec l’un des [!DNL Commerce Services] les produits, tels que [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) ou [[!DNL Live Search]](/help/live-search/install.md).
-
->[!NOTE]
->
-> Lors de la première exécution d’une synchronisation des données, exécutez la variable `productattributes` flux en premier, suivi de `productoverrides`, avant d’exécuter la fonction `products` flux.
-
-Options de commande :
-
-```bash
-bin/magento saas:resync --feed <feed name> [no-reindex|cleanup-feed]
-```
-
-Le tableau suivant décrit la variable `saas:resync` paramètres et descriptions.
-
-| Paramètre | Description | Obligatoire ? |
-|---| ---| ---|
-| `feed` | Indique l’entité à resynchroniser, telle que `products` | Oui |
-| `no-reindex` | Envoie les données de catalogue existantes à [!DNL Commerce Services] sans réindexation. Lorsque ce paramètre n’est pas spécifié, la commande exécute une réindexation complète avant de synchroniser les données. | Non |
-| `cleanup-feed` | Nettoyez la table des indexeurs de flux avant une synchronisation. | Non |
-
-Le nom du flux peut être l’un des suivants :
-
-- `products`— Produits dans votre catalogue
-- `productattributes`— Attributs de produit tels que `activity`, `gender`, `tops`, `bottoms`, etc.
-- `variants`— Variations de produit d’un produit configurable, telles que la couleur et la taille
-- `prices` — Prix des produits
-- `scopesCustomerGroup` — Groupes clients
-- `scopesWebsite` — Sites web avec vues de magasin
-- `categories`— Catégories dans votre catalogue
-- `categoryPermissions` - Autorisations pour chacune des catégories
-- `productoverrides`: règles de tarification et de visibilité du catalogue spécifiques au client, telles que celles basées sur les autorisations de catégorie
-
-Selon le [Services Commerce](../landing/saas.md) sont installés, vous pouvez avoir différents jeux de flux disponibles pour `saas:resync` .
-
-Il n’est pas recommandé d’exécuter la variable `saas:resync` de façon régulière. Vous devrez peut-être exécuter la commande manuellement dans deux scénarios :
-
-- Synchronisation initiale
-- La variable [ID d’espace de données SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) a été modifié
-
-### Synchronisation initiale
-
-Lorsque vous déclenchez une `saas:resync` de la ligne de commande, selon la taille de votre catalogue, la mise à jour des données peut prendre de quelques minutes à quelques heures.
-
-Pour la synchronisation initiale, il est recommandé d’exécuter les commandes dans l’ordre suivant :
-
-```bash
-bin/magento saas:resync --feed productattributes
-bin/magento saas:resync --feed products
-bin/magento saas:resync --feed scopesCustomerGroup
-bin/magento saas:resync --feed scopesWebsite
-bin/magento saas:resync --feed prices
-bin/magento saas:resync --feed productoverrides
-bin/magento saas:resync --feed variants
-bin/magento saas:resync --feed categories
-bin/magento saas:resync --feed categoryPermissions 
-```
-
-### Dépannage
-
-Si vous ne voyez pas les données attendues dans [!DNL Commerce Service], vérifiez si un problème s’est produit au cours de la synchronisation avec l’événement [!DNL Adobe Commerce] à l’instance [!DNL Commerce Service] plateforme.
-
-Il existe deux fichiers journaux dans la variable `var/log/` directory:
-
-- `commerce-data-export-errors.log` - si une erreur s’est produite au cours de _collecte_ phase
-- `saas-export-errors.log` - si une erreur s’est produite au cours de _transmission_ phase
-
-#### Vérification de la payload du flux
-
-Il peut s’avérer utile d’afficher la charge utile du flux qui a été envoyée à la variable [!DNL Commerce Service]. Pour ce faire, vous pouvez transmettre la variable d’environnement. `EXPORTER_EXTENDED_LOG=1`. La variable `no-reindex` L’indicateur signifie que seules les données actuellement collectées sont envoyées.
-
-```bash
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products --no-reindex
-```
-
-La payload est disponible dans `var/log/saas-export.log`.
-
-#### Préserver la charge utile dans la table d’index du flux
-
-Commencer à partir de `magento/module-data-exporter:103.0.0` certains flux : flux de produit, flux de prix, conserver uniquement les données minimales requises dans la table d’index.
-
-La conservation des données de payload dans la table d’index n’est pas recommandée en production, mais elle peut s’avérer utile sur une instance de développeur. Pour ce faire, transmettez la variable `PERSIST_EXPORTED_FEED=1` Variable d’environnement :
-
-```bash
-PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
-```
-
-#### Profilage
-
-Si le processus de réindexation d’un flux spécifique prend un temps déraisonnable, exécutez le profileur pour collecter des données supplémentaires qui pourraient s’avérer utiles à l’équipe d’assistance. Pour ce faire, transmettez la variable `EXPORTER_PROFILER=1`Variable d’environnement :
-
-```bash
-EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
-```
-
-Les données de profil sont stockées dans `var/log/commerce-data-export.log` au format suivant :
-
-`<Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>`
-
-#### Soumettre une demande d’assistance
-
-Si des erreurs ne sont pas liées à la configuration ou à des extensions tierces, envoyez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) avec autant d’informations que possible.
+Voir [Journaux et dépannage](../data-export/troubleshooting-logging.md#troubleshooting) dans le _Guide d’exportation des données SaaS_.

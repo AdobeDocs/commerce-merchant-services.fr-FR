@@ -1,10 +1,11 @@
 ---
 title: Interface de ligne de commande de l’exportation des données SaaS
-description: "Découvrez comment utiliser les commandes de l’interface de ligne de commande pour gérer les flux et les processus pour le [!DNL data export extension] pour les services Adobe Commerce SaaS."
+description: Découvrez comment utiliser les commandes de l’interface de ligne de commande pour gérer les flux et les processus pour le [!DNL data export extension] pour les services Adobe Commerce SaaS.
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -21,10 +22,24 @@ Adobe déconseille d’utiliser la variable `saas:resync` régulièrement. Les s
 
 ## Synchronisation initiale
 
+>[!NOTE]
+>Si vous utilisez la recherche en direct ou le Recommendations de produit, il n’est pas nécessaire d’exécuter la synchronisation initiale. Le processus est lancé automatiquement une fois que vous avez connecté le service à votre instance Commerce.
+
 Lorsque vous déclenchez une `saas:resync` de la ligne de commande, selon la taille de votre catalogue, la mise à jour des données peut prendre de quelques minutes à quelques heures.
 
->[!NOTE]
->Si vous utilisez la recherche en direct ou le Recommendations de produit, il n’est pas nécessaire de lancer la synchronisation. Le processus est lancé automatiquement une fois que vous avez connecté le service à votre instance Commerce.
+Pour la synchronisation initiale, Adobe recommande d’exécuter les commandes dans l’ordre suivant :
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 ## Exemples de commandes
 

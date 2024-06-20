@@ -1,15 +1,15 @@
 ---
 title: Consultez les journaux et dépannage
-description: "Découvrez comment résoudre les problèmes [!DNL data export] erreurs utilisant les logs data-export et saas-export."
+description: Découvrez comment résoudre les problèmes [!DNL data export] erreurs utilisant les logs data-export et saas-export.
 feature: Services
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
-
 
 # Révision des journaux et dépannage
 
@@ -26,9 +26,7 @@ Les journaux sont disponibles dans la variable `var/log` sur le serveur applicat
 | Journal d’exportation SaaS | `saas-export.log` | Fournit des informations sur les données envoyées aux services Commerce SaaS. |
 | Journal des erreurs d’exportation SaaS | `saas-export-errors.log` | Fournit des informations sur les erreurs qui se produisent lors de l’envoi de données aux services Commerce SaaS. |
 
-Si vous ne voyez pas les données attendues pour un service Adobe Commerce, utilisez les journaux d’erreur pour l’extension d’exportation des données afin de déterminer où le problème s’est produit.
-
-Vous pouvez étendre les journaux avec des données supplémentaires pour le suivi et le dépannage. Voir [Journalisation étendue](#extended-logging).
+Si vous ne voyez pas les données attendues pour un service Adobe Commerce, utilisez les journaux d’erreur pour l’extension d’exportation des données afin de déterminer où le problème s’est produit. Vous pouvez également étendre les journaux avec des données supplémentaires pour le suivi et la résolution des problèmes. Voir [Journalisation étendue](#extended-logging).
 
 ### Format du journal
 
@@ -85,7 +83,7 @@ Dans cet exemple, la variable `status` Les valeurs fournissent des informations 
    - **`"synced" < "processed"`** signifie que la table des flux n’a détecté aucune modification de l’élément par rapport à la version synchronisée précédemment. Ces éléments sont ignorés lors de l’opération de synchronisation.
    - **`"synced" > "processed"`** le même identifiant d’entité (par exemple, `Product ID`) peuvent avoir plusieurs valeurs dans des portées différentes. Par exemple, un produit peut être affecté à cinq sites web. Dans ce cas, vous pouvez avoir &quot;1 élément traité&quot; et &quot;5 éléments synchronisés&quot;.
 
-+++ Exemple : log de resynchronisation complet du flux de prix
++++ **Exemple : log de resynchronisation complet du flux de prix**
 
 ```
 Price feed full resync:
@@ -125,7 +123,42 @@ Cet exemple ajoute une règle qui vous permet d’interroger les journaux New Re
 
 **Exemple de chaîne de requête**—`feed.feed:"products" and feed.status:"Complete"`
 
+## Dépannage
+
+Si des données sont manquantes ou incorrectes dans les Services de commerce, vérifiez les journaux pour voir si un problème s’est produit pendant la synchronisation de l’instance Adobe Commerce vers la plateforme du service Commerce. Si nécessaire, utilisez la journalisation étendue pour ajouter des informations supplémentaires aux journaux à des fins de dépannage.
+
+- commerce-data-export-errors.log - si une erreur s’est produite lors de la collecte de la phase
+- saas-export-errors.log : si une erreur s’est produite lors de la transmission de la phase
+
+Si des erreurs ne sont pas liées à la configuration ou à des extensions tierces, envoyez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) avec autant d’informations que possible.
+
+### Résolution des problèmes de synchronisation de catalogue {#resolvesync}
+
+Lorsque vous déclenchez une nouvelle synchronisation des données, la mise à jour des données peut prendre jusqu’à une heure pour être répercutée dans les composants de l’interface utilisateur, tels que les unités de recherche en direct et de recommandation. Si vous constatez toujours des incohérences entre votre catalogue et les données sur le storefront Commerce, ou si la synchronisation du catalogue a échoué, reportez-vous à ce qui suit :
+
+#### Incohérence des données
+
+1. Affichez la vue détaillée du produit en question dans les résultats de la recherche.
+1. Copiez la sortie JSON et vérifiez que le contenu correspond à ce que vous avez dans la variable [!DNL Commerce] catalogue.
+1. Si le contenu ne correspond pas, apportez une modification mineure au produit de votre catalogue, comme l’ajout d’un espace ou d’un point.
+1. Attendez une nouvelle synchronisation ou [déclencher une resynchronisation manuelle](#resync).
+
+#### Synchronisation non en cours
+
+Si la synchronisation n’est pas en cours d’exécution ou si rien n’est synchronisé, reportez-vous à cette section [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) article.
+
+#### Échec de la synchronisation
+
+Si l’état de la synchronisation du catalogue est **En échec**, soumettez une [ticket de support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
 ## Journalisation étendue
+
+Pour plus d’informations sur les journaux, vous pouvez utiliser des variables d’environnement afin d’étendre les journaux avec des données supplémentaires pour le suivi et la résolution des problèmes.
+
+Il existe deux fichiers journaux dans la variable `var/log/` directory:
+
+- commerce-data-export-errors.log - si une erreur s’est produite lors de la collecte de la phase
+- saas-export-errors.log : si une erreur s’est produite lors de la transmission de la phase
 
 Vous pouvez utiliser des variables d’environnement pour étendre les journaux avec des données supplémentaires pour le suivi et la résolution des problèmes.
 
@@ -164,7 +197,3 @@ Les données du profileur sont stockées dans le journal d&#39;export des donné
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
-
-
-
-
