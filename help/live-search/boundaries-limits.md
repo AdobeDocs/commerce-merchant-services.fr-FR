@@ -3,9 +3,9 @@ title: "Limites et limites"
 description: En savoir plus sur les limites et les limites de [!DNL Live Search] pour vous assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -72,5 +72,12 @@ En ce qui concerne la recherche de site, Adobe Commerce vous offre des options. 
    - Les produits doivent être affectés à la catégorie Racine .
    - Le groupe de clients &quot;Non connecté&quot; doit disposer des autorisations de navigation &quot;Autoriser&quot;.
    - Pour limiter les produits au groupe de clients &quot;Non connecté&quot;, accédez à chaque catégorie et définissez des autorisations pour chaque groupe de clients.
-- La prise en charge de B2B avec la recherche en direct pour PWA Studio n’est pas prise en charge pour le moment.
+- La prise en charge par défaut de B2B avec le widget PLP sur PWA Studio n’est pas prise en charge pour le moment. Cependant, vous pouvez [utiliser l’API ;](install.md#pwa-support) pour mettre en oeuvre cette fonctionnalité.
 - Facettes de catégorie dans [!DNL Live Search] peut afficher des catégories qui ne sont pas visibles pour un groupe de clients spécifique.
+
+## [!DNL Storefront popover]
+
+- La variable [[!DNL popover]](storefront-popover.md) est disponible uniquement pour les magasins qui utilisent la variable *Luma* ou un thème personnalisé basé sur *Luma*. Le chemin de navigation de la page des résultats de recherche ne comporte pas *Luma* style.
+- La variable [!DNL popover] ne prend pas en charge la variable *Vide* thème.
+- La variable [!DNL popover] n’est pas pris en charge dans le formulaire de commande rapide.
+- Les listes blanches et les comparaisons de produits ne sont pas prises en charge.

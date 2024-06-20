@@ -2,9 +2,9 @@
 title: "Paramètres"
 description: "Configurez les paramètres de la variable [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Définissez le paramètre Langue sur la langue principale du catalogue. Lorsque 
 | Indonésien | id |
 | Irlandais | ga |
 | Italien | it |
-| Japonais | ja |
+| Japonais (Katakana) | ja |
 | Coréen | ko |
 | Letton | lv |
 | Lituanien | lt |
