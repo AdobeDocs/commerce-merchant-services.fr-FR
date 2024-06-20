@@ -4,10 +4,10 @@ user-guide-description: "Ce guide fournit des instructions détaillées sur l’
 breadcrumb-title: « Guide [!DNL Live Search] »
 role: Admin
 feature: Services, Search
-source-git-commit: 5df5eef652212c095a8f46a8736e1e97426f631e
+source-git-commit: a1d3e87f71a19df355009a7ae5d736b5d2dc7b15
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 11%
+source-wordcount: '74'
+ht-degree: 10%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 11%
 
 - [Présentation [!DNL Live Search]?](overview.md)
 - [Installer](install.md)
+- [Configuration de la recherche en direct](workspace.md)
 - [Limites et limites](boundaries-limits.md)
 - [Notes de mise à jour](release-notes.md)
 - Storefront {#live-search-storefront}
-   - [Widget de page de liste de produits](plp-styling.md)
+   - [Widgets Storefront](storefront-widgets.md)
+   - [Page Liste des produits](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
-   - [Style [!DNL Popover] Éléments](storefront-popover-styling.md)
 - Administration {#live-search-admin}
-   - [Workspace](workspace.md)
    - [Performances](performance.md)
    - Facettes {#facets}
       - [Vue d’ensemble](facets.md)
