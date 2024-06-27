@@ -4,9 +4,9 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
+source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -125,6 +125,6 @@ Pour modifier les noms de votre projet SaaS ou de votre espace de données, cliq
 
 Pour connecter votre instance Adobe Commerce à Adobe Experience Platform, connectez-vous à votre compte Adobe à l’aide de votre Adobe ID. Une fois connecté, l’organisation IMS associée à votre compte d’Adobe s’affiche dans cette section.
 
-## Synchronisation des catalogues
+## Exportation des données SaaS
 
-Lorsque la variable [!DNL Commerce] l’instance se connecte correctement à [!DNL Commerce Services], le processus de synchronisation de catalogue exporte les données de produit de votre [!DNL Commerce] serveur à [!DNL Commerce Services]. Actuellement, seul le Recommendations de produit utilise le service de synchronisation de catalogue. [En savoir plus](catalog-sync.md) à propos du processus de synchronisation de catalogue.
+Lorsque la variable [!DNL Commerce] l’instance se connecte correctement à [!DNL Commerce Services], le processus d’exportation des données SaaS exporte les données Commerce de votre [!DNL Commerce] serveur à [!DNL Commerce SaaS Services] afin qu’il puisse être synchronisé avec les services Commerce connectés. Dans l’administrateur, vous pouvez vérifier l’état de synchronisation à l’aide de la variable [Tableau de bord Data Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Pour plus d’informations, voir [Guide d’exportation des données SaaS](../data-export/overview.md).
