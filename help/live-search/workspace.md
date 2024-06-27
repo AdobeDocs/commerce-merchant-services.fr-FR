@@ -2,9 +2,9 @@
 title: "Configuration de la recherche en direct"
 description: La variable [!DNL Live Search] workspace est utilisé pour configurer, gérer et surveiller les performances de recherche.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,19 @@ ht-degree: 0%
 L’espace de travail vous permet de configurer, de gérer et de surveiller les performances de [!DNL Live Search]. Le menu situé en haut permet d’accéder aux outils de chaque domaine fonctionnel. Les fonctionnalités disponibles reflètent la sélection de menu actuelle.
 
 ![Workspace](assets/workspace.png)
+
+## Collecte de données
+
+Pour vous assurer que chaque zone fonctionnelle de l’espace de travail contient les données correctes, vous devez configurer la collecte des données en fonction de l’implémentation de storefront sélectionnée :
+
+1. Luma - La collecte de données est disponible par défaut.
+1. Sans affichage : la collecte de données doit être configurée manuellement, en fonction de l’implémentation du storefront.
+
+Si vous utilisez une vitrine sans interface utilisateur, reportez-vous à la documentation suivante pour obtenir plus d’informations sur les événements requis que vous devez ajouter :
+
+- [Événements requis](events.md) pour le tableau de bord de la recherche en direct.
+- [Collecteur d’événements Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) qui doit être ajouté comme condition préalable.
+- [Exemples](https://github.com/adobe/commerce-events/tree/main/examples) de la structure des événements.
 
 ## Définition de la portée
 
@@ -47,9 +60,9 @@ Pour autoriser la recherche des attributs, procédez comme suit :
 
 Les attributs suivants peuvent toujours faire l’objet de recherches :
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [Facettes](facets.md) sont des attributs de produit définis dans [!DNL Live Search] pour être filtrable. Vous pouvez définir n’importe quel attribut filtrable comme facette dans [!DNL Live Search], mais il existe [limites](boundaries-limits.md) au nombre de facettes que vous pouvez rechercher simultanément.
 
