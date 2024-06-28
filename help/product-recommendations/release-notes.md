@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] Notes de mise à jour d’'
 description: Les dernières informations de mise à jour pour [!DNL Product Recommendations] d’Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
+source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,12 @@ Consultez la documentation destinée aux développeurs pour [en savoir plus sur 
 
 ## Mises à jour du service hébergé
 
-Ces notes décrivent les mises à jour publiées en dehors d’une version ou les améliorations apportées au service hébergé.
+Ces notes décrivent les mises à jour ou les problèmes connus qui ont été publiés ou découverts en dehors d’une version ou des améliorations apportées au service hébergé.
 
-+++Mises à jour du service hébergé
+_28 juin 2024_
+
+![Bogue](../assets/bug.svg) Produits ajoutés au panier depuis un [!DNL Product Recommendations] L’unité sur la page du panier n’est pas supprimée de la liste des produits recommandés lors du rechargement de la page du panier.
+![Bogue](../assets/bug.svg) Les produits supprimés du panier persistent dans la variable `cartSkus` jusqu’au rechargement de la page de panier.
 
 _18 juillet 2023_
 
@@ -40,8 +43,6 @@ _18 juillet 2023_
 _25 avril 2023_
 
 ![Nouveau](../assets/new.svg) [!DNL Product Recommendations] les clients peuvent désormais tirer parti des [Indexation des prix SaaS](../price-index/price-indexing.md).
-
-+++
 
 ## Version majeure actuelle
 
@@ -97,7 +98,7 @@ _20 mars 2023_
 
 ![Nouveau](../assets/new.svg) Mis à jour [!DNL Product Recommendations] pour prendre en charge Adobe Commerce 2.4.6.
 ![Nouveau](../assets/new.svg) Il s’agit d’une version majeure. [Modifier](install-configure.md#update) la racine `composer.json` pour votre projet.
-![Nouveau](../assets/new.svg) [!DNL Product Recommendations] prend désormais en charge l’intégralité [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Fonctionnalités de Commerce (anciennement appelées inventaire multi-source ou MSI). Pour activer la prise en charge complète, vous devez [update](install-configure.md#update) le module de dépendance ; `commerce-data-export` vers la version 102.2.0+.
+![Nouveau](../assets/new.svg) [!DNL Product Recommendations] prend désormais en charge l’intégralité [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Fonctionnalités de Commerce (anciennement appelées Inventaire multi-Source ou MSI). Pour activer la prise en charge complète, vous devez [update](install-configure.md#update) le module de dépendance ; `commerce-data-export` vers la version 102.2.0+.
 
 ### 4.0.1 de magento/product-recommendations
 
@@ -223,13 +224,13 @@ _20 mars 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) **(Version bêta)** Inclut la prise en charge de nouvelles [similarité visuelle](type.md#visualsim) type de recommandation.
+![Nouveau](../assets/new.svg) **(Beta)** Inclut la prise en charge de nouvelles [similarité visuelle](type.md#visualsim) type de recommandation.
 
 ### 1.0.0 de magento/module-visuel-product-recommendations
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) **(Version bêta)** [similarité visuelle](type.md#visualsim). Avec la variable _similarité visuelle_ type de recommandation, vous pouvez déployer une unité de recommandation sur la page des détails du produit qui affiche les produits visuellement similaires au produit consulté.
+![Nouveau](../assets/new.svg) **(Beta)** [similarité visuelle](type.md#visualsim). Avec la variable _similarité visuelle_ type de recommandation, vous pouvez déployer une unité de recommandation sur la page des détails du produit qui affiche les produits visuellement similaires au produit consulté.
 
 ### 3.0.5 de magento/product-recommendations
 
