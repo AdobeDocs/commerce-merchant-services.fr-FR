@@ -4,9 +4,9 @@ description: Utilisez le rapport Transactions pour connaître les taux d'autoris
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,19 @@ La vue du rapport Transactions est disponible dans la vue Transactions des Servi
 
 Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**pour afficher le tableau détaillé de la vue de rapport Transactions.
 
-![Consultation du rapport sur les transactions](assets/transactions-report-detail.png){width="600" zoomable="yes"}
+![Consultation du rapport sur les transactions](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
 Vous pouvez configurer cette vue, selon les sections de cette rubrique, pour présenter au mieux les données que vous souhaitez afficher.
 
-Consultez les ID de transaction de commande et de fournisseur liés, les montants de transaction, le mode de paiement par transaction, etc., dans ce rapport.
+Consultez les ID de transaction de commande et de fournisseur Commerce liés, les montants des transactions, le mode de paiement par transaction, etc., dans ce rapport.
 
 Tous les modes de paiement ne fournissent pas la même granularité d’informations. Par exemple, les transactions par carte de crédit fournissent des codes de réponse, AVS et CCV, ainsi que les quatre derniers chiffres de la carte dans le rapport des transactions. Ce n’est pas le cas des boutons de paiement PayPal.
 
 Vous pouvez [transactions de téléchargement](#download-transactions) dans un format de fichier .csv à utiliser dans les logiciels de gestion des commandes ou de comptabilité existants.
+
+>[!WARNING]
+>
+> Le rapport des transactions n&#39;inclut aucune capture effectuée en dehors de [!DNL Payment Services].
 
 ### Sélectionner la source de données
 
@@ -127,8 +131,9 @@ Les rapports sur les transactions comprennent les informations suivantes.
 
 | Colonne | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de commande de commerce (contient uniquement des valeurs pour les transactions réussies et est vide pour les transactions rejetées)<br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, cliquez sur l’identifiant. |
+| [!UICONTROL Order ID] | Identifiant de commande Commerce (contient uniquement les valeurs pour les transactions réussies et est vide pour les transactions rejetées)<br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, cliquez sur l’identifiant. |
 | [!UICONTROL Provider Transaction ID] | ID de transaction fourni par le fournisseur de paiement ; contient uniquement les valeurs pour les transactions réussies et contient un tiret pour les transactions rejetées. |
+| [!UICONTROL Customer ID] | Identifiant client Commerce d’une commande<br> <br>Voir [informations sur le client](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} pour plus d’informations. |
 | [!UICONTROL Transaction Date] | Date et heure des transactions |
 | [!UICONTROL Payment Method] | Mode de paiement de la transaction avec des informations détaillées sur la marque et le type de carte. Voir [types de carte](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) pour plus d’informations ; disponible pour les versions 1.6.0 et ultérieures de Paiement Services |
 | [!UICONTROL Card Last Four Digits] | Quatre derniers chiffres des cartes de crédit ou de débit utilisées pour la transaction |

@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les [!DNL Payment Services] versions.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2547'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ En savoir plus sur les prochaines versions, la prise en charge des produits et l
 Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités qui se sont produits et qui ont été publiés en dehors des versions standard des fonctionnalités pour le service hébergé.
 
 +++Mises à jour du service hébergé
+
+_9 juillet 2024_
+
+![Nouveau problème](../assets/new.svg)<!-- Issue PAY-5488 --> Désormais, les marchands peuvent afficher l’ID de client Commerce sous la forme d’une colonne dans la variable [rapport sur les transactions](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) pour identifier les transactions qu’un client particulier a effectuées. En outre, les marchands peuvent filtrer le rapport des transactions selon cet ID de client Commerce pour les commandes associées.
 
 _5 mars 2024_
 
@@ -171,6 +175,7 @@ _7 décembre 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg)<!-- PAY-5047 --> La marque de carte de crédit/de débit ou le type de méthode de paiement est désormais disponible à partir des emplacements suivants :
+
 - la page de commande du client sur le storefront
 - l’e-mail de confirmation de commande envoyé au client
 - de la [vue des détails de commande](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) dans l’administrateur de Commerce.
