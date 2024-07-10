@@ -2,7 +2,7 @@
 title: Intégration et installation
 description: "Découvrez comment installer [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Installez la dernière version de l’extension Catalog Services (`magento/catal
 
 >[!TAB infrastructure cloud]
 
-Utilisez cette méthode pour installer le [!DNL Catalog Adapter] pour une instance Commerce Cloud.
+Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instance Commerce Cloud.
 
 1. Sur votre poste de travail local, modifiez le répertoire du projet pour votre projet Adobe Commerce sur l’infrastructure cloud.
 
@@ -83,16 +83,16 @@ Utilisez cette méthode pour installer le [!DNL Catalog Adapter] pour une instan
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Ajoutez le module Adaptateur de catalogue .
+1. Ajoutez le module Catalog Service.
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Mettez à jour les dépendances de package.
 
    ```bash
-   composer update "magento/catalog-adapter"
+   composer update "magento/catalog-service"
    ```
 
 1. Validation et modification du code push pour la variable `composer.json` et `composer.lock` fichiers .
@@ -109,18 +109,18 @@ Utilisez cette méthode pour installer le [!DNL Catalog Adapter] pour une instan
 
 >[!TAB Sur site]
 
-Utilisez cette méthode pour installer le [!DNL Catalog Adapter] pour une instance sur site.
+Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instance sur site.
 
 1. Utilisez le compositeur pour ajouter le module de service de catalogue à votre projet :
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Mettez à jour les dépendances et installez l’extension :
 
    ```bash
-   composer update  "magento/catalog-adapter"
+   composer update  "magento/catalog-service"
    ```
 
 1. Mettre à niveau Adobe Commerce :
@@ -175,7 +175,7 @@ Pour autoriser [!DNL Catalog Service] via un pare-feu, ajoutez `commerce.adobe.i
 
 ## Service de catalogue et maillage d’API
 
-La variable [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
+La variable [Maillage API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces, ainsi que d’autres interfaces avec des produits Adobe à l’aide des E/S d’Adobe.
 
 Voir [[!DNL Catalog Service] et maillage API](mesh.md) pour plus d’informations sur l’installation et la configuration.
 

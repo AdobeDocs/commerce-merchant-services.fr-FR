@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Notes de mise à jour d’'
 description: Les dernières informations de mise à jour pour [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,22 @@ _23 mai 2024_
 ![Correction](../assets/fix.svg) <!--DATA-5033-->La variable `InStock` L’indicateur pour les valeurs d’option prend désormais en compte la portée. `enabled` statut de la variante de produit.
 
 ![Correction](../assets/fix.svg) <!--DATA-5888-->Ajoutez la prise en charge des prix des produits qui nécessitent des nombres élevés (jusqu’à 16 chiffres) et une précision décimale supérieure (jusqu’à 4 décimales). Pour appliquer les mises à jour de configuration des prix à votre catalogue existant, resynchronisez les données du catalogue à partir du [Tableau de bord Data Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)ou en utilisant la variable [Interface de ligne de commande d’Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+
+#### Limites connues
+
+Les fonctionnalités suivantes ne sont pas encore prises en charge :
+
+* La taille maximale de la charge utile des attributs dynamiques est de 9 Mo.
+* Le prix du produit Groupe peut être calculé à partir de prix simples.
+* Dans un tableau d’images, seule la première image contient des rôles.
+
+Résolvez les limites suivantes en utilisant le maillage d’API et l’API Core GraphQL :
+
+* Prix publicitaire minimal
+* Prix de niveau
+* Produits groupés avec prix fixes
+
+Pour plus d’informations et d’exemples, voir [Service de catalogue et maillage d’API](mesh.md)
 
 ## Versions précédentes
 
@@ -59,7 +75,6 @@ _13 février 2024_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Les vidéos de produit sont désormais prises en charge par l’API Catalog Service.
-![Correction](../assets/fix.svg) Les produits groupés avec des prix fixes sont désormais pris en charge.
 ![Correction](../assets/fix.svg) Les options en rupture de stock s’affichent désormais dans le widget PDP.
 
 #### Limites connues
@@ -134,7 +149,7 @@ _6 mars 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![Nouveau](../assets/new.svg) Ajout [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) Fonctionnalité de GraphQL.
+![Nouveau](../assets/new.svg) Ajout [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) Fonctionnalité de GraphQL.
 ![Correction](../assets/fix.svg) Amélioration des performances et de l’évolutivité des API.
 
 ### Version V1.4
@@ -176,7 +191,7 @@ _4 octobre 2022_
 ![Nouveau](../assets/new.svg) Ajout de remplacements de visibilité B2B. Les produits peuvent désormais faire l’objet de recherches et peuvent être ajoutés au panier pour des groupes de clients spécifiques.
 ![Correction](../assets/fix.svg) Le service est désormais plus stable et offre de meilleures performances.
 
-### Version 0.3 - Bêta+
+### Version 0.3 - Beta+
 
 _12 septembre 2022_
 
@@ -187,7 +202,7 @@ _12 septembre 2022_
 ![Correction](../assets/fix.svg) Stabilité et performances améliorées du service
 ![Nouveau](../assets/new.svg) Des mises à jour sont reçues lorsque des produits sont supprimés du catalogue.
 
-### Version bêta
+### Version de Beta
 
 _9 août 2022_
 
