@@ -15,19 +15,19 @@ ht-degree: 0%
 
 L’indexation des prix SaaS améliore les performances du site en déplaçant de lourds processus de calcul tels que l’indexation et le calcul des prix de l’application Commerce vers l’infrastructure cloud d’Adobe. Cette approche permet aux commerçants d’augmenter rapidement les ressources afin d’accélérer les temps d’indexation des prix afin de refléter les changements de prix plus rapidement lors de l’envoi de données aux services Commerce connectés et de storefront.
 
-Le diagramme suivant montre le flux de données d’indexation vers les services SaaS lorsque Commerce utilise la variable [indexation de prix](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) processus inclus dans l’application Commerce :
+Le diagramme suivant montre le flux de données d’indexation vers les services SaaS lorsque Commerce utilise le processus [price indexing](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) inclus dans l’application Commerce :
 
 ![Flux de données par défaut](assets/old_way.png)
 
-Lorsque l’indexation des prix SaaS est activée, le flux de données change. L&#39;indexation des prix est effectuée à l&#39;aide de [Exportation des données Commerce SaaS](../data-export/data-synchronization.md).
+Lorsque l’indexation des prix SaaS est activée, le flux de données change. L’indexation des prix est effectuée à l’aide de l’ [exportation des données Commerce SaaS](../data-export/data-synchronization.md).
 
 ![Flux de données d’indexation de prix SaaS](assets/new_way.png)
 
 Tous les commerçants peuvent bénéficier de l’indexation de prix SaaS, mais les marchands qui ont des projets avec les caractéristiques suivantes peuvent réaliser les plus grands avantages :
 
-* **Modifications constantes des prix**-Les commerçants qui nécessitent des modifications répétées de leurs prix pour atteindre des objectifs stratégiques tels que des promotions fréquentes, des remises saisonnières ou des marqueurs d’inventaire.
-* **Plusieurs sites web et/ou groupes de clients**-Marchands avec des catalogues de produits partagés sur plusieurs sites web (domaines/marques) et/ou groupes de clients.
-* **Nombreux prix uniques sur plusieurs sites web ou groupes de clients**-Marchands avec des catalogues de produits partagés étendus qui contiennent des prix uniques sur plusieurs sites web ou groupes de clients. Par exemple, les marchands B2B qui ont des prix négociés au préalable ou des marques ayant des stratégies de tarification différentes.
+* **Changements constants de prix** - Les marchands qui nécessitent des modifications répétées de leurs prix pour atteindre des objectifs stratégiques tels que des promotions fréquentes, des remises saisonnières ou des marqueurs d’inventaire.
+* **Plusieurs sites web et/ou groupes de clients** - Marchands avec des catalogues de produits partagés sur plusieurs sites web (domaines/marques) et/ou groupes de clients.
+* **- Nombreux prix uniques sur plusieurs sites web ou groupes de clients** - Marchands avec de vastes catalogues de produits partagés qui contiennent des prix uniques sur plusieurs sites web ou groupes de clients. Par exemple, les marchands B2B qui ont des prix négociés au préalable ou des marques ayant des stratégies de tarification différentes.
 
 ## Utilisation de l’indexation des prix SaaS
 
@@ -48,7 +48,7 @@ L’indexation des prix SaaS est activée automatiquement lors de l’installati
 
 >[!NOTE]
 >
->Si nécessaire, l’indexeur de prix par défaut de l’application Commerce peut être désactivé à l’aide de la fonction [Adaptateur de catalogue](catalog-adapter.md).
+>Si nécessaire, l’indexeur de prix par défaut dans l’application Commerce peut être désactivé à l’aide de l’ [adaptateur de catalogue](catalog-adapter.md).
 
 ## Synchronisation des prix avec l’indexation des prix SaaS
 
@@ -66,7 +66,7 @@ Les calculs de prix sont pris en charge pour les types de produits personnalisé
 
 Si vous disposez d’un type de produit personnalisé qui utilise une formule spécifique pour calculer le prix final, vous pouvez étendre le comportement du flux de prix du produit.
 
-1. Créez un module externe sur le `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` classe .
+1. Créez un module externe sur la classe `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice`.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

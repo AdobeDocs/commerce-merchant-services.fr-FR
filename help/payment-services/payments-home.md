@@ -1,6 +1,6 @@
 ---
 title: Accueil
-description: Introduction à [!DNL Payment Services] Chez soi.
+description: Présentation de la  [!DNL Payment Services] page d’accueil.
 role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
@@ -12,15 +12,15 @@ ht-degree: 1%
 
 ---
 
-# Introduction à [!DNL Payment Services] Accueil
+# Présentation de la page d’accueil [!DNL Payment Services]
 
 [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] fournit une vue d’accueil avec toutes les informations nécessaires pour commencer à configurer et à utiliser l’extension.
 
-1. Sur le _Administration_ barre latérale, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
+1. Sur la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** :
 
    ![Vue d’accueil](assets/home-view.png){width="700" zoomable="yes"}
 
-1. Dans cette vue Accueil, vous pouvez accéder à _Accueil_ vue, _Formation_ about [!DNL Payment Services], configurer l’extension _Paramètres_, ou get _Aide_.
+1. Dans cette vue d&#39;accueil, vous pouvez accéder à la vue _Home_, _En savoir plus_ sur [!DNL Payment Services], configurer l&#39;extension _Settings_ ou obtenir _Help_.
 
 ## Accueil
 
@@ -34,15 +34,15 @@ ht-degree: 1%
 | Champ | Description |
 |---|---|
 | [!UICONTROL Read documentation] | Consultez la documentation la plus récente sur les utilisateurs et les développeurs pour [!DNL Payment Services]. |
-| [!UICONTROL How to onboard] | Trouvez tous les éléments dont vous avez besoin pour configurer et commencer à utiliser le [!DNL Payment Services] fonction . |
-| [!UICONTROL Understand financial reports] | Explication détaillée de la création de rapports sur la gestion des flux de trésorerie dans [!DNL Payment Services]. |
+| [!UICONTROL How to onboard] | Trouvez tous les éléments dont vous avez besoin pour obtenir une configuration et commencer à utiliser la fonction [!DNL Payment Services]. |
+| [!UICONTROL Understand financial reports] | Explication détaillée de la création de rapports de gestion des flux de trésorerie dans [!DNL Payment Services]. |
 
 ## Aide
 
 | Champ | Description |
 |---|---|
-| [!UICONTROL Visit help center] | La variable [!DNL Adobe Commerce] Le centre d’aide contient des articles sur la base de connaissances [!DNL Payment Services]. |
-| [!UICONTROL Get support] | Visitez le [!DNL Adobe Commerce] portail d’assistance pour [!DNL Payment Services.] |
+| [!UICONTROL Visit help center] | Le [!DNL Adobe Commerce] Help Center contient des articles de la base de connaissances sur [!DNL Payment Services]. |
+| [!UICONTROL Get support] | Visitez le portail d&#39;assistance [!DNL Adobe Commerce] pour obtenir de l&#39;aide sur [!DNL Payment Services.] |
 
 ## Paramètres
 

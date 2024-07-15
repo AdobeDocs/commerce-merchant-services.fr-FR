@@ -18,6 +18,6 @@ Les éléments suivants sont des modifications notables récentes apportées à 
 
 | Service | Modifier | Type |
 | -- | -- | -- |
-| [**Service de catalogue**](../live-search/overview.md) | Ajout de la [Affichage des taxes avec le service de catalogue et le maillage API](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) rubrique. | Nouvelle rubrique |
+| [**Service de catalogue**](../live-search/overview.md) | Ajout de la rubrique [Affichage des taxes avec le service de catalogue et le maillage API](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html). | Nouvelle rubrique |
 
 Ce tableau est mis à jour le premier lundi de chaque mois.

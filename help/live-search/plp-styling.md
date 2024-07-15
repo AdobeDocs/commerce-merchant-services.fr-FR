@@ -1,6 +1,6 @@
 ---
 title: Widget de page de liste de produits
-description: Activation et définition de style de la variable [!DNL Live Search Product Listing Page Widget]
+description: Activation et définition du style de l’ [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
 source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
 workflow-type: tm+mt
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Widget de page de liste de produits
 
-La variable [!DNL Live Search Product Listing Page Widget] (PLP) utilise la plateforme Commerce Services pour fournir une page de liste de produits performante, indexable et facettable. Cette rubrique décrit comment activer et mettre en forme le widget PLP.
+[!DNL Live Search Product Listing Page Widget] (PLP) utilise la plateforme des services Commerce pour fournir une page de liste de produits performante, pouvant faire l’objet de recherches et pouvant être facettes. Cette rubrique décrit comment activer et mettre en forme le widget PLP.
 
 ## Activation du widget PLP
 
-Lorsque la variable [!DNL Live Search] est installé, la fonctionnalité de recherche par défaut est convertie en [!DNL Live Search] automatiquement.
+Lorsque le service [!DNL Live Search] est installé, la fonctionnalité de recherche par défaut est automatiquement convertie en [!DNL Live Search].
 
-La variable [!DNL Live Search] Le widget PLP est activé par défaut pour les nouvelles installations. Si vous effectuez une mise à niveau [!DNL Live Search] et le widget PLP a déjà été désactivé, il le restera.
+Le widget [!DNL Live Search] PLP est activé par défaut pour les nouvelles installations. Si vous effectuez une mise à niveau de [!DNL Live Search] et que le widget PLP a déjà été désactivé, il le restera.
 
 >[!IMPORTANT]
 >
->Lorsque la variable [!DNL Live Search Product Listing Page Widget] est activée, la direction de l’ordre de tri sur une page de liste de produits ne peut pas être modifiée.
+>Lorsque l’option [!DNL Live Search Product Listing Page Widget] est activée, l’ordre de tri sur une page de liste de produits ne peut pas être modifié.
 
 ## Fonctionnalités des widgets
 
@@ -29,7 +29,7 @@ Le widget PLP fournit les fonctionnalités prêtes à l’emploi suivantes :
 
 - Boutons Ajouter au panier - Disponible uniquement pour les produits simples.
 - Plusieurs images par produit : l’image peut changer lorsqu’une autre couleur est sélectionnée pour un produit configurable.
-- Prise en charge des échantillons de couleurs : notez que l’attribut de couleur doit être orthographié. `color` pour le code à valider correctement.
+- Prise en charge des échantillons de couleurs : notez que l’attribut de couleur doit être orthographié `color` pour que le code soit correctement validé.
 
 ### Personnalisation du widget
 
@@ -39,7 +39,7 @@ Outre les fonctionnalités prêtes à l’emploi du widget PLP, vous pouvez pers
 - Prise en charge de plusieurs langues
 - Curseurs de prix
 
-Pour plus d’informations sur la personnalisation du widget PLP pour gérer les fonctionnalités ci-dessus, voir la section `storefront-product-listing-page` Lisez-moi dans ce qui suit [repo](https://github.com/adobe/storefront-product-listing-page/).
+Pour plus d’informations sur la personnalisation du widget PLP pour gérer les fonctionnalités ci-dessus, consultez le fichier Lisez-moi `storefront-product-listing-page` dans le [repo](https://github.com/adobe/storefront-product-listing-page/) suivant.
 
 >[!WARNING]
 >
@@ -71,8 +71,8 @@ Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscu
 
 ### Liste de produits
 
-- `.ds-sdk-product-list`: div externe
-- `.ds-sdk-product-list__grid`: div interne
+- `.ds-sdk-product-list` : div externe
+- `.ds-sdk-product-list__grid` : div interne
 
 ![Pagination](assets/plp-css-product-list.png)
 
@@ -88,13 +88,13 @@ Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscu
 
 - `.ds-plp-pagination_item--current`
 
-![Pagination de l’élément actif](assets/plp-css-pagination-item-current.png)
+![Élément actif de pagination](assets/plp-css-pagination-item-current.png)
 
 ### Widgets
 
-- `.ds-widgets`: div externe
-- `.ds-widgets__actions`: div interne du côté gauche
-- `.ds-widgets__results`: div interne du côté droit
+- `.ds-widgets` : div externe
+- `.ds-widgets__actions` : div interne gauche
+- `.ds-widgets__results` : div interne du côté droit
 
 ![Résultats du widget](assets/plp-css-widgets.png)
 
@@ -102,15 +102,15 @@ Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscu
 
 - `.ds-sdk-sort-dropdown`
 
-![Menu déroulant Trier](assets/plp-css-dropdown.png)
+![Liste déroulante de tri](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
-![Bouton Liste déroulante](assets/plp-css-dropdown-button.png)
+![Bouton déroulant](assets/plp-css-dropdown-button.png)
 
 - `.ds-sdk-sort-dropdown__items`
 
-![Éléments déroulants](assets/plp-css-dropdown-items.png)
+![Éléments de liste déroulante](assets/plp-css-dropdown-items.png)
 
 - `.ds-sdk-sort-dropdown__items--item`
 
@@ -131,12 +131,12 @@ Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscu
 - `.ds-plp-facets__header_title`
 - `.ds-plp-facets__header__clear-all`
 
-![Titre de l’en-tête Facettes](assets/plp-css-facets-title-clear.png){width="350"}
+![Titre de l’en-tête de facettes](assets/plp-css-facets-title-clear.png){width="350"}
 
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
 
-![Facettes](assets/plp-css-facets-pill.png){width="350"}
+![Facet pills](assets/plp-css-facets-pill.png){width="350"}
 
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
@@ -153,7 +153,7 @@ Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscu
 - `ds-sdk-product-item__product-swatch-item`
 - `.ds-sdk-input_fieldset_show-more`
 
-![Entrée](assets/plp-css-sdk-input.png)
+![Input](assets/plp-css-sdk-input.png)
 
 - `.ds-sdk-labelled-input`
 
@@ -162,7 +162,7 @@ Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscu
 - `.ds-sdk-labelled-input__input`
 - `.ds-sdk-labelled-input__label`
 
-![Libellé d&#39;entrée](assets/plp-css-labelled-input-label.png)
+![Libellé d’entrée](assets/plp-css-labelled-input-label.png)
 
 ### Élément de produit
 
@@ -190,5 +190,5 @@ Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscu
 
 Pour désactiver le widget PLP :
 
-1. Accédez à **Magasins** > Paramètres > **Configuration** > **[!DNL Live Search]** > **Fonctionnalités de Storefront** et défini **Activation des widgets de liste de produits** à &quot;Non&quot;.
-1. Sélectionner **Enregistrer la configuration** pour enregistrer le paramètre.
+1. Accédez à **Magasins** > Paramètres > **Configuration** > **[!DNL Live Search]** > **Fonctionnalités Storefront** et définissez **Activer les widgets de liste de produits** sur &quot;Non&quot;.
+1. Sélectionnez **Save Config** pour enregistrer le paramètre.

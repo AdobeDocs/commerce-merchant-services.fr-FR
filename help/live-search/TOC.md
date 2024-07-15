@@ -1,6 +1,6 @@
 ---
 user-guide-title: « Guide [!DNL Live Search] »
-user-guide-description: "Ce guide fournit des instructions détaillées sur l’utilisation de [!DNL Live Search] d’Adobe Commerce."
+user-guide-description: "Ce guide fournit des instructions détaillées sur l’utilisation de  [!DNL Live Search] depuis Adobe Commerce."
 breadcrumb-title: « Guide [!DNL Live Search] »
 role: Admin
 feature: Services, Search
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # [!DNL Live Search] pour Commerce {#live-search}
 
-- [Présentation [!DNL Live Search]?](overview.md)
+- [Qu’est-ce que  [!DNL Live Search] ?](overview.md)
 - [Installer](install.md)
 - [Configuration de la recherche en direct](workspace.md)
 - [Limites et limites](boundaries-limits.md)
@@ -22,7 +22,7 @@ ht-degree: 10%
    - [Widgets Storefront](storefront-widgets.md)
    - [Page Liste des produits](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
-- Administration {#live-search-admin}
+- Administrateur {#live-search-admin}
    - [Performances](performance.md)
    - Facettes {#facets}
       - [Vue d’ensemble](facets.md)
@@ -35,7 +35,7 @@ ht-degree: 10%
       - [Types de synchronisation](synonyms-type.md)
       - [Ajouter des Synonymes](synonyms-add.md)
       - [Gestion des Synonymes](synonyms-manage.md)
-   - Marchandisage des recherches {#rules}
+   - Marchandisage de recherche {#rules}
       - [Vue d’ensemble](rules.md)
       - [Workspace](rules-workspace.md)
       - [Ajout de règles](rules-add.md)

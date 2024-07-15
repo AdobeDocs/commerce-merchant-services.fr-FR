@@ -1,9 +1,10 @@
 ---
 title: Estimation du volume des données et du temps de transmission
-description: "Découvrez comment estimer le volume de données et le temps de transmission requis pour la variable [!DNL data export] pour synchroniser les données de flux entre Adobe Commerce et les services connectés."
+description: Découvrez comment estimer le volume des données et le temps de transmission requis par l’outil  [!DNL data export] pour synchroniser les données de flux entre Adobe Commerce et les services connectés.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Par défaut, l’outil d’exportation de données traite les données en mode m
 En fonction de la configuration par défaut, les facteurs suivants affectent le temps de transmission des données lors de la synchronisation.
 
 - Le nombre de threads est défini sur 1 (par défaut).
-- La taille du lot est définie sur _100_ pour tous les flux, à l’exception de la fonction `prices` flux, où il est défini sur _500_.
+- La taille du lot est définie sur _100_ pour tous les flux, à l’exception du flux `prices`, où elle est définie sur _500_.
 - Le taux d’acceptation du flux est de 2 demandes par seconde.
 - Tous les produits sont affectés à tous les sites web existants.
 - Pour les scénarios de calcul des prix, des prix spéciaux et groupés sont attribués à tous les produits.
@@ -49,4 +50,3 @@ Utilisez les valeurs et formules du tableau suivant pour calculer le volume des 
 | Autorisations de catégorie | Comptage de toutes les autorisations de catégorie + 4 enregistrements de secours (CP) : 10 000 | CP = 10000 | 10 000 / Taille du lot (100) = 100 demandes | (100 demandes * 0,5 seconde par demande) / 60 = 0,8 minute (50 secondes) |
 | État du stock | Produits (P) : 10 000, Stocks de produits affectés à (S) : 5 (en supposant que chaque produit soit affecté à chaque stock) | P * S = 50 000 | 50 000 / Taille du lot (100) = 500 demandes | (500 demandes * 0,5 seconde par demande) / 60 = 4,2 minutes |
 | Commandes de ventes | Tous les enregistrements de commande (y compris les factures, les envois, etc.) (SO) : 10000 | SO = 10000 | 10 000 / Taille du lot (100) = 100 demandes | (100 demandes * 0,5 seconde par demande) / 60 = 0,8 minute (50 secondes) |
-

@@ -26,17 +26,17 @@ Dans l’administrateur Adobe Commerce, les paramètres de configuration des ser
 
 ## Utilisation de la référence de configuration
 
-Affichez la référence de configuration pour chaque type de paramètre en sélectionnant le nom du type dans la _Paramètres de configuration d’exécution de magasin par type_ table.
+Affichez la référence de configuration pour chaque type de paramètre en sélectionnant le nom du type dans la table _Paramètres de configuration de l’exécution de la boutique par type_ .
 
 Dans la référence de configuration de chaque type, les détails de configuration sont affichés dans un tableau avec les en-têtes de colonne suivants :
 
-- **Champ** fait référence au nom du champ à configurer
+- **Field** fait référence au nom du champ à configurer
 
-- **Description** fournit des détails importants sur l’objectif et le comportement du champ ;
+- **Description** fournit des détails importants sur l’objectif et le comportement du champ.
 
-- **Portée** indique la portée de la configuration Adobe Commerce pour le paramètre (global, site web, magasin)
+- **Scope** indique l’étendue de la configuration Adobe Commerce pour le paramètre (global, site web, magasin)
 
-- **Obligatoire** indique si une valeur doit être définie sur le champ.
+- La valeur **Required** indique si une valeur doit être définie sur le champ
 
 À titre de référence technique, vous pouvez également trouver le chemin de configuration interne de chaque champ.
 

@@ -7,16 +7,16 @@ feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
 
 # Configuration de plusieurs sites web et de portée
 
-Vous pouvez définir la variable [Portée](https://docs.magento.com/user-guide/configuration/scope.html) pour quelques éléments afin d’accueillir plusieurs sites web, magasins et vues de magasin :
+Vous pouvez définir la [Portée](https://docs.magento.com/user-guide/configuration/scope.html) pour quelques éléments afin d’accueillir plusieurs sites web, magasins et vues de magasin :
 
-- [Gérer Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html) par portée
+- [Gérer le stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html) par portée
 
 - Gérer [!DNL Delivery Methods] par portée
 
@@ -26,7 +26,7 @@ Une fois la configuration mise à jour, les options de récupération de magasin
 
 ## Gérer les paramètres de récupération en magasin
 
-Activez ou désactivez la variable [!UICONTROL In-Store Pickup] options pour chaque site web ou la portée du magasin à partir de [Configurations des méthodes de diffusion](enable-general.md#delivery-methods) dans Admin.
+Activez ou désactivez les options [!UICONTROL In-Store Pickup] pour chaque site web ou portée de magasin à partir des [configurations de méthode de diffusion](enable-general.md#delivery-methods) dans l’administrateur.
 
 1. Accédez à **[!UICONTROL Stores > Configuration]**.
 
@@ -34,8 +34,8 @@ Activez ou désactivez la variable [!UICONTROL In-Store Pickup] options pour cha
 
 1. Avec la portée sélectionnée, accédez à **[!UICONTROL Sales > Delivery Methods]**.
 
-1. Désactivez ou activez le **[!UICONTROL In-Store Pickup]** Méthode de diffusion.
+1. Désactivez ou activez la méthode de diffusion **[!UICONTROL In-Store Pickup]**.
 
 Vous pouvez également gérer si la sélection côté serveur ou en magasin est disponible globalement dans cette section.
 
-Gérer les [!UICONTROL In-Store Pickup] et [!UICONTROL Delivery Method] paramètres par source de stock. Il existe de nombreuses autres configurations pour une parfaite flexibilité de votre mise en oeuvre.
+Gérez les paramètres [!UICONTROL In-Store Pickup] et [!UICONTROL Delivery Method] par source de stock. Il existe de nombreuses autres configurations pour une parfaite flexibilité de votre mise en oeuvre.

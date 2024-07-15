@@ -16,17 +16,17 @@ ht-degree: 0%
 
 L’application d’assistance Boutique fournit à Store Associates quatre modules pour gérer le processus d’exécution en magasin pour l’achat en ligne et la prise en charge des commandes en magasin :
 
-- **[Pick](#pick-module)**: obtenez une visibilité complète de tous les articles commandés et des outils pour vous assurer que les bons articles et les bonnes quantités sont sélectionnés. Les associés de magasin peuvent sélectionner simultanément une ou plusieurs commandes pour une plus grande efficacité.
+- **[Pick](#pick-module)** : obtenez une visibilité complète de tous les articles commandés et des outils pour vous assurer que les bons articles et les bonnes quantités sont sélectionnés. Les associés de magasin peuvent sélectionner simultanément une ou plusieurs commandes pour une plus grande efficacité.
 
-- **[Évaluation](#stage-module)**: renseignez l’emplacement où les commandes sont passées pendant que les clients se rendent au magasin afin que les associés de magasin puissent trouver et remettre les commandes plus rapidement.
+- **[Stage](#stage-module)** : saisissez l’emplacement où les commandes sont passées lorsque les clients se rendent dans le magasin afin que les associés du magasin puissent trouver et transférer les commandes plus rapidement.
 
-- **[Main désactivée](#hand-off-module)**: obtenez des notifications en temps réel une fois les clients arrivés au magasin afin de minimiser leur temps d’attente et de passer facilement des commandes.
+- **[Hand Off](#hand-off-module)** : recevez des notifications en temps réel après l’arrivée des clients dans le magasin afin de minimiser leur temps d’attente et de passer facilement des commandes.
 
-- **[Commandes](#orders-module)**: affichez la liste de toutes les commandes passées pour un magasin afin que chacun connaisse le nombre de commandes et l’état de chaque commande.
+- **[Commandes](#orders-module)** : affichez la liste de toutes les commandes passées pour un magasin afin que tout le monde connaisse le nombre de commandes et l’état de chaque commande.
 
 >[!NOTE]
 >
->Pour que Store Associates puisse utiliser l’application d’assistance, un administrateur doit renseigner la variable [processus de configuration de l’application](app-setup.md).
+>Pour que Store Associates puisse utiliser l’application d’assistance à la boutique, un administrateur doit terminer le [processus de configuration de l’application](app-setup.md).
 
 ## Choisir le module
 
@@ -53,7 +53,7 @@ Vous pouvez également facilement mettre à jour l’emplacement d’évaluation
 
 ## Module de désactivation de la main
 
-La variable [!UICONTROL Hand Off] indique les clients qui se sont connectés pour reprendre leurs commandes, et où leurs commandes sont mises en scène et les attendent. Les clients peuvent prendre des commandes soit dans le magasin soit dans le parking à l&#39;extérieur ou au bord du trottoir. Les informations sur leur emplacement exact sont présentées dans ce module une fois qu’elles sont connectées.
+Le module [!UICONTROL Hand Off] indique les clients qui se sont connectés pour reprendre leurs commandes, et où leurs commandes sont mises en scène et les attend. Les clients peuvent prendre des commandes soit dans le magasin soit dans le parking à l&#39;extérieur ou au bord du trottoir. Les informations sur leur emplacement exact sont présentées dans ce module une fois qu’elles sont connectées.
 
 Une fois que vous avez sélectionné une commande prête à être remise au client. Tout le monde peut consulter les informations sur la commande, y compris les éléments introuvables, l’emplacement d’attente du client, le temps d’attente, l’emplacement d’évaluation de la commande et, le cas échéant, le numéro de téléphone du client.
 

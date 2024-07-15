@@ -1,6 +1,6 @@
 ---
 title: Installer [!DNL Data Connection]
-description: Découvrez comment installer, mettre à jour et désinstaller le [!DNL Data Connection] à partir d’Adobe Commerce.
+description: Découvrez comment installer, mettre à jour et désinstaller l’extension  [!DNL Data Connection] à partir d’Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # Installer [!DNL Data Connection]
 
-Avant d’installer l’extension, [revoir les conditions préalables](overview.md#prereqs).
+Avant d’installer l’extension, [vérifiez les conditions préalables](overview.md#prereqs).
 
 ## Installation de l’extension
 
-La variable [!DNL Data Connection] est disponible à partir de la fonction [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Lorsque vous installez cette extension à partir de la ligne de commande du serveur, elle se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, **[!DNL Data Connection]** et **Connecteur Commerce Services** apparaissent sur le **Système** sous **Services** dans Commerce _Administration_.
+L’extension [!DNL Data Connection] est disponible sur [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Lorsque vous installez cette extension à partir de la ligne de commande du serveur, elle se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, **[!DNL Data Connection]** et **Commerce Services Connector** apparaissent dans le menu **System** sous **Services** dans Commerce _Admin_.
 
-![[!DNL Data Connection] vue d’administration de l’extension](assets/epc-adminui.png)
+![[!DNL Data Connection] extension Admin view](assets/epc-adminui.png)
 
 >[!IMPORTANT]
 >
->Bien que le nom de l’extension ait été remplacé du connecteur Experience Platform à [!DNL Data Connection], le nom du module reste `experience-platform-connector` pour prendre en charge la rétrocompatibilité.
+>Bien que le nom de l’extension ait été remplacé par [!DNL Data Connection] depuis le connecteur Experience Platform, le nom du package reste `experience-platform-connector` pour prendre en charge la compatibilité ascendante.
 
-1. Pour télécharger le `experience-platform-connector` , exécutez les éléments suivants à partir de la ligne de commande :
+1. Pour télécharger le package `experience-platform-connector`, exécutez le suivant à partir de la ligne de commande :
 
    ```bash
    composer require magento/experience-platform-connector
@@ -34,18 +34,18 @@ La variable [!DNL Data Connection] est disponible à partir de la fonction [Adob
    Ce métapaquage contient les modules et extensions suivants :
 
    * `module-experience-connector-admin` - Met à jour l’interface utilisateur d’administration afin que vous puissiez sélectionner l’identifiant de flux de données pour une instance Adobe Commerce spécifique.
-   * `module-experience-connector` - Définit la variable `Organization ID` et `datastreamId` dans le SDK des événements Storefront.
+   * `module-experience-connector` - Définit les `Organization ID` et `datastreamId` dans le SDK des événements Storefront.
    * `data-services` - Fournit un contexte d’attribut pour les événements storefront. Par exemple, lorsqu’un événement de passage en caisse se produit, des informations sur le nombre d’articles figurant dans le panier et les données d’attribut de produit pour ces articles sont incluses.
-   * `services-id` - Connecte votre instance Adobe Commerce à [Adobe Commerce SaaS](../landing/saas.md) à l’aide de l’environnement de test et des clés d’API de production, ainsi qu’à Adobe Experience Platform, pour récupérer l’identifiant de l’organisation IMS.
+   * `services-id` - Connecte votre instance Adobe Commerce à [Adobe Commerce SaaS](../landing/saas.md) à l’aide des clés d’API de test et de production et à Adobe Experience Platform pour récupérer l’ID d’organisation IMS.
    * `orders-connector` - Connecte le service d’état de la commande à votre instance Adobe Commerce.
 
-1. (Facultatif) Pour inclure [!DNL Live Search] , qui comprend [événements de recherche](events.md#search-events), installez le [[!DNL Live Search]](../live-search/install.md) extension .
+1. (Facultatif) Pour inclure des données [!DNL Live Search], qui comprennent [des événements de recherche](events.md#search-events), installez l’extension [[!DNL Live Search]](../live-search/install.md).
 
-1. (Facultatif) Pour inclure des données B2B, qui comprennent [événements de demande](events.md#b2b-events), installez le [Extension B2B](#install-the-b2b-extension).
+1. (Facultatif) Pour inclure des données B2B, qui comprennent [ événements de demande](events.md#b2b-events), installez l’ [extension B2B](#install-the-b2b-extension).
 
 ### Installation des événements d’Adobe I/O
 
-Après avoir installé la variable `experience-platform-connector` , vous devez installer les événements d’Adobe I/O pour Adobe Commerce.
+Après avoir installé l’extension `experience-platform-connector`, vous devez installer les événements Adobe I/O pour Adobe Commerce.
 
 Les étapes suivantes s’appliquent à Adobe Commerce sur l’infrastructure cloud et aux installations sur site.
 
@@ -55,7 +55,7 @@ Les étapes suivantes s’appliquent à Adobe Commerce sur l’infrastructure cl
    composer require magento/commerce-eventing=^1.0 --no-update
    ```
 
-   Commerce 2.4.6 et versions ultérieures charge ces modules automatiquement.
+   Commerce 2.4.6 et versions ultérieures chargent ces modules automatiquement.
 
 1. Mettez à jour les dépendances du projet.
 
@@ -85,7 +85,7 @@ bin/magento config:set adobe_io_events/eventing/enabled 1
 
 #### Sur l’infrastructure cloud
 
-Dans l’infrastructure Adobe Commerce on Cloud, activez la variable `ENABLE_EVENTING` variable globale dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+Dans l’infrastructure Adobe Commerce on Cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
 
 ```bash
 stage:
@@ -101,17 +101,17 @@ bin/magento config:set adobe_io_events/eventing/enabled 1
 
 ### Installation de l’extension B2B
 
-Pour les marchands B2B, installez l’extension suivante pour inclure [liste des demandes](events.md#b2b-events) données d’événement.
+Pour les commerçants B2B, installez l’extension suivante afin d’inclure les données d’événement [liste de demandes](events.md#b2b-events).
 
-Téléchargez la `magento/experience-platform-connector-b2b` en exécutant les éléments suivants à partir de la ligne de commande :
+Téléchargez l’extension `magento/experience-platform-connector-b2b` en exécutant les opérations suivantes à partir de la ligne de commande :
 
 ```bash
 composer require magento/experience-platform-connector-b2b
 ```
 
-## Mettez à jour le [!DNL Data Connection] extension {#update}
+## Mettre à jour l’extension [!DNL Data Connection] {#update}
 
-Pour mettre à jour la variable [!DNL Data Connection] , exécutez les opérations suivantes à partir de la ligne de commande :
+Pour mettre à jour l’extension [!DNL Data Connection], exécutez les opérations suivantes à partir de la ligne de commande :
 
 ```bash
 composer update magento/experience-platform-connector --with-dependencies
@@ -123,11 +123,11 @@ Ou, pour les marchands B2B :
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-Pour effectuer une mise à jour vers une version majeure, telle que de la version 2.0.0 à la version 3.0.0, modifiez la racine du projet. [!DNL Composer] `.json` comme suit :
+Pour effectuer une mise à jour vers une version majeure, telle que de 2.0.0 à 3.0.0, modifiez le fichier [!DNL Composer] `.json` racine du projet comme suit :
 
-1. Ouvrez la racine `composer.json` fichier et recherchez `magento/experience-platform-connector`.
+1. Ouvrez le fichier racine `composer.json` et recherchez `magento/experience-platform-connector`.
 
-1. Dans le `require` , mettez à jour le numéro de version comme suit :
+1. Dans la section `require` , mettez à jour le numéro de version comme suit :
 
    ```json
    "require": {
@@ -149,6 +149,6 @@ Pour effectuer une mise à jour vers une version majeure, telle que de la versio
    composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
-## Désinstallez le [!DNL Data Connection] extension {#uninstall}
+## Désinstaller l’extension [!DNL Data Connection] {#uninstall}
 
-Pour désinstaller le [!DNL Data Connection] extension, voir [désinstallation des modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+Pour désinstaller l’extension [!DNL Data Connection], reportez-vous à la section [désinstallation des modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

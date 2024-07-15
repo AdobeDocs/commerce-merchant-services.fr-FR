@@ -1,6 +1,6 @@
 ---
 title: "Performances"
-description: "Le [!DNL Live Search] Performance Workspace fournit des informations sur les termes de recherche que les acheteurs utilisent."
+description: "L’ [!DNL Live Search] espace de travail des performances donne des informations sur les termes de recherche que les acheteurs utilisent."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # Performances
 
-La variable *Performances* workspace fournit des informations sur les termes de recherche utilisés par les acheteurs. Les informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. L’espace de travail Performances fournit un instantané des mesures de recherche pour une période spécifique et comprend les rapports suivants :
+L’espace de travail *Performance* fournit des informations sur les termes de recherche utilisés par les acheteurs. Les informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. L’espace de travail Performances fournit un instantané des mesures de recherche pour une période spécifique et comprend les rapports suivants :
 
 * Recherches uniques
 * Zéro résultat
 * Résultats populaires
 
-![Performances](assets/performance-unique-searches.png)
+![Performance](assets/performance-unique-searches.png)
 
-Vous pouvez également consulter la section [Tableau de bord de la gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) pour plus de données sur la synchronisation des données.
+Vous pouvez également vous reporter au [tableau de bord de Data Management](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) pour plus de données sur la synchronisation des données.
 
 ## Affichage d’un rapport
 
-1. Pour saisir la variable **Période**, cliquez sur le calendrier (![Calendrier](assets/btn-calendar.png)) et effectuez l’une des opérations suivantes :
+1. Pour entrer dans la **plage de dates**, cliquez sur le calendrier (![Calendrier](assets/btn-calendar.png)) et effectuez l’une des opérations suivantes :
 
    * Pour indiquer une seule date, double-cliquez sur la date du calendrier.
    * Pour définir une plage de dates, cliquez sur la première et la dernière date du calendrier.

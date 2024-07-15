@@ -1,7 +1,7 @@
 ---
-user-guide-title: "[!DNL Data Export] Guide des services SaaS"
-user-guide-description: "Ce guide fournit des instructions détaillées sur l’utilisation de la variable [!DNL Data Export] extension pour les services Adobe Commerce SaaS."
-breadcrumb-title: "[!DNL Data Export] Guide des services SaaS"
+user-guide-title: "[!DNL Data Export] Guide pour les services SaaS"
+user-guide-description: "Ce guide fournit des instructions détaillées sur l’utilisation de l’extension  [!DNL Data Export] pour les services Adobe Commerce SaaS."
+breadcrumb-title: "[!DNL Data Export] Guide pour les services SaaS"
 hide: true
 role: Admin
 feature: Services
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 - [Présentation du guide](overview.md)
 - [Synchronisation des données](data-synchronization.md)
-- Planification et performances de l’exportation {#performance}
+- Exporter la planification et les performances {#performance}
    - [Estimation du volume des données et du temps de transmission](estimate-data-volume-sync-time.md)
    - [Amélioration des performances d’exportation](customize-export-processing.md)
 - [Référence des commandes de l’interface de ligne de commande](data-export-cli-commands.md)

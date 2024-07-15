@@ -1,35 +1,35 @@
 ---
 title: Configuration générale
-description: Configuration des paramètres généraux à activer [!DNL Store Fulfillment] pour votre magasin. Configurez les paramètres d’extension globaux, les paramètres système pour la journalisation, la synchronisation des données et la sécurité. Fournissez des données clés pour activer l’intégration entre Adobe Commerce et les services d’exécution de magasin.
+description: Configurez les paramètres généraux pour activer  [!DNL Store Fulfillment] pour votre magasin. Configurez les paramètres d’extension globaux, les paramètres système pour la journalisation, la synchronisation des données et la sécurité. Fournissez des données clés pour activer l’intégration entre Adobe Commerce et les services d’exécution de magasin.
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
 
 # Configuration du service de magasin et des ventes
 
-Activer [!DNL Store Fulfillment] de l’extension [!DNL Commerce] Admin en configurant les paramètres d’extension, les paramètres de sécurité pour les utilisateurs de l’application d’assistance de la boutique et les options de méthode de remise.
+Activez l’extension [!DNL Store Fulfillment] de l’administrateur [!DNL Commerce] en configurant les paramètres d’extension, les paramètres de sécurité pour les utilisateurs de l’application d’assistance de la boutique et les options de méthode de remise.
 
 >[!IMPORTANT]
 >
->La configuration du service d’exécution de magasin s’applique uniquement après la connexion de votre instance Adobe Commerce et de l’événement [!DNL Store Fulfillment] application. Voir [Connexion à l’exécution du magasin](connect-set-up-service.md).
+>La configuration du service d’exécution de magasin s’applique uniquement après la connexion de votre instance Adobe Commerce et de l’application [!DNL Store Fulfillment]. Voir [Connexion à l’exécution de la boutique](connect-set-up-service.md).
 
 ## Gestion des paramètres des services d’exécution de magasin
 
-Gestion des paramètres des services d’exécution de magasin à partir de la [!DNL Commerce Admin Store Configuration] .
+Gérez les paramètres des services d’exécution de magasin depuis le menu [!DNL Commerce Admin Store Configuration].
 
 - Activez l’extension, configurez les paramètres globaux et spécifiez les options de sécurité pour les connexions utilisateur et les comptes de l’application d’assistance de la boutique en sélectionnant **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-  ![Configuration des services de la boutique d’administration pour l’exécution du magasin](assets/store-services-admin-sf-config.png)
+  ![ Configuration des services de la boutique d’administration pour l’exécution du magasin ](assets/store-services-admin-sf-config.png)
 
 - Configurez les méthodes de diffusion en sélectionnant **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
-  ![Configuration des ventes de la boutique d’administration pour l’exécution du magasin](assets/store-sales-admin-sf-deliver-config.png)
+  ![ Configuration des ventes de l’Admin Store pour l’exécution du magasin ](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Paramètres de base
 
@@ -67,11 +67,11 @@ Gestion des paramètres des services d’exécution de magasin à partir de la [
 
 >[!NOTE]
 >
->La variable [!UICONTROL Search Radius] n’est utilisé que si vous avez configuré la variable [configuration de l’emplacement et du mappage du magasin](store-location-map-provider-setup.md) pour Adobe Commerce.
+>Le paramètre [!UICONTROL Search Radius] n’est utilisé que si vous avez configuré l’ [emplacement du magasin et configuration du mappage](store-location-map-provider-setup.md) pour Adobe Commerce.
 
 ## Activation de la solution d’exécution de magasin
 
-Activez la variable [!DNL Store Fulfillment] pour ajouter les fonctionnalités de sélection en magasin et côté serveur aux expériences d’achat et de passage en caisse de votre vitrine Adobe Commerce.
+Activez la solution [!DNL Store Fulfillment] pour ajouter les fonctionnalités de nettoyage en magasin et côté serveur aux expériences d’achat et de passage en caisse dans votre vitrine Adobe Commerce.
 
 <table>
 <thead>
@@ -85,7 +85,7 @@ Activez la variable [!DNL Store Fulfillment] pour ajouter les fonctionnalités d
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Activez ou désactivez la solution. Une fois activée, configurez et utilisez les fonctionnalités d’exécution de magasin et établissez la connexion entre votre boutique Adobe Commerce et [!DNL Store Fulfillment] services. Lorsque cette option est désactivée, toutes les fonctions d’exécution de magasin sont désactivées. Il n’existe aucune communication entre Adobe Commerce et les services d’exécution de magasin. Les informations de commande ne peuvent pas être traitées ni reçues.</td>
+<td>Activez ou désactivez la solution. Lorsque cette option est activée, configurez et utilisez les fonctionnalités d’exécution de magasin et établissez la connexion entre votre boutique Adobe Commerce et les services [!DNL Store Fulfillment]. Lorsque cette option est désactivée, toutes les fonctions d’exécution de magasin sont désactivées. Il n’existe aucune communication entre Adobe Commerce et les services d’exécution de magasin. Les informations de commande ne peuvent pas être traitées ni reçues.</td>
 <td>Site Web</td>
 <td>Oui</td>
 </tr>
@@ -103,7 +103,7 @@ Activez la variable [!DNL Store Fulfillment] pour ajouter les fonctionnalités d
 </tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>Sélectionnez <i>[!UICONTROL Sandbox]</i> ou <i>[!UICONTROL Production]</i><br></br>Sélection [!UICONTROL Sandbox] permet la communication avec les services d’exécution dans un environnement de test.<br></br>Sélection [!UICONTROL Production] permet la communication avec les services d’exécution dans un environnement en ligne.<br></br>Un ensemble d’informations d’identification vous est attribué pour chaque environnement et vous pouvez gérer les deux ensembles dans la même installation. <br></br>Enregistrez les identifiants avant de valider la connexion.</td>
+<td>Sélectionnez <i>[!UICONTROL Sandbox]</i> ou <i>[!UICONTROL Production]</i><br></br>La sélection de [!UICONTROL Sandbox] permet la communication avec les services d’exécution dans un environnement de test.<br></br>La sélection de [!UICONTROL Production] permet la communication avec les services d’exécution dans un environnement en ligne.<br></br>Vous recevez un ensemble d’informations d’identification pour chaque environnement et vous pouvez gérer les deux ensembles dans la même installation. <br></br>Enregistrez les informations d’identification avant de valider la connexion.</td>
 <td>Global</td>
 <td>Oui</td>
 </tr>
@@ -139,19 +139,19 @@ Activez la variable [!DNL Store Fulfillment] pour ajouter les fonctionnalités d
 </tr>
 </table>
 
-Après avoir configuré la variable [!UICONTROL Account Credentials], sélectionnez <strong>[!UICONTROL Validate Credentials]</strong> pour vérifier et établir une connexion au service d’exécution du magasin pour la première fois.
+Après avoir configuré le [!UICONTROL Account Credentials], sélectionnez <strong>[!UICONTROL Validate Credentials]</strong> pour vérifier et établir une connexion au service d’exécution de magasin pour la première fois.
 
 ## Configuration de la journalisation
 
-Les journaux des services d’exécution de magasin sont disponibles dans le fichier journal. `var/log/walmart-bopis.log`.
+Les journaux des services d’exécution de magasin sont disponibles dans le fichier journal `var/log/walmart-bopis.log`.
 
 Demandez à l’administrateur système de configurer vos environnements pour autoriser la gestion des exceptions afin que les exceptions liées à l’API puissent être capturées via le pare-feu ou le cache.
 
-Étant donné que le fichier journal de l’application peut croître rapidement, n’activez la journalisation de l’application que pendant une courte période, si nécessaire, par exemple lors de la résolution des problèmes d’exécution du magasin pour une [!DNL Commerce] commande. Cette configuration empêche les problèmes de temps de réponse dans les environnements de production causés par des fichiers journaux volumineux.
+Comme le fichier journal de l’application peut croître rapidement, n’activez la journalisation de l’application que pendant une courte période, si nécessaire, par exemple lors de la résolution des problèmes d’exécution du magasin pour une commande [!DNL Commerce]. Cette configuration empêche les problèmes de temps de réponse dans les environnements de production causés par des fichiers journaux volumineux.
 
 >[!TIP]
 >
->Pour les installations sur site d’Adobe Commerce, demandez à votre administrateur système de configurer la rotation des journaux pour la variable `var/log/walmart-bopis.log` pour réduire la taille. Pour les installations Adobe Commerce sur site, voir [Rotation des logs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) dans le _Guide d’installation d’Adobe Commerce_. Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Affichage et gestion des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Pour les installations sur site d’Adobe Commerce, demandez à votre administrateur système de configurer la rotation des journaux pour le fichier `var/log/walmart-bopis.log` afin de réduire la taille. Pour les installations sur site Adobe Commerce, reportez-vous à la section [Rotation du journal](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) du _Guide d’installation d’Adobe Commerce_. Pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Affichage et gestion des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -165,7 +165,7 @@ Demandez à l’administrateur système de configurer vos environnements pour au
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>Le mode de débogage est utilisé pour augmenter l’activité consignée dans l’intégration. Lorsque cette option est désactivée, aucune information de débogage n’est consignée. Lorsque cette option est activée, toutes les informations de débogage sont consignées. <br></br>Toutes les données consignées se trouvent dans le fichier : <pre>var/log/walmart-bopis.log</pre>
+<td>Le mode de débogage est utilisé pour augmenter l’activité consignée dans l’intégration. Lorsque cette option est désactivée, aucune information de débogage n’est consignée. Lorsque cette option est activée, toutes les informations de débogage sont consignées <br></br>Toutes les données consignées se trouvent dans le fichier : <pre>var/log/walmart-bopis.log</pre>
 <td>Global</td>
 <td>Non</td>
 </tr>
@@ -190,13 +190,13 @@ Vous pouvez afficher des détails sur les opérations de synchronisation des com
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>Indique les tentatives de reprise d’une opération de synchronisation d’enregistrement après une erreur critique.<br></br>Des erreurs critiques se produisent chaque fois que l’intégration ne parvient pas à obtenir une réponse positive de la part du service d’exécution. Ces problèmes se produisent lorsque le service est en panne ou lorsqu’une erreur se produit dans les données de commande envoyées.<br></br>Lorsque le seuil de reprise est atteint, l’élément reste dans la file d’attente mais n’est pas traité à nouveau. Afficher tous les éléments contenant des erreurs de <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Gestion dans l’administrateur. Pour résoudre les problèmes liés aux éléments qui échouent constamment, contactez votre gestionnaire de compte.</td>
+<td>Indique les tentatives de reprise d’une opération de synchronisation d’enregistrement après une erreur critique.<br></br>Des erreurs critiques se produisent chaque fois que l’intégration échoue à obtenir une réponse positive de la part du service d’exécution. Ces problèmes se produisent lorsque le service est en panne ou lorsqu’une erreur se produit dans les données de commande envoyées.<br></br>Lorsque le seuil de reprise est atteint, l’élément reste dans la file d’attente, mais n’est pas traité à nouveau. Affichez tous les éléments contenant des erreurs de la gestion de <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> dans l’administrateur. Pour résoudre les problèmes liés aux éléments qui échouent constamment, contactez votre gestionnaire de compte.</td>
 <td>Global</td>
 <td>Non</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Error Notification Email]</strong></td>
-<td>Activez les notifications d’erreur pour recevoir un courrier électronique lorsque la variable [!UICONTROL Retry Critical Error Threshold] est atteinte pour une commande. La notification inclut tous les détails disponibles sur l’erreur.</td>
+<td>Activez les notifications d’erreur pour recevoir un courrier électronique lorsque le [!UICONTROL Retry Critical Error Threshold] est atteint pour une commande. La notification inclut tous les détails disponibles sur l’erreur.</td>
 <td>Global</td>
 <td>Non</td>
 </tr>
@@ -228,13 +228,13 @@ Vous pouvez afficher des détails sur les opérations de synchronisation des com
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>L’attribut catalog qui stocke le code pouvant être analysé pour les éléments correspondants dans vos emplacements marchands.<br></br>Si vous n’avez qu’un seul emplacement commercial, il est probable que vous utilisiez des codes CUP, tandis que votre canal de commerce électronique identifie les produits par SKU. Dans ce scénario, sélectionnez l’attribut catalog qui contient le code UPC.<br></br>Ce paramètre garantit que les commandes envoyées à vos magasins répertorient les éléments avec l’identifiant correct afin que les associés de magasin puissent analyser précisément les éléments pendant le processus de sélection.<br></br>Si vous n’êtes pas sûr, vérifiez auprès de vos associés d’exécution dans le service Expédition et sélection pour déterminer l’attribut à envoyer. Si l’attribut n’est pas actuellement inclus dans la base de données, vous pouvez l’ajouter au jeu d’attributs de produit Adobe Commerce.</td>
+<td>L’attribut catalog qui stocke le code pouvant être analysé pour les éléments correspondants dans vos emplacements marchands.<br></br>Si vous n’avez qu’un seul emplacement commercial existant, il est probable que vous utilisiez des codes CUP, tandis que votre canal de commerce électronique identifie les produits par SKU. Dans ce scénario, sélectionnez l’attribut catalog qui contient le code UPC.<br></br>Ce paramètre garantit que les commandes envoyées à vos magasins répertorient les éléments avec l’identifiant correct afin que les associés au magasin puissent analyser précisément les éléments pendant le processus de sélection.<br></br>Si vous n’êtes pas sûr, vérifiez auprès de vos associés d’exécution du service Expédition et sélection pour déterminer l’attribut à envoyer. Si l’attribut n’est pas actuellement inclus dans la base de données, vous pouvez l’ajouter au jeu d’attributs de produit Adobe Commerce.</td>
 <td>Site Web</td>
 <td>Oui</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Barcode Type]</strong></td>
-<td>L’attribut catalog qui stocke la source du code à barres pour les éléments correspondants dans vos emplacements marchands.<br></br>Ce paramètre garantit que les commandes envoyées à vos magasins répertorient les éléments avec l’identifiant correct afin que les associés de magasin puissent analyser précisément les éléments pendant le processus de sélection. Les options incluent : SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Price Embedded UPC.<br></br>Si vous n’êtes pas sûr, sélectionnez l’option qui ressemble le plus aux valeurs contenues dans votre [!UICONTROL Barcode Source] attribut. Les associés de magasin peuvent toujours faire correspondre des éléments manuellement à partir de leur liste de sélection.</td>
+<td>L’attribut catalog qui stocke la source du code à barres pour les éléments correspondants dans vos emplacements marchands.<br></br>Ce paramètre garantit que les commandes envoyées à vos magasins répertorient les éléments avec un identifiant correct afin que les associés au magasin puissent analyser précisément les éléments pendant le processus de sélection. Les options incluent : SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Price Embedded UPC.<br></br>Si vous n’êtes pas sûr, sélectionnez l’option qui ressemble le plus aux valeurs contenues dans votre attribut [!UICONTROL Barcode Source]. Les associés de magasin peuvent toujours faire correspondre des éléments manuellement à partir de leur liste de sélection.</td>
 <td>Site Web</td>
 <td>Oui</td>
 </tr>
@@ -265,7 +265,7 @@ Configurez les options d’expédition d’exécution de magasin qui déterminen
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>Le paramètre d’expédition vers l’entrepôt repose sur vos capacités d’expédition vers l’entrepôt existantes. Si vous utilisez Inventory management, ou si vous pouvez accepter et exécuter des commandes dans des emplacements marchands sans inventaire via des transferts d’inventaire magasin à magasin, définissez cette option sur "Oui".<br></br>Si vous ne pouvez pas prendre en charge l’option d’envoi au magasin ou ne souhaitez pas l’offrir, définissez sur "Non". Lorsque cette option est désactivée, les éléments de votre catalogue dont l’inventaire est nul pour un magasin marchand ou les éléments qui se trouvent sous [!DNL Out of Stock Threshold] pour cet emplacement, ne sont pas proposés avec les options de récupération en magasin.<br></br>Vous pouvez ajuster la valeur de ce paramètre par emplacement commercial.</td>
+<td>Le paramètre d’expédition vers l’entrepôt repose sur vos capacités d’expédition vers l’entrepôt existantes. Si vous utilisez Inventory management, ou si vous pouvez accepter et exécuter des commandes dans des emplacements marchands sans inventaire via des transferts d’inventaire magasin à magasin, définissez cette option sur "Oui".<br></br>Si vous ne pouvez pas prendre en charge l’option de livraison ou si vous ne souhaitez pas l’offrir, définissez sur "Non". Lorsque cette option est désactivée, les articles de votre catalogue dont l’inventaire est nul pour un magasin marchand ou ceux qui se trouvent sous le [!DNL Out of Stock Threshold] de cet emplacement ne sont pas proposés avec les options de récupération en magasin.<br></br>Vous pouvez ajuster la valeur de ce paramètre par emplacement commercial.</td>
 <td>Global</td>
 <td>Non</td>
 </tr>
@@ -286,7 +286,7 @@ Configurez les options d’expédition d’exécution de magasin qui déterminen
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Active ou désactive l’option Livraison à domicile dans vos magasins marchands. Lorsque cette option est activée, les emplacements de magasin marchand sont pris en compte dans l’ensemble avec d’autres sources affectées dans le stock associé à votre site web.<br></br>Dans les services Inventory management standard, la variable [!DNL Ship from Store] L’option est inhérente et ne peut pas être désactivée. Avec la solution d’exécution de magasin, vous pouvez l’activer ou la désactiver.<br></br>Vous pouvez ajuster ce paramètre par emplacement et produit marchand.</td>
+<td>Active ou désactive l’option Livraison à domicile dans vos magasins marchands. Lorsque cette option est activée, les emplacements de magasin marchand sont pris en compte dans l’ensemble avec d’autres sources affectées dans le stock associé à votre site web.<br></br>Dans les services Inventory management standard, l’option [!DNL Ship from Store] est inhérente et ne peut pas être désactivée. Avec la solution d’exécution de magasin, vous pouvez l’activer ou la désactiver.<br></br>Vous pouvez ajuster ce paramètre par emplacement commercial et par produit.</td>
 <td>Global</td>
 <td>Non</td>
 </tr>
@@ -330,7 +330,7 @@ Configurez les paramètres de sécurité du compte utilisateur et du mot de pass
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td><em>[!UICONTROL Yes]</em>: l’utilisateur doit modifier son mot de passe après la configuration du compte.<br></br><em>[!UICONTROL No]</em>: recommande à l’utilisateur de modifier le mot de passe après la configuration du compte.</td>
+<td><em>[!UICONTROL Yes]</em>: l’utilisateur doit modifier son mot de passe après la configuration du compte.<br></br><em>[!UICONTROL No]</em> : recommande à l’utilisateur de changer de mot de passe après la configuration du compte.</td>
 <td>Global</td>
 <td>Non</td>
 </tr>
@@ -345,13 +345,14 @@ Configurez les paramètres de sécurité du compte utilisateur et du mot de pass
 
 ## Méthodes de diffusion
 
-L’exécution du magasin fonctionne en étendant le Adobe Commerce natif. [!DNL In-Store Delivery] fonctionnalités. Après avoir installé l’extension, vous pouvez configurer les méthodes de remise en magasin à l’aide des paramètres étendus suivants qui sont ajoutés à l’administrateur.
+L’exécution de magasin fonctionne en étendant les fonctionnalités natives d’ Adobe Commerce [!DNL In-Store Delivery] . Après avoir installé l’extension, vous pouvez configurer les méthodes de remise en magasin à l’aide des paramètres étendus suivants qui sont ajoutés à l’administrateur.
 
-- **Reprise en magasin**—Options d’offre pour la diffusion en magasin pendant le processus de passage en caisse Ces paramètres configurent les scénarios de livraison les plus courants pour les commandes BOPIS.
+- **Prise en main en magasin** : options d’offre pour la diffusion en magasin pendant le processus de passage en caisse
+Ces paramètres configurent les scénarios de diffusion les plus courants pour les commandes BOPIS.
 
-- **[!UICONTROL Curbside pick up]**- Offre des options permettant aux clients de se garer sur un emplacement de magasin et de recevoir leur commande par un associé du magasin.
+- **[!UICONTROL Curbside pick up]** - Options d’offre permettant aux clients de se garer à un emplacement de magasin et de recevoir leur commande par un associé du magasin.
 
-Configurez ces paramètres à partir de l’option Admin en sélectionnant <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
+Configurez ces paramètres à partir de l’administrateur en sélectionnant <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 >[!NOTE]
 >
@@ -400,7 +401,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 </thead>
 <tbody><tr>
 <td><strong>Titre de la diffusion d’accueil</strong></td>
-<td>Spécifie le titre à afficher pour l’option Livraison à domicile dans les zones Produit, Panier et Passage en caisse. La diffusion à domicile fait référence aux fonctionnalités d’expédition standard d’Adobe Commerce, depuis un entrepôt, par un opérateur ou directement vers l’adresse d’expédition fournie par le client. </br></br>Ce libellé n’a aucune incidence sur les libellés des méthodes d’expédition pour le transporteur sélectionné.</td>
+<td>Spécifie le titre à afficher pour l’option Livraison à domicile dans les zones Produit, Panier et Passage en caisse. La diffusion à domicile fait référence aux fonctionnalités d’expédition standard d’Adobe Commerce, depuis un entrepôt, par un opérateur ou directement vers l’adresse d’expédition fournie par le client. </br></br>Ce libellé n’a aucune incidence sur les étiquettes des méthodes d’expédition pour l’opérateur de livraison sélectionné.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -436,7 +437,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 </tr>
 <tr>
 <td><strong>Instructions de récupération en magasin</strong></td>
-<td>Lorsqu’une commande est prête à être récupérée dans vos magasins de détail, le client est averti par e-mail. Si le client a sélectionné [!DNL In-Store Pickup] pendant le passage en caisse, vous pouvez personnaliser les instructions de sélection ici. </br></br>Ces instructions sont définies globalement et s’appliquent à tous les emplacements de magasins de détail. Vous pouvez également personnaliser les instructions au niveau de l’emplacement du magasin de détail.</td>
+<td>Lorsqu’une commande est prête à être récupérée dans vos magasins de détail, le client est averti par e-mail. Si le client a sélectionné [!DNL In-Store Pickup] pendant le passage en caisse, vous pouvez personnaliser les instructions de prise en main ici. </br></br>Ces instructions sont définies globalement et s’appliquent à tous les emplacements de magasins de détail. Vous pouvez également personnaliser les instructions au niveau de l’emplacement du magasin de détail.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -454,7 +455,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 </tr>
 <tr>
 <td><strong>Étiquette du temps de récupération estimé</strong></td>
-<td>Affiche la durée estimée jusqu’à ce qu’une commande soit disponible pour la récupération des clients. Ces informations s’affichent pour les clients lorsqu’ils sélectionnent un emplacement de magasin pour le [!DNL In-Store Pickup] option de diffusion. </br></br>Lors de la personnalisation de ce libellé, vous pouvez utiliser le code <code>%1</code> pour insérer vos <strong>Délai d’avance estimé pour la collecte</strong>. Par exemple :</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Ce paramètre s’applique à tous les emplacements de magasins de détail. Vous pouvez également personnaliser le délai d’avance au niveau de l’emplacement du magasin de détail.</td>
+<td>Affiche la durée estimée jusqu’à ce qu’une commande soit disponible pour la récupération des clients. Ces informations s’affichent pour les clients lorsqu’ils sélectionnent un emplacement de boutique pour l’option de diffusion [!DNL In-Store Pickup]. </br></br>Lors de la personnalisation de cette étiquette, vous pouvez utiliser le code <code>%1</code> pour insérer le <strong>temps d’avance estimé pour la collecte</strong>. Par exemple : </br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Ce paramètre s’applique à tous les emplacements de magasins de détail. Vous pouvez également personnaliser le délai d’avance au niveau de l’emplacement du magasin de détail.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 <tr>
@@ -480,7 +481,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 </thead>
 <tbody><tr>
 <td><strong>En stock</strong></td>
-<td>Lorsqu’un client utilise le localisateur de la boutique de détail, la disponibilité du stock des articles en cours s’affiche pour chaque emplacement. </br></br>Vous pouvez personnaliser la variable <em>[!UICONTROL in-stock]</em> libellé d’état ici.</td>
+<td>Lorsqu’un client utilise le localisateur de la boutique de détail, la disponibilité du stock des articles en cours s’affiche pour chaque emplacement. </br></br>Vous pouvez personnaliser l’étiquette d’état <em>[!UICONTROL in-stock]</em> ici.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -492,7 +493,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 </tr>
 <tr>
 <td><strong>Partiellement en stock</strong></td>
-<td>Lorsqu’un client utilise le localisateur de la boutique de détail, la disponibilité du stock de tous les articles en cours s’affiche pour chaque emplacement. </br></br>Vous pouvez personnaliser la variable <em>[!UICONTROL partially in-stock]</em> libellé d’état ici.</td>
+<td>Lorsqu’un client utilise le localisateur de la boutique de détail, la disponibilité du stock de tous les articles en cours s’affiche pour chaque emplacement. </br></br>Vous pouvez personnaliser l’étiquette d’état <em>[!UICONTROL partially in-stock]</em> ici.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>

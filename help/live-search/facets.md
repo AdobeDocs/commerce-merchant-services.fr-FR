@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Facettes
 
-La facette est une méthode de filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut comme critères de recherche. La recherche à facettes est similaire, mais considérablement &quot;plus intelligente&quot; que la norme [navigation par couches](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). La liste des filtres disponibles est déterminée par la variable [attributs filtrables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) des produits renvoyés dans les résultats de recherche.
+La facette est une méthode de filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut comme critères de recherche. La recherche à facettes est similaire, mais considérablement &quot;plus intelligente&quot; que la [navigation par couches](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html) standard. La liste des filtres disponibles est déterminée par les [attributs filtrables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) des produits renvoyés dans les résultats de recherche.
 
-[!DNL Live Search] utilise la variable `productSearch` qui renvoie des facettes et d’autres données spécifiques à [!DNL Live Search]. Voir [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) dans la documentation destinée aux développeurs pour consulter des exemples de code.
+[!DNL Live Search] utilise la requête `productSearch`, qui renvoie des facettes et d’autres données spécifiques à [!DNL Live Search]. Pour obtenir des exemples de code, reportez-vous à la requête [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) dans la documentation destinée aux développeurs.
 
 ![Résultats de la recherche filtrés](assets/storefront-search-results-run.png)
 
@@ -38,21 +38,21 @@ Si vous avez un grand nombre d’attributs à utiliser, pensez à combiner les a
 
 | Paramètre | Description |
 |--- |--- |
-| [Paramètres d’affichage des catégories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ancre - `Yes` |
+| [ Paramètres d’affichage des catégories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ancre - `Yes` |
 | [Propriétés d’attribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Type d’entrée de catalogue](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (widget uniquement), `Text swatch` (widget uniquement) |
 | Propriétés Attribute storefront | Utilisation dans la navigation par couches des résultats de recherche - `Yes` |
 
 ## Agrégation des facettes
 
-L’agrégation des facettes est effectuée comme suit : si le storefront comporte trois facettes (catégories, couleur et prix) et que les filtres du nouvel acheteur sont appliqués aux trois éléments (couleur = bleu, le prix est compris entre 10,00 et 50,00 $, catégories = `promotions`).
+L’agrégation des facettes est effectuée comme suit : si le storefront comporte trois facettes (catégories, couleur et prix) et que les filtres de la boutique sont appliqués aux trois éléments (couleur = bleu, le prix est compris entre 10,00 $ et 50,00 $, catégories = `promotions`).
 
-* `categories` agrégation - Agrégats `categories`, puis applique la variable `color` et `price` filtres, mais pas le filtre `categories` filtre.
-* `color` agrégation - Agrégats `color`, puis applique la variable`price` et `categories` filtres, mais pas le filtre `color` filtre.
-* `price` agrégation - Agrégats `price`, puis applique la variable `color` et `categories` filtres, mais pas le filtre `price` filtre.
+* `categories` - Agrégat `categories`, puis applique les filtres `color` et `price`, mais pas le filtre `categories`.
+* `color` - Agrégat `color`, puis applique les filtres `price` et `categories`, mais pas le filtre `color`.
+* `price` - Agrégat `price`, puis applique les filtres `color` et `categories`, mais pas le filtre `price`.
 
 ## Valeurs d’attribut par défaut
 
-Les attributs de produit suivants ont [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) qui sont utilisés par [!DNL Live Search] et activé par défaut.
+Les attributs de produit suivants ont des [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) utilisées par [!DNL Live Search] et activées par défaut.
 
 | Propriété | Propriété Storefront | Attribut |
 |---|---|---|
@@ -62,7 +62,7 @@ Les attributs de produit suivants ont [propriétés storefront](https://experien
 
 ## Propriétés d’attribut non système par défaut
 
-Le tableau suivant présente les propriétés de recherche et de filtrage par défaut des attributs non-système, y compris ceux spécifiques aux exemples de données Luma. La définition de la variable *Utilisation dans la recherche* Attribuer à `Yes` rend l’attribut consultable dans les deux [!DNL Live Search] et Adobe Commerce natif.
+Le tableau suivant présente les propriétés de recherche et de filtrage par défaut des attributs non-système, y compris ceux spécifiques aux exemples de données Luma. La définition de la propriété d’attribut *Use in Search* sur `Yes` rend l’attribut consultable dans [!DNL Live Search] et dans Adobe Commerce natif.
 
 | Code d’attribut | Recherche | Utilisation dans la navigation par calques |
 |--- |--- |--- |

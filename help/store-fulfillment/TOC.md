@@ -9,25 +9,25 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 10%
+ht-degree: 8%
 
 ---
 
 
-# Traitement des commandes en magasin pour  Commerce {#store-fulfillment}
+# Exécution de la boutique pour Commerce {#store-fulfillment}
 
 - [Présentation du guide](guide-overview.md)
-- [Introduction à [!DNL Store Fulfillment]](introduction.md)
+- [Présentation de [!DNL Store Fulfillment]](introduction.md)
 - [Workflows d’assistance de magasin](store-assist-modules.md)
 - [Conditions](solution-requirements.md)
 - [Notes de mise à jour](release-notes.md)
-- Exécution de la boutique intégrée {#onboarding}
+- Exécution en magasin à bord {#onboarding}
    - [Présentation de l’intégration](onboard.md)
    - [Installation de l’extension](install.md)
    - [Connexion à l’exécution du magasin](connect-set-up-service.md)
    - [Test et déploiement](test-and-deploy.md)
 - [Présentation de la configuration](service-config-settings-overview.md)
-- Configuration du magasin {#store-configuration}
+- Configuration de magasin {#store-configuration}
    - [Configuration générale](enable-general.md)
    - [Modèles d’email de vente](sales-emails.md)
    - [Magasin marchand (sources)](merchant-store-configuration.md)

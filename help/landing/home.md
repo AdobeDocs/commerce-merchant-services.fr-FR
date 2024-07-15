@@ -19,7 +19,7 @@ Adobe fournit un ensemble de services Commerce, d’intégration et de données 
 
 >[!BEGINSHADEBOX &quot;Informations sur la version&quot;]
 
-Voir [nouveautés de notre documentation](whats-new.md) ou [notes de mise à jour](release-notes-all.md) pour chaque service Commerce.
+Voir les [nouveautés de notre documentation](whats-new.md) ou les [notes de mise à jour](release-notes-all.md) pour chaque service Commerce.
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +51,7 @@ Voir [nouveautés de notre documentation](whats-new.md) ou [notes de mise à jou
 <tr>
   <td valign="top" width="200px">
     <img alt="Services de paiement" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Services de paiement</strong></a>  <br><em>(Disponible pour Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Services de paiement</strong></a> <br><em>(Disponible pour le Magento Open Source)</em>
     <div>Stimuler la satisfaction des clients en proposant facilement différents modes de paiement, notamment des versements sans intérêts, et une vue unique du traitement des paiements, des commandes et des factures.</div>
   </td>
     </tr>
@@ -65,14 +65,14 @@ Voir [nouveautés de notre documentation](whats-new.md) ou [notes de mise à jou
 <tr>
     <td valign="top" width="200px">
        <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Canal de vente Amazon</strong></a> <br><em>(Disponible pour Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Canal de vente Amazon</strong></a> <br><em>(Disponible pour le Magento Open Source)</em>
     <div>Intégrez-vous à la plus grande destination mondiale d’achats en ligne pour activer les ventes Amazon, automatiser et synchroniser les données, gérer les listes Amazon, etc. à l’aide d’un seul tableau de bord.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>Gestionnaire de canaux</strong></a> <br><em>(Disponible pour Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>Gestionnaire de canaux</strong></a> <br><em>(Disponible pour le Magento Open Source)</em>
     <div>Augmentez les ventes, atteignez de nouveaux clients, rationalisez les opérations et gagnez du temps grâce à l’intégration à Walmart Marketplace. Permettre au personnel de gérer de manière transparente les ventes, les stocks et les tarifs de Walmart Marketplace, le tout dans Commerce.</div>
   </td>
    </tr>

@@ -21,11 +21,11 @@ Dans l’administrateur Adobe Commerce, les paramètres de configuration des ser
 | **Type** | **Description** | **API configurable** |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | [Configuration générale](enable-general.md) | Intégration générale configurée pour la solution d’exécution de magasin, ses fonctionnalités actives et ses informations d’identification pour se connecter aux services d’exécution. | Non |
-| [Configuration des e-mails de ventes](sales-emails.md) | Configurez des modèles d’e-mail supplémentaires pour les notifications client envoyées pendant le processus d’archivage. | Non |
-| [Configuration de la boutique marchande](merchant-store-configuration.md) | Configurez des sources Inventory management améliorées en tant que magasins marchands. | Oui |
+| [Configuration des e-mails de vente](sales-emails.md) | Configurez des modèles d’e-mail supplémentaires pour les notifications client envoyées pendant le processus d’archivage. | Non |
+| [Configuration de la boutique d’achats](merchant-store-configuration.md) | Configurez des sources Inventory management améliorées en tant que magasins marchands. | Oui |
 | [Gestion des stocks de produits](product-stock.md) | Configurez les fonctionnalités et la messagerie du stock commercial disponibles pour les clients. | Oui |
-| [Transfert de source Inventory management](inventory-stock-transfer.md) | Configurez un nouveau stock, transférez le stock par défaut. | Oui |
-| [Configuration de plusieurs sites web/domaines](multi-site-and-scope-config.md) | Configurez les stocks et les méthodes de diffusion pour plusieurs sites web/portées de magasin. | Non |
+| [Inventory management Source Transfer](inventory-stock-transfer.md) | Configurez un nouveau stock, transférez le stock par défaut. | Oui |
+| [Configuration de plusieurs sites Web/domaines](multi-site-and-scope-config.md) | Configurez les stocks et les méthodes de diffusion pour plusieurs sites web/portées de magasin. | Non |
 | [Configuration du système de processus en arrière-plan](background-processes.md) | Configurez les plannings des processus en arrière-plan utilisés pour synchroniser les données avec les services d’exécution. | Non |
 | [Configuration de l’emplacement et du mappage du magasin](store-location-map-provider-setup.md) | Configurer la possibilité d’utiliser un fournisseur de distance pour rechercher des magasins de détail et afficher ces informations dans la carte SLS | Oui |
 | [Configuration de l’expérience d’archivage](check-in-experience-setup.md) | Configurez la couleur de la voiture et les options de la marque de voiture qui seront disponibles pendant le processus d’archivage. | Oui |
@@ -34,16 +34,16 @@ Dans l’administrateur Adobe Commerce, les paramètres de configuration des ser
 
 ## Utilisation de la référence de configuration
 
-Affichez la référence de configuration pour chaque type de paramètre en sélectionnant le nom du type dans la _Paramètres de configuration d’exécution de magasin par type_ table.
+Affichez la référence de configuration pour chaque type de paramètre en sélectionnant le nom du type dans la table _Paramètres de configuration de l’exécution de la boutique par type_ .
 
 Dans la référence de configuration de chaque type, les détails de configuration sont affichés dans un tableau avec les en-têtes de colonne suivants :
 
-- **Champ** fait référence au nom du champ à configurer
+- **Field** fait référence au nom du champ à configurer
 
-- **Description** fournit des détails importants sur l’objectif et le comportement du champ ;
+- **Description** fournit des détails importants sur l’objectif et le comportement du champ.
 
-- **Portée** indique la portée de la configuration Adobe Commerce pour le paramètre (global, site web, magasin)
+- **Scope** indique l’étendue de la configuration Adobe Commerce pour le paramètre (global, site web, magasin)
 
-- **Obligatoire** indique si une valeur doit être définie sur le champ.
+- La valeur **Required** indique si une valeur doit être définie sur le champ
 
 À titre de référence technique, vous pouvez également trouver le chemin de configuration interne de chaque champ.

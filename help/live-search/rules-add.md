@@ -15,9 +15,9 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 
 ## Ajouter une règle
 
-1. Dans Admin, accédez à **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Définissez la variable **Portée** pour identifier la variable [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) lorsque la règle s’applique.
-1. Cliquez sur le bouton **Marchandisage des recherches** workspace.
+1. Dans l’administrateur, accédez à **Marketing** > Recherche et optimisation pour les moteurs de recherche > **[!DNL Live Search]**.
+1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où la règle s’applique.
+1. Cliquez sur l’espace de travail **Rechercher un marchandisage** .
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 
 ## Type de règle
@@ -31,7 +31,7 @@ Choisissez le type de classement intelligent par défaut et tout classement manu
 
 Les conditions sont les conditions requises pour déclencher un événement. Une règle peut comporter jusqu’à dix conditions et 25 événements. Une règle par défaut ne peut pas avoir de conditions.
 
-![Règle - Création de votre règle](assets/rules-add-workspace.png)
+![Règle - Créer votre règle](assets/rules-add-workspace.png)
 
 >[!NOTE]
 >
@@ -39,35 +39,35 @@ Les conditions sont les conditions requises pour déclencher un événement. Une
 
 ### Condition unique
 
-1. Sous *Créer votre règle*, sélectionnez la variable **Condition** et suivez les instructions pour remplir l’instruction .
+1. Sous *Créer votre règle*, sélectionnez la **condition** à remplir, puis suivez les instructions pour terminer l’instruction.
 
-   * Requête de recherche contenant : entrez la chaîne de texte qui doit se trouver dans la requête de l’acheteur. Le paramètre Correspondance détermine le degré auquel la requête de l’acheteur correspond au catalogue. Options :<br /> N’importe lequel : toute partie du texte de requête de l’acheteur peut correspondre à la condition.<br />Tous : toutes les requêtes de l’acheteur doivent correspondre à la condition .
-   * La requête de recherche est : entrez une chaîne de texte correspondant exactement à la requête de l’acheteur. Par exemple : &quot;pantalon de yoga&quot;. Règles avec `Search query is` et correspondre `All` ne peut comporter qu’une seule condition.
+   * Requête de recherche contenant : entrez la chaîne de texte qui doit se trouver dans la requête de l’acheteur. Le paramètre Correspondance détermine le degré auquel la requête de l’acheteur correspond au catalogue. Options : <br /> Quelconque - Toutes les parties du texte de requête de l’acheteur peuvent correspondre à la condition.<br />Tous - Toutes les requêtes de l’acheteur doivent correspondre à la condition.
+   * La requête de recherche est : entrez une chaîne de texte correspondant exactement à la requête de l’acheteur. Par exemple : &quot;pantalon de yoga&quot;. Les règles avec `Search query is` et la correspondance `All` ne peuvent avoir qu’une seule condition.
    * La requête de recherche commence par : saisissez un caractère ou une chaîne de texte qui doit se trouver au début de la requête du client.
    * La requête de recherche se termine par : saisissez un caractère ou une chaîne de texte qui doit se trouver à la fin de la requête du client.
 
-   Les résultats apparaissent immédiatement dans la variable *Tester votre règle* et sont numérotés par priorité. Vous pouvez utiliser la variable *Résultats par ligne* curseur dans le coin supérieur droit pour modifier le nombre de produits dans chaque ligne.
+   Les résultats apparaissent immédiatement dans le volet *Tester votre règle* et sont numérotés par priorité. Vous pouvez utiliser le curseur *Résultats par ligne* dans la partie supérieure.    droit de modifier le nombre de produits dans chaque ligne.
 
    ![Règle - simple](assets/rule-simple-test.png)
 
-1. Pour tester d’autres requêtes, modifiez le texte de la requête dans la variable *Tester votre règle* zone de recherche et appuyez sur **Retour**.
+1. Pour tester d’autres requêtes, modifiez le texte de la requête dans la zone de recherche *Testez votre règle* et appuyez sur **Retour**.
 Au départ, le volet de test effectue le rendu de la requête à partir de la zone de recherche Conditions. Mais maintenant, la requête est rendue à partir de la boîte de requête de test. Le volet de test effectue le rendu d’une seule requête à la fois.
-1. Si vous souhaitez le résultat, mettez à jour le texte dans la variable *Conditions* zone de recherche. Cliquez ensuite n’importe où sur la page pour mettre à jour les résultats dans le volet de test.
-1. Pour créer une règle simple avec une condition, accédez à l’étape 3 : [Ajout d’événements](#events).
+1. Si vous souhaitez le résultat, mettez à jour le texte dans la zone de recherche *Conditions* . Cliquez ensuite n’importe où sur la page pour mettre à jour les résultats dans le volet de test.
+1. Pour créer une règle simple avec une condition, passez à l’ Étape 3 : [Ajouter des événements](#events).
 
 ### Conditions multiples
 
 1. Pour créer une règle avec plusieurs conditions, cliquez sur **Ajouter une condition**.
-Une règle peut comporter jusqu&#39;à dix conditions. L’opérateur logique qui rejoint deux conditions est basé sur la condition actuelle *Correspondance* . Par défaut, *Correspondance* is `All` et l’opérateur logique est `AND`.
+Une règle peut comporter jusqu&#39;à dix conditions. L’opérateur logique qui joint deux conditions est basé sur le paramètre actuel *Correspondance* . Par défaut, *Match* est `All` et l’opérateur logique est `AND`.
 
 1. Sélectionnez la seconde condition et saisissez le texte de la requête.
 
-1. Pour modifier la logique de la règle, modifiez la variable **Correspondance** pour déterminer dans quelle mesure les critères de recherche de l’acheteur doivent correspondre à la condition de requête. Définir **Correspondance** à l’une des options suivantes :
+1. Pour modifier la logique de la règle, modifiez le paramètre **Correspondance** afin de déterminer de quelle façon les critères de recherche de l’acheteur doivent correspondre à la condition de requête. Définissez **Correspondance** sur l’une des options suivantes :
 
-   * Any - (par défaut) Tous les opérateurs logiques de la règle sont définis sur `OR` et les résultats s’affichent dans le volet test.
-   * Tous : tous les opérateurs logiques de la règle sont définis sur `AND` et les résultats s’affichent dans le volet test.
+   * Any - (par défaut) Tous les opérateurs logiques de la règle sont définis sur `OR` et les résultats apparaissent dans le volet de test.
+   * Tous : tous les opérateurs logiques de la règle sont définis sur `AND` et les résultats apparaissent dans le volet de test.
 
-   La variable *Correspondance* détermine l’opérateur logique utilisé pour joindre plusieurs conditions. Changement de la variable *Correspondance* modifie tous les opérateurs logiques de la règle. Il n’est pas possible de combiner des `AND` et `OR` dans la même règle.
+   La valeur *Match* détermine l’opérateur logique utilisé pour joindre plusieurs conditions. La modification du paramètre *Correspondance* modifie tous les opérateurs logiques de la règle. Il n’est pas possible de combiner `AND` et `OR` dans la même règle.
 
    Dans cet exemple, plutôt que de rechercher &quot;pantalon de yoga&quot;, il existe deux requêtes distinctes qui recherchent &quot;yoga&quot; ou &quot;pantalon&quot;. Cette règle est moins spécifique et est déclenchée plus souvent dans le storefront que l’autre.
 
@@ -85,7 +85,7 @@ Les propriétaires de magasins peuvent configurer les types de stratégies de cl
 * Le plus acheté : les produits sont classés par total d’achats par SKU au cours des 7 jours précédents.
 * Le plus ajouté au panier : Classement par ordre d’importance des activités &quot;Ajouter au panier&quot; totales au cours des 7 jours précédents.
 * Le plus consulté : classe le nombre total de vues par SKU au cours des 7 jours précédents.
-* Recommandé pour vous : permet d’utiliser la variable `viewed-viewed` point de données : les acheteurs qui ont consulté ce SKU ont également consulté ces autres SKU.
+* Recommandé pour vous - Utilise le point de données `viewed-viewed` - Les acheteurs qui ont consulté ce SKU ont également consulté ces autres SKU
 * Tendance : recherche les événements de page vue des dernières 72 heures pour les événements d’arrière-plan et 24 heures pour les événements de premier plan.
 * Aucun : les produits sont commandés selon la pertinence
 
@@ -118,7 +118,7 @@ Vous pouvez également cliquer sur l’icône en forme d’épingle pour épingl
 
 Ou les événements peuvent être définis manuellement :
 
-1. Sous *Événements*, choisissez la variable **Événement** à se produire lorsque les conditions associées sont remplies.
+1. Sous *Events*, sélectionnez l’ **Event** à avoir lorsque les conditions associées sont remplies.
 
    Par exemple, choisissez `Hide a product`. Saisissez ensuite le nom du produit que vous souhaitez masquer. Les produits sont proposés au fur et à mesure que vous tapez.
 
@@ -126,23 +126,23 @@ Ou les événements peuvent être définis manuellement :
 
 ## Informations supplémentaires
 
-Les informations saisies ici apparaissent dans le [Détails de la règle](rules-workspace.md) du panneau.
+Les informations saisies ici apparaissent dans le panneau [Détails de la règle](rules-workspace.md).
 
-1. Sous *Détails*, saisissez une **Nom** pour la règle. Tous les noms de règle doivent être uniques.
-1. Entrez un résumé **Description** de la règle.
-1. Saisissez le **Date de début** et **Date de fin** pour que la règle soit active ou sélectionnez les dates du calendrier.
+1. Sous *Details*, saisissez un **Nom** pour la règle. Tous les noms de règle doivent être uniques.
+1. Saisissez un résumé **Description** de la règle.
+1. Saisissez les **Date de début** et **Date de fin** pour que la règle soit active ou sélectionnez les dates du calendrier.
 
    Pour sélectionner une plage de dates, cliquez sur la première date et faites glisser le curseur pour la sélectionner.
 
-   ![Règle - Terminé](assets/rule-add-details.png)
+   ![Règle - Complète](assets/rule-add-details.png)
 
 ## Finaliser la règle
 
 1. Examinez les résultats de la règle dans le volet de test.
 1. Si la règle comporte plusieurs requêtes, testez chacune d’elles susceptibles d’être affectées par la règle.
-1. Lorsque vous avez terminé, cliquez sur **Enregistrer et publier**.
+1. Une fois l’opération terminée, cliquez sur **Enregistrer et publier**.
 
-   La règle est ajoutée à la liste dans la variable *Règles* workspace.
+   La règle est ajoutée à la liste dans l’espace de travail *Rules*.
 
 1. Bien que les règles actives entrent immédiatement en vigueur, vous devrez peut-être attendre jusqu’à 15 minutes que les résultats de la requête mise en cache dans le storefront soient actualisés.
 
@@ -161,8 +161,8 @@ Les informations saisies ici apparaissent dans le [Détails de la règle](rules-
 
 | Opérateur | Description |
 |--- |--- |
-| OU | (Par défaut) L’opérateur logique `OR` compare deux conditions et répond aux exigences afin de déclencher un événement si au moins une condition est vraie. |
-| ET | Opérateur logique `AND` compare deux conditions et répond aux exigences afin de déclencher un événement si les deux conditions sont vraies. |
+| OU | (Par défaut) L’opérateur logique `OR` compare deux conditions et répond aux exigences pour déclencher un événement si au moins une condition est vraie. |
+| ET | L’opérateur logique `AND` compare deux conditions et répond aux exigences pour déclencher un événement si les deux conditions sont vraies. |
 
 ### Opérateurs de correspondance
 

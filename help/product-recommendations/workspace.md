@@ -4,25 +4,25 @@ description: Découvrez comment configurer, gérer et surveiller les performance
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
 source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
 
 # [!DNL Product Recommendations] Workspace
 
-La variable [!DNL Product Recommendations] workspace affiche une liste de recommandations configurées précédemment avec des mesures qui vous aident à suivre le succès de chaque recommandation. La liste peut être configurée pour calculer des mesures pour le dernier jour, la dernière semaine ou le dernier mois. Vous pouvez utiliser les mesures pour créer des informations exploitables en fonction de la fréquence de consultation ou de clic d’une unité de recommandations, ou pour analyser les performances de vos recommandations.
+L’espace de travail [!DNL Product Recommendations] affiche une liste des recommandations configurées précédemment avec des mesures qui vous aident à suivre le succès de chaque recommandation. La liste peut être configurée pour calculer des mesures pour le dernier jour, la dernière semaine ou le dernier mois. Vous pouvez utiliser les mesures pour créer des informations exploitables en fonction de la fréquence de consultation ou de clic d’une unité de recommandations, ou pour analyser les performances de vos recommandations.
 
 ![Espace de travail Recommendations](assets/workspace.png)
-_Espace de travail Recommendations_
+_Recommendations Workspace_
 
 ## Définition de la portée
 
-Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de tous les paramètres de recommandation définis sur `Default Store View`. Si votre installation Commerce comprend plusieurs vues de magasin, définissez **Portée** à la fonction [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où s’appliquent vos recommandations.
+Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de tous les paramètres de recommandation est définie sur `Default Store View`. Si votre installation Commerce comprend plusieurs vues de magasin, définissez **Scope** sur la [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où vos recommandations s’appliquent.
 
 ## Définition de la période des mesures
 
-1. Cliquez sur le bouton **Calendrier** ![Sélecteur de calendrier](assets/icon-calendar.png) contrôle.
+1. Cliquez sur la commande **Calendar** ![Calendar selector](assets/icon-calendar.png) .
 
 1. Sélectionnez l’une des options suivantes :
 
@@ -34,7 +34,7 @@ Initialement, la variable [scope](https://experienceleague.adobe.com/docs/commer
 
 ## Afficher/masquer les colonnes
 
-1. Dans le coin supérieur gauche, cliquez sur **Afficher/masquer** ![Sélecteur de colonnes](assets/icon-show-hide-columns.png) colonnes.
+1. Dans le coin supérieur gauche, cliquez sur les colonnes **Afficher/masquer** ![Sélecteur de colonnes](assets/icon-show-hide-columns.png) .
 
    Les colonnes visibles sont cochées en bleu.
 
@@ -66,7 +66,7 @@ _Paramètres Recommendations_
    ![Espace de travail Recommendations](assets/recommendation-detail.png)
    _Détails sur le taux de conversion de la page d’accueil_
 
-1. Pour modifier le statut de la recommandation, cliquez sur **Activer** ou **Désactiver**.
+1. Pour modifier l’état de la recommandation, cliquez sur **Activer** ou **Désactiver**.
 
 ## Modifier la recommandation
 
@@ -81,9 +81,9 @@ Sur la page des détails de la recommandation, cliquez sur **Créer**. Pour en s
 | Contrôle | Description |
 |---|---|
 | ![Sélecteur de calendrier](assets/icon-calendar.png) | Détermine la période utilisée pour les calculs de mesures. Options : 24 heures / 7 jours / 30 jours |
-| ![Sélecteur de colonnes](assets/icon-show-hide-columns.png) | Détermine les colonnes qui apparaissent dans le [!DNL Product Recommendations] table. |
+| ![Sélecteur de colonnes](assets/icon-show-hide-columns.png) | Détermine les colonnes qui apparaissent dans la table [!DNL Product Recommendations]. |
 | Paramètres | Détermine l’espace de données SaaS dans lequel les données de comportement de recommandation sont récupérées et active également le type de recommandation de similarité visuelle. |
-| Créer une recommandation | Ouvre la [Créer une recommandation](create.md) page. |
+| Créer une recommandation | Ouvre la page [Créer une recommandation](create.md). |
 
 ## Descriptions des colonnes
 
@@ -98,7 +98,7 @@ Sur la page des détails de la recommandation, cliquez sur **Créer**. Pour en s
 | Impressions | Nombre de chargements et de rendus d’une unité de recommandation sur une page. Une unité de recommandation située sous le pli de la fenêtre d’affichage du navigateur s’affiche sur la page, mais n’est pas affichée par l’acheteur. Dans ce cas, l’unité rendue est comptée comme une impression, mais une vue n’est comptée que si l’utilisateur fait défiler l’unité dans la vue. |
 | vImpressions | (Impressions affichables) Nombre d’unités de recommandations qui enregistrent au moins une vue. |
 | Vues | Nombre d’unités de recommandations qui apparaissent dans la fenêtre d’affichage du navigateur de l’acheteur. Cet événement peut se déclencher plusieurs fois sur une page. |
-| Clics | Somme du nombre de clics d’un acheteur sur un élément de l’unité de recommandation et du nombre de clics de l’acheteur sur l’événement **Ajouter au panier** dans l’unité de recommandation |
+| Clics | Somme du nombre de fois où un acheteur clique sur un article dans l’unité de recommandation et du nombre de fois où il clique sur le bouton **Ajouter au panier** dans l’unité de recommandation |
 | Recettes | Les recettes générées par la recommandation pour la période en cours. |
 | Recettes Lt | (Recettes sur la durée de vie) Les recettes sur la durée de vie générées par une recommandation. |
 | Visibilité | Pourcentage d’unités de recommandations qui s’inscrivent pour la vue. |

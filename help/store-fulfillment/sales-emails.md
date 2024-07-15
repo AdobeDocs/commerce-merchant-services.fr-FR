@@ -19,7 +19,7 @@ L’exécution de magasin offre un ensemble étendu de modèles d’email transa
 
 Les modèles de courrier électronique d’exécution de magasin sont configurés avec la messagerie et les paramètres par défaut. Les administrateurs du commerce dans Adobe Commerce peuvent gérer et modifier les configurations, et sélectionner les modèles d’email pour communiquer avec les clients dans différents scénarios. Les administrateurs peuvent également configurer et personnaliser des modèles.
 
-Configurez les modèles d’e-mail de vente à partir de l’administrateur : **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
+Configurez les modèles d’email de vente à partir de l’administrateur : **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
 
 ## Emails - Paramètres généraux
 
@@ -34,7 +34,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </thead>
 <tbody><tr>
 <td><strong>Envoi asynchrone</strong></td>
-<td>Détermine si les courriers électroniques de vente sont envoyés de manière asynchrone. Options : <br/>**`Désactiver** - (Par défaut) Les emails de vente sont envoyés lorsqu’ils sont déclenchés par un événement. Pour le délai de communication et de réponse le plus rapide pour le nettoyage de la boutique, utilisez le paramètre par défaut. <br/>**Activer** : l’activation de cette option déplace les processus qui gèrent le passage en caisse et le traitement des notifications email en arrière-plan à envoyer à intervalles réguliers et prédéterminés.</td>
+<td>Détermine si les courriers électroniques de vente sont envoyés de manière asynchrone. Options : <br/>**`Désactiver** - (par défaut) Les emails de vente sont envoyés lorsqu’ils sont déclenchés par un événement. Pour le délai de communication et de réponse le plus rapide pour le nettoyage de la boutique, utilisez le paramètre par défaut. <br/>**`Activer`** : cette option permet de déplacer les processus qui gèrent le passage en caisse et le traitement des commandes des notifications email en arrière-plan à envoyer à intervalles réguliers et prédéterminés.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -207,7 +207,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </thead>
 <tbody><tr>
 <td><strong>Activé</strong></td>
-<td>Cet email est envoyé au client pour l'informer que sa commande a été annulée dans la boutique. Définissez sur . <code>No</code> pour désactiver la notification électronique. Si le modèle d'email est désactivé, sa fonctionnalité n'empêche pas l'annulation d'une commande.</td>
+<td>Cet email est envoyé au client pour l'informer que sa commande a été annulée dans la boutique. Définissez cette variable sur <code>No</code> pour désactiver la notification électronique. Si le modèle d'email est désactivé, sa fonctionnalité n'empêche pas l'annulation d'une commande.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -257,7 +257,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </thead>
 <tbody><tr>
 <td><strong>Activé</strong></td>
-<td>Cet email est envoyé au client pour l'informer qu'une partie de sa commande a été annulée dans la boutique. Définissez sur . <code>No</code> pour désactiver la notification électronique. Si le modèle d'email est désactivé, une commande n'est pas partiellement annulée.</td>
+<td>Cet email est envoyé au client pour l'informer qu'une partie de sa commande a été annulée dans la boutique. Définissez cette variable sur <code>No</code> pour désactiver la notification électronique. Si le modèle d'email est désactivé, une commande n'est pas partiellement annulée.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -312,8 +312,8 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 </thead>
 <tbody><tr>
 <td><strong>Commande possède un expéditeur de produits Expédier</strong></td>
-<td>Courrier électronique envoyé au personnel marchand spécifié sous la forme d’un rapport agrégé de toutes les commandes ouvertes qui ne peuvent pas être sélectionnées dans un magasin marchand tant que leur inventaire n’est pas disponible. </br></br> Les vendeurs peuvent utiliser ce rapport pour lancer et gérer les transferts d’inventaire ou le réapprovisionnement de magasin à magasin. </br></br>Cette notification s’applique uniquement lorsque la variable [!DNL Ship-to-Store] Les fonctions sont activées.
-</br></br>Ce libellé n’a aucune incidence sur l’opérateur de livraison sélectionné ni sur les étiquettes de méthode de livraison disponibles.</td>
+<td>Courrier électronique envoyé au personnel marchand spécifié sous la forme d’un rapport agrégé de toutes les commandes ouvertes qui ne peuvent pas être sélectionnées dans un magasin marchand tant que leur inventaire n’est pas disponible. </br></br> Les vendeurs peuvent utiliser ce rapport pour lancer et gérer les transferts d’inventaire ou le réapprovisionnement de magasin à magasin. </br></br>Cette notification s'applique uniquement lorsque les fonctionnalités [!DNL Ship-to-Store] sont activées.
+</br></br>Ce libellé n’affecte pas l’opérateur de livraison sélectionné ni les étiquettes de méthode de livraison disponibles.</td>
 <td>Affichage en magasin</td>
 <td>Non</td>
 </tr>
@@ -333,7 +333,7 @@ Configurez les modèles d’e-mail de vente à partir de l’administrateur : **
 
 >[!NOTE]
 >
->Si vous autorisez les commandes en arrière-plan, vous devez indiquer une adresse électronique d’administrateur pour recevoir des notifications concernant ces commandes. Ajoutez l&#39;adresse aux paramètres de configuration suivants : **[!UICONTROL Send Order Delayed Email Copy To]** dans le [Délai de commande](#order-delayed) modèle et [!UICONTROL Ship To Store Email Recipients] dans le [Bateau](#ship-to-store) modèle.
+>Si vous autorisez les commandes en arrière-plan, vous devez indiquer une adresse électronique d’administrateur pour recevoir des notifications concernant ces commandes. Ajoutez l’adresse aux paramètres de configuration suivants : **[!UICONTROL Send Order Delayed Email Copy To]** dans le modèle [Délai de commande](#order-delayed) et [!UICONTROL Ship To Store Email Recipients] dans le modèle [Ship to Store](#ship-to-store).
 
 
 

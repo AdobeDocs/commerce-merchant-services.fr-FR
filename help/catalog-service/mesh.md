@@ -1,27 +1,27 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '''[!DNL API Mesh] pour Adobe Commerce, permet d’intégrer plusieurs sources de données par le biais d’un point de terminaison GraphQL commun."'
+description: '[!DNL API Mesh] pour Adobe Commerce permet d’intégrer plusieurs sources de données par le biais d’un point de terminaison GraphQL commun.'
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-La variable [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces à des produits Adobe à l’aide de Adobe I/O Runtime.
+Le [Maillage d’API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces avec des produits Adobe à l’aide de Adobe I/O Runtime.
 
-![Diagramme d’architecture du catalogue](assets/catalog-service-architecture-mesh.png)
+![Diagramme d’architecture de catalogue](assets/catalog-service-architecture-mesh.png)
 
-La première étape de l’utilisation du maillage API avec le service de catalogue consiste à connecter le maillage API à votre instance. Voir les instructions détaillées dans [Créer un maillage](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+La première étape de l’utilisation du maillage API avec le service de catalogue consiste à connecter le maillage API à votre instance. Voir les instructions détaillées dans [Création d’un maillage](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Pour terminer la configuration, installez le [Package de ligne de commande Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Pour terminer la configuration, installez le [package Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Une fois que le maillage est configuré sur Adobe I/O Runtime, exécutez la commande suivante qui ajoute une `CommerceCatalogServiceGraph` source à votre impression.
+Une fois que l’impression est configurée sur Adobe I/O Runtime, exécutez la commande suivante qui ajoute une source `CommerceCatalogServiceGraph` à l’impression.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
@@ -36,7 +36,7 @@ Par exemple, la clé API peut être enregistrée dans le fichier :
 }
 ```
 
-Après l’exécution de cette commande, le service de catalogue doit s’exécuter par le biais du maillage API. Vous pouvez exécuter la variable `aio api-mesh:get` pour afficher la configuration de votre impression mise à jour.
+Après l’exécution de cette commande, le service de catalogue doit s’exécuter par le biais du maillage API. Vous pouvez exécuter la commande `aio api-mesh:get` pour afficher la configuration de votre impression mise à jour.
 
 ## Exemples de maillage d’API
 
@@ -45,7 +45,7 @@ Le maillage API permet aux utilisateurs d’utiliser des sources de données ext
 ### Activer les prix de niveau
 
 Dans cet exemple, le maillage API est utilisé pour activer les prix de niveau dans Adobe Commerce.
-Remplacez la variable `name `, `endpoint`, et `x-api-key` valeurs.
+Remplacez les valeurs `name `, `endpoint` et `x-api-key`.
 
 ```json
 {
@@ -160,7 +160,7 @@ query {
 
 ### Obtention d’un identifiant d’entité
 
-Ce maillage ajoute le `entityId` dans l’interface ProductView . Remplacez la variable `name `, `endpoint`, et `x-api-key` valeurs.
+Ce maillage ajoute le `entityId` à l’interface ProductView . Remplacez les valeurs `name `, `endpoint` et `x-api-key`.
 
 ```json
 {
@@ -237,7 +237,7 @@ Ce maillage ajoute le `entityId` dans l’interface ProductView . Remplacez la v
   }
 ```
 
-`entityId` peut maintenant être interrogé :
+`entityId` peut désormais être interrogé :
 
 ```graphql
 query {

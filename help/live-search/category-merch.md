@@ -1,6 +1,6 @@
 ---
 title: Marchandisage des catégories
-description: Utilisation [!DNL Live Search] Marchandisage des catégories pour une expérience d’achat plus rapide.
+description: Utilisez  [!DNL Live Search] le marchandisage par catégorie pour accélérer les achats.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Marchandisage des catégories
 
-Le marchandisage des catégories permet aux propriétaires de magasins d’appliquer des [!DNL Live Search] Classement intelligent [rules](rules.md) aux catégories de produits et aux sous-catégories.
+Le marchandisage des catégories permet aux propriétaires de magasins d’appliquer le [!DNL Live Search] classement intelligent [rules](rules.md) aux catégories de produits et aux sous-catégories.
 
 Cette vidéo présente le marchandisage par catégorie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
-Cette fonctionnalité est accessible dans l’Admin à l’adresse **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > **Marchandisage des catégories**.
+Cette fonctionnalité est accessible dans l’administrateur à l’adresse **Marketing** > Recherche et optimisation pour les moteurs de recherche > **[!DNL Live Search]** > **Marchandisage par catégorie**.
 
 >[!NOTE]
 >
->Le marchandisage des catégories est disponible avec [!DNL Live Search] [3.0.0 ou version ultérieure](release-notes.md). Si l’espace de travail Marchandisage des catégories s’affiche, mais qu’il n’est pas rempli de données, mettez à jour la variable [!DNL Live Search] module .
+>Le marchandisage des catégories est disponible avec [!DNL Live Search] [3.0.0 ou version ultérieure](release-notes.md). Si l’espace de travail Marchandisage des catégories s’affiche, mais qu’il n’est pas rempli de données, mettez à jour le module [!DNL Live Search].
 
 ![Marchandisage par catégorie](assets/category_workspace.png)
 
@@ -38,10 +38,10 @@ Vous pouvez rechercher une catégorie ou une sous-catégorie dans le champ &quot
 
 ## Stratégies de classement
 
-Le marchandisage des catégories utilise les mêmes types de classement que avec [produits individuels](rules-workspace.md).
+Le marchandisage des catégories utilise les mêmes types de classement que pour [produits individuels](rules-workspace.md).
 Il existe deux types de classement : Intelligent et manuel.
 
-**Classement intelligent** tire parti de l’analyse des données comportementales de storefront en [Adobe Sensei](https://www.adobe.com/sensei.html) pour trier tous les produits des catégories sélectionnées selon un certain algorithme. Une fois qu’un classement intelligent est sélectionné, l’ordre spécifique des produits doit changer au fil du temps, car les données sous-jacentes sont régulièrement réanalysées par Adobe Sensei. Par exemple, les produits les plus tendance changent automatiquement au fil du temps à mesure que les préférences des acheteurs changent.
+**Le classement intelligent** exploite l’analyse des données comportementales du storefront par [Adobe Sensei](https://www.adobe.com/sensei.html) pour trier tous les produits dans les catégories sélectionnées par un certain algorithme. Une fois qu’un classement intelligent est sélectionné, l’ordre spécifique des produits doit changer au fil du temps, car les données sous-jacentes sont régulièrement réanalysées par Adobe Sensei. Par exemple, les produits les plus tendance changent automatiquement au fil du temps à mesure que les préférences des acheteurs changent.
 Les méthodes de classement intelligentes sont les suivantes :
 
 * Les produits les plus achetés : classe les produits selon la fréquence à laquelle ils ont été achetés par les acheteurs au cours des sept derniers jours.
@@ -51,23 +51,23 @@ Les méthodes de classement intelligentes sont les suivantes :
 * Trending : classe les produits selon les récentes augmentations de popularité en fonction des vues.
 * Aucun : classe les produits par ordre par défaut.
 
-**Classement manuel** permet aux utilisateurs de remplacer l’ordre de tri automatique des produits en définissant manuellement les règles d’épingle, de dynamisation, d’ensevelissement et de masquage.
+**Le classement manuel** permet aux utilisateurs de remplacer l’ordre de tri automatique des produits en définissant des règles manuelles de pin, de dynamisation, d’enterrage et de masquage.
 
 ## Classement hérité
 
 En tant que marchandiseur, vous pouvez sélectionner toutes les catégories de vêtements pour femmes à trier par &quot;tendance&quot;. Cela inclut les sous-catégories &quot;Pantalon pour femmes&quot;, &quot;Chemises pour femmes&quot; et &quot;accessoires pour femmes&quot;. Les catégories masculines ne devraient pas être affectées. Pour ce faire, vous pouvez utiliser les classements hérités.
 
-Lorsque vous sélectionnez une méthode de classement intelligent pour une catégorie ou une sous-catégorie comportant des sous-catégories, vous pouvez activer la fonction **Application d’un classement intelligent aux sous-catégories** . Cette méthode applique la méthode de classement à toutes les sous-catégories.
+Lors de la sélection d’une méthode de classement intelligent pour une catégorie ou une sous-catégorie comportant des sous-catégories, vous pouvez activer l’option **Appliquer un classement intelligent aux sous-catégories** . Cette méthode applique la méthode de classement à toutes les sous-catégories.
 
-Ces sous-catégories héritent désormais de cette règle de la catégorie parente (&quot;Oui&quot; dans la colonne Classement hérité). Dans la colonne Action , les seules options disponibles sont **Modifier la règle**, et **Afficher les détails**. La variable **Supprimer** est désactivée pour les règles héritées sur les sous-catégories. La suppression de l’héritage des sous-catégories nécessite l’annulation de l’héritage de la catégorie parente.
+Ces sous-catégories héritent désormais de cette règle de la catégorie parente (&quot;Oui&quot; dans la colonne Classement hérité). Dans la colonne Action, les seules options disponibles sont **Modifier la règle** et **Afficher les détails**. L’option **Supprimer** est désactivée pour les règles héritées sur les sous-catégories. La suppression de l’héritage des sous-catégories nécessite l’annulation de l’héritage de la catégorie parente.
 
 Une seule catégorie ou sous-catégorie peut avoir un classement intelligent appliqué à la fois. D’autres classements manuels peuvent également leur être appliqués.
 
-Si vous appliquez un classement intelligent à une catégorie et activez l’option **Application d’un classement intelligent aux sous-catégories** , tout classement intelligent déjà appliqué aux sous-catégories est remplacé.
+Si vous appliquez un classement intelligent à une catégorie et activez l’option **Appliquer un classement intelligent aux sous-catégories**, tout classement intelligent déjà appliqué aux sous-catégories est remplacé.
 
-![Liste de sous-catégories remplacée](assets/category_overwite_subs.png){width="700"}
+![Liste de sous-catégories écrasée](assets/category_overwite_subs.png){width="700"}
 
-Cliquez sur **Afficher tout**, une boîte de dialogue s’ouvre avec les détails des modifications proposées.
+Si vous cliquez sur **Afficher tout**, une boîte de dialogue s’ouvre avec les détails des modifications proposées.
 
 ![Détails des modifications de classement](assets/category_overwrite.png)
 
@@ -80,33 +80,33 @@ Si vous supprimez un classement intelligent d’une catégorie et que l’hérit
 
 Une boîte de dialogue s’affiche pour expliquer quelles sous-catégories héritées sont affectées par les modifications apportées à une catégorie de niveau supérieur.
 
-![Boîte de dialogue modale des modifications de classement](assets/category_overwrite_modal.png){width="1200"}
+![Boîte de dialogue modale des changements de classement](assets/category_overwrite_modal.png){width="1200"}
 
 ## Créer une règle de catégorie
 
 Pour créer une règle de catégorie :
 
-1. Cliquez sur le bouton **Ajouter une règle** bouton .
-1. Dans le _Sélectionner une catégorie_ afficher, cliquez sur les catégories et sous-catégories.
+1. Cliquez sur le bouton **Ajouter une règle** .
+1. Dans la vue _Select Category_, cliquez sur les catégories et sous-catégories.
 1. Cochez la case pour sélectionner la catégorie que vous souhaitez classer.
-1. Cliquez sur **Appliquer**.
+1. Cliquez sur **Apply**.
 
-   ![Sélection d’une catégorie](assets/category_select.png)
+   ![Sélectionner une catégorie](assets/category_select.png)
 
-1. Dans le _Ajouter une règle de catégorie_ sélectionnez la méthode de classement intelligent à appliquer à la catégorie.
+1. Dans la vue _Ajouter une règle de catégorie_, sélectionnez la méthode de classement intelligent que vous souhaitez appliquer à la catégorie.
 La page Aperçu des catégories affiche les résultats réels du classement sélectionné, à l’aide de vos données de recherche en direct.
-1. Cliquez sur **Enregistrement et publication** pour enregistrer la règle.
+1. Cliquez sur **Enregistrer et Publish** pour enregistrer la règle.
 
-![Sélection de la méthode de classement intelligent](assets/category_ranking.png)
+![Sélectionnez la méthode de classement intelligent](assets/category_ranking.png)
 
-La variable [!DNL Live Search] le service traite la règle et l’active dans le magasin lorsque vous avez terminé.
+Le service [!DNL Live Search] traite la règle et l’active dans le magasin une fois terminé.
 
 ## Modification d’une règle de catégorie
 
 Pour modifier une règle existante :
 
-1. Cliquez sur le bouton **..** dans la colonne Action et choisissez **Modifier**.
-1. Dans la vue Edit Category rule, apportez les modifications requises, puis cliquez sur **Enregistrement et publication**.
+1. Cliquez sur **...** dans la colonne Action et choisissez **Modifier**.
+1. Dans la vue Modifier la règle de catégorie, apportez les modifications requises, puis cliquez sur **Enregistrer et Publish**.
 
 Les modifications sont répercutées sur le magasin lorsque [!DNL Live Search] a traité la modification.
 
@@ -114,8 +114,8 @@ Les modifications sont répercutées sur le magasin lorsque [!DNL Live Search] a
 
 Pour supprimer une règle de catégorie :
 
-1. Cliquez sur le bouton **..** dans la colonne Action et choisissez **Supprimer**.
-1. Dans le _Supprimer la règle_ modal, sélectionnez **Supprimer** pour supprimer la règle ou **Annuler** pour annuler l’action.
+1. Cliquez sur **...** dans la colonne Action et choisissez **Supprimer**.
+1. Dans le modal _Supprimer la règle_, sélectionnez **Supprimer** pour supprimer la règle ou **Annuler** pour annuler l’action.
 
 ## Classement manuel
 
@@ -138,6 +138,6 @@ Vous pouvez également cliquer sur l’icône en forme d’épingle pour épingl
 
 Pour ajouter manuellement un événement :
 
-1. Sous Classement manuel, cliquez sur le **Sélection d’un événement** et choisissez un événement qui doit avoir lieu lorsque les conditions associées sont remplies.
+1. Sous Classement manuel, cliquez sur le menu **Sélectionner un événement** et choisissez un événement à avoir lorsque les conditions associées sont remplies.
 1. Saisissez le nom du produit que vous souhaitez affecter. Les produits sont proposés au fur et à mesure que vous tapez.
 1. Pour plusieurs événements, choisissez les autres événements à déclencher lorsque les conditions sont remplies.

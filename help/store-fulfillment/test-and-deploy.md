@@ -7,7 +7,7 @@ feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2660'
+source-wordcount: '2661'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Une fois le processus d’intégration terminé dans votre environnement de dév
 
 Avant de tester ou de synchroniser des informations, des magasins ou des commandes, vérifiez que vous avez effectué les tâches suivantes :
 
-- Terminé le [Configuration générale](enable-general.md) pour les services d’exécution de magasin.
+- [Configuration générale](enable-general.md) pour les services d’exécution de magasin.
 
 - [Ajout et validation des informations d’identification du compte et des détails de connexion pour votre environnement de test et vos environnements de production](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- Confirmez que la variable [Intégration Adobe Commerce](connect-set-up-service.md#configure-store-fulfillment-account-credentials) pour la solution d’exécution de magasin est disponible et autorisée.
+- Vérifiez que l’ [ intégration Adobe Commerce](connect-set-up-service.md#configure-store-fulfillment-account-credentials) pour la solution d’exécution de magasin est disponible et autorisé.
 
 ## Préparation du test
 
@@ -34,7 +34,7 @@ La configuration de la connexion doit être effectuée avant de pouvoir créer d
 
    - Accédez à **[!UICONTROL Stores > Sources]**.
 
-   - Sélectionner **[!UICONTROL Synchronize Store Fulfillment Sources]**.
+   - Sélectionnez **[!UICONTROL Synchronize Store Fulfillment Sources]**.
 
 1. Dans la grille de magasin, vérifiez que les magasins ont été marqués comme `Synced` avant de créer des commandes de test.
 
@@ -54,16 +54,16 @@ Cet exemple de plan de test couvre les domaines fonctionnels suivants :
 | De bout en bout | Workflows d’annulation de commande | Client, administrateur, associé de magasin |
 | Administration | Autorisations de l’application d’exécution de magasin | Administration |
 | Adobe Commerce Frontend | Types de produits | Client, administrateur |
-| Contrat frontal</br>Formulaire d’archivage | Expérience d’archivage | Client, administrateur |
-| Application d’aide à la boutique | Commande</br>Pick</br>Évaluation</br>et Handoff | Association de magasin |
+| Formulaire d’archivage</br>Frontend Checkout | Expérience d’archivage | Client, administrateur |
+| Application d’aide à la boutique | Commande</br>Pick</br>Stage</br>et passation | Association de magasin |
 
 ### Synchronisation des API d’inventaire
 
 Cette section du plan de test couvre la synchronisation des stocks et des stocks afin de vérifier que les mises à jour des sources et des stocks de récupération sont synchronisées correctement entre Adobe Commerce et la solution d’exécution de magasin.
 
-**Domaine fonctionnel**: synchronisation du stock et des commandes</br>
-**Rôle :** Administration</br>
-**Type de test :** Tout positif
+**Domaine fonctionnel** : synchronisation de l’inventaire et des commandes</br>
+**Rôle :** Admin</br>
+**Type de test :** All Positive
 
 <table>
 <thead>
@@ -85,9 +85,9 @@ Cette section du plan de test couvre la synchronisation des stocks et des stocks
 <td>L’opération de synchronisation en temps réel envoie les détails au GIF Walmart dans les 5 minutes.</td>
 </tr>
 <tr>
-<td><strong>Source du stock de récupération</br><code>Is Synced</code> status</strong></td>
+<td><strong>État de la source du stock de récupération</br><code>Is Synced</code></strong></td>
 <td>Enregistrez les mises à jour dans une source de stock existante.</td>
-<td>Après une opération réussie, la variable <code>Is Synced</code> de la colonne Gérer la source des mises à jour de la page <code>No</code> to <code>Yes</code>.</td>
+<td>Après une opération réussie, la colonne <code>Is Synced</code> de la page Gérer Source se met à jour de <code>No</code> vers <code>Yes</code>.</td>
 </tr>
 <tr>
 <td><strong>Modification du processus de réservation de stock</strong></td>
@@ -97,11 +97,11 @@ Cette section du plan de test couvre la synchronisation des stocks et des stocks
 <tr>
 <td><strong>Nouvelle commande push, synchronisation d’API, commande client</strong></td>
 <td>Le client envoie une commande de prise en main de magasin.</td>
-<td><ul><li>Dans la vue Admin Order, une <strong>Utilisateur administrateur Adobe Commerce</strong> constate que l’état de synchronisation des commandes a été mis à jour vers <code>Sent</code></li><li>Le journal des détails de la commande comprend le message <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>Dans la vue Admin Order, un <strong>utilisateur administrateur Adobe Commerce</strong> constate que l’état de synchronisation des commandes a été mis à jour vers <code>Sent</code></li><li>Le journal des détails de la commande comprend le message <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Nouvelle commande push, synchronisation API : l’administrateur envoie la commande</strong></td>
-<td>Une Adobe Commerce <strong>Administration</strong> envoie une commande de récupération.</td>
+<td>Un <strong>administrateur</strong> Adobe Commerce envoie une commande de récupération.</td>
 <td><ul><li>Dans la vue Admin Order, l’état de synchronisation des commandes est mis à jour vers <code>Sent</code>.</li><li>Le journal des détails de la commande comprend le message <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
@@ -117,8 +117,8 @@ Cette section du plan de test couvre la synchronisation des stocks et des stocks
 Cette section du plan de test comprend des scénarios de test visant à tester le workflow de bout en bout pour les commandes annulées via Adobe Commerce.
 
 **Zone fonctionnelle :** Administrateur Adobe Commerce</br>
-**Rôle :** De bout en bout (administrateur, associé de magasin, client)</br>
-**Type de résultat du test :** Positif pour tous les scénarios
+**Rôle :** de bout en bout (administrateur, associé de magasin, client)</br>
+**Type de résultat du test :** positif pour tous les scénarios
 
 <table style="table-layout:fixed">
 <tr>
@@ -140,9 +140,9 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 <li>Historique des commandes mis à jour avec <code>We refunded $X online. Transaction ID: transactionID</code> et <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>L’état de la commande est <code>Closed</code>. (Nous avons défini la vérification des paiements maintenant.)</li>
 <li>Note de crédit créée dans Adobe Commerce. (Attendez que cron fonctionne.)</li>
-<li>Si tous les éléments sont sélectionnés, ils sont alors prêts pour le courrier électronique de récupération. <code>DISPLAY COMMENT HISTORY</code> affiche <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> indicateur <code>true</code>.)</li>
+<li>Si tous les éléments sont sélectionnés, alors prêt pour le sélecteur <code>DISPLAY COMMENT HISTORY</code> affiche <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> l’indicateur est <code>true</code>).</li>
 <li>Si tous les éléments ne sont pas sélectionnés, le courrier électronique d’annulation et l’ HISTORIQUE DU COMMENTAIRE AFFICHAGE s’affichent. <code>Order has been canceled - all items were not available</code></li>
-<li><code>CUSTOMER NOTIFIED</code> indicateur <code>true</code>.)</li>
+<li><code>CUSTOMER NOTIFIED</code> L’indicateur est <code>true</code>.)</li>
 </ul>
 </td>
 </tr>
@@ -162,18 +162,18 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 <li>Réception de l'email de remboursement de la commande : <code>$x amount was refunded</code></li>
 <li>L’état de la commande est <code>Processing</code>.</li>
 <li>Note de crédit créée dans Adobe Commerce (attendez que cron fonctionne).</li>
-<li>Si certains éléments n’ont pas été sélectionnés, vérifiez que la variable [!UICONTROL Ready for Pickup] l'email avec la section nil pick or return s'affiche. <code>DISPLAY COMMENT HISTORY</code> affiche <code>Order is ready for pickup, but some items not available.</code>.</li>
-<li><code>CUSTOMER NOTIFIED</code> indicateur <code>true</code>.</li>
+<li>Si certains articles n'ont pas été sélectionnés, vérifiez que l'email [!UICONTROL Ready for Pickup] avec la section nil pick or return s'affiche. <code>DISPLAY COMMENT HISTORY</code> affiche <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li><code>CUSTOMER NOTIFIED</code> L’indicateur est <code>true</code>.</li>
 </ul>
 </td>
 </tr>
-<td><strong>Prêt pour la récupération</br></br>Annulation complète</br>(tous les produits sont définis comme sélectionnés avec 0 quantité)</strong></td>
+<td><strong>Prêt pour la récupération</br></br>Annulation complète</br>(tous les produits sont définis comme sélectionnés avec une quantité 0)</strong></td>
 <td>
 <ol>
 <li>Placez la commande.</li>
 <li>Attendez que la commande soit synchronisée.</li>
 <li>Vérifier que la facture a été créée (si autoriser et enregistrer) et que le courrier électronique de facture a été reçu.</li>
-<li>Accédez à Postman et exécutez la demande Prêt pour la collecte avec tous les produits définis comme <code>picked</code> avec <code>0 qty</code>.</li>
+<li>Accédez à Postman et exécutez la requête Ready for Pickup (Prêt pour la collecte) avec tous les produits définis comme <code>picked</code> avec <code>0 qty</code>.</li>
 </ol>
 </td>
 <td>
@@ -187,7 +187,7 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 </td>
 </tr>
 <tr>
-<td><strong>Prêt pour le ramassage - Annulation partielle</strong></br></br><strong>(Certains produits sont sélectionnés, d’autres le sont avec . <code>0 qty</code>)</strong>
+<td><strong>Prêt pour la récupération - Annulation partielle</strong></br></br><strong>(Certains produits sont sélectionnés et d’autres sont sélectionnés avec <code>0 qty</code>)</strong>
 </td>
 <td>
 <ol>
@@ -199,17 +199,17 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 </td>
 <td>
 <ul>
-<li><code>Your order is ready for pickup</code> avec [!UICONTROL Ready for Pickup Items] et [!UICONTROL Canceled Items] des tables. </li>
+<li><code>Your order is ready for pickup</code> avec les tables [!UICONTROL Ready for Pickup Items] et [!UICONTROL Canceled Items]. </li>
 <li>L’état de la commande est PRÊT À ÊTRE SÉLECTIONNÉ. </li>
 <li>Historique des commandes mis à jour : <code>We refunded $X offline.</code>
 <li>Historique des commandes mis à jour : <code>Order notified as partly canceled at: Date and hour</code>
-<li>Réception de l’email de remboursement : <code>$x amount was refunded</code>
+<li>Réception de l’e-mail de remboursement : <code>$x amount was refunded</code>
 <li>La note de crédit est créée. (Attendez que cron fonctionne.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Prêt pour le ramassage - Annulation partielle</br></br>Certains produits sont sélectionnés, d’autres le sont avec . <code>0 qty</code>)</strong>
+<td><strong>Prêt pour la récupération - Annulation partielle</br></br>Certains produits sont sélectionnés et d’autres le sont avec <code>0 qty</code>)</strong>
 </td>
 <td><ol>
 <li>Placez la commande.</li>
@@ -219,17 +219,17 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 </ol>
 </td>
 <td><ul>
-<li><code>Your order is ready for pickup</code> avec [!UICONTROL Ready for Pickup Items] et [!UICONTROL Canceled Items] des tables. </li>
+<li><code>Your order is ready for pickup</code> avec les tables [!UICONTROL Ready for Pickup Items] et [!UICONTROL Canceled Items]. </li>
 <li>L’état de la commande est PRÊT À ÊTRE SÉLECTIONNÉ. </li>
 <li>Historique des commandes mis à jour : <code>We refunded $X offline.</code>
 <li>Historique des commandes mis à jour : <code>Order notified as partly canceled at: Date and hour</code>
-<li>Réception de l’email de remboursement : <code>$x amount was refunded</code>
+<li>Réception de l’e-mail de remboursement : <code>$x amount was refunded</code>
 <li>La note de crédit est créée. (Attendez que cron fonctionne.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Distribué (pendant la diffusion) </br></br>Annulation complète (tous les produits sont rejetés)</strong>
+<td><strong>Distribué (pendant la distribution) </br></br>Annulation complète (tous les produits sont définis comme rejetés)</strong>
 </td>
 <td>
 <ol>
@@ -244,13 +244,13 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 <td><ul>
 <li>Historique des commandes mis à jour : <code>We refunded $X offline.</code></li>
 <li>Réception de l’email de remboursement : <code>$x amount was refunded</code></li>
-<li>L’état est défini sur <code>CLOSED</code>.</li>
+<li>État défini sur <code>CLOSED</code>.</li>
 <li>Note de crédit créée. (Attendez que cron fonctionne.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Distribué (pendant la diffusion)</br></br>Annulation partielle</br>(Certains produits sont délivrés, d'autres sont rejetés.)</strong>
+<td><strong>Distribué (pendant la distribution)</br></br>Annulation partielle</br>(Certains produits sont refusés ; certains sont rejetés.)</strong>
 </td>
 <td>
 <ol>
@@ -258,7 +258,7 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 <li>Attendez que la commande soit synchronisée.</li>
 <li>Vérifier que la facture a été créée (si autoriser et enregistrer) et que le courrier électronique de facture a été reçu.</li>
 <li>Accédez à Postman, puis exécutez la demande Prêt pour la collecte avec tous les produits définis comme sélectionnés.</li>
-<li>Ouvrez votre boîte aux lettres. Recherchez l’e-mail Prêt pour la collecte , puis sélectionnez <code>Confirm Arrival</code>.</li>
+<li>Ouvrez votre boîte aux lettres. Recherchez l'email Prêt pour la collecte et sélectionnez <code>Confirm Arrival</code>.</li>
 <li>Archivez-vous.</li>
 <li>Accédez à Postman, puis exécutez la requête Distribué avec certains produits dont le statut est Distribué et certains produits rejetés.</li>
 </ol>
@@ -266,7 +266,7 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 <td>
 <li>Historique des commandes mis à jour : <code>We refunded $X offline</code></li>
 <li><code>Order notified as partly canceled at: Date and Hour</code>
-<li>Réception de l’email de remboursement : <code>$x amount was refunded</code>
+<li>Réception de l’e-mail de remboursement : <code>$x amount was refunded</code>
 <li>État de la commande défini sur <code>Ready for pickup Dispensed</code>
 <li>Note de crédit créée. (Attendez que cron fonctionne.)</li>
 </td>
@@ -282,13 +282,13 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 <li>Sélectionnez tous les produits avec Postman.</li>
 <li>Archivez-vous.</li>
 <li>Fais un passe-temps.</li>
-<li>Dans l’ordre, sélectionnez<strong>[!UICONTROL Create returns]=
+<li>Accédez à la commande et sélectionnez<strong>[!UICONTROL Create returns]=
 <li>Créez la zone de gestion régionale.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>La RAM a été créée et s’affiche sous la <strong>[!UICONTROL Returns]</b> dans la vue Commande.</li>
+<li>La RMA a été créée et s’affiche sous l’onglet <strong>[!UICONTROL Returns]</b> de la vue Commande.</li>
 <li>Le client a reçu un e-mail de confirmation RMA.</li>
 </ul>
 </td>
@@ -309,9 +309,9 @@ Cette section du plan de test comprend des scénarios de test visant à tester l
 </ol>
 <td>
 <ul>
-<li>RMA créée et affichée sous <strong>[!UICONTROL Returns]</strong> dans la vue Commande.</li>
+<li>RMA créée et affichée sous l’onglet <strong>[!UICONTROL Returns]</strong> dans la vue Commande.</li>
 <li>Le client a reçu l’e-mail de confirmation de la RMA.</li>
-<li>Après avoir créé la RAM, obtenez l’autorisation de la RAM : depuis l’administrateur, accédez à <strong>[!UICONTROL Sales > Returns]</strong>. Sélectionnez la RMA que vous avez créée et autorisez-la.</li>
+<li>Après avoir créé la RMA, obtenez l’autorisation RMA : depuis l’administrateur, accédez à <strong>[!UICONTROL Sales > Returns]</strong>. Sélectionnez la RMA que vous avez créée et autorisez-la.</li>
 <li>Vérifiez que le client a reçu l’e-mail de confirmation d’autorisation RMA.</li>
 <li>Vérifiez que le remboursement a été ajouté à l'historique des transactions et des commandes.</li>
 </ul>
@@ -328,8 +328,8 @@ Cette section du plan de test couvre la gestion du compte pour les utilisateurs 
 - Confirmez que les mises à jour des comptes existants sont appliquées avec succès.
 
 **Zone fonctionnelle :** Administrateur Adobe Commerce</br>
-**Rôle :** Admin, associé de magasin</br>
-**Type de test :** Tout positif
+**Rôle :** Admin, Magasin Associé</br>
+**Type de test :** Tous positifs
 
 <table style="table-layout:auto">
 <tr>
@@ -338,19 +338,19 @@ Cette section du plan de test couvre la gestion du compte pour les utilisateurs 
 <th>Résultats attendus</th>
 </tr>
 <tr>
-<td><strong>Gestion des comptes d’utilisateurs - Créer un compte</strong></br></br>
+<td><strong> Gestion de compte d’utilisateur - Créer un compte</strong></br></br>
 </td>
 <td>
 <ol>
-<li><strong>Administration</strong> — Connectez-vous à l’administrateur Adobe Commerce</li>
-<li>Accédez à <strong>[!UICONTROL System] &gt; Autorisations de l’application d’exécution de magasin &gt; Tous les utilisateurs de l’application d’exécution de magasin</strong></li>
+<li><strong>Admin</strong> — Connectez-vous à l’administrateur Adobe Commerce</li>
+<li>Accédez à <strong>[!UICONTROL System] &gt; Autorisations de l’application d’exécution de la boutique &gt; Tous les utilisateurs de l’application d’exécution de la boutique</strong></li>
 <li><strong>Ajouter un nouvel utilisateur.</strong></li>
 </ol>
 <td>
 <ul>
 <li>Compte créé.</li>
-<li>Le compte Nouvel utilisateur s’affiche sur la page [!UICONTROL Store Fulfillment Users] tableau de bord.</li>
-<li><strong>Association de magasin</strong> connectez-vous à l’application d’aide à la boutique avec un nouveau compte d’utilisateur.</li>
+<li>Le nouveau compte utilisateur s’affiche sur le tableau de bord [!UICONTROL Store Fulfillment Users].</li>
+<li><strong>Magasin Associé</strong> Connectez-vous à l’application d’assistance en magasin avec un nouveau compte d’utilisateur.</li>
 </ul>
 </td>
 </tr>
@@ -360,14 +360,14 @@ Cette section du plan de test couvre la gestion du compte pour les utilisateurs 
 <td>
 <ol>
 <li>Connectez-vous à l’administrateur Adobe Commerce avec le compte d’utilisateur administrateur.</li>
-<li>Accédez à <strong>[!UICONTROL System] &gt; Autorisations de l’application d’exécution de magasin &gt; Tous les utilisateurs de l’application d’exécution de magasin</strong>.</li>
-<li>Dans la liste Compte d’utilisateur , ouvrez un compte d’utilisateur actif en sélectionnant <strong>[!UICONTROL Edit]</strong>.
-<li>Désactivez le compte en modifiant les <strong>[!UICONTROL Is Active]</strong> to <strong>Non</strong>.</li>
+<li>Accédez à <strong>[!UICONTROL System] &gt; Autorisations de l’application d’exécution de la boutique &gt; Tous les utilisateurs de l’application d’exécution de la boutique</strong>.</li>
+<li>Dans la liste Compte utilisateur , ouvrez un compte utilisateur actif existant en sélectionnant <strong>[!UICONTROL Edit]</strong>.
+<li>Désactivez le compte en remplaçant <strong>[!UICONTROL Is Active]</strong> par <strong>Non</strong>.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>Sur le <strong>[!UICONTROL Store Fulfillment App Users]</strong> tableau de bord, l’état du compte mis à jour a été remplacé par <strong>[!UICONTROL Inactive]</strong>.</li>
+<li>Sur le tableau de bord <strong>[!UICONTROL Store Fulfillment App Users]</strong>, l’état du compte mis à jour a été remplacé par <strong>[!UICONTROL Inactive]</strong>.</li>
 <li>L’association de magasin ne peut pas se connecter à l’application d’assistance de magasin avec les informations d’identification du compte inactif.</li>
 </ul>
 </td>
@@ -384,8 +384,8 @@ Les scénarios de test pour les types de produits Adobe Commerce vérifient que 
 - [!UICONTROL Bundle products] dans le storefront Adobe Commerce.
 
 **Zone fonctionnelle :** Adobe Commerce Frontend</br>
-**Rôle :** Utilisateur de l’application d’assistance de la boutique (associé au magasin)</br>
-**Type de test :** Tout positif
+**Rôle :** Utilisateur de l’application d’assistance au magasin (associé au magasin)</br>
+**Type de test :** Tous positifs
 
 <table style="table-layout:auto">
 <tr>
@@ -408,14 +408,14 @@ Les scénarios de test pour les types de produits Adobe Commerce vérifient que 
 </td>
 </tr>
 <tr>
-<td><strong>Produits regroupés</strong>
+<td><strong>Produits groupés</strong>
 </td>
 <td>
 <ul>
-<li>Vérifiez que les méthodes de diffusion et [!UICONTROL Add to cart] sont désactivés pour le client lorsque tous les produits enfants ont
+<li>Vérifiez que les méthodes de diffusion et le bouton [!UICONTROL Add to cart] sont désactivés pour le client lorsque tous les produits enfants ont
 <code>qty</code> défini sur <code>0</code>.</li>
-<li>Vérifier que les méthodes de diffusion sont activées pour le client lorsqu’au moins un des produits enfants possède <code>qty</code> défini sur <code>0.</code></li>
-<li>Vérifiez que [!UICONTROL Store Pickup Delivery] est visible et active uniquement pour les produits qui ont [!UICONTROL Available for Store Pickup] activée. (Vérifiez le produit enfant.)</li>
+<li>Vérifiez que les méthodes de diffusion sont activées pour le client lorsque <code>qty</code> est défini sur au moins un des produits enfants. <code>0.</code></li>
+<li>Vérifiez que la méthode [!UICONTROL Store Pickup Delivery] est visible et active uniquement pour les produits pour lesquels [!UICONTROL Available for Store Pickup] est activé. (Vérifiez le produit enfant.)</li>
 </ul>
 </td>
 <td></td>
@@ -424,18 +424,19 @@ Les scénarios de test pour les types de produits Adobe Commerce vérifient que 
 <td><strong>Produits virtuels</strong>
 </td>
 <td>
-Vérifiez que les produits virtuels n’offrent pas la variable  [!UICONTROL In-store Pickup] méthode de diffusion.
+Vérifiez que les produits virtuels ne proposent pas la méthode de diffusion [!UICONTROL In-store Pickup].
 <td></td>
 </td>
 </tr>
 <tr>
-<td><strong>Lot de produits</strong>
+<td><strong>Bundle products</strong>
 </td>
 <td>
 <ul>
-<li>Vérifiez si au moins un produit enfant a [!UICONTROL Available for Store Pickup] désactivée, l’option de remise Stocker le ticket n’est pas disponible pour le client.</li>
-<li>Vérifiez si au moins un produit enfant a [!UICONTROL Available for Home Delivery] désactivée, l’option Diffusion sur l’accueil n’est pas disponible pour le client.</li>
-<li>Vérifiez si au moins un des produits enfants d’un lot est en rupture de stock, le lot (produit parent) est également affiché comme [!UICONTROL Out of stock].</li>
+<li>Vérifiez que si [!UICONTROL Available for Store Pickup] au moins un produit enfant est désactivé, l’option de remise Stocker le sélecteur n’est pas disponible pour le client.</li>
+<li>Vérifiez que si au moins un produit enfant est désactivé, l’option Livraison à domicile n’est pas disponible pour le client.[!UICONTROL Available for Home Delivery]</li>
+<li>Vérifiez si au moins un des produits enfants d’un lot est en rupture de stock, le lot (produit parent) s’affiche également.
+comme [!UICONTROL Out of stock].</li>
 </ul>
 </td>
 <td></td>
@@ -447,20 +448,20 @@ Vérifiez que les produits virtuels n’offrent pas la variable  [!UICONTROL In-
 
 Cette section du plan de test couvre l’ expérience d’archivage des commandes de nettoyage de magasin pour les fonctionnalités suivantes :
 
-- Autre contact de sélection : vérifiez le processus d’ajout d’une [!UICONTROL Alternate Pickup Contact] et en sélectionnant un [!UICONTROL Preferred Contact] dans les commandes de nettoyage de la boutique.
+- Autre contact de récupération : vérifiez le workflow pour ajouter un [!UICONTROL Alternate Pickup Contact] et sélectionner un [!UICONTROL Preferred Contact] dans les commandes de nettoyage de la boutique.
 
 - Formulaire d’archivage : vérifiez le processus d’envoi d’une demande d’archivage pour les commandes de nettoyage de la boutique.
 
-**Domaines fonctionnels :** Achat de panier, formulaire d’archivage pour les commandes de prise en main du magasin</br>
-**Rôle :** Administrateur, client, associé de magasin</br>
-**Type de test :** Tout positif
+**Domaines fonctionnels :** Passage en caisse, Formulaire d’archivage pour les commandes de prise en main du magasin</br>
+**Rôle :** Admin, client, associé de magasin</br>
+**Type de test :** Tous positifs
 
 ### Autre contact de collecte
 
 
-**Zone fonctionnelle :** Achat de panier</br>
+**Zone fonctionnelle :** Passage en caisse</br>
 **Rôle :** Client</br>
-**Type de test :** Tout positif
+**Type de test :** Tous positifs
 
 <table style="table-layout:auto">
 <tr>
@@ -474,38 +475,38 @@ Archivage<strong>
 </td>
 <td>
 Un client envoie une commande avec l’option Sélecteur en magasin .</td>
-<td>Pendant le processus de passage en caisse, le client voit la variable [!UICONTROL Alternate Pickup Contact] l’option de l’étape Expédition .
+<td>Pendant le processus de paiement, le client voit l’option [!UICONTROL Alternate Pickup Contact] sur l’étape Expédition.
 </td>
 </tr>
 <tr>
-<td><strong>Autre contact de sélection Préféré, archivage</strong>
+<td><strong>Autre contact de collecte préféré, archivage</strong>
 <td>
-Un client envoie une commande avec l’option Sélecteur en magasin . Lors du passage en caisse, le client ajoute une [!UICONTROL Alternate Pickup Contact].</td>
-<td>Pendant le processus de passage en caisse, le client voit la variable [!UICONTROL Preferred Contact] sur l’étape d’expédition.</td>
+Un client envoie une commande avec l’option Sélecteur en magasin . Pendant le passage en caisse, le client ajoute un [!UICONTROL Alternate Pickup Contact].</td>
+<td>Pendant le processus de paiement, le client voit l’option [!UICONTROL Preferred Contact] sur l’étape d’expédition.</td>
 </td>
 </tr>
 <tr>
-<td><strong>Autres coordonnées de contact de collecte, Archivage</strong>
+<td><strong>Autres coordonnées de contact de collecte, Check in</strong>
 </td>
 <td>
-Un client envoie une commande avec l’option Sélecteur en magasin . Pendant le passage en caisse, le client sélectionne [!UICONTROL Alternate Pickup Contact] sur l’étape d’expédition.
+Un client envoie une commande avec l’option Sélecteur en magasin . Lors du passage en caisse, le client sélectionne [!UICONTROL Alternate Pickup Contact] sur l’étape d’expédition.
 </td>
-<td>Le client voit les options de saisie pour saisir les coordonnées : [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone], et [!UICONTROL Email].</td>
+<td>Le client voit les options d’entrée pour saisir les coordonnées : [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone] et [!UICONTROL Email].</td>
 </tr>
 <tr>
-<td><strong>Autre ticket, archiver un courrier électronique</strong>
+<td><strong>Autre ticket, archiver courrier électronique</strong>
 </td>
-<td>Un client envoie une commande avec l’option Sélecteur en magasin . Pendant le passage en caisse, le client sélectionne [!UICONTROL Alternate Pickup Contact] sur l’étape d’expédition, ajoute les coordonnées et envoie la commande.</td>
+<td>Un client envoie une commande avec l’option Sélecteur en magasin . Lors du passage en caisse, le client sélectionne [!UICONTROL Alternate Pickup Contact] sur l’étape d’expédition, ajoute les coordonnées et envoie la commande.</td>
 <td>Le client et le contact suppléant reçoivent tous deux un e-mail d’archivage pour la commande.</td>
 </tr>
 <td><strong>Autre achat, détail de la commande</strong></td>
-<td>Un client envoie une commande avec l’option Sélecteur en magasin . Pendant le passage en caisse, le client sélectionne [!UICONTROL Alternate Pickup Contact] sur l’étape d’expédition, ajoute les coordonnées et envoie la commande.</td>
+<td>Un client envoie une commande avec l’option Sélecteur en magasin . Lors du passage en caisse, le client sélectionne [!UICONTROL Alternate Pickup Contact] sur l’étape d’expédition, ajoute les coordonnées et envoie la commande.</td>
 <td>L’administrateur voit les informations de contact supplémentaires sur la commande enregistrée.</td>
 </tr>
 <tr>
 <td><strong>Autre contact de collecte, vue de commande associée du magasin</strong>
 </td>
-<td>Un client envoie une commande avec l’option Sélecteur en magasin . Pendant le passage en caisse, le client sélectionne [!UICONTROL Alternate Pickup Contact] sur l’étape d’expédition, ajoute les coordonnées et envoie la commande.</td>
+<td>Un client envoie une commande avec l’option Sélecteur en magasin . Lors du passage en caisse, le client sélectionne [!UICONTROL Alternate Pickup Contact] sur l’étape d’expédition, ajoute les coordonnées et envoie la commande.</td>
 <td>L’associé du magasin peut voir les informations de contact supplémentaires sur la commande dans FaaS/ChaaS.</td>
 </td>
 </tr>
@@ -517,7 +518,7 @@ Un client envoie une commande avec l’option Sélecteur en magasin . Pendant le
 
 **Zone fonctionnelle :** Formulaire d’archivage</br>
 **Rôle :** Client</br>
-**Type de test :** Tout positif
+**Type de test :** Tous positifs
 
 <table style="table-layout:auto">
 <tr>
@@ -526,7 +527,7 @@ Un client envoie une commande avec l’option Sélecteur en magasin . Pendant le
 <th>Résultats attendus</th>
 </tr>
 <tr>
-<td><strong>Archivage de l’action : demande d’envoi</strong>
+<td><strong> Check in Action—Submit request</strong>
 </td>
 <td>Sur le formulaire d’archivage, un client remplit tous les champs requis et envoie la demande.</td>
 <td>Le client reçoit une réponse de succès.</td>
@@ -554,9 +555,9 @@ Un client envoie une commande avec l’option Sélecteur en magasin . Pendant le
 
 Cette section du plan de test couvre les scénarios de test des workflows de commande, de sélection et de remise dans l’application d’aide à la boutique.
 
-**Zone fonctionnelle :** Application d’aide à la boutique</br>
-**Rôle :** Association de magasin</br>
-**Type de test :** Tout positif
+**Zone fonctionnelle :** Application d’assistance au magasin</br>
+**Rôle :** Magasin Associé</br>
+**Type de test :** Tous positifs
 
 <table style="table-layout:auto">
 <tr>
@@ -566,7 +567,7 @@ Cette section du plan de test couvre les scénarios de test des workflows de com
 </tr>
 <tr>
 <td>
-<strong>Sélection de commande unique : chemin d’accès heureux, sélection de bord</strong></td>
+<strong>Sélection de commande unique : chemin heureux, sélection de bordure</strong></td>
 <td>Sélectionnez des éléments uniques et multiquantité. Aucun saut nil et saut de bord (avec transfert).
 </td>
 <td>
@@ -644,4 +645,4 @@ Le déploiement et les tests varient en fonction de votre infrastructure et de v
 
 >[!TIP]
 >
->Pour obtenir des instructions de déploiement, des listes de contrôle et des bonnes pratiques pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Déployer votre boutique](https://devdocs.magento.com/cloud/live/stage-prod-live.html) dans la documentation destinée aux développeurs Adobe Commerce.
+>Pour obtenir des instructions de déploiement, des listes de contrôle et des bonnes pratiques pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Déployer votre boutique](https://devdocs.magento.com/cloud/live/stage-prod-live.html) dans la documentation Adobe Commerce Developer.

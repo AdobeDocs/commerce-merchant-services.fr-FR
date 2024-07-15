@@ -1,13 +1,13 @@
 ---
 title: Exigences d’exécution du magasin
-description: Conditions requises pour la configuration et l’intégration de la variable [!DNL Store Fulfillment solution].
+description: Conditions requises pour la configuration et l’intégration de  [!DNL Store Fulfillment solution].
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Les sections suivantes décrivent les exigences techniques et métier de l’ins
 
 ## Exigences en matière de version de plateforme et de logiciel
 
-La variable [!DNL Store Fulfillment] La solution est disponible pour les clients Adobe Commerce sur les plateformes suivantes.
+La solution [!DNL Store Fulfillment] est disponible pour les clients Adobe Commerce sur les plateformes suivantes.
 
 - Adobe Commerce sur l’infrastructure cloud (ECE)
 - Adobe Commerce On-Premise (EE)
@@ -27,7 +27,7 @@ Avant d’installer ou de mettre à niveau, consultez les notes de mise à jour 
 
 - [Notes de mise à jour de la fonction d’exécution de la boutique](release-notes.md)
 
-- [Notes de mise à jour d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) dans le *Informations de mise à jour d’Adobe Commerce*.
+- [Notes de mise à jour d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) dans les *informations de mise à jour d’Adobe Commerce*.
 
 - [Configuration requise pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans le *Guide d’installation d’Adobe Commerce*.
 
@@ -36,12 +36,12 @@ Avant d’installer ou de mettre à niveau, consultez les notes de mise à jour 
 
 Le processus de bout en bout de gestion des commandes de saut de magasin est géré via l’application d’assistance Boutique installée sur les périphériques mobiles. Ces appareils, fournis par le détaillant ou par les employés du magasin à l’aide de leurs smartphones personnels, doivent répondre aux exigences suivantes :
 
-**Configuration requise du système d’exploitation**
+**Configuration minimale requise pour le système d’exploitation**
 
-- Android 6
+- ANDROID 6
 - iOS 12
 
-**Configuration matérielle requise**
+**Configuration matérielle minimale requise**
 
 - 1 Go de RAM
 - 600 Mo d’espace disque disponible
@@ -62,6 +62,6 @@ Votre entreprise doit satisfaire aux critères minimaux suivants pour mettre en 
 
 - Disponibilité du Wi-Fi en magasin à tous les emplacements qui prennent en charge la solution Store Fulfillment : vitesse Internet minimale de 3 Mbit/s.
 
-- Les associés de magasin et d’entrepôt ont accès aux appareils mobiles iOS ou Android au cours de leurs équipes, personnels ou fournis par le marchand.
+- Les associés de magasin et d’entrepôt ont accès aux appareils mobiles iOS ou Android pendant leurs équipes, personnels ou fournis par le marchand.
 
 - Les produits gérés à l’aide de la solution d’exécution de magasin doivent posséder des attributs de produit qui incluent un SKU ou un code de produit UPC.

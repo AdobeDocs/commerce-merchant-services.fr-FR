@@ -4,7 +4,7 @@ description: Définissez des conditions qui incluent ou excluent l’utilisation
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
 source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerce applique automatiquement des filtres par défaut non configurables aux unités de recommandations. Si plusieurs unités de recommandation sont déployées sur une page, Adobe Commerce filtre tous les produits qui sont répétés dans les unités. Seule la première référence à un produit répété est utilisée pour libérer de l’espace pour que d’autres produits soient recommandés. Adobe Commerce filtre également les produits précédemment achetés et ceux qui se trouvent dans le panier.
 
-Lorsque vous [create](create.md) une unité de recommandation, vous pouvez définir des filtres qui contrôlent quels produits peuvent être affichés dans les recommandations. Ces filtres sont basés sur un ensemble de conditions d’inclusion ou d’exclusion que vous définissez. Seuls les produits qui correspondent à toutes les conditions d’inclusion apparaissent dans les recommandations. Les produits qui correspondent à l’une des conditions d’exclusion ne sont pas recommandés.
+Lorsque vous [créez](create.md) une unité de recommandation, vous pouvez définir des filtres qui contrôlent quels produits peuvent être affichés dans les recommandations. Ces filtres sont basés sur un ensemble de conditions d’inclusion ou d’exclusion que vous définissez. Seuls les produits qui correspondent à toutes les conditions d’inclusion apparaissent dans les recommandations. Les produits qui correspondent à l’une des conditions d’exclusion ne sont pas recommandés.
 
 Vous pouvez configurer plusieurs filtres et activer uniquement ceux de votre choix en sélectionnant le bouton d’activation/désactivation de chaque page de filtre. Vous pouvez ainsi créer des brouillons de filtres pour une utilisation ultérieure. Le nombre de filtres activés s’affiche sur chaque onglet.
 
@@ -34,7 +34,7 @@ Les opérateurs logiques `AND` et `OR` sont utilisés pour joindre plusieurs con
 
 >[!NOTE]
 >
-> Les filtres d’inclusion et d’exclusion remplacent les exclusions de catégorie héritées dans les versions 3.2.2 et ultérieures de la `magento/product-recommendations` module . Voir [notes de mise à jour](release-notes.md) pour en savoir plus sur les versions d’Adobe Commerce.
+> Les filtres d’inclusion et d’exclusion remplacent les exclusions de catégorie héritées dans les versions 3.2.2 et ultérieures du module `magento/product-recommendations`. Pour en savoir plus sur les versions d’Adobe Commerce, consultez les [notes de mise à jour](release-notes.md) .
 
 ## Types de filtres {#filtertypes}
 
@@ -42,7 +42,7 @@ Les opérateurs logiques `AND` et `OR` sont utilisés pour joindre plusieurs con
 
 ### Catégorie
 
-Les filtres basés sur la catégorie d’un produit utilisent des affectations de catégorie directes et leurs sous-catégories. Par exemple, activation d’une condition d’exclusion pour une catégorie `Gear` exclut les produits affectés à `Gear` et toutes ses sous-catégories, telles que `Gear/Bags` ou `Gear/Fitness Equipment`. Pour les commerçants B2B, le filtre de catégorie adhère à n’importe quel [catégories de produits spécifiques au client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) vous avez configuré.
+Les filtres basés sur la catégorie d’un produit utilisent des affectations de catégorie directes et leurs sous-catégories. Par exemple, l’activation d’une condition d’exclusion pour la catégorie `Gear` exclut les produits affectés à `Gear` et toutes ses sous-catégories telles que `Gear/Bags` ou `Gear/Fitness Equipment`. Pour les commerçants B2B, le filtre de catégorie adhère aux [ catégories de produits spécifiques aux clients](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) que vous avez configurées.
 
 Adobe Commerce vous recommande d’utiliser la configuration de filtre de catégorie suivante lorsque vous déployez des recommandations sur vos types de page :
 
@@ -60,19 +60,19 @@ Les filtres de produits spécifient les produits spécifiques éligibles, ou non
 
 ### Type
 
-Un filtre basé sur le type de produit inclut ou exclut tous les produits d’un type spécifique. Les types pris en charge incluent : _Simple_, _Configurable_, _Virtuel_, _Téléchargeable_, ou _Carte cadeau_. _Bundle_ et _Regroupé_ Les produits ne sont pas encore pris en charge.
+Un filtre basé sur le type de produit inclut ou exclut tous les produits d’un type spécifique. Les types pris en charge sont les suivants : _Simple_, _Configurable_, _Virtuel_, _Téléchargeable_ ou _Carte cadeau_. Les produits _Bundle_ et _Grouped_ ne sont pas encore pris en charge.
 
 ### Visibilité
 
-Filtre les produits en fonction de la visibilité, par exemple : _Catalogue_, _Rechercher_, ou les deux.
+Filtre les produits en fonction de la visibilité, par exemple : _Catalog_, _Search_ ou les deux.
 
 ### Prix
 
-Un filtre basé sur le prix du produit utilise le prix final pour effectuer la comparaison. Le prix final inclut toutes les remises ou les prix spéciaux disponibles pour les acheteurs anonymes. Pour les commerçants B2B, le prix affiché reflète le [tarification de groupe spécifique au client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) vous avez configuré.
+Un filtre basé sur le prix du produit utilise le prix final pour effectuer la comparaison. Le prix final inclut toutes les remises ou les prix spéciaux disponibles pour les acheteurs anonymes. Pour les commerçants B2B, le prix affiché reflète le [prix de groupe spécifique au client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) que vous avez configuré.
 
 ### Etat des stocks
 
 Les filtres d’exclusion suivants peuvent être utilisés pour filtrer les produits en fonction de l’état du stock :
 
 - En rupture de stock - (Exclusion uniquement) Exclut les produits en rupture de stock.
-- Faible en stock - (Exclusion uniquement) Exclut les produits en stock. L’état de stock bas est basé sur la variable _Seuil gauche seulement X_ dans [Configuration du stock](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- Faible en stock - (Exclusion uniquement) Exclut les produits en stock. L’état de stock faible est basé sur la valeur _Seuil gauche seulement X_ dans la [Configuration de stock](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

@@ -15,18 +15,18 @@ ht-degree: 0%
 
 Lorsque les clients arrivent pour une récupération au bord du trottoir, ils utilisent le formulaire Commande de prise en charge pour s’enregistrer et fournir des informations sur leur emplacement, leur marque de voiture et leur modèle de voiture. Ces informations sont envoyées à Store Associates par le biais de l’application d’aide à la boutique afin qu’il puisse rapidement envoyer des commandes de nettoyage à l’aide de la boutique.
 
-![[!DNL Check-In Experience Car Make] et [!DNL Model] paramètres de la sélection côté serveur](assets/checkin-system-settings-car-options.png)
+Paramètres ![[!DNL Check-In Experience Car Make] et [!DNL Model] pour le sélecteur de bordure](assets/checkin-system-settings-car-options.png)
 
 >[!NOTE]
 >
->Vous configurez l’interface de formulaire de bon de commande à partir de la page [Menu Configuration du magasin](merchant-store-configuration.md#configure-check-in-experience-interface-options). Vous pouvez par exemple spécifier les champs de saisie à afficher et indiquer s’ils sont obligatoires ou facultatifs.
+>Vous configurez l’interface de formulaire Commande de prise en charge à partir du [menu Store Configuration](merchant-store-configuration.md#configure-check-in-experience-interface-options). Vous pouvez par exemple spécifier les champs de saisie à afficher et indiquer s’ils sont obligatoires ou facultatifs.
 
 
 ## Configuration des sélections de marques et de couleurs de voiture
 
 Les utilisateurs administrateurs peuvent gérer les sélections de modèles et de mise en page de la voiture disponibles sur le formulaire de sélection dans les paramètres du système Adobe Commerce :
 
-- **[!UICONTROL System]> Archiver > Effectuer une opération**
+- **[!UICONTROL System]> Archiver > Lancements de voiture**
 - **[!UICONTROL System]> Archiver > Couleurs de la voiture**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)

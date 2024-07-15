@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Événements comportementaux
+# [!DNL Data Connection] événements comportementaux
 
-Vous trouverez ci-dessous la liste des événements comportementaux de Commerce disponibles lors de l’installation du [!DNL Data Connection] extension . Les données collectées par ces événements sont envoyées à Adobe Experience Platform. Vous pouvez également créer [événements personnalisés](custom-events.md) pour collecter des données supplémentaires qui ne sont pas fournies en standard.
+Vous trouverez ci-dessous la liste des événements comportementaux Commerce disponibles lorsque vous installez l’extension [!DNL Data Connection]. Les données collectées par ces événements sont envoyées à Adobe Experience Platform. Vous pouvez également créer des [événements personnalisés](custom-events.md) pour collecter des données supplémentaires non fournies en standard.
 
-Outre les données collectées par les événements suivants, vous obtenez également [autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fourni par le SDK Web de Adobe Experience Platform.
+Outre les données que les événements suivants collectent, vous obtenez également [d’autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fournies par le SDK Web de Adobe Experience Platform.
 
 Les événements comportementaux collectent des données comportementales anonymes de vos clients lorsqu’ils naviguent sur votre site. Vous pouvez utiliser les données collectées par ces événements pour créer des promotions et des campagnes ciblées sur un ensemble spécifique d’acheteurs.
 
 >[!NOTE]
 >
->Tous les événements comportementaux incluent la variable [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) qui inclut l’adresse électronique de l’acheteur, le cas échéant, et l’ECID.
+>Tous les événements comportementaux incluent le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), qui inclut l’adresse électronique de l’acheteur, le cas échéant, et l’ECID.
 
 ## Événements Storefront
 
@@ -39,10 +39,10 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
-| `commerce.productListAdds` | Indique si un produit a été ajouté à un panier. Une valeur de `1` indique qu’un produit a été ajouté. |
+| `commerce.productListAdds` | Indique si un produit a été ajouté à un panier. Une valeur `1` indique qu’un produit a été ajouté. |
 | `commerce.cart.cartID` | Identifiant unique qui identifie le panier du client. |
 | `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
 | `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
@@ -55,11 +55,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
 | `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
 | `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
-| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.currencyCode` | Code de devise [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) utilisé, par exemple `USD` ou `EUR`. |
 | `productListItems.productImageUrl` | URL de l’image principale du produit. |
 | `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
-| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut tel que `small` ou `black`. |
 
 ### openCart
 
@@ -73,10 +73,10 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
-| `commerce.productListOpens` | Indique si un panier a été créé. Une valeur de `1` indique qu’un panier a été créé. |
+| `commerce.productListOpens` | Indique si un panier a été créé. Une valeur `1` indique qu’un panier a été créé. |
 | `commerce.cart.cartID` | Identifiant unique qui identifie le panier du client. |
 | `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
 | `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
@@ -89,11 +89,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
 | `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
 | `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
-| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.currencyCode` | Code de devise [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) utilisé, par exemple `USD` ou `EUR`. |
 | `productListItems.productImageUrl` | URL de l’image principale du produit. |
 | `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
-| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut tel que `small` ou `black`. |
 
 ### removeFromCart
 
@@ -107,10 +107,10 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
-| `commerce.productListRemovals` | Indique si un produit a été supprimé du panier. Une valeur de `1` indique qu’un produit a été supprimé du panier. |
+| `commerce.productListRemovals` | Indique si un produit a été supprimé du panier. Une valeur `1` indique qu’un produit a été supprimé du panier. |
 | `commerce.cart.cartID` | Identifiant unique qui identifie le panier du client. |
 | `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
 | `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
@@ -123,11 +123,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
 | `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
 | `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
-| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.currencyCode` | Code de devise [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) utilisé, par exemple `USD` ou `EUR`. |
 | `productListItems.productImageUrl` | URL de l’image principale du produit. |
 | `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
-| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut tel que `small` ou `black`. |
 
 ### shoppingCartView
 
@@ -141,7 +141,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productListViews` | Indique si une liste de produits a été consultée. |
@@ -159,11 +159,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
 | `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
 | `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
-| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.currencyCode` | Code de devise [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) utilisé, par exemple `USD` ou `EUR`. |
 | `productListItems.productImageUrl` | URL de l’image principale du produit. |
 | `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
-| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut tel que `small` ou `black`. |
 
 ### pageView
 
@@ -177,10 +177,10 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
-| `web.webPageDetails.pageViews` | Indique si une page a été chargée. A `value` de `1` indique que la page a été chargée. |
+| `web.webPageDetails.pageViews` | Indique si une page a été chargée. Un `value` de `1` indique que la page a été chargée. |
 | `web.webPageDetails.URL` | URL normative ou habituelle de la page web. Il peut s’agir de l’URL réelle utilisée pour atteindre la page, qui serait enregistrée à l’aide de `Web Link`. |
 | `web.webPageDetails.name` | Nom normatif de la page web. Ce nom n’est pas nécessairement le titre de la page ou directement associé au contenu de la page, mais il est utilisé pour organiser les pages d’un site à des fins de classification. |
 | `web.webReferrer.URL` | URL de la page web visitée par un acheteur avant de cliquer sur un lien vers votre site. |
@@ -202,7 +202,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productViews` | Indique si le produit a été consulté. |
@@ -217,11 +217,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
 | `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
 | `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
-| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.currencyCode` | Code de devise [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) utilisé, par exemple `USD` ou `EUR`. |
 | `productListItems.productImageUrl` | URL de l’image principale du produit. |
 | `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
-| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut tel que `small` ou `black`. |
 
 ### startCheckout
 
@@ -235,7 +235,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.checkouts` | Indique si une action s’est produite au cours du processus de passage en caisse. |
@@ -251,11 +251,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
 | `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
 | `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
-| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.currencyCode` | Code de devise [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) utilisé, par exemple `USD` ou `EUR`. |
 | `productListItems.productImageUrl` | URL de l’image principale du produit. |
 | `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
-| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut tel que `small` ou `black`. |
 
 ### completeCheckout
 
@@ -269,7 +269,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.purchases` | Indique si une commande a été acceptée. |
@@ -278,22 +278,22 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `commerce.order.payments` | Liste des paiements pour cette commande. |
 | `commerce.order.payments.paymentTransactionID` | Identifiant unique de cette transaction de paiement. |
 | `commerce.order.payments.paymentAmount` | Valeur du paiement. |
-| `commerce.order.payments.paymentType` | Mode de paiement de cette commande. Les options sont les suivantes : `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other`. |
-| `commerce.order.payments.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `commerce.order.payments.paymentType` | Mode de paiement de cette commande. Les options sont : `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other`. |
+| `commerce.order.payments.currencyCode` | Code de devise [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) utilisé, par exemple `USD` ou `EUR`. |
 | `commerce.order.taxAmount` | Montant de l&#39;impôt payé par l&#39;acheteur dans le cadre du paiement final. |
 | `commerce.order.discountAmount` | Indique le montant de remise appliqué à la commande entière. |
-| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple : `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | Heure et date de création d’une commande dans le système commercial. Par exemple, `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | Informations d’expédition pour un ou plusieurs produits. |
 | `commerce.shipping.shippingMethod` | Mode d’expédition choisi par le client, tel que la livraison standard, la livraison accélérée, la prise en charge en magasin, etc. |
 | `commerce.shipping.shippingAmount` | Le montant que le client a dû payer pour l’expédition. |  | `shipping` | Informations d’expédition pour un ou plusieurs produits. |
-| `commerce.shipping.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `commerce.shipping.currencyCode` | Code de devise [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) utilisé, par exemple `USD` ou `EUR`. |
 | `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
 | `commerce.commerceScope.environmentID` | Identifiant de l’environnement. ID alphanumérique de 32 chiffres séparés par des tirets. |
 | `commerce.commerceScope.storeCode` | Code de magasin unique. Vous pouvez avoir de nombreux magasins par site web. |
 | `commerce.commerceScope.storeViewCode` | Code d’affichage de magasin unique. Vous pouvez avoir de nombreuses vues de magasin par magasin. |
 | `commerce.commerceScope.websiteCode` | Code unique du site web. Vous pouvez avoir de nombreux sites Web dans un environnement. |
 | `personalEmail` | Adresse électronique personnelle. |
-| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `personalEmail.address` | Adresse technique, par exemple, `name@domain.com` telle que généralement définie dans la norme RFC2822 et les normes ultérieures. |
 | `productListItems` | Tableau de produits qui ont été ajoutés au panier. |
 | `productListItems.SKU` | Unité de gestion des stocks. Identifiant unique du produit. |
 | `productListItems.name` | Nom d’affichage ou nom lisible du produit. |
@@ -303,11 +303,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.productImageUrl` | URL de l’image principale du produit. |
 | `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
-| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut tel que `small` ou `black`. |
 
 ## Événements de profil client
 
-Les événements de profil capturés à partir du storefront incluent des informations de compte, telles que `signIn`, `signOut`, `createAccount`, et `editAccount`. Ces données permettent de renseigner les détails clés des clients nécessaires pour mieux définir les segments ou exécuter des campagnes marketing, comme envoyer des offres de réduction d’inscription, confirmer des changements de compte, etc. Des événements de profil similaires sont capturés à partir de la variable [côté serveur](events-backoffice.md#customer-profile-events).
+Les événements de profil capturés depuis le storefront incluent des informations de compte, telles que `signIn`, `signOut`, `createAccount` et `editAccount`. Ces données permettent de renseigner les détails clés des clients nécessaires pour mieux définir les segments ou exécuter des campagnes marketing, comme envoyer des offres de réduction d’inscription, confirmer des changements de compte, etc. Des événements de profil similaires sont capturés à partir de [côté serveur](events-backoffice.md#customer-profile-events).
 
 ### signIn
 
@@ -325,15 +325,15 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Acteur, contact ou propriétaire individuel. |
 | `person.accountID` | Capture l’ID du compte d’utilisateur. |
-| `person.accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant. |
-| `person.personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `person.accountType` | Capture le type de compte utilisateur, par exemple `Personal` ou `Company`, le cas échéant. |
+| `person.personalEmailID` | Adresse technique, par exemple, `name@domain.com` telle que généralement définie dans la norme RFC2822 et les normes ultérieures. |
 | `personalEmail` | Capture les coordonnées : un e-mail et les informations associées. |
-| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `personalEmail.address` | Adresse technique, par exemple, `name@domain.com` telle que généralement définie dans la norme RFC2822 et les normes ultérieures. |
 | `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et d’autres préférences de compte. |
 | `userAccount.login` | Indique si un visiteur a tenté de se connecter. |
 | `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
@@ -358,7 +358,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et d’autres préférences de compte. |
@@ -385,15 +385,15 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Acteur, contact ou propriétaire individuel. |
 | `person.accountID` | Capture l’ID du compte d’utilisateur. |
-| `person.accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant. |
-| `person.personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `person.accountType` | Capture le type de compte utilisateur, par exemple `Personal` ou `Company`, le cas échéant. |
+| `person.personalEmailID` | Adresse technique, par exemple, `name@domain.com` telle que généralement définie dans la norme RFC2822 et les normes ultérieures. |
 | `personalEmail` | Capture les coordonnées : un e-mail et les informations associées. |
-| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `personalEmail.address` | Adresse technique, par exemple, `name@domain.com` telle que généralement définie dans la norme RFC2822 et les normes ultérieures. |
 | `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et d’autres préférences de compte. |
 | `userAccount.updateProfile` | Indique si un utilisateur a mis à jour son profil de compte. |
 | `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
@@ -418,15 +418,15 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Acteur, contact ou propriétaire individuel. |
 | `person.accountID` | Capture l’ID du compte d’utilisateur. |
-| `person.accountType` | Capture le type de compte d’utilisateur, tel que `Personal` ou `Company`, le cas échéant. |
-| `person.personalEmailID` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `person.accountType` | Capture le type de compte utilisateur, par exemple `Personal` ou `Company`, le cas échéant. |
+| `person.personalEmailID` | Adresse technique, par exemple, `name@domain.com` telle que généralement définie dans la norme RFC2822 et les normes ultérieures. |
 | `personalEmail` | Capture les coordonnées : un e-mail et les informations associées. |
-| `personalEmail.address` | L’adresse technique, par exemple : `name@domain.com` comme généralement défini dans la norme RFC2822 et les normes ultérieures. |
+| `personalEmail.address` | Adresse technique, par exemple, `name@domain.com` telle que généralement définie dans la norme RFC2822 et les normes ultérieures. |
 | `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et d’autres préférences de compte. |
 | `userAccount.updateProfile` | Indique si un utilisateur a mis à jour son profil de compte. |
 | `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
@@ -437,15 +437,15 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## Recherche d’événements
 
-Les événements de recherche fournissent des données pertinentes pour l’intention de l’acheteur. L’aperçu de l’intention d’un acheteur permet aux marchands de voir comment les acheteurs recherchent des articles, ce sur quoi ils cliquent, et en fin de compte achètent ou abandonnent. Vous pouvez, par exemple, utiliser ces données si vous souhaitez cibler les acheteurs existants qui recherchent votre meilleur produit, mais n’achètent jamais le produit. Vous devez installer le [[!DNL Live Search]](../live-search/install.md) pour accéder à ces événements.
+Les événements de recherche fournissent des données pertinentes pour l’intention de l’acheteur. L’aperçu de l’intention d’un acheteur permet aux marchands de voir comment les acheteurs recherchent des articles, ce sur quoi ils cliquent, et en fin de compte achètent ou abandonnent. Vous pouvez, par exemple, utiliser ces données si vous souhaitez cibler les acheteurs existants qui recherchent votre meilleur produit, mais n’achètent jamais le produit. Vous devez installer l’extension [[!DNL Live Search]](../live-search/install.md) pour accéder à ces événements.
 
-Utilisez la variable `searchRequest.id` et `searchResponse.id` des champs figurant dans les deux `searchRequestSent` et `searchResponseReceived` pour effectuer une référence croisée à une requête de recherche vers la réponse de recherche correspondante.
+Utilisez les champs `searchRequest.id` et `searchResponse.id` trouvés dans les événements `searchRequestSent` et `searchResponseReceived` pour effectuer une référence croisée à une requête de recherche vers la réponse de recherche correspondante.
 
 ### searchRequestSent
 
 | Description | Nom de l’événement XDM |
 |---|---|
-| Déclenché par les événements suivants dans la fenêtre contextuelle &quot;Rechercher lorsque vous tapez&quot; :<br><br>Appuyez sur Entrée, puis cliquez sur _Afficher tout_<br><br> Déclenché par les événements suivants sur les pages de résultats de recherche :<br><br>Sélectionnez un filtre, puis Modifiez l’ordre de tri (_Trier par_), Modifier la direction du tri (ascendant ou descendant), Modifier le nombre de résultats par page (_Afficher le nombre par page_), Accédez à la page suivante, à la page précédente, à une autre page. | `searchRequest` |
+| Déclenché par les événements suivants dans la fenêtre contextuelle &quot;Rechercher en cours de frappe&quot; :<br><br>Appuyez sur Entrée, cliquez sur _Afficher tout_<br><br> Déclenché par les événements suivants sur les pages de résultats de recherche :<br><br>Sélectionnez un filtre, Modifiez l’ordre de tri (_Trier par_), Modifiez la direction du tri (ascendant ou descendant), modifiez le nombre de résultats par page (_Afficher # par page_), Accédez à la page suivante, à la page précédente, à une autre page. | `searchRequest` |
 
 >[!NOTE]
 >
@@ -457,7 +457,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `searchRequest` | Indique si une requête de recherche a été envoyée. |
@@ -465,11 +465,11 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `searchRequest.value` | Valeur quantifiable de la requête. |
 | `siteSearch` | Contient des informations sur la recherche. |
 | `siteSearch.filter` | Indique si des filtres ont été appliqués pour limiter les résultats de la recherche. |
-| `siteSearch.filter.attribute` (filter) | La facette d’un élément utilisée pour déterminer s’il doit être inclus dans les résultats de recherche. |
+| `siteSearch.filter.attribute` (filtre) | La facette d’un élément utilisée pour déterminer s’il doit être inclus dans les résultats de recherche. |
 | `siteSearch.filter.isRange` | Si la valeur est true, les valeurs indiquent les points de fin d’une plage de valeurs acceptable. |
 | `siteSearch.filter.value` | Valeur d’attribut utilisée pour déterminer les éléments qui sont inclus dans les résultats de recherche. |
 | `siteSearch.sort` | Indique le mode de tri des résultats de recherche. |
-| `siteSearch.sort.attribute` (sort) | Attribut utilisé pour trier les éléments dans les résultats de recherche. |
+| `siteSearch.sort.attribute` (tri) | Attribut utilisé pour trier les éléments dans les résultats de recherche. |
 | `siteSearch.sort.order` | Ordre dans lequel renvoyer les résultats de la recherche. |
 | `siteSearch.query` | Termes recherchés. |
 | `commerce.commerceScope` | Indique l’emplacement d’un événement (affichage en magasin, magasin, site web, etc.). |
@@ -494,7 +494,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `searchResponse` | Indique si une réponse de recherche a été reçue. |
@@ -514,9 +514,9 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ## Événements B2B
 
-![B2B pour Adobe Commerce](../assets/b2b.svg) Pour les marchands B2B, vous devez [install](install.md#install-the-b2b-extension) la valeur `experience-platform-connector-b2b` pour accéder à ces événements.
+![B2B pour Adobe Commerce](../assets/b2b.svg) Pour les commerçants B2B, vous devez [installer](install.md#install-the-b2b-extension) l’extension `experience-platform-connector-b2b` pour accéder à ces événements.
 
-Les événements B2B contiennent [liste des demandes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) des informations, par exemple si une liste de demandes d’achat a été créée, ajoutée ou supprimée. En suivant les événements spécifiques aux listes de commandes, vous pouvez identifier les produits que vos clients achètent fréquemment et créer des campagnes basées sur ces données.
+Les événements B2B contiennent des informations [liste de demandes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html), telles que si une liste de demandes a été créée, ajoutée ou supprimée. En suivant les événements spécifiques aux listes de commandes, vous pouvez identifier les produits que vos clients achètent fréquemment et créer des campagnes basées sur ces données.
 
 ### createRequestList
 
@@ -530,7 +530,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requisitionListOpens` | Indique l’initialisation d’une nouvelle liste de demandes d’achat. |
@@ -556,7 +556,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requisitionListAdds` | Indique l’ajout d’un ou de plusieurs produits à une liste de demandes d’achat. |
@@ -575,10 +575,10 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
 | `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
 | `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
-| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.currencyCode` | Code de devise [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) utilisé, par exemple `USD` ou `EUR`. |
 | `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
-| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut tel que `small` ou `black`. |
 
 ### removeFromRequestList
 
@@ -592,7 +592,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requsitionListRemovals` | Indique la suppression d’un ou de plusieurs produits d’une liste de demandes d’achat. |
@@ -611,10 +611,10 @@ Le tableau suivant décrit les données collectées pour cet événement.
 | `productListItems.priceTotal` | Prix total de l’article de ligne de produit. |
 | `productListItems.quantity` | Nombre d’unités de produits dans le panier. |
 | `productListItems.discountAmount` | Indique le montant de la remise appliquée. |
-| `productListItems.currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) code de devise utilisé, par exemple `USD` ou `EUR`. |
+| `productListItems.currencyCode` | Code de devise [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) utilisé, par exemple `USD` ou `EUR`. |
 | `productListItems.selectedOptions` | Champ utilisé pour un produit configurable. |
 | `productListItems.selectedOptions.attribute` | Identifie un attribut du produit configurable, tel que `size` ou `color`. |
-| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut, telle que `small` ou `black`. |
+| `productListItems.selectedOptions.value` | Identifie la valeur de l’attribut tel que `small` ou `black`. |
 
 ### deleteRequestList
 
@@ -628,7 +628,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. Les deux `_id` et `_type` contain [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux [ espaces de noms ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
 | `channel._id` | L’identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données de canal, telles que `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requisitionListDeletes` | Indique qu’une liste de demandes d’achat a été supprimée. |

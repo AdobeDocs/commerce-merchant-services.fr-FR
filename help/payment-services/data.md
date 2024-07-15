@@ -20,11 +20,11 @@ Vous disposez de certaines données de commande et de paiement afin de pouvoir c
 
 Vous pouvez réconcilier le reporting financier d’Adobe Commerce avec votre système ERP (Enterprise Resource Planning) autre qu’Adobe à l’aide de l’identifiant d’incrément associé à une commande spécifique.
 
-Lorsque les services de paiement envoient la commande Commerce à PayPal, l’ID d’incrément est inclus en tant que `custom_id` _et_ dans le `invoice_id` (qui contient également une chaîne aléatoire après l’événement `increment_id`).
+Lorsque les services de paiement envoient la commande Commerce à PayPal, l’ID d’incrément est inclus en tant que `custom_id` _et_ dans le `invoice_id` (qui contient également une chaîne aléatoire après le `increment_id`).
 
 Les identifiants sont facilement accessibles dans les détails de l’activité commerciale pour un paiement et dans le webhook PayPal.
 
-La variable `invoice_id` et `custom_id` s’affichent près du bas du détail de l’activité commerciale pour un paiement :
+Les `invoice_id` et `custom_id` s’affichent près du bas des détails de l’activité commerciale pour un paiement :
 
 ![`custom_id` dans le détail de l’activité commerciale](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
@@ -79,5 +79,5 @@ La variable `invoice_id` et `custom_id` s’affichent près du bas du détail de
 
 Pour plus d’informations, consultez la documentation sur les API REST de PayPal :
 
-* [`purchase_unit`, dans laquelle `custom_id` et `invoice_id` résider](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
-* [Afficher les détails de commande](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
+* [`purchase_unit`, dans lequel `custom_id` et `invoice_id` résident](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [Afficher les détails de la commande](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

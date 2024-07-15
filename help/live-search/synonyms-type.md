@@ -1,6 +1,6 @@
 ---
 title: "Types de synchronisation"
-description: "A sens unique et à sens unique [!DNL Live Search] les synonymes étendent la définition des mots-clés."
+description: "Les synonymes à sens unique et à deux sens [!DNL Live Search] étendent la définition des mots-clés."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
@@ -17,23 +17,23 @@ Les synonymes unidirectionnels et bidirectionnels élargissent la définition de
 
 Les synonymes bidirectionnels ont la même signification et renvoient les mêmes résultats de recherche. Dans l&#39;exemple suivant, le premier mot en gras est le mot-clé utilisé dans le catalogue, suivi de mots ayant la même signification que le mot-clé d&#39;origine. Vous pouvez créer une simple paire de synonymes bidirectionnels ou une chaîne de plusieurs synonymes bidirectionnels pour le même mot-clé.
 
-**veste** ![Sélecteur bidirectionnel](assets/btn-two-way.png) manteau
-**pantalons** ![Sélecteur bidirectionnel](assets/btn-two-way.png) slacks ![Sélecteur bidirectionnel](assets/btn-two-way.png) pantalon
+**** ![Sélecteur bidirectionnel](assets/btn-two-way.png)
+**pants** ![Sélecteur bidirectionnel](assets/btn-two-way.png) ajoute des pantalons ![Sélecteur bidirectionnel](assets/btn-two-way.png)
 
 ## A sens unique
 
 Un synonyme unidirectionnel est un sous-ensemble d’un mot-clé, mais avec une signification plus précise. Par exemple, les pantalons et les shorts sont des pantalons, mais tous ne sont pas des pantalons ou des shorts. Une recherche de pantalon inclut des pantalons et des shorts. Cependant, une recherche de raccourcis ne renvoie pas d’événement.
 
-**sweat** ![Sélecteur unidirectionnel](assets/btn-one-way.png) hoodie
-**pantalons** ![Sélecteur unidirectionnel](assets/btn-one-way.png) entreprise ![Sélecteur à sens unique multiple](assets/btn-multiple-one-way.png) calf-length-pants ![Sélecteur à sens unique multiple](assets/btn-multiple-one-way.png) purge des pédales
+**sweatshirt** ![Sélecteur à sens unique](assets/btn-one-way.png)
+**pants** ![Sélecteur à sens unique](assets/btn-one-way.png) capris ![Sélecteur à sens unique multiples](assets/btn-multiple-one-way.png) calf-length-pants ![Sélecteur à sens unique multiples](assets/btn-multiple-one-way.png) des pureurs de pétales
 
 ## Bonnes pratiques
 
-Gardez à l’esprit les bonnes pratiques suivantes pour tirer le meilleur parti de [!DNL Live Search] synonymes.
+Gardez à l’esprit les bonnes pratiques suivantes pour tirer le meilleur parti des synonymes [!DNL Live Search].
 
 ### Évitez les &quot;mots d’arrêt&quot;
 
-[!DNL Live Search] filtre les mots &quot;stop&quot; anglais courants des synonymes, tels que :
+[!DNL Live Search] filtre les &quot;mots d’arrêt&quot; anglais courants des synonymes, tels que :
 
 a, an et sont, en tant que, à, être, mais, par, pour, si, in, into, is, it, no, of, on, or, such, the, they, then, they, this, to, was, will with
 
