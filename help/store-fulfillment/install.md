@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Passez en revue les [exigences](solution-requirements.md) de la solution d’ex�
 
 Si vous avez installé une version bêta ou préliminaire de l’extension Store Fulfillment for Adobe Commerce, utilisez la commande suivante pour la supprimer avant d’installer la version actuelle.
 
-```terminal
+```bash
 rm -rf composer.lock vendor/walmart &&
 composer require walmart/magento-bopis-metapackage:1.0.0
 ```
@@ -107,7 +107,7 @@ Terminez l’installation en utilisant `bin/magento setup:upgrade` pour mettre �
 
 1. Enregistrez l’extension avec Adobe Commerce à l’aide de la commande d’interface de ligne de commande du Magento `setup:upgrade`.
 
-   ```terminal
+   ```bash
    bin/magento setup:upgrade
    ```
 
@@ -191,7 +191,7 @@ Sur le serveur Adobe Commerce, vérifiez que les modules de l’extension Store 
 
 Si nécessaire, utilisez la commande d’interface de ligne de commande [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} pour déployer les fichiers d’affichage statique dans votre environnement de production.
 
-```terminal
+```bash
 php bin/magento setup:static-content:deploy -f
 ```
 
