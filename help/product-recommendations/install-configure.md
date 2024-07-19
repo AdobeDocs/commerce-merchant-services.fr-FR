@@ -3,9 +3,9 @@ title: Installation et configuration
 description: Découvrez comment installer, mettre à jour et désinstaller  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -51,11 +51,19 @@ composer require magento/module-visual-product-recommendations
 
 ## Configurer [!DNL Product Recommendations] {#configure}
 
-Après avoir installé le module `magento/product-recommendations`, vous devez configurer le [Connecteur de services Commerce](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) en spécifiant les clés d’API et en sélectionnant un espace de données SaaS.
+1. Après avoir installé le module `magento/product-recommendations`, configurez le [Connecteur de services Commerce](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) en spécifiant les clés d’API et en sélectionnant un espace de données SaaS.
 
-Pour vous assurer que l’exportation du catalogue s’exécute correctement, vérifiez que les tâches [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) et les [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sont en cours d’exécution et que l’indexeur `Product Feed` est défini sur `Update by Schedule`.
+   La configuration de cette connexion permet la synchronisation et la communication des données entre l’instance Commerce, le service de catalogue et d’autres services annexes. La synchronisation des données est gérée par l’[ extension d’exportation des données SaaS](../data-export/overview.md).
 
-Lorsque vous parvenez à créer un lien vers les services Commerce par le biais de clés d’API et à spécifier l’espace de données SaaS, la synchronisation du catalogue commence. Vous pouvez ensuite [vérifier](verify.md) que les données comportementales sont envoyées à votre vitrine.
+1. Pour vous assurer que l’exportation du catalogue peut s’exécuter correctement, vérifiez que les tâches [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) et les [indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) sont en cours d’exécution et que l’indexeur `Product Feed` est défini sur `Update by Schedule`.
+
+Une fois que vous avez correctement lié l’application Commerce aux services Commerce et que vous avez spécifié l’espace de données SaaS, la synchronisation du catalogue commence. Vous pouvez ensuite [vérifier](verify.md) que les données comportementales sont envoyées à votre vitrine.
+
+## Surveillance et dépannage de la synchronisation des données
+
+Depuis l’administrateur Commerce, vous pouvez surveiller le processus de synchronisation à l’aide du [tableau de bord de Data Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Utilisez l’ [interface de ligne de commande de Commerce](../data-export/data-export-cli-commands.md#troubleshooting) et les journaux pour gérer et résoudre les problèmes liés au processus.
+
+Vous pouvez ensuite [vérifier](verify.md) que les données comportementales sont envoyées à votre vitrine.
 
 ## Mettre à jour votre installation [!DNL Product Recommendations] {#update}
 

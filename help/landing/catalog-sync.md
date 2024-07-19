@@ -3,9 +3,9 @@ title: Synchronisation du catalogue
 description: Découvrez comment exporter des données de produit du serveur  [!DNL Commerce] vers [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Le tableau de bord de synchronisation du catalogue est désormais le tableau de bord de la gestion des données. Ce tableau de bord rénové prend désormais en charge [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md), [[!DNL Live Search]](../live-search/overview.md) et [[!DNL Catalog Service]](../catalog-service/overview.md). Les clients peuvent accéder au tableau de bord de Data Management en mettant à jour la dernière version de l’un de ces services. Pour en savoir plus, consultez la documentation [Tableau de bord de Data Management](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) . Cette rubrique actuelle reste destinée aux utilisateurs qui n’ont pas encore effectué la mise à niveau et qui disposent toujours du tableau de bord de synchronisation du catalogue.
+> Le tableau de bord de synchronisation du catalogue est désormais le tableau de bord de la gestion des données. Ce tableau de bord restructuré prend désormais en charge [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ et [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Les clients peuvent accéder au tableau de bord de Data Management en mettant à jour la dernière version de l’un de ces services. Pour en savoir plus, consultez la documentation [Tableau de bord de Data Management](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) . Cette rubrique actuelle reste destinée aux utilisateurs qui n’ont pas encore effectué la mise à niveau et qui disposent toujours du tableau de bord de synchronisation du catalogue.
 
 Adobe Commerce utilise des indexeurs pour compiler des données de catalogue dans des tables. Le processus est automatiquement déclenché par [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing), par exemple une modification du prix d’un produit ou d’un niveau de stock.
 

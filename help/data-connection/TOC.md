@@ -5,9 +5,9 @@ breadcrumb-title: "[!DNL Data Connection] extension pour Adobe Commerce"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '116'
 ht-degree: 3%
 
 ---
@@ -32,3 +32,4 @@ ht-degree: 3%
 - Cas d’utilisation {#use-cases}
    - [Utilisation de Adobe Journey Optimizer pour envoyer un courrier électronique au panier abandonné](using-ajo.md)
    - [Création d’une audience dans Real-Time CDP à l’aide des données d’événement Commerce](create-audience.md)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

@@ -3,16 +3,16 @@ title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] pour Adobe Commerce permet de récupérer le contenu des pages d’affichage de produit et des pages de liste de produits beaucoup plus rapidement que les requêtes GraphQL natives.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] pour Adobe Commerce
 
-L’extension [!DNL Catalog Service] pour Adobe Commerce fournit des données de catalogue de modèles d’affichage enrichies (lecture seule) pour effectuer rapidement et intégralement le rendu des expériences de storefront liées aux produits, notamment :
+L’extension [!DNL Catalog Service] pour Adobe Commerce fournit des données de catalogue de modèles d’affichage enrichies (lecture seule) pour rendre les expériences de storefront liées aux produits rapidement et entièrement, notamment :
 
 * Pages Détails du produit
 * Pages de liste de produits et de catégories
@@ -21,11 +21,13 @@ L’extension [!DNL Catalog Service] pour Adobe Commerce fournit des données de
 * Pages de comparaison des produits
 * Toute autre page qui effectue le rendu des données de produit, telles que les pages de panier, de commande et de liste de souhaits
 
-[!DNL Catalog Service] utilise [GraphQL](https://graphql.org/) pour demander et recevoir des données de produit. GraphQL est un langage de requête utilisé par un client frontal pour communiquer avec l’API (interface de programmation d’application) définie sur un serveur principal tel qu’Adobe Commerce. GraphQL est une méthode de communication courante, car elle est légère et permet à un intégrateur système de spécifier le contenu et l’ordre de chaque réponse.
+[!DNL Catalog Service] utilise [GraphQL](https://graphql.org/) pour demander et recevoir des données de catalogue, notamment des produits, des attributs de produit, des stocks et des prix. GraphQL est un langage de requête utilisé par un client frontal pour communiquer avec l’API (interface de programmation d’application) définie sur un serveur principal tel qu’Adobe Commerce. GraphQL est une méthode de communication courante, car elle est légère et permet à un intégrateur système de spécifier le contenu et l’ordre de chaque réponse.
 
 Adobe Commerce possède deux systèmes GraphQL. Le système GraphQL principal fournit un large éventail de requêtes (opérations de lecture) et de mutations (opérations d’écriture) qui permettent à un acheteur d’interagir avec de nombreux types de pages, notamment un produit, un compte client, un panier, un passage en caisse, etc. Toutefois, les requêtes qui renvoient des informations sur les produits ne sont pas optimisées pour la vitesse. Le système GraphQL des services peut uniquement exécuter des requêtes sur les produits et les informations associées. Ces requêtes sont plus performantes que les requêtes principales similaires.
 
-Les clients [!DNL Catalog Service] peuvent utiliser le nouvel [indexeur de prix SaaS](../price-index/price-indexing.md), qui permet d’accélérer les mises à jour des changements de prix et le temps de synchronisation.
+Les données disponibles pour le service de catalogue sont fournies par l’extension SaaS Data Export. Cette extension synchronise les données entre l’application Commerce et les services Commerce connectés pour s’assurer que les requêtes des points de terminaison de l’API GraphQL des services renvoient les données de catalogue les plus récentes. Pour plus d’informations sur la gestion et le dépannage des opérations d’exportation de données SaaS, consultez le [Guide d’exportation des données SaaS](../data-export/overview.md).
+
+Les clients [!DNL Catalog Service] peuvent utiliser l’ [ indexeur de prix SaaS](../price-index/price-indexing.md), qui permet d’accélérer les mises à jour de prix et la synchronisation.
 
 ## Architecture
 
@@ -54,7 +56,7 @@ Comme le service de catalogue fonctionne comme un service, les intégrateurs n�
 
 Le schéma réduit la diversité des types de produits à deux cas d’utilisation :
 
-* Les produits simples sont ceux qui sont définis avec un seul prix et une seule quantité. Le service de catalogue mappe les types de produits de carte-cadeau, simples, virtuels, téléchargeables et à `simpleProductViews`.
+* Les produits simples sont des produits définis avec un seul prix et une seule quantité. Le service de catalogue mappe les types de produits de carte-cadeau, simples, virtuels, téléchargeables et à `simpleProductViews`.
 
 * Les produits complexes sont constitués de plusieurs produits simples. Les composants produits simples peuvent avoir des prix différents. Un produit complexe peut également être défini de sorte que l’acheteur puisse spécifier la quantité de produits simples de composant. Le service de catalogue mappe les types de produits configurables, regroupés et regroupés à `complexProductViews`.
 

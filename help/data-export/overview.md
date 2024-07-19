@@ -4,7 +4,7 @@ description: Découvrez comment utiliser l’extension  [!DNL data export] pour 
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Guide [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] améliore les performances du front-end en optimisant la synchronisation des données entre une instance Adobe Commerce et les services Commerce connectés. Lorsque vous ajoutez Live Search, Product Recommendations ou Catalog Service à une installation Adobe Commerce, l’extension [!DNL Data export] est installée automatiquement.
+[!DNL SaaS data export] synchronise les données entre une instance Adobe Commerce et les services Commerce connectés. Lorsque vous ajoutez Live Search, Product Recommendations ou Catalog Service à une installation Adobe Commerce, l’extension [!DNL Data export] est installée automatiquement.
 
 L’exportation de données SaaS collecte et exporte divers types de données, appelés _flux_, qui regroupent des types d’informations spécifiques. Selon les services Commerce installés, les flux d’exportation de données SaaS incluent :
 
@@ -22,7 +22,7 @@ L’exportation de données SaaS collecte et exporte divers types de données, a
 - Le **flux Commandes de ventes** regroupe les données des commandes, y compris les entités qui leur sont associées, telles que les factures, les envois, les notes de crédit, etc.
 - Le **flux d’inventaire multi-Source** agrège les données sur les éléments d’état du stock.
 
-L’extension d’export de données prend en charge plusieurs méthodes pour lancer et gérer le processus de synchronisation des données.
+L’exportation des données SaaS est fournie sous la forme d’une extension PHP. Il prend en charge plusieurs méthodes pour lancer et gérer le processus de synchronisation des données.
 
 - **Synchronisation manuelle à partir de l’administrateur ou de la ligne de commande**
 
