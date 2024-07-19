@@ -1,125 +1,163 @@
 ---
 title: Documentation des services
-description: Documentation du produit Parcourir les services pour Adobe Commerce
+description: Parcourir la documentation du produit Adobe Commerce pour les services Commerce SaaS
 seo-title: Services for Adobe Commerce
-seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
+seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 breadcrumb-title: Documentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
 
 # Guides des services Adobe Commerce
 
-Adobe fournit un ensemble de services Commerce, d’intégration et de données pour aider les marchands à prendre en charge les composants clés de leur entreprise.
+Adobe fournit une collection de services Commerce, de services d’intégration et d’outils de données pour aider les marchands à prendre en charge les composants clés de leur entreprise.
 
->[!BEGINSHADEBOX &quot;Informations sur la version&quot;]
-
-Voir les [notes de mise à jour](release-notes-all.md) pour chaque service Commerce.
-
->[!ENDSHADEBOX]
+>[!NOTE]
+>
+>Adobe recommande d’effectuer une mise à niveau vers la dernière version prise en charge de tous les services Commerce. Voir les [notes de mise à jour](release-notes-all.md).
 
 ## Services Commerce
 
-<table>
-<tr>
-  <td valign="top" width="200">
-      <img alt="[!DNL Live Search]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview"><strong>[!DNL Live Search]</strong></a>
-    <div>Implémentez cet outil de recherche optimisé par l’IA qui fournit des résultats plus intelligents, plus rapides et pertinents pour les acheteurs B2C.</div>
-  </td>
-   </tr>
-<tr>
-   <td valign="top" width="200">
-       <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" width="170px"/></td>
+<table style="table-layout:fixed">
+<tr style="border: 0;">
    <td valign="top">
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview"><strong>[!DNL Product Recommendations]</strong></a>
-    <div>Ajoutez des recommandations alimentées par l’IA basées sur le comportement des acheteurs, les tendances populaires, la similarité de produits, etc.</div>
-  </td>
-   </tr>
-<tr>
-    <td valign="top" width="200px">
-       <img alt="Service de catalogue" src="assets/catalog-service.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong>Service de catalogue</strong></a> <br>
-    <div>Offrez à vos clients une expérience produit optimisée tout en améliorant les performances, l’évolutivité et les conversions.</div>
-  </td>
-   </tr>
-<tr>
-  <td valign="top" width="200px">
-    <img alt="Services de paiement" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Services de paiement</strong></a> <br><em>(Disponible pour le Magento Open Source)</em>
-    <div>Stimuler la satisfaction des clients en proposant facilement différents modes de paiement, notamment des versements sans intérêts, et une vue unique du traitement des paiements, des commandes et des factures.</div>
-  </td>
-    </tr>
-<tr>
-    <td valign="top" width="200px">
-       <img alt="Exécution de la boutique" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>Exécution de la boutique</strong></a></br>
-    <div>Proposer une expérience client supérieure d’achat en ligne, d’achat en magasin (BOPIS) et d’optimiser la productivité des employés en fournissant un workflow d’exécution complet activé par le biais d’un appareil mobile.</div>
-  </td>
-   </tr>
-<tr>
-    <td valign="top" width="200px">
-       <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Canal de vente Amazon</strong></a> <br><em>(Disponible pour le Magento Open Source)</em>
-    <div>Intégrez-vous à la plus grande destination mondiale d’achats en ligne pour activer les ventes Amazon, automatiser et synchroniser les données, gérer les listes Amazon, etc. à l’aide d’un seul tableau de bord.</div>
-  </td>
-   </tr>
-<tr>
-    <td valign="top">
-       <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>Gestionnaire de canaux</strong></a> <br><em>(Disponible pour le Magento Open Source)</em>
-    <div>Augmentez les ventes, atteignez de nouveaux clients, rationalisez les opérations et gagnez du temps grâce à l’intégration à Walmart Marketplace. Permettre au personnel de gérer de manière transparente les ventes, les stocks et les tarifs de Walmart Marketplace, le tout dans Commerce.</div>
-  </td>
-   </tr>
+      <a href="../live-search//overview.md">
+      <img alt="Rechercher" src="../assets/icons/Magnify.svg" width="40">
+      </a>
+      <div>
+         <a href="../live-search//overview.md">
+         <strong>[!DNL Live Search]</strong>
+         </a>
+      </div>
+      <p>
+         <em>Mettez en oeuvre cet outil de recherche optimisé par l’IA qui fournit des résultats plus intelligents, plus rapides et plus pertinents pour les acheteurs B2C.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../product-recommendations/overview.md">
+      <img alt="Thumbs Up" src="../assets/icons/ThumbUp.svg" width="40">
+      </a>
+      <div>
+         <a href="../product-recommendations/overview.md">
+         <strong>Recommendations de produit</strong>
+         </a>
+      </div>
+      <p>
+         <em>Ajoutez des recommandations alimentées par l’IA basées sur le comportement des acheteurs, les tendances populaires, la similarité de produit, etc.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../catalog-service/overview.md">
+      <img alt="Données de catalogue pour les services connectés" src="../assets/icons/DataBook.svg" width="40">
+      </a>
+      <div>
+         <a href="../catalog-service/overview.md">
+         <strong>Service de catalogue</strong>
+         </a>
+      </div>
+      <p>
+         <em>Offrez à vos clients une expérience produit optimisée tout en améliorant les performances, l’évolutivité et les conversions.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../payment-services/guide-overview.md">
+      <img alt="Paiements par carte de crédit" src="../assets/icons/CreditCard.svg" width="40">
+      </a>
+      <div>
+         <a href="../payment-services/guide-overview.md">
+         <strong> Services de paiement</strong>
+         </a>
+      </div>
+      <p>
+         <em> Soyez satisfait de vos clients grâce à divers modes de paiement, notamment des versements sans intérêts et des vues simplifiées du traitement des paiements, des commandes et des factures.</em>
+      </p>
+   </td>
+</tr>
 </table>
 
 ## Services d’intégration
 
-<table>
-<tr>
-  <td valign="top" width="200">
-      <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview"><strong>[!DNL Data Connection]</strong></a>  
-    <div>Tirez parti de la connexion entre Adobe Commerce et Adobe Experience Platform Edge pour utiliser les données Commerce pour d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target.</div>
-  </td>
-   </tr>
-<tr>
-   <td valign="top" width="200">
-       <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
+<table style="table-layout:fixed">
+<tr style="border: 0;">
    <td valign="top">
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas"><strong>[!DNL Services Connector]</strong></a>
-    <div>Commerce Services Connector fournit l’intégration de votre instance Adobe Commerce ou de Magento Open Source à l’aide d’une clé API et d’une clé privée. Pour les services de données (Adobe Commerce uniquement), vous pouvez également spécifier l’espace de données dans la configuration.</div>
-  </td>
-   </tr>
+      <a href="../data-connection/overview.md">
+      <img alt="Transfert de données vers la plateforme" src="../assets/icons/TransferToPlatform.svg" width="40">
+      </a>
+      <div>
+         <a href="../data-connection/overview.md">
+         <strong>[!DNL Data Connection]</strong>
+         </a>
+      </div>
+      <p>
+         <em>Tirez parti de la connexion entre Adobe Commerce et Adobe Experience Platform Edge pour utiliser les données Commerce pour d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../landing/saas.md">
+      <img alt="Thumbs Up" src="../assets/icons/DataSetting.svg" width="40">
+      </a>
+      <div>
+          <a href="../landing/saas.md">
+         <strong> Connecteur Commerce Services</strong>
+         </a>
+      </div>
+      <p>
+         <em> Configurez l'authentification pour activer la communication sécurisée entre Adobe Commerce et les services connectés. Pour chaque environnement, spécifiez l'identifiant de l'espace de données pour le stockage des données des services Commerce.</em>
+      </p>
+   </td>
+</tr>
 </table>
 
 ## Outils de données
 
-<table>
-<tr>
-   <td valign="top" width="200">
-      <img alt="[!DNL SaaS Data Export]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview"><strong>[!DNL SaaS Data Export]</strong></a>
-    <div>L’exportation de données SaaS exporte les données de catalogue, de commande et d’inventaire du serveur Commerce vers les services Commerce connectés pour maintenir les services à jour. Les indexeurs compilent des données lorsqu’elles sont déclenchées par des événements tels qu’une modification du prix d’un produit ou d’un niveau de stock. Vous pouvez observer et gérer ce processus à partir du *tableau de bord Data Management* ou de l'interface de ligne de commande.</div>
-  </td>
-</tr>
-<tr>
-   <td valign="top" width="200">
-      <img alt="[!DNL SaaS Price Indexer]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/price-index/price-indexing.md"><strong>[!DNL SaaS Price Indexer]</strong></a>
-    <div>L’indexation des prix SaaS optimise les performances du site en déchargeant les tâches gourmandes en ressources (comme l’indexation et le calcul des prix) de l’application Commerce vers l’infrastructure cloud d’Adobe. Cette approche permet aux commerçants de mettre rapidement à l’échelle les ressources afin d’accélérer les temps d’indexation des prix et de fournir des mises à jour de prix plus rapidement au storefront et aux services Commerce connectés.</div>
-  </td>
-</tr>
-<tr>
-   <td valign="top" width="200">
-      <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync"><strong>[!DNL Catalog Sync]</strong></a>
-    <div>La synchronisation du catalogue exporte les données de produit du serveur Commerce vers les services Commerce sur pour maintenir les services à jour. Les indexeurs, déclenchés par des événements tels qu’une modification du prix d’un produit ou au niveau de l’inventaire, compilent des données de catalogue. Vous pouvez observer et gérer ce processus via le tableau de bord *Synchronisation du catalogue* ou l’interface de ligne de commande.</div>
-  </td>
-</tr>
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+   <td valign="top">
+       <a href="../data-export/overview.md">
+      <img alt="Gestion des flux d’exportation de données SaaS" src="../assets/icons/FeedManagement.svg" width="40">
+      </a>
+      <div>
+         <a href="../data-export/overview.md">
+         <strong>[!DNL SaaS Data Export]</strong>
+         </a>
+      </div>
+      <p>
+         <em> Synchroniser automatiquement les données de catalogue, de commande et d’inventaire d’Adobe Commerce avec les services connectés. Utilisez les commandes de l’interface de ligne de commande Commerce ou le <strong>tableau de bord de la gestion des données</strong> pour gérer le traitement de la synchronisation.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../price-index/price-indexing.md">
+      <img alt="Flux de prix de produit" src="../assets/icons/Feed.svg" width="40">
+      </a>
+      <div>
+          <a href="../price-index/price-indexing.md">
+         <strong>Indexeur de prix SaaS</strong>
+         </a>
+      </div>
+      <p>
+         <em>Optimisez les performances du site en déchargeant des tâches gourmandes en ressources, telles que l'indexation et le calcul des prix, de l'application Commerce vers l'infrastructure cloud d'Adobe.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <img alt="Surveillance de la synchronisation des données" src="../assets/icons/Monitoring.svg" width="40">
+      </a>
+      <div>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+         <strong>Tableau de bord de Data Management</strong>
+         </a>
+      </div>
+      <p>
+         <em> Effectuez facilement le suivi de la synchronisation des données Commerce et déclenchez la resynchronisation à partir d’un tableau de bord unifié dans l’administrateur Commerce. Obtenez des informations précieuses sur la disponibilité des données pour un affichage rapide à vos acheteurs.</em>
+      </p>
+   </td>
 </table>
+
+>[!NOTE]
+>
+>Le tableau de bord de Data Management est disponible sans frais supplémentaires pour les marchands Commerce utilisant le produit Recommendations v6.0.0, la recherche en direct v4.1.0 ou le service de catalogue v1.17 avec une licence active. Les commerçants qui utilisent des versions de service antérieures peuvent utiliser la [synchronisation de catalogue](../landing/catalog-sync.md) pour gérer et suivre la synchronisation des données.

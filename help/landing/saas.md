@@ -4,16 +4,16 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Certaines fonctionnalités Adobe Commerce et Magento Open Source sont optimisées par [!DNL Commerce Services] et déployées en tant que SaaS (logiciel en tant que service). Pour utiliser ces services, vous devez connecter votre instance [!DNL Commerce] à l’aide des clés d’API de production et d’environnement de test, et spécifier l’espace de données dans la [configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Vous n’avez besoin de le configurer qu’une seule fois.
+Certaines fonctionnalités Adobe Commerce et Magento Open Source sont optimisées par [!DNL Commerce Services] et déployées en tant que SaaS (logiciel en tant que service). Pour utiliser ces services, vous devez connecter votre instance [!DNL Commerce] à l’aide des clés d’API de production et d’environnement de test, et spécifier l’espace de données dans la [configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Il vous suffit de configurer la connexion une seule fois pour chaque instance Commerce.
 
 ## Services disponibles {#availableservices}
 
@@ -24,7 +24,6 @@ La liste suivante répertorie les fonctionnalités [!DNL Commerce] auxquelles vo
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) avec technologie Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) avec technologie Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce et Magento Open Source |
-| [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce et Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
@@ -39,7 +38,7 @@ Les sections suivantes abordent plus en détail chacun de ces éléments.
 
 ## Informations d’identification {#apikey}
 
-Les clés d’API de production et d’environnement de test sont générées à partir du compte [!DNL Commerce] du [propriétaire de licence](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) qui est identifié par un [!DNL Commerce] ID unique (MageID). Pour transmettre la validation des droits pour des services tels que [!DNL Product Recommendations] ou [!DNL Live Search], le propriétaire de la licence de l’organisation du commerçant peut générer le jeu de clés API, à condition que le compte soit en règle.
+Les clés d’API de production et d’environnement de test sont générées à partir du compte [!DNL Commerce] du [propriétaire de licence](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding). Le compte Commerce est identifié par un [!DNL Commerce] ID unique (MageID). Le propriétaire de la licence de l’organisation du commerçant peut générer des clés d’API pour des services tels que Recommendations de produit ou Live Search, à condition que le compte soit en règle.
 
 Les clés peuvent être partagées &quot;au besoin&quot; avec l’intégrateur système ou l’équipe de développement qui gère les projets et environnements pour le compte du détenteur de la licence. Les développeurs qui ont reçu [!DNL Shared Access] par le propriétaire de la licence ne peuvent pas générer les clés en leur nom, même si l’organisation du commerçant est présente dans la liste déroulante [!DNL Switch Accounts] de leur compte.
 
@@ -57,15 +56,13 @@ De plus, les intégrateurs de solution sont également autorisés à utiliser [!
 
 1. Dans le menu _Environnement_, sélectionnez **Production** ou **Sandbox**.
 
-1. Saisissez un nom dans la section _API Keys_ et cliquez sur **Ajouter nouveau**.
-
-   Une boîte de dialogue s’ouvre alors pour télécharger la nouvelle clé.
+1. Saisissez un nom dans la section _Clés API_, puis cliquez sur **Ajouter nouveau** pour ouvrir la boîte de dialogue de téléchargement de la nouvelle clé.
 
    ![Télécharger la clé privée](assets/download-api-private-key.png)
 
    >[!WARNING]
    >
-   > Il s’agit de la seule opportunité que vous avez pour copier ou télécharger vos clés.
+   > Cette boîte de dialogue vous offre la seule opportunité de copier ou télécharger vos clés.
 
 1. Cliquez sur **Télécharger** puis sur **Annuler**.
 
