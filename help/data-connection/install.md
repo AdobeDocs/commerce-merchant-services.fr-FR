@@ -4,9 +4,9 @@ description: Découvrez comment installer, mettre à jour et désinstaller l’e
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
+source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,12 @@ L’extension [!DNL Data Connection] est disponible sur [Adobe Marketplace](http
 
    Ce métapaquage contient les modules et extensions suivants :
 
-   * `module-experience-connector-admin` - Met à jour l’interface utilisateur d’administration afin que vous puissiez sélectionner l’identifiant de flux de données pour une instance Adobe Commerce spécifique.
-   * `module-experience-connector` - Définit les `Organization ID` et `datastreamId` dans le SDK des événements Storefront.
-   * `data-services` - Fournit un contexte d’attribut pour les événements storefront. Par exemple, lorsqu’un événement de passage en caisse se produit, des informations sur le nombre d’articles figurant dans le panier et les données d’attribut de produit pour ces articles sont incluses.
-   * `services-id` - Connecte votre instance Adobe Commerce à [Adobe Commerce SaaS](../landing/saas.md) à l’aide des clés d’API de test et de production et à Adobe Experience Platform pour récupérer l’ID d’organisation IMS.
-   * `orders-connector` - Connecte le service d’état de la commande à votre instance Adobe Commerce.
+   - `magento/orders-connector`
+   - `magento/data-services`
+   - `magento/module-experience-connector`
+   - `magento/module-experience-connector-admin`
+   - `magento/module-experience-connector-admin-graph-ql`
+   - `magento/module-experience-connector-aep-integration`
 
 1. (Facultatif) Pour inclure des données [!DNL Live Search], qui comprennent [des événements de recherche](events.md#search-events), installez l’extension [[!DNL Live Search]](../live-search/install.md).
 

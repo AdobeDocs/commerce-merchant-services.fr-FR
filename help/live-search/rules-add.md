@@ -2,9 +2,9 @@
 title: "Ajouter des règles"
 description: "Découvrez comment créer des règles de marchandisage de recherche."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
+source-git-commit: 0b099bf6a306806b5aa24261e6c125d43d528207
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -85,15 +85,22 @@ Les propriétaires de magasins peuvent configurer les types de stratégies de cl
 * Le plus acheté : les produits sont classés par total d’achats par SKU au cours des 7 jours précédents.
 * Le plus ajouté au panier : Classement par ordre d’importance des activités &quot;Ajouter au panier&quot; totales au cours des 7 jours précédents.
 * Le plus consulté : classe le nombre total de vues par SKU au cours des 7 jours précédents.
-* Recommandé pour vous - Utilise le point de données `viewed-viewed` - Les acheteurs qui ont consulté ce SKU ont également consulté ces autres SKU
+* Recommandé pour vous - Utilise le point de données `viewed-viewed` - Les acheteurs qui ont consulté ce SKU ont également consulté ces autres SKU.
 * Tendance : recherche les événements de page vue des dernières 72 heures pour les événements d’arrière-plan et 24 heures pour les événements de premier plan.
-* Aucun : les produits sont commandés selon la pertinence
+* Aucun : les produits sont commandés selon la pertinence.
 
-1. Sélectionnez le type de stratégie de la règle. La fenêtre Tester votre règle affiche les résultats attendus.
+Sélectionnez le type de stratégie de la règle. La fenêtre **Tester votre règle** affiche les résultats attendus.
 
->[!NOTE]
->
->Les apostrophes et guillemets dans les requêtes peuvent entraîner des problèmes mineurs de classement et de pertinence dans certaines langues.
+### Avertissements
+
+* Les apostrophes et guillemets dans les requêtes peuvent entraîner des problèmes mineurs de classement et de pertinence dans certaines langues.
+* Pour garantir le bon fonctionnement du classement intelligent, assurez-vous que le **Poids de recherche** pour tous les attributs de produit utilisés pour la recherche ou le filtrage (facettes) est `5` ou moins. Pour trouver ce paramètre dans l’administrateur [!DNL Commerce] :
+
+   1. Sélectionnez **Magasins** > _Attributs_ > **Produit**.
+   1. Recherchez l’attribut, par exemple &quot;name&quot;.
+   1. Dans la page **Informations sur l’attribut** > **Propriétés Storefront** , définissez le poids de la recherche sur `5`.
+
+      ![Produit - Poids de recherche](assets/set-search-weight.png)
 
 ## Classement manuel
 

@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Informations les plus récentes sur l’extension  [!DNL Data Connection] d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
+source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -72,20 +72,28 @@ _12 octobre 2022_
 
 +++
 
-## 3.1.2
+## 3.1.3
+
+_22 juillet 2024_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
+![Fix](../assets/new.svg) - Mise à jour du métapaquet Experience Platform Connector pour supprimer les exportateurs et les indexeurs de données inutilisés.
+
+## 3.1.2
+
 _5 juin 2024_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Fix](../assets/new.svg) - Correction d’un problème en raison duquel un format de date incorrect était utilisé lors du lancement d’une [synchronisation historique](connect-data.md#specify-order-history-date-range).
 ![Fix](../assets/new.svg) - Correction d’un problème en raison duquel l’événement [startCheckout](events.md#startcheckout) n’était pas envoyé sur Adobe Commerce 2.4.7.
 
 ## 3.1.1
 
-[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
-
 _4 avril 2024_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) - Ajout de la prise en charge de PHP 8.3 pour toutes les extensions [!DNL Data Connection].
 ![Nouveau](../assets/new.svg) - Ajout d’un article expliquant comment [intégrer](mobile-sdk-epc.md) le SDK Adobe Experience Platform Mobile avec Commerce.
@@ -132,7 +140,6 @@ _27 juin 2023_
 ![Correctif](../assets/fix.svg) - Mise à jour des configurations de la stratégie de sécurité du contenu.
 ![Fix](../assets/fix.svg) - Correction de la prise en charge des événements back-office sur la version Commerce 2.4.7.
 ![New](../assets/new.svg) - Ajout d’un message de notification sur l’invalidation du cache lorsque vous enregistrez les modifications apportées au formulaire d’extension [!DNL Data Connection].
-
 
 ## 3.0.0-beta1 (interne uniquement)
 
