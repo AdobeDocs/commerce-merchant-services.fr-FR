@@ -4,9 +4,9 @@ description: Les dernières informations de mise à jour de [!DNL Data Export Ex
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 7757cc382e306a6c074a815d5148a4dcd8fff284
+source-git-commit: 11ea98069dcc6d06e9ab90add8239fef2c8edc7d
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Les mises à jour sont les suivantes :
 >L’extension d’exportation de données SaaS est un ensemble de modules installés automatiquement avec Live Search, Product Recommendations et le service de catalogue. Vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation des données sur votre système afin de récupérer des correctifs ou de nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Version majeure actuelle
+
+## Version 103.3.9
+
+![Correctif](../assets/fix.svg) Lorsqu’une entité est supprimée, l’indicateur `deleted` est désormais propagé pour les flux de service de définition de la portée pour le site web (`scopesWebsite`) et le groupe de clients (`scopesCustomerGroup`).<!--MDEE-839-->
 
 ## Version 103.3.8
 
