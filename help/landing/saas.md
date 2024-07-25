@@ -4,9 +4,9 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
+source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,7 @@ Tous les projets SaaS associés à vos clés apparaissent dans le champ **Projet
 
 1. S’il n’existe aucun projet SaaS, cliquez sur **Créer un projet**. Ensuite, dans le champ **Projet** , saisissez un nom pour votre projet SaaS.
 
-   Lorsque vous créez un projet SaaS, [!DNL Commerce] génère un ou plusieurs espaces de données SaaS en fonction de votre licence [!DNL Commerce] :
-   - Adobe Commerce : un espace de données de production ; deux espaces de données de test uniquement. Sur les projets Cloud Pro comportant plusieurs environnements d’évaluation, vous pouvez demander des espaces de données de test supplémentaires pour chaque environnement d’évaluation en [envoyant une demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
-   - Magento Open Source : un espace de données de production ; aucun espace de données de test
+   Tous les commerçants peuvent accéder à un espace de données de production et à deux espaces de données de test par projet SaaS. Pour les projets On Cloud Pro comportant plusieurs environnements d’évaluation, vous pouvez demander des espaces de données de test supplémentaires pour chaque environnement d’évaluation en [envoyant une demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/).
 
 1. Sélectionnez l’ **espace de données** à utiliser pour la configuration actuelle de votre magasin [!DNL Commerce].
 
