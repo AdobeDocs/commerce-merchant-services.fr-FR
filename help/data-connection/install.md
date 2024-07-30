@@ -4,9 +4,9 @@ description: Découvrez comment installer, mettre à jour et désinstaller l’e
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
+source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ L’extension [!DNL Data Connection] est disponible sur [Adobe Marketplace](http
 
    - `magento/orders-connector`
    - `magento/data-services`
+   - `magento/customers-connector`
    - `magento/module-experience-connector`
    - `magento/module-experience-connector-admin`
    - `magento/module-experience-connector-admin-graph-ql`
@@ -44,9 +45,9 @@ L’extension [!DNL Data Connection] est disponible sur [Adobe Marketplace](http
 
 1. (Facultatif) Pour inclure des données B2B, qui comprennent [ événements de demande](events.md#b2b-events), installez l’ [extension B2B](#install-the-b2b-extension).
 
-### Installation des événements d’Adobe I/O
+### Installez les événements Adobe I/O et configurez le module customer-connector
 
-Après avoir installé l’extension `experience-platform-connector`, vous devez installer les événements Adobe I/O pour Adobe Commerce.
+Après avoir installé l’extension `experience-platform-connector`, vous devez installer les événements d’Adobe I/O pour Adobe Commerce et configurer le module `customers-connector`.
 
 Les étapes suivantes s’appliquent à Adobe Commerce sur l’infrastructure cloud et aux installations sur site.
 
@@ -70,19 +71,7 @@ Les étapes suivantes s’appliquent à Adobe Commerce sur l’infrastructure cl
    bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
    ```
 
-Finalisez l’installation en fonction du type de déploiement : infrastructure sur site ou Adobe Commerce on Cloud .
-
-#### Sur site
-
-Dans les environnements locaux, vous devez activer manuellement la génération de code et les événements Adobe Commerce :
-
-```bash
-bin/magento events:generate:module
-bin/magento module:enable Magento_AdobeCommerceEvents
-bin/magento setup:upgrade
-bin/magento setup:di:compile
-bin/magento config:set adobe_io_events/eventing/enabled 1
-```
+Finalisez l’installation en fonction du type de déploiement : Adobe Commerce sur l’infrastructure cloud ou sur site.
 
 #### Sur l’infrastructure cloud
 
@@ -97,6 +86,18 @@ stage:
 Validez et envoyez les fichiers mis à jour dans l’environnement cloud. Lorsque le déploiement est terminé, activez l’envoi d’événements avec la commande suivante :
 
 ```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### Sur site
+
+Dans les environnements locaux, vous devez activer manuellement la génération de code et les événements Adobe Commerce :
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
 bin/magento config:set adobe_io_events/eventing/enabled 1
 ```
 

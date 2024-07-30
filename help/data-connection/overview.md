@@ -3,9 +3,9 @@ title: Présentation du guide
 description: Découvrez comment intégrer des données Adobe Commerce à Adobe Experience Platform à l’aide de l’extension  [!DNL Data Connection] .
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 7b9867179a871e4949ea74f9214e9e52ea26bb71
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1752'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 0%
 >
 >Le connecteur Experience Platform a été renommé [!DNL Data Connection].
 
-L’extension [!DNL Data Connection] connecte votre instance web Adobe Commerce à Adobe Experience Platform et à l’Edge Network. Découvrez comment [intégrer](./mobile-sdk-epc.md) le SDK Adobe Experience Platform Mobile avec Commerce.
+L’extension [!DNL Data Connection] connecte votre instance web Adobe Commerce à Adobe Experience Platform et à l’Edge Network. Pour les développeurs d’applications mobiles, vous utilisez le SDK Mobile Adobe Experience Platform avec Commerce pour capturer et envoyer des données Commerce à l’Experience Platform. [En savoir plus](./mobile-sdk-epc.md).
 
 Votre boutique Commerce contient une mine de données. Les informations sur la manière dont vos acheteurs parcourent, affichent et finissent par acheter les produits de votre site peuvent vous révéler des opportunités pour créer une expérience d’achat plus personnalisée. Bien que ces données puissent informer les fonctionnalités Commerce natives telles que les règles de prix du panier et les blocs dynamiques, les données restent cloisonnées dans votre instance Commerce.
 
 Adobe Experience Platform fournit une suite de technologies qui, lorsqu’elles sont hydratées avec les données de votre boutique Commerce, peuvent distribuer ces données par l’intermédiaire de l’Edge Network vers d’autres produits DX Adobes afin de déverrouiller les informations sur le comportement d’achat de votre acheteur. Grâce à ces informations détaillées, vous pouvez créer une expérience d’achat plus personnalisée sur tous les canaux.
 
-L’image suivante montre comment vos données Commerce circulent de votre boutique vers d’autres produits DX d’Adobe :
+L’image suivante montre comment vos données Commerce circulent de votre boutique vers d’autres produits DX Adobe lorsque l’extension [!DNL Data Connection] est installée et configurée.
 
 ![Flux de données vers le serveur Experience Platform ](assets/commerce-edge.png)
 
