@@ -2,16 +2,16 @@
 title: Paramètres
 description: Découvrez comment modifier la source de vos données  [!DNL Product Recommendations] et comment activer les recommandations visuelles.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
 # Paramètres
 
-Lorsque vous [configurez un espace de données SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) pour Recommendations, l’espace de données SaaS collecte des données de catalogue et des données comportementales de storefront. [Adobe Sensei](https://www.adobe.com/sensei.html) analyse les données et calcule les associations de produits utilisées pour diffuser le Recommendations de produits.
+Lorsque vous [configurez un espace de données SaaS](../landing/saas.md#saas-configuration) pour Recommendations, l’espace de données SaaS collecte des données de catalogue et des données comportementales de storefront. [Adobe Sensei](https://www.adobe.com/sensei.html) analyse les données et calcule les associations de produits utilisées pour diffuser le Recommendations de produits.
 
 Les environnements hors production pour le test ou l’évaluation n’ont généralement pas la quantité ou la qualité des données comportementales de storefront pour fournir des recommandations de produits réalistes. Le comportement réel des acheteurs à l’échelle ne peut être capturé que dans un environnement de production. Pour résoudre ce problème, Adobe Commerce vous permet d’utiliser les recommandations de produits de votre environnement de production avec d’autres espaces de données SaaS hors production. L’utilisation de données de vitrine réelles dans un environnement hors production vous permet de prévisualiser les recommandations que vos acheteurs voient et d’expérimenter avec différents types de recommandations et emplacements. Les acheteurs peuvent prévisualiser les Recommendations d’un autre espace de données SaaS, mais pas cliquer dessus.
 
