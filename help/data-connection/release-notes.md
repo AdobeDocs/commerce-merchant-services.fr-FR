@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Informations les plus récentes sur l’extension  [!DNL Data Connection] d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
+source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,21 @@ Ces notes de mise à jour contiennent des mises à jour de l’extension [!DNL D
 
 Pour les modifications et correctifs de fonctionnalités liés aux extensions utilisées par l’extension [!DNL Data Connection], voir **Mises à jour de service prises en charge**.
 
-Voir [Versions à venir](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) pour en savoir plus sur les calendriers de publication et l’assistance.
+Voir [Versions à venir](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les calendriers de publication et l’assistance.
 
-Consultez la documentation destinée aux développeurs pour [découvrir les versions de Commerce qui prennent en charge ce module](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Consultez la documentation destinée aux développeurs pour [découvrir les versions de Commerce qui prennent en charge ce module](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Mises à jour du service prises en charge
 
 Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités liés aux extensions utilisées par l’extension [!DNL Data Connection].
 
 Mises à jour du service +++prises en charge
+
+_2 août 2024_
+
+![Fix](../assets/fix.svg) - Correction du montant total des paiements lorsque le total de la commande est configuré pour inclure les taxes.
+![Nouveau](../assets/new.svg) - Ajout d’un champ `taxAmount` pour commander des événements d’achat.
+![Nouveau](../assets/new.svg) - Possibilité d’ajouter des données personnalisées aux événements. Voir ce qui suit pour un [exemple](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
 
 _24 janvier 2024_
 
@@ -78,7 +84,7 @@ _22 juillet 2024_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Fix](../assets/new.svg) - Mise à jour du métapaquet Experience Platform Connector pour supprimer les exportateurs et les indexeurs de données inutilisés.
+![Fix](../assets/fix.svg) - Mise à jour du métapaquet Experience Platform Connector pour supprimer les exportateurs et les indexeurs de données inutilisés.
 
 ## 3.1.2
 
@@ -86,8 +92,8 @@ _5 juin 2024_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
-![Fix](../assets/new.svg) - Correction d’un problème en raison duquel un format de date incorrect était utilisé lors du lancement d’une [synchronisation historique](connect-data.md#specify-order-history-date-range).
-![Fix](../assets/new.svg) - Correction d’un problème en raison duquel l’événement [startCheckout](events.md#startcheckout) n’était pas envoyé sur Adobe Commerce 2.4.7.
+![Fix](../assets/fix.svg) - Correction d’un problème en raison duquel un format de date incorrect était utilisé lors du lancement d’une [synchronisation historique](connect-data.md#specify-order-history-date-range).
+![Fix](../assets/fix.svg) - Correction d’un problème en raison duquel l’événement [startCheckout](events.md#startcheckout) n’était pas envoyé sur Adobe Commerce 2.4.7.
 
 ## 3.1.1
 
@@ -115,8 +121,8 @@ _16 novembre 2023_
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) - Le connecteur Experience Platform a été renommé [!DNL Data Connection].
-![Fix](../assets/new.svg) - Possibilité de consigner la réponse d’erreur si Adobe IMS ne parvient pas à générer le jeton d’accès.
-![Fix](../assets/new.svg) - Ajout d’un message de notification si vous tentez de synchroniser les commandes historiques mais que vous n’avez pas spécifié les informations d’identification du compte.
+![Fix](../assets/fix.svg) - Possibilité de consigner la réponse d’erreur si Adobe IMS ne parvient pas à générer le jeton d’accès.
+![Fix](../assets/fix.svg) - Ajout d’un message de notification si vous tentez de synchroniser les commandes historiques mais que vous n’avez pas spécifié les informations d’identification du compte.
 
 ## 3.0.0
 
