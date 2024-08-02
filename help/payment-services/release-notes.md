@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les versions de  [!DNL Payment Services]  .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,26 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans le [rapport État des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [rapport sur les paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne.
 
 +++
+
+## v2.7.0
+
+_2 août 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![New](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] prend désormais en charge les [données d’élément de ligne au niveau de la commande](line-items.md). Cette fonctionnalité permet aux marchands d’afficher des informations détaillées sur les articles d’une commande, telles que les détails du produit, la quantité et le prix (y compris la taxe de vente, les remises et d’autres informations pertinentes).
+
+![New](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] améliore l’expérience [Configuration dans l’Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) pour les vendeurs afin d’offrir un processus d’intégration plus simple et plus intuitif. Cette fonctionnalité permet aux commerçants de réinitialiser leurs [!DNL Payment Services] ID.
+
+![New](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services] comprend une [ notification d’échec du paiement ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails). Cette fonctionnalité fournit des notifications en temps quasi réel d’échecs de paiement aux marchands. Vous pouvez donc enregistrer les commandes en contactant l’acheteur et en améliorant potentiellement la résolution des problèmes.
+
+![Correctif](../assets/fix.svg)<!-- PAY-5469 --> Correction d’un problème en raison duquel la fenêtre contextuelle **Paye Google était bloquée par Safari**. Les acheteurs peuvent désormais effectuer leurs transactions de paiement payant Google sur Safari.
+
+![Correctif](../assets/fix.svg)<!-- PAY-5492 --> Correction d’un problème qui survenait lorsqu’un commerçant ajoutait des termes et des conditions personnalisés à la page de passage en caisse. Au cours d’un [passage en caisse express](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience), un acheteur peut désormais accepter ces conditions générales pour terminer le passage en caisse sans problème.
+
+![Correctif](../assets/fix.svg)<!-- PAY-5532 --> Amélioration des fonctionnalités de nettoyage en magasin (ISPU) avec **InstantPurchase**. Les **méthodes de remise ISPU** ne s’affichent plus lorsqu’un acheteur commande avec **InstantPurchase**.
+
+![Correctif](../assets/fix.svg)<!-- PAY-5606 --> Correction d’un problème dans le sélecteur de pays **Page de configuration** qui se produisait lorsque le pays du commerçant était défini sur **Allemagne**.
 
 ## v2.6.0
 
