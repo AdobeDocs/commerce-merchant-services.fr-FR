@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2404'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Vous pouvez activer [!DNL Payment Services] pour votre site web et activer le te
 
 1. Sur la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![Vue d’accueil](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
-
 1. Cliquez sur **[!UICONTROL Settings]**. Pour plus d’informations, voir [Introduction à [!DNL Payment Services] Home](payments-home.md) .
+
+   ![Vue Paramètres React](assets/react-settings-view.png){width="500" zoomable="yes"}
 
    La section _[!UICONTROL General]_comprend les paramètres utilisés pour activer [!DNL Payment Services] comme méthode de paiement.
 
@@ -40,9 +40,11 @@ Vous pouvez activer [!DNL Payment Services] pour votre site web et activer le te
 
 1. Si vous testez toujours [!DNL Payment Services] pour votre boutique, définissez **Mode de paiement** sur `Sandbox`. Si vous êtes prêt à activer les paiements en direct, définissez-le sur `Production`.
 
-   >[!NOTE]
+1. Vos valeurs **[!UICONTROL Payment Services Sandbox ID]** et **[!UICONTROL Payment Services Production ID]** sont automatiquement renseignées une fois que vous avez configuré le [Connecteur Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} et que vous avez consulté le tableau de bord [!DNL Payment Services] pour la première fois. Procédez comme suit pour terminer l’intégration de votre environnement de test et/ou de vos environnements de production. Ces valeurs associent votre ID SaaS à [!DNL Payment Services].
+
+   >[!WARNING]
    >
-   >Vos _[!UICONTROL Sandbox Merchant ID]_et_[!UICONTROL Production Merchant ID]_ sont générés automatiquement et présents dans leurs champs respectables lorsque vous avez terminé l’intégration de l’environnement de test et/ou de la production.
+   > Si vous réinitialisez vos [!DNL Payment Services] ID, vous devez à nouveau les intégrer.
 
 1. Cliquez sur **[!UICONTROL Save]**.
 
@@ -59,7 +61,7 @@ Vous pouvez ajouter un [!UICONTROL Soft Descriptor] à la configuration de vos s
 1. Sur la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Cliquez sur **[!UICONTROL Settings]**. Pour plus d’informations, voir [Introduction à [!DNL Payment Services] Home](payments-home.md) .
 1. Sélectionnez la vue du site web ou du magasin, dans le menu déroulant **[!UICONTROL Scope]**, pour laquelle vous souhaitez créer un descripteur logiciel. Pour la configuration initiale, laissez **[!UICONTROL Default]** comme valeur par défaut.
-1. Ajoutez votre texte personnalisé (jusqu’à 22 caractères) dans le champ de texte, en remplaçant `Custom descriptor`.
+1. Ajoutez votre texte personnalisé (jusqu’à 22 caractères) dans le champ de texte, en remplaçant `Soft descriptor`.
 1. Cliquez sur **[!UICONTROL Save]**.
 1. Pour créer un descripteur logiciel autre que la valeur par défaut configurée pour un site web ou une vue de magasin :
    1. Sélectionnez la vue du site web ou du magasin, dans le menu déroulant **[!UICONTROL Scope]**, pour laquelle vous souhaitez créer un descripteur logiciel.
@@ -79,8 +81,8 @@ Vous pouvez ajouter un [!UICONTROL Soft Descriptor] à la configuration de vos s
 |---|---|---|
 | [!UICONTROL Enable] | site web | Activez ou désactivez [!DNL Payment Services] pour votre site web. Options : [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | vue de magasin | Définissez la méthode, ou l’environnement, de votre magasin. Options : [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | vue de magasin | Votre ID de marchand d’environnement de test, qui est généré automatiquement lors de l’intégration des environnements de test. |
-| [!UICONTROL Production Merchant ID] | vue de magasin | Votre identifiant commercial de production, qui est généré automatiquement lors de l’intégration des environnements de test. |
+| [!UICONTROL Payment Services Sandbox ID] | vue de magasin | Votre ID de marchand d’environnement de test, qui est généré automatiquement lors de l’intégration des environnements de test. |
+| [!UICONTROL Payment Services Production ID] | vue de magasin | Votre identifiant commercial de production, qui est généré automatiquement lors de l’intégration des environnements de test. |
 | [!UICONTROL Soft Descriptor] | site web ou vue de magasin | Ajoutez un descripteur logiciel à votre ou vos sites web et vues de magasin pour ajouter des informations aux transactions client qui délimitent les marques, les magasins ou les lignes de produits. Le bouton d’activation/désactivation [!UICONTROL Use website] applique tout descripteur logiciel ajouté au niveau du site web. Le bouton d’activation/désactivation [!UICONTROL Use default] applique tout descripteur de type Soft ajouté comme valeur par défaut. |
 
 ## Configuration des options de paiement
