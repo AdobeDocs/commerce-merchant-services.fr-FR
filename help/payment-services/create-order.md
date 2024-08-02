@@ -3,7 +3,7 @@ title: Création d’une commande avec  [!DNL Payment Services]
 description: L’administrateur permet d’exécuter une commande à l’aide de  [!DNL Payment Services]  directement de l’administrateur par un commerçant pour les clients qui ont besoin d’aide.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Vous pouvez personnaliser les services de paiement selon vos besoins à l’aide
 
 ## Champs de carte de crédit hébergés
 
-[!DNL Payment Services] sont disponibles en tant que mode de paiement lors de la création d’une commande dans l’administrateur :
+[!DNL Payment Services] est disponible dans l’administrateur en tant que méthode de paiement lors de la création d’une commande :
 
 1. Dans la barre latérale _Admin_, développez **[!UICONTROL Sales]** et choisissez **[!UICONTROL Orders]**.
 1. Cliquez sur **[!UICONTROL Create New Order]**.

@@ -6,10 +6,10 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '103'
+ht-degree: 3%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 4%
 - [Présentation du guide](guide-overview.md)
 - [Présentation de [!DNL Payment Services]](overview.md)
 - [Notes de mise à jour](release-notes.md)
-- Paiements et passage en caisse {#payments-checkout}
-   - [Options de paiement](payments-options.md)
-   - [Valorisation des cartes de crédit](vaulting.md)
-   - [Passage en caisse](checkout.md)
 - Onboard [!DNL Payment Services] {#get-started}
    - [Présentation de l’intégration](onboard.md)
    - [Installation de l’extension  [!DNL Payment Services] ](install.md)
@@ -34,18 +30,23 @@ ht-degree: 4%
    - [[!DNL Payment Services] Paramètres](settings.md)
    - [Configuration de ligne de commande](configure-cli.md)
    - [Configuration héritée](configure-admin.md)
-- [Tester et valider](test-validate.md)
-- [Création d’une commande](create-order.md)
+   - [Tester et valider](test-validate.md)
+- Paiements et passage en caisse {#payments-checkout}
+   - [Options de paiement](payments-options.md)
+   - [Valorisation des cartes de crédit](vaulting.md)
+   - [Passage en caisse](checkout.md)
+   - [Création d’une commande dans l’administrateur](create-order.md)
+   - Gestion des paiements {#manage}
+      - [Éléments de ligne pour [!DNL Payment Services]](line-items.md)
+      - [Remboursement](refunds.md)
+      - [Voix](voids.md)
 - Rapports financiers {#reporting}
    - [Rapport des transactions](transactions.md)
    - [Rapport d’état des paiements de commande](order-payment-status.md)
    - [Rapport de paiements](payouts.md)
    - [Données disponibles](data.md)
    - [Traitement de niveau 2 et de niveau 3](levels-card-payment-transactions.md)
-- Gestion des paiements {#manage}
-   - [Remboursement](refunds.md)
-   - [Voix](voids.md)
-- Sécurité {#security-compliance}
-   - [Sécurité et conformité](security.md)
+- Sécurité et conformité {#security-compliance}
+   - [Sécurité](security.md)
    - [Protection Signifyd contre la fraude](fraud-protection.md)
 - [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

@@ -3,9 +3,9 @@ title: Configuration de l’environnement de test
 description: Utilisez un compte sandbox PayPal pour utiliser  [!DNL Payment Services]  en mode test.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -81,5 +81,7 @@ Cette fonctionnalité est `off` par défaut. Lorsque vous l’activez, les admin
 >Ce paramètre ne s’applique pas aux autres flux de passage en caisse.
 
 ## Test dans l’environnement de test
+
+Il est vivement recommandé d’utiliser des jeux de données de test pour les environnements d’intégration et d’évaluation, ainsi que pour tester les paiements en production, avec de vraies cartes de crédit et des banques, avant d’exposer cette fonctionnalité aux acheteurs.
 
 Voir [Test et validation](test-validate.md) pour plus d’informations.
