@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version de  [!DNL Live Search] à partir d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Les mises à jour sont les suivantes :
 ## Mises à jour du service hébergé
 
 Ces notes décrivent les mises à jour publiées en dehors d’une version ou les améliorations apportées au service hébergé.
+
+_7 août 2024_
+
+![Correctif](../assets/fix.svg) Augmentation de la valeur d’intervalle maximal ou de la plage de prix pour [faceting de prix](settings.md#price-faceting) de 10 000 à 40 000 000.
 
 _13 février 2024_
 

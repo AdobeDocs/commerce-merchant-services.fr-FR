@@ -2,7 +2,7 @@
 title: "Paramètres"
 description: "Configurez les paramètres du service  [!DNL Live Search] ."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Vous pouvez indiquer le nombre de groupes de prix et la manière dont les valeur
 1. Dans l’administrateur, accédez à **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]**.
 1. Sur l’espace de travail **Settings** sous *Price faceting*, procédez comme suit :
    * Saisissez le **Nombre de sélections**, ou les groupements de prix à mettre à disposition. Il est possible de définir jusqu’à 50 groupements de prix.
-   * Entrez la **valeur d&#39;intervalle** ou la plage de prix pour chaque groupe. La valeur maximale est 10 000.
+   * Entrez la **valeur d&#39;intervalle** ou la plage de prix pour chaque groupe. La valeur maximale est de 40 000 000.
 1. Cliquez sur **Enregistrer**.
 
    Il faut environ 15 minutes pour que les paramètres mis à jour soient disponibles dans le storefront.

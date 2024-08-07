@@ -2,9 +2,9 @@
 title: "Indexation"
 description: "Découvrez comment  [!DNL Live Search] indexe les propriétés d’attribut de produit."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Les propriétés d’attribut de produit (métadonnées) déterminent :
 
 La portée des métadonnées d’attribut est `website/store/store view`.
 
-L’API [!DNL Live Search] permet à un client de trier selon n’importe quel attribut de produit dont la propriété [storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` est définie sur `Yes` dans l’administrateur Adobe Commerce. Lorsqu’elle est activée, `Search Weight` et `Visible in Advanced Search` peuvent être définis pour l’attribut .
+L’API [!DNL Live Search] permet à un client de trier selon n’importe quel attribut de produit dont la propriété [storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` est définie sur `Yes` dans l’administrateur Adobe Commerce. Lorsqu’il est activé, `Search Weight` peut être défini pour l’attribut .
 
 [!DNL Live Search] n’indexe pas les produits supprimés ou ceux définis sur `Not Visible Individually`.
 
