@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les versions de  [!DNL Payment Services]  .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
+source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ _2 août 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
-![New](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] prend désormais en charge les [données d’élément de ligne au niveau de la commande](line-items.md). Cette fonctionnalité permet aux marchands d’afficher des informations détaillées sur les articles d’une commande, telles que les détails du produit, la quantité et le prix (y compris la taxe de vente, les remises et d’autres informations pertinentes).
+![New](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] prend désormais en charge les [données d’élément de ligne au niveau de la commande](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items). Cette fonctionnalité permet aux marchands d’afficher des informations détaillées sur les articles d’une commande, telles que les détails du produit, la quantité et le prix (y compris la taxe de vente, les remises et d’autres informations pertinentes).
 
 ![New](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] améliore l’expérience [Configuration dans l’Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) pour les vendeurs afin d’offrir un processus d’intégration plus simple et plus intuitif. Cette fonctionnalité permet aux commerçants de réinitialiser leurs [!DNL Payment Services] ID.
 
