@@ -4,9 +4,9 @@ description: Les dernières informations de mise à jour de [!DNL Data Export Ex
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 11ea98069dcc6d06e9ab90add8239fef2c8edc7d
+source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,16 @@ Les mises à jour sont les suivantes :
 
 ![Nouveau](../assets/new.svg) Modification du nom des tâches cron-jobs de flux d’exportation immédiate en `*_feed_resend_failed_items`.
 
-![Nouveau](../assets/new.svg) Modification du flux d’exportation immédiat et modification des tables de logs.
+![Nouveau](../assets/new.svg) Flux d’exportation immédiate renommés, identifiants d’affichage des indexeurs et modification des tables de logs.
+- tables de flux (et identifiants de vue indexeur) :
+   - `catalog_data_exporter_products` -> `cde_products_feed`
+   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+   - `catalog_data_exporter_categories` -> `cde_categories_feed`
+   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+- change les noms des tables de logs : suit le même modèle de nommage que les tables de flux, mais modifier les noms des tables de logs ajoute un suffixe `_cl`.  Par exemple `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+Si vous disposez d’un code personnalisé qui référence l’une de ces entités, mettez à jour les références avec les nouveaux noms afin de vous assurer que votre code continue à fonctionner correctement.
 
 ![Correctif](../assets/fix.svg) Définissez le champ `modified_at` dans les données de flux uniquement pour les flux qui en ont besoin.
 
