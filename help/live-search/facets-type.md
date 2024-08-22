@@ -2,9 +2,9 @@
 title: "Types de facettes"
 description: "[!DNL Live Search] les facettes sont dynamiques et apparaissent dans la liste Filtres lorsque cela est pertinent."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,11 @@ ht-degree: 0%
 
 * Facettes épinglées : les facettes les plus couramment utilisées peuvent être collées en haut de la liste. Les autres facettes sont répertoriées dans l’ordre *Type de tri* après les facettes épinglées.
 * Facettes dynamiques : attributs de produit qui [Adobe Sensei](https://www.adobe.com/sensei.html) trouvent les plus pertinents pour un ensemble de produits et une requête. Le calcul prend en compte les métadonnées d’attribut de l’ensemble du catalogue et détermine au moment de la requête les facettes les plus pertinentes pour la requête.
+
+  >[!NOTE]
+  >
+  >Si vous constatez que des erreurs de délai d’expiration s’affichent dans la réponse de requête GraphQL après la création de facettes dynamiques, modifiez toutes les facettes à épingler pour voir si cela résout les problèmes de performances.
+
 * Facettes populaires : attributs de produit qui sont le plus souvent présents dans les résultats de recherche.
 * Facettes de prix : revenez des produits par tranche de prix. Vous pouvez spécifier le nombre de sélections et l’intervalle de prix sur l’espace de travail [*Paramètres*](settings.md).
 

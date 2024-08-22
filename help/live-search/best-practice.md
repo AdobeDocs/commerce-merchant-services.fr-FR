@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Bonnes pratiques'
 description: Découvrez les bonnes pratiques pour implémenter  [!DNL Live Search] dans votre boutique.
 role: Admin, Developer
-source-git-commit: 88be2212f3a992e7a2d18bf1d5c2e8d5d2b64b80
+source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Le widget [!DNL Live Search] [[!DNL popover]](storefront-popover.md) permet des 
 
 En savoir plus sur le widget [popover](storefront-popover.md).
 
-### Synonymes et orthographes
+### Synonymes et fautes d’orthographe
 
-Incluez des synonymes et des fautes d’orthographe courantes pour garantir des résultats de recherche complets. De plus, vous pouvez développer la requête de recherche afin d’inclure des mots que les acheteurs peuvent utiliser qui diffèrent des mots spécifiés dans votre catalogue. Vous ne voulez pas perdre une vente parce que quelqu&#39;un cherche un &quot;canapé&quot;, alors que votre produit est listé comme &quot;canapé&quot;. Vous pouvez capturer un large éventail de termes de recherche en saisissant tous les mots que les clients peuvent utiliser pour trouver vos produits. Vous pouvez [définir des synonymes d’une ou deux manières](synonyms-add.md#step-2-define-the-synonym-by-type) pour améliorer les résultats.
+La recherche en direct gère par défaut les fautes d’orthographe. Vous pouvez configurer des synonymes afin d’inclure des mots que les acheteurs peuvent utiliser qui diffèrent des mots spécifiés dans votre catalogue. Vous ne voulez pas perdre une vente parce que quelqu&#39;un cherche un &quot;canapé&quot;, alors que votre produit est listé comme &quot;canapé&quot;. Vous pouvez capturer un large éventail de termes de recherche en saisissant tous les mots que les clients peuvent utiliser pour trouver vos produits. Vous pouvez [définir des synonymes d’une ou deux manières](synonyms-add.md#step-2-define-the-synonym-by-type) pour améliorer les résultats.
 
 #### Conseils pour optimiser les synonymes
 
