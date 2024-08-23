@@ -4,9 +4,9 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
+source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,12 @@ Pour sélectionner ou créer un projet SaaS, demandez la clé d’API [!DNL Comm
 
 1. Dans les sections _[!UICONTROL Sandbox API Keys]_et_[!UICONTROL Production API Keys]_ , collez vos valeurs clés.
 
-   Les clés privées doivent inclure `----BEGIN PRIVATE KEY---` au début de la clé et `----END PRIVATE KEY----` à la fin de la clé.
+   - Les clés privées doivent inclure `----BEGIN PRIVATE KEY---` au début de la clé et `----END PRIVATE KEY----` à la fin de la clé.
+   - Si vous ne disposez pas d’une copie des clés réelles, demandez-leur au propriétaire du compte, puis branchez les valeurs dans la configuration.
+
+   >[!WARNING]
+   >
+   > Si vous ajoutez des valeurs de clé en interrogeant une sauvegarde ou un instantané de la base de données et en collant les valeurs dans la configuration, une couche supplémentaire de cryptage est appliquée et les clés ne fonctionneront pas.
 
 1. Cliquez sur **Enregistrer**.
 
