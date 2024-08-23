@@ -4,9 +4,9 @@ description: Découvrez comment le  [!DNL SaaS Data Export] collecte et synchron
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,22 @@ La synchronisation partielle et la reprise des éléments ayant échoué fonctio
 - Vérifiez que les indexeurs s’exécutent à partir de [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) ou à l’aide de la commande d’interface de ligne de commande Commerce `bin/magento indexer:info`.
 
 - Vérifiez que les indexeurs des flux suivants sont définis sur `Update by Schedule` : Attributs de catalogue, Produit, Remplacements de produit et Variante de produit. Vous pouvez vérifier les indexeurs à partir de la [gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) dans l’administrateur ou à l’aide de l’interface de ligne de commande (`bin/magento indexer:show-mode | grep -i feed`).
+
+### Notifications de gestionnaire d’événements pour la journalisation du transfert de données
+
+Dans les versions 103.3.4 et ultérieures, l’exportation de données SaaS distribue l’événement `data_sent_outside` lorsque des données sont envoyées de l’instance Commerce aux services Adobe Commerce.
+
+```php
+$this->eventManager->dispatch(
+   "data_sent_outside",
+   [
+       "timestamp" => time(),
+       "type" => $metadata->getFeedName(),
+       "data" => $data
+   ]
+);
+```
+
+>[!NOTE]
+>
+>Pour plus d’informations sur les événements et sur la manière de s’y abonner, voir [Événements et observateurs](https://developer.adobe.com/commerce/php/development/components/events-and-observers) dans la documentation Adobe Commerce Developer.
