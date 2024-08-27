@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Informations les plus récentes sur l’extension  [!DNL Data Connection] d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
+source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,15 @@ _12 octobre 2022_
 ![Nouveau](../assets/new.svg) - Ajout de la prise en charge d’une [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.2.0-beta3
+
+_27 août 2024_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg) - Si vous participez à la version bêta, assurez-vous que votre fichier `composer.json` comporte les éléments suivants au niveau racine : ` "minimum-stability": "beta"`. Ajoutez également `composer require "magento/customers-connector: ^1.2.0"` pour envoyer des profils client de votre instance Commerce vers SaaS.
+![Nouveau](../assets/new.svg) - Cette version contient les correctifs publiés dans les versions 3.1.1, 3.1.2, 3.1.3 et 3.1.4.
 
 ## 3.1.4
 
