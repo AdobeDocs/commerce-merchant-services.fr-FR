@@ -4,9 +4,9 @@ description: Les dernières informations de mise à jour de [!DNL Data Export Ex
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
+source-git-commit: 915f6c5580f2976edde6609b8fd1c0ba4b09aade
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ Les mises à jour sont les suivantes :
 >L’extension d’exportation de données SaaS est un ensemble de modules installés automatiquement avec Live Search, Product Recommendations et le service de catalogue. Vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation des données sur votre système afin de récupérer des correctifs ou de nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Version majeure actuelle
+
+## Version 103.3.10
+
+![Correction](../assets/fix.svg) Correction d’une filtration multi-vues de stockage pour le flux d’options personnalisées des produits. <!--MDEE-842-->
+![Fix](../assets/fix.svg) Les flux non valides ne sont pas renvoyés tant que la valeur de hachage du flux n’a pas été modifiée.<!--MDEE-848-->
 
 ## Version 103.3.9
 
