@@ -3,9 +3,9 @@ title: "Limites et limites"
 description: Découvrez les limites de  [!DNL Live Search] pour vous assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
+source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ En ce qui concerne la recherche de site, Adobe Commerce vous offre des options. 
 - Les [tarifs de niveau élevé](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) et [prix spécial](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) ne sont pas pris en charge dans le champ [!DNL Live Search] et le widget de page de liste de produits.
 - Les prix des produits ne comprennent pas la TVA.
 - La recherche de contenu n’est pas prise en charge.
-- Il existe une limite de 10 000 produits pouvant être paginés.
+- Il existe une limite de 10 000 produits pouvant être paginés. Bien que cette limite puisse être augmentée, elle peut avoir une incidence sur les performances. Veillez à fournir des moyens significatifs de filtrer les produits lorsqu’une catégorie ou un résultat de recherche comporte un grand nombre de produits afin que les acheteurs n’aient pas à utiliser la pagination profonde.
 - Il existe une limite stricte de 1 Mo par attribut, y compris la description et les attributs personnalisés.
 - L’adaptateur de recherche ne prend pas en charge les attributs de produit créés avec un modèle source personnalisé et utilisés comme facettes. Pour prendre en charge cette fonctionnalité, vous devez utiliser le [widget de page de liste de produits](plp-styling.md).
+- Les types de produits personnalisés ne sont pas pris en charge.
 
 ## Indexation
 
@@ -84,3 +85,15 @@ En ce qui concerne la recherche de site, Adobe Commerce vous offre des options. 
 - [!DNL popover] ne prend pas en charge le thème *vierge*.
 - [!DNL popover] n’est pas pris en charge dans le formulaire de commande rapide.
 - Les listes blanches et les comparaisons de produits ne sont pas prises en charge.
+- Le symbole monétaire du sol péruvien (PEN) n&#39;est pas supporté.
+
+## Dépannage
+
+Pour obtenir de l’aide pour résoudre certains problèmes courants dans [!DNL Live Search], consultez les articles suivants de la base de connaissances :
+
+- [[!DNL Live Search] catalogue non synchronisé](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] Le tableau de bord et le classement des résultats de recherche sont incorrects](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] affiche les produits en rupture de stock, quels que soient les paramètres de statut du stock dans Admin](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search] les facettes ne sont pas triées par ordre alphabétique](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+
+Si vous avez besoin d&#39;une assistance supplémentaire, contactez [support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

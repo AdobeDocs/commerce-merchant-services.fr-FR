@@ -2,9 +2,9 @@
 title: Filtrer les produits
 description: Définissez des conditions qui incluent ou excluent l’utilisation de produits comme recommandations.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
+source-git-commit: b602385b956b6af131b008428d1182a586303bc7
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Les opérateurs logiques `AND` et `OR` sont utilisés pour joindre plusieurs con
 
 ### Catégorie
 
-Les filtres basés sur la catégorie d’un produit utilisent des affectations de catégorie directes et leurs sous-catégories. Par exemple, l’activation d’une condition d’exclusion pour la catégorie `Gear` exclut les produits affectés à `Gear` et toutes ses sous-catégories telles que `Gear/Bags` ou `Gear/Fitness Equipment`. Pour les commerçants B2B, le filtre de catégorie adhère aux [ catégories de produits spécifiques aux clients](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) que vous avez configurées.
+Les filtres basés sur la catégorie d’un produit utilisent des affectations de catégorie directes et leurs sous-catégories. Par exemple, l’activation d’une condition d’exclusion pour la catégorie `Gear` exclut les produits affectés à `Gear` et toutes ses sous-catégories telles que `Gear/Bags` ou `Gear/Fitness Equipment`. Il en va de même pour un filtre d’inclusion sur une catégorie. Par exemple, l’activation d’une condition d’inclusion pour la catégorie `Gear` inclut les produits affectés à `Gear` et toutes ses sous-catégories telles que `Gear/Bags` ou `Gear/Fitness Equipment`.
+
+>[!NOTE]
+>
+>Pour les commerçants B2B, le filtre de catégorie adhère aux [ catégories de produits spécifiques aux clients](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) que vous avez configurées.
 
 Adobe Commerce vous recommande d’utiliser la configuration de filtre de catégorie suivante lorsque vous déployez des recommandations sur vos types de page :
 

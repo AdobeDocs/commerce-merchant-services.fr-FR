@@ -2,9 +2,9 @@
 title: "Indexation"
 description: "Découvrez comment  [!DNL Live Search] indexe les propriétés d’attribut de produit."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
+source-git-commit: 2833b723845312fe657b29024b9d715ee07d5a1e
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Les propriétés d’attribut de produit (métadonnées) déterminent :
 
 La portée des métadonnées d’attribut est `website/store/store view`.
 
-L’API [!DNL Live Search] permet à un client de trier selon n’importe quel attribut de produit dont la propriété [storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` est définie sur `Yes` dans l’administrateur Adobe Commerce. Lorsqu’il est activé, `Search Weight` peut être défini pour l’attribut .
+L’API [!DNL Live Search] permet à un client de trier selon n’importe quel attribut de produit dont la propriété [storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` est définie sur `Yes` dans l’administrateur Adobe Commerce. Lorsqu’il est activé, `Search Weight` peut être défini pour l’attribut .
 
-[!DNL Live Search] n’indexe pas les produits supprimés ou ceux définis sur `Not Visible Individually`.
+[!DNL Live Search] n’indexe pas les produits supprimés ou les produits définis sur `Not Visible Individually`.
 
 >[!NOTE]
 >
@@ -32,7 +32,8 @@ L’API [!DNL Live Search] permet à un client de trier selon n’importe quel a
 ## Indexation du pipeline
 
 Le client appelle le service de recherche à partir du storefront pour récupérer les métadonnées d’index (filtrables, triables). Seuls les attributs de produit pouvant faire l’objet d’une recherche et dont la propriété *Use in Layered Navigation* est définie sur `Filterable (with results)` et *Use for Triting in Product List* définie sur `Yes` peuvent être appelés par le service de recherche.
-Pour construire une requête dynamique, le service de recherche doit savoir quels attributs peuvent faire l’objet d’une recherche et leur [poids](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] honore les poids de recherche Adobe Commerce (1 à 10, où 10 est la priorité la plus élevée). La liste des données synchronisées et partagées avec le service de catalogue se trouve dans le schéma, défini dans :
+
+Pour construire une requête dynamique, le service de recherche doit savoir quels attributs peuvent faire l’objet d’une recherche et leur [poids](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] honore les poids de recherche Adobe Commerce (1 à 10, où 10 est la priorité la plus élevée). La liste des données synchronisées et partagées avec le service de catalogue se trouve dans le schéma, défini dans :
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -67,24 +68,39 @@ Une fois l’index initial créé lors de l’[intégration](install.md#synchron
 * Modifications des valeurs d’attribut de produit
 
 Par exemple, l’ajout d’une nouvelle valeur d’échantillon à l’attribut `color` est géré comme une mise à jour de produit par flux.
+
 Workflow de mise à jour en flux continu :
 
 1. Les produits mis à jour sont synchronisés de l’instance Adobe Commerce vers le service de catalogue.
 1. Le service d’indexation recherche en permanence les mises à jour de produit à partir du service de catalogue. Les produits mis à jour sont indexés à leur arrivée dans le service de catalogue.
 1. La disponibilité d’une mise à jour de produit dans [!DNL Live Search] peut prendre jusqu’à 15 minutes.
 
+#### Mises à jour qui affectent la visibilité du produit
+
+Lorsque vous effectuez des mises à jour des paramètres de configuration d’administrateur [!DNL Live Search], des paramètres de configuration d’administrateur Adobe Commerce ou des mises à jour des données de catalogue, vous pouvez vous attendre à un délai avant que ces modifications n’apparaissent sur le storefront.
+
+Le tableau suivant décrit les différentes modifications et le temps d’attente approximatif avant qu’elles n’apparaissent sur le storefront.
+
+| Mises à jour | Délai jusqu’à ce qu’il soit visible sur le storefront |
+|---|---|
+| [!DNL Live Search] L’administrateur modifie les facettes, les paramètres de prix, les règles de marchandisage de recherche ou de catégorie. | 15 à 20 minutes. |
+| [!DNL Live Search] Modifications de l’administrateur nécessitant une réindexation : paramètres de langue ou synonymes. | Jusqu’à 15 minutes après la fin de la réindexation. |
+| Modifications de l’administration d’Adobe Commerce qui nécessitent une réindexation complète : métadonnées d’attribut pouvant faire l’objet d’une recherche, pouvant être triées ou filtrables | Jusqu’à 15 minutes après la fin de la réindexation. |
+| Modifications incrémentielles des données de catalogue qui n’ont pas besoin de réindexation : inventaire des produits, prix, nom, etc. | 15 minutes au maximum après la mise à jour de l’index de recherche adaptative avec les dernières données. |
+
 ## Recherche de client
 
-L’API [!DNL Live Search] permet à un client de trier selon n’importe quel attribut de produit triable en définissant la [propriété storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Utilisée pour le tri dans les listes de produits* sur `Yes`. En fonction du thème, ce paramètre entraîne l’inclusion de l’attribut comme option dans la commande de pagination [Trier par](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) sur les pages du catalogue. Jusqu’à 200 attributs de produit peuvent être indexés par [!DNL Live Search], avec des [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) pouvant faire l’objet de recherches et pouvant être filtrées.
+L’API [!DNL Live Search] permet à un client de trier selon n’importe quel attribut de produit triable en définissant la [propriété storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes), *Utilisée pour le tri dans les listes de produits* sur `Yes`. En fonction du thème, ce paramètre entraîne l’inclusion de l’attribut comme option dans la commande de pagination [Trier par](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) sur les pages du catalogue. Jusqu’à 200 attributs de produit peuvent être indexés par [!DNL Live Search], avec des [propriétés storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) pouvant faire l’objet de recherches et pouvant être filtrées.
+
 Les métadonnées d’index sont stockées dans le pipeline d’indexation et sont accessibles par le service de recherche.
 
 ![[!DNL Live Search] Diagramme d’API de métadonnées d’index ](assets/index-metadata-api.svg)
 
 ### Workflow des attributs de tri
 
-1. Le client appelle Search Service.
-1. Search Service appelle Search Admin Service.
-1. Search Service appelle le pipeline d’indexation.
+1. Le client appelle le service de recherche.
+1. Le service de recherche appelle le service d’administration de recherche.
+1. Le service de recherche appelle le pipeline d’indexation.
 
 ## Indexé pour tous les produits
 

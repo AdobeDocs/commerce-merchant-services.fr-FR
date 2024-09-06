@@ -2,9 +2,9 @@
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 1. Sur la barre latérale _Admin_, accédez à **Marketing** > _Promotions_ > **Recommendations de produit** pour afficher l’espace de travail _Recommendations de produit_.
 
-1. Spécifiez la [vue Boutique](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où afficher les recommandations.
+1. Spécifiez la [vue Boutique](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) où afficher les recommandations.
 
    >[!NOTE]
    >
-   > Les unités de recommandation du Créateur de pages doivent être créées dans la vue de magasin par défaut, mais peuvent ensuite être utilisées n’importe où. Pour en savoir plus sur la création de recommandations de produits avec Page Builder, voir [Ajout de contenu - Recommendations produit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Les unités de recommandation du Créateur de pages doivent être créées dans la vue de magasin par défaut, mais peuvent ensuite être utilisées n’importe où. Pour en savoir plus sur la création de recommandations de produits avec Page Builder, voir [Ajout de contenu - Recommendations produit](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Cliquez sur **Créer une recommandation**.
 
@@ -34,14 +34,14 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
    >[!NOTE]
    >
-   > Les Recommendations de produit ne sont pas pris en charge sur la page Panier lorsque votre boutique est configurée pour [ afficher la page du panier immédiatement après l’ajout d’un produit au panier ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
+   > Les Recommendations de produit ne sont pas pris en charge sur la page Panier lorsque votre boutique est configurée pour [ afficher la page du panier immédiatement après l’ajout d’un produit au panier ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Page d’accueil
    * Catégorie
    * Détails du produit
    * Panier
    * Confirmation
-   * [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Vous pouvez créer jusqu’à cinq unités de recommandations actives pour chaque type de page et jusqu’à 25 unités pour le Créateur de pages. Le type de page est grisé Lorsque la limite est atteinte.
 
@@ -81,37 +81,56 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 ## Indicateurs de préparation
 
-Certains types de recommandations utilisent les données comportementales de vos acheteurs pour [former des modèles d’apprentissage automatique](behavioral-data.md) afin de créer des recommandations personnalisées.
+Les indicateurs de préparation indiquent les types de recommandations les plus performants en fonction du catalogue et des données comportementales disponibles. Vous pouvez également utiliser des indicateurs de préparation pour déterminer si vous rencontrez des problèmes lors de votre événement ou si vous n’avez pas assez de trafic pour renseigner le type de recommandation.
 
-Nécessite uniquement des données de catalogue. Aucune donnée comportementale n’est nécessaire pour les éléments suivants :
+Les indicateurs de préparation sont classés dans [basé sur la statique](#static-based) ou [basé sur la dynamique](#dynamic-based). Les données du catalogue basées sur la statique utilisent uniquement les données du catalogue, tandis que les données comportementales dynamiques utilisent les données de vos acheteurs. Ces données comportementales sont utilisées pour [former des modèles d’apprentissage automatique](behavioral-data.md) afin de créer des recommandations personnalisées et de calculer leur score de préparation.
+
+Les indicateurs de préparation sont calculés sur la base de deux facteurs :
+
+* Taille de jeu de résultats suffisante : y a-t-il suffisamment de résultats renvoyés dans la plupart des scénarios pour éviter d’utiliser [recommandations de sauvegarde](behavioral-data.md#backuprecs) ?
+
+* Suffisante variété d’ensembles de résultats : les produits renvoyés représentent-ils une variété de produits de votre catalogue ? L’objectif de ce facteur est d’éviter qu’une minorité de produits soit le seul élément recommandé sur l’ensemble du site.
+
+En fonction des facteurs ci-dessus, une valeur de préparation est calculée et affichée comme suit :
+
+* 75 % ou plus signifie que les recommandations proposées pour ce type de recommandation seront très pertinentes.
+* Au moins 50 % signifie que les recommandations proposées pour ce type de recommandation seront moins pertinentes.
+* Moins de 50 % signifie que les recommandations suggérées pour ce type de recommandation ne seront pas pertinentes.
+
+Il s’agit de directives générales, mais chaque cas peut varier en fonction de la nature des données collectées, comme indiqué ci-dessus. Découvrez [comment les indicateurs de préparation sont calculés](#understand-how-readiness-indicators-are-calculated) et [pourquoi les indicateurs de préparation peuvent être faibles](#what-to-do-if-the-readiness-indicator-percent-is-low).
+
+### Statique
+
+Les types de recommandations suivants sont statiques, car ils ne nécessitent que des données de catalogue. Aucune donnée comportementale n’est utilisée.
 
 * _Le Plus Comme Celui-Ci_
-* _Récemment consultés_
 * _Similarité visuelle_
 
-Sur la base des six derniers mois des données comportementales du storefront :
+### Basé sur Dynamic
+
+Les types de recommandations suivants sont dynamiques, car ils utilisent des données comportementales storefront.
+
+Les six derniers mois de données comportementales de storefront :
 
 * _A consulté ceci, a consulté cela_
 * _A consulté ceci, a acheté cela_
 * _Acheté ceci, acheté cela_
 * _Recommandé pour vous_
 
-Les types de recommandations basés sur la popularité utilisent les sept derniers jours des données comportementales du storefront :
+Les sept derniers jours des données comportementales du storefront :
 
 * Les plus consultés
 * Le plus acheté
 * Ajout au panier
 * Tendance
 
-Les valeurs des indicateurs de préparation devraient fluctuer en raison de facteurs tels que la taille globale du catalogue, le volume des événements d’interaction du produit (vues, ajouts au panier, achats) et le pourcentage de SKU qui enregistrent ces événements dans une certaine période, comme indiqué ci-dessus. Par exemple, pendant le trafic de haute saison des fêtes, les indicateurs de préparation peuvent afficher des valeurs plus élevées que lors des périodes de volume normal.
+Données comportementales du nouvel acheteur (vues uniquement) :
 
-Pour vous aider à visualiser la progression de la formation de chaque type de recommandation, la section _Sélectionner le type de recommandation_ affiche une mesure de la préparation pour chaque type. Ces indicateurs de préparation sont calculés sur la base de deux facteurs :
+* _Récemment consultés_
 
-* Taille de jeu de résultats suffisante : y a-t-il suffisamment de résultats renvoyés dans la plupart des scénarios pour éviter d’utiliser [recommandations de sauvegarde](behavioral-data.md#backuprecs) ?
+### Visualiser la progression
 
-* Suffisante variété d’ensembles de résultats : les produits renvoyés représentent-ils une variété de produits de votre catalogue ? L’objectif de ce facteur est d’éviter qu’une minorité de produits soit le seul élément recommandé sur l’ensemble du site.
-
-En fonction des facteurs ci-dessus, une valeur de préparation est calculée et affichée. Un type de recommandation est considéré comme prêt à être déployé lorsque sa valeur de préparation est supérieure ou égale à 75 %. Un type de recommandation est considéré comme partiellement prêt lorsque son état de préparation est d’au moins 50 %. Un type de recommandation est considéré comme non prêt à être déployé lorsque sa valeur de préparation est inférieure à 50 %. Il s’agit de directives générales, mais chaque cas peut varier en fonction de la nature des données collectées, comme indiqué ci-dessus.
+Pour vous aider à visualiser la progression de la formation de chaque type de recommandation, la section _Sélectionner le type de recommandation_ affiche une mesure de la préparation pour chaque type.
 
 ![Type de recommandation](assets/create-recommendation-select-type.png)
 _Type de recommandation_
@@ -119,6 +138,29 @@ _Type de recommandation_
 >[!NOTE]
 >
 >Les indicateurs peuvent ne jamais atteindre 100 %.
+
+Le pourcentage de l’indicateur de préparation pour les types de recommandations qui dépendent des données du catalogue ne change pas beaucoup, car le catalogue du commerçant ne change pas souvent. Mais le pourcentage de l’indicateur de préparation pour les types de recommandations basé sur les données comportementales des acheteurs peut changer souvent en fonction de l’activité quotidienne des acheteurs.
+
+#### Que faire si le pourcentage de l’indicateur de préparation est faible
+
+Un pourcentage de faible préparation indique qu’il n’y a pas beaucoup de produits de votre catalogue qui peuvent être inclus dans les recommandations pour ce type de recommandation. Cela signifie qu’il existe une forte probabilité que [recommandations de sauvegarde](behavioral-data.md#backuprecs) soient renvoyées si vous déployez ce type de recommandation de toute façon.
+
+Vous trouverez ci-dessous les raisons possibles et les solutions aux scores de faible niveau de préparation courants :
+
+* **Static-based** - De faibles pourcentages pour ces indicateurs peuvent être causés par l’absence de données de catalogue pour les produits affichables. S’ils sont inférieurs aux attentes, une synchronisation complète peut résoudre ce problème.
+* **Dynamique** - Les faibles pourcentages pour les indicateurs dynamiques peuvent être causés par :
+
+   * Champs manquants dans les événements storefront requis pour les types de recommandations respectifs (requestId, product context, etc.)
+   * Le faible trafic sur le magasin de sorte que le volume d’événements comportementaux que nous recevons est faible.
+   * La variété d’événements comportementaux de storefront sur différents produits de votre magasin est faible. Par exemple, si seulement dix pour cent de vos produits sont consultés ou achetés la plupart du temps, les indicateurs de préparation respectifs seront faibles.
+
+#### Méthode de calcul des indicateurs de préparation
+
+Les indicateurs de préparation indiquent la formation du modèle. Les indicateurs sont indépendants des types d’événements collectés, de la largeur des produits interactifs et de la taille du catalogue.
+
+Le pourcentage de l’indicateur de préparation est dérivé d’un calcul qui indique le nombre de produits recommandés en fonction du type de recommandation. Les statistiques sont appliquées aux produits en fonction de la taille globale du catalogue, du volume des interactions (vues, clics, ajouts au panier, etc.) et du pourcentage de SKU qui enregistrent ces événements dans une certaine période. Par exemple, pendant le trafic de haute saison des fêtes, les indicateurs de préparation peuvent afficher des valeurs plus élevées que lors des périodes de volume normal.
+
+En raison de ces variables, le pourcentage de l’indicateur de préparation peut fluctuer. Cela explique pourquoi il se peut que les types de recommandations apparaissent et sortent du statut &quot;Prêt pour le déploiement&quot;.
 
 ## Aperçu de Recommendations {#preview}
 

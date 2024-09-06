@@ -2,9 +2,9 @@
 title: "Configuration de la recherche en direct"
 description: L’espace de travail  [!DNL Live Search]  est utilisé pour configurer, gérer et surveiller les performances de recherche.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -74,14 +74,18 @@ La section suivante décrit les paramètres de configuration Commerce pris en ch
 
 ### Valeurs de configuration compatibles
 
+>[!IMPORTANT]
+>
+>Il est vivement recommandé d’utiliser les widgets de liste de produits, activés par défaut dans Live Search 4.0.0. Les widgets sont destinés à remplacer complètement l’implémentation de l’adaptateur dans les prochaines versions. Pour en savoir plus, voir [Activation des widgets de liste de produits](install.md#enable-product-listing-widgets) .
+
 | Paramètre de configuration Commerce | Description | Pris en charge par Popover | Pris en charge par l’adaptateur |
 |---|---|---|---|
 | Magasins > Configuration > Catalogue > Catalogue > Recherche catalogue > Autoriser tous les produits par page | Si celle-ci est définie sur `Yes`, l’option `ALL` est incluse dans le contrôle &quot;Afficher par page&quot;. | Oui. 500 produits max | Oui. 500 produits max |
 | Magasins > Configuration > Catalogue > Recherche catalogue > Longueur minimale de requête | Nombre minimum de caractères autorisés dans une recherche catalogue. | Oui | Oui |
 | Magasins > Configuration > Catalogue > Recherche catalogue > Produits par page sur les valeurs autorisées de la grille | Détermine le nombre de produits affichés en mode Grille. | Oui | Oui |
 | Magasins > Configuration > Catalogue > Recherche catalogue > Produits par page sur la valeur par défaut de la grille | Détermine le nombre de produits affichés par page par défaut en mode Grille. | Oui. 500 produits max | Oui. 500 produits max |
-| Magasins > Configuration > Catalogue > Inventaire > Afficher les produits en rupture de stock | Affiche les produits en rupture de stock. | Oui avec v2.0.4+ | Oui avec v2.0.4+ |
-| Magasins > Configuration > Devise > Devise d’affichage par défaut | Devise principale utilisée pour afficher les prix. | Oui avec 3.1.0+ | Oui avec 3.1.0+ |
+| Magasins > Configuration > Catalogue > Inventaire > Afficher les produits en rupture de stock | Affiche les produits en rupture de stock. | Oui | Oui |
+| Magasins > Configuration > Devise > Devise d’affichage par défaut | Devise principale utilisée pour afficher les prix. | Oui | Oui |
 | Magasins > Configuration > Général > Configuration de devise > Options de devise > Devise de base | Devise principale utilisée pour toutes les transactions de paiement en ligne. | Oui | Oui |
 
 Les prix dans la page de liste de produits du widget et la fenêtre contextuelle sont convertis en devise d’affichage par défaut à l’aide des taux de devise configurés.

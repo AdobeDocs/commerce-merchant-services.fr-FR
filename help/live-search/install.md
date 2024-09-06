@@ -3,9 +3,9 @@ title: "Prise en main de [!DNL Live Search]"
 description: "Découvrez la configuration requise et les étapes d’installation de  [!DNL Live Search] à partir d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2417'
 ht-degree: 0%
 
 ---
@@ -333,7 +333,7 @@ Si vous disposez d’une implémentation personnalisée sans interface utilisate
 - [Widget PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Champ de recherche en direct](https://github.com/adobe/storefront-search-as-you-type)
 
-Si vous n’utilisez pas les composants standard tels que l’adaptateur de recherche, les widgets Luma ou les widgets AEM CIF, la collecte automatique des données d’interaction utilisateur ne fonctionne pas par défaut. Ces données collectées sont utilisées par Adobe Sensei pour le marchandisage intelligent et le suivi des performances. Pour résoudre ce problème, vous devez développer une solution personnalisée afin de mettre en oeuvre cette collecte de données sans interface utilisateur.
+La collecte automatique des données d’interaction utilisateur ne fonctionne pas par défaut lorsque vous n’utilisez pas les composants standard tels que l’adaptateur de recherche, les widgets Luma ou les widgets CIF AEM. Adobe Sensei utilise ces données collectées pour le marchandisage intelligent et le suivi des performances. Pour résoudre ce problème, vous devez développer une solution personnalisée afin de mettre en oeuvre cette collecte de données sans interface utilisateur.
 
 La dernière version de [!DNL Live Search] utilise déjà [!DNL Catalog Service].
 
