@@ -2,9 +2,9 @@
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
+source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,17 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 ## Indicateurs de préparation
 
-Les indicateurs de préparation indiquent les types de recommandations les plus performants en fonction du catalogue et des données comportementales disponibles. Vous pouvez également utiliser des indicateurs de préparation pour déterminer si vous rencontrez des problèmes lors de votre événement ou si vous n’avez pas assez de trafic pour renseigner le type de recommandation.
+Les indicateurs de préparation indiquent les types de recommandations les plus performants en fonction du catalogue et des données comportementales disponibles. Vous pouvez également utiliser des indicateurs de préparation pour déterminer si vous rencontrez des problèmes avec votre [événement](events.md) ou si vous n’avez pas assez de trafic pour renseigner le type de recommandation.
 
 Les indicateurs de préparation sont classés dans [basé sur la statique](#static-based) ou [basé sur la dynamique](#dynamic-based). Les données du catalogue basées sur la statique utilisent uniquement les données du catalogue, tandis que les données comportementales dynamiques utilisent les données de vos acheteurs. Ces données comportementales sont utilisées pour [former des modèles d’apprentissage automatique](behavioral-data.md) afin de créer des recommandations personnalisées et de calculer leur score de préparation.
+
+### Méthode de calcul des indicateurs de préparation
+
+Les indicateurs de préparation indiquent la formation du modèle. Les indicateurs dépendent des types d’événements collectés, de la largeur des produits interactifs et de la taille du catalogue.
+
+Le pourcentage de l’indicateur de préparation est dérivé d’un calcul qui indique le nombre de produits recommandés en fonction du type de recommandation. Les statistiques sont appliquées aux produits en fonction de la taille globale du catalogue, du volume des interactions (vues, clics, ajouts au panier, etc.) et du pourcentage de SKU qui enregistrent ces événements dans une certaine période. Par exemple, pendant le trafic de haute saison des fêtes, les indicateurs de préparation peuvent afficher des valeurs plus élevées que lors des périodes de volume normal.
+
+En raison de ces variables, le pourcentage de l’indicateur de préparation peut fluctuer. Cela explique pourquoi il se peut que les types de recommandations apparaissent et sortent du statut &quot;Prêt pour le déploiement&quot;.
 
 Les indicateurs de préparation sont calculés sur la base de deux facteurs :
 
@@ -95,15 +103,15 @@ En fonction des facteurs ci-dessus, une valeur de préparation est calculée et 
 
 * 75 % ou plus signifie que les recommandations proposées pour ce type de recommandation seront très pertinentes.
 * Au moins 50 % signifie que les recommandations proposées pour ce type de recommandation seront moins pertinentes.
-* Moins de 50 % signifie que les recommandations suggérées pour ce type de recommandation ne seront pas pertinentes.
+* Moins de 50 % signifie que les recommandations suggérées pour ce type de recommandation peuvent ne pas être pertinentes. Dans ce cas, [recommandations de sauvegarde](behavioral-data.md#backuprecs) sont utilisées.
 
-Il s’agit de directives générales, mais chaque cas peut varier en fonction de la nature des données collectées, comme indiqué ci-dessus. Découvrez [comment les indicateurs de préparation sont calculés](#understand-how-readiness-indicators-are-calculated) et [pourquoi les indicateurs de préparation peuvent être faibles](#what-to-do-if-the-readiness-indicator-percent-is-low).
+En savoir plus sur [pourquoi les indicateurs de préparation peuvent être faibles](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
 ### Statique
 
 Les types de recommandations suivants sont statiques, car ils ne nécessitent que des données de catalogue. Aucune donnée comportementale n’est utilisée.
 
-* _Le Plus Comme Celui-Ci_
+* _Plus comme ceci_
 * _Similarité visuelle_
 
 ### Basé sur Dynamic
@@ -119,10 +127,12 @@ Les six derniers mois de données comportementales de storefront :
 
 Les sept derniers jours des données comportementales du storefront :
 
-* Les plus consultés
-* Le plus acheté
-* Ajout au panier
-* Tendance
+* _Le plus consulté_
+* _Le plus acheté_
+* _Le plus ajouté au panier_
+* _Trending_
+* _Afficher pour acheter la conversion_
+* _Conversion de l’affichage dans le panier_
 
 Données comportementales du nouvel acheteur (vues uniquement) :
 
@@ -150,17 +160,9 @@ Vous trouverez ci-dessous les raisons possibles et les solutions aux scores de f
 * **Static-based** - De faibles pourcentages pour ces indicateurs peuvent être causés par l’absence de données de catalogue pour les produits affichables. S’ils sont inférieurs aux attentes, une synchronisation complète peut résoudre ce problème.
 * **Dynamique** - Les faibles pourcentages pour les indicateurs dynamiques peuvent être causés par :
 
-   * Champs manquants dans les événements storefront requis pour les types de recommandations respectifs (requestId, product context, etc.)
+   * Champs manquants dans les [événements storefront](events.md) requis pour les types de recommandations respectifs (requestId, product context, etc.)
    * Le faible trafic sur le magasin de sorte que le volume d’événements comportementaux que nous recevons est faible.
    * La variété d’événements comportementaux de storefront sur différents produits de votre magasin est faible. Par exemple, si seulement dix pour cent de vos produits sont consultés ou achetés la plupart du temps, les indicateurs de préparation respectifs seront faibles.
-
-#### Méthode de calcul des indicateurs de préparation
-
-Les indicateurs de préparation indiquent la formation du modèle. Les indicateurs sont indépendants des types d’événements collectés, de la largeur des produits interactifs et de la taille du catalogue.
-
-Le pourcentage de l’indicateur de préparation est dérivé d’un calcul qui indique le nombre de produits recommandés en fonction du type de recommandation. Les statistiques sont appliquées aux produits en fonction de la taille globale du catalogue, du volume des interactions (vues, clics, ajouts au panier, etc.) et du pourcentage de SKU qui enregistrent ces événements dans une certaine période. Par exemple, pendant le trafic de haute saison des fêtes, les indicateurs de préparation peuvent afficher des valeurs plus élevées que lors des périodes de volume normal.
-
-En raison de ces variables, le pourcentage de l’indicateur de préparation peut fluctuer. Cela explique pourquoi il se peut que les types de recommandations apparaissent et sortent du statut &quot;Prêt pour le déploiement&quot;.
 
 ## Aperçu de Recommendations {#preview}
 
