@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notes de mise à jour"
 description: "Informations les plus récentes sur la version de  [!DNL Live Search] à partir d’Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2027'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Les mises à jour sont les suivantes :
 ## Mises à jour du service hébergé
 
 Ces notes décrivent les mises à jour publiées en dehors d’une version ou les améliorations apportées au service hébergé.
+
+_4 septembre 2024_
+
+![Correctif](../assets/fix.svg) Augmentation du nombre maximal de compartiments pouvant être renvoyés [dans une facette](boundaries-limits.md#facets) à 100.
 
 _7 août 2024_
 

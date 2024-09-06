@@ -3,9 +3,9 @@ title: "Limites et limites"
 description: Découvrez les limites de  [!DNL Live Search] pour vous assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2f28b77691e5b125875f1ce39301bfebd093a922
+source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ En ce qui concerne la recherche de site, Adobe Commerce vous offre des options. 
 ## Facettes
 
 - 100 attributs au maximum peuvent être configurés en tant que facettes à partir des 200 attributs filtrables pouvant être indexés.
-- Dans une facette, un maximum de 30 compartiments peuvent être renvoyés. Si plus de 30 lots doivent être renvoyés, [créez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) afin que l’Adobe puisse analyser l’impact sur les performances et déterminer s’il est possible d’augmenter cette limite pour votre environnement.
+- Dans une facette, un maximum de 100 compartiments peuvent être renvoyés. Si vous devez renvoyer plus de 100 compartiments, [créez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) afin que l’Adobe puisse analyser l’impact sur les performances et déterminer s’il est possible d’augmenter cette limite pour votre environnement.
 - Les facettes dynamiques peuvent entraîner des problèmes de performances dans les index volumineux et les index dont la qualité est élevée. Si vous avez créé des facettes dynamiques et que vous constatez une détérioration des performances ou un non-chargement de page avec des erreurs de délai d’expiration, essayez de modifier vos facettes pour les épingler afin de déterminer si cela résout votre problème de performances.
 - L’état des stocks (`quantity_and_stock_status`) n’est pas pris en charge en tant que facette. Vous pouvez utiliser `inStock: 'true'` pour filtrer les produits en rupture de stock. Ceci est pris en charge par défaut dans le module `LiveSearchAdapter` lorsque &quot;Display out of stock products&quot; est défini sur &quot;True&quot; dans l’administrateur [!DNL Commerce].
 - Les attributs de type date ne sont pas pris en charge en tant que facette.
