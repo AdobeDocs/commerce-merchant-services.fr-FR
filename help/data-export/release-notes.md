@@ -4,9 +4,9 @@ description: Les dernières informations de mise à jour de [!DNL Data Export Ex
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: aaa3673154345207a90eaa9fea6384330420bfe5
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ Les mises à jour sont les suivantes :
 
 ## Version 103.3.11
 
-![Correctif](../assets/fix.svg) Le service d’exportation de données envoie désormais des données de prix spécial pour les produits en bundle en pourcentage, corrigeant un problème précédent où il a été envoyé en tant que prix final.&lt;!-MDEE-854—>
-![Correctif](../assets/fix.svg) Mise à jour de l’implémentation monolog pour la compatibilité avec Monolog 3.&lt;!-MDEE-858—>
+![Correctif](../assets/fix.svg) Le service d’exportation de données envoie désormais des données de prix spécial pour les produits en bundle en pourcentage, corrigeant un problème précédent où il a été envoyé en tant que prix final. <!--MDEE-854-->
+![Correctif](../assets/fix.svg) Mise à jour de l’implémentation monolog pour la compatibilité avec Monolog 3. <!--MDEE-858-->
 
 ## Version 103.3.10
 

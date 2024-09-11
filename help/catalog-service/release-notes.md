@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour de [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,15 @@ Les mises à jour sont les suivantes :
 
 ## Version majeure actuelle
 
+### Version 1.23
+
+_22 août 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Correctif](../assets/fix.svg) Vous pouvez désormais récupérer les informations sur les produits sans les données de remplacement de produit (prix). Dans les versions précédentes, ces requêtes renvoyaient l’erreur suivante :
+`The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
+
 ### Version 1.22
 
 _13 août 2024_
@@ -34,6 +43,14 @@ _13 août 2024_
 ## Versions précédentes
 
 +++ Versions précédentes
+
+### Version 1.22
+
+_13 août 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Nouveau](../assets/new.svg) Ajout de la prise en charge de la récupération de toutes les variantes par SKU du produit. Voir la [référence de l’API Catalog Service](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
 
 ### Version 1.19
 
