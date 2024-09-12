@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '108'
 ht-degree: 3%
 
 ---
@@ -34,12 +34,13 @@ ht-degree: 3%
 - Paiements et passage en caisse {#payments-checkout}
    - [Options de paiement](payments-options.md)
    - [Valorisation des cartes de crédit](vaulting.md)
-   - [Passage en caisse](checkout.md)
-   - [Création d’une commande dans l’administrateur](create-order.md)
+   - [Passage en caisse dans [!DNL Payment Services]](checkout.md)
    - Gestion des paiements {#manage}
       - [Éléments de ligne pour [!DNL Payment Services]](line-items.md)
       - [Remboursement](refunds.md)
       - [Voix](voids.md)
+   - [Création d’une commande dans l’administrateur](create-order.md)
+   - [Suivi de vos envois dans  [!DNL Payment Services]](track-shipment.md)
 - Rapports financiers {#reporting}
    - [Rapport des transactions](transactions.md)
    - [Rapport d’état des paiements de commande](order-payment-status.md)

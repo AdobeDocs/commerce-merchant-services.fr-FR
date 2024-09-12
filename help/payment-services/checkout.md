@@ -1,16 +1,17 @@
 ---
-title: Passage en caisse
-description: Personnalisez le passage en caisse en fonction des besoins de votre client.
+title: Passage en caisse dans [!DNL Payment Services]
+description: Personnalisez  [!DNL Payment Services] le passage en caisse pour répondre aux besoins de votre client.
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# Passage en caisse
+
+# Passage en caisse dans [!DNL Payment Services]
 
 Vous pouvez configurer le passage en caisse pour Adobe Commerce [!DNL Payment Services] en fonction de vos acheteurs. Des fonctionnalités telles que le [remplacement automatique de commande](#order-auto-voided-if-error) et la [ résolution de carte de crédit](#credit-card-vaulting) garantissent que vos clients bénéficient d’une expérience utilisateur fluide.
 

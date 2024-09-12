@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les versions de  [!DNL Payment Services]  .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '2788'
+source-wordcount: '2968'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Pour en savoir plus sur les prochaines versions, la prise en charge des produits
 Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités qui se sont produits et qui ont été publiés en dehors des versions standard des fonctionnalités pour le service hébergé.
 
 +++Mises à jour du service hébergé
+
+_30 août 2024_
+
+![Nouveau problème](../assets/new.svg)<!-- Issue PAY-5658 --> Désormais, les vendeurs peuvent filtrer les transactions selon les détails du paiement dans le [rapport sur les transactions](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) pour obtenir des données plus détaillées et plus précises sur les méthodes de paiement.
 
 _15 juillet 2024_
 
@@ -86,6 +90,20 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans le [rapport État des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [rapport sur les paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne.
 
 +++
+
+## v2.8.0
+
+_13 septembre 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![New](../assets/new.svg)<!-- PAY-5499 --> [!DNL Payment Services] prend désormais en charge l’envoi d’informations de numéro de suivi à PayPal lorsqu’un [ numéro de suivi est entré](track-shipment.md) dans Adobe Commerce.
+
+![Fix](../assets/fix.svg)<!-- PAY-5626 --> [!DNL Payment Services] a optimisé le processus de demande au registre du commerce lorsque les clients visitent la page de passage en caisse de Commerce. Auparavant, des demandes distinctes étaient effectuées pour chaque mode de paiement (champs hébergés, paiement Google, paiement Apple et boutons intelligents). Cette amélioration réduit le nombre d’appels, améliore les performances et l’efficacité pendant le processus de passage en caisse.
+
+![Fix](../assets/fix.svg)<!-- PAY-5645 --> [!DNL Payment Services] empêche désormais la fenêtre contextuelle Payer PayPal/Google de s’ouvrir si l’acheteur n’a pas accepté que le marchand crée des conditions générales personnalisées sur la page de passage en caisse.
+
+![Fix](../assets/fix.svg)<!-- PAY-5648 -->  [!DNL Payment Services] a résolu un problème lié à la ventilation des taxes par ligne sur le portail PayPal. Si le coût d’expédition d’une commande est associé à une taxe, celle-ci sera incluse dans le coût d’expédition et sera visible de cette manière dans les détails des éléments de ligne affichés sur le portail PayPal.
 
 ## v2.7.0
 
