@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les versions de  [!DNL Payment Services]  .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,14 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans le [rapport État des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [rapport sur les paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne.
 
 +++
+
+## v2.8.1
+
+_13 septembre 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Correctif](../assets/fix.svg)<!-- PAY-5644 --> Correction d’un problème lié au cache des paramètres du SDK lors de l’utilisation de plusieurs portées dans [!DNL Payment Services]. La configuration du SDK est désormais mise en cache séparément pour chaque portée et non sous une seule clé. Cela garantit que le cache de chaque portée est invalidé indépendamment, améliorant ainsi la fiabilité lors de la gestion de plusieurs portées.
 
 ## v2.8.0
 
