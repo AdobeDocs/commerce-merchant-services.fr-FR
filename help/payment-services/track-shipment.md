@@ -2,7 +2,7 @@
 title: Suivi de vos envois dans  [!DNL Payment Services]
 description: Personnalisez les  [!DNL Payment Services] envois et les informations de suivi affichées dans le tableau de bord du marchand de paypal.
 feature: Payments
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -48,4 +48,4 @@ Les instructions suivantes vous guident tout au long du processus de création d
 
 ### Compatibilité avec des tiers
 
-Toute extension tierce est compatible avec la fonctionnalité lorsqu’une entité d’expédition est créée via [l’API Commerce](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface){target=_blank}.
+Toute extension tierce est compatible avec la fonctionnalité lorsqu’une entité d’expédition est créée via [l’API Commerce](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}.
