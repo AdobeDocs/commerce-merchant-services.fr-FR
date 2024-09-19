@@ -2,7 +2,7 @@
 title: "Ajouter des facettes"
 description: "Découvrez comment ajouter des attributs de produit filtrables en tant que  [!DNL Live Search] facettes."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -44,7 +44,7 @@ La facette est ajoutée au bas de la liste *Facettes dynamiques* et le bouton *M
 
    * Libellé - ([Sans affichage](facets-type.md) uniquement) Saisissez le libellé de la facette que vous souhaitez utiliser.
    * Type de tri : les facettes sont triées par ordre alphabétique pour toutes les [!DNL Commerce] vitrines. Pour les implémentations sans interface utilisateur graphique, les facettes peuvent être triées soit par ordre alphabétique, soit par nombre. Options : Alphabétique, Comptage (headless uniquement)
-   * Max Value : saisissez le nombre maximal de valeurs de facette affichées dans le storefront. Entrées valides : 0 à 30 ; Par défaut : 8
+   * Max Value : saisissez le nombre maximal de valeurs de facette affichées dans le storefront. Entrées valides : 0 à 100 ; Par défaut : 8
 
 1. Une fois l’opération terminée, cliquez sur **Enregistrer**.
 
@@ -65,7 +65,7 @@ Si la facette n’est pas disponible au bout de deux heures, voir [Vérifier l�
 |--- |--- |
 | Libellé | ([Sans affichage](facets-type.md) uniquement) Le [libellé de facette](facets-type.md) visible sur le storefront peut être modifié pour être cohérent avec votre marque. |
 | Type de tri | Méthode utilisée pour les facettes [sort](facets-type.md). Toutes les [!DNL Commerce] storefronts trient les facettes par ordre alphabétique uniquement. Les implémentations sans affichage peuvent également être triées par `Count`. Options :<br />Alphabétique - Trie les facettes par ordre alphabétique.<br />Nombre - (Sans affichage uniquement) Trie les facettes en fonction du nombre de correspondances trouvées. |
-| Valeur max. | Nombre maximal de valeurs pouvant être affichées dans le storefront pour chaque facette. Les facettes qui représentent une plage de valeurs sont uniformément réparties. Entrées valides : 0 à 30 ; Par défaut : 8 |
+| Valeur max. | Nombre maximal de valeurs pouvant être affichées dans le storefront pour chaque facette. Les facettes qui représentent une plage de valeurs sont uniformément réparties. Entrées valides : 0 à 100 ; Par défaut : 8 |
 
 ### Contrôles
 
