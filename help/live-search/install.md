@@ -3,9 +3,9 @@ title: "Prise en main de [!DNL Live Search]"
 description: "Découvrez la configuration requise et les étapes d’installation de  [!DNL Live Search] à partir d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: b17cdc61ddbf7e3d1e5782eb079a628a240ea8c0
+source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '3000'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Cet article est destiné au développeur ou à l’intégrateur de systèmes de 
 
 >[!IMPORTANT]
 >
->Si vous souhaitez explorer les nouvelles fonctionnalités disponibles dans [!DNL Live Search], envisagez d’installer la version bêta.
+>La fonctionnalité suivante est en version bêta. Pour participer à la version bêta, envoyez une demande par e-mail à [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
 Cette version bêta prend en charge trois nouvelles fonctionnalités de la requête [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) :
 
@@ -141,13 +141,15 @@ Ces nouvelles conditions améliorent le mécanisme de filtrage des requêtes de 
 
 Vous pouvez mettre en oeuvre ces nouvelles conditions sur votre page de résultats de recherche. Par exemple, vous pouvez ajouter une nouvelle section sur la page où l’acheteur peut affiner davantage ses résultats de recherche. Vous pouvez permettre aux acheteurs de sélectionner des attributs de produit spécifiques, tels que &quot;Fabricant&quot;, &quot;Numéro de pièce&quot; et &quot;Description&quot;. À partir de là, ils effectuent des recherches dans ces attributs à l’aide des conditions `contains` ou `startsWith`. Consultez le guide d’administration pour obtenir une liste des [attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) pouvant faire l’objet d’une recherche.
 
-1. Pour installer la version bêta, exécutez les opérations suivantes à partir de la ligne de commande :
+1. Pour installer la version bêta, ajoutez la dépendance suivante à votre projet :
 
    ```bash
    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
-   Cette version bêta ajoute **[!UICONTROL Search types]** cases à cocher pour **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** et **[!UICONTROL Starts with]** dans l’administrateur. Il met également à jour l’API GraphQL `productSearch` pour inclure ces nouvelles fonctionnalités de recherche.
+1. Validez et envoyez les modifications à vos fichiers `composer.json` et `composer.lock` dans votre projet cloud. [En savoir plus](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension).
+
+   Cette version bêta ajoute **[!UICONTROL Search types]** cases à cocher pour **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** et **[!UICONTROL Starts with]** dans l’administrateur. Il met également à jour l’API GraphQL [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) pour inclure ces nouvelles fonctionnalités de recherche.
 
 1. Dans l’administrateur, [définissez un attribut de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) à rechercher et spécifiez la fonctionnalité de recherche de cet attribut, par exemple **Contains** (par défaut) ou **Commence par**. Vous pouvez spécifier un maximum de six attributs à activer pour **Contient** et six attributs à activer pour **Commence par**. Pour la version bêta, sachez que l’administrateur n’applique pas cette restriction, mais qu’il l’applique dans les recherches d’API.
 
