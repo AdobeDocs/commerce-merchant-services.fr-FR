@@ -4,9 +4,9 @@ description: Découvrez comment créer un schéma, un jeu de données et un flux
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -66,33 +66,6 @@ Dans cette section, vous découvrez comment mettre à jour votre schéma existan
 Avec les schémas, les jeux de données et les jeux de données configurés pour les données comportementales et de back-office, vous pouvez [configurer](connect-data.md#data-collection) votre instance Commerce pour collecter et envoyer ces données à l’Experience Platform.
 
 Pour inclure les informations de profil de votre acheteur, reportez-vous à la section [données d’événement de profil de série temporelle](#time-series-profile-event-data).
-
-### Ajout d’attributs personnalisés
-
-Vous pouvez utiliser des attributs personnalisés si vous souhaitez transmettre des données d’événement personnalisé de votre instance Commerce à l’Experience Platform.
-
-Les attributs personnalisés sont pris en charge à deux niveaux :
-
-- Niveau de commande
-- Niveau de l’élément de commande
-
->[!NOTE]
->
->Adobe Commerce prend en charge les attributs personnalisés qui possèdent un type de données de chaîne ou de tableau de chaînes.
-
-1. Ajoutez et activez un module supplémentaire dans votre application [!DNL Commerce]. Voir l’ [exemple](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php) suivant.
-
-   Vous devez modifier l’exemple de code pour exposer des attributs personnalisés supplémentaires. L’implémentation varie en fonction de l’emplacement de stockage de ces attributs et de la logique requise pour les extraire.
-
-1. Étendez votre schéma XDM existant. Reportez-vous au [guide](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) suivant pour créer des attributs personnalisés pour les niveaux d’élément de commande et de commande. Le champ Identifiant du client est généré dynamiquement, mais la structure du champ doit ressembler à l’exemple fourni.
-
-   >[!IMPORTANT]
-   >
-   >Les attributs personnalisés XDM doivent correspondre aux attributs envoyés depuis [!DNL Commerce].
-
-1. Assurez-vous que le flux de données associé à votre schéma XDM est le même que celui spécifié dans l’onglet [Collecte de données](connect-data.md#data-collection) .
-
-1. Cliquez sur **[!UICONTROL Save]** dans l’onglet **Collecte de données** pour récupérer les attributs personnalisés que vous avez spécifiés.
 
 ## Données d’événement de profil de série temporelle
 

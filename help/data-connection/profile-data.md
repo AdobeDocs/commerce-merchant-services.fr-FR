@@ -4,14 +4,14 @@ description: Découvrez comment créer un schéma, un jeu de données et un flux
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 86a3ba12-7f26-4f7e-98a0-9af0d1d8d881
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
-# Mise à jour du schéma d’enregistrement de profil pour Commerce Data Ingestion (Beta)
+# Mise à jour du schéma d’enregistrement de profil pour l’ingestion de données Commerce
 
 Lorsque vos acheteurs créent un profil sur votre site Commerce, un enregistrement de profil est créé et des données sont capturées. Vous devez créer un schéma et un jeu de données spécifiques à cet enregistrement de profil avant de pouvoir diffuser ces données de profil vers l’Experience Platform.
 

@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Informations les plus récentes sur l’extension  [!DNL Data Connection] d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,16 @@ _12 octobre 2022_
 
 +++
 
+## 3.2.0
+
+_7 octobre 2024_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg) - Possibilité de créer des [attributs de commande personnalisés](custom-attributes.md) pour sauvegarder les données de bureau.
+![New](../assets/new.svg) - Ajout d’une nouvelle table [ Attributs de commande personnalisés](connect-data.md#data-customization) pour vous aider à afficher tous les attributs personnalisés configurés dans [!DNL Commerce] et envoyés à l’Experience Platform.
+![Nouveau](../assets/new.svg) - Possibilité de [ collecter et envoyer des enregistrements de profil ](connect-data.md#send-customer-profile-data) et des données à l’Experience Platform.
+
 ## 3.2.0-beta3
 
 _27 août 2024_
@@ -128,7 +138,7 @@ _4 mars 2024_
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) - Si vous participez à la version bêta, assurez-vous que votre fichier `composer.json` comporte les éléments suivants au niveau racine : ` "minimum-stability": "beta"`. Ajoutez également `composer require "magento/customers-connector: ^1.2.0"` pour envoyer des profils client de votre instance Commerce vers SaaS.
-![Nouveau](../assets/new.svg) - Possibilité d’[ ajouter des attributs personnalisés](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![Nouveau](../assets/new.svg) - Possibilité d’[ ajouter des attributs personnalisés](custom-attributes.md).
 ![Nouveau](../assets/new.svg) - Possibilité de [ collecter et envoyer des enregistrements de profil ](connect-data.md#send-customer-profile-data) et des données à l’Experience Platform.
 
 ## 3.1.0

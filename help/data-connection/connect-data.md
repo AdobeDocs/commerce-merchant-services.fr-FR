@@ -3,9 +3,9 @@ title: Connexion des données Commerce à Adobe Experience Platform
 description: Découvrez comment connecter vos données Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,13 @@ Téléchargez le [fichier de configuration de l&#39;espace de travail](https://d
 
 1. Cliquez sur **Enregistrer la configuration**.
 
+1. Cliquez sur le bouton **[!UICONTROL Test connection]** pour vous assurer que le compte de service et les informations d’identification que vous avez saisies sont corrects.
+
 ### Général
 
 1. Dans l’Admin, accédez à **Système** > Services > **[!DNL Data Connection]**.
+
+   ![[!DNL Data Connection] Paramètres](./assets/epc-settings.png){width="700" zoomable="yes"}
 
 1. Dans l’onglet **Paramètres** sous **Général**, vérifiez l’ID associé à votre compte Adobe Experience Platform, tel que configuré dans le [Connecteur de services Commerce](../landing/saas.md#organizationid). L’ID d’organisation est global. Un seul ID d’organisation peut être associé par instance Adobe Commerce.
 
@@ -97,7 +101,7 @@ Dans cette section, vous indiquez le type de données à collecter et à envoyer
 
 - **Retour au bureau** (données côté serveur) : les données sont capturées dans les serveurs Commerce. Cela inclut des informations sur l’état d’une commande, par exemple si une commande a été passée, annulée, remboursée, expédiée ou terminée. Il comprend également les [données de commande historiques](#send-historical-order-data).
 
-- **Profil (Beta)** est une donnée liée aux informations de profil de votre acheteur. Découvrez [more](#send-customer-profile-data).
+- **Profile** est une donnée liée aux informations de profil de votre acheteur. Découvrez [more](#send-customer-profile-data).
 
 Pour vous assurer que votre instance Adobe Commerce peut commencer la collecte de données, passez en revue les [conditions préalables](overview.md#prerequisites).
 
@@ -157,10 +161,6 @@ Pour en savoir plus sur les événements [storefront](events.md#storefront-event
 Une fois l’intégration effectuée, les données du storefront commencent à s’écouler vers le bord Experience Platform. Les données du back-office prennent environ cinq minutes pour s’afficher à la périphérie. Les mises à jour suivantes sont visibles à la périphérie en fonction de la planification cron.
 
 ### Envoi des données de profil client
-
->[!IMPORTANT]
->
->Cette fonctionnalité est en version bêta.
 
 Vous pouvez envoyer à l’Experience Platform deux types de données de profil : les enregistrements de profil et les événements de profil de série temporelle.
 
@@ -240,6 +240,8 @@ Indiquez la période des commandes historiques à envoyer à l’Experience Plat
 
 1. Sélectionnez l’onglet **Historique des commandes** .
 
+   ![[!DNL Data Connection] Historique des commandes](./assets/epc-order-history.png){width="700" zoomable="yes"}
+
 1. Sous **Synchronisation de l’historique des commandes**, la case à cocher **Copier l’identifiant du jeu de données de Paramètres** est déjà activée. Vous avez ainsi la garantie d’utiliser le même jeu de données que celui spécifié dans l’onglet **Paramètres**.
 
 1. Dans les champs **De** et **À** , spécifiez la plage de dates pour les données de l’ordre historique que vous souhaitez envoyer. Vous ne pouvez pas sélectionner de période supérieure à cinq ans.
@@ -255,6 +257,36 @@ Indiquez la période des commandes historiques à envoyer à l’Experience Plat
 | De | Date à partir de laquelle vous souhaitez commencer à collecter les données de l’historique des commandes. |
 | À | Date à partir de laquelle vous souhaitez terminer la collecte des données d’historique des commandes. |
 | Démarrer la synchronisation | Démarre le processus de synchronisation des données de l’historique des commandes avec le serveur Experience Platform Edge. Ce bouton est désactivé si le champ **[!UICONTROL Dataset ID]** est vide ou si l’identifiant du jeu de données n’est pas valide. |
+
+### Personnalisation des données
+
+Dans l’onglet **Personnalisation des données**, vous pouvez afficher tous les attributs personnalisés configurés dans [!DNL Commerce] et envoyés à l’Experience Platform.
+
+![[!DNL Data Connection] Personnalisation des données](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+
+>[!IMPORTANT]
+>
+>Assurez-vous que l’identifiant de la banque de données que vous avez [spécifié](#data-collection) sur l’onglet **Collecte de données** correspond à l’identifiant lié au schéma pour l’ingestion d’attributs personnalisés.
+
+Lors de la création d’attributs personnalisés pour les commandes et de leur envoi à l’Experience Platform, les noms d’attributs dans Commerce doivent correspondre à ceux du schéma [!DNL Commerce] sur l’Experience Platform. S’ils ne correspondent pas, il peut être difficile d’identifier les différences. Si les noms ne correspondent pas, la table **Attributs de commande personnalisés** peut vous aider à résoudre le problème.
+
+La table **Attributs de commande personnalisés** offre une visibilité sur la configuration et le mappage des attributs de commande personnalisés entre le [!DNL Commerce] back office et le schéma [!DNL Commerce] dans Experience Platform. Ce tableau vous permet d’afficher les attributs personnalisés au niveau de la commande et de l’élément de commande de différentes sources, ce qui facilite l’identification des attributs manquants ou mal alignés. Il affiche également les identifiants des jeux de données pour aider à différencier les jeux de données actifs et historiques, car chacun peut avoir ses propres attributs personnalisés.
+
+Si aucune coche verte ne s’affiche en regard d’un nom d’attribut personnalisé dans le tableau, cela indique une incohérence entre les noms d’attribut dans les sources. Corrigez le nom de l’attribut dans une source. Une coche verte s’affiche, indiquant que les noms correspondent désormais.
+
+- Si le nom de l’attribut est mis à jour dans le schéma en Experience Platform, vous devez enregistrer la configuration dans l’onglet **Personnalisation des données** pour déclencher la modification du schéma Experience Platform. Cette modification sera répercutée dans la table **Attributs de commande personnalisés** lorsque vous cliquerez sur le bouton **[!UICONTROL Refresh]**.
+- Si le nom de l’attribut est mis à jour dans [!DNL Commerce], un événement de commande doit être généré pour mettre à jour le nom dans la table **Attributs de commande personnalisés**. Le changement sera reflété dans environ 60 minutes.
+
+Découvrez comment [configurer des attributs personnalisés](custom-attributes.md).
+
+#### Descriptions des champs
+
+| Champ | Description |
+|--- |--- |
+| Jeu de données | Affiche les jeux de données qui contiennent les attributs personnalisés. Les jeux de données actifs et historiques peuvent avoir leurs propres attributs personnalisés. |
+| Adobe Commerce | Affiche tous les attributs personnalisés créés dans le [!DNL Commerce] back-office. |
+| Experience Platform | Affiche tous les attributs personnalisés spécifiés dans votre schéma [!DNL Commerce] en Experience Platform. |
+| Actualiser | Récupère tous les noms d’attribut personnalisés du schéma [!DNL Commerce] dans Experience Platform. |
 
 ## Confirmation que les données d’événement sont collectées
 
