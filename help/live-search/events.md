@@ -3,34 +3,25 @@ title: '[!DNL Live Search] Events'
 description: Découvrez comment les événements collectent des données pour [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
+source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] Événements
 
-[!DNL Live Search] utilise des événements pour alimenter les algorithmes de recherche tels que &quot;Le plus consulté&quot; et &quot;L’a vu, l’a vu&quot;. Bien que les utilisateurs de LUMA reçoivent des événements prêts à l’emploi, les implémentations sans tête et autres implémentations personnalisées doivent implémenter des événements pour leurs propres besoins.
+[!DNL Live Search] utilise des événements pour alimenter les algorithmes de recherche tels que &quot;Le plus consulté&quot; et &quot;L’a vu, l’a vu&quot;. Bien que l’exemple [Commerce Luma theme](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) soit prêt à l’emploi, les implémentations sans interface et personnalisées doivent implémenter des événements pour leurs propres besoins.
 
-Puisque [!DNL Live Search] et [!DNL Product Recommendations] utilisent le même algorithme principal, certains événements sont partagés par les deux services. Certains événements Recommendations de produit sont nécessaires pour renseigner le tableau de bord Recommendations.
+Ce tableau décrit les événements utilisés par les [!DNL Live Search] [stratégies de classement](rules-add.md#intelligent-ranking).
 
-Ce tableau décrit les événements utilisés par les stratégies [!DNL Live Search].
-
-| Stratégie | Produits | Événements | Page |
+| Stratégie de classement | Événements | Page |
 | --- | --- | --- | ---|
-| Les plus consultés | Recherche en direct <br>Recs de produit | page vue<br>consultation du produit | Page Détails du produit |
-| Le plus acheté | Recherche en direct <br>Recs de produit | page vue<br> passage en caisse | Panier/passage en caisse |
-| Les plus ajoutés au panier | Recherche en direct <br>Recs de produit | page vue<br>ajouter au panier | Page Détails du produit<br>Page Liste des produits<br>Panier<br>Liste des souhaits |
-| A consulté ceci, consulté cela | Recherche en direct <br>Recs de produit | page vue<br>consultation du produit | Page Détails du produit |
-| Tendance | Recherche en direct <br>Recs de produit | page vue<br>consultation du produit | Page Détails du produit |
-| Consulté ceci, acheté cela | Recs de produit | page vue<br>consultation du produit | Page Détails du produit<br>Panier/Passage en caisse |
-| Acheté ceci, acheté cela | Recs de produit | page vue<br>consultation du produit | Page Détails du produit |
-| Conversion : Afficher à l’achat | Recs de produit | page vue<br>consultation du produit | Page Détails du produit |
-| Conversion : Afficher à l’achat | Recs de produit | page vue<br> passage en caisse | Panier/passage en caisse |
-| Conversion : Afficher dans le panier | Recs de produit | page vue<br>consultation du produit | Page Détails du produit |
-| Conversion : Afficher dans le panier | Recs de produit | page vue<br>ajouter au panier | Page Détails du produit<br>Page Liste des produits<br>Panier<br>Liste des produits |
+| Les plus consultés | `page-view`<br>`product-view` | Page Détails du produit |
+| Le plus acheté | `page-view`<br>`complete-checkout` | Panier/passage en caisse |
+| Les plus ajoutés au panier | `page-view`<br>`add-to-cart` | Page Détails du produit<br>Page Liste des produits<br>Panier<br>Liste des souhaits |
+| A consulté ceci, consulté cela | `page-view`<br>`product-view` | Page Détails du produit |
 
 >[!NOTE]
 >
@@ -42,13 +33,13 @@ Certains événements sont nécessaires pour remplir le [tableau de bord de la r
 
 | Zone de tableau de bord | Événements | Champ de jointure |
 | ------------------- | ------------- | ---------- |
-| Recherches uniques | `page-view`, `search-request-sent`, | searchRequestId |
-| Aucune recherche de résultats | `page-view`, `search-request-sent`, | searchRequestId |
-| Taux zéro résultat | `page-view`, `search-request-sent`, | searchRequestId |
-| Recherches populaires | `page-view`, `search-request-sent`, | searchRequestId |
+| Recherches uniques | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Aucune recherche de résultats | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Taux zéro résultat | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Recherches populaires | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Durée position du clic | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
-| Taux de clics | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
-| Taux de conversion | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
+| Taux de clics | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`, `sku`, `parentSku` |
+| Taux de conversion | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`, `sku`, `parentSku` |
 
 ### contextes requis
 
@@ -72,11 +63,8 @@ mse.publish.searchRequestSent("search-bar");
 
 ## Avertissements
 
-Les bloqueurs d’annonces publicitaires et les paramètres de confidentialité peuvent empêcher la capture d’événements et peuvent entraîner un sous-rapport de l’engagement et des [mesures](workspace.md).
-
-Le mode Eventing ne capture pas toutes les transactions qui se produisent sur le site du marchand. L&#39;évènement est destiné à donner au marchand une idée générale des événements qui se déroulent sur le site.
-
-Les implémentations sans affichage doivent implémenter des événements pour alimenter le [tableau de bord Recommendations du produit](../product-recommendations/events.md).
+- Les bloqueurs d’annonces publicitaires et les paramètres de confidentialité peuvent empêcher la capture d’événements et peuvent entraîner un sous-rapport de l’engagement et des [mesures](performance.md). De plus, certains événements peuvent ne pas être envoyés en raison de problèmes de réseaux ou de pages laissés par les acheteurs.
+- Les implémentations sans affichage doivent implémenter des événements pour alimenter le marchandisage intelligent.
 
 >[!NOTE]
 >

@@ -3,7 +3,7 @@ title: Test dans l’environnement d’évaluation
 description: Découvrez comment utiliser  [!DNL Product Recommendations] de votre environnement de production dans votre environnement d’évaluation à des fins de test.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Avant de déployer des recommandations dans votre environnement de production, testez le service dans un environnement hors production pour vous assurer que tout fonctionne comme prévu.
 
-[!DNL Product Recommendations] renvoie des produits basés sur les [données de comportement d’achat](behavioral-data.md) collectées à partir de votre vitrine. Cependant, dans un environnement hors production, il est probable que vous ne disposiez d’aucune donnée comportementale de la part des acheteurs. `More like this` est le seul type de recommandation que vous pouvez tester sans données comportementales. Ce type de recommandation ne nécessite aucune donnée d’entrée, car il utilise une correspondance de similarité de contenu direct.
+[!DNL Product Recommendations] renvoie des produits basés sur les [données de comportement d’achat](events.md) collectées à partir de votre vitrine. Cependant, dans un environnement hors production, il est probable que vous ne disposiez d’aucune donnée comportementale de la part des acheteurs. `More like this` est le seul type de recommandation que vous pouvez tester sans données comportementales. Ce type de recommandation ne nécessite aucune donnée d’entrée, car il utilise une correspondance de similarité de contenu direct.
 
 Les types de recommandations suivants nécessitent des données comportementales :
 

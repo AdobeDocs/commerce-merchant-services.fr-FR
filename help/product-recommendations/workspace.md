@@ -2,9 +2,9 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Découvrez comment configurer, gérer et surveiller les performances des recommandations de produits.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # [!DNL Product Recommendations] Workspace
 
 L’espace de travail [!DNL Product Recommendations] affiche une liste des recommandations configurées précédemment avec des mesures qui vous aident à suivre le succès de chaque recommandation. La liste peut être configurée pour calculer des mesures pour le dernier jour, la dernière semaine ou le dernier mois. Vous pouvez utiliser les mesures pour créer des informations exploitables en fonction de la fréquence de consultation ou de clic d’une unité de recommandations, ou pour analyser les performances de vos recommandations.
+
+>[!INFO]
+>
+>Une unité de recommandation est un widget qui contient le produit recommandé _items_.
 
 ![Espace de travail Recommendations](assets/workspace.png)
 _Recommendations Workspace_
@@ -31,6 +35,10 @@ Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/
    - 30 derniers jours
 
    Les valeurs calculées des colonnes de mesures changent pour refléter la période actuelle.
+
+   >[!NOTE]
+   >
+   >Les mesures de recommandation de produit sont optimisées pour les vitrines Luma. Si votre vitrine n’est pas basée sur Luma, la façon dont les mesures effectuent le suivi des données dépend de la manière dont vous [ implémentez la collection d’événements](events.md).
 
 ## Afficher/masquer les colonnes
 
@@ -95,12 +103,12 @@ Sur la page des détails de la recommandation, cliquez sur **Créer**. Pour en s
 | État | État de la recommandation. Options : inactif/actif/brouillon |
 | Créé | Date de création de la recommandation. |
 | Dernière modification | Date de dernière modification de la recommandation. |
-| Impressions | Nombre de chargements et de rendus d’une unité de recommandation sur une page. Une unité de recommandation située sous le pli de la fenêtre d’affichage du navigateur s’affiche sur la page, mais n’est pas affichée par l’acheteur. Dans ce cas, l’unité rendue est comptée comme une impression, mais une vue n’est comptée que si l’utilisateur fait défiler l’unité dans la vue. |
-| vImpressions | (Impressions affichables) Nombre d’unités de recommandations qui enregistrent au moins une vue. |
-| Vues | Nombre d’unités de recommandations qui apparaissent dans la fenêtre d’affichage du navigateur de l’acheteur. Cet événement peut se déclencher plusieurs fois sur une page. |
+| Impressions | Nombre de chargements et de rendus d’une unité de recommandation sur une page. Une unité de recommandation située sous le pli de la fenêtre d’affichage du navigateur s’affiche sur la page, même si elle n’est pas affichée par l’acheteur. Dans ce cas, l’unité rendue est comptabilisée comme une impression, mais une vue n’est comptabilisée que si l’acheteur fait défiler l’unité dans la vue. |
+| vImpressions | (Impressions affichables) Nombre d’unités de recommandations qui enregistrent au moins une vue. Par exemple, si l’unité de recommandation comporte deux lignes, chacune comportant deux produits, et que les deux derniers produits ne sont pas vus par l’acheteur, mais que les deux premiers le sont, l’activité est toujours considérée comme une impression. |
+| Vues | Nombre d’unités de recommandations qui apparaissent dans la fenêtre d’affichage du navigateur de l’acheteur. Si l’acheteur fait défiler la page plusieurs fois vers le haut ou vers le bas, l’événement se déclenche plusieurs fois, chaque fois que l’unité est visible. |
 | Clics | Somme du nombre de fois où un acheteur clique sur un article dans l’unité de recommandation et du nombre de fois où il clique sur le bouton **Ajouter au panier** dans l’unité de recommandation |
 | Recettes | Les recettes générées par la recommandation pour la période en cours. |
 | Recettes Lt | (Recettes sur la durée de vie) Les recettes sur la durée de vie générées par une recommandation. |
 | Visibilité | Pourcentage d’unités de recommandations qui s’inscrivent pour la vue. |
-| Ctr | (Taux de clics) Pourcentage d’impressions unitaires pour la recommandation qui enregistre un clic. |
-| vCtr | (Taux de clics affichables) Pourcentage d’impressions affichables pour l’unité de recommandations qui enregistre un clic. |
+| CTR | (Taux de clics) Pourcentage d’impressions unitaires pour la recommandation qui enregistre un clic. Le CTR comptabilise toutes les impressions même si l’unité n’entre pas dans la vue de l’acheteur. Si l’entité de recommandation n’est pas visualisée, il est peu probable qu’un utilisateur clique dessus. Toutefois, ces impressions invisibles sont prises en compte dans le score du CTR et réduisent le pourcentage total de CTR. |
+| vCTR | (Taux de clics affichables) mesure les clics uniquement en fonction des impressions affichables (recommandations qui s’affichent réellement dans la partie visible de l’écran du nouvel acheteur), ce qui fournit une évaluation plus précise de l’engagement du nouvel acheteur. |

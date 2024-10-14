@@ -3,9 +3,9 @@ title: "Prise en main de [!DNL Live Search]"
 description: "Découvrez la configuration requise et les étapes d’installation de  [!DNL Live Search] à partir d’Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
+source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,14 @@ Cet article est destiné au développeur ou à l’intégrateur de systèmes de 
 
 À un niveau élevé, l’intégration [!DNL Live Search] requiert que vous :
 
-![Processus de recherche en direct](assets/livesearch-workflow.png)
+1. [Installer](#1-install-the-live-search-extension) l’extension [!DNL Live Search]
+1. [Configurer](#2-configure-api-keys) les clés d’API
+1. [Synchroniser](#3-sync-your-catalog-data) vos données de catalogue
+1. [Vérifiez](#4-verify-that-the-data-was-exported) que les données du catalogue ont été exportées.
+1. [Configurer](#5-configure-the-data) les données
+1. [Test](#6-test-the-connection) de la connexion
+1. [Vérifiez](#7-validate-events-are-capturing-data) que les événements capturent des données
+1. [Personnaliser](#8-customize-for-your-storefront) votre vitrine
 
 ## 1. Installez l’extension [!DNL Live Search]
 
@@ -272,7 +279,15 @@ Si vous rencontrez des problèmes dans le storefront, recherchez dans le fichier
 
 Pour autoriser [!DNL Live Search] par le biais d’un pare-feu, ajoutez `commerce.adobe.io` à la liste autorisée.
 
-## 7. Personnaliser pour votre vitrine
+## 7. Vérifier que les événements capturent des données
+
+Assurez-vous que les événements storefront déployés sur votre site fonctionnent. Ceci est particulièrement important pour les implémentations sans interface.
+
+- Examinez les [événements](events.md) requis pour [!DNL Live Search].
+- Assurez-vous que le [tableau de bord de la recherche en direct](performance.md) affiche les données de vos environnements hors production.
+- [Vérifier la collecte des événements](../product-recommendations/verify.md). Bien que cette page figure dans le guide [!DNL Product Recommendations], les étapes de vérification s’appliquent également à [!DNL Live Search].
+
+## 8. Personnalisez votre vitrine
 
 Vous avez installé l’extension [!DNL Live Search], synchronisé, validé et configuré vos données. L’étape suivante consiste à s’assurer que les widgets [!DNL Live Search] sont conformes à l’apparence de votre magasin.
 

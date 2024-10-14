@@ -2,9 +2,9 @@
 title: Workflow de mise en oeuvre
 description: Découvrez les étapes pour implémenter  [!DNL Product Recommendations] avec succès sur votre storefront.
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Lors de l’installation de `magento/product-recommendations module`, Adobe Sens
 
 1. **Déployer la collecte de données en production**
 
-   Le déploiement de [!DNL Product Recommendations] nécessite deux [sources de données](type.md) principales : catalogue et comportement. La production étant le seul environnement dans lequel les actions de vos acheteurs sont capturées et analysées, il est dans votre intérêt de commencer dès que possible la collecte de données en production. [ Découvrez comment Adobe Sensei entraîne des modèles d’apprentissage automatique qui génèrent des recommandations de meilleure qualité. ](behavioral-data.md) En outre, lorsque vous commencez à collecter des données comportementales en production, vous pouvez [récupérer les recommandations](verify.md) en fonction de ces données de production lors de l’exploitation dans des environnements hors production. Vous pouvez ensuite tester et tester différentes recommandations calculées à partir de données réelles d’acheteurs collectées en production.
+   Le déploiement de [!DNL Product Recommendations] nécessite deux [sources de données](type.md) principales : catalogue et comportement. La production étant le seul environnement dans lequel les actions de vos acheteurs sont capturées et analysées, commencez la collecte de données en production le plus tôt possible. [ Découvrez comment Adobe Sensei entraîne des modèles d’apprentissage automatique qui génèrent des recommandations de meilleure qualité. ](events.md) En outre, lorsque vous commencez à collecter des données comportementales en production, vous pouvez [récupérer les recommandations](verify.md) en fonction de ces données de production lors de l’exploitation dans des environnements hors production. Vous pouvez ensuite tester et tester différentes recommandations calculées à partir de données réelles d’acheteurs collectées en production.
 
    Pour déployer la collecte de données en production, vous devez [installer et configurer](install-configure.md) le module [!DNL Product Recommendations] en fournissant une [clé API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 

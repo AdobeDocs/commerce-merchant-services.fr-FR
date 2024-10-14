@@ -2,21 +2,25 @@
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
+source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
 
 # Créer une recommandation
 
-Lorsque vous créez une recommandation, vous créez une _unité de recommandation_ qui contient le produit recommandé _items_.
+Lorsque vous créez une recommandation, vous créez une _unité de recommandation_, ou widget, qui contient les _éléments_ recommandés.
 
 ![Unité de recommandation](assets/unit.png)
 _Unité de recommandation_
 
 Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [collecter des données](workspace.md) pour mesurer les impressions, les vues, les clics, etc. Le tableau [!DNL Product Recommendations] affiche les mesures de chaque unité de recommandations afin de vous aider à prendre des décisions professionnelles éclairées.
+
+>[!NOTE]
+>
+>Les mesures de recommandation de produit sont optimisées pour les vitrines Luma. Si votre vitrine n’est pas basée sur Luma, la façon dont les mesures effectuent le suivi des données dépend de la manière dont vous [ implémentez la collection d’événements](events.md).
 
 1. Sur la barre latérale _Admin_, accédez à **Marketing** > _Promotions_ > **Recommendations de produit** pour afficher l’espace de travail _Recommendations de produit_.
 
@@ -83,7 +87,7 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 Les indicateurs de préparation indiquent les types de recommandations les plus performants en fonction du catalogue et des données comportementales disponibles. Vous pouvez également utiliser des indicateurs de préparation pour déterminer si vous rencontrez des problèmes avec votre [événement](events.md) ou si vous n’avez pas assez de trafic pour renseigner le type de recommandation.
 
-Les indicateurs de préparation sont classés dans [basé sur la statique](#static-based) ou [basé sur la dynamique](#dynamic-based). Les données du catalogue basées sur la statique utilisent uniquement les données du catalogue, tandis que les données comportementales dynamiques utilisent les données de vos acheteurs. Ces données comportementales sont utilisées pour [former des modèles d’apprentissage automatique](behavioral-data.md) afin de créer des recommandations personnalisées et de calculer leur score de préparation.
+Les indicateurs de préparation sont classés dans [basé sur la statique](#static-based) ou [basé sur la dynamique](#dynamic-based). Les données du catalogue basées sur la statique utilisent uniquement les données du catalogue, tandis que les données comportementales dynamiques utilisent les données de vos acheteurs. Ces données comportementales sont utilisées pour [former des modèles d’apprentissage automatique](events.md) afin de créer des recommandations personnalisées et de calculer leur score de préparation.
 
 ### Méthode de calcul des indicateurs de préparation
 
@@ -95,7 +99,7 @@ En raison de ces variables, le pourcentage de l’indicateur de préparation peu
 
 Les indicateurs de préparation sont calculés sur la base de deux facteurs :
 
-* Taille de jeu de résultats suffisante : y a-t-il suffisamment de résultats renvoyés dans la plupart des scénarios pour éviter d’utiliser [recommandations de sauvegarde](behavioral-data.md#backuprecs) ?
+* Taille de jeu de résultats suffisante : y a-t-il suffisamment de résultats renvoyés dans la plupart des scénarios pour éviter d’utiliser [recommandations de sauvegarde](events.md#backuprecs) ?
 
 * Suffisante variété d’ensembles de résultats : les produits renvoyés représentent-ils une variété de produits de votre catalogue ? L’objectif de ce facteur est d’éviter qu’une minorité de produits soit le seul élément recommandé sur l’ensemble du site.
 
@@ -103,7 +107,7 @@ En fonction des facteurs ci-dessus, une valeur de préparation est calculée et 
 
 * 75 % ou plus signifie que les recommandations proposées pour ce type de recommandation seront très pertinentes.
 * Au moins 50 % signifie que les recommandations proposées pour ce type de recommandation seront moins pertinentes.
-* Moins de 50 % signifie que les recommandations suggérées pour ce type de recommandation peuvent ne pas être pertinentes. Dans ce cas, [recommandations de sauvegarde](behavioral-data.md#backuprecs) sont utilisées.
+* Moins de 50 % signifie que les recommandations suggérées pour ce type de recommandation peuvent ne pas être pertinentes. Dans ce cas, [recommandations de sauvegarde](events.md#backuprecs) sont utilisées.
 
 En savoir plus sur [pourquoi les indicateurs de préparation peuvent être faibles](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
@@ -153,7 +157,7 @@ Le pourcentage de l’indicateur de préparation pour les types de recommandatio
 
 #### Que faire si le pourcentage de l’indicateur de préparation est faible
 
-Un pourcentage de faible préparation indique qu’il n’y a pas beaucoup de produits de votre catalogue qui peuvent être inclus dans les recommandations pour ce type de recommandation. Cela signifie qu’il existe une forte probabilité que [recommandations de sauvegarde](behavioral-data.md#backuprecs) soient renvoyées si vous déployez ce type de recommandation de toute façon.
+Un pourcentage de faible préparation indique qu’il n’y a pas beaucoup de produits de votre catalogue qui peuvent être inclus dans les recommandations pour ce type de recommandation. Cela signifie qu’il existe une forte probabilité que [recommandations de sauvegarde](events.md#backuprecs) soient renvoyées si vous déployez ce type de recommandation de toute façon.
 
 Vous trouverez ci-dessous les raisons possibles et les solutions aux scores de faible niveau de préparation courants :
 
@@ -175,7 +179,7 @@ Pour tester une recommandation lorsque vous travaillez dans un environnement hor
 | Nom | Nom du produit. |
 | SKU | Unité de gestion des stocks affectée au produit |
 | Prix | Le prix du produit. |
-| Type de résultat | Principal : indique qu’il existe suffisamment de données de formation pour afficher une recommandation.<br />Sauvegarde : indique qu’il n’y a pas suffisamment de données d’entraînement collectées. Une recommandation de sauvegarde est donc utilisée pour remplir l’emplacement. Accédez à [Données comportementales](behavioral-data.md) pour en savoir plus sur les modèles d’apprentissage automatique et les recommandations de sauvegarde. |
+| Type de résultat | Principal : indique qu’il existe suffisamment de données de formation pour afficher une recommandation.<br />Sauvegarde : indique qu’il n’y a pas suffisamment de données d’entraînement collectées. Une recommandation de sauvegarde est donc utilisée pour remplir l’emplacement. Accédez à [Données comportementales](events.md) pour en savoir plus sur les modèles d’apprentissage automatique et les recommandations de sauvegarde. |
 
 À mesure que vous créez votre unité de recommandations, testez le type de page, le type de recommandation et les filtres pour obtenir des commentaires en temps réel immédiats sur les produits qui seront inclus. Lorsque vous commencez à comprendre les produits qui apparaissent, vous pouvez configurer l’unité de recommandations en fonction des besoins de votre entreprise.
 

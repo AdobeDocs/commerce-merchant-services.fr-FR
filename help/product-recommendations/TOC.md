@@ -4,10 +4,10 @@ user-guide-description: Ce guide fournit des instructions détaillées sur l’u
 breadcrumb-title: « Guide [!DNL Product Recommendations] »
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 11%
+source-wordcount: '58'
+ht-degree: 12%
 
 ---
 
@@ -19,11 +19,9 @@ ht-degree: 11%
 - Commencer {#getting-started}
    - [Intégration](onboarding.md)
    - [Workflow de mise en oeuvre](implementation-workflow.md)
-   - [Données comportementales](behavioral-data.md)
    - [Headless](headless.md)
    - [Installer](install-configure.md)
    - [Paramètres](settings.md)
-   - [Vérifier](verify.md)
    - [Environnement d’évaluation](staging-environment.md)
    - [Intégration de Page Builder](page-builder.md)
 - [!DNL Product Recommendations] Admin {#admin}
@@ -36,6 +34,7 @@ ht-degree: 11%
 - [!DNL Product Recommendations] Développeur {#developer}
    - [Vue d’ensemble](development-overview.md)
    - [Collecter des données](events.md)
+   - [Vérifier](verify.md)
    - [Personnaliser](customize.md)
    - [Gérer les restrictions de cookie](setting-cookie.md)
 - [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
