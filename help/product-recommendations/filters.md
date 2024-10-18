@@ -2,9 +2,9 @@
 title: Filtrer les produits
 description: Définissez des conditions qui incluent ou excluent l’utilisation de produits comme recommandations.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: b602385b956b6af131b008428d1182a586303bc7
+source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,9 @@ Les opérateurs logiques `AND` et `OR` sont utilisés pour joindre plusieurs con
 
 ### Catégorie
 
-Les filtres basés sur la catégorie d’un produit utilisent des affectations de catégorie directes et leurs sous-catégories. Par exemple, l’activation d’une condition d’exclusion pour la catégorie `Gear` exclut les produits affectés à `Gear` et toutes ses sous-catégories telles que `Gear/Bags` ou `Gear/Fitness Equipment`. Il en va de même pour un filtre d’inclusion sur une catégorie. Par exemple, l’activation d’une condition d’inclusion pour la catégorie `Gear` inclut les produits affectés à `Gear` et toutes ses sous-catégories telles que `Gear/Bags` ou `Gear/Fitness Equipment`.
+Filtre les produits selon leur catégorie. Le filtre de catégorie utilise des affectations de catégorie directes et leurs sous-catégories. Par exemple, l’activation d’une condition d’exclusion pour la catégorie `Gear` exclut les produits affectés à `Gear` et toutes ses sous-catégories telles que `Gear/Bags` ou `Gear/Fitness Equipment`. Il en va de même pour un filtre d’inclusion sur une catégorie. Par exemple, l’activation d’une condition d’inclusion pour la catégorie `Gear` inclut les produits affectés à `Gear` et toutes ses sous-catégories telles que `Gear/Bags` ou `Gear/Fitness Equipment`.
+
+Le champ de catégorie affiche les catégories qui appartiennent à la vue d’ensemble actuelle.
 
 >[!NOTE]
 >
