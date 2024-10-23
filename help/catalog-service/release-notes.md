@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notes de mise à jour'
 description: Les dernières informations de mise à jour de [!DNL Catalog Service] pour Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
+source-git-commit: 3b440f01c063fd2675be95a645450adc5c696d18
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '879'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,18 @@ Les mises à jour sont les suivantes :
 ![Bug](../assets/bug.svg) Problèmes connus
 
 ## Version majeure actuelle
+
+### Version 1.26
+
+_22 octobre 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Nouveau](../assets/new.svg) Le schéma GraphQL inclut désormais l’attribut `lastModifiedAt` dans les informations sur le produit. Cet horodatage précis permet aux clients de s’assurer que les plans de site reflètent fidèlement les mises à jour les plus récentes apportées à leurs produits. Il permet également aux moteurs de recherche tels que Google de déterminer à quel moment la réindexation est nécessaire, d’optimiser le processus d’analyse et d’éviter les problèmes liés aux dates de dernière modification agressives utilisées lorsque des informations précises ne sont pas disponibles. <!--DATA-6209-->
+
+## Versions précédentes
+
++++ Versions précédentes
 
 ### Version 1.23
 
@@ -38,11 +50,6 @@ _13 août 2024_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge de la récupération de toutes les variantes par SKU du produit. Voir la [référence de l’API Catalog Service](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
-
-
-## Versions précédentes
-
-+++ Versions précédentes
 
 ### Version 1.22
 
