@@ -3,7 +3,7 @@ title: '[!DNL Live Search] Events'
 description: Découvrez comment les événements collectent des données pour [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
+source-git-commit: f771e741d92bf94f46772934edf7a6bc39c75999
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 Ce tableau décrit les événements utilisés par les [!DNL Live Search] [stratégies de classement](rules-add.md#intelligent-ranking).
 
 | Stratégie de classement | Événements | Page |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | Les plus consultés | `page-view`<br>`product-view` | Page Détails du produit |
 | Le plus acheté | `page-view`<br>`complete-checkout` | Panier/passage en caisse |
 | Les plus ajoutés au panier | `page-view`<br>`add-to-cart` | Page Détails du produit<br>Page Liste des produits<br>Panier<br>Liste des souhaits |
