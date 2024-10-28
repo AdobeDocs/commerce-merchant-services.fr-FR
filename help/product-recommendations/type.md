@@ -2,9 +2,9 @@
 title: Types de recommandations
 description: Découvrez les recommandations à déployer sur différentes pages de votre site.
 exl-id: c3b16307-479b-4736-968b-b6ab38233a48
-source-git-commit: 3d931a0fd40ef488bcdf7d94e71bdabe8a998ed0
+source-git-commit: 60e75d626f142002e327b96062bacd5d2e686df2
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,13 @@ En règle générale, Adobe recommande les directives suivantes lorsque vous uti
 
 - Si votre boutique vend des vêtements, la recommandation `More like this` peut suggérer des produits spécifiques au genre qui ne correspondent pas au genre du produit consulté. Envisagez d’utiliser ce type de recommandation uniquement pour les catégories autres que vêtements.
 
+>[!NOTE]
+>
+>Pour plus d’informations sur les événements décrits dans cet article, voir [events](events.md).
+
 ## Personnalisé {#personalized}
 
-Ces types de recommandations recommandent des produits en fonction de l’historique comportemental spécifique de l’acheteur sur votre site.
+Ces types de recommandations recommandent des produits en fonction de l’historique comportemental spécifique de l’acheteur sur votre site. Si, par exemple, un acheteur avait déjà parcouru une veste ou acheté une veste sur votre site, ces recommandations consistent essentiellement à choisir l’endroit où il s’est arrêté et à recommander d’autres gilets ou des produits similaires.
 
 | Type | Description |
 |---|---|
@@ -39,18 +43,18 @@ Ces types de recommandations recommandent des produits en fonction de l’histor
 
 ## Ventes croisées et ventes incitatives {#crossup}
 
-Ces types de recommandations sont à l’épreuve des réseaux sociaux afin d’aider les acheteurs à trouver ce que les autres aiment ou ce qu’ils aiment pour les aider à trouver d’autres produits similaires.
+Ces types de recommandations sont à l’épreuve des réseaux sociaux et aident les acheteurs à trouver ce que les autres aiment ou ce qu’ils aiment pour les aider à trouver d’autres produits similaires. Les produits recommandés viennent souvent compléter le produit sélectionné.
 
 >[!NOTE]
 >
->Les types de recommandations &quot;consulté ceci, consulté cela&quot;, &quot;acheté cela&quot; et &quot;acheté ceci, acheté cela&quot; ne sont pas basés sur une mesure d’occurrence simple, mais plutôt sur un algorithme d’apprentissage automatique de filtrage collaboratif plus sophistiqué qui recherche des *similarités intéressantes* qui ne sont pas biaisées vers des produits populaires.
+>Le type de recommandation &quot;a consulté ceci, consulté cela&quot;, &quot;a acheté cela&quot; et &quot;a acheté ceci, acheté cela&quot; n’utilise pas une mesure d’occurrence simple, mais plutôt un algorithme de filtrage collaboratif plus sophistiqué qui recherche des *similarités intéressantes* qui ne sont pas biaisées par rapport aux produits populaires. Les données utilisées pour informer ces types de recommandations reposent sur le comportement agrégé de l’acheteur, dérivé de plusieurs sessions sur votre site. Les données ne sont pas basées sur le comportement d’acheteur dérivé d’une seule occurrence en session sur votre site. Ces types de recommandations aident les acheteurs à trouver les produits adjacents qu’il n’est peut-être pas évident d’associer au produit actuellement consulté.
 
 | Type | Description |
 |---|---|
 | A consulté ceci, consulté cela | Recommande les produits que les acheteurs consultent de manière disproportionnée plus souvent avec le produit actuellement consulté.<br/><br/>**Lorsqu’il est utilisé :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Les clients qui ont consulté ce produit ont également consulté (PDP) |
-| Consulté ceci, acheté cela | Recommande les produits que les acheteurs tendent à acheter de manière disproportionnée plus souvent après avoir consulté le produit actuel. Permet de guider les acheteurs vers la découverte de produits qu’ils n’auraient pas remarqués autrement.<br/><br/>**Où utilisé :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Les clients qui ont consulté cet article final ont acheté <br/>- Les clients ont finalement acheté <br/>- Que sont les autres qui ont acheté après avoir consulté ce produit ? |
-| Acheté ceci, acheté cela | Recommande les produits que les acheteurs achètent de manière disproportionnée plus souvent avec le produit actuellement consulté. Présente les produits hautement pertinents que les acheteurs peuvent ajouter à leur panier en agrégeant ce que d’autres acheteurs ont acheté avec le produit actuel.<br/><br/>**Où utilisé :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Obtenez tout ce dont vous avez besoin<br/>- N’oubliez pas ces<br/>- Fréquemment achetés ensemble |
-| Plus comme suit | Recommande des produits basés sur des métadonnées similaires telles que le nom, la description, l’attribution de catégories et les attributs. En évaluant les attributs des produits consultés, recommande des produits similaires dans la même catégorie. Par exemple, si un acheteur navigue sur des matelas de yoga, d’autres produits de la catégorie équipement sont recommandés. Comme ce type de recommandation ne fait pas la distinction entre les sexes, il n’est pas recommandé pour les vêtements, la mode ou d’autres secteurs verticaux spécifiques au genre.<br/><br/>**Lorsqu’il est utilisé :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Plus de produits comme celui-ci<br/>- Semblable à ceci |
+| Consulté ceci, acheté cela | Recommande les produits que les acheteurs tendent à acheter de manière disproportionnée plus souvent après avoir consulté le produit actuel. Ce type d’aide les acheteurs à découvrir des produits qu’ils n’auraient peut-être pas remarqués autrement.<br/><br/>**Où utilisé :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Les clients qui ont consulté cet article final ont acheté <br/>- Les clients ont finalement acheté <br/>- Que sont les autres qui ont acheté après avoir consulté ce produit ? |
+| Acheté ceci, acheté cela | Recommande les produits que les acheteurs achètent de manière disproportionnée plus souvent avec le produit actuellement consulté. Ce type affiche les produits très pertinents que les acheteurs peuvent ajouter au panier en agrégeant les achats d’autres acheteurs du produit actuel.<br/><br/>**Où utilisé :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Obtenez tout ce dont vous avez besoin<br/>- N’oubliez pas ces<br/>- Fréquemment achetés ensemble |
+| Plus comme suit | Recommande des produits basés sur des métadonnées similaires telles que le nom, la description, l’attribution de catégories et les attributs. En évaluant les attributs des produits consultés, ce type recommande des produits similaires dans la même catégorie. Par exemple, si un acheteur navigue sur des matelas de yoga, d’autres produits de la catégorie équipement sont recommandés. Comme ce type de recommandation ne fait pas la distinction entre les sexes, il n’est pas recommandé pour les vêtements, la mode ou d’autres secteurs verticaux spécifiques au genre.<br/><br/>**Lorsqu’il est utilisé :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Plus de produits comme celui-ci<br/>- Semblable à ceci |
 | [Similarité visuelle](#visualsim) | Recommande des produits à l’apparence similaire au produit consulté. Ce type de recommandation est plus utile si les images et les aspects visuels des produits sont importants pour l’expérience d’achat. |
 
 ## Popularité {#popularity}
