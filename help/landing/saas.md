@@ -4,16 +4,16 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
+source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Certaines fonctionnalités Adobe Commerce et Magento Open Source sont optimisées par [!DNL Commerce Services] et déployées en tant que SaaS (logiciel en tant que service). Pour utiliser ces services, vous devez connecter votre instance [!DNL Commerce] à l’aide des clés d’API de production et d’environnement de test, et spécifier l’espace de données dans la [configuration](#saas-configuration). Il vous suffit de configurer la connexion une seule fois pour chaque instance Commerce.
+Certaines fonctionnalités Adobe Commerce et Magento Open Source sont optimisées par [!DNL Commerce Services] et déployées en tant que SaaS (logiciel en tant que service). Pour utiliser ces services, vous devez connecter votre instance [!DNL Commerce] à l’aide des clés d’API de production et d’environnement de test, et spécifier l’espace de données dans la [configuration](#saas-configuration). Il vous suffit de configurer la connexion une seule fois pour chaque instance.
 
 ## Services disponibles {#availableservices}
 
@@ -45,6 +45,7 @@ Les clés peuvent être partagées &quot;au besoin&quot; avec l’intégrateur s
 De plus, les intégrateurs de solution sont également autorisés à utiliser [!DNL Commerce Services]. Si vous êtes un intégrateur de solution, le signataire du contrat de partenaire [!DNL Commerce] doit générer les clés d’API.
 
 >[!NOTE]
+>Les identifiants de clé *Production* et *Sandbox* ne font pas référence à votre environnement. Vous utilisez le même ensemble de clés d’API à pour chacun de vos environnements, par exemple les environnements locaux, de développement, d’évaluation ou de production.
 >
 >Le propriétaire de la licence est généralement le contact par Principal sur le compte Adobe Commerce et n’est pas toujours le même que le propriétaire du projet Adobe Commerce sur le projet d’infrastructure cloud.
 
@@ -68,7 +69,7 @@ De plus, les intégrateurs de solution sont également autorisés à utiliser [!
 
 1. Répétez les étapes ci-dessus pour chaque environnement (production et environnement de test).
 
-   La section **Clés API** affiche désormais vos clés API (publiques). Vous avez besoin des clés de production et d’environnement de test (Public + Privé) lorsque vous [ sélectionnez ou créez un projet SaaS ](#createsaasenv).
+   La section **Clés API** affiche désormais vos clés API (publiques). Vous avez besoin des quatre clés (à la fois les clés de production et d’environnement de test, Public+Privé) lorsque vous [ sélectionnez ou créez un projet SaaS](#createsaasenv) dans l’un des environnements/installations associés à la licence.
 
 ## Configuration SaaS {#saasenv}
 
@@ -78,7 +79,7 @@ Pour [!DNL Product Recommendations], l’espace de données SaaS contient des do
 
 >[!WARNING]
 >
-> Utilisez votre espace de données SaaS de production uniquement sur votre installation de production [!DNL Commerce] pour éviter les collisions de données. Sinon, vous risquez de polluer les données de votre site de production avec des données de test, ce qui entraîne des retards de déploiement. Par exemple, vos données de produit de production peuvent être écrasées par erreur des données d’évaluation, telles que les URL d’évaluation.
+> Utilisez votre **espace de données SaaS de production** uniquement sur votre installation de production [!DNL Commerce] pour éviter les collisions de données. Sinon, vous risquez de polluer les données de votre site de production avec des données de test, ce qui entraîne des retards de déploiement. Par exemple, vos données de produit de production peuvent être écrasées par erreur des données d’évaluation, telles que les URL d’évaluation.
 > Si cela se produit, [envoyez une demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) pour demander le nettoyage des données.
 
 ### Approvisionnement de l’espace de données SaaS
