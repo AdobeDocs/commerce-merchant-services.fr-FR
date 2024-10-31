@@ -3,9 +3,9 @@ title: Estimation du volume des données et du temps de transmission
 description: Découvrez comment estimer le volume des données et le temps de transmission requis par l’outil  [!DNL data export] pour synchroniser les données de flux entre Adobe Commerce et les services connectés.
 role: Admin, Developer
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 7e33b1d5dfc825f8a4d252bcfcbd4f591e337aed
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 0%
 
 Adobe recommande d’estimer le volume des données et le temps de synchronisation avant de démarrer toute synchronisation des flux de données afin de garantir une planification fluide et d’éviter les perturbations dans les opérations du site. Cette estimation est importante lors de la planification des synchronisations initiales ou des mises à jour de catalogue à grande échelle, telles que les changements de prix en masse.
 
-Par défaut, l’outil d’exportation de données traite les données en mode mono-thread avec une taille de lot par défaut. Avec la configuration par défaut, il n’existe aucune mise en parallèle du processus d’envoi du flux. En outre, la stratégie de limitation par défaut permet à Adobe Commerce d’accepter deux demandes par seconde (RPS), ce qui se traduit par ce qui suit :
+Par défaut, l’outil d’exportation de données traite les données en mode mono-thread avec une taille de lot par défaut. Avec la configuration par défaut, il n’existe aucune mise en parallèle du processus d’envoi du flux. En outre, ce composant accepte les demandes par seconde (RPS) qui se traduisent par ce qui suit :
 
 - Jusqu’à 10 000 produits par minute lorsqu’un produit est un SKU avec des attributs dans un storeview spécifique
 - Jusqu&#39;à 50 000 prix par minute
 
-En fonction de la configuration par défaut, les facteurs suivants affectent le temps de transmission des données lors de la synchronisation.
+Les facteurs suivants affectent le temps de transmission des données lors de la synchronisation.
 
 - Le nombre de threads est défini sur 1 (par défaut).
 - La taille du lot est définie sur _100_ pour tous les flux, à l’exception du flux `prices`, où elle est définie sur _500_.
@@ -27,9 +27,6 @@ En fonction de la configuration par défaut, les facteurs suivants affectent le 
 - Tous les produits sont affectés à tous les sites web existants.
 - Pour les scénarios de calcul des prix, des prix spéciaux et groupés sont attribués à tous les produits.
 
->[!NOTE]
->
->Si nécessaire, la limite de la stratégie de limitation peut être augmentée en fonction d’une analyse de l’impact sur les performances. Pour obtenir de l’aide, contactez votre gestionnaire de compte technique (TAM) ou soumettez un ticket d’assistance.
 
 ## Calcul de la transmission des données par flux
 
