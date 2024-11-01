@@ -3,7 +3,7 @@ title: Valorisation des cartes de crédit
 description: Les acheteurs peuvent sauvegarder (enregistrer) les détails de leur carte de crédit pour les achats futurs.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Les acheteurs utilisent le jeton stocké pour effectuer un passage en caisse ult
 
 ![Utiliser les informations d’identification stockées pour un achat ultérieur](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-Ils peuvent également facilement supprimer leurs cartes de crédit en coffre de [méthodes de paiement stockées](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) dans leur compte.
+Ils peuvent également facilement supprimer leurs cartes de crédit en coffre de [méthodes de paiement stockées](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) dans leur compte.
 
 ![Méthodes de paiement stockées dans mon compte](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

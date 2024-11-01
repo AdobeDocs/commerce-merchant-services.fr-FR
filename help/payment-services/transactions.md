@@ -4,7 +4,7 @@ description: Utilisez le rapport Transactions pour connaître les taux d'autoris
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Les rapports sur les transactions comprennent les informations suivantes.
 
 | Colonne | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de commande Commerce (contient uniquement les valeurs pour les transactions réussies et est vide pour les transactions rejetées)<br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} associées, cliquez sur l’ID. |
+| [!UICONTROL Order ID] | ID de commande Commerce (contient uniquement les valeurs pour les transactions réussies et est vide pour les transactions rejetées)<br> <br>Pour afficher les [informations sur la commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} associées, cliquez sur l’ID. |
 | [!UICONTROL PayPal Transaction ID] | ID de transaction fourni par le fournisseur de paiement ; contient uniquement les valeurs pour les transactions réussies et contient un tiret pour les transactions rejetées. Vous pouvez cliquer sur cet identifiant pour accéder à la page des détails des transactions PayPal. |
 | [!UICONTROL Customer ID] | ID de client Commerce d’une commande<br> <br>Pour plus d’informations, consultez la rubrique [informations sur le client](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} . |
 | [!UICONTROL Transaction Date] | Date et heure des transactions |

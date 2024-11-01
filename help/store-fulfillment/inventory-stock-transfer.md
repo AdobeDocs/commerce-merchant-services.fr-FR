@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -23,27 +23,27 @@ La solution [!DNL Store Fulfillment] utilise Adobe Commerce Inventory management
 
 Ces modifications de configuration vous permettent d’accomplir trois tâches :
 
-1. [ Transférez l’inventaire à la source](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) pour déplacer l’inventaire du stock/de la source par défaut vers le nouveau stock/la nouvelle source.
+1. [ Transférez l’inventaire à la source](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) pour déplacer l’inventaire du stock/de la source par défaut vers le nouveau stock/la nouvelle source.
 
-1. [Affectez des sources en bloc](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) pour ajouter les nouvelles sources pour tous vos produits.
+1. [Affectez des sources en bloc](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) pour ajouter les nouvelles sources pour tous vos produits.
 
-1. [ Effectuez des mises à jour en masse pour les attributs de produit ](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) afin d’ajouter les attributs `Allow Store Pickup` et `Allow Home Delivery` aux produits existants. Lorsque la solution est installée, les attributs ont les valeurs *default* optimales. Toutefois, ces attributs ne sont pas appliqués aux produits existants tant que vous n’avez pas terminé le processus de mise à jour des conteneurs en masse.
+1. [ Effectuez des mises à jour en masse pour les attributs de produit ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) afin d’ajouter les attributs `Allow Store Pickup` et `Allow Home Delivery` aux produits existants. Lorsque la solution est installée, les attributs ont les valeurs *default* optimales. Toutefois, ces attributs ne sont pas appliqués aux produits existants tant que vous n’avez pas terminé le processus de mise à jour des conteneurs en masse.
 
-L’inventaire est déduit de la source sélectionnée (emplacement du magasin de détail ou entrepôt de commerce électronique). Les sources utilisées comme entrepôts de commerce électronique doivent être affectées au même stock que l’emplacement de prise en charge du magasin et classées par priorité avant les emplacements de vente au détail. Pour plus d’informations, voir [Hiérarchisation des sources pour un stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
+L’inventaire est déduit de la source sélectionnée (emplacement du magasin de détail ou entrepôt de commerce électronique). Les sources utilisées comme entrepôts de commerce électronique doivent être affectées au même stock que l’emplacement de prise en charge du magasin et classées par priorité avant les emplacements de vente au détail. Pour plus d’informations, voir [Hiérarchisation des sources pour un stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Pour plus d’informations sur la gestion des stocks, des stocks et des sources, consultez la documentation utilisateur d’Adobe Commerce :
 
-- [Gestion de l’inventaire](https://docs.magento.com/user-guide/catalog/inventory-management.html)
+- [Gestion de l’inventaire](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
 
-- [Gestion des quantités d’inventaire](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
+- [Gestion des quantités d’inventaire](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Gestion des stocks](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- [Gestion des stocks](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Gestion des sources](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
+- [Gestion des sources](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Hiérarchisation des sources pour un stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
+- [Hiérarchisation des sources pour un stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [Mises à jour en bloc des attributs de produit](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
+- [Mises à jour en bloc des attributs de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Vous pouvez [télécharger les transactions de paiement](#download-transactions)
 
 >[!NOTE]
 >
->Les rapports sur les paiements affichent uniquement les commandes capturées (l’action de paiement est définie sur [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) ou [ marqué comme `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
+>Les rapports sur les paiements affichent uniquement les commandes capturées (l’action de paiement est définie sur [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) ou [ marqué comme `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Vue de visualisation des données de paiement
 
@@ -155,7 +155,7 @@ Les rapports de paiement comprennent les informations suivantes.
 | [!UICONTROL Code] | Code de transaction qui indique le crédit (*CR*) ou le débit (*DR*) |
 | [!UICONTROL Reference ID] | Identifiant de transaction d’origine pour lequel cet événement est lié |
 | [!UICONTROL Invoice] | Identifiant de facture (une par commande) de la transaction |
-| [!UICONTROL Commerce order] | ID de commande Commerce <br> <br>Pour afficher les [informations sur la commande](https://docs.magento.com/user-guide/sales/orders.html) associées, cliquez sur l’ID. |
+| [!UICONTROL Commerce order] | ID de commande Commerce <br> <br>Pour afficher les [informations sur la commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) associées, cliquez sur l’ID. |
 | [!UICONTROL Commerce trans] | Commerce transaction ID |
 | [!UICONTROL Pay method] | Type de carte de crédit—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—et fournisseur de carte associé (par exemple *Visa* ou *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Montant de la transaction |

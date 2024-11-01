@@ -4,7 +4,7 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 0%
@@ -75,7 +75,7 @@ De plus, les intégrateurs de solution sont également autorisés à utiliser [!
 
 Les instances [!DNL Commerce] doivent être configurées avec un projet SaaS et un espace de données SaaS afin que [!DNL Commerce Services] puisse envoyer des données vers le bon emplacement. Un projet SaaS regroupe tous les espaces de données SaaS. Les espaces de données SaaS sont utilisés pour collecter et stocker des données qui permettent à [!DNL Commerce Services] de fonctionner. Certaines de ces données peuvent être exportées à partir de l’instance [!DNL Commerce] et d’autres peuvent être collectées à partir du comportement d’achat sur le storefront. Ces données sont ensuite conservées pour sécuriser l’espace de stockage dans le cloud.
 
-Pour [!DNL Product Recommendations], l’espace de données SaaS contient des données de catalogue et de comportement. Vous pouvez pointer une instance [!DNL Commerce] vers un espace de données SaaS en [la sélectionnant](https://docs.magento.com/user-guide/configuration/services/saas.html) dans la configuration [!DNL Commerce].
+Pour [!DNL Product Recommendations], l’espace de données SaaS contient des données de catalogue et de comportement. Vous pouvez pointer une instance [!DNL Commerce] vers un espace de données SaaS en [la sélectionnant](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) dans la configuration [!DNL Commerce].
 
 >[!WARNING]
 >

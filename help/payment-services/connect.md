@@ -3,7 +3,7 @@ title: Connexion à votre instance
 description: Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 ## Obtention des informations d’identification de l’API
 
-Pour utiliser un service Commerce SaaS, vous devez utiliser les clés d’API de votre instance (clé d’API publique Commerce et clé privée) pour les environnements de test et de production, qui sont créés et gérés dans votre [tableau de bord de votre compte](https://account.magento.com/customer/account/login). [La paire de clés](https://docs.magento.com/user-guide/configuration/services/saas.html) peut être créée pour un compte Commerce (un pour les environnements de test et un autre pour la production), bien qu’une seule paire puisse être utilisée activement à la fois.
+Pour utiliser un service Commerce SaaS, vous devez utiliser les clés d’API de votre instance (clé d’API publique Commerce et clé privée) pour les environnements de test et de production, qui sont créés et gérés dans votre [tableau de bord de votre compte](https://account.magento.com/customer/account/login). [La paire de clés](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) peut être créée pour un compte Commerce (un pour les environnements de test et un autre pour la production), bien qu’une seule paire puisse être utilisée activement à la fois.
 
 >[!NOTE]
 >
->Vous avez besoin d&#39;aide pour accéder à votre tableau de bord [!UICONTROL My Account] ? Voir [Création d’un compte Commerce](https://docs.magento.com/user-guide/magento/magento-account-create.html).
+>Vous avez besoin d&#39;aide pour accéder à votre tableau de bord [!UICONTROL My Account] ? Voir [Création d’un compte Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 Une fois créée, une clé API publique est toujours disponible dans le tableau de bord Mon compte. Il peut être copié ou supprimé si nécessaire. La clé d’API privée devient visible lorsque vous créez une clé d’API publique pour l’environnement de test ou la production. Elle n’est disponible que pour la copie ou l’enregistrement à partir de la boîte de dialogue qui s’ensuit et ne peut pas être consultée ultérieurement.
 
@@ -40,7 +40,7 @@ Une paire de clés API donnée est valide pour tous les services Commerce dans u
 
 Si votre clé API est perdue, une nouvelle paire de clés API doit être [générée](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) et [appliquée](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) à la configuration du connecteur Commerce Services dans l’administrateur. Si des clés incorrectes sont configurées ou qu’aucune clé n’existe dans la configuration, une boîte de dialogue d’erreur de vérification de compte s’affiche dans les Services de paiement pour vous informer que le compte n’a pas été vérifié.
 
-Voir la [liste des services Commerce disponibles qui utilisent l’API](https://docs.magento.com/user-guide/system/saas.html#available-services).
+Voir la [liste des services Commerce disponibles qui utilisent l’API](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices).
 
 Pour savoir comment générer une clé API pour des environnements de test ou de production, voir [Informations d’identification](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 

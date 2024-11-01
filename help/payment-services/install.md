@@ -4,7 +4,7 @@ description: Installez l’extension Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -42,9 +42,9 @@ Les clients [!DNL Magento Open Source] utilisent les instructions sur site.
 
 Le compositeur utilise ces clés lors de l’installation initiale de [!DNL Adobe Commerce] ou dans les cas où les clés du compositeur n’étaient pas précédemment enregistrées dans le fichier `auth.json`.
 
-Voir [Obtention de vos clés d’authentification](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) pour plus d’informations sur l’obtention des clés du compositeur.
+Voir [Obtention de vos clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) pour plus d’informations sur l’obtention des clés du compositeur.
 
-Voir [Installation d’une extension](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) pour plus d’informations sur ce qu’il faut prendre en compte avant de télécharger et d’installer une extension.
+Voir [Installation d’une extension](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) pour plus d’informations sur ce qu’il faut prendre en compte avant de télécharger et d’installer une extension.
 
 ### [!DNL Adobe Commerce] sur l’infrastructure cloud
 
@@ -155,7 +155,7 @@ Pour voir quelles clés de compositeur sont configurées :
    cat /path/to/auth.json
    ```
 
-1. Voir [ clés associées à votre compte Commerce `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Voir [ clés associées à votre compte Commerce `MageID`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys).
 
 ### Mémoire insuffisante pour PHP
 
@@ -165,7 +165,7 @@ Si l’erreur suivante indique que vous n’avez pas assez de mémoire pour PHP 
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[Augmentez la limite de mémoire](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) pour PHP sur votre environnement dans `php.ini`.
+[Augmentez la limite de mémoire](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) pour PHP sur votre environnement dans `php.ini`.
 
 Vous pouvez également spécifier la limite de mémoire en utilisant cette commande : `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 

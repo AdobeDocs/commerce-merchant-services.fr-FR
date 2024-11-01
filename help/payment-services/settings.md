@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Vous pouvez ajouter un [!UICONTROL Soft Descriptor] à la configuration de vos s
 
 ### Options de configuration
 
-| Champ | Portée | Description |
+| Champ | Champ d’application | Description |
 |---|---|---|
 | [!UICONTROL Enable] | site web | Activez ou désactivez [!DNL Payment Services] pour votre site web. Options : [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | vue de magasin | Définissez la méthode, ou l’environnement, de votre magasin. Options : [!UICONTROL Sandbox] / [!UICONTROL Production] |
@@ -117,10 +117,10 @@ Voir [Options de paiement](payments-options.md#credit-card-fields) pour plus d�
 
 #### Options de configuration
 
-| Champ | Portée | Description |
+| Champ | Champ d’application | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue de magasin | Ajoutez le texte à afficher comme titre de cette option de paiement dans la vue Mode de paiement lors de l’extraction. Options : [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | site web | [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site web | [action de paiement](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | vue de magasin | Ordre de tri du mode de paiement spécifié sur la page de passage en caisse. `Numeric Only` value |
 | [!UICONTROL 3DS Secure authentication] | site web | Activez ou désactivez l’ [authentification sécurisée 3DS](security.md#3ds). Options : [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | site web | Activez ou désactivez les champs de carte de crédit à afficher sur la page de paiement. Options : [!UICONTROL Off] / [!UICONTROL On] |
@@ -153,10 +153,10 @@ Vous pouvez activer et configurer l’option de paiement du bouton [!UICONTROL A
 
 #### Options de configuration
 
-| Champ | Portée | Description |
+| Champ | Champ d’application | Description |
 |---|---|---|
 | [!UICONTROL Checkout title] | vue de magasin | Ajoutez le texte à afficher comme titre de cette option de paiement dans la vue Mode de paiement lors de l’extraction. Options : [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | site web | [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions) pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site web | [action de paiement](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions) pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | site web | Activez ou désactivez le bouton Payer Apple à afficher sur la page de paiement. Options : [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on checkout page] | site web | Activez ou désactivez le bouton Payer Apple pour afficher sur la page des détails du produit. Options : [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on mini cart preview] | site web | Activez ou désactivez le bouton Payer Apple pour afficher l’aperçu du mini panier. Options : [!UICONTROL Off] / [!UICONTROL On] |
@@ -200,10 +200,10 @@ Vous pouvez activer et configurer les options de paiement des boutons de paiemen
 
 #### Options de configuration
 
-| Champ | Portée | Description |
+| Champ | Champ d’application | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue de magasin | Ajoutez le texte à afficher comme titre pour cette option de paiement dans la vue Mode de paiement lors de l’extraction. Options : champ de texte |
-| [!UICONTROL Payment Action] | site web | [action de paiement](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site web | [action de paiement](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | vue de magasin | Ordre de tri du mode de paiement spécifié sur la page de passage en caisse. `Numeric Only` value |
 | [!UICONTROL Show PayPal buttons on checkout page] | vue de magasin | Activez ou désactivez [!DNL PayPal payment buttons] sur la page de passage en caisse. Options : [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | vue de magasin | Activez ou désactivez [!DNL PayPal payment buttons] sur la page des détails du produit. Options : [!UICONTROL  Yes] / [!UICONTROL No] |
@@ -246,7 +246,7 @@ Vous pouvez configurer le style des boutons de paiement [ dans la configuration 
 
 #### Options de configuration
 
-| Champ | Portée | Description |
+| Champ | Champ d’application | Description |
 |--- |--- |--- |
 | [!UICONTROL Layout] | Affichage en magasin | Définissez le style de mise en page des boutons de paiement. Options : [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Tagline] | Affichage en magasin | Activez/désactivez tagline. Options : [!UICONTROL Off] / [!UICONTROL On] |
@@ -278,7 +278,7 @@ Si vous modifiez la configuration dans _Paramètres_, par exemple en activant le
 
 Si un type de cache dans la table Gestion du cache a l’état `INVALIDATED`, votre magasin peut ne pas afficher la configuration la plus récente pour cet élément. Videz le cache pour mettre à jour votre magasin afin d’afficher la configuration la plus récente.
 
-Pour vous assurer que votre magasin affiche la configuration correcte, [videz régulièrement le cache](https://docs.magento.com/user-guide/system/cache-management.html).
+Pour vous assurer que votre magasin affiche la configuration correcte, [videz régulièrement le cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
 
 ## Valorisation des cartes
 
@@ -300,7 +300,7 @@ Voir [3DS dans Security](security.md#3ds) pour plus d’informations.
 
 ## Utilisation de plusieurs comptes PayPal
 
-Dans [!UICONTROL Payment Services], vous pouvez utiliser plusieurs comptes PayPal dans un compte marchand **un** au niveau du site web. Par exemple, si vous gérez votre ou vos magasins dans plusieurs pays (qui utilisent des [devises](https://docs.magento.com/user-guide/stores/currency.html) différentes) ou si vous souhaitez utiliser Adobe Commerce pour certaines parties de votre entreprise, mais pas _tous_, vous pouvez configurer votre compte marchand pour utiliser plusieurs comptes PayPal.
+Dans [!UICONTROL Payment Services], vous pouvez utiliser plusieurs comptes PayPal dans un compte marchand **un** au niveau du site web. Par exemple, si vous gérez votre ou vos magasins dans plusieurs pays (qui utilisent des [devises](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency) différentes) ou si vous souhaitez utiliser Adobe Commerce pour certaines parties de votre entreprise, mais pas _tous_, vous pouvez configurer votre compte marchand pour utiliser plusieurs comptes PayPal.
 
 Pour plus d’informations sur la hiérarchie des sites web, des magasins et des vues, voir [Portée du site, du magasin et de la vue](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) .
 

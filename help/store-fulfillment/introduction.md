@@ -4,7 +4,7 @@ description: "Découvrez comment [!DNL Store Fulfillment for Adobe Commerce by W
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -35,7 +35,7 @@ La solution d’exécution de magasin prend en charge et améliore les fonctionn
 
 * Prend en charge la plupart des types de produits simples, configurables, regroupés, regroupés et virtuels
 
-* S’intègre à [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
+* S’intègre à [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)
 
 * S’intègre aux systèmes de gestion des stocks des commerçants tels que les systèmes ERP, OMS et WMS.
 

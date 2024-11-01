@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Pour en savoir plus sur les données utilisées dans les rapports [!DNL Payment 
 
 ### Configuration de cron sur [!DNL Magento Open Source]
 
-Si vous souhaitez utiliser un mode d&#39;index `BY SCHEDULE` sur [!DNL Magento Open Source], vous devez configurer cron. Voir [Configuration et exécution de cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+Si vous souhaitez utiliser un mode d&#39;index `BY SCHEDULE` sur [!DNL Magento Open Source], vous devez configurer cron. Voir [Configuration et exécution de cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 ### Définition des indexeurs
 
@@ -48,13 +48,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Si vous ne spécifiez aucun indexeur dans votre commande, tous les indexeurs sont mis à jour vers la même valeur. Si vous souhaitez modifier un indexeur spécifique, vous devez le lister dans votre commande.
 
-Pour en savoir plus sur la modification manuelle du mode d’un indexeur, voir [Configuration des indexeurs](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} dans la documentation du développeur. Pour savoir comment le modifier dans Admin, consultez la section [Gestion des index](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} du guide d’utilisation principal.
+Pour en savoir plus sur la modification manuelle du mode d’un indexeur, voir [Configuration des indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} dans la documentation du développeur. Pour savoir comment le modifier dans Admin, consultez la section [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} du guide d’utilisation principal.
 
 ### Réindexation manuelle des données
 
-Vous pouvez réindexer manuellement les données au lieu d’attendre qu’elles se produisent automatiquement. Pour plus d’informations, voir [Réindexation](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} dans [Gestion des indexeurs](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"}.
+Vous pouvez réindexer manuellement les données au lieu d’attendre qu’elles se produisent automatiquement. Pour plus d’informations, voir [Réindexation](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} dans [Gestion des indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}.
 
-Lorsque le mode `BY SCHEDULE` est défini, le système effectue le suivi des entités modifiées et la tâche cron met à jour l’index pour celles-ci selon une planification définie. Voir [Exécuter cron à partir de la ligne de commande](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) dans [Configurer et exécuter cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) pour savoir comment déclencher manuellement l’indexation à l’aide de tâches cron.
+Lorsque le mode `BY SCHEDULE` est défini, le système effectue le suivi des entités modifiées et la tâche cron met à jour l’index pour celles-ci selon une planification définie. Voir [Exécuter cron à partir de la ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) dans [Configurer et exécuter cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) pour savoir comment déclencher manuellement l’indexation à l’aide de tâches cron.
 
 ### Envoi de données réindexées au service de paiement
 
@@ -88,7 +88,7 @@ Toutes les données nécessaires aux rapports sont envoyées automatiquement à 
 bin/magento cron:run --group payment_services_data_export
 ```
 
-Pour en savoir plus sur la réindexation et les indexeurs, consultez la rubrique [Gérer les indexeurs](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) de la documentation destinée aux développeurs.
+Pour en savoir plus sur la réindexation et les indexeurs, consultez la rubrique [Gérer les indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) de la documentation destinée aux développeurs.
 
 ## Configuration du traitement L2/L3
 

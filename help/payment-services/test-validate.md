@@ -3,7 +3,7 @@ title: Test et validation
 description: Les tests et la validation permettent de s’assurer que les fonctions  [!DNL Payment Services] fonctionnent comme prévu et offrent les meilleures options de paiement à vos clients.
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Avant d’exposer [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Ma
 Le test de [!DNL Payment Services] dans un environnement de test est une étape de validation importante, même s’il s’agit d’un environnement de simulation connecté uniquement à l’environnement de test PayPal, et non aux banques et commerçants réels.
 
 1. Effectuez un passage en caisse de votre boutique, avec les [champs de carte de crédit](payments-options.md#credit-card-fields) ou l’un des [ boutons de paiement PayPal](payments-options.md#paypal-smart-buttons). Voir [Test des informations d’identification](#testing-credentials) pour plus d’informations sur l’utilisation de fausses cartes de crédit à des fins de test.
-1. Capture (lorsque votre action de paiement est [ définie sur `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [remboursement](refunds.md) ou [annulation](voids.md) de la commande qui vient de terminer. Vous pouvez également simplement [ créer une facture](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
+1. Capture (lorsque votre action de paiement est [ définie sur `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [remboursement](refunds.md) ou [annulation](voids.md) de la commande qui vient de terminer. Vous pouvez également simplement [ créer une facture](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
 1. Dans les 24 à 48 heures, consultez la transaction et d’autres informations dans le [rapport sur les paiements](payouts.md).
 1. Voir les détails de la commande dans le [ rapport État des paiements de la commande](order-payment-status.md).
 

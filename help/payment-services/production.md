@@ -3,7 +3,7 @@ title: Activer [!DNL Payment Services] pour la production
 description: Terminez le processus d’intégration en activant  [!DNL Payment Services] pour la production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Après avoir [ configuré vos services Commerce ](connect.md#configure-commerce-
 
    Cette option est visible si vous n’avez pas encore configuré [!DNL Payment Services] comme méthode de paiement pour un ou plusieurs de vos sites web.
 
-   Vous êtes dirigé vers la zone de paramètres dans la vue Accueil avec les options appropriées développées (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), où vous pouvez activer les options [!DNL Payment Services] comme [ méthode de paiement ](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   Vous êtes dirigé vers la zone de paramètres dans la vue Accueil avec les options appropriées développées (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), où vous pouvez activer les options [!DNL Payment Services] comme [ méthode de paiement ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
 1. Dans _[!UICONTROL General Configuration]_, définissez **[!UICONTROL Enable]**sur `Yes`.
 1. Définissez **[!UICONTROL Payment Action]**, pour _[!UICONTROL Credit Card Fields]_et_[!UICONTROL PayPal payment buttons]_, sur l’un des paramètres suivants :
@@ -157,7 +157,7 @@ Activer les paiements en direct :
 1. Sur la page d’accueil, cliquez sur **[!UICONTROL Settings]** en haut à droite de la page. Voir [Accueil](payments-home.md) pour plus d’informations.
 1. Dans la section _[!UICONTROL General Configuration]_, définissez **[!UICONTROL Payment mode]**sur `Production`.
 1. Cliquez sur **[!UICONTROL Save]**.
-1. [Effacez votre cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Effacez votre cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

@@ -4,7 +4,7 @@ description: Configurez les paramètres généraux pour activer  [!DNL Store Ful
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Gérez les paramètres des services d’exécution de magasin depuis le menu [!D
 <tr>
 <td><strong>Champ</strong></td>
 <td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
+<td><strong>Champ d’application</strong></td>
 <td><strong>Obligatoire</strong></td>
 </tr>
 </thead>
@@ -78,7 +78,7 @@ Activez la solution [!DNL Store Fulfillment] pour ajouter les fonctionnalités d
 <tr>
 <td><strong>Champ</strong></td>
 <td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
+<td><strong>Champ d’application</strong></td>
 <td><strong>Obligatoire</strong></td>
 </tr>
  </thead>
@@ -98,7 +98,7 @@ Activez la solution [!DNL Store Fulfillment] pour ajouter les fonctionnalités d
 <tr>
 <td><strong>Champ</strong></td>
 <td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
+<td><strong>Champ d’application</strong></td>
 <td><strong>Obligatoire</strong></td>
 </tr>
 <tr>
@@ -158,7 +158,7 @@ Comme le fichier journal de l’application peut croître rapidement, n’active
 <tr>
 <td><strong>Champ</strong></td>
 <td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
+<td><strong>Champ d’application</strong></td>
 <td><strong>Obligatoire</strong></td>
 </tr>
 </thead>
@@ -185,7 +185,7 @@ Vous pouvez afficher des détails sur les opérations de synchronisation des com
 <tr>
 <td><strong>Champ</strong></td>
 <td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
+<td><strong>Champ d’application</strong></td>
 <td><strong>Obligatoire</strong></td>
 </tr>
 <tr>
@@ -221,7 +221,7 @@ Vous pouvez afficher des détails sur les opérations de synchronisation des com
 <tr>
 <td><strong>Champ</strong></td>
 <td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
+<td><strong>Champ d’application</strong></td>
 <td><strong>Obligatoire</strong></td>
 </tr>
 </thead>
@@ -258,7 +258,7 @@ Configurez les options d’expédition d’exécution de magasin qui déterminen
 <tr>
 <td><strong>Champ</strong></td>
 <td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
+<td><strong>Champ d’application</strong></td>
 <td><strong>Obligatoire</strong></td>
 </tr>
 </thead>
@@ -279,7 +279,7 @@ Configurez les options d’expédition d’exécution de magasin qui déterminen
 <tr>
 <td><strong>Champ</strong></td>
 <td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
+<td><strong>Champ d’application</strong></td>
 <td><strong>Obligatoire</strong></td>
 </tr>
 </thead>
@@ -305,7 +305,7 @@ Configurez les paramètres de sécurité du compte utilisateur et du mot de pass
 <tr>
 <td><strong>Champ</strong></td>
 <td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
+<td><strong>Champ d’application</strong></td>
 <td><strong>Obligatoire</strong></td>
 </tr>
  </thead>
@@ -356,7 +356,7 @@ Configurez ces paramètres à partir de l’administrateur en sélectionnant <st
 
 >[!NOTE]
 >
->Pour plus d’informations sur la configuration des options de remise en magasin, voir [Diffusion en magasin](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) dans le _Guide de l’utilisateur d’Adobe Commerce_.
+>Pour plus d’informations sur la configuration des options de remise en magasin, voir [Diffusion en magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) dans le _Guide de l’utilisateur d’Adobe Commerce_.
 
 
 ### Configuration des méthodes de diffusion
@@ -368,7 +368,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 <tr>
 <td><strong>Champ</strong></td>
 <td><strong>Description</strong></td>
-<td><strong>Portée</strong></td>
+<td><strong>Champ d’application</strong></td>
 <td><strong>Obligatoire</strong></td>
 </tr>
  </thead>
@@ -395,7 +395,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 <tr>
 <th><strong>Champ</strong></th>
 <th><strong>Description</strong></th>
-<th><strong>Portée</strong></th>
+<th><strong>Champ d’application</strong></th>
 <th><strong>Obligatoire</strong></th>
 </tr>
 </thead>
@@ -475,7 +475,7 @@ Avec la méthode de remise en magasin, le client peut sélectionner une source �
 <tr>
 <th><strong>Champ</strong></th>
 <th><strong>Description</strong></th>
-<th><strong>Portée</strong></th>
+<th><strong>Champ d’application</strong></th>
 <th><strong>Obligatoire</strong></th>
 </tr>
 </thead>
