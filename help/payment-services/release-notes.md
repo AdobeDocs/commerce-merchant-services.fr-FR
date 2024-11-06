@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notes de mise à jour"
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les versions de  [!DNL Payment Services]  .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3174'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,24 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s’affichent dans le [rapport État des paiements de commande](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et le [rapport sur les paiements](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l’aide du contrôle Paramètres de colonne.
 
 +++
+
+## v2.9.0
+
+_7 novembre 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![New](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] prend désormais en charge une **URL SDK mise à niveau pour Apple Pay**, améliorant l’intégration des commerçants utilisant Apple Pay. Cette fonctionnalité est compatible avec macOS 14 et versions ultérieures, les périphériques exécutant des versions antérieures de macOS n’afficheront pas cette fonctionnalité.
+
+![Nouveau](../assets/new.svg)<!-- PAY-5630 --> Mise à jour des pages **Passage en caisse**, **Produit**, **Panier** et **MiniCart** pour la prise en charge de l’URL **mise à niveau du SDK pour le paiement Apple**, ce qui améliore l’expérience utilisateur pour les vendeurs qui offrent la fonction de paiement Apple.
+
+![Nouveau](../assets/new.svg)<!-- PAY-5635 --> Amélioration des estimations d’expédition **en fonction de l’adresse de paiement Apple**, ce qui permet aux clients d’afficher des coûts d’expédition précis lors du passage en caisse.
+
+![Correctif](../assets/fix.svg)<!-- PAY-5661 --> Correction de plusieurs problèmes **[!DNL Payment Services]au passage en caisse**, qui amélioraient la fiabilité du processus de paiement pour les commerçants et les acheteurs.
+
+![Correctif](../assets/fix.svg)<!-- PAY-5692 --> Correction d’un problème en raison duquel les **prénoms et noms de client** n’étaient pas ajoutés à la commande lors de l’utilisation des **boutons intelligents pour le passage en caisse express**.
+
+![Correction](../assets/fix.svg)<!-- PAY-5712 --> Correction d’un problème en raison duquel les commerçants **ne pouvaient pas terminer l’extraction à l’aide de l’option de paiement Zéro sous-total passage en caisse** lorsque le montant total était gratuit.
 
 ## v2.8.1
 
