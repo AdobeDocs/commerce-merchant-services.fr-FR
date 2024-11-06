@@ -2,9 +2,9 @@
 title: Filtrer les produits
 description: Définissez des conditions qui incluent ou excluent l’utilisation de produits comme recommandations.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Les filtres de produits spécifient les produits spécifiques éligibles, ou non
 
 ### Type
 
-Un filtre basé sur le type de produit inclut ou exclut tous les produits d’un type spécifique. Les types pris en charge sont les suivants : _Simple_, _Configurable_, _Virtuel_, _Téléchargeable_ ou _Carte cadeau_. Les produits _Bundle_ et _Grouped_ ne sont pas encore pris en charge.
+Un filtre basé sur le type de produit inclut ou exclut tous les produits d’un type spécifique. Les types pris en charge sont les suivants : _simple_, _configurable_, _virtuel_, _téléchargeable_ ou _carte-cadeau_. Les types de produits _Bundle_, _groupé_ et personnalisés ne sont pas pris en charge.
 
 ### Visibilité
 

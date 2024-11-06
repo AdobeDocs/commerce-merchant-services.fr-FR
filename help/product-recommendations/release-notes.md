@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Notes de mise à jour'
 description: Informations les plus récentes sur la version  [!DNL Product Recommendations] d’Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
+source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,15 @@ _25 avril 2023_
 Les clients ![ nouveaux ](../assets/new.svg) [!DNL Product Recommendations] peuvent désormais profiter de l’ [indexation de prix SaaS](../price-index/price-indexing.md).
 
 ## Version majeure actuelle
+
+### 6.0.3 de magento/product-recommendations
+
+_6 novembre 2024_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel le [filtre de catégorie](filters.md#category) incluait des catégories qui n’appartenaient pas à l’aperçu de magasin actuel.
+![Correctif](../assets/fix.svg) Correction d’un problème de dépendance dans le métappackage `magento/product-recommendations`.
 
 ### 6.0.2 de magento/product-recommendations
 
@@ -142,7 +151,7 @@ _20 mars 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![New](../assets/new.svg) Ajout de [types de recommandations](type.md) : Conversion (vue sur le panier), Conversion (vue sur l’achat) et Récemment consultée. Ces nouveaux types de recommandations sont disponibles dans le module `magento/product-recommendations` 3.2.2 et versions ultérieures.
-![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel le pare-feu d’applications web Fastly bloquait incorrectement un cookie.
+![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel le pare-feu d’application web de Fastly (WAF) bloquait incorrectement un cookie.
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel les produits attribués à la vue de magasin autre que la vue par défaut n’étaient pas affichés dans le panneau _Aperçu du produit Recommendations_ lors de la création d’une recommandation pour cette vue de magasin spécifique.
 ![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel certains noms d’unité de recommandation dans le générateur de pages empêchaient l’unité de recommandation de s’afficher sur le storefront.
 
@@ -169,7 +178,7 @@ _20 mars 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
 
 ![Correctif](../assets/fix.svg) Correction d’une erreur modale JavaScript
-![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel le pare-feu d’applications web Fastly bloquait incorrectement un cookie.
+![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel le pare-feu d’application web de Fastly (WAF) bloquait incorrectement un cookie.
 
 ### 3.2.5 de magento/product-recommendations
 

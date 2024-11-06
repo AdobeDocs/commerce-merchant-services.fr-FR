@@ -2,9 +2,9 @@
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,10 @@ Le pourcentage de l’indicateur de préparation pour les types de recommandatio
 #### Que faire si le pourcentage de l’indicateur de préparation est faible
 
 Un pourcentage de faible préparation indique qu’il n’y a pas beaucoup de produits de votre catalogue qui peuvent être inclus dans les recommandations pour ce type de recommandation. Cela signifie qu’il existe une forte probabilité que [recommandations de sauvegarde](events.md#backuprecs) soient renvoyées si vous déployez ce type de recommandation de toute façon.
+
+>[!IMPORTANT]
+>
+>Les types de produits _Bundle_, _groupé_ et personnalisés ne sont pas pris en charge. Si votre catalogue contient un grand nombre de ces types de produits, vous pouvez vous attendre à un faible taux de préparation. En outre, les SKU avec espaces peuvent réduire la pertinence des recommandations et doivent être évités.
 
 Vous trouverez ci-dessous les raisons possibles et les solutions aux scores de faible niveau de préparation courants :
 

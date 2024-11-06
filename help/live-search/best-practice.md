@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] Bonnes pratiques'
 description: Découvrez les bonnes pratiques pour implémenter  [!DNL Live Search] dans votre boutique.
 role: Admin, Developer
-source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
+source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -137,7 +138,7 @@ En savoir plus sur les règles de recherche :
 
 ### Utilisation des métadonnées de produit
 
-Assurez-vous que les attributs de produit précis et détaillés sont [configurés en tant que recherche possible](workspace.md#set-attributes-as-searchable). Notez que les attributs SKU, name et category peuvent faire l’objet de recherches par défaut et ne peuvent pas être exclus de la recherche. 
+Assurez-vous que les attributs de produit précis et détaillés sont [configurés en tant que recherche possible](workspace.md#set-attributes-as-searchable). Notez que les attributs SKU, name et category peuvent faire l’objet de recherches par défaut et ne peuvent pas être exclus de la recherche. Pour de meilleurs résultats, n’utilisez pas d’espaces dans vos SKU.
 
 Pour accroître la pertinence de la recherche, attribuez un poids à chaque attribut pouvant faire l’objet d’une recherche. Les attributs ayant un poids supérieur doivent apparaître plus haut dans les résultats de recherche. Le tri par pertinence est affecté par plusieurs critères, tels que le poids de la recherche. Cela signifie que parfois les attributs ayant un poids de recherche inférieur peuvent toujours avoir plus de pertinence que les attributs ayant un poids de recherche supérieur. D’autres critères peuvent inclure le nombre de correspondances dans un attribut donné, la position du terme de recherche trouvé et la structure de texte globale avant et après un terme de recherche.
 

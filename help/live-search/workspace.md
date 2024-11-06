@@ -2,7 +2,7 @@
 title: "Configuration de la recherche en direct"
 description: L’espace de travail  [!DNL Live Search]  est utilisé pour configurer, gérer et surveiller les performances de recherche.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Initialement, le [scope](https://experienceleague.adobe.com/docs/commerce-admin/
 | [Synonymes](synonyms.md) | Étendez la portée de la recherche pour inclure les mots que les acheteurs peuvent utiliser pour trouver des produits différents de ceux de votre catalogue. |
 | [Rechercher un marchandisage](rules.md) | Formez l’expérience de recherche à l’aide de règles logiques qui déclenchent des actions planifiées. Amplifiez, enseignez, épinglez ou masquez des produits afin d’étalonner les résultats de recherche en fonction de vos objectifs commerciaux. |
 | [Marchandisage des catégories](category-merch.md) | Appliquez des règles et du marchandisage intelligent au niveau de la catégorie. |
-| [GraphQL](graphql.md) | Les développeurs connectés à l’administrateur de votre boutique peuvent composer et tester des requêtes avec des données de catalogue réelles. Pour en savoir plus, consultez la [Présentation de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) dans la documentation destinée aux développeurs [!DNL Live Search]. |
+| [GraphQL](graphql.md) | Les développeurs connectés à l’administrateur de votre boutique peuvent composer et tester des requêtes avec des données de catalogue réelles. Pour en savoir plus, consultez la [Présentation de GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) dans la documentation destinée aux développeurs [!DNL Live Search]. |
 | [Paramètres](settings.md) | Déterminez comment les valeurs des facettes de prix sont regroupées par tranche de prix dans le storefront et définissez la langue d’indexation. |
 
 ## Définir les attributs comme pouvant faire l’objet d’une recherche
