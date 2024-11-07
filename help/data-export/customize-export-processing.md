@@ -3,7 +3,7 @@ title: Amélioration des performances d’exportation des données SaaS
 description: Découvrez comment améliorer les performances d’exportation des données SaaS pour les services Commerce en utilisant le mode d’exportation de données multithreads.
 role: Admin, Developer
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 6f67ea717595fe517d751ae14bf8123c7d05831b
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -41,8 +41,8 @@ N’oubliez pas que la planification attentive, notamment l’estimation du volu
 
 Le mode multi-thread est pris en charge pour toutes les [méthodes de synchronisation](data-synchronization.md#synchronization-process) : synchronisation complète, synchronisation partielle et synchronisation des éléments en échec. Pour configurer le multithread, vous spécifiez le nombre de threads et la taille de lot à utiliser lors de la synchronisation.
 
-- `threadCount` est le nombre de threads activés pour traiter les entités. La valeur par défaut `threadCount` est `1`.
-- `batchSize` est le nombre d’entités qui sont traitées dans une itération. La valeur par défaut `batchSize` est `100` enregistrements pour tous les flux, à l’exception du flux de prix. Pour le flux de prix, la valeur par défaut est `500` enregistrements.
+- `thread-count` est le nombre de threads activés pour traiter les entités. La valeur par défaut `thread-count` est `1`.
+- `batch-size` est le nombre d’entités qui sont traitées dans une itération. La valeur par défaut `batch-size` est `100` enregistrements pour tous les flux, à l’exception du flux de prix. Pour le flux de prix, la valeur par défaut est `500` enregistrements.
 
 Vous pouvez configurer le multithread comme option temporaire lors de l’exécution d’une commande de resynchronisation ou en ajoutant la configuration multithread à la configuration de l’application Adobe Commerce.
 
@@ -52,10 +52,10 @@ Vous pouvez configurer le multithread comme option temporaire lors de l’exécu
 
 ### Configuration du multi-thread au moment de l’exécution
 
-Lorsque vous exécutez une commande de synchronisation complète à partir de la ligne de commande, spécifiez le traitement multi-thread en ajoutant les options `threadCount` et `batchSize` à la commande de l’interface de ligne de commande.
+Lorsque vous exécutez une commande de synchronisation complète à partir de la ligne de commande, spécifiez le traitement multi-thread en ajoutant les options `thread-count` et `batch-size` à la commande de l’interface de ligne de commande.
 
 ```
-bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
 Les options spécifiées sur la ligne de commande remplacent la configuration d’exportation des données spécifiée dans le fichier de l’application Adobe Commerce `config.php`.
