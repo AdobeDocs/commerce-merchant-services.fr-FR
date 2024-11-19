@@ -2,9 +2,9 @@
 title: Widgets Storefront
 description: Découvrez la fenêtre contextuelle storefront et les widgets de page de liste de produits.
 exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
-source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
+source-git-commit: 256a1891a4769dcb3f5fa3e78bf1300190363c10
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Vous pouvez personnaliser l’aspect de ces widgets pour qu’ils correspondent 
 
 Lorsque vous commencez à taper dans la zone de recherche du storefront de Commerce, [!DNL Live Search] répond avec des produits suggérés et une image miniature des principaux résultats de recherche dans le [widget contextuel](storefront-popover.md).
 
-![Widget de fenêtre contextuelle](assets/ls-search-popover.png)
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 Pour en savoir plus sur le widget de fenêtre contextuelle et sur la personnalisation du widget pour votre vitrine, voir [[!DNL Storefront Popover]](storefront-popover.md).
 
@@ -30,6 +30,6 @@ Pour en savoir plus sur le widget de fenêtre contextuelle et sur la personnalis
 
 Lorsque vous cliquez pour afficher tous les résultats à partir de la fenêtre contextuelle storefront, le widget de page de liste de produits affiche les fonctionnalités que vous pouvez utiliser pour affiner continuellement votre recherche.
 
-![Widget de page de liste de produits](assets/ls-plp.png)
+![Résultats du widget de page de liste de produits](assets/plp-css-widgets.png)
 
 Pour en savoir plus sur le widget de page de liste de produits et sur la personnalisation du widget pour votre storefront, consultez le [widget de page de liste de produits](plp-styling.md).
