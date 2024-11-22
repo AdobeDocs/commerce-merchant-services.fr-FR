@@ -4,9 +4,9 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ Pour sélectionner ou créer un projet SaaS, demandez la clé d’API [!DNL Comm
 Tous les projets SaaS associés à vos clés apparaissent dans le champ **Projet** de la section **Identifiant SaaS** .
 
 1. S’il n’existe aucun projet SaaS, cliquez sur **Créer un projet**. Ensuite, dans le champ **Projet** , saisissez un nom pour votre projet SaaS.
+
+>[!NOTE]
+>
+>Pour éviter toute confusion, n’utilisez pas de service Commerce spécifique comme nom pour votre projet, par exemple *Live Search*, *Product Recommendations* ou *Data Connection*.  À moins que votre licence n’ait été configurée pour plusieurs projets SaaS, vous pouvez utiliser le même projet SaaS pour plusieurs services.
 
 1. Sélectionnez l’ **espace de données** à utiliser pour la configuration actuelle de votre magasin [!DNL Commerce].
 
