@@ -1,15 +1,15 @@
 ---
-title: Ajout d’attributs de produit par programmation au flux Data Exporter
-description: Découvrez comment ajouter des attributs de produit personnalisés aux données de flux  [!DNL SaaS Data Export] .
+title: Ajout dynamique d’attributs de produit
+description: Découvrez comment ajouter dynamiquement des attributs de produit personnalisés au flux d’exportation de données lors du processus de synchronisation des données.
 role: Admin, Developer
-source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
+source-git-commit: e75092e918d06d4d1291784b0498d274ea8396e8
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# Ajout d’attributs de produit par programmation au flux Data Exporter
+# Ajout dynamique d’attributs de produit lors de la synchronisation des données
 
 Vous pouvez étendre les attributs de produit sans les enregistrer dans Adobe Commerce en créant un module externe pour ajouter les attributs pendant le processus de synchronisation des données.
 
