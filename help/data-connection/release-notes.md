@@ -3,10 +3,10 @@ title: Notes de mise à jour
 description: Informations les plus récentes sur l’extension  [!DNL Data Connection] d’Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
+source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 0%
+source-wordcount: '1108'
+ht-degree: 2%
 
 ---
 
@@ -77,6 +77,15 @@ _12 octobre 2022_
 ![Nouveau](../assets/new.svg) - Ajout de la prise en charge d’une [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.2.1
+
+_2 décembre 2024_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"}
+
+![Nouveau](../assets/new.svg) - Ajout de l’extension compatible HIPAA à [!DNL Data Connection] afin que les commerçants puissent partager les données d’événement [!DNL Commerce] de back-office avec les Experience Platform et maintenir la conformité HIPAA.
+![Fix](../assets/fix.svg) - Correction d’un problème en raison duquel l’extension [!DNL Data Connection] écrasait les données `eventForwarding` et définissait l’indicateur `HIPAA` pour tous les clients. Désormais, l’extension définit uniquement l’indicateur pour les clients HIPAA.
 
 ## 3.2.0
 
