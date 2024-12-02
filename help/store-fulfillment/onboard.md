@@ -1,6 +1,6 @@
 ---
 title: Présentation de l’intégration pour les services d’exécution de magasin
-description: Flux d’intégration, configuration système requise, limites et limites.[!DNL Live Search]
+description: '[!DNL Live Search] Flux d’intégration, configuration requise, limites et limites.'
 role: Admin, Leader
 level: Intermediate
 feature: Shipping/Delivery, Install

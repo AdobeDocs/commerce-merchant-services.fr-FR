@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Store Fulfillment] Guide Overview'
-description: "Informations complètes sur [!DNL Store Fulfillment] pour les administrateurs Adobe Commerce, y compris l’installation et l’intégration."
+title: '[!DNL Store Fulfillment] - Aperçu du guide'
+description: Informations complètes sur  [!DNL Store Fulfillment] pour les administrateurs Adobe Commerce, y compris l’installation et l’intégration.
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 recommendations: noDisplay

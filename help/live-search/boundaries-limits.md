@@ -1,5 +1,5 @@
 ---
-title: "Limites et limites"
+title: Limites et limites
 description: Découvrez les limites de  [!DNL Live Search] pour vous assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53

@@ -1,6 +1,6 @@
 ---
-title: "Types de facettes"
-description: "[!DNL Live Search] les facettes sont dynamiques et apparaissent dans la liste Filtres lorsque cela est pertinent."
+title: Types de facettes
+description: '[!DNL Live Search] facettes sont dynamiques et apparaissent dans la liste Filtres lorsque cela est pertinent.'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt

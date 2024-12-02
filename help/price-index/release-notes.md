@@ -1,10 +1,11 @@
 ---
-title: '[!DNL Catalog Adapter] Notes de mise à jour'
-description: 'Informations les plus récentes sur la version de [!DNL Catalog Adapter] pour Adobe Commerce.'
+title: Notes de mise à jour [!DNL Catalog Adapter]
+description: Les dernières informations de mise à jour de [!DNL Catalog Adapter] pour Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
-source-git-commit: 71e3a3c6b6339895f19a0cd71a7952790ba3f8a8
+exl-id: d7aeee8f-9043-4517-9fde-ffe24aa77b19
+source-git-commit: 8cf67ed76e191b03ddfbfb68ed4ba07e456a3c35
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -31,4 +32,3 @@ Les mises à jour sont les suivantes :
 ## Version 1.0.8
 
 ![Correctif](../assets/fix.svg) Correction d’un problème qui provoquait une erreur dans le journal des exceptions lors de l’ajout à la liste des souhaits de variantes de produits configurables avec des SKU numériques. &lt;!-MDEE-876—>
-

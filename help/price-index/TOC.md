@@ -1,7 +1,7 @@
 ---
-user-guide-title: "Guide d’indexation des prix SaaS"
-user-guide-description: "Ce guide fournit des instructions détaillées sur l’utilisation de l’indexeur de prix SaaS."
-breadcrumb-title: "Guide de l’indexeur de prix de Saas"
+user-guide-title: Guide d’indexation des prix SaaS
+user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de l’indexeur de prix SaaS.
+breadcrumb-title: Guide de l’indexeur de prix Saas
 hide: true
 role: Admin
 feature: Services, Price Indexer

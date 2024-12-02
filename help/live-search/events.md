@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Live Search] Events'
+title: '[!DNL Live Search] Événements'
 description: Découvrez comment les événements collectent des données pour [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3

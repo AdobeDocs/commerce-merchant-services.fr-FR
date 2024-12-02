@@ -1,6 +1,6 @@
 ---
-title: "Synonymes"
-description: "[!DNL Live Search] Les synonymes étendent les requêtes avec des mots différents de ceux de votre catalogue."
+title: Synonymes
+description: '[!DNL Live Search] Les synonymes étendent les requêtes avec des mots différents de ceux de votre catalogue.'
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
 source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt

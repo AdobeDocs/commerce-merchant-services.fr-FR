@@ -1,5 +1,5 @@
 ---
-user-guide-title: "[!DNL Store FulFillment Guide]"
+user-guide-title: '[!DNL Store FulFillment Guide]'
 user-guide-description: Informations détaillées sur l’installation, la configuration et l’utilisation de l’exécution de magasin pour les magasins Adobe Commerce.
 breadcrumb-title: Traitement des commandes en magasin pour Adobe Commerce
 index: true

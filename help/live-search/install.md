@@ -1,6 +1,6 @@
 ---
-title: "Prise en main de [!DNL Live Search]"
-description: "Découvrez la configuration requise et les étapes d’installation de  [!DNL Live Search] à partir d’Adobe Commerce."
+title: Prise en main de [!DNL Live Search]
+description: Découvrez la configuration requise et les étapes d’installation de  [!DNL Live Search] depuis Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
 source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491

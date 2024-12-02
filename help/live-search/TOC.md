@@ -1,7 +1,7 @@
 ---
-user-guide-title: « Guide [!DNL Live Search] »
-user-guide-description: "Ce guide fournit des instructions détaillées sur l’utilisation de  [!DNL Live Search] depuis Adobe Commerce."
-breadcrumb-title: « Guide [!DNL Live Search] »
+user-guide-title: Guide [!DNL Live Search]
+user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de  [!DNL Live Search] depuis Adobe Commerce.
+breadcrumb-title: Guide [!DNL Live Search]
 role: Admin
 feature: Services, Search
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

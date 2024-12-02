@@ -1,6 +1,6 @@
 ---
-title: "Types de synchronisation"
-description: "Les synonymes à sens unique et à deux sens [!DNL Live Search] étendent la définition des mots-clés."
+title: Types de synchronisation
+description: Les synonymes  [!DNL Live Search] unidirectionnels et bidirectionnels étendent la définition des mots-clés.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt

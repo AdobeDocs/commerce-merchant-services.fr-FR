@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Catalog Service] Guide Overview'
-description: '[!DNL Catalog Service for Adobe Commerce] permet de récupérer le contenu des pages d’affichage de produit et des pages de liste de produits plus rapidement que les requêtes GraphQL natives d’Adobe Commerce.'
+title: '[!DNL Catalog Service] - Aperçu du guide'
+description: '[!DNL Catalog Service for Adobe Commerce] permet de récupérer le contenu des pages d’affichage de produit et des pages de liste de produits plus rapidement que les requêtes GraphQL Adobe Commerce natives.'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
 recommendations: noCatalog
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307

@@ -1,6 +1,6 @@
 ---
 title: Intégration et installation
-description: "Découvrez comment installer [!DNL Catalog Service]"
+description: Découvrez comment installer  [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
 source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt

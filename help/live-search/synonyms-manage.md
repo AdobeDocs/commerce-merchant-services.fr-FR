@@ -1,6 +1,6 @@
 ---
-title: "Gestion des Synonymes"
-description: "Découvrez comment gérer les synonymes  [!DNL Live Search] existants."
+title: Gestion des Synonymes
+description: Découvrez comment gérer les synonymes  [!DNL Live Search] existants.
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
 source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt

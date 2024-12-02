@@ -1,6 +1,6 @@
 ---
-title: "Gestion des facettes"
-description: "Découvrez comment gérer les  [!DNL Live Search] facettes existantes."
+title: Gestion des facettes
+description: Découvrez comment gérer les facettes  [!DNL Live Search] existantes.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt

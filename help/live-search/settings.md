@@ -1,6 +1,6 @@
 ---
-title: "Paramètres"
-description: "Configurez les paramètres du service  [!DNL Live Search] ."
+title: Paramètres
+description: Configurez les paramètres du service  [!DNL Live Search] .
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt

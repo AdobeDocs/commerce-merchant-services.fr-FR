@@ -1,6 +1,6 @@
 ---
 title: Inventory management Source Transfer
-description: "Configurez les stocks pour le  [!DNL Store Fulfillment solution]  avec Adobe Commerce Inventory management. Configurez un nouveau stock et transférez le stock par défaut afin de pouvoir l’affecter aux sources configurées pour activer les fonctionnalités de nettoyage de magasin requises par la solution d’exécution de magasin."
+description: Configurez les stocks pour le  [!DNL Store Fulfillment solution]  avec Adobe Commerce Inventory management. Configurez un nouveau stock et transférez le stock par défaut afin de pouvoir l’affecter aux sources configurées pour activer les fonctionnalités de nettoyage de magasin requises par la solution d’exécution de magasin.
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration

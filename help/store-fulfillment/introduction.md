@@ -1,6 +1,6 @@
 ---
-title: "Introduction à [!DNL Store Fulfillment]"
-description: "Découvrez comment [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] prend en charge l’achat en ligne, la prise en charge en magasin (BOPIS) pour les clients. Utilisez le mobile d’assistance au magasin pour rationaliser l’exécution BOPIS et le traitement des commandes pour les associés au magasin et les clients Commerce."
+title: Présentation de [!DNL Store Fulfillment]
+description: Découvrez comment  [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] prend en charge l’achat en ligne, la prise en charge en magasin (BOPIS) pour les clients. Utilisez le mobile d’ assistance au magasin pour rationaliser l’exécution BOPIS et le traitement des commandes pour les associés au magasin et les clients Commerce.
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c

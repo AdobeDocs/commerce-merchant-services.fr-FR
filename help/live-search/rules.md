@@ -1,6 +1,6 @@
 ---
-title: "Rechercher un marchandisage"
-description: "[!DNL Live Search] Les règles de marchandisage combinent logique et actions pour façonner l’expérience d’achat."
+title: Marchandisage des recherches
+description: '[!DNL Live Search] Les règles de marchandisage combinent logique et actions pour façonner l’expérience d’achat.'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt

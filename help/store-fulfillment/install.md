@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: "Installez le  [!DNL Store Fulfillment solution] pour un storefront Adobe Commerce à l’aide du compositeur pour PHP."
+description: Installez le  [!DNL Store Fulfillment solution]  pour un storefront Adobe Commerce à l’aide du compositeur pour PHP.
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install

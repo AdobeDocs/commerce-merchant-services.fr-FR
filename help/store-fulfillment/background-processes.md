@@ -1,6 +1,6 @@
 ---
 title: Configuration du processus d’arrière-plan
-description: "Configurez les plannings pour les  [!DNL Store Fulfillment] processus en arrière-plan utilisés pour synchroniser les données avec les services d’exécution."
+description: Configurez les plannings pour les processus  [!DNL Store Fulfillment] en arrière-plan utilisés pour synchroniser les données avec les services d’exécution.
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7

@@ -1,6 +1,6 @@
 ---
-title: "Performances"
-description: "L’ [!DNL Live Search] espace de travail des performances donne des informations sur les termes de recherche que les acheteurs utilisent."
+title: Performances
+description: L’ [!DNL Live Search] espace de travail Performances donne des informations sur les termes de recherche que les acheteurs utilisent.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt

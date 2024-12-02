@@ -1,6 +1,6 @@
 ---
-title: "Rechercher dans Workspace de marchandisage"
-description: "Découvrez comment vous déplacer dans l’espace de travail Rechercher le marchandisage."
+title: Recherche dans Workspace de marchandisage
+description: Découvrez comment contourner l’espace de travail Rechercher le marchandisage .
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt

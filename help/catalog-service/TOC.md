@@ -1,7 +1,7 @@
 ---
-user-guide-title: « Guide [!DNL Catalog Service] »
-user-guide-description: "Ce guide fournit des instructions détaillées sur l’utilisation de [!DNL Catalog Service] pour Adobe Commerce."
-breadcrumb-title: « Guide [!DNL Catalog Service] »
+user-guide-title: Guide [!DNL Catalog Service]
+user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de  [!DNL Catalog Service] pour Adobe Commerce.
+breadcrumb-title: Guide [!DNL Catalog Service]
 hide: true
 role: Admin
 feature: Services, Catalog Service

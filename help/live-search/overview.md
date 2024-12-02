@@ -1,6 +1,6 @@
 ---
 title: Qu’est-ce que  [!DNL Live Search] ?
-description: "[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, pertinente et intuitive."
+description: '[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, pertinente et intuitive.'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
