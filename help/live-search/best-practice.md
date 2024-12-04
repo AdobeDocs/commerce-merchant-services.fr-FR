@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Bonnes pratiques'
 description: Découvrez les bonnes pratiques pour implémenter  [!DNL Live Search] dans votre boutique.
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ Découvrez comment [gérer les redirections de recherche](https://experienceleag
 ## Amélioration de la pertinence des résultats de recherche
 
 Cette section explique comment améliorer la pertinence des résultats de recherche en implémentant des règles de recherche efficaces et en utilisant les métadonnées de produit pour garantir que les attributs précis et détaillés puissent faire l’objet de recherches.
+
+### Images
+
+Assurez-vous que les produits enfants des produits configurables comportent des images avec les rôles appropriés. Si vous disposez de produits parents ou enfants, il se peut que le résultat de la recherche ne contienne pas d’images.
+
+>[!NOTE]
+>
+>Les images dans les résultats de recherche peuvent être différentes selon le terme de recherche. Si le terme de recherche détermine qu’un produit enfant est plus pertinent, les images du produit enfant seront utilisées à la place des images du produit parent.
 
 ### Règles de recherche
 
