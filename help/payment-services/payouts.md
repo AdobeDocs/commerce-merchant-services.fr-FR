@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 9ccf4707ae46d2df52a5510c774688fe6da1d951
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ Vous pouvez télécharger un fichier .csv contenant toutes les transactions visi
 
 1. Sur la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Personnalisez la période de la période pour vos transactions ](#customize-transactions-timeframe).
-1. Cliquez sur l’icône _Télécharger_ (![](assets/icon-download.png){width="20" zoomable="yes"}).
+1. Cliquez sur l’icône _Télécharger_ (![Icône Télécharger](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Vos transactions de paiement sont téléchargées au format .csv.
 
