@@ -1,29 +1,30 @@
 ---
-title: Ajout d’attributs de commande personnalisés
+title: Ajouter des attributs de commande personnalisés
 description: Découvrez comment ajouter des attributs de commande personnalisés à vos données de back-office et envoyer ces attributs à l’Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 14d190726324e2f42d66c2270f2e27be5a74132f
+exl-id: 69b99cd7-33ee-4c22-8819-64e9d4410fb1
+source-git-commit: eb5cae83b705954ea44c89771f84b6dc99f87eaf
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 2%
 
 ---
 
-# Ajout d’attributs de commande personnalisés
+# Ajouter des attributs de commande personnalisés
 
-Dans cet article, vous apprenez à ajouter des attributs personnalisés aux événements back-office. Avec les attributs personnalisés, vous pouvez capturer des informations riches sur les données afin d’améliorer les analyses et de créer davantage d’expériences personnalisées pour vos acheteurs.
+Dans cet article, vous apprendrez à ajouter des attributs personnalisés aux événements back-office. Les attributs personnalisés vous permettent de capturer des informations de données riches afin d’améliorer les analyses et de créer davantage d’expériences personnalisées pour vos clientes et clients.
 
 Les attributs personnalisés sont pris en charge à deux niveaux :
 
 - Niveau de commande
-- Niveau de l’élément de commande
+- Niveau d’article de commande
 
 >[!NOTE]
 >
->Adobe [!DNL Commerce] prend en charge les attributs personnalisés ayant un type de données chaîne, booléen ou date.
+>Adobe [!DNL Commerce] prend en charge les attributs personnalisés ayant un type de données de chaîne, booléen ou date.
 
-L’ajout d’attributs personnalisés aux événements back-office requiert que vous :
+L’ajout d’attributs personnalisés aux événements de back-office nécessite que vous :
 
 1. Créez un projet dans votre installation [!DNL Commerce].
 1. Mettez à jour votre schéma afin que les nouveaux attributs personnalisés puissent être correctement ingérés dans Experience Platform.
@@ -31,11 +32,11 @@ L’ajout d’attributs personnalisés aux événements back-office requiert que
 
 >[!IMPORTANT]
 >
->La structure de répertoire et les exemples de code ci-dessous illustrent la manière dont vous pouvez implémenter des attributs personnalisés. La structure de répertoire et le code réels requis dépendent de la configuration et de l’environnement de votre magasin.
+>La structure de répertoires et les exemples de code ci-dessous illustrent comment implémenter des attributs personnalisés. La structure et le code de répertoire réels requis dépendent de la configuration et de l’environnement de votre magasin.
 
-## Etape 1 : création de la structure de répertoire
+## Étape 1 : créer la structure de répertoires
 
-1. Accédez au répertoire `app/code` de votre installation [!DNL Commerce] et créez un répertoire de module. Par exemple : `Magento/AepCustomAttributes`. Ce répertoire contient les fichiers nécessaires à vos attributs personnalisés.
+1. Accédez au répertoire `app/code` de votre installation [!DNL Commerce] et créez un répertoire de modules. Par exemple : `Magento/AepCustomAttributes`. Ce répertoire contient les fichiers nécessaires aux attributs personnalisés.
 1. Dans le répertoire du module, créez un sous-répertoire appelé `etc`. Le répertoire `etc` contient les fichiers `module.xml`, `query.xml`, `di.xml` et `et_schema.xml`.
 
 ## Étape 2 : définir les dépendances et la version de configuration
@@ -44,234 +45,283 @@ Créez un fichier `module.xml` qui définit les dépendances et la version de co
 
 ```xml
 <?xml version="1.0"?>
-<!--
-/**
-* Copyright (c) [year], [name]. All rights reserved.
-*/
--->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Magento_SalesRuleStaging" setup_version="2.0.0">
+    <module name="Magento_AepCustomAttributes">
         <sequence>
-            <module name="Magento_Staging"/>
-            <module name="Magento_SalesRule"/>
+            <module name="Magento_SalesOrderDataExporter"/>
         </sequence>
     </module>
 </config>
 ```
 
-## Étape 3 : récupération des données de commande client
+## Étape 3 : récupérer les données de commande client
 
-Créez un fichier `query.xml` qui récupère les données de commande client. Par exemple :
+Créez un fichier `query.xml` qui récupère les données des commandes client. Par exemple :
 
 ```xml
-<query>
-    <source name="sales_order" type="sales">
-        <attribute name="increment_id" operator="eq" alias="order_increment_id"/>
-        <link source="inventory_source_item" condition_type="by_sku"/>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:Module:Magento_QueryXml:etc/query.xsd">
+  <query name="salesOrdersV2">
+    <source name="sales_order">
+      <link-source name="sales_order_inventory_source" link-type="inner">
+        <attribute name="inventory_source_code" alias="inventory_source" />
+        <using glue="and">
+          <condition attribute="order_id" operator="eq" type="identifier">entity_id</condition>
+         </using> 
+        </link-source>
     </source>
-</query>
+  </query>
+  </config>
 ```
 
-## Étape 4 : configuration de l’injection de dépendance
+## Étape 4 : Configurez l’injection de dépendance
 
 Créez un fichier `di.xml` qui configure l’injection de dépendance. Par exemple :
 
 ```xml
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.instrumentedtest"
-          android:versionCode="1"
-          android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/>
-    
-    <instrumentation
-        android:name=".MyInstrumentationTestRunner"
-        android:targetPackage="com.example.instrumentedtest"/>
-    
-    <!-- More instrumentation elements might be here -->
-</manifest>
+  <?xml version="1.0"?>
+  <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+      <type name="Magento\AepCustomAttributes\Model\Provider\CustomAttribute">
+          <arguments>
+              <argument name="usingField" xsi:type="string">commerceOrderId</argument>
+          </arguments>
+      </type>
+      <type name="Magento\AepCustomAttributes\Model\Provider\OrderItemCustomAttribute">
+          <arguments>
+              <argument name="usingField" xsi:type="string">entityId</argument>
+          </arguments>
+      </type>
+      <type name="Magento\DataServices\Model\ProductContext">
+          <plugin name="product-context-plugin" type="Magento\AepCustomAttributes\Plugin\Model\ProductContext"/>
+      </type>
+  </config>
 ```
 
-## Étape 5 : définition des services utilisés pour l’injection de dépendance
+## Étape 5 : définir les services utilisés pour l’injection de dépendance
 
 Créez un fichier `et_schema.xml` qui définit les services utilisés pour l’injection de dépendance. Par exemple :
 
 ```xml
-<services>
-    <service id="App\Controller\MainController" class="App\Controller\MainController">
-        <argument type="service" id="doctrine.orm.default_entity_manager"/>
-        <argument type="service" id="form.factory"/>
-        <argument type="service" id="security.authorization_checker"/>
-    </service>
-
-    <!-- ... -->
-
-    <service id="App\Controller\SecurityController" class="App\Controller\SecurityController">
-        <argument type="service" id="security.authentication_utils"/>
-        <tag name="controller.service_arguments"/>
-    </service>
-
-    <!-- ... -->
-</services>
+  <?xml version="1.0"?>
+  <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_DataExporter:etc/et_schema.xsd">
+      <record name="OrderV2">
+          <field name="additionalInformation" type="CustomAttribute" repeated="true" provider="Magento\AepCustomAttributes\Model\Provider\CustomAttribute">
+              <using field="commerceOrderId"/>
+          </field>
+      </record>
+      <record name="OrderItemV2">
+          <field name="additionalInformation" type="CustomAttribute" repeated="true" provider="Magento\AepCustomAttributes\Model\Provider\OrderItemCustomAttribute">
+              <using field="entityId"/>
+          </field>
+      </record>
+  </config>
 ```
 
-## Étape 6 : création d’un répertoire pour les fichiers PHP
+## Etape 6 : Créer un répertoire pour les fichiers PHP
 
 Au même niveau que le répertoire `etc`, créez un répertoire appelé `Module/Provider`. Ce répertoire contient les fichiers PHP `OrderCustomAttributes` et `OrderItemCustomAttributes`.
 
-## Étape 7 : Définition des attributs OrderCustomAttributes
+## Étape 7 : définir OrderCustomAttributes
 
-Créez un fichier `OrderCustomAttributes.php` qui définit les attributs personnalisés de commande. Par exemple :
+Créez un fichier `OrderCustomAttributes.php` qui définit les attributs personnalisés d’ordre. Par exemple :
 
 ```php
-namespace App\Transformers;
+declare(strict_types=1);
 
-use League\Fractal\TransformerAbstract;
-use Illuminate\Support\Collection;
+namespace Magento\AepCustomAttributes\Model\Provider;
 
-class CustomAttributeTransformer extends TransformerAbstract
+use Magento\Framework\Serialize\Serializer\Json;
+
+class CustomAttribute
 {
-    protected $availableIncludes = [];
-    protected $defaultIncludes = [];
+  /**
+   * @var Json
+   */
+  private Json $jsonSerializer;
 
-    public function __construct($signsField, $jsonSignsField = null)
-    {
-        $this->signsField = $signsField;
-        $this->jsonSignsField = $jsonSignsField;
-    }
+  /**
+   * @var string
+   */
+  private string $usingField = '';
 
-    public function transform(Collection $collection)
-    {
-        // Initialize array for additional information.
-        $additionalInformation = [];
+  /**
+   * @param string $usingField
+   * @param Json $jsonSerializer
+   */
+  public function __construct(
+      string $usingField,
+      Json $jsonSerializer
+  ) {
+      $this->usingField = $usingField;
+      $this->jsonSerializer = $jsonSerializer;
+  }
 
-        // Source - this comes from values sent to this transformer.
-        foreach ($collection->{$this->signsField} ?: [] as $value) {
-            if (is_array($value)) {
-                // If value is an array, serialize it.
-                foreach ($value as &$item) {
-                    if (isset($item['custom_attr'])) {
-                        // Serialize custom attribute data.
-                        ...
-                    }
-                }
-            } else {
-                // Add non-array values directly.
-                ...
-            }
-        }
+  /**
+   * @param array $values
+   * @return array
+   */
+  public function get(array $values): array
+  {
+      $output = [];
 
-        ...
+      /**
+       * Entity IDs
+       */
+      $ids = array_column($values, $this->usingField);
 
-        return [
-            'current' => ...,
-            'additional_information' => ...,
-            'source' => ...,
-        ];
-    }
+      foreach ($this->flatten($values) as $row) {
+          $info = \is_string($row['additionalInformation']) ? $row['additionalInformation'] : '{}';
+          $unserializedData = $this->jsonSerializer->unserialize($info) ?? [];
 
-    private function flatten(array $values)
-    {
-      return Arr::flatten($values);
+          if (isset($row)) {
+              $unserializedData['order_channel'] = 'order_channel';
+              $unserializedData['order_status'] = 'order_status';
+
+              $additionalInformation = [];
+              foreach ($unserializedData as $name => $value) {
+                  $additionalInformation[] = [
+                      'name' => $name,
+                      'value' => \is_string($value) ? $value : $this->jsonSerializer->serialize($value)
+                  ];
+              }
+              foreach ($additionalInformation as $information) {
+                  $output[] = [
+                      'additionalInformation' => $information,
+                      $this->usingField => $row[$this->usingField],
+                  ];
+              }
+          }
+      }
+      return $output;
+  }
+
+  /**
+   * @param $values
+   * @return array
+   */
+  private function flatten($values): array
+  {
+      if (isset(current($values)[0])) {
+          return array_merge([], ...array_values($values));
+      }
+      return $values;
   }
 }
 ```
 
-## Étape 8 : définition des attributs personnalisés OrderItem
+## Étape 8 : définir OrderItemCustomAttributes
 
 Créez un fichier `OrderItemCustomAttributes.php` qui définit les attributs personnalisés de l’élément de commande. Par exemple :
 
 ```php
+declare(strict_types=1);
+
 namespace Magento\AepCustomAttributes\Model\Provider;
 
 use Magento\Framework\Serialize\Serializer\Json;
 
 class OrderItemCustomAttribute
 {
-    private Json $jsonSerializer;
-    private string $usingField;
+  /**
+   * @var Json
+   */
+  private Json $jsonSerializer;
 
-    public function __construct(Json $jsonSerializer, string $usingField)
-    {
-        $this->jsonSerializer = $jsonSerializer;
-        $this->usingField = $usingField;
-    }
+  /**
+   * @var string
+   */
+  private string $usingField = '';
 
-    public function get(array $values): array
-    {
-        $output = [];
-        $values = $this->flatten($values);
+  /**
+   * @param Json $jsonSerializer
+   * @param string $usingField
+   */
+  public function __construct(
+      Json $jsonSerializer,
+      string $usingField
+  ) {
+      $this->jsonSerializer = $jsonSerializer;
+      $this->usingField = $usingField;
+  }
 
-        foreach ($values as $row) {
-            $info = \is_string($row['additionalInformation']) ? $row['additionalInformation'] : '{}';
-            $unserializedData = $this->jsonSerializer->unserialize($info) ?? [];
+  /**
+   * Getting additional attributes data.
+   *
+   * @param array $values
+   * @return array
+   */
+  public function get(array $values): array
+  {
+      $output = [];
+      $values = $this->flatten($values);
 
-            $attrLabel = implode(',', ['label1', 'label2']);
-            $unserializedData['custom_attr1'] = $attrLabel;
+      foreach ($values as $row) {
+          $info = \is_string($row['additionalInformation']) ? $row['additionalInformation'] : '{}';
+          $unserializedData = $this->jsonSerializer->unserialize($info) ?? [];
+          $unserializedData['product_brand'] = implode(',', ['label 1', 'label 2']);
 
-            $additionalInformation = [];
-            foreach ($unserializedData as $name => $value) {
-                $additionalInformation[] = [
-                    'name' => $name,
-                    'value' => \is_string($value) ? $value : $this->jsonSerializer->serialize($value),
-                ];
-            }
+          $additionalInformation = [];
+          foreach ($unserializedData as $name => $value) {
+              $additionalInformation[] = [
+                  'name' => $name,
+                  'value' => \is_string($value) ? $value : $this->jsonSerializer->serialize($value)
+              ];
+          }
+          foreach ($additionalInformation as $information) {
+              $output[] = [
+                  'additionalInformation' => $information,
+                  $this->usingField => $row[$this->usingField],
+              ];
+          }
+      }
+      return $output;
+  }
 
-            foreach ($additionalInformation as $information) {
-                $output[] = [
-                    'additionalInformation' => $information,
-                    $this->usingField => $row[$this->usingField],
-                ];
-            }
-        }
-
-        return $output;
-    }
-
-    private function flatten(array $values): array
-    {
-        return array_merge([], ...array_values($values));
-    }
+  /**
+   * @param $values
+   * @return array
+   */
+  private function flatten($values): array
+  {
+      if (isset(current($values)[0])) {
+          return array_merge([], ...array_values($values));
+      }
+      return $values;
+  }
 }
 ```
 
-## Étape 9 : création d’un répertoire pour le fichier productContext
+## Étape 9 : créer un répertoire pour le fichier productContext
 
-Au même niveau que le répertoire `etc`, créez un répertoire appelé `Plugin/Module`. Ce répertoire contient le fichier `ProductContext.php` .
+Au même niveau que le répertoire `etc`, créez un répertoire appelé `Plugin/Module`. Ce répertoire contient le fichier `ProductContext.php`.
 
-## Étape 10 : définition de la classe ProductContext
+## Étape 10 : définir la classe ProductContext
 
-Créez un fichier appelé `ProductContext.php` qui définit la classe `ProductContext`. Par exemple :
+Créez un fichier appelé `ProductContext.php`qui définit la classe `ProductContext`. Par exemple :
 
 ```php
-namespace Magento\Catalog\Model\Product;
-
+<?php>
+namespace Magento\AepCustomAttributes\Plugin\Model;
+use Magento\Catalog\Model\Product;
+use Magento\DataServices\Model\ProductContext as Subject;
 use Magento\Framework\App\ResourceConnection;
-use Magento\Quote\Api\Data\CartInterface;
 
 class ProductContext
 {
-    private $brandCache = [];
-    private $resourceConnection;
-
+    private ?array $brandCache = [];
     public function __construct(
-        ResourceConnection $resourceConnection
-    ) {
-        $this->resourceConnection = $resourceConnection;
-    }
+        private ResourceConnection $resourceConnection ) {
+    }  
 
-    public function afterGetProductData($subject, array $result)
+    public function afterGetContextData(Subject $subject, array $result Product $product)
     {
-        if (isset($result['brand_id'])) {
-            if (!isset($this->brandCache[$result['brand_id']])) {
-                // @todo load brand label by brand id.
-                $this->brandCache[$result['brand_id']] = 'Brand Label ' . $result['brand_id'];
+        $brand = $product->getCustomAttribute('cust_attr1');
+        if (!empty($brand) && $brand->getValue()) {
+            $result['brands'] = ['brand_label_1', 'brand_label_2'];
             }
-            $result['brands'] = ['label' => $this->brandCache[$result['brand_id']]];
-        }
-
-        return $result;
-    }
-}
+            return $result;
+      }
+  }
 ```
 
 ## Étape 11 : Enregistrement du module
@@ -279,41 +329,44 @@ class ProductContext
 Au même niveau que le répertoire `etc`, créez un fichier `registration.php` qui enregistre le module. Par exemple :
 
 ```php
+<?php>
+declare(strict_types=1);
+
 use \Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'Dfe_Stripe',
+    'Magento_AepCustomAttributes',
     __DIR__
 );
 ```
 
-## Étape 12 : Étendre votre schéma XDM existant
+## Étape 12 : étendre votre schéma XDM existant
 
-Pour vous assurer que les nouveaux attributs de commande personnalisés peuvent être ingérés par votre schéma [!DNL Commerce] dans Experience Platform, vous devez étendre le schéma pour inclure ces champs personnalisés.
+Pour vous assurer que les nouveaux attributs de commande personnalisés peuvent être ingérés par votre schéma [!DNL Commerce] dans Experience Platform, vous devez étendre le schéma afin d’inclure ces champs personnalisés.
 
-Pour savoir comment étendre un schéma XDM existant afin d’inclure ces champs personnalisés, reportez-vous à l’article [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) de la documentation de l’Experience Platform. Le champ Identifiant du client est généré dynamiquement. Toutefois, la structure du champ doit ressembler à l’exemple fourni dans la documentation de l’Experience Platform.
+Pour savoir comment étendre un schéma XDM existant afin d’inclure ces champs personnalisés, consultez l’article [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) dans la documentation de l’Experience Platform. Le champ ID de client est généré dynamiquement ; toutefois, la structure du champ doit ressembler à l’exemple fourni dans la documentation de l’Experience Platform.
 
 >[!IMPORTANT]
 >
 >Les attributs personnalisés XDM doivent correspondre aux attributs envoyés depuis [!DNL Commerce].
 
-Pour `commerce.order`, ajoutez un champ pour le niveau de commande :
+Pour `commerce.order`, ajoutez un champ pour le niveau Commande :
 
 ![Niveau de commande](assets/order-level.png)
 
-Pour `productListItems`, ajoutez des champs au niveau de l’élément de commande :
+Pour `productListItems`, ajoutez des champs pour le niveau Article de commande :
 
-![Order Item Level](assets/order-item-level.png)
+![Niveau article de commande](assets/order-item-level.png)
 
 ## Étape 12 : confirmer que les données sont capturées
 
-Affichez l’onglet [Personnalisation des données](connect-data.md#data-customization) dans l’Admin pour confirmer que les données d’attributs personnalisés sont capturées et envoyées à l’Experience Platform.
+Consultez l’onglet [ Personnalisation des données ](connect-data.md#data-customization) dans l’interface d’administration pour confirmer que les données d’attribut personnalisé sont capturées et envoyées à l’Experience Platform.
 
 ### Dépannage
 
-Si le message `No custom order attributes found.` s&#39;affiche dans l&#39;onglet **[!UICONTROL Data Customization]**, vérifiez les points suivants :
+Si le message s’`No custom order attributes found.` dans l’onglet **[!UICONTROL Data Customization]** , confirmez ce qui suit :
 
-1. Vous avez rempli les conditions préalables pour activer l’[ extension du connecteur de données](overview.md#prerequisites).
-1. Vous avez configuré les [attributs de commande personnalisés](#add-custom-order-attributes).
+1. Vous avez rempli les conditions préalables pour activer l’extension [Data Connector](overview.md#prerequisites).
+1. Vous avez configuré [attributs de commande personnalisés](#add-custom-order-attributes).
 1. Au moins un événement de commande a été généré.
