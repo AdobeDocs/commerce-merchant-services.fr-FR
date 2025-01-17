@@ -1,37 +1,37 @@
 ---
-title: Installer [!DNL Data Connection]
-description: Découvrez comment installer, mettre à jour et désinstaller l’extension  [!DNL Data Connection] à partir d’Adobe Commerce.
+title: Installer  [!DNL Data Connection]
+description: Découvrez comment installer, mettre à jour et désinstaller l’extension  [!DNL Data Connection]  partir d’Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
+source-git-commit: ae8651e3c3e11d1ed4c39f4d989b816a74d2437b
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Installer [!DNL Data Connection]
 
-Avant d’installer l’extension, [vérifiez les conditions préalables](overview.md#prereqs).
+Avant d’installer l’extension, [consultez les conditions préalables](overview.md#prereqs).
 
 ## Installation de l’extension
 
-L’extension [!DNL Data Connection] est disponible sur [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Lorsque vous installez cette extension à partir de la ligne de commande du serveur, elle se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, **[!DNL Data Connection]** et **Commerce Services Connector** apparaissent dans le menu **System** sous **Services** dans Commerce _Admin_.
+L’extension [!DNL Data Connection] est disponible sur le marché d’Adobe [](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Lorsque vous installez cette extension à partir de la ligne de commande du serveur, elle se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, **[!DNL Data Connection]** et **Commerce Services Connector** apparaissent dans le menu **Système** sous **Services** dans Commerce _Admin_.
 
-![[!DNL Data Connection] extension Admin view](assets/epc-adminui.png)
+Vue d’administration de l’extension ![[!DNL Data Connection]](assets/epc-adminui.png)
 
 >[!IMPORTANT]
 >
->Bien que le nom de l’extension ait été remplacé par [!DNL Data Connection] depuis le connecteur Experience Platform, le nom du package reste `experience-platform-connector` pour prendre en charge la compatibilité ascendante.
+>Bien que le nom de l’extension soit passé de Connecteur Experience Platform à [!DNL Data Connection], le nom du package reste `experience-platform-connector` pour prendre en charge la rétrocompatibilité.
 
-1. Pour télécharger le package `experience-platform-connector`, exécutez le suivant à partir de la ligne de commande :
+1. Pour télécharger le package `experience-platform-connector`, exécutez ce qui suit à partir de la ligne de commande :
 
    ```bash
    composer require magento/experience-platform-connector
    ```
 
-   Ce métapaquage contient les modules et extensions suivants :
+   Ce métapaquet contient les modules et extensions suivants :
 
    - `magento/orders-connector`
    - `magento/data-services`
@@ -41,23 +41,25 @@ L’extension [!DNL Data Connection] est disponible sur [Adobe Marketplace](http
    - `magento/module-experience-connector-admin-graph-ql`
    - `magento/module-experience-connector-aep-integration`
 
-1. (Facultatif) Pour inclure des données [!DNL Live Search], qui comprennent [des événements de recherche](events.md#search-events), installez l’extension [[!DNL Live Search]](../live-search/install.md).
+1. (Facultatif) Pour inclure des données [!DNL Live Search], qui comprennent des [événements de recherche](events.md#search-events), installez l’extension [[!DNL Live Search]](../live-search/install.md).
 
-1. (Facultatif) Pour inclure des données B2B, qui comprennent [ événements de demande](events.md#b2b-events), installez l’ [extension B2B](#install-the-b2b-extension).
+1. (Facultatif) Pour inclure des données B2B, qui comprennent des [événements de demande d’approvisionnement](events.md#b2b-events), installez l’extension [B2B](#install-the-b2b-extension).
 
-### Installez les événements Adobe I/O et configurez le module customer-connector
+1. (Facultatif) Si vous êtes un professionnel de la santé, installez l’extension [Data Services HIPAA](#install-the-data-services-hipaa-extension) afin que vos données de back-office [!DNL Commerce] soient conformes à la loi HIPAA.
+
+### Installation des événements d’Adobe I/O et configuration du module customer-connector
 
 Après avoir installé l’extension `experience-platform-connector`, vous devez installer les événements d’Adobe I/O pour Adobe Commerce et configurer le module `customers-connector`.
 
-Les étapes suivantes s’appliquent à Adobe Commerce sur l’infrastructure cloud et aux installations sur site.
+Les étapes suivantes s’appliquent à la fois aux installations sur site et aux infrastructures cloud d’Adobe Commerce.
 
-1. Si vous exécutez Commerce 2.4.4 ou 2.4.5, utilisez la commande suivante pour charger les modules d’événement :
+1. Si vous exécutez Commerce version 2.4.4 ou 2.4.5, utilisez la commande suivante pour charger les modules d’événements :
 
    ```bash
    composer require magento/commerce-eventing=^1.0 --no-update
    ```
 
-   Commerce 2.4.6 et versions ultérieures chargent ces modules automatiquement.
+   Commerce 2.4.6 et versions ultérieures chargent automatiquement ces modules.
 
 1. Mettez à jour les dépendances du projet.
 
@@ -73,9 +75,9 @@ Les étapes suivantes s’appliquent à Adobe Commerce sur l’infrastructure cl
 
 Finalisez l’installation en fonction du type de déploiement : Adobe Commerce sur l’infrastructure cloud ou sur site.
 
-#### Sur l’infrastructure cloud
+#### Sur les infrastructures cloud
 
-Dans l’infrastructure Adobe Commerce on Cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+Dans Adobe Commerce sur les infrastructures cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
 
 ```bash
 stage:
@@ -89,9 +91,9 @@ Validez et envoyez les fichiers mis à jour dans l’environnement cloud. Lorsqu
 bin/magento config:set adobe_io_events/eventing/enabled 1
 ```
 
-#### Sur site
+#### On-premise
 
-Dans les environnements locaux, vous devez activer manuellement la génération de code et les événements Adobe Commerce :
+Dans les environnements sur site, vous devez activer manuellement la génération de code et les événements Adobe Commerce :
 
 ```bash
 bin/magento events:generate:module
@@ -103,31 +105,41 @@ bin/magento config:set adobe_io_events/eventing/enabled 1
 
 ### Installation de l’extension B2B
 
-Pour les commerçants B2B, installez l’extension suivante afin d’inclure les données d’événement [liste de demandes](events.md#b2b-events).
+Pour les commerçants B2B, installez l’extension suivante pour inclure les données d’événement [liste de demandes](events.md#b2b-events).
 
-Téléchargez l’extension `magento/experience-platform-connector-b2b` en exécutant les opérations suivantes à partir de la ligne de commande :
+Téléchargez l’extension `magento/experience-platform-connector-b2b` en exécutant la commande suivante à partir de la ligne de commande :
 
 ```bash
 composer require magento/experience-platform-connector-b2b
 ```
 
+### Installation de l’extension Data Services HIPAA
+
+Pour les commerçants du secteur de la santé, installez l’extension suivante pour vous assurer que les données d’événement back-office sont conformes à la norme HIPAA.
+
+Téléchargez l’extension `magento/module-data-services-hipaa` en exécutant la commande suivante à partir de la ligne de commande :
+
+```bash
+composer require magento/module-data-services-hipaa
+```
+
 ## Mettre à jour l’extension [!DNL Data Connection] {#update}
 
-Pour mettre à jour l’extension [!DNL Data Connection], exécutez les opérations suivantes à partir de la ligne de commande :
+Pour mettre à jour l’extension [!DNL Data Connection], exécutez la commande suivante à partir de la ligne de commande :
 
 ```bash
 composer update magento/experience-platform-connector --with-dependencies
 ```
 
-Ou, pour les marchands B2B :
+Ou, pour les commerçants B2B :
 
 ```bash
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-Pour effectuer une mise à jour vers une version majeure, telle que de 2.0.0 à 3.0.0, modifiez le fichier [!DNL Composer] `.json` racine du projet comme suit :
+Pour effectuer une mise à jour vers une version majeure telle que de 2.0.0 à 3.0.0, modifiez le fichier `.json` de [!DNL Composer] racine du projet comme suit :
 
-1. Ouvrez le fichier racine `composer.json` et recherchez `magento/experience-platform-connector`.
+1. Ouvrez le fichier de `composer.json` racine et recherchez des `magento/experience-platform-connector`.
 
 1. Dans la section `require` , mettez à jour le numéro de version comme suit :
 
@@ -145,7 +157,7 @@ Pour effectuer une mise à jour vers une version majeure, telle que de 2.0.0 à 
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-   Ou, pour les marchands B2B :
+   Ou, pour les commerçants B2B :
 
    ```bash
    composer update magento/experience-platform-connector-b2b --with-dependencies
@@ -153,4 +165,4 @@ Pour effectuer une mise à jour vers une version majeure, telle que de 2.0.0 à 
 
 ## Désinstaller l’extension [!DNL Data Connection] {#uninstall}
 
-Pour désinstaller l’extension [!DNL Data Connection], reportez-vous à la section [désinstallation des modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+Pour désinstaller l’extension [!DNL Data Connection], consultez la section [désinstallation des modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

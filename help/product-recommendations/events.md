@@ -1,69 +1,73 @@
 ---
 title: Collecter des données
-description: Découvrez comment les événements collectent des données pour les recommandations de produits.
+description: Découvrez comment les événements collectent des données pour  [!DNL Product Recommendations].
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Collecter des données
 
-Lorsque vous installez et configurez des fonctionnalités Adobe Commerce basées sur SaaS telles que [ Product Recommendations](install-configure.md) ou [Live Search](../live-search/install.md), les modules déploient la collecte de données comportementales sur votre vitrine. Ce mécanisme collecte des données comportementales anonymes auprès de vos acheteurs et alimente les recommandations de produits et les résultats de la [recherche en direct](../live-search/overview.md). Par exemple, l’événement `view` est utilisé pour calculer le type de recommandation `Viewed this, viewed that` et l’événement `place-order` est utilisé pour calculer le type de recommandation `Bought this, bought that`.
+Lorsque vous installez et configurez des fonctions Adobe Commerce SaaS telles que [[!DNL Product Recommendations]](install-configure.md) ou [[!DNL Live Search]](../live-search/install.md), les modules déploient la collecte de données comportementales sur votre storefront. Ce mécanisme collecte des données comportementales anonymisées de vos clients et alimente [!DNL Product Recommendations]. Par exemple, l’événement `view` est utilisé pour calculer le type de recommandation `Viewed this, viewed that` et l’événement `place-order` est utilisé pour calculer le type de recommandation `Bought this, bought that`.
 
 >[!NOTE]
 >
->La collecte de données aux fins des recommandations de produits n’inclut pas d’informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les identifiants de cookie et les adresses IP, sont strictement anonymisés. Découvrez [more](https://www.adobe.com/privacy/experience-cloud.html).
+>La collecte de données à des fins de [!DNL Product Recommendations] n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont strictement anonymisés. En savoir [plus](https://www.adobe.com/privacy/experience-cloud.html).
 
-## Types et événements de données
+## Clients du secteur de la santé
 
-Il existe deux types de données utilisés dans Product Recommendations :
+Si vous êtes un client du secteur de la santé et que vous avez installé l’extension [Data Services HIPAA](../data-connection/hipaa-readiness.md#installation), qui fait partie de l’extension [Data Connection](../data-connection/overview.md), les données d’événement de storefront utilisées par [!DNL Product Recommendations] ne sont plus capturées. En effet, les données d’événement de storefront sont générées côté client. Pour continuer à capturer et à envoyer des données d’événement de storefront, réactivez la collecte d’événements pour [!DNL Product Recommendations]. Voir [configuration générale](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) pour en savoir plus.
 
-- **Comportement** - Données provenant de l’engagement d’un acheteur sur votre site, telles que les consultations de produits, les articles ajoutés à un panier et les achats.
-- **Catalogue** - Métadonnées de produit telles que le nom, le prix, la disponibilité, etc.
+## Types de données et événements
 
-Lors de l’installation du module `magento/product-recommendations`, Adobe Sensei agrège les données comportementales et de catalogue, créant ainsi un Recommendations de produits pour chaque type de recommandation. Le service Recommendations de produit déploie ensuite ces recommandations sur votre storefront sous la forme d’un widget contenant les _éléments_ recommandés.
+Deux types de données sont utilisés dans Product Recommendations :
 
-Certains types de recommandations utilisent les données comportementales de vos acheteurs pour former des modèles d’apprentissage automatique afin de créer des recommandations personnalisées. D’autres types de recommandations utilisent uniquement les données du catalogue et n’utilisent aucune donnée comportementale. Si vous souhaitez commencer rapidement à utiliser Product Recommendations sur votre site, vous pouvez utiliser les types de recommandations suivants, catalogue uniquement :
+- **Comportemental** - Données provenant de l’engagement d’un acheteur sur votre site, telles que les consultations de produits, les articles ajoutés au panier et les achats.
+- **Catalogue** - Métadonnées du produit, telles que le nom, le prix, la disponibilité, etc.
+
+Lorsque vous installez le module `magento/product-recommendations`, Adobe Sensei agrège les données comportementales et de catalogue, créant ainsi une Recommendations de produit pour chaque type de recommandation. Le service Product Recommendations déploie ensuite ces recommandations sur votre storefront sous la forme d’un widget qui contient les _éléments_ recommandés pour le produit.
+
+Certains types de recommandations utilisent les données comportementales de vos clients pour entraîner des modèles de machine learning afin de créer des recommandations personnalisées. D’autres types de recommandations utilisent uniquement les données de catalogue et n’utilisent aucune donnée comportementale. Si vous souhaitez commencer rapidement à utiliser Product Recommendations sur votre site, vous pouvez utiliser les types de recommandations de catalogue uniquement suivants :
 
 - `More like this`
 - `Visual similarity`
 
 ### Démarrage à froid
 
-Quand pouvez-vous commencer à utiliser des types de recommandations qui utilisent des données comportementales ? Ça dépend. On parle alors de problème _Cold Start_.
+Quand pouvez-vous commencer à utiliser des types de recommandations qui utilisent des données comportementales ? Ça dépend. C’est ce qu’on appelle le problème _Cold Start_.
 
-Le problème _Cold Start_ fait référence au temps nécessaire pour qu’un modèle s’entraîne et devienne efficace. Pour les recommandations de produits, cela signifie attendre qu’Adobe Sensei collecte suffisamment de données pour former ses modèles d’apprentissage automatique avant de déployer des unités de recommandation sur votre site. Plus les modèles contiennent de données, plus les recommandations sont précises et utiles. Comme la collecte des données se produit sur un site actif, il est préférable de démarrer ce processus tôt en installant et en configurant le module `magento/production-recommendations`.
+Le problème du _démarrage à froid_ fait référence au temps nécessaire pour qu’un modèle s’entraîne et devienne efficace. Pour les recommandations de produits, cela signifie attendre qu’Adobe Sensei collecte suffisamment de données pour entraîner ses modèles de machine learning avant de déployer des unités de recommandation sur votre site. Plus les modèles contiennent de données, plus les recommandations sont précises et utiles. Comme la collecte de données se produit sur un site en ligne, il est préférable de démarrer ce processus rapidement en installant et en configurant le module `magento/production-recommendations`.
 
-Le tableau suivant fournit des instructions générales sur le temps nécessaire à la collecte de données suffisantes pour chaque type de recommandation :
+Le tableau suivant fournit des instructions générales sur le temps nécessaire à la collecte de suffisamment de données pour chaque type de recommandation :
 
-| Type de recommandation | Heure de formation | Remarques |
+| Type de recommandation | Durée de l’apprentissage | Remarques |
 |---|---|---|
-| Basé sur la popularité (`Most viewed`, `Most purchased`, `Most added to cart`) | Variable | Dépend du volume des événements : les vues sont les plus courantes et l’apprentissage est donc plus rapide ; elles sont ensuite ajoutées au panier, puis les achats |
-| `Viewed this, viewed that` | Nécessite une formation plus poussée | Le volume des consultations de produits est relativement élevé. |
-| `Viewed this, bought that`, `Bought this, bought that` | Nécessite le plus de formation | Les événements d’achat sont les événements les plus rares d’un site de commerce, en particulier par rapport aux consultations de produits. |
-| `Trending` | Nécessite trois jours de données pour établir une base de popularité | Les tendances sont une mesure de l’élan récent de popularité d’un produit par rapport à sa propre référence de popularité. Le score de tendance d’un produit est calculé à l’aide d’un jeu de premier plan (une popularité récente sur 24 heures) et d’un jeu d’arrière-plan (une ligne de base de popularité sur 72 heures). Si la popularité d’un élément augmente significativement au cours d’une période de 24 heures par rapport à sa popularité de base, il reçoit alors un score de tendance élevé. Chaque produit a ce score, et les éléments ayant le meilleur score à tout moment forment l’ensemble des produits les plus tendance. |
+| Basé sur la popularité (`Most viewed`, `Most purchased`, `Most added to cart`) | Variable | Dépend du volume d’événements : les vues sont les plus courantes et apprennent donc plus rapidement ; ajoute ensuite au panier, puis achète. |
+| `Viewed this, viewed that` | Nécessite une formation supplémentaire | Le volume des consultations de produits est récemment élevé |
+| `Viewed this, bought that`, `Bought this, bought that` | Requiert le plus de formation | Les événements d’achat sont les événements les plus rares sur un site commercial, en particulier par rapport aux consultations de produits |
+| `Trending` | Nécessite trois jours de données pour établir une base de popularité | Les tendances sont une mesure de l’élan récent de la popularité d’un produit par rapport à sa propre base de popularité. Le score de tendance d’un produit est calculé à l’aide d’un ensemble de premier plan (popularité récente sur 24 heures) et d’un ensemble d’arrière-plan (popularité de base sur 72 heures). Si la popularité d’un élément augmente considérablement au cours d’une période de 24 heures par rapport à sa popularité de base, il obtient un score de tendance élevé. Chaque produit a ce score, et les articles ayant le score le plus élevé à tout moment comprennent l&#39;ensemble des produits les plus en tendance. |
 
-Autres variables pouvant avoir un impact sur le temps nécessaire à l’entraînement :
+Autres variables pouvant avoir une incidence sur le temps nécessaire à l’entraînement :
 
-- Un volume de trafic plus élevé contribue à accélérer l’apprentissage
-- Certains types de recommandations s’exécutent plus rapidement que d’autres.
-- Adobe Commerce recalcule les données comportementales toutes les quatre heures. Recommendations devient plus précis plus longtemps il est utilisé sur votre site.
+- Un trafic plus important contribue à un apprentissage plus rapide
+- Certains types de recommandations s’entraînent plus rapidement que d’autres
+- Adobe Commerce recalcule les données comportementales toutes les quatre heures. Les Recommendations deviennent plus précises au fur et à mesure qu’elles sont utilisées sur votre site.
 
-Pour vous aider à visualiser la progression de la formation de chaque type de recommandation, la page [créer une recommandation](create.md#readiness-indicators) affiche des indicateurs de préparation.
+Pour visualiser plus facilement la progression de l’entraînement pour chaque type de recommandation, la page [Créer une recommandation](create.md#readiness-indicators) affiche des indicateurs de préparation.
 
-Pendant que les données sont collectées sur votre site actif et que les modèles d’apprentissage automatique sont en cours de formation, vous pouvez terminer d’autres tâches de test et de configuration nécessaires à la configuration des recommandations. Lorsque ce travail sera terminé, les modèles disposeront de suffisamment de données pour créer des recommandations utiles, ce qui vous permettra de les déployer sur votre vitrine.
+Pendant que les données sont collectées sur votre site en ligne et que les modèles de machine learning sont en cours d’entraînement, vous pouvez terminer d’autres tâches de test et de configuration nécessaires à la configuration des recommandations. Lorsque vous aurez terminé ce travail, les modèles disposeront de suffisamment de données pour créer des recommandations utiles, ce qui vous permettra de les déployer sur votre storefront.
 
-Si votre site ne reçoit pas suffisamment de trafic (vues, achats, tendances) pour la plupart des SKU de produits, il se peut qu’il n’y ait pas assez de données pour terminer le processus d’apprentissage. Cela peut rendre l’indicateur de préparation dans l’Admin bloqué. Les indicateurs de préparation sont destinés à fournir aux commerçants un autre point de données pour choisir le type de recommandations qui convient le mieux à leur magasin. Les chiffres sont un guide et peuvent ne jamais atteindre 100 %. [En savoir plus](create.md#readiness-indicators) sur les indicateurs de préparation.
+Si votre site n’obtient pas suffisamment de trafic (vues, achats, tendances) pour la plupart des SKU de produit, il se peut qu’il n’y ait pas suffisamment de données pour terminer le processus d’apprentissage. L’indicateur de préparation dans l’administrateur peut alors sembler bloqué. Les indicateurs de préparation sont destinés à fournir aux commerçants un autre point de données pour choisir le type de recommandations le mieux adapté à leur magasin. Les chiffres sont indicatifs et peuvent ne jamais atteindre 100 %. [En savoir plus](create.md#readiness-indicators) sur les indicateurs de préparation.
 
 ### Recommandations de sauvegarde {#backuprecs}
 
-Si les données d’entrée ne suffisent pas à fournir tous les éléments de recommandation demandés dans une unité, Adobe Commerce fournit des recommandations de sauvegarde pour remplir les unités de recommandation. Par exemple, si vous déployez le type de recommandation `Recommended for you` sur votre page d’accueil, un nouvel acheteur de votre site n’a pas généré suffisamment de données comportementales pour recommander avec précision des produits personnalisés. Dans ce cas, Adobe Commerce affiche des éléments en fonction du type de recommandation `Most viewed` pour cet acheteur.
+Si les données d’entrée sont insuffisantes pour fournir tous les éléments de recommandation demandés dans une unité, Adobe Commerce fournit des recommandations de sauvegarde pour renseigner les unités de recommandation. Par exemple, si vous déployez le type de recommandation `Recommended for you` sur votre page d’accueil, un nouvel acheteur sur votre site n’a pas généré suffisamment de données comportementales pour recommander des produits personnalisés avec précision. Dans ce cas, Adobe Commerce propose à cet acheteur des articles basés sur le type de recommandation `Most viewed`.
 
-Dans le cas d’une collecte de données d’entrée insuffisante, les types de recommandations suivants reviennent au type de recommandation `Most viewed` :
+Si la collecte des données d’entrée est insuffisante, les types de recommandation suivants reviennent à `Most viewed` type de recommandation :
 
 - `Recommended for you`
 - `Viewed this, viewed that`
@@ -75,34 +79,34 @@ Dans le cas d’une collecte de données d’entrée insuffisante, les types de 
 
 ### Événements
 
-Le [collecteur d’événements Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) répertorie tous les événements déployés sur votre storefront. Toutefois, il existe dans cette liste un sous-ensemble d’événements spécifiques à Recommendations de produit. Ces événements collectent des données lorsque les acheteurs interagissent avec les unités de recommandations sur le storefront et optimisent les mesures utilisées pour vous aider à analyser les performances de vos recommandations.
+Le [collecteur d’événements du storefront Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) répertorie tous les événements déployés sur votre storefront. Cette liste contient un sous-ensemble d’événements spécifiques à [!DNL Product Recommendations]. Ces événements collectent des données lorsque les acheteurs interagissent avec les unités de recommandation sur le storefront et alimentent les mesures afin d’analyser la performance de vos recommandations.
 
 | Événement | Description |
 | --- | --- |
-| `impression-render` | Envoyé lorsque l’unité de recommandation est générée sur la page. Si une page comporte deux unités de recommandation (achat-achat, affichage-affichage), deux événements `impression-render` sont envoyés. Cet événement est utilisé pour effectuer le suivi de la mesure pour les impressions. |
-| `rec-add-to-cart-click` | L’acheteur clique sur le bouton **Ajouter au panier** pour un article de l’unité de recommandation. |
+| `impression-render` | Envoyé lorsque l’unité de recommandation est rendue sur la page. Si une page comporte deux unités de recommandation (achat-achat, affichage), deux événements `impression-render` sont envoyés. Cet événement est utilisé pour effectuer le suivi de la mesure pour les impressions. |
+| `rec-add-to-cart-click` | L’acheteur clique sur le bouton **Ajouter au panier** pour un article dans l’unité de recommandation. |
 | `rec-click` | L’acheteur clique sur un produit dans l’unité de recommandation. |
-| `view` | Envoyé lorsque l’unité de recommandation devient visible à au moins 50 %, par exemple en faisant défiler la page vers le bas. Par exemple, si une unité de recommandation comporte deux lignes, un événement `view` est envoyé lorsqu’une ligne plus un pixel de la seconde ligne devient visible pour l’acheteur. Si l’acheteur fait défiler plusieurs fois la page vers le haut ou vers le bas, l’événement `view` est envoyé autant de fois que l’acheteur voit à nouveau l’entité de recommandation entière sur la page. |
+| `view` | Envoyé lorsque l’unité de recommandation devient visible à au moins 50 %, par exemple en faisant défiler la page vers le bas. Par exemple, si une unité de recommandation comporte deux lignes, un événement `view` est envoyé lorsqu’une ligne plus un pixel de la deuxième ligne devient visible pour l’acheteur. Si l’acheteur fait défiler la page de haut en bas plusieurs fois, l’événement `view` est envoyé autant de fois qu’il voit à nouveau l’ensemble de l’unité de recommandation sur la page. |
 
 >[!NOTE]
 >
->Les mesures de recommandation de produit sont optimisées pour les vitrines Luma. Si votre vitrine est implémentée avec PWA Studio, reportez-vous à la [documentation du PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si vous utilisez une technologie front-end personnalisée telle que React ou Vue JS, apprenez à intégrer [Product Recommendations dans un environnement sans interface](headless.md).
+>Les mesures de recommandations de produits sont optimisées pour les storefronts Luma. Si votre storefront est implémenté avec PWA Studio, reportez-vous à la documentation du PWA [](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si vous utilisez une technologie frontale personnalisée, telle que React ou Vue JS, découvrez comment intégrer [Product Recommendations dans un environnement découplé](headless.md).
 
-#### Événements de tableau de bord obligatoires
+#### Événements de tableau de bord requis
 
-Les événements suivants sont nécessaires pour remplir le [[!DNL Product Recommendations] tableau de bord](workspace.md)
+Les événements suivants sont requis pour renseigner le tableau de bord [[!DNL Product Recommendations]  ](workspace.md)
 
-| Colonne du tableau de bord | Événements | Champ de jointure |
+| Colonne du tableau de bord | Événements | Joindre le champ |
 | ---------------- | --------- | ----------- |
 | Impressions | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | `unitId` |
 | Vues | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | `unitId` |
 | Clics | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click` | `unitId` |
-| Recettes | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
-| Recettes LT | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
+| Chiffre d’affaires | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
+| Revenus LT | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
 | CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 | vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 
-Les événements suivants ne sont pas spécifiques à Product Recommendations, mais sont nécessaires pour qu’Adobe Sensei interprète correctement les données des acheteurs :
+Les événements suivants ne sont pas spécifiques à Product Recommendations, mais sont nécessaires pour qu’Adobe Sensei interprète correctement les données d’acheteur :
 
 - `view`
 - `add-to-cart`
@@ -114,24 +118,24 @@ Ce tableau décrit les événements utilisés par chaque type de recommandation.
 
 | Type de recommandation | Événements | Page |
 | --- | --- | --- |
-| Les plus consultés | `page-view`<br>`product-view` | Page Détails du produit |
-| Le plus acheté | `page-view`<br>`complete-checkout` | Panier/passage en caisse |
-| Les plus ajoutés au panier | `page-view`<br>`add-to-cart` | Page Détails du produit<br>Page Liste des produits<br>Panier<br>Liste des souhaits |
-| A consulté ceci, consulté cela | `page-view`<br>`product-view` | Page Détails du produit |
-| Consulté ceci, acheté cela | Recs de produit | `page-view`<br>`product-view` | Page Détails du produit<br>Panier/Passage en caisse |
-| Acheté ceci, acheté cela | Recs de produit | `page-view`<br>`product-view` | Page Détails du produit |
-| Tendance | `page-view`<br>`product-view` | Page Détails du produit |
-| Conversion : Afficher à l’achat | Recs de produit | `page-view`<br>`product-view` | Page Détails du produit |
-| Conversion : Afficher à l’achat | Recs de produit | `page-view`<br>`complete-checkout` | Panier/passage en caisse |
-| Conversion : Afficher dans le panier | Recs de produit | `page-view`<br>`product-view` | Page Détails du produit |
-| Conversion : Afficher dans le panier | Recs de produit | `page-view`<br>`add-to-cart` | Page Détails du produit<br>Page Liste des produits<br>Panier<br>Liste des produits |
+| Les plus consultés | `page-view`<br>`product-view` | Page des détails du produit |
+| Les plus achetés | `page-view`<br>`complete-checkout` | Panier/Passage en caisse |
+| Les plus ajoutés au panier | `page-view`<br>`add-to-cart` | Page des détails du produit<br>page de liste des produits<br>panier<br>liste de souhaits |
+| A consulté ceci, a consulté cela | `page-view`<br>`product-view` | Page des détails du produit |
+| A vu ceci, a acheté cela | Rec De Produit | `page-view`<br>`product-view` | Page des détails du produit<br>Panier/Passage en caisse |
+| J&#39;ai acheté ça, acheté ça | Rec De Produit | `page-view`<br>`product-view` | Page des détails du produit |
+| En Tendance | `page-view`<br>`product-view` | Page des détails du produit |
+| Conversion : afficher pour acheter | Rec De Produit | `page-view`<br>`product-view` | Page des détails du produit |
+| Conversion : afficher pour acheter | Rec De Produit | `page-view`<br>`complete-checkout` | Panier/Passage en caisse |
+| Conversion : afficher au panier | Rec De Produit | `page-view`<br>`product-view` | Page des détails du produit |
+| Conversion : afficher au panier | Rec De Produit | `page-view`<br>`add-to-cart` | Page des détails du produit<br>Page de liste des produits<br>Panier<br>Liste de souhaits |
 
 #### Avertissements
 
-- Les bloqueurs d’annonces publicitaires et les paramètres de confidentialité peuvent empêcher la capture d’événements et peuvent entraîner un sous-rapport de l’engagement et des [mesures](workspace.md#column-descriptions). De plus, certains événements peuvent ne pas être envoyés en raison de problèmes de réseaux ou de pages laissés par les acheteurs.
-- [Les implémentations sans affichage](headless.md) doivent implémenter des événements pour alimenter le tableau de bord Recommendations du produit.
-- Pour les produits configurables, le Recommendations de produit utilise l’image du produit parent dans l’unité de recommandation. Si aucune image n’est spécifiée pour le produit configurable, l’unité de recommandation sera vide pour ce produit spécifique.
+- Les bloqueurs de publicités et les paramètres de confidentialité peuvent empêcher la capture d’événements et peuvent entraîner la sous-déclaration des mesures d’engagement et de chiffre d’affaires [mesures](workspace.md#column-descriptions). En outre, certains événements peuvent ne pas être envoyés en raison de problèmes de page ou de réseau liés aux clients qui quittent la page.
+- Les [implémentations découplées](headless.md) doivent implémenter des événements pour alimenter le tableau de bord du Recommendations de produit.
+- Pour les produits configurables, Product Recommendations utilise l’image du produit parent dans l’unité de recommandation. Si aucune image n’est spécifiée pour le produit configurable, l’unité de recommandation est vide pour ce produit spécifique.
 
 >[!NOTE]
 >
->Si le [mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas consenti à utiliser des cookies. Si le mode Restriction des cookies est désactivé, Adobe Commerce collecte les données comportementales par défaut.
+>Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas consenti à l’utilisation de cookies. Si le Mode de restriction des cookies est désactivé, Adobe Commerce collecte des données comportementales par défaut.
