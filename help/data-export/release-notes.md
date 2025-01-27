@@ -4,9 +4,9 @@ description: Dernières informations de mise  [!DNL Data Export Extension]  jour
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 8c6957d4b77af7128d2c7bdb1356b2905c6e054b
+source-git-commit: 4e40ea6214498f2b1c8bcf86b471d61a74ef561c
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,14 @@ Les mises à jour incluent :
 >L’extension d’exportation de données SaaS est un ensemble de modules installés automatiquement avec Live Search, Product Recommendations et Catalog Service. Vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Version majeure actuelle
+
+## Version 103.3.17
+
+![Correctif](../assets/fix.svg) Ajout de la compatibilité pour PHP 8.4. &lt;!-MDEE-941—>
+
+## Version 103.3.16
+
+![Correctif](../assets/fix.svg) Les valeurs d’option peuvent être vides pour les produits configurables pour plusieurs vues de magasin. &lt;!-MDEE-926—>
 
 ## Version 103.3.15
 
