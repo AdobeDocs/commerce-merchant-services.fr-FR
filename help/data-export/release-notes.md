@@ -4,9 +4,9 @@ description: Dernières informations de mise  [!DNL Data Export Extension]  jour
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 4e40ea6214498f2b1c8bcf86b471d61a74ef561c
+source-git-commit: 7d9f4e362fdb92e404a9293e3e9e6e45bb6bde86
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -28,32 +28,36 @@ Les mises à jour incluent :
 
 ## Version majeure actuelle
 
+## Version 103.3.18
+
+![Correctif](../assets/fix.svg) Les mises à jour d’évaluation des entités de produit et de catégorie sont désormais correctement déclenchées lors des mises à jour des données d’exportation de données.&lt;!-MDEE-963—>
+
 ## Version 103.3.17
 
-![Correctif](../assets/fix.svg) Ajout de la compatibilité pour PHP 8.4. &lt;!-MDEE-941—>
+![Correctif](../assets/fix.svg) Ajout de la compatibilité pour PHP 8.4. <!--MDEE-941-->
 
 ## Version 103.3.16
 
-![Correctif](../assets/fix.svg) Les valeurs d’option peuvent être vides pour les produits configurables pour plusieurs vues de magasin. &lt;!-MDEE-926—>
+![Correctif](../assets/fix.svg) Les valeurs d’option peuvent être vides pour les produits configurables pour plusieurs vues de magasin. <!--MDEE-926-->
 
 ## Version 103.3.15
 
-![Correctif](../assets/fix.svg) Fonctionnement stable des tests d’intégration sur les anciennes configurations. &lt;!-MDEE-869—>
-![Correctif](../assets/fix.svg) Arrêtez la propagation des options d’attribut inutiles. &lt;!-MDEE-882—>
-![Correction](../assets/fix.svg) Correction du message d’erreur envoyé au journal d’exportation des données lorsque la sérialisation des données échouait. &lt;!-MDEE-913—>
-![Correctif](../assets/fix.svg) Amélioration de la fiabilité des mises à jour simples des produits avec une couverture de test supplémentaire. &lt;!-MDEE-886—>
+![Correctif](../assets/fix.svg) Fonctionnement stable des tests d’intégration sur les anciennes configurations. <!--MDEE-869-->
+![Correctif](../assets/fix.svg) Arrêtez la propagation des options d’attribut inutiles. <!--MDEE-882-->
+![Correction](../assets/fix.svg) Correction du message d’erreur envoyé au journal d’exportation des données lorsque la sérialisation des données échouait. <!--MDEE-913-->
+![Correctif](../assets/fix.svg) Amélioration de la fiabilité des mises à jour simples des produits avec une couverture de test supplémentaire. <!--MDEE-886-->
 
 ## Version 103.3.14
 
-![Correction](../assets/fix.svg) L’indexeur de l’exportateur conserve désormais le statut correct pour les indexeurs dépendants. Auparavant, ces index étaient incorrectement invalidés et nécessitaient des vérifications et une validation supplémentaires qui ralentissaient les performances de l’indexation. &lt;!-MDEE-866—>
+![Correction](../assets/fix.svg) L’indexeur de l’exportateur conserve désormais le statut correct pour les indexeurs dépendants. Auparavant, ces index étaient incorrectement invalidés et nécessitaient des vérifications et une validation supplémentaires qui ralentissaient les performances de l’indexation. <!--MDEE-866-->
 
 ## Version 103.3.13
 
-![Correctif](../assets/fix.svg) Amélioration des performances du processus de synchronisation des données en ajoutant un cache local pour les données des options d’attribut.&lt;!-MDEE-864—>
+![Correctif](../assets/fix.svg) Amélioration des performances du processus de synchronisation des données en ajoutant un cache local pour les données des options d’attribut.<!--MDEE-864-->
 
 ## Version 103.3.12
 
-![Correctif](../assets/fix.svg) Résolution d’un problème qui augmentait le temps de synchronisation pour les produits simples et virtuels. &lt;!-MDEE-861—>
+![Correctif](../assets/fix.svg) Résolution d’un problème qui augmentait le temps de synchronisation pour les produits simples et virtuels. <!--MDEE-861-->
 
 ## Version 103.3.11
 
