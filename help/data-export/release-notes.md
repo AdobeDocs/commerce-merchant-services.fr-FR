@@ -4,9 +4,9 @@ description: Dernières informations de mise  [!DNL Data Export Extension]  jour
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 5379299cdd10f3a9aab41da56ed0a7b41282b085
+source-git-commit: f222d66ff3fc99c1fb234e1988a760482aadf2ca
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Les mises à jour incluent :
 
 ## Version 103.3.18
 
-![Correctif](../assets/fix.svg) Les mises à jour d’évaluation des entités de produit et de catégorie sont désormais correctement déclenchées lors des mises à jour des données d’exportation de données.&lt;!-MDEE-963—>
+![Correctif](../assets/fix.svg) Les mises à jour d’évaluation des entités de produit et de catégorie sont désormais correctement déclenchées lors des mises à jour des données d’exportation de données.<!--MDEE-963-->
 
 ## Version 103.3.17
 
