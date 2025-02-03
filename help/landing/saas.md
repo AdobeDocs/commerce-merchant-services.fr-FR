@@ -4,9 +4,9 @@ description: Découvrez comment intégrer votre instance Adobe Commerce ou Magen
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
+source-git-commit: c7ba4401d94f14cc66ef7b404e5444e1f2cb1e23
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ En outre, les intégrateurs de solutions sont également autorisés à utiliser 
 
 1. Dans le menu _Environnement_, sélectionnez **Production** ou **Sandbox**.
 
+   >[!NOTE]
+   >
+   >*Production* et *Sandbox* font référence aux environnements d’espace de données où les données sont stockées dans des systèmes principaux SaaS Adobes. Il ne fait pas référence aux environnements de commerce dans lesquels vous utiliserez les clés.
+
 1. Saisissez un nom dans la section _Clés API_, puis cliquez sur **Ajouter** pour ouvrir la boîte de dialogue afin de télécharger la nouvelle clé.
 
    ![Télécharger la clé privée](assets/download-api-private-key.png)
@@ -69,7 +73,7 @@ En outre, les intégrateurs de solutions sont également autorisés à utiliser 
 
 1. Répétez les étapes ci-dessus pour chaque environnement (production et sandbox).
 
-   La section **Clés API** affiche désormais vos clés API (publiques). Vous avez besoin des quatre clés (clé de production et clé sandbox, publique + privée) lorsque vous [sélectionnez ou créez un projet SaaS](#createsaasenv) dans l’un des environnements/installations associés à la licence.
+   La section **Clés API** affiche désormais vos clés API (publiques). Vous avez besoin des quatre clés (clé de production et clé sandbox, publique + privée) lorsque vous [sélectionnez ou créez un projet SaaS](#createsaasenv) dans l’un des environnements ou installations associés à la licence.
 
 ## Configuration SaaS {#saasenv}
 
