@@ -1,49 +1,53 @@
 ---
 title: Performances
-description: L’ [!DNL Live Search] espace de travail Performances donne des informations sur les termes de recherche que les acheteurs utilisent.
+description: L’espace de travail  [!DNL Live Search]  performances fournit des informations sur les termes de recherche utilisés par les acheteurs.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
 # Performances
 
-L’espace de travail *Performance* fournit des informations sur les termes de recherche utilisés par les acheteurs. Les informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. L’espace de travail Performances fournit un instantané des mesures de recherche pour une période spécifique et comprend les rapports suivants :
+L’espace de travail *Performances* donne des informations sur les termes de recherche utilisés par les acheteurs. Ces informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. L’espace de travail Performances fournit un instantané des mesures de recherche pour une période spécifique et inclut les rapports suivants :
 
 * Recherches uniques
 * Zéro résultat
 * Résultats populaires
 
-![Performance](assets/performance-unique-searches.png)
+![Performances](assets/performance-unique-searches.png)
 
-Vous pouvez également vous reporter au [tableau de bord de Data Management](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) pour plus de données sur la synchronisation des données.
-
-## Affichage d’un rapport
-
-1. Pour entrer dans la **plage de dates**, cliquez sur le calendrier (![Calendrier](assets/btn-calendar.png)) et effectuez l’une des opérations suivantes :
-
-   * Pour indiquer une seule date, double-cliquez sur la date du calendrier.
-   * Pour définir une plage de dates, cliquez sur la première et la dernière date du calendrier.
+Vous pouvez également consulter le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) pour plus d’informations sur la synchronisation des données.
 
 >[!NOTE]
 >
 >L’espace de travail des performances est mis à jour toutes les 12 heures.
 
+## Affichage d’un rapport
+
+1. Pour saisir la **Période**, cliquez sur le calendrier (![Calendrier](assets/btn-calendar.png)) et effectuez l’une des opérations suivantes :
+
+   * Pour spécifier une seule date, double-cliquez sur la date dans le calendrier.
+   * Pour spécifier une plage de dates, cliquez sur la première et la dernière date du calendrier.
+
+>[!NOTE]
+>
+>La plage de dates ne peut pas dépasser un an.
+
 ## Descriptions des champs
 
-| Données instantanées | Description |
+| Données de capture instantanée | Description |
 |--- |--- |
-| Recherches uniques | Nombre total de recherches uniques pour la période spécifiée. Plusieurs recherches effectuées par le même acheteur, même pour la même requête, sont considérées comme uniques si elles sont soumises à plus d’une heure d’intervalle. |
-| Taux de clics | Pourcentage de recherches qui se terminent par le fait que l’acheteur clique sur un produit. Par exemple, le taux de clics publicitaires est de 50 % si l’acheteur recherche &quot;pantalon&quot; et &quot;chemise&quot;, puis clique sur un résultat dans la recherche &quot;chemise&quot;. |
-| Taux de conversion | Pourcentage des produits achetés par l’acheteur par rapport au nombre de produits sur lesquels il clique pour la période spécifiée. Par exemple, le taux de conversion de l’interaction est de 100 % si l’acheteur consulte six produits dans la fenêtre contextuelle, clique sur l’un d’eux et effectue un achat. <br /><br />Le taux de conversion n’est pas affecté par le nombre d’affichages d’un produit donné. Par exemple, le taux de conversion reste le même si l’acheteur utilise la recherche, mais ne clique sur aucun produit. |
-| Taux zéro résultat | Pourcentage de recherches uniques ne renvoyant aucun résultat pour la période spécifiée. Par exemple, le taux de résultats zéro est de 66,67 % si l’acheteur recherche &quot;fjjajfjf&quot; deux fois (sans résultats) et &quot;pantalon&quot; une fois (avec résultats). |
-| Durée position du clic | Position relative du taux de clics publicitaires moyen en fonction de recherches uniques pour la période spécifiée. |
+| Recherches uniques | Nombre total de recherches uniques pour la période spécifiée. Les recherches multiples effectuées par le même acheteur, même si pour la même requête, sont considérées comme uniques si elles sont envoyées à plus d’une heure d’intervalle. |
+| Taux de clic publicitaire | Pourcentage de recherches qui se terminent par un clic de l’acheteur sur un produit. Par exemple, le taux de clic publicitaire est de 50 % si l’acheteur recherche « pantalon » et « chemise », puis clique sur un résultat de la recherche « chemise ». |
+| Taux de conversion | Pourcentage de produits achetés par l’acheteur par rapport au nombre de produits sur lesquels l’acheteur clique pendant la période spécifiée. Par exemple, le taux de conversion de l’interaction est de 100 % si l’acheteur consulte six produits dans la fenêtre contextuelle, clique sur un produit et effectue un achat. <br /><br />Le taux de conversion n’est pas affecté par le nombre de consultations d’un produit donné. Par exemple, le taux de conversion reste le même si l’acheteur utilise la recherche, mais ne clique sur aucun produit. |
+| Taux de résultats nuls | Pourcentage de recherches uniques qui ne renvoie aucun résultat pour la période spécifiée. Par exemple, le taux de zéro des résultats est de 66,67 % si l&#39;acheteur recherche « fjjajfjf » deux fois (sans résultats) et « pants » une fois (avec résultats). |
+| Moy. position de clic | Position relative du taux de clics publicitaires moyen en fonction des recherches uniques pour la période spécifiée. |
 
 | Rapports | Description |
 |--- |--- |
-| Recherches uniques | Répertorie les requêtes de recherche uniques utilisées au cours de la période spécifiée. Les données du rapport sont calculées de la même manière que les données d’instantané de recherche uniques. Si un acheteur effectue deux recherches avec la même requête, mais séparées de plus d’une heure, la recherche est considérée comme deux recherches uniques. Limite de rapport : 500 premiers termes |
-| Zéro résultat | Répertorie les requêtes de recherche qui ne renvoient aucun résultat et le nombre de fois utilisées au cours de la période spécifiée. Limite de rapport : 500 premiers termes |
-| Résultats populaires | Répertorie les noms des produits qui ont reçu le plus grand nombre d’affichages au cours de la période spécifiée. Les résultats populaires sont calculés uniquement sur la base des impressions et ne sont pas affectés par le nombre de clics ou les recettes générées. Limite de rapport : 500 premiers termes |
+| Recherches uniques | Répertorie les requêtes de recherche uniques utilisées au cours de la période spécifiée. Les données du rapport sont calculées de la même manière que les données d’instantané de recherche unique. Si un acheteur saisit deux fois la même requête de recherche, mais à plus d’une heure d’intervalle, la recherche est considérée comme deux recherches uniques. Limite de rapport : 500 premiers termes |
+| Zéro résultat | Répertorie les requêtes de recherche qui ne renvoient aucun résultat et le nombre de fois où elles ont été utilisées au cours de la période spécifiée. Limite de rapport : 500 premiers termes |
+| Résultats populaires | Répertorie les noms des produits qui ont reçu le plus de vues au cours de la période spécifiée. Les résultats populaires sont calculés en fonction des impressions uniquement et ne sont pas affectés par le nombre de clics ou le chiffre d’affaires généré. Limite de rapport : 500 premiers termes |

@@ -3,9 +3,9 @@ title: Limites et limites
 description: Découvrez les limites et les limites de pour  [!DNL Live Search]  assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 867d65d0ffd212061524605fd725df1eb75be9eb
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 - Les types de produits personnalisés ne sont pas pris en charge.
 - Les attributs personnalisés créés par programmation avec `"is_user_defined": false` ne sont pas pris en charge.
 - Vous pouvez filtrer les résultats à l’aide des conditions « commence par » ou « contient » avec certaines limitations comme décrit [ici](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
+- Vous ne pouvez effectuer le suivi des mesures de performances que l’année dernière.
 
 ## Indexation
 

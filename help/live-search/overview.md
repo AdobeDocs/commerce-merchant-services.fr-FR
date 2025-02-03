@@ -3,9 +3,9 @@ title: Qu'est-ce que  [!DNL Live Search] ?
 description: '[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, pertinente et intuitive.'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -84,3 +84,9 @@ L’[!DNL Live Search] [espace de travail](workspace.md) est la zone de l’Admi
 ## Événements
 
 [!DNL Live Search] utilise des tableaux de bord [événements](events.md) pour calculer [marchandisage intelligent](category-merch.md) et [performances](performance.md). Les événements sont fournis avec les implémentations par défaut. Les événements pour les storefronts découplés doivent être activés manuellement.
+
+## Politique de conservation des données de catalogue
+
+Si vous n’envoyez pas de requête de recherche pour les données du catalogue dans votre environnement de test pendant 90 jours consécutifs, les données du catalogue sont définies en mode veille et aucune donnée n’est renvoyée pour une requête de recherche. Les données de catalogue de votre environnement de production ne sont pas affectées par cette politique.
+
+Pour réactiver les données du catalogue dans votre environnement de test, [envoyez une demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Live Search] » et incluez les identifiants d’environnement. Les données du catalogue de votre environnement de test doivent être restaurées dans les heures qui suivent.
