@@ -1,34 +1,38 @@
 ---
-title: Notes de mise à jour [!DNL Catalog Adapter]
-description: Les dernières informations de mise à jour de [!DNL Catalog Adapter] pour Adobe Commerce.
+title: Notes de mise à jour de [!DNL Catalog Adapter]
+description: Dernières informations de mise  [!DNL Catalog Adapter]  jour pour Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d7aeee8f-9043-4517-9fde-ffe24aa77b19
-source-git-commit: 8cf67ed76e191b03ddfbfb68ed4ba07e456a3c35
+source-git-commit: 7bc5a4185317afbe3b767945455070734c452450
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
 
 # Notes de mise à jour de l’extension [!DNL Catalog Adapter]
 
-Ces notes de mise à jour décrivent les dernières versions de l’extension [!DNL Catalog Adapter]. La prise en charge de la version majeure actuelle est fournie. Les notes de mise à jour des versions antérieures sont fournies à titre de référence.
+Ces notes de mise à jour décrivent les dernières versions de l’extension [!DNL Catalog Adapter]. La prise en charge est assurée pour la version majeure publiée actuelle. Les notes de mise à jour des anciennes versions sont fournies à titre de référence.
 
-Les mises à jour sont les suivantes :
+Les mises à jour incluent :
 
-![New](../assets/new.svg) Nouvelles fonctionnalités
-![ Correctifs et améliorations ](../assets/fix.svg)
-![Bug](../assets/bug.svg) Problèmes connus
+![Nouveau](../assets/new.svg) Nouvelles fonctionnalités
+![Correctifs](../assets/fix.svg) Correctifs et améliorations
+![Bogue](../assets/bug.svg) Problèmes connus
 
 
 >[!NOTE]
 >
->L’ [extension de l’adaptateur de catalogue](catalog-adapter.md) désactive l’indexation de prix Adobe Commerce. Si vous l’avez installé, vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension de l’adaptateur de catalogue sur votre système pour relever les correctifs ou de nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
+>L’extension [Catalog Adapter](catalog-adapter.md) désactive l’indexation des prix dans Adobe Commerce. Si vous l’avez installé, vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l&#39;extension d&#39;adaptateur de catalogue sur votre système pour trouver des correctifs ou de nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Version majeure actuelle
 
+## Version 1.0.9
+
+![Correctif](../assets/fix.svg) Ajout de la compatibilité pour PHP 8.4. <!--MDEE-941-->
+
 ## Version 1.0.8
 
-![Correctif](../assets/fix.svg) Correction d’un problème qui provoquait une erreur dans le journal des exceptions lors de l’ajout à la liste des souhaits de variantes de produits configurables avec des SKU numériques. &lt;!-MDEE-876—>
+![Correction](../assets/fix.svg) Correction d’un problème qui provoquait une erreur dans le journal des exceptions lors de l’ajout de variantes de produits configurables avec des SKU numériques à la liste de souhaits. <!--MDEE-876-->
