@@ -3,9 +3,9 @@ title: Prise en main de  [!DNL Live Search]
 description: Découvrez la configuration requise et les étapes d’installation pour  [!DNL Live Search]  à partir d’Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
+source-git-commit: 079998ad1390849bc8078f958140e101b95460ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Cet article est destiné au développeur ou à l’intégrateur système de votr
    >
    >En raison de l’annonce de fin de prise en charge d’Elasticsearch 7 en août 2023, il est recommandé à tous les clients Adobe Commerce de migrer vers le moteur de recherche OpenSearch 2.x. Pour plus d’informations sur la migration de votre moteur de recherche pendant une mise à niveau du produit, voir [Migration vers OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) dans le _Guide de mise à niveau_.
 
-1. Téléchargez le package `live-search` à partir du [Marché d’Adobe ](https://commercemarketplace.adobe.com/magento-live-search.html).
+1. Téléchargez le package `live-search` à partir de la [place de marché Adobe](https://commercemarketplace.adobe.com/magento-live-search.html).
 
 1. Exécutez la commande suivante à partir de la ligne de commande :
 
@@ -227,7 +227,7 @@ Pour vérifier si vos données de catalogue ont été exportées à partir d’A
   >
   >Si vous obtenez une erreur `table does not exist`, recherchez les entrées dans les tableaux `catalog_data_exporter_products` et `catalog_data_exporter_product_attributes`. Ces noms de table sont utilisés dans les versions [!DNL Live Search] antérieures à la version 4.2.1.
 
-- Utilisez le [terrain de jeu GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) avec la requête par défaut pour vérifier les éléments suivants :
+- Utilisez le [terrain de jeu GraphQL](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql) avec la requête par défaut (voir [Référence de GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) pour plus de détails) pour vérifier les éléments suivants :
 
    - Le nombre de produits renvoyés est proche de ce que vous attendiez pour la vue du magasin.
    - Les facettes sont renvoyées.
@@ -402,7 +402,7 @@ Si vous disposez d’une implémentation découplée personnalisée, consultez l
 - [Widget PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Champ Live Search](https://github.com/adobe/storefront-search-as-you-type)
 
-La collecte automatique des données d’interaction utilisateur ne fonctionne pas par défaut lorsque vous n’utilisez pas les composants standard tels que l’adaptateur de recherche, les widgets Luma ou les widgets AEM CIF. Adobe Sensei utilise ces données collectées pour le marchandisage intelligent et le suivi des performances. Pour résoudre ce problème, vous devez développer une solution personnalisée pour implémenter cette collecte de données en mode découplé.
+La collecte automatique des données d’interaction utilisateur ne fonctionne pas par défaut lorsque vous n’utilisez pas les composants standard tels que la Search Adapter, les widgets Luma ou les widgets AEM CIF. Adobe Sensei utilise ces données collectées pour le marchandisage intelligent et le suivi des performances. Pour résoudre ce problème, vous devez développer une solution personnalisée pour implémenter cette collecte de données en mode découplé.
 
 La dernière version de [!DNL Live Search] utilise déjà [!DNL Catalog Service].
 
@@ -412,7 +412,7 @@ Les widgets [!DNL Live Search] prennent en charge les langues suivantes :
 
 |  |  |  |  |
 |--- |--- |--- |--- |
-| Langue | Région | Code de langue | Paramètres régionaux du Magento |
+| Langue | Région | Code de langue | Magento Locale |
 | Bulgare | Bulgarie | bg_BG | bg_BG |
 | Catalan | Espagne | ca_ES | ca_ES |
 | Tchèque | République tchèque | cs_CZ | cs_CZ |
@@ -506,12 +506,12 @@ Ce module ajoute des contextes supplémentaires aux requêtes GraphQL :
 
 [!DNL Live Search] prend en charge la fonctionnalité [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) avec des [limitations](boundaries-limits.md#b2b-and-category-permissions) supplémentaires.
 
-### Prise en charge des PWA
+### Prise en charge de PWA
 
 [!DNL Live Search] fonctionne avec PWA Studio, mais les utilisateurs peuvent voir de légères différences par rapport aux autres implémentations de Commerce. Les fonctionnalités de base telles que la recherche et la page de liste de produits fonctionnent dans Venia, mais certaines permutations de Graphql peuvent ne pas fonctionner correctement. Il peut également y avoir des différences de performances.
 
-- L’implémentation PWA actuelle de [!DNL Live Search] nécessite davantage de temps de traitement pour renvoyer les résultats de la recherche qu’avec [!DNL Live Search] storefront Commerce natif.
-- [!DNL Live Search] dans PWA ne prend pas en charge [gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Par conséquent, les rapports de recherche et le merchandising intelligent ne fonctionnent pas sur les vitrines de PWA.
+- L’implémentation PWA actuelle de [!DNL Live Search] nécessite davantage de temps de traitement pour renvoyer les résultats de la recherche qu’une [!DNL Live Search] avec le storefront Commerce natif.
+- [!DNL Live Search] dans PWA ne prend pas en charge [la gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Par conséquent, les rapports de recherche et le marchandisage intelligent ne fonctionnent pas sur les vitrines PWA.
 - Lors de l&#39;utilisation de [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/), GraphQL ne prend pas en charge le filtrage directement sur `description`, `name`, `short_description`, mais ces champs peuvent être renvoyés avec un filtre plus général.
 
 Pour utiliser [!DNL Live Search] avec PWA Studio, les intégrateurs doivent également :
